@@ -1,0 +1,2308 @@
+{
+  "details": {
+    "id": "https://openalex.org/A5016324576",
+    "orcid": null,
+    "display_name": "S. Mohammed Junaid",
+    "display_name_alternatives": [
+      "S. Mohammed Junaid",
+      "Sameer Junaid"
+    ],
+    "works_count": 2,
+    "cited_by_count": 3,
+    "summary_stats": {
+      "2yr_mean_citedness": 0,
+      "h_index": 1,
+      "i10_index": 0
+    },
+    "ids": {
+      "openalex": "https://openalex.org/A5016324576",
+      "orcid": null
+    },
+    "affiliations": [
+      {
+        "institution": {
+          "id": "https://openalex.org/I134085113",
+          "ror": "https://ror.org/03yez3163",
+          "display_name": "King Fahd University of Petroleum and Minerals",
+          "country_code": "SA",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I134085113"
+          ]
+        },
+        "years": [
+          2020
+        ]
+      }
+    ],
+    "last_known_institutions": null,
+    "topics": [
+      {
+        "id": "https://openalex.org/T10111",
+        "display_name": "Remote Sensing in Agriculture",
+        "count": 1,
+        "score": 0.9049999713897705,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2303",
+          "display_name": "Ecology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10689",
+        "display_name": "Remote-Sensing Image Classification",
+        "count": 1,
+        "score": 0.9021999835968018,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2214",
+          "display_name": "Media Technology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T11801",
+        "display_name": "Reservoir Engineering and Simulation Methods",
+        "count": 1,
+        "score": 0.9775000214576721,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T12543",
+        "display_name": "Groundwater and Watershed Analysis",
+        "count": 1,
+        "score": 0.9226999878883362,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2305",
+          "display_name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T13067",
+        "display_name": "Geological Modeling and Analysis",
+        "count": 1,
+        "score": 0.9230999946594238,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1906",
+          "display_name": "Geochemistry and Petrology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/19",
+          "display_name": "Earth and Planetary Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "topic_share": [
+      {
+        "id": "https://openalex.org/T12543",
+        "display_name": "Groundwater and Watershed Analysis",
+        "value": 0.0000147,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2305",
+          "display_name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10689",
+        "display_name": "Remote-Sensing Image Classification",
+        "value": 0.0000077,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2214",
+          "display_name": "Media Technology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10111",
+        "display_name": "Remote Sensing in Agriculture",
+        "value": 0.0000063,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2303",
+          "display_name": "Ecology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T13067",
+        "display_name": "Geological Modeling and Analysis",
+        "value": 0.0000051,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1906",
+          "display_name": "Geochemistry and Petrology"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/19",
+          "display_name": "Earth and Planetary Sciences"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T11801",
+        "display_name": "Reservoir Engineering and Simulation Methods",
+        "value": 0.0000031,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "x_concepts": [
+      {
+        "id": "113324615",
+        "wikidata": "https://www.wikidata.org/wiki/Q472302",
+        "display_name": "Login",
+        "score": 0.6142758131027222
+      },
+      {
+        "id": "105339364",
+        "wikidata": "https://www.wikidata.org/wiki/Q2297740",
+        "display_name": "Software deployment",
+        "score": 0.4431779384613037
+      },
+      {
+        "id": "115903868",
+        "wikidata": "https://www.wikidata.org/wiki/Q80993",
+        "display_name": "Software engineering",
+        "score": 0.3620314598083496
+      },
+      {
+        "id": "110354214",
+        "wikidata": "https://www.wikidata.org/wiki/Q6314146",
+        "display_name": "Engineering management",
+        "score": 0.35366755723953247
+      },
+      {
+        "id": "111919701",
+        "wikidata": "https://www.wikidata.org/wiki/Q9135",
+        "display_name": "Operating system",
+        "score": 0.2833588421344757
+      }
+    ],
+    "counts_by_year": [
+      {
+        "year": 2020,
+        "works_count": 1,
+        "oa_works_count": 0,
+        "cited_by_count": 3
+      },
+      {
+        "year": 2024,
+        "works_count": 1,
+        "oa_works_count": 1,
+        "cited_by_count": 0
+      }
+    ],
+    "longest_name": "S. Mohammed Junaid",
+    "parsed_longest_name": {
+      "first": "s",
+      "middle": "mohammed",
+      "last": "junaid",
+      "suffix": "",
+      "nickname": ""
+    },
+    "block_key": "s junaid",
+    "works_api_url": "https://api.openalex.org/works?filter=author.id:A5016324576",
+    "updated_date": "2026-01-30T04:21:33.591335",
+    "created_date": "2025-10-10"
+  },
+  "works": [
+    {
+      "id": "https://openalex.org/W2999676167",
+      "doi": "https://doi.org/10.2523/iptc-19656-ms",
+      "title": "Successful Deployment of a Laboratory Information Management System LIMS; Striding Towards Modern, Paperless Labs",
+      "display_name": "Successful Deployment of a Laboratory Information Management System LIMS; Striding Towards Modern, Paperless Labs",
+      "publication_year": 2020,
+      "publication_date": "2020-01-11",
+      "ids": {
+        "openalex": "https://openalex.org/W2999676167",
+        "doi": "https://doi.org/10.2523/iptc-19656-ms",
+        "mag": "2999676167"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.2523/iptc-19656-ms",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2523/iptc-19656-ms",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4363607700",
+          "display_name": "International Petroleum Technology Conference",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "International Petroleum Technology Conference",
+        "raw_type": "proceedings-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5016324576",
+            "display_name": "S. Mohammed Junaid",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Sameer Junaid",
+          "raw_affiliation_strings": [
+            "King Fahd University of Petroleum & Minerals"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "King Fahd University of Petroleum & Minerals",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5048600024",
+            "display_name": "Zaid Jangda",
+            "orcid": "https://orcid.org/0000-0002-5321-2758"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Zaid Jangda",
+          "raw_affiliation_strings": [
+            "King Fahd University of Petroleum & Minerals"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "King Fahd University of Petroleum & Minerals",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5016324576"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 1.02268971,
+      "has_fulltext": false,
+      "cited_by_count": 3,
+      "citation_normalized_percentile": {
+        "value": 0.64302393,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 94
+      },
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11801",
+        "display_name": "Reservoir Engineering and Simulation Methods",
+        "score": 0.9775000214576721,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11801",
+          "display_name": "Reservoir Engineering and Simulation Methods",
+          "score": 0.9775000214576721,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T13067",
+          "display_name": "Geological Modeling and Analysis",
+          "score": 0.9230999946594238,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1906",
+            "display_name": "Geochemistry and Petrology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/19",
+            "display_name": "Earth and Planetary Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.6390523910522461
+        },
+        {
+          "id": "https://openalex.org/keywords/login",
+          "display_name": "Login",
+          "score": 0.6142758131027222
+        },
+        {
+          "id": "https://openalex.org/keywords/sample",
+          "display_name": "Sample (material)",
+          "score": 0.5375046730041504
+        },
+        {
+          "id": "https://openalex.org/keywords/barcode",
+          "display_name": "Barcode",
+          "score": 0.5157718658447266
+        },
+        {
+          "id": "https://openalex.org/keywords/management-information-systems",
+          "display_name": "Management information systems",
+          "score": 0.5116868019104004
+        },
+        {
+          "id": "https://openalex.org/keywords/system-administrator",
+          "display_name": "System administrator",
+          "score": 0.45160046219825745
+        },
+        {
+          "id": "https://openalex.org/keywords/personalization",
+          "display_name": "Personalization",
+          "score": 0.4505888521671295
+        },
+        {
+          "id": "https://openalex.org/keywords/management-system",
+          "display_name": "Management system",
+          "score": 0.44757866859436035
+        },
+        {
+          "id": "https://openalex.org/keywords/software-deployment",
+          "display_name": "Software deployment",
+          "score": 0.4431779384613037
+        },
+        {
+          "id": "https://openalex.org/keywords/information-system",
+          "display_name": "Information system",
+          "score": 0.41454100608825684
+        },
+        {
+          "id": "https://openalex.org/keywords/standardization",
+          "display_name": "Standardization",
+          "score": 0.41410383582115173
+        },
+        {
+          "id": "https://openalex.org/keywords/systems-engineering",
+          "display_name": "Systems engineering",
+          "score": 0.39864328503608704
+        },
+        {
+          "id": "https://openalex.org/keywords/software-engineering",
+          "display_name": "Software engineering",
+          "score": 0.3620314598083496
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.35499781370162964
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering-management",
+          "display_name": "Engineering management",
+          "score": 0.35366755723953247
+        },
+        {
+          "id": "https://openalex.org/keywords/operating-system",
+          "display_name": "Operating system",
+          "score": 0.2833588421344757
+        },
+        {
+          "id": "https://openalex.org/keywords/world-wide-web",
+          "display_name": "World Wide Web",
+          "score": 0.25203150510787964
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering",
+          "display_name": "Engineering",
+          "score": 0.20051825046539307
+        },
+        {
+          "id": "https://openalex.org/keywords/operations-management",
+          "display_name": "Operations management",
+          "score": 0.1230849027633667
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.6390523910522461
+        },
+        {
+          "id": "https://openalex.org/C113324615",
+          "wikidata": "https://www.wikidata.org/wiki/Q472302",
+          "display_name": "Login",
+          "level": 2,
+          "score": 0.6142758131027222
+        },
+        {
+          "id": "https://openalex.org/C198531522",
+          "wikidata": "https://www.wikidata.org/wiki/Q485146",
+          "display_name": "Sample (material)",
+          "level": 2,
+          "score": 0.5375046730041504
+        },
+        {
+          "id": "https://openalex.org/C2776841711",
+          "wikidata": "https://www.wikidata.org/wiki/Q856",
+          "display_name": "Barcode",
+          "level": 2,
+          "score": 0.5157718658447266
+        },
+        {
+          "id": "https://openalex.org/C29848774",
+          "wikidata": "https://www.wikidata.org/wiki/Q61905",
+          "display_name": "Management information systems",
+          "level": 3,
+          "score": 0.5116868019104004
+        },
+        {
+          "id": "https://openalex.org/C2780814629",
+          "wikidata": "https://www.wikidata.org/wiki/Q327353",
+          "display_name": "System administrator",
+          "level": 2,
+          "score": 0.45160046219825745
+        },
+        {
+          "id": "https://openalex.org/C183003079",
+          "wikidata": "https://www.wikidata.org/wiki/Q1000371",
+          "display_name": "Personalization",
+          "level": 2,
+          "score": 0.4505888521671295
+        },
+        {
+          "id": "https://openalex.org/C198783460",
+          "wikidata": "https://www.wikidata.org/wiki/Q629173",
+          "display_name": "Management system",
+          "level": 2,
+          "score": 0.44757866859436035
+        },
+        {
+          "id": "https://openalex.org/C105339364",
+          "wikidata": "https://www.wikidata.org/wiki/Q2297740",
+          "display_name": "Software deployment",
+          "level": 2,
+          "score": 0.4431779384613037
+        },
+        {
+          "id": "https://openalex.org/C180198813",
+          "wikidata": "https://www.wikidata.org/wiki/Q121182",
+          "display_name": "Information system",
+          "level": 2,
+          "score": 0.41454100608825684
+        },
+        {
+          "id": "https://openalex.org/C188087704",
+          "wikidata": "https://www.wikidata.org/wiki/Q369577",
+          "display_name": "Standardization",
+          "level": 2,
+          "score": 0.41410383582115173
+        },
+        {
+          "id": "https://openalex.org/C201995342",
+          "wikidata": "https://www.wikidata.org/wiki/Q682496",
+          "display_name": "Systems engineering",
+          "level": 1,
+          "score": 0.39864328503608704
+        },
+        {
+          "id": "https://openalex.org/C115903868",
+          "wikidata": "https://www.wikidata.org/wiki/Q80993",
+          "display_name": "Software engineering",
+          "level": 1,
+          "score": 0.3620314598083496
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.35499781370162964
+        },
+        {
+          "id": "https://openalex.org/C110354214",
+          "wikidata": "https://www.wikidata.org/wiki/Q6314146",
+          "display_name": "Engineering management",
+          "level": 1,
+          "score": 0.35366755723953247
+        },
+        {
+          "id": "https://openalex.org/C111919701",
+          "wikidata": "https://www.wikidata.org/wiki/Q9135",
+          "display_name": "Operating system",
+          "level": 1,
+          "score": 0.2833588421344757
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.25203150510787964
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.20051825046539307
+        },
+        {
+          "id": "https://openalex.org/C21547014",
+          "wikidata": "https://www.wikidata.org/wiki/Q1423657",
+          "display_name": "Operations management",
+          "level": 1,
+          "score": 0.1230849027633667
+        },
+        {
+          "id": "https://openalex.org/C43617362",
+          "wikidata": "https://www.wikidata.org/wiki/Q170050",
+          "display_name": "Chromatography",
+          "level": 1,
+          "score": 0
+        },
+        {
+          "id": "https://openalex.org/C119599485",
+          "wikidata": "https://www.wikidata.org/wiki/Q43035",
+          "display_name": "Electrical engineering",
+          "level": 1,
+          "score": 0
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.2523/iptc-19656-ms",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2523/iptc-19656-ms",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4363607700",
+            "display_name": "International Petroleum Technology Conference",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "conference"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "International Petroleum Technology Conference",
+          "raw_type": "proceedings-article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/9",
+          "score": 0.550000011920929,
+          "display_name": "Industry, innovation and infrastructure"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W2256570403",
+        "https://openalex.org/W2074156223",
+        "https://openalex.org/W2361870492",
+        "https://openalex.org/W2355739864",
+        "https://openalex.org/W2392255394",
+        "https://openalex.org/W822814849",
+        "https://openalex.org/W189841489",
+        "https://openalex.org/W2388828284",
+        "https://openalex.org/W2379036888",
+        "https://openalex.org/W1972598694"
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          62,
+          134,
+          215,
+          292,
+          329
+        ],
+        "selection,": [
+          1
+        ],
+        "implementation": [
+          2,
+          135,
+          160
+        ],
+        "and": [
+          3,
+          57,
+          65,
+          69,
+          84,
+          91,
+          103,
+          118,
+          130,
+          179,
+          182,
+          189,
+          198,
+          225,
+          236,
+          252,
+          256,
+          305,
+          317,
+          326,
+          349,
+          365,
+          391
+        ],
+        "benefits": [
+          4
+        ],
+        "of": [
+          5,
+          20,
+          23,
+          34,
+          44,
+          54,
+          67,
+          75,
+          81,
+          109,
+          161,
+          171,
+          187,
+          258,
+          265,
+          302,
+          309,
+          351,
+          357,
+          363,
+          378
+        ],
+        "a": [
+          6,
+          89,
+          122,
+          154,
+          184,
+          394
+        ],
+        "fully": [
+          7,
+          167,
+          382,
+          395
+        ],
+        "customized": [
+          8,
+          259,
+          297,
+          331
+        ],
+        "Laboratory": [
+          9
+        ],
+        "Information": [
+          10
+        ],
+        "Management": [
+          11
+        ],
+        "System": [
+          12,
+          206
+        ],
+        "(LIMS),": [
+          13
+        ],
+        "which": [
+          14,
+          99,
+          121,
+          126
+        ],
+        "was": [
+          15,
+          124,
+          136
+        ],
+        "deployed": [
+          16
+        ],
+        "in": [
+          17,
+          72,
+          88,
+          138,
+          174,
+          212,
+          339,
+          375,
+          393
+        ],
+        "the": [
+          18,
+          21,
+          30,
+          45,
+          73,
+          79,
+          106,
+          110,
+          146,
+          149,
+          159,
+          164,
+          169,
+          213,
+          227,
+          232,
+          239,
+          245,
+          248,
+          263,
+          266,
+          277,
+          281,
+          288,
+          300,
+          306,
+          315,
+          321,
+          347,
+          355,
+          361,
+          376,
+          387
+        ],
+        "laboratories": [
+          19,
+          74,
+          380
+        ],
+        "College": [
+          22,
+          165
+        ],
+        "Petroleum": [
+          24,
+          35
+        ],
+        "Engineering": [
+          25
+        ],
+        "&amp;": [
+          26,
+          36
+        ],
+        "Geosciences": [
+          27
+        ],
+        "(CPG)": [
+          28
+        ],
+        "at": [
+          29
+        ],
+        "King": [
+          31
+        ],
+        "Fahd": [
+          32
+        ],
+        "University": [
+          33
+        ],
+        "Minerals": [
+          37
+        ],
+        "(KFUPM)": [
+          38
+        ],
+        "is": [
+          39,
+          42,
+          100,
+          371,
+          389
+        ],
+        "discussed.": [
+          40
+        ],
+        "It": [
+          41,
+          241,
+          370
+        ],
+        "one": [
+          43
+        ],
+        "innovative": [
+          46
+        ],
+        "initiatives": [
+          47
+        ],
+        "undertaken": [
+          48
+        ],
+        "by": [
+          49,
+          353
+        ],
+        "CPG": [
+          50,
+          76,
+          195,
+          330,
+          379
+        ],
+        "to": [
+          51,
+          105,
+          144,
+          153,
+          196,
+          221,
+          276,
+          286,
+          298,
+          319,
+          335,
+          381
+        ],
+        "streamline": [
+          52
+        ],
+        "utilization": [
+          53
+        ],
+        "its": [
+          55
+        ],
+        "facilities": [
+          56,
+          308
+        ],
+        "ensure": [
+          58
+        ],
+        "secure": [
+          59,
+          90,
+          396
+        ],
+        "data": [
+          60,
+          83,
+          327,
+          388
+        ],
+        "management.": [
+          61
+        ],
+        "sheer": [
+          63
+        ],
+        "volume": [
+          64
+        ],
+        "diversity": [
+          66
+        ],
+        "experiments": [
+          68,
+          188
+        ],
+        "measurements": [
+          70
+        ],
+        "performed": [
+          71
+        ],
+        "required": [
+          77,
+          95
+        ],
+        "that": [
+          78,
+          244
+        ],
+        "management": [
+          80,
+          301,
+          318
+        ],
+        "equipment,": [
+          82
+        ],
+        "information": [
+          85,
+          325
+        ],
+        "be": [
+          86,
+          336
+        ],
+        "done": [
+          87,
+          137
+        ],
+        "professional": [
+          92
+        ],
+        "way.": [
+          93
+        ],
+        "This": [
+          94
+        ],
+        "an": [
+          96,
+          372
+        ],
+        "electronic": [
+          97,
+          156
+        ],
+        "system,": [
+          98,
+          163
+        ],
+        "efficient,": [
+          101
+        ],
+        "robust": [
+          102
+        ],
+        "customizable": [
+          104
+        ],
+        "specific": [
+          107
+        ],
+        "requirements": [
+          108
+        ],
+        "College.": [
+          111
+        ],
+        "Eight": [
+          112
+        ],
+        "different": [
+          113
+        ],
+        "systems": [
+          114
+        ],
+        "were": [
+          115
+        ],
+        "meticulously": [
+          116
+        ],
+        "reviewed": [
+          117
+        ],
+        "evaluated,": [
+          119
+        ],
+        "from": [
+          120,
+          148,
+          280,
+          290
+        ],
+        "system": [
+          123,
+          278,
+          289,
+          293,
+          322
+        ],
+        "selected": [
+          125
+        ],
+        "allowed": [
+          127
+        ],
+        "full": [
+          128
+        ],
+        "customization": [
+          129
+        ],
+        "strong": [
+          131
+        ],
+        "local": [
+          132
+        ],
+        "support.": [
+          133
+        ],
+        "multiple": [
+          139
+        ],
+        "phases": [
+          140
+        ],
+        "with": [
+          141,
+          323
+        ],
+        "extensive": [
+          142
+        ],
+        "training": [
+          143
+        ],
+        "ease": [
+          145
+        ],
+        "shift": [
+          147
+        ],
+        "traditional": [
+          150
+        ],
+        "lab": [
+          151
+        ],
+        "practices": [
+          152
+        ],
+        "complete": [
+          155,
+          228
+        ],
+        "system.": [
+          157
+        ],
+        "With": [
+          158
+        ],
+        "this": [
+          162
+        ],
+        "can": [
+          166
+        ],
+        "track": [
+          168
+        ],
+        "existence": [
+          170
+        ],
+        "all": [
+          172,
+          209,
+          386
+        ],
+        "equipment": [
+          173,
+          211
+        ],
+        "each": [
+          175
+        ],
+        "laboratory,": [
+          176
+        ],
+        "their": [
+          177,
+          223
+        ],
+        "maintenance": [
+          178
+        ],
+        "calibration": [
+          180
+        ],
+        "history": [
+          181
+        ],
+        "keep": [
+          183
+        ],
+        "comprehensive": [
+          185
+        ],
+        "record": [
+          186
+        ],
+        "results.": [
+          190
+        ],
+        "LIMS": [
+          191,
+          332
+        ],
+        "has": [
+          192,
+          272,
+          294,
+          333,
+          345
+        ],
+        "also": [
+          193,
+          242
+        ],
+        "enabled": [
+          194
+        ],
+        "compile": [
+          197
+        ],
+        "deploy": [
+          199
+        ],
+        "standard": [
+          200
+        ],
+        "operating": [
+          201
+        ],
+        "procedures": [
+          202
+        ],
+        "or": [
+          203
+        ],
+        "Lab": [
+          204
+        ],
+        "Execution": [
+          205
+        ],
+        "(LES)": [
+          207
+        ],
+        "for": [
+          208
+        ],
+        "major": [
+          210
+        ],
+        "labs.": [
+          214
+        ],
+        "Sample": [
+          216
+        ],
+        "Lifecycle": [
+          217
+        ],
+        "feature": [
+          218
+        ],
+        "allows": [
+          219
+        ],
+        "users": [
+          220,
+          274,
+          316
+        ],
+        "login": [
+          222
+        ],
+        "samples": [
+          224
+        ],
+        "produce": [
+          226
+        ],
+        "sample": [
+          229,
+          246,
+          367
+        ],
+        "report": [
+          230
+        ],
+        "including": [
+          231
+        ],
+        "analysis,": [
+          233,
+          364
+        ],
+        "calculations,": [
+          234
+        ],
+        "graphs": [
+          235
+        ],
+        "images": [
+          237
+        ],
+        "within": [
+          238
+        ],
+        "LIMS.": [
+          240
+        ],
+        "ensures": [
+          243
+        ],
+        "follows": [
+          247
+        ],
+        "defined": [
+          249
+        ],
+        "test": [
+          250
+        ],
+        "methods": [
+          251
+        ],
+        "procedures.": [
+          253
+        ],
+        "Barcode": [
+          254
+        ],
+        "scanning": [
+          255
+        ],
+        "printing": [
+          257
+        ],
+        "labels": [
+          260
+        ],
+        "further": [
+          261
+        ],
+        "enhance": [
+          262
+        ],
+        "credibility": [
+          264
+        ],
+        "tested": [
+          267
+        ],
+        "samples.": [
+          268
+        ],
+        "A": [
+          269
+        ],
+        "recent": [
+          270
+        ],
+        "upgrade": [
+          271
+        ],
+        "given": [
+          273
+        ],
+        "access": [
+          275
+        ],
+        "directly": [
+          279
+        ],
+        "web,": [
+          282
+        ],
+        "making": [
+          283
+        ],
+        "it": [
+          284,
+          344
+        ],
+        "possible": [
+          285
+        ],
+        "use": [
+          287
+        ],
+        "anywhere.": [
+          291
+        ],
+        "been": [
+          295
+        ],
+        "additionally": [
+          296
+        ],
+        "handle": [
+          299
+        ],
+        "OHS&amp;E,": [
+          303
+        ],
+        "car-pool": [
+          304
+        ],
+        "e-learning": [
+          307
+        ],
+        "CPG.": [
+          310
+        ],
+        "Interactive": [
+          311
+        ],
+        "live": [
+          312
+        ],
+        "dashboards": [
+          313
+        ],
+        "enable": [
+          314
+        ],
+        "view": [
+          320
+        ],
+        "critical": [
+          324
+        ],
+        "at-a-glance.": [
+          328
+        ],
+        "proven": [
+          334
+        ],
+        "very": [
+          337
+        ],
+        "effective": [
+          338
+        ],
+        "our": [
+          340
+        ],
+        "laboratory": [
+          341
+        ],
+        "activities": [
+          342
+        ],
+        "as": [
+          343
+        ],
+        "improved": [
+          346
+        ],
+        "efficiency": [
+          348
+        ],
+        "quality": [
+          350
+        ],
+        "work": [
+          352
+        ],
+        "reducing": [
+          354
+        ],
+        "potential": [
+          356
+        ],
+        "human": [
+          358
+        ],
+        "errors,": [
+          359
+        ],
+        "accelerating": [
+          360
+        ],
+        "throughput": [
+          362
+        ],
+        "enabling": [
+          366
+        ],
+        "tracking": [
+          368
+        ],
+        "activities.": [
+          369
+        ],
+        "essential": [
+          373
+        ],
+        "step": [
+          374
+        ],
+        "transitioning": [
+          377
+        ],
+        "paperless": [
+          383
+        ],
+        "labs": [
+          384
+        ],
+        "where": [
+          385
+        ],
+        "stored": [
+          390
+        ],
+        "managed": [
+          392
+        ],
+        "environment.": [
+          397
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2025-11-06T03:46:38.306776",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4402595925",
+      "doi": "https://doi.org/10.21203/rs.3.rs-5088916/v1",
+      "title": "The Classification of Land Use and Land Cover was conducted using the Manual Method in ArcGIS and using AI/ML in the Google Earth Engine for Salem District, Tamilnadu, India.",
+      "display_name": "The Classification of Land Use and Land Cover was conducted using the Manual Method in ArcGIS and using AI/ML in the Google Earth Engine for Salem District, Tamilnadu, India.",
+      "publication_year": 2024,
+      "publication_date": "2024-09-17",
+      "ids": {
+        "openalex": "https://openalex.org/W4402595925",
+        "doi": "https://doi.org/10.21203/rs.3.rs-5088916/v1"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.21203/rs.3.rs-5088916/v1",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.21203/rs.3.rs-5088916/v1",
+        "pdf_url": "https://www.researchsquare.com/article/rs-5088916/latest.pdf",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "posted-content"
+      },
+      "type": "preprint",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.researchsquare.com/article/rs-5088916/latest.pdf",
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5016324576",
+            "display_name": "S. Mohammed Junaid",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "S. Mohammed Junaid",
+          "raw_affiliation_strings": [
+            "Government Arts College (Autonomous), Salem-636007, Tamil Nadu, India"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Government Arts College (Autonomous), Salem-636007, Tamil Nadu, India",
+              "institution_ids": []
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 1,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5016324576"
+      ],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12543",
+        "display_name": "Groundwater and Watershed Analysis",
+        "score": 0.9226999878883362,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2305",
+          "display_name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T12543",
+          "display_name": "Groundwater and Watershed Analysis",
+          "score": 0.9226999878883362,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2305",
+            "display_name": "Environmental Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10111",
+          "display_name": "Remote Sensing in Agriculture",
+          "score": 0.9049999713897705,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2303",
+            "display_name": "Ecology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10689",
+          "display_name": "Remote-Sensing Image Classification",
+          "score": 0.9021999835968018,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2214",
+            "display_name": "Media Technology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/land-cover",
+          "display_name": "Land cover",
+          "score": 0.635258674621582
+        },
+        {
+          "id": "https://openalex.org/keywords/geography",
+          "display_name": "Geography",
+          "score": 0.5048080682754517
+        },
+        {
+          "id": "https://openalex.org/keywords/cover",
+          "display_name": "Cover (algebra)",
+          "score": 0.46117910742759705
+        },
+        {
+          "id": "https://openalex.org/keywords/database",
+          "display_name": "Database",
+          "score": 0.39376288652420044
+        },
+        {
+          "id": "https://openalex.org/keywords/remote-sensing",
+          "display_name": "Remote sensing",
+          "score": 0.3632206320762634
+        },
+        {
+          "id": "https://openalex.org/keywords/cartography",
+          "display_name": "Cartography",
+          "score": 0.35516899824142456
+        },
+        {
+          "id": "https://openalex.org/keywords/mining-engineering",
+          "display_name": "Mining engineering",
+          "score": 0.33762335777282715
+        },
+        {
+          "id": "https://openalex.org/keywords/land-use",
+          "display_name": "Land use",
+          "score": 0.28744035959243774
+        },
+        {
+          "id": "https://openalex.org/keywords/civil-engineering",
+          "display_name": "Civil engineering",
+          "score": 0.2739029824733734
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering",
+          "display_name": "Engineering",
+          "score": 0.264793336391449
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.24966961145401
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780648208",
+          "wikidata": "https://www.wikidata.org/wiki/Q3001793",
+          "display_name": "Land cover",
+          "level": 3,
+          "score": 0.635258674621582
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.5048080682754517
+        },
+        {
+          "id": "https://openalex.org/C2780428219",
+          "wikidata": "https://www.wikidata.org/wiki/Q16952335",
+          "display_name": "Cover (algebra)",
+          "level": 2,
+          "score": 0.46117910742759705
+        },
+        {
+          "id": "https://openalex.org/C77088390",
+          "wikidata": "https://www.wikidata.org/wiki/Q8513",
+          "display_name": "Database",
+          "level": 1,
+          "score": 0.39376288652420044
+        },
+        {
+          "id": "https://openalex.org/C62649853",
+          "wikidata": "https://www.wikidata.org/wiki/Q199687",
+          "display_name": "Remote sensing",
+          "level": 1,
+          "score": 0.3632206320762634
+        },
+        {
+          "id": "https://openalex.org/C58640448",
+          "wikidata": "https://www.wikidata.org/wiki/Q42515",
+          "display_name": "Cartography",
+          "level": 1,
+          "score": 0.35516899824142456
+        },
+        {
+          "id": "https://openalex.org/C16674752",
+          "wikidata": "https://www.wikidata.org/wiki/Q1370637",
+          "display_name": "Mining engineering",
+          "level": 1,
+          "score": 0.33762335777282715
+        },
+        {
+          "id": "https://openalex.org/C4792198",
+          "wikidata": "https://www.wikidata.org/wiki/Q1165944",
+          "display_name": "Land use",
+          "level": 2,
+          "score": 0.28744035959243774
+        },
+        {
+          "id": "https://openalex.org/C147176958",
+          "wikidata": "https://www.wikidata.org/wiki/Q77590",
+          "display_name": "Civil engineering",
+          "level": 1,
+          "score": 0.2739029824733734
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.264793336391449
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.24966961145401
+        },
+        {
+          "id": "https://openalex.org/C78519656",
+          "wikidata": "https://www.wikidata.org/wiki/Q101333",
+          "display_name": "Mechanical engineering",
+          "level": 1,
+          "score": 0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.21203/rs.3.rs-5088916/v1",
+          "is_oa": true,
+          "landing_page_url": "http://dx.doi.org/10.21203/rs.3.rs-5088916/v1",
+          "pdf_url": "https://www.researchsquare.com/article/rs-5088916/latest.pdf",
+          "source": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "acceptedVersion",
+          "is_accepted": true,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "posted-content"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.21203/rs.3.rs-5088916/v1",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.21203/rs.3.rs-5088916/v1",
+        "pdf_url": "https://www.researchsquare.com/article/rs-5088916/latest.pdf",
+        "source": null,
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "acceptedVersion",
+        "is_accepted": true,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "posted-content"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": false
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4402595925.pdf"
+      },
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [
+        "https://openalex.org/W4232403550",
+        "https://openalex.org/W623607250",
+        "https://openalex.org/W4245429118",
+        "https://openalex.org/W4205110281",
+        "https://openalex.org/W4212927854",
+        "https://openalex.org/W4211151614",
+        "https://openalex.org/W4244798043",
+        "https://openalex.org/W4361866086",
+        "https://openalex.org/W4251969024",
+        "https://openalex.org/W4250793136"
+      ],
+      "abstract_inverted_index": {
+        "<title>Abstract</title>": [
+          0
+        ],
+        "This": [
+          1,
+          94
+        ],
+        "study": [
+          2,
+          59,
+          95
+        ],
+        "examines": [
+          3
+        ],
+        "the": [
+          4,
+          30,
+          61,
+          97
+        ],
+        "land": [
+          5,
+          8
+        ],
+        "use": [
+          6
+        ],
+        "and": [
+          7,
+          25,
+          50,
+          56,
+          64,
+          72,
+          91,
+          99,
+          104,
+          114
+        ],
+        "cover": [
+          9
+        ],
+        "(LULC)": [
+          10
+        ],
+        "classification": [
+          11
+        ],
+        "in": [
+          12,
+          23,
+          29,
+          89
+        ],
+        "Salem": [
+          13
+        ],
+        "District,": [
+          14
+        ],
+        "Tamil": [
+          15
+        ],
+        "Nadu,": [
+          16
+        ],
+        "India,": [
+          17
+        ],
+        "using": [
+          18
+        ],
+        "both": [
+          19,
+          67
+        ],
+        "a": [
+          20
+        ],
+        "manual": [
+          21,
+          36
+        ],
+        "method": [
+          22,
+          37
+        ],
+        "ArcGIS": [
+          24,
+          79
+        ],
+        "an": [
+          26
+        ],
+        "AI-driven": [
+          27
+        ],
+        "approach": [
+          28,
+          103
+        ],
+        "Google": [
+          31
+        ],
+        "Earth": [
+          32
+        ],
+        "Engine": [
+          33
+        ],
+        "(GEE).": [
+          34
+        ],
+        "The": [
+          35,
+          58,
+          75
+        ],
+        "offers": [
+          38
+        ],
+        "high": [
+          39
+        ],
+        "accuracy": [
+          40
+        ],
+        "but": [
+          41
+        ],
+        "is": [
+          42,
+          80
+        ],
+        "labor": [
+          43
+        ],
+        "intensive,": [
+          44
+        ],
+        "while": [
+          45,
+          86
+        ],
+        "GEE": [
+          46,
+          87
+        ],
+        "uses": [
+          47
+        ],
+        "cloud": [
+          48
+        ],
+        "computing": [
+          49
+        ],
+        "machine": [
+          51
+        ],
+        "learning": [
+          52
+        ],
+        "for": [
+          53,
+          82,
+          109
+        ],
+        "greater": [
+          54
+        ],
+        "efficiency": [
+          55
+        ],
+        "scalability.": [
+          57
+        ],
+        "compares": [
+          60
+        ],
+        "accuracy,": [
+          62
+        ],
+        "efficiency,": [
+          63
+        ],
+        "applicability": [
+          65
+        ],
+        "of": [
+          66,
+          101
+        ],
+        "methods": [
+          68
+        ],
+        "across": [
+          69
+        ],
+        "different": [
+          70
+        ],
+        "scales": [
+          71
+        ],
+        "temporal": [
+          73
+        ],
+        "resolutions.": [
+          74
+        ],
+        "results": [
+          76
+        ],
+        "showed": [
+          77
+        ],
+        "that": [
+          78
+        ],
+        "better": [
+          81
+        ],
+        "detailed,": [
+          83
+        ],
+        "small-scale": [
+          84
+        ],
+        "work,": [
+          85
+        ],
+        "excels": [
+          88
+        ],
+        "large-scale": [
+          90
+        ],
+        "dynamic": [
+          92
+        ],
+        "analyses.": [
+          93
+        ],
+        "identifies": [
+          96
+        ],
+        "strengths": [
+          98
+        ],
+        "limitations": [
+          100
+        ],
+        "each": [
+          102
+        ],
+        "suggests": [
+          105
+        ],
+        "future": [
+          106
+        ],
+        "research": [
+          107
+        ],
+        "directions": [
+          108
+        ],
+        "environmental": [
+          110
+        ],
+        "monitoring,": [
+          111
+        ],
+        "urban": [
+          112
+        ],
+        "planning,": [
+          113
+        ],
+        "emerging": [
+          115
+        ],
+        "technologies.": [
+          116
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2025-12-27T23:08:20.325037",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  ]
+}
