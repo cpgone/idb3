@@ -1143,7 +1143,7 @@ export default function AuthorDetail() {
                   <div>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Tag className="h-4 w-4 text-primary" />
-                      <span className="font-semibold text-foreground">Also known as:</span>
+                      <span className="font-semibold text-foreground">OpenAlex alternate names:</span>
                     </div>
                     <div className="mt-1 flex flex-wrap gap-2 text-xs">
                       {alternativeDisplayNames.map((alias) => (

@@ -12,12 +12,14 @@ import { toast } from "@/components/ui/use-toast";
 import { Input } from "@/components/ui/input";
 import { makeWorkKey, normalizeOpenAlexId } from "@/lib/utils";
 
-type MemberSortField = "name" | "publications" | "citations" | "hIndex";
+type MemberSortField = "name" | "coAuthors" | "topics" | "publications" | "citations" | "hIndex";
 
 interface MemberRow {
   id: string;
   name: string;
   email: string;
+  coAuthors: number;
+  topics: number;
   publications: number;
   citations: number;
   hIndex: number;
@@ -60,13 +62,29 @@ const Members = () => {
 
   const metricsByAuthor = useMemo(() => {
     if (!allYears.length) {
-      return new Map<string, { publications: number; citations: number; hIndex: number }>();
+      return new Map<
+        string,
+        {
+          publications: number;
+          citations: number;
+          hIndex: number;
+          institutions: string[];
+          coAuthors: string[];
+          topics: string[];
+        }
+      >();
     }
 
     const from = startYear ?? allYears[0];
     const to = endYear ?? allYears[allYears.length - 1];
 
-    type Bucket = { citationsList: number[]; seenWorkKeys: Set<string>; institutions: Set<string> };
+    type Bucket = {
+      citationsList: number[];
+      seenWorkKeys: Set<string>;
+      institutions: Set<string>;
+      coAuthors: Set<string>;
+      topics: Set<string>;
+    };
     const temp = new Map<string, Bucket>();
 
     worksTable.forEach((work) => {
@@ -98,6 +116,17 @@ const Members = () => {
         ),
       );
 
+      const authorNames = (work.allAuthors || []).map((name) => name?.trim()).filter(Boolean);
+      const authorIds = (work.allAuthorOpenAlexIds || [])
+        .map((raw) => normalizeOpenAlexId(raw))
+        .filter((id): id is string => !!id);
+      const idToName = new Map<string, string>();
+      const len = Math.min(authorNames.length, authorIds.length);
+      for (let i = 0; i < len; i += 1) {
+        if (!authorIds[i] || !authorNames[i]) continue;
+        if (!idToName.has(authorIds[i])) idToName.set(authorIds[i], authorNames[i]);
+      }
+
       const participantKeys = [...idKeys, ...nameKeys];
       const perWorkSeen = new Set<string>();
 
@@ -107,7 +136,13 @@ const Members = () => {
 
         const bucket =
           temp.get(key) ??
-          { citationsList: [], seenWorkKeys: new Set<string>(), institutions: new Set<string>() };
+          {
+            citationsList: [],
+            seenWorkKeys: new Set<string>(),
+            institutions: new Set<string>(),
+            coAuthors: new Set<string>(),
+            topics: new Set<string>(),
+          };
         if (bucket.seenWorkKeys.has(workKey)) {
           temp.set(key, bucket);
           return;
@@ -117,13 +152,33 @@ const Members = () => {
         (work.institutions || []).forEach((inst) => {
           if (inst) bucket.institutions.add(inst);
         });
+        const selfNameLower = key.startsWith("id:")
+          ? idToName.get(key.slice(3))?.toLowerCase()
+          : key.startsWith("name:")
+            ? key.slice(5)
+            : undefined;
+        authorNames.forEach((name) => {
+          if (!name) return;
+          if (selfNameLower && name.toLowerCase() === selfNameLower) return;
+          bucket.coAuthors.add(name);
+        });
+        (work.topics || []).forEach((topic) => {
+          if (topic) bucket.topics.add(topic);
+        });
         temp.set(key, bucket);
       });
     });
 
     const result = new Map<
       string,
-      { publications: number; citations: number; hIndex: number; institutions: string[] }
+      {
+        publications: number;
+        citations: number;
+        hIndex: number;
+        institutions: string[];
+        coAuthors: string[];
+        topics: string[];
+      }
     >();
 
     for (const [key, value] of temp) {
@@ -140,6 +195,8 @@ const Members = () => {
         citations,
         hIndex: h,
         institutions: Array.from(value.institutions),
+        coAuthors: Array.from(value.coAuthors),
+        topics: Array.from(value.topics),
       });
     }
 
@@ -152,11 +209,17 @@ const Members = () => {
       const fallbackName = author.name.trim().toLowerCase();
       const key = normalizedId ? `id:${normalizedId}` : fallbackName ? `name:${fallbackName}` : null;
       const metrics = key ? metricsByAuthor.get(key) || null : null;
+      const coAuthorCountRaw = metrics ? metrics.coAuthors.length : 0;
+      const coAuthorCount = metrics
+        ? coAuthorCountRaw - (metrics.coAuthors.some((n) => n === author.name) ? 1 : 0)
+        : 0;
 
       return {
         id: author.authorId,
         name: author.name,
         email: author.email,
+        coAuthors: Math.max(0, coAuthorCount),
+        topics: metrics ? metrics.topics.length : 0,
         publications: metrics ? metrics.publications : 0,
         citations: metrics ? metrics.citations : 0,
         hIndex: metrics ? metrics.hIndex : author.hIndex,
@@ -186,6 +249,10 @@ const Members = () => {
       switch (sortBy) {
         case "name":
           return a.name.localeCompare(b.name) * dir;
+        case "coAuthors":
+          return (a.coAuthors - b.coAuthors) * dir;
+        case "topics":
+          return (a.topics - b.topics) * dir;
         case "publications":
           return (a.publications - b.publications) * dir;
         case "citations":
@@ -223,6 +290,15 @@ const Members = () => {
     if (to != null) search.set("toYear", String(to));
     search.set("author", authorName);
     return `/citations?${search.toString()}`;
+  };
+
+  const buildMemberTopicsPath = (authorName: string) => {
+    const search = new URLSearchParams();
+    const { from, to } = buildYearRange();
+    if (from != null) search.set("fromYear", String(from));
+    if (to != null) search.set("toYear", String(to));
+    search.set("author", authorName);
+    return `/topics?${search.toString()}`;
   };
 
   const toggleSort = (field: MemberSortField) => {
@@ -380,6 +456,26 @@ const Members = () => {
                       <button
                         type="button"
                         className="flex w-full items-center justify-end gap-1 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground border-0 focus-visible:outline-none"
+                        onClick={() => toggleSort("coAuthors")}
+                      >
+                        Co-authors
+                        <ArrowUpDown className="h-3 w-3" />
+                      </button>
+                    </TableHead>
+                    <TableHead className="hidden md:table-cell text-right">
+                      <button
+                        type="button"
+                        className="flex w-full items-center justify-end gap-1 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground border-0 focus-visible:outline-none"
+                        onClick={() => toggleSort("topics")}
+                      >
+                        Topics
+                        <ArrowUpDown className="h-3 w-3" />
+                      </button>
+                    </TableHead>
+                    <TableHead className="hidden md:table-cell text-right">
+                      <button
+                        type="button"
+                        className="flex w-full items-center justify-end gap-1 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground border-0 focus-visible:outline-none"
                         onClick={() => toggleSort("publications")}
                       >
                         Publications
@@ -452,6 +548,30 @@ const Members = () => {
 
                       <TableCell className="text-muted-foreground hidden sm:table-cell">
                         {row.email}
+                      </TableCell>
+                      <TableCell className="hidden md:table-cell text-right cell-compact font-medium text-foreground">
+                        {row.openAlexId ? (
+                          <Link
+                            to={`/author/${row.openAlexId}/network`}
+                            className="text-primary hover:underline"
+                          >
+                            {row.coAuthors}
+                          </Link>
+                        ) : (
+                          row.coAuthors
+                        )}
+                      </TableCell>
+                      <TableCell className="hidden md:table-cell text-right cell-compact font-medium text-foreground">
+                        {row.topics > 0 ? (
+                          <Link
+                            to={buildMemberTopicsPath(row.name)}
+                            className="text-primary hover:underline"
+                          >
+                            {row.topics}
+                          </Link>
+                        ) : (
+                          row.topics
+                        )}
                       </TableCell>
                       <TableCell className="hidden md:table-cell text-right cell-compact font-medium text-foreground">
                         {row.publications > 0 ? (
