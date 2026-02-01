@@ -271,7 +271,7 @@
       {
         "id": "https://openalex.org/T12482",
         "display_name": "Tunneling and Rock Mechanics",
-        "value": 0.0000996,
+        "value": 0.0000995,
         "subfield": {
           "id": "https://openalex.org/subfields/2205",
           "display_name": "Civil and Structural Engineering"
@@ -305,7 +305,7 @@
       {
         "id": "https://openalex.org/T11284",
         "display_name": "Coal Properties and Utilization",
-        "value": 0.0000411,
+        "value": 0.000041,
         "subfield": {
           "id": "https://openalex.org/subfields/2212",
           "display_name": "Ocean Engineering"
@@ -339,28 +339,34 @@
     ],
     "x_concepts": [
       {
-        "id": "100402318",
-        "wikidata": "https://www.wikidata.org/wiki/Q864080",
-        "display_name": "Clathrate hydrate",
-        "score": 0.8693597912788391
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.7718207836151123
       },
       {
-        "id": "10390740",
-        "wikidata": "https://www.wikidata.org/wiki/Q2282401",
-        "display_name": "Analyte",
-        "score": 0.7537813186645508
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.7513781785964966
       },
       {
-        "id": "100402318",
-        "wikidata": "https://www.wikidata.org/wiki/Q864080",
-        "display_name": "Clathrate hydrate",
-        "score": 0.5261200070381165
+        "id": "127313418",
+        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology",
+        "score": 0.6493030786514282
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0
+        "id": "191897082",
+        "wikidata": "https://www.wikidata.org/wiki/Q11467",
+        "display_name": "Metallurgy",
+        "score": 0.273049920797348
+      },
+      {
+        "id": "127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+        "display_name": "Engineering",
+        "score": 0.23703154921531677
       }
     ],
     "counts_by_year": [
@@ -435,7 +441,7 @@
     },
     "block_key": "j aljaberi",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5030821849",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2016-06-24"
   },
   "works": [
@@ -1779,8 +1785,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.5299999713897705
+          "score": 0.5299999713897705,
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -3518,8 +3524,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.7799999713897705
+          "score": 0.7799999713897705,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -4390,8 +4396,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.44999998807907104
+          "score": 0.44999998807907104,
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -5484,8 +5490,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/3",
-          "display_name": "Good health and well-being",
-          "score": 0.75
+          "score": 0.75,
+          "display_name": "Good health and well-being"
         }
       ],
       "awards": [],
@@ -7490,8 +7496,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.699999988079071
+          "score": 0.699999988079071,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -7637,7 +7643,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://www.nature.com/articles/s41598-022-21897-8.pdf",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -7784,7 +7790,7 @@
       "has_fulltext": true,
       "cited_by_count": 11,
       "citation_normalized_percentile": {
-        "value": 0.79976146,
+        "value": 0.80050522,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -8123,6 +8129,41 @@
           "is_major_topic": false
         },
         {
+          "descriptor_ui": "D012822",
+          "descriptor_name": "Silicon Dioxide",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008345",
+          "descriptor_name": "Manganese",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D005374",
+          "descriptor_name": "Filtration",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000537",
+          "descriptor_name": "Aluminum Oxide",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010539",
+          "descriptor_name": "Permeability",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
           "descriptor_ui": "D008345",
           "descriptor_name": "Manganese",
           "qualifier_ui": null,
@@ -8333,43 +8374,43 @@
       },
       "referenced_works_count": 37,
       "referenced_works": [
-        "https://openalex.org/W2035409146",
-        "https://openalex.org/W2485076753",
-        "https://openalex.org/W2946987266",
-        "https://openalex.org/W2333475423",
-        "https://openalex.org/W2898380127",
-        "https://openalex.org/W4205163786",
-        "https://openalex.org/W2552560484",
-        "https://openalex.org/W2791817256",
-        "https://openalex.org/W2943224742",
-        "https://openalex.org/W2899548466",
-        "https://openalex.org/W2994218141",
-        "https://openalex.org/W2897903382",
-        "https://openalex.org/W2532501245",
-        "https://openalex.org/W3188466373",
-        "https://openalex.org/W2255998385",
-        "https://openalex.org/W2998097527",
-        "https://openalex.org/W2028676094",
-        "https://openalex.org/W2547436288",
         "https://openalex.org/W1970865810",
+        "https://openalex.org/W1976551932",
         "https://openalex.org/W2019407267",
-        "https://openalex.org/W2059933590",
-        "https://openalex.org/W3007561941",
-        "https://openalex.org/W2987562059",
-        "https://openalex.org/W2921403137",
-        "https://openalex.org/W4242814986",
+        "https://openalex.org/W2028676094",
+        "https://openalex.org/W2035409146",
         "https://openalex.org/W2054139923",
+        "https://openalex.org/W2059933590",
+        "https://openalex.org/W2255998385",
         "https://openalex.org/W2331670807",
+        "https://openalex.org/W2333475423",
+        "https://openalex.org/W2485076753",
+        "https://openalex.org/W2532501245",
+        "https://openalex.org/W2547436288",
+        "https://openalex.org/W2552560484",
+        "https://openalex.org/W2598952810",
+        "https://openalex.org/W2791817256",
+        "https://openalex.org/W2897903382",
+        "https://openalex.org/W2898380127",
+        "https://openalex.org/W2899548466",
+        "https://openalex.org/W2921403137",
+        "https://openalex.org/W2943224742",
+        "https://openalex.org/W2946987266",
+        "https://openalex.org/W2984018467",
+        "https://openalex.org/W2987562059",
+        "https://openalex.org/W2994218141",
+        "https://openalex.org/W2998097527",
+        "https://openalex.org/W3007561941",
         "https://openalex.org/W3020163029",
         "https://openalex.org/W3106651212",
-        "https://openalex.org/W3198932615",
-        "https://openalex.org/W1976551932",
-        "https://openalex.org/W2984018467",
-        "https://openalex.org/W4200559438",
         "https://openalex.org/W3112968447",
-        "https://openalex.org/W2598952810",
+        "https://openalex.org/W3119396892",
         "https://openalex.org/W3128481100",
-        "https://openalex.org/W3119396892"
+        "https://openalex.org/W3188466373",
+        "https://openalex.org/W3198932615",
+        "https://openalex.org/W4200559438",
+        "https://openalex.org/W4205163786",
+        "https://openalex.org/W4242814986"
       ],
       "related_works": [
         "https://openalex.org/W2897903382",
@@ -8383,572 +8424,7 @@
         "https://openalex.org/W1986614990",
         "https://openalex.org/W4200559438"
       ],
-      "abstract_inverted_index": {
-        "250": [
-          113
-        ],
-        "300": [
-          120
-        ],
-        "Abstract": [
-          0
-        ],
-        "A": [
-          1
-        ],
-        "required": [
-          2
-        ],
-        "feature": [
-          3
-        ],
-        "of": [
-          4,
-          38,
-          112,
-          119,
-          152,
-          254
-        ],
-        "any": [
-          5
-        ],
-        "drilling": [
-          6,
-          41,
-          83,
-          164
-        ],
-        "formulation": [
-          7,
-          73
-        ],
-        "is": [
-          8,
-          32
-        ],
-        "to": [
-          9,
-          33,
-          72,
-          100,
-          122,
-          192,
-          195,
-          211
-        ],
-        "mitigate": [
-          10
-        ],
-        "the": [
-          11,
-          35,
-          39,
-          57,
-          75,
-          102,
-          124,
-          144,
-          149,
-          163,
-          188,
-          196,
-          202,
-          209,
-          213,
-          219,
-          225,
-          239,
-          244,
-          251,
-          255
-        ],
-        "formation": [
-          12,
-          30,
-          159
-        ],
-        "damage": [
-          13,
-          31
-        ],
-        "by": [
-          14,
-          222,
-          233
-        ],
-        "having": [
-          15
-        ],
-        "an": [
-          16
-        ],
-        "excellent": [
-          17
-        ],
-        "filtration": [
-          18,
-          49,
-          106,
-          145,
-          220
-        ],
-        "and": [
-          19,
-          28,
-          91,
-          115,
-          140,
-          161,
-          172,
-          224,
-          229,
-          235
-        ],
-        "filter": [
-          20,
-          125,
-          169,
-          214,
-          226,
-          256
-        ],
-        "cake": [
-          21,
-          61,
-          170,
-          227
-        ],
-        "properties.": [
-          22,
-          166
-        ],
-        "The": [
-          23,
-          67,
-          81,
-          105,
-          127,
-          167,
-          183
-        ],
-        "key": [
-          24
-        ],
-        "factor": [
-          25
-        ],
-        "for": [
-          26,
-          55,
-          63,
-          157
-        ],
-        "preventing": [
-          27
-        ],
-        "limiting": [
-          29
-        ],
-        "improve": [
-          34,
-          212
-        ],
-        "sealing": [
-          36,
-          65,
-          216
-        ],
-        "qualities": [
-          37
-        ],
-        "planned": [
-          40
-        ],
-        "fluid.": [
-          42
-        ],
-        "In": [
-          43,
-          205
-        ],
-        "this": [
-          44
-        ],
-        "study,": [
-          45
-        ],
-        "a": [
-          46,
-          116
-        ],
-        "new": [
-          47
-        ],
-        "novel": [
-          48
-        ],
-        "agent": [
-          50
-        ],
-        "called": [
-          51
-        ],
-        "“perlite”": [
-          52
-        ],
-        "was": [
-          53,
-          85,
-          95,
-          175,
-          190
-        ],
-        "introduced": [
-          54
-        ],
-        "improving": [
-          56
-        ],
-        "manganese": [
-          58,
-          76,
-          197
-        ],
-        "tetroxide": [
-          59,
-          77,
-          198
-        ],
-        "mud": [
-          60,
-          84
-        ],
-        "ability": [
-          62
-        ],
-        "better": [
-          64
-        ],
-        "features.": [
-          66
-        ],
-        "perlite": [
-          68,
-          153,
-          189,
-          245
-        ],
-        "particles": [
-          69,
-          246
-        ],
-        "were": [
-          70,
-          129
-        ],
-        "loaded": [
-          71
-        ],
-        "containing": [
-          74
-        ],
-        "as": [
-          78,
-          143,
-          155
-        ],
-        "weighting": [
-          79,
-          199
-        ],
-        "agent.": [
-          80
-        ],
-        "water-based": [
-          82
-        ],
-        "designed": [
-          86
-        ],
-        "at": [
-          87,
-          109
-        ],
-        "high": [
-          88,
-          141
-        ],
-        "densities": [
-          89
-        ],
-        "(14.25": [
-          90
-        ],
-        "17.2": [
-          92
-        ],
-        "ppg).": [
-          93
-        ],
-        "Perlite": [
-          94
-        ],
-        "added": [
-          96,
-          194
-        ],
-        "in": [
-          97,
-          201,
-          250
-        ],
-        "varied": [
-          98
-        ],
-        "concentrations": [
-          99
-        ],
-        "reach": [
-          101
-        ],
-        "optimum": [
-          103
-        ],
-        "performance.": [
-          104
-        ],
-        "test": [
-          107
-        ],
-        "conducted": [
-          108
-        ],
-        "reservoir": [
-          110
-        ],
-        "temperature": [
-          111
-        ],
-        "°F": [
-          114
-        ],
-        "differential": [
-          117
-        ],
-        "pressure": [
-          118
-        ],
-        "psi": [
-          121
-        ],
-        "form": [
-          123
-        ],
-        "cake.": [
-          126,
-          257
-        ],
-        "tests": [
-          128
-        ],
-        "performed": [
-          130
-        ],
-        "using": [
-          131,
-          177
-        ],
-        "sandstone": [
-          132
-        ],
-        "cores": [
-          133
-        ],
-        "with": [
-          134
-        ],
-        "two": [
-          135
-        ],
-        "different": [
-          136,
-          158
-        ],
-        "permeability": [
-          137,
-          232
-        ],
-        "categories": [
-          138
-        ],
-        "(low": [
-          139
-        ],
-        "permeabilities)": [
-          142
-        ],
-        "media.": [
-          146
-        ],
-        "This": [
-          147
-        ],
-        "gave": [
-          148
-        ],
-        "full": [
-          150
-        ],
-        "picture": [
-          151
-        ],
-        "performance": [
-          154
-        ],
-        "implemented": [
-          156
-        ],
-        "properties": [
-          160
-        ],
-        "considering": [
-          162
-        ],
-        "fluid": [
-          165
-        ],
-        "formed": [
-          168
-        ],
-        "structure": [
-          171
-        ],
-        "chemical": [
-          173
-        ],
-        "composition": [
-          174
-        ],
-        "evaluated": [
-          176
-        ],
-        "scanning": [
-          178
-        ],
-        "electron": [
-          179
-        ],
-        "energy-dispersive": [
-          180
-        ],
-        "X-ray": [
-          181
-        ],
-        "(SEM–EDS).": [
-          182
-        ],
-        "presented": [
-          184
-        ],
-        "results": [
-          185
-        ],
-        "illustrated": [
-          186
-        ],
-        "how": [
-          187
-        ],
-        "compatible": [
-          191
-        ],
-        "be": [
-          193
-        ],
-        "agents": [
-          200
-        ],
-        "same": [
-          203
-        ],
-        "formulation.": [
-          204
-        ],
-        "addition,": [
-          206
-        ],
-        "it": [
-          207
-        ],
-        "has": [
-          208
-        ],
-        "capacity": [
-          210
-        ],
-        "cake's": [
-          215
-        ],
-        "qualities,": [
-          217
-        ],
-        "lowering": [
-          218
-        ],
-        "volume": [
-          221
-        ],
-        "41%": [
-          223
-        ],
-        "internal": [
-          228,
-          252
-        ],
-        "external": [
-          230
-        ],
-        "layers": [
-          231
-        ],
-        "58%": [
-          234
-        ],
-        "25%,": [
-          236
-        ],
-        "respectively.": [
-          237
-        ],
-        "Moreover,": [
-          238
-        ],
-        "EDS": [
-          240
-        ],
-        "analysis": [
-          241
-        ],
-        "showed": [
-          242
-        ],
-        "that": [
-          243
-        ],
-        "are": [
-          247
-        ],
-        "concentrated": [
-          248
-        ],
-        "generally": [
-          249
-        ],
-        "layer": [
-          253
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2026,
@@ -8967,7 +8443,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-25T03:40:55.926884",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -10199,8 +9675,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -10898,8 +10374,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.4699999988079071
+          "score": 0.4699999988079071,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -17175,8 +16651,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure",
-          "score": 0.44999998807907104
+          "score": 0.44999998807907104,
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
@@ -21329,8 +20805,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.4399999976158142
+          "score": 0.4399999976158142,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -22445,8 +21921,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.4099999964237213
+          "score": 0.4099999964237213,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -23605,8 +23081,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.8299999833106995
+          "score": 0.8299999833106995,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -26355,8 +25831,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5400000214576721
+          "score": 0.5400000214576721,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -27308,8 +26784,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.47999998927116394
+          "score": 0.47999998927116394,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -27856,8 +27332,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.6100000143051147
+          "score": 0.6100000143051147,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -34183,8 +33659,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.5099999904632568
+          "score": 0.5099999904632568,
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -35247,8 +34723,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/5",
-          "display_name": "Gender equality",
-          "score": 0.5299999713897705
+          "score": 0.5299999713897705,
+          "display_name": "Gender equality"
         }
       ],
       "awards": [],
@@ -35879,8 +35355,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/2",
-          "display_name": "Zero hunger",
-          "score": 0.6100000143051147
+          "score": 0.6100000143051147,
+          "display_name": "Zero hunger"
         }
       ],
       "awards": [],
@@ -36445,8 +35921,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.5400000214576721
+          "score": 0.5400000214576721,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],

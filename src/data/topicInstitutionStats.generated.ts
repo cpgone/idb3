@@ -26,7 +26,7 @@ export const topicStats: TopicStats[] = [
     "id": "https://openalex.org/T10399",
     "name": "Hydrocarbon exploration and reservoir analysis",
     "publications": 1160,
-    "citations": 22073
+    "citations": 22074
   },
   {
     "id": "https://openalex.org/T10892",
@@ -50,7 +50,7 @@ export const topicStats: TopicStats[] = [
     "id": "https://openalex.org/T10271",
     "name": "Seismic Imaging and Inversion Techniques",
     "publications": 696,
-    "citations": 7115
+    "citations": 7116
   },
   {
     "id": "https://openalex.org/T11757",
@@ -170,7 +170,7 @@ export const topicStats: TopicStats[] = [
     "id": "https://openalex.org/T12603",
     "name": "NMR spectroscopy and applications",
     "publications": 129,
-    "citations": 2331
+    "citations": 2332
   },
   {
     "id": "https://openalex.org/T11588",
@@ -386,7 +386,7 @@ export const topicStats: TopicStats[] = [
     "id": "https://openalex.org/T10436",
     "name": "Anesthesia and Sedative Agents",
     "publications": 38,
-    "citations": 1615
+    "citations": 1616
   },
   {
     "id": "https://openalex.org/T10016",
@@ -680,7 +680,7 @@ export const topicStats: TopicStats[] = [
     "id": "https://openalex.org/T12963",
     "name": "Anesthesia and Neurotoxicity Research",
     "publications": 21,
-    "citations": 1018
+    "citations": 1019
   },
   {
     "id": "https://openalex.org/T10075",
@@ -710,7 +710,7 @@ export const topicStats: TopicStats[] = [
     "id": "https://openalex.org/T10830",
     "name": "Airway Management and Intubation Techniques",
     "publications": 20,
-    "citations": 481
+    "citations": 482
   },
   {
     "id": "https://openalex.org/T10139",
@@ -8633,7 +8633,7 @@ export const institutionStats: InstitutionStats[] = [
     "id": "https://openalex.org/I134085113",
     "name": "King Fahd University of Petroleum and Minerals",
     "publications": 3478,
-    "citations": 58177
+    "citations": 58178
   },
   {
     "id": "https://openalex.org/I71920554",
@@ -8741,7 +8741,7 @@ export const institutionStats: InstitutionStats[] = [
     "id": "https://openalex.org/I1285204247",
     "name": "Cincinnati Children's Hospital Medical Center",
     "publications": 69,
-    "citations": 2205
+    "citations": 2206
   },
   {
     "id": "https://openalex.org/I129604602",
@@ -9053,7 +9053,7 @@ export const institutionStats: InstitutionStats[] = [
     "id": "https://openalex.org/I126596746",
     "name": "Jagiellonian University",
     "publications": 21,
-    "citations": 527
+    "citations": 528
   },
   {
     "id": "https://openalex.org/I167576493",
@@ -9125,7 +9125,7 @@ export const institutionStats: InstitutionStats[] = [
     "id": "https://openalex.org/I4210128123",
     "name": "Instytut Nauk Geologicznych",
     "publications": 18,
-    "citations": 577
+    "citations": 578
   },
   {
     "id": "https://openalex.org/I154100212",
@@ -9479,7 +9479,7 @@ export const institutionStats: InstitutionStats[] = [
     "id": "https://openalex.org/I12834331",
     "name": "University of Wyoming",
     "publications": 11,
-    "citations": 372
+    "citations": 373
   },
   {
     "id": "https://openalex.org/I4210165038",

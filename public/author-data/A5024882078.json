@@ -182,7 +182,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.0001266,
+        "value": 0.0001265,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -267,28 +267,34 @@
     ],
     "x_concepts": [
       {
-        "id": "105795698",
-        "wikidata": "https://www.wikidata.org/wiki/Q12483",
-        "display_name": "Statistics",
-        "score": 0.2814648151397705
+        "id": "127313418",
+        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology",
+        "score": 0.7268179059028625
       },
       {
-        "id": "105569014",
-        "wikidata": "https://www.wikidata.org/wiki/Q3271208",
-        "display_name": "Porous medium",
-        "score": 0.20260536670684814
+        "id": "199289684",
+        "wikidata": "https://www.wikidata.org/wiki/Q83353",
+        "display_name": "Mineralogy",
+        "score": 0.6710717678070068
       },
       {
-        "id": "100701293",
-        "wikidata": "https://www.wikidata.org/wiki/Q193838",
-        "display_name": "Germination",
-        "score": 0
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.4641934633255005
       },
       {
-        "id": "109007969",
-        "wikidata": "https://www.wikidata.org/wiki/Q749565",
-        "display_name": "Structural basin",
-        "score": 0
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.4293188452720642
+      },
+      {
+        "id": "187320778",
+        "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+        "display_name": "Geotechnical engineering",
+        "score": 0.3303176164627075
       }
     ],
     "counts_by_year": [
@@ -345,7 +351,7 @@
     },
     "block_key": "h al-mukainah",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5024882078",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2020-07-10"
   },
   "works": [
@@ -1051,9 +1057,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.46000000834465027,
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.46000000834465027
         }
       ],
       "awards": [],
@@ -2979,9 +2985,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.4699999988079071,
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.4699999988079071
         }
       ],
       "awards": [],
@@ -3690,9 +3696,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.4399999976158142,
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],
@@ -4376,9 +4382,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6700000166893005,
-          "display_name": "Clean water and sanitation"
+          "score": 0.6700000166893005
         }
       ],
       "awards": [],
@@ -5215,9 +5221,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6399999856948853,
-          "display_name": "Clean water and sanitation"
+          "score": 0.6399999856948853
         }
       ],
       "awards": [],
@@ -6073,9 +6079,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.46000000834465027,
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.46000000834465027
         }
       ],
       "awards": [],
@@ -11624,9 +11630,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.4699999988079071,
-          "display_name": "Life in Land"
+          "score": 0.4699999988079071
         }
       ],
       "awards": [],
@@ -14250,9 +14256,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.4399999976158142,
-          "display_name": "Life in Land"
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],
@@ -14984,9 +14990,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.4399999976158142,
-          "display_name": "Life in Land"
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],

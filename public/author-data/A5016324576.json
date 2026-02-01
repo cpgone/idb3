@@ -217,10 +217,10 @@
     ],
     "x_concepts": [
       {
-        "id": "113324615",
-        "wikidata": "https://www.wikidata.org/wiki/Q472302",
-        "display_name": "Login",
-        "score": 0.6142758131027222
+        "id": "41008148",
+        "wikidata": "https://www.wikidata.org/wiki/Q21198",
+        "display_name": "Computer science",
+        "score": 0.6390523910522461
       },
       {
         "id": "105339364",
@@ -229,10 +229,10 @@
         "score": 0.4431779384613037
       },
       {
-        "id": "115903868",
-        "wikidata": "https://www.wikidata.org/wiki/Q80993",
-        "display_name": "Software engineering",
-        "score": 0.3620314598083496
+        "id": "77088390",
+        "wikidata": "https://www.wikidata.org/wiki/Q8513",
+        "display_name": "Database",
+        "score": 0.39376288652420044
       },
       {
         "id": "110354214",
@@ -241,10 +241,10 @@
         "score": 0.35366755723953247
       },
       {
-        "id": "111919701",
-        "wikidata": "https://www.wikidata.org/wiki/Q9135",
-        "display_name": "Operating system",
-        "score": 0.2833588421344757
+        "id": "127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+        "display_name": "Engineering",
+        "score": 0.264793336391449
       }
     ],
     "counts_by_year": [
@@ -271,7 +271,7 @@
     },
     "block_key": "s junaid",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5016324576",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -771,16 +771,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.550000011920929,
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.550000011920929
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -1991,8 +1991,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4402595925.pdf"

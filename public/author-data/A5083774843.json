@@ -13,9 +13,9 @@
       "Mahmoud. A. Abdulhamid"
     ],
     "works_count": 73,
-    "cited_by_count": 1587,
+    "cited_by_count": 1589,
     "summary_stats": {
-      "2yr_mean_citedness": 4.3428571428571425,
+      "2yr_mean_citedness": 4.371428571428571,
       "h_index": 23,
       "i10_index": 35
     },
@@ -219,7 +219,7 @@
       {
         "id": "https://openalex.org/T11362",
         "display_name": "Membrane Separation and Gas Transport",
-        "value": 0.0004123,
+        "value": 0.0004122,
         "subfield": {
           "id": "https://openalex.org/subfields/2210",
           "display_name": "Mechanical Engineering"
@@ -236,7 +236,7 @@
       {
         "id": "https://openalex.org/T12038",
         "display_name": "Covalent Organic Framework Applications",
-        "value": 0.0002028,
+        "value": 0.0002027,
         "subfield": {
           "id": "https://openalex.org/subfields/2505",
           "display_name": "Materials Chemistry"
@@ -287,7 +287,7 @@
       {
         "id": "https://openalex.org/T12074",
         "display_name": "Membrane-based Ion Separation Techniques",
-        "value": 0.0000726,
+        "value": 0.0000725,
         "subfield": {
           "id": "https://openalex.org/subfields/2204",
           "display_name": "Biomedical Engineering"
@@ -304,28 +304,34 @@
     ],
     "x_concepts": [
       {
-        "id": "103697071",
-        "wikidata": "https://www.wikidata.org/wiki/Q39558",
-        "display_name": "Gasoline",
-        "score": 0.5266925096511841
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.9214848279953003
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0.06084027886390686
+        "id": "42360764",
+        "wikidata": "https://www.wikidata.org/wiki/Q83588",
+        "display_name": "Chemical engineering",
+        "score": 0.7476348280906677
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0.05668187141418457
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.6874749064445496
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0
+        "id": "178790620",
+        "wikidata": "https://www.wikidata.org/wiki/Q11351",
+        "display_name": "Organic chemistry",
+        "score": 0.47300034761428833
+      },
+      {
+        "id": "127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+        "display_name": "Engineering",
+        "score": 0.3324035406112671
       }
     ],
     "counts_by_year": [
@@ -357,7 +363,7 @@
         "year": 2020,
         "works_count": 5,
         "oa_works_count": 5,
-        "cited_by_count": 328
+        "cited_by_count": 329
       },
       {
         "year": 2021,
@@ -387,7 +393,7 @@
         "year": 2025,
         "works_count": 9,
         "oa_works_count": 3,
-        "cited_by_count": 14
+        "cited_by_count": 15
       },
       {
         "year": 2026,
@@ -406,7 +412,7 @@
     },
     "block_key": "m abdulhamid",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5083774843",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2020-08-03"
   },
   "works": [
@@ -4847,9 +4853,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8899999856948853,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.8899999856948853
         }
       ],
       "awards": [],
@@ -6047,9 +6053,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4099999964237213,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.4099999964237213
         }
       ],
       "awards": [
@@ -8362,9 +8368,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8700000047683716,
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "score": 0.8700000047683716
         }
       ],
       "awards": [],
@@ -9986,9 +9992,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.6000000238418579,
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "score": 0.6000000238418579
         }
       ],
       "awards": [],
@@ -14231,9 +14237,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.8600000143051147,
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "score": 0.8600000143051147
         }
       ],
       "awards": [],
@@ -17485,9 +17491,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.5,
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.5
         }
       ],
       "awards": [
@@ -18989,9 +18995,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4399999976158142,
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.4399999976158142
         }
       ],
       "awards": [
@@ -19752,9 +19758,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.47999998927116394,
+          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "score": 0.47999998927116394
         }
       ],
       "awards": [],
@@ -22518,9 +22524,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5,
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.5
         }
       ],
       "awards": [
@@ -23074,9 +23080,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.44999998807907104,
+          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "score": 0.44999998807907104
         }
       ],
       "awards": [
@@ -24948,9 +24954,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5600000023841858,
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "score": 0.5600000023841858
         }
       ],
       "awards": [
@@ -25591,9 +25597,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.5
         }
       ],
       "awards": [],
@@ -26991,9 +26997,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4099999964237213,
+          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "score": 0.4099999964237213
         }
       ],
       "awards": [],
@@ -28731,9 +28737,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.6700000166893005,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.6700000166893005
         }
       ],
       "awards": [],
@@ -29840,9 +29846,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.4699999988079071,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.4699999988079071
         }
       ],
       "awards": [],
@@ -32618,7 +32624,7 @@
       "has_fulltext": false,
       "cited_by_count": 26,
       "citation_normalized_percentile": {
-        "value": 0.89494094,
+        "value": 0.89539062,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -32953,6 +32959,76 @@
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000098826",
+          "descriptor_name": "Bisphenol A Compounds",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000083",
+          "descriptor_name": "Acetanilides",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D017155",
+          "descriptor_name": "Wettability",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000327",
+          "descriptor_name": "Adsorption",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016062",
+          "descriptor_name": "Porosity",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011108",
+          "descriptor_name": "Polymers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D001559",
+          "descriptor_name": "Benzhydryl Compounds",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D007700",
+          "descriptor_name": "Kinetics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
         }
       ],
       "locations_count": 2,
@@ -33046,61 +33122,61 @@
       "content_urls": null,
       "referenced_works_count": 55,
       "referenced_works": [
-        "https://openalex.org/W2762743512",
-        "https://openalex.org/W2911698871",
-        "https://openalex.org/W2981099766",
-        "https://openalex.org/W3093639588",
-        "https://openalex.org/W6838823655",
-        "https://openalex.org/W2883478846",
-        "https://openalex.org/W2141681526",
-        "https://openalex.org/W2924526156",
-        "https://openalex.org/W2556065164",
-        "https://openalex.org/W2977135630",
-        "https://openalex.org/W6788824794",
-        "https://openalex.org/W2360141492",
-        "https://openalex.org/W4200162687",
-        "https://openalex.org/W2293657740",
-        "https://openalex.org/W2988796662",
-        "https://openalex.org/W3087895046",
-        "https://openalex.org/W4206480373",
-        "https://openalex.org/W2761431009",
-        "https://openalex.org/W2070933100",
-        "https://openalex.org/W2918073408",
-        "https://openalex.org/W2101605491",
-        "https://openalex.org/W2584388489",
-        "https://openalex.org/W2889366062",
-        "https://openalex.org/W2967758182",
-        "https://openalex.org/W2049668382",
-        "https://openalex.org/W6688024308",
         "https://openalex.org/W1986113254",
-        "https://openalex.org/W2473132187",
-        "https://openalex.org/W2964668107",
-        "https://openalex.org/W3138375187",
-        "https://openalex.org/W3094079904",
-        "https://openalex.org/W2911635359",
-        "https://openalex.org/W6782563138",
-        "https://openalex.org/W2754493017",
-        "https://openalex.org/W3137490054",
-        "https://openalex.org/W2253198468",
-        "https://openalex.org/W3095499507",
-        "https://openalex.org/W2888381335",
-        "https://openalex.org/W3106315669",
-        "https://openalex.org/W2721577149",
-        "https://openalex.org/W4287877633",
-        "https://openalex.org/W3002968041",
-        "https://openalex.org/W3084496879",
-        "https://openalex.org/W2884260998",
-        "https://openalex.org/W3082259339",
         "https://openalex.org/W2004805585",
+        "https://openalex.org/W2049668382",
+        "https://openalex.org/W2070933100",
+        "https://openalex.org/W2101605491",
+        "https://openalex.org/W2141681526",
+        "https://openalex.org/W2212997086",
+        "https://openalex.org/W2253198468",
+        "https://openalex.org/W2293657740",
         "https://openalex.org/W2318841192",
         "https://openalex.org/W2322098653",
+        "https://openalex.org/W2360141492",
+        "https://openalex.org/W2473132187",
+        "https://openalex.org/W2556065164",
+        "https://openalex.org/W2584388489",
+        "https://openalex.org/W2721577149",
+        "https://openalex.org/W2754493017",
+        "https://openalex.org/W2761431009",
+        "https://openalex.org/W2762743512",
+        "https://openalex.org/W2883478846",
+        "https://openalex.org/W2884260998",
+        "https://openalex.org/W2888381335",
+        "https://openalex.org/W2889366062",
         "https://openalex.org/W2903712533",
-        "https://openalex.org/W6800780374",
+        "https://openalex.org/W2911635359",
+        "https://openalex.org/W2911698871",
+        "https://openalex.org/W2918073408",
+        "https://openalex.org/W2924526156",
+        "https://openalex.org/W2964668107",
+        "https://openalex.org/W2967758182",
+        "https://openalex.org/W2977135630",
+        "https://openalex.org/W2981099766",
+        "https://openalex.org/W2988796662",
+        "https://openalex.org/W3002968041",
+        "https://openalex.org/W3082259339",
         "https://openalex.org/W3082788194",
+        "https://openalex.org/W3084496879",
+        "https://openalex.org/W3087895046",
+        "https://openalex.org/W3093639588",
+        "https://openalex.org/W3094079904",
+        "https://openalex.org/W3095499507",
+        "https://openalex.org/W3106315669",
         "https://openalex.org/W3123597704",
-        "https://openalex.org/W2212997086",
+        "https://openalex.org/W3137490054",
+        "https://openalex.org/W3138375187",
         "https://openalex.org/W3194573377",
-        "https://openalex.org/W4281746481"
+        "https://openalex.org/W4200162687",
+        "https://openalex.org/W4206480373",
+        "https://openalex.org/W4281746481",
+        "https://openalex.org/W4287877633",
+        "https://openalex.org/W6688024308",
+        "https://openalex.org/W6782563138",
+        "https://openalex.org/W6788824794",
+        "https://openalex.org/W6800780374",
+        "https://openalex.org/W6838823655"
       ],
       "related_works": [
         "https://openalex.org/W2748952813",
@@ -33129,7 +33205,7 @@
           "cited_by_count": 7
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2022-11-28T00:00:00"
     },
     {
@@ -35299,9 +35375,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.5799999833106995,
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "score": 0.5799999833106995
         }
       ],
       "awards": [
@@ -37595,9 +37671,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8899999856948853,
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "score": 0.8899999856948853
         }
       ],
       "awards": [],
@@ -38375,9 +38451,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.8500000238418579,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.8500000238418579
         }
       ],
       "awards": [
@@ -39296,9 +39372,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.8700000047683716,
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "score": 0.8700000047683716
         }
       ],
       "awards": [],
@@ -43589,9 +43665,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.7699999809265137,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.7699999809265137
         }
       ],
       "awards": [
@@ -44293,9 +44369,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.550000011920929,
+          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "score": 0.550000011920929
         }
       ],
       "awards": [],
@@ -49130,9 +49206,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.4099999964237213,
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.4099999964237213
         }
       ],
       "awards": [],
@@ -49777,9 +49853,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5699999928474426,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.5699999928474426
         }
       ],
       "awards": [
@@ -51591,9 +51667,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8299999833106995,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.8299999833106995
         }
       ],
       "awards": [],
@@ -57108,9 +57184,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.550000011920929,
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "score": 0.550000011920929
         }
       ],
       "awards": [],
@@ -57866,9 +57942,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.46000000834465027,
+          "display_name": "Sustainable cities and communities",
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities"
+          "score": 0.46000000834465027
         }
       ],
       "awards": [],
@@ -61209,9 +61285,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4727831780910492,
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "score": 0.4727831780910492
         }
       ],
       "awards": [],

@@ -161,7 +161,7 @@
       {
         "id": "https://openalex.org/T10491",
         "display_name": "Enhanced Oil Recovery Techniques",
-        "value": 0.0000466,
+        "value": 0.0000465,
         "subfield": {
           "id": "https://openalex.org/subfields/2212",
           "display_name": "Ocean Engineering"
@@ -246,28 +246,34 @@
     ],
     "x_concepts": [
       {
-        "id": "109007969",
-        "wikidata": "https://www.wikidata.org/wiki/Q749565",
-        "display_name": "Structural basin",
-        "score": 0.5290307998657227
+        "id": "200990466",
+        "wikidata": "https://www.wikidata.org/wiki/Q271707",
+        "display_name": "Rheology",
+        "score": 0.833873450756073
       },
       {
-        "id": "101433766",
-        "wikidata": "https://www.wikidata.org/wiki/Q3543263",
-        "display_name": "Maturity (psychological)",
-        "score": 0.49100902676582336
+        "id": "127313418",
+        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology",
+        "score": 0.725756049156189
       },
       {
-        "id": "105795698",
-        "wikidata": "https://www.wikidata.org/wiki/Q12483",
-        "display_name": "Statistics",
-        "score": 0.24661466479301453
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.5318509936332703
       },
       {
-        "id": "109007969",
-        "wikidata": "https://www.wikidata.org/wiki/Q749565",
-        "display_name": "Structural basin",
-        "score": 0.07827836275100708
+        "id": "159985019",
+        "wikidata": "https://www.wikidata.org/wiki/Q181790",
+        "display_name": "Composite material",
+        "score": 0.3383345603942871
+      },
+      {
+        "id": "127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+        "display_name": "Engineering",
+        "score": 0.10888174176216125
       }
     ],
     "counts_by_year": [
@@ -312,7 +318,7 @@
     },
     "block_key": "a othman",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5008925632",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2025-10-10"
   },
   "works": [

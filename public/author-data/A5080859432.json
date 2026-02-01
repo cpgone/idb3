@@ -210,7 +210,7 @@
       {
         "id": "https://openalex.org/T10491",
         "display_name": "Enhanced Oil Recovery Techniques",
-        "value": 0.0000067,
+        "value": 0.0000066,
         "subfield": {
           "id": "https://openalex.org/subfields/2212",
           "display_name": "Ocean Engineering"
@@ -244,34 +244,34 @@
     ],
     "x_concepts": [
       {
-        "id": "115537861",
-        "wikidata": "https://www.wikidata.org/wiki/Q7645993",
-        "display_name": "Surface modification",
-        "score": 0.7620395421981812
+        "id": "155011858",
+        "wikidata": "https://www.wikidata.org/wiki/Q3036449",
+        "display_name": "Perovskite (structure)",
+        "score": 0.6322710514068604
       },
       {
-        "id": "113196181",
-        "wikidata": "https://www.wikidata.org/wiki/Q485223",
-        "display_name": "Analytical Chemistry (journal)",
-        "score": 0.5271872282028198
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.4573788344860077
       },
       {
-        "id": "115624301",
-        "wikidata": "https://www.wikidata.org/wiki/Q895901",
-        "display_name": "Crystal structure",
-        "score": 0.3544047474861145
+        "id": "171250308",
+        "wikidata": "https://www.wikidata.org/wiki/Q11468",
+        "display_name": "Nanotechnology",
+        "score": 0.33936136960983276
       },
       {
-        "id": "107872376",
-        "wikidata": "https://www.wikidata.org/wiki/Q321355",
-        "display_name": "Environmental chemistry",
-        "score": 0.3331984877586365
+        "id": "178790620",
+        "wikidata": "https://www.wikidata.org/wiki/Q11351",
+        "display_name": "Organic chemistry",
+        "score": 0.24855291843414307
       },
       {
-        "id": "127313418",
-        "wikidata": "https://www.wikidata.org/wiki/Q1069",
-        "display_name": "Geology",
-        "score": 0.2402246594429016
+        "id": "161790260",
+        "wikidata": "https://www.wikidata.org/wiki/Q82264",
+        "display_name": "Catalysis",
+        "score": 0.13847383856773376
       }
     ],
     "counts_by_year": [
@@ -304,7 +304,7 @@
     },
     "block_key": "a al-otaibi",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5080859432",
-    "updated_date": "2026-01-29T04:20:28.980091",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -2324,9 +2324,9 @@
       },
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land",
           "score": 0.6399999856948853,
-          "display_name": "Life in Land"
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],

@@ -244,7 +244,7 @@
       {
         "id": "https://openalex.org/T10491",
         "display_name": "Enhanced Oil Recovery Techniques",
-        "value": 0.0000732,
+        "value": 0.0000731,
         "subfield": {
           "id": "https://openalex.org/subfields/2212",
           "display_name": "Ocean Engineering"
@@ -261,7 +261,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.0000691,
+        "value": 0.000069,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -312,28 +312,34 @@
     ],
     "x_concepts": [
       {
-        "id": "100402318",
-        "wikidata": "https://www.wikidata.org/wiki/Q864080",
-        "display_name": "Clathrate hydrate",
-        "score": 0.7404955625534058
+        "id": "127313418",
+        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology",
+        "score": 0.7243926525115967
       },
       {
-        "id": "100701293",
-        "wikidata": "https://www.wikidata.org/wiki/Q193838",
-        "display_name": "Germination",
-        "score": 0
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.6772555708885193
       },
       {
-        "id": "100701293",
-        "wikidata": "https://www.wikidata.org/wiki/Q193838",
-        "display_name": "Germination",
-        "score": 0
+        "id": "199289684",
+        "wikidata": "https://www.wikidata.org/wiki/Q83353",
+        "display_name": "Mineralogy",
+        "score": 0.5663188099861145
       },
       {
-        "id": "100701293",
-        "wikidata": "https://www.wikidata.org/wiki/Q193838",
-        "display_name": "Germination",
-        "score": 0
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.5058224201202393
+      },
+      {
+        "id": "159985019",
+        "wikidata": "https://www.wikidata.org/wiki/Q181790",
+        "display_name": "Composite material",
+        "score": 0.42524904012680054
       }
     ],
     "counts_by_year": [
@@ -414,7 +420,7 @@
     },
     "block_key": "h khan",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5046264836",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2021-01-05"
   },
   "works": [

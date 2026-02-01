@@ -401,7 +401,7 @@
       {
         "id": "https://openalex.org/T11948",
         "display_name": "Machine Learning in Materials Science",
-        "value": 0.0000553,
+        "value": 0.0000552,
         "subfield": {
           "id": "https://openalex.org/subfields/2505",
           "display_name": "Materials Chemistry"
@@ -418,7 +418,7 @@
       {
         "id": "https://openalex.org/T12612",
         "display_name": "Strong Light-Matter Interactions",
-        "value": 0.0000525,
+        "value": 0.0000524,
         "subfield": {
           "id": "https://openalex.org/subfields/3107",
           "display_name": "Atomic and Molecular Physics, and Optics"
@@ -452,28 +452,34 @@
     ],
     "x_concepts": [
       {
-        "id": "106487976",
-        "wikidata": "https://www.wikidata.org/wiki/Q685816",
-        "display_name": "Matrix (chemical analysis)",
-        "score": 0.33570000529289246
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.8714635372161865
       },
       {
-        "id": "106487976",
-        "wikidata": "https://www.wikidata.org/wiki/Q685816",
-        "display_name": "Matrix (chemical analysis)",
-        "score": 0.32019999623298645
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.8645120859146118
       },
       {
-        "id": "109663097",
-        "wikidata": "https://www.wikidata.org/wiki/Q182453",
-        "display_name": "Adiabatic process",
-        "score": 0.2840000092983246
+        "id": "121332964",
+        "wikidata": "https://www.wikidata.org/wiki/Q413",
+        "display_name": "Physics",
+        "score": 0.7282000184059143
       },
       {
-        "id": "107365816",
-        "wikidata": "https://www.wikidata.org/wiki/Q114817",
-        "display_name": "Surface roughness",
-        "score": 0.26109999418258667
+        "id": "33923547",
+        "wikidata": "https://www.wikidata.org/wiki/Q395",
+        "display_name": "Mathematics",
+        "score": 0.583299994468689
+      },
+      {
+        "id": "62520636",
+        "wikidata": "https://www.wikidata.org/wiki/Q944",
+        "display_name": "Quantum mechanics",
+        "score": 0.4737454354763031
       }
     ],
     "counts_by_year": [
@@ -554,7 +560,7 @@
     },
     "block_key": "c tantardini",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5022893471",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2017-10-06"
   },
   "works": [
@@ -4623,8 +4629,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Peace, Justice and strong institutions",
-          "score": 0.6800000071525574,
-          "id": "https://metadata.un.org/sdg/16"
+          "id": "https://metadata.un.org/sdg/16",
+          "score": 0.6800000071525574
         }
       ],
       "awards": [
@@ -5589,8 +5595,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Affordable and clean energy",
-          "score": 0.4699999988079071,
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.4699999988079071
         }
       ],
       "awards": [
@@ -8613,8 +8619,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Industry, innovation and infrastructure",
-          "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/9"
+          "id": "https://metadata.un.org/sdg/9",
+          "score": 0.4300000071525574
         }
       ],
       "awards": [
@@ -10201,8 +10207,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Peace, Justice and strong institutions",
-          "score": 0.6499999761581421,
-          "id": "https://metadata.un.org/sdg/16"
+          "id": "https://metadata.un.org/sdg/16",
+          "score": 0.6499999761581421
         }
       ],
       "awards": [],
@@ -13413,8 +13419,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Sustainable cities and communities",
-          "score": 0.5099999904632568,
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "score": 0.5099999904632568
         }
       ],
       "awards": [],
@@ -18721,8 +18727,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Climate action",
-          "score": 0.6700000166893005,
-          "id": "https://metadata.un.org/sdg/13"
+          "id": "https://metadata.un.org/sdg/13",
+          "score": 0.6700000166893005
         }
       ],
       "awards": [
@@ -20481,8 +20487,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Affordable and clean energy",
-          "score": 0.5799999833106995,
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.5799999833106995
         }
       ],
       "awards": [],
@@ -21727,8 +21733,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Clean water and sanitation",
-          "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.4300000071525574
         }
       ],
       "awards": [],
@@ -26896,8 +26902,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Affordable and clean energy",
-          "score": 0.7900000214576721,
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.7900000214576721
         }
       ],
       "awards": [
@@ -28401,8 +28407,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Affordable and clean energy",
-          "score": 0.6000000238418579,
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.6000000238418579
         }
       ],
       "awards": [
@@ -29083,8 +29089,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Life in Land",
-          "score": 0.4399999976158142,
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],
@@ -30833,8 +30839,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Zero hunger",
-          "score": 0.5199999809265137,
-          "id": "https://metadata.un.org/sdg/2"
+          "id": "https://metadata.un.org/sdg/2",
+          "score": 0.5199999809265137
         }
       ],
       "awards": [],
@@ -32874,8 +32880,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Life in Land",
-          "score": 0.5199999809265137,
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "score": 0.5199999809265137
         }
       ],
       "awards": [
@@ -35564,8 +35570,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Affordable and clean energy",
-          "score": 0.6100000143051147,
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.6100000143051147
         }
       ],
       "awards": [],
@@ -38116,8 +38122,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Life in Land",
-          "score": 0.46000000834465027,
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "score": 0.46000000834465027
         }
       ],
       "awards": [],
@@ -39459,8 +39465,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Partnerships for the goals",
-          "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/17"
+          "id": "https://metadata.un.org/sdg/17",
+          "score": 0.4300000071525574
         }
       ],
       "awards": [],
@@ -42631,8 +42637,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Climate action",
-          "score": 0.7599999904632568,
-          "id": "https://metadata.un.org/sdg/13"
+          "id": "https://metadata.un.org/sdg/13",
+          "score": 0.7599999904632568
         }
       ],
       "awards": [
@@ -44603,8 +44609,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Clean water and sanitation",
-          "score": 0.4399999976158142,
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.4399999976158142
         }
       ],
       "awards": [
@@ -45171,10 +45177,10 @@
         "crossref"
       ],
       "open_access": {
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "any_repository_has_fulltext": false
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://hdl.handle.net/2078.1/309522",
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -45467,7 +45473,7 @@
       "has_fulltext": false,
       "cited_by_count": 1,
       "citation_normalized_percentile": {
-        "value": 0.87547326,
+        "value": 0.86767032,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -45557,7 +45563,7 @@
       "keywords": [],
       "concepts": [],
       "mesh": [],
-      "locations_count": 1,
+      "locations_count": 2,
       "locations": [
         {
           "id": "doi:10.1103/c7w9-7tgy",
@@ -45593,9 +45599,66 @@
           "is_published": true,
           "raw_source_name": "Physical Review B",
           "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:dial.uclouvain.be:boreal:309522",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/2078.1/309522",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400166",
+            "display_name": "Digital Access to Libraries",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2800384882",
+            "host_organization_name": "Harris County Public Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2800384882"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Charge density waves and structural phase transition in the high-𝑇𝑐 superconducting LaH10 quantum crystal, Vol. 112, no.115154, p. - (2025)",
+          "raw_type": "info:eu-repo/semantics/article"
         }
       ],
-      "best_oa_location": null,
+      "best_oa_location": {
+        "id": "pmh:oai:dial.uclouvain.be:boreal:309522",
+        "is_oa": true,
+        "landing_page_url": "http://hdl.handle.net/2078.1/309522",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400166",
+          "display_name": "Digital Access to Libraries",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2800384882",
+          "host_organization_name": "Harris County Public Library",
+          "host_organization_lineage": [
+            "https://openalex.org/I2800384882"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "Charge density waves and structural phase transition in the high-𝑇𝑐 superconducting LaH10 quantum crystal, Vol. 112, no.115154, p. - (2025)",
+        "raw_type": "info:eu-repo/semantics/article"
+      },
       "sustainable_development_goals": [],
       "awards": [],
       "funders": [],
@@ -45606,108 +45669,711 @@
       "content_urls": null,
       "referenced_works_count": 92,
       "referenced_works": [
-        "https://openalex.org/W2088127449",
-        "https://openalex.org/W2007245521",
-        "https://openalex.org/W2150537978",
-        "https://openalex.org/W2091286255",
-        "https://openalex.org/W1990394798",
-        "https://openalex.org/W1979344968",
-        "https://openalex.org/W2025989054",
-        "https://openalex.org/W2041693709",
-        "https://openalex.org/W2029110872",
-        "https://openalex.org/W2061453969",
-        "https://openalex.org/W1990525425",
-        "https://openalex.org/W2079480403",
-        "https://openalex.org/W2060009331",
-        "https://openalex.org/W2112784946",
-        "https://openalex.org/W3035402868",
-        "https://openalex.org/W2149208519",
-        "https://openalex.org/W1979030011",
-        "https://openalex.org/W2139296424",
-        "https://openalex.org/W2944249316",
-        "https://openalex.org/W1985738709",
-        "https://openalex.org/W2096343998",
-        "https://openalex.org/W2059168119",
-        "https://openalex.org/W2011461357",
-        "https://openalex.org/W4210687216",
-        "https://openalex.org/W2049355855",
-        "https://openalex.org/W3096341726",
-        "https://openalex.org/W2333103295",
-        "https://openalex.org/W4393317994",
-        "https://openalex.org/W1967379174",
-        "https://openalex.org/W2073008374",
-        "https://openalex.org/W2681350253",
-        "https://openalex.org/W2770282247",
-        "https://openalex.org/W2893016756",
-        "https://openalex.org/W2888364746",
-        "https://openalex.org/W2902694017",
-        "https://openalex.org/W3005295643",
-        "https://openalex.org/W3090256502",
-        "https://openalex.org/W3211864691",
-        "https://openalex.org/W4221038717",
-        "https://openalex.org/W4292113986",
-        "https://openalex.org/W4412395782",
-        "https://openalex.org/W2081110089",
-        "https://openalex.org/W2046347461",
-        "https://openalex.org/W2145958380",
-        "https://openalex.org/W2049246502",
-        "https://openalex.org/W1971317695",
-        "https://openalex.org/W2085380645",
-        "https://openalex.org/W2333148966",
-        "https://openalex.org/W3018473244",
-        "https://openalex.org/W1981816361",
-        "https://openalex.org/W3137948730",
-        "https://openalex.org/W4390908342",
-        "https://openalex.org/W2912851941",
-        "https://openalex.org/W4361270011",
-        "https://openalex.org/W4399519643",
-        "https://openalex.org/W1996810231",
-        "https://openalex.org/W3197596617",
-        "https://openalex.org/W4393222192",
-        "https://openalex.org/W3137059235",
-        "https://openalex.org/W4391347866",
-        "https://openalex.org/W2068813560",
-        "https://openalex.org/W2310390902",
-        "https://openalex.org/W4388166534",
-        "https://openalex.org/W2341951168",
-        "https://openalex.org/W2984866711",
-        "https://openalex.org/W3013517846",
-        "https://openalex.org/W1981368803",
-        "https://openalex.org/W2767044503",
-        "https://openalex.org/W2103111465",
-        "https://openalex.org/W2038210983",
-        "https://openalex.org/W2005136695",
-        "https://openalex.org/W2067328332",
-        "https://openalex.org/W2078330402",
-        "https://openalex.org/W1981495252",
-        "https://openalex.org/W2068994203",
-        "https://openalex.org/W1964364437",
-        "https://openalex.org/W4387700530",
-        "https://openalex.org/W4406527545",
-        "https://openalex.org/W2030330123",
-        "https://openalex.org/W2646305923",
-        "https://openalex.org/W2095374362",
-        "https://openalex.org/W2080254914",
-        "https://openalex.org/W2166198169",
-        "https://openalex.org/W2106476248",
-        "https://openalex.org/W2015421649",
-        "https://openalex.org/W4388451495",
-        "https://openalex.org/W3129982783",
+        "https://openalex.org/W162457275",
         "https://openalex.org/W1577886998",
-        "https://openalex.org/W4237753401",
-        "https://openalex.org/W3160748780",
+        "https://openalex.org/W1964364437",
+        "https://openalex.org/W1967379174",
+        "https://openalex.org/W1971317695",
+        "https://openalex.org/W1979030011",
+        "https://openalex.org/W1979344968",
+        "https://openalex.org/W1981368803",
+        "https://openalex.org/W1981495252",
+        "https://openalex.org/W1981816361",
+        "https://openalex.org/W1985738709",
+        "https://openalex.org/W1990394798",
+        "https://openalex.org/W1990525425",
+        "https://openalex.org/W1996810231",
+        "https://openalex.org/W2005136695",
+        "https://openalex.org/W2007245521",
+        "https://openalex.org/W2011461357",
+        "https://openalex.org/W2015421649",
+        "https://openalex.org/W2025989054",
+        "https://openalex.org/W2029110872",
+        "https://openalex.org/W2030330123",
+        "https://openalex.org/W2038210983",
+        "https://openalex.org/W2041693709",
+        "https://openalex.org/W2046347461",
+        "https://openalex.org/W2049246502",
+        "https://openalex.org/W2049355855",
+        "https://openalex.org/W2059168119",
+        "https://openalex.org/W2060009331",
+        "https://openalex.org/W2061453969",
+        "https://openalex.org/W2067328332",
+        "https://openalex.org/W2068813560",
+        "https://openalex.org/W2068994203",
+        "https://openalex.org/W2073008374",
+        "https://openalex.org/W2078330402",
+        "https://openalex.org/W2079480403",
+        "https://openalex.org/W2080254914",
+        "https://openalex.org/W2081110089",
+        "https://openalex.org/W2085380645",
+        "https://openalex.org/W2088127449",
+        "https://openalex.org/W2091286255",
+        "https://openalex.org/W2095374362",
+        "https://openalex.org/W2096343998",
+        "https://openalex.org/W2103111465",
+        "https://openalex.org/W2106476248",
+        "https://openalex.org/W2112784946",
+        "https://openalex.org/W2139296424",
+        "https://openalex.org/W2145958380",
+        "https://openalex.org/W2149208519",
+        "https://openalex.org/W2150537978",
+        "https://openalex.org/W2166198169",
+        "https://openalex.org/W2310390902",
+        "https://openalex.org/W2333103295",
+        "https://openalex.org/W2333148966",
+        "https://openalex.org/W2341951168",
+        "https://openalex.org/W2646305923",
+        "https://openalex.org/W2681350253",
+        "https://openalex.org/W2767044503",
+        "https://openalex.org/W2770282247",
+        "https://openalex.org/W2888364746",
+        "https://openalex.org/W2893016756",
+        "https://openalex.org/W2902694017",
+        "https://openalex.org/W2912851941",
+        "https://openalex.org/W2944249316",
+        "https://openalex.org/W2984866711",
+        "https://openalex.org/W3005295643",
+        "https://openalex.org/W3013517846",
+        "https://openalex.org/W3018473244",
+        "https://openalex.org/W3035402868",
+        "https://openalex.org/W3090256502",
+        "https://openalex.org/W3096341726",
         "https://openalex.org/W3103566548",
-        "https://openalex.org/W162457275"
+        "https://openalex.org/W3129982783",
+        "https://openalex.org/W3137059235",
+        "https://openalex.org/W3137948730",
+        "https://openalex.org/W3160748780",
+        "https://openalex.org/W3197596617",
+        "https://openalex.org/W3211864691",
+        "https://openalex.org/W4210687216",
+        "https://openalex.org/W4221038717",
+        "https://openalex.org/W4237753401",
+        "https://openalex.org/W4292113986",
+        "https://openalex.org/W4361270011",
+        "https://openalex.org/W4387700530",
+        "https://openalex.org/W4388166534",
+        "https://openalex.org/W4388451495",
+        "https://openalex.org/W4390908342",
+        "https://openalex.org/W4391347866",
+        "https://openalex.org/W4393222192",
+        "https://openalex.org/W4393317994",
+        "https://openalex.org/W4399519643",
+        "https://openalex.org/W4406527545",
+        "https://openalex.org/W4412395782"
       ],
       "related_works": [],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "0": [
+          85
+        ],
+        "200": [
+          58
+        ],
+        "260": [
+          46
+        ],
+        "Second-order": [
+          0
+        ],
+        "phase": [
+          1,
+          25,
+          54,
+          153,
+          159
+        ],
+        "transitions": [
+          2
+        ],
+        "in": [
+          3,
+          19,
+          31,
+          74,
+          113,
+          161,
+          254
+        ],
+        "metals": [
+          4
+        ],
+        "are": [
+          5,
+          65,
+          132
+        ],
+        "a": [
+          6,
+          24,
+          34,
+          188
+        ],
+        "longstanding": [
+          7
+        ],
+        "question,": [
+          8
+        ],
+        "often": [
+          9,
+          148
+        ],
+        "linked": [
+          10
+        ],
+        "to": [
+          11,
+          45,
+          84,
+          109,
+          165,
+          168,
+          228
+        ],
+        "charge-density": [
+          12
+        ],
+        "waves,": [
+          13
+        ],
+        "Peierls": [
+          14
+        ],
+        "distortions,": [
+          15
+        ],
+        "or": [
+          16,
+          135
+        ],
+        "Kohn": [
+          17
+        ],
+        "anomalies": [
+          18
+        ],
+        "the": [
+          20,
+          71,
+          81,
+          88,
+          92,
+          110,
+          114,
+          144,
+          169,
+          185,
+          192,
+          195,
+          199,
+          204,
+          207,
+          212,
+          216,
+          220,
+          226,
+          229,
+          234,
+          239,
+          251,
+          255
+        ],
+        "phonon": [
+          21,
+          89,
+          117,
+          213,
+          221,
+          231
+        ],
+        "spectrum.": [
+          22
+        ],
+        "Such": [
+          23
+        ],
+        "transition": [
+          26,
+          160
+        ],
+        "has": [
+          27,
+          50
+        ],
+        "recently": [
+          28
+        ],
+        "been": [
+          29
+        ],
+        "observed": [
+          30,
+          172
+        ],
+        "cubic": [
+          32
+        ],
+        "LaH10,": [
+          33
+        ],
+        "material": [
+          35,
+          76
+        ],
+        "that": [
+          36,
+          52,
+          259
+        ],
+        "exhibits": [
+          37
+        ],
+        "superconductivity": [
+          38
+        ],
+        "with": [
+          39,
+          262
+        ],
+        "exceptionally": [
+          40
+        ],
+        "high": [
+          41
+        ],
+        "critical": [
+          42
+        ],
+        "temperature": [
+          43,
+          83,
+          217,
+          263
+        ],
+        "up": [
+          44
+        ],
+        "K.": [
+          47
+        ],
+        "Previous": [
+          48
+        ],
+        "work": [
+          49
+        ],
+        "shown": [
+          51
+        ],
+        "this": [
+          53,
+          75
+        ],
+        "is": [
+          55,
+          128,
+          163,
+          264
+        ],
+        "unstable": [
+          56
+        ],
+        "below": [
+          57
+        ],
+        "GPa": [
+          59
+        ],
+        "if": [
+          60
+        ],
+        "quantum": [
+          61
+        ],
+        "effects": [
+          62
+        ],
+        "and": [
+          63,
+          100,
+          180,
+          194,
+          201,
+          215
+        ],
+        "anharmonicity": [
+          64
+        ],
+        "not": [
+          66
+        ],
+        "present.": [
+          67
+        ],
+        "Here,": [
+          68
+        ],
+        "we": [
+          69,
+          197,
+          224
+        ],
+        "study": [
+          70
+        ],
+        "instabilities": [
+          72
+        ],
+        "occurring": [
+          73
+        ],
+        "at": [
+          77,
+          122
+        ],
+        "such": [
+          78,
+          151
+        ],
+        "pressures.": [
+          79
+        ],
+        "Lowering": [
+          80
+        ],
+        "electronic": [
+          82,
+          115,
+          236
+        ],
+        "K": [
+          86
+        ],
+        "softens": [
+          87
+        ],
+        "branches": [
+          90
+        ],
+        "along": [
+          91
+        ],
+        "Γ": [
+          93,
+          97
+        ],
+        "−𝑋,": [
+          94
+        ],
+        "𝐾": [
+          95
+        ],
+        "−Γ,": [
+          96
+        ],
+        "−𝐿": [
+          98,
+          102
+        ],
+        "−𝑈,": [
+          99
+        ],
+        "𝑊": [
+          101
+        ],
+        "−𝐾": [
+          103
+        ],
+        "directions.": [
+          104
+        ],
+        "We": [
+          105
+        ],
+        "relate": [
+          106
+        ],
+        "these": [
+          107
+        ],
+        "softenings": [
+          108
+        ],
+        "linewidths": [
+          111
+        ],
+        "predicted": [
+          112
+        ],
+        "high-temperature": [
+          116
+        ],
+        "band": [
+          118,
+          261
+        ],
+        "structure": [
+          119
+        ],
+        "of": [
+          120,
+          187,
+          219,
+          242,
+          258
+        ],
+        "LaH10": [
+          121,
+          162
+        ],
+        "specific": [
+          123,
+          245,
+          260
+        ],
+        "wave": [
+          124,
+          140
+        ],
+        "vectors.": [
+          125,
+          141
+        ],
+        "The": [
+          126,
+          158
+        ],
+        "correspondence": [
+          127
+        ],
+        "striking:": [
+          129
+        ],
+        "both": [
+          130
+        ],
+        "functions": [
+          131
+        ],
+        "either": [
+          133
+        ],
+        "large": [
+          134
+        ],
+        "small": [
+          136
+        ],
+        "for": [
+          137,
+          150,
+          173
+        ],
+        "all": [
+          138
+        ],
+        "investigated": [
+          139
+        ],
+        "In": [
+          142
+        ],
+        "contrast,": [
+          143
+        ],
+        "Fermi": [
+          145,
+          208,
+          240
+        ],
+        "nesting": [
+          146,
+          210
+        ],
+        "function,": [
+          147,
+          211
+        ],
+        "invoked": [
+          149
+        ],
+        "structural": [
+          152
+        ],
+        "transitions,": [
+          154
+        ],
+        "provides": [
+          155
+        ],
+        "little": [
+          156
+        ],
+        "insight.": [
+          157
+        ],
+        "found": [
+          164
+        ],
+        "be": [
+          166
+        ],
+        "similar": [
+          167
+        ],
+        "one": [
+          170
+        ],
+        "previously": [
+          171
+        ],
+        "paradigmatic": [
+          174
+        ],
+        "charge-density-wave": [
+          175
+        ],
+        "materials,": [
+          176
+        ],
+        "2⁢𝐻": [
+          177
+        ],
+        "−NbSe2,": [
+          178
+        ],
+        "TaTe4,": [
+          179
+        ],
+        "1⁢𝑇": [
+          181
+        ],
+        "−VSe2.": [
+          182
+        ],
+        "Going": [
+          183
+        ],
+        "beyond": [
+          184
+        ],
+        "observation": [
+          186
+        ],
+        "simple": [
+          189
+        ],
+        "coincidence": [
+          190
+        ],
+        "between": [
+          191,
+          203
+        ],
+        "softening": [
+          193
+        ],
+        "linewidth,": [
+          196,
+          214
+        ],
+        "highlight": [
+          198
+        ],
+        "similarities": [
+          200
+        ],
+        "differences": [
+          202
+        ],
+        "equations": [
+          205
+        ],
+        "describing": [
+          206
+        ],
+        "surface": [
+          209,
+          241
+        ],
+        "dependence": [
+          218
+        ],
+        "frequencies.": [
+          222
+        ],
+        "Furthermore,": [
+          223
+        ],
+        "analyze": [
+          225
+        ],
+        "contributions": [
+          227
+        ],
+        "calculated": [
+          230
+        ],
+        "linewidth": [
+          232
+        ],
+        "from": [
+          233
+        ],
+        "four": [
+          235
+        ],
+        "bands": [
+          237
+        ],
+        "crossing": [
+          238
+        ],
+        "LaH10.": [
+          243
+        ],
+        "One": [
+          244
+        ],
+        "intra-band": [
+          246
+        ],
+        "contribution": [
+          247
+        ],
+        "clearly": [
+          248
+        ],
+        "dominates.": [
+          249
+        ],
+        "However,": [
+          250
+        ],
+        "corresponding": [
+          252
+        ],
+        "variation": [
+          253
+        ],
+        "charge": [
+          256
+        ],
+        "density": [
+          257
+        ],
+        "negligible.": [
+          265
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2025,
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -46318,8 +46984,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Clean water and sanitation",
-          "score": 0.7099999785423279,
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.7099999785423279
         }
       ],
       "awards": [
@@ -55031,8 +55697,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Industry, innovation and infrastructure",
-          "score": 0.5400000214576721,
-          "id": "https://metadata.un.org/sdg/9"
+          "id": "https://metadata.un.org/sdg/9",
+          "score": 0.5400000214576721
         }
       ],
       "awards": [],
@@ -57212,8 +57878,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Life in Land",
-          "score": 0.4099999964237213,
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "score": 0.4099999964237213
         }
       ],
       "awards": [],
@@ -59552,8 +60218,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Climate action",
-          "score": 0.7400000095367432,
-          "id": "https://metadata.un.org/sdg/13"
+          "id": "https://metadata.un.org/sdg/13",
+          "score": 0.7400000095367432
         }
       ],
       "awards": [],
@@ -64999,8 +65665,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Life in Land",
-          "score": 0.5199999809265137,
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "score": 0.5199999809265137
         }
       ],
       "awards": [],
@@ -72419,8 +73085,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Clean water and sanitation",
-          "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.4300000071525574
         }
       ],
       "awards": [],
@@ -73072,8 +73738,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Affordable and clean energy",
-          "score": 0.6499999761581421,
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.6499999761581421
         }
       ],
       "awards": [],
@@ -73155,10 +73821,10 @@
         "pubmed"
       ],
       "open_access": {
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "any_repository_has_fulltext": false
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://hdl.handle.net/2078.1/309514",
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -73588,7 +74254,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.22786896,
+        "value": 0.2167613,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -73809,7 +74475,7 @@
         }
       ],
       "mesh": [],
-      "locations_count": 3,
+      "locations_count": 4,
       "locations": [
         {
           "id": "doi:10.1021/acsnano.5c05027",
@@ -73875,6 +74541,35 @@
           "raw_type": null
         },
         {
+          "id": "pmh:oai:dial.uclouvain.be:boreal:309514",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/2078.1/309514",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400166",
+            "display_name": "Digital Access to Libraries",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2800384882",
+            "host_organization_name": "Harris County Public Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2800384882"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "ACS Nano, Vol. 19, no.29, p. 26562-26571 (2025)",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
           "id": "pmh:oai:iris.unica.it:11584/450146",
           "is_oa": false,
           "landing_page_url": "https://hdl.handle.net/11584/450146",
@@ -73904,29 +74599,43 @@
           "raw_type": "info:eu-repo/semantics/article"
         }
       ],
-      "best_oa_location": null,
+      "best_oa_location": {
+        "id": "pmh:oai:dial.uclouvain.be:boreal:309514",
+        "is_oa": true,
+        "landing_page_url": "http://hdl.handle.net/2078.1/309514",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400166",
+          "display_name": "Digital Access to Libraries",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I2800384882",
+          "host_organization_name": "Harris County Public Library",
+          "host_organization_lineage": [
+            "https://openalex.org/I2800384882"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": "ACS Nano, Vol. 19, no.29, p. 26562-26571 (2025)",
+        "raw_type": "info:eu-repo/semantics/article"
+      },
       "sustainable_development_goals": [],
       "awards": [
-        {
-          "id": "https://openalex.org/G7538426262",
-          "display_name": null,
-          "funder_award_id": "F53D23008340001",
-          "funder_id": "https://openalex.org/F4320331528",
-          "funder_display_name": "Ministero dell'Università e della Ricerca"
-        },
         {
           "id": "https://openalex.org/G2715529029",
           "display_name": null,
           "funder_award_id": "T.0103.19",
           "funder_id": "https://openalex.org/F4320321390",
           "funder_display_name": "Fonds De La Recherche Scientifique - FNRS"
-        },
-        {
-          "id": "https://openalex.org/G5353257061",
-          "display_name": null,
-          "funder_award_id": "F53D23001080006",
-          "funder_id": "https://openalex.org/F4320331528",
-          "funder_display_name": "Ministero dell'Università e della Ricerca"
         },
         {
           "id": "https://openalex.org/G2932661782",
@@ -73941,6 +74650,20 @@
           "funder_award_id": "560400077525",
           "funder_id": "https://openalex.org/F4320321390",
           "funder_display_name": "Fonds De La Recherche Scientifique - FNRS"
+        },
+        {
+          "id": "https://openalex.org/G5353257061",
+          "display_name": null,
+          "funder_award_id": "F53D23001080006",
+          "funder_id": "https://openalex.org/F4320331528",
+          "funder_display_name": "Ministero dell'Università e della Ricerca"
+        },
+        {
+          "id": "https://openalex.org/G7538426262",
+          "display_name": null,
+          "funder_award_id": "F53D23008340001",
+          "funder_id": "https://openalex.org/F4320331528",
+          "funder_display_name": "Ministero dell'Università e della Ricerca"
         }
       ],
       "funders": [
@@ -73967,116 +74690,116 @@
       "content_urls": null,
       "referenced_works_count": 110,
       "referenced_works": [
-        "https://openalex.org/W2124667203",
-        "https://openalex.org/W1994025710",
-        "https://openalex.org/W2435994738",
-        "https://openalex.org/W2006462572",
-        "https://openalex.org/W2696986535",
-        "https://openalex.org/W2087044232",
-        "https://openalex.org/W2038648563",
-        "https://openalex.org/W2045788298",
-        "https://openalex.org/W2078908639",
-        "https://openalex.org/W2001070863",
-        "https://openalex.org/W2074785712",
-        "https://openalex.org/W2799753869",
-        "https://openalex.org/W2883836825",
-        "https://openalex.org/W2017555853",
-        "https://openalex.org/W4200394169",
-        "https://openalex.org/W2029158524",
-        "https://openalex.org/W2020106708",
-        "https://openalex.org/W2071905277",
-        "https://openalex.org/W1972715457",
-        "https://openalex.org/W1971278064",
-        "https://openalex.org/W2065105853",
-        "https://openalex.org/W1991686672",
-        "https://openalex.org/W2060065338",
+        "https://openalex.org/W54110651",
         "https://openalex.org/W950545778",
-        "https://openalex.org/W2836979891",
-        "https://openalex.org/W3096067749",
-        "https://openalex.org/W4401094661",
-        "https://openalex.org/W2908506573",
-        "https://openalex.org/W4282561512",
-        "https://openalex.org/W3022329226",
-        "https://openalex.org/W3036670858",
+        "https://openalex.org/W1669359668",
+        "https://openalex.org/W1858384429",
+        "https://openalex.org/W1864507840",
+        "https://openalex.org/W1886859895",
+        "https://openalex.org/W1924841494",
+        "https://openalex.org/W1964670943",
         "https://openalex.org/W1967386705",
-        "https://openalex.org/W2914340838",
-        "https://openalex.org/W4380422115",
-        "https://openalex.org/W3011088795",
-        "https://openalex.org/W3214911168",
-        "https://openalex.org/W4401998787",
-        "https://openalex.org/W4401019443",
-        "https://openalex.org/W2042473487",
-        "https://openalex.org/W2739111990",
+        "https://openalex.org/W1971278064",
+        "https://openalex.org/W1972715457",
+        "https://openalex.org/W1981111904",
+        "https://openalex.org/W1981368803",
+        "https://openalex.org/W1981495252",
         "https://openalex.org/W1986583880",
-        "https://openalex.org/W2118492507",
-        "https://openalex.org/W2208339862",
-        "https://openalex.org/W2513028852",
-        "https://openalex.org/W2341694669",
+        "https://openalex.org/W1991686672",
+        "https://openalex.org/W1994025710",
+        "https://openalex.org/W1994053391",
+        "https://openalex.org/W2001070863",
+        "https://openalex.org/W2003434628",
+        "https://openalex.org/W2005136695",
+        "https://openalex.org/W2006462572",
+        "https://openalex.org/W2012986644",
+        "https://openalex.org/W2014217311",
+        "https://openalex.org/W2017555853",
+        "https://openalex.org/W2020106708",
+        "https://openalex.org/W2022085321",
+        "https://openalex.org/W2024495825",
+        "https://openalex.org/W2029158524",
+        "https://openalex.org/W2030330123",
+        "https://openalex.org/W2031028572",
+        "https://openalex.org/W2033228961",
+        "https://openalex.org/W2038210983",
+        "https://openalex.org/W2038648563",
+        "https://openalex.org/W2042473487",
+        "https://openalex.org/W2045788298",
+        "https://openalex.org/W2048140462",
+        "https://openalex.org/W2048176436",
+        "https://openalex.org/W2048266752",
+        "https://openalex.org/W2050170853",
+        "https://openalex.org/W2051469879",
+        "https://openalex.org/W2060065338",
+        "https://openalex.org/W2060848544",
+        "https://openalex.org/W2065105853",
+        "https://openalex.org/W2068994203",
+        "https://openalex.org/W2071905277",
+        "https://openalex.org/W2074785712",
+        "https://openalex.org/W2078908639",
+        "https://openalex.org/W2087044232",
+        "https://openalex.org/W2093981928",
+        "https://openalex.org/W2103111465",
+        "https://openalex.org/W2109849557",
+        "https://openalex.org/W2112784946",
         "https://openalex.org/W2115709125",
+        "https://openalex.org/W2118492507",
+        "https://openalex.org/W2120145199",
+        "https://openalex.org/W2120831645",
+        "https://openalex.org/W2124667203",
+        "https://openalex.org/W2148424525",
+        "https://openalex.org/W2150687058",
+        "https://openalex.org/W2157886206",
+        "https://openalex.org/W2168703872",
+        "https://openalex.org/W2208339862",
+        "https://openalex.org/W2341694669",
+        "https://openalex.org/W2435994738",
+        "https://openalex.org/W2478717374",
+        "https://openalex.org/W2513028852",
+        "https://openalex.org/W2522609661",
+        "https://openalex.org/W2538805062",
+        "https://openalex.org/W2542129052",
         "https://openalex.org/W2611395271",
         "https://openalex.org/W2617948347",
-        "https://openalex.org/W2896855964",
-        "https://openalex.org/W1858384429",
-        "https://openalex.org/W2522609661",
-        "https://openalex.org/W2003434628",
-        "https://openalex.org/W4225278582",
-        "https://openalex.org/W1924841494",
-        "https://openalex.org/W4233998925",
-        "https://openalex.org/W4388166534",
-        "https://openalex.org/W2051469879",
-        "https://openalex.org/W2022085321",
-        "https://openalex.org/W2150687058",
-        "https://openalex.org/W2012986644",
-        "https://openalex.org/W2024495825",
-        "https://openalex.org/W1981111904",
-        "https://openalex.org/W2093981928",
-        "https://openalex.org/W54110651",
-        "https://openalex.org/W2050170853",
-        "https://openalex.org/W2048266752",
-        "https://openalex.org/W1994053391",
-        "https://openalex.org/W2538805062",
-        "https://openalex.org/W2885246934",
-        "https://openalex.org/W2120831645",
-        "https://openalex.org/W2031028572",
-        "https://openalex.org/W2168703872",
-        "https://openalex.org/W2950417131",
-        "https://openalex.org/W2112784946",
-        "https://openalex.org/W1886859895",
-        "https://openalex.org/W1864507840",
-        "https://openalex.org/W2060848544",
         "https://openalex.org/W2625652498",
-        "https://openalex.org/W2014217311",
-        "https://openalex.org/W2033228961",
-        "https://openalex.org/W2478717374",
-        "https://openalex.org/W2109849557",
-        "https://openalex.org/W2048176436",
-        "https://openalex.org/W1964670943",
-        "https://openalex.org/W1669359668",
-        "https://openalex.org/W2120145199",
+        "https://openalex.org/W2696986535",
+        "https://openalex.org/W2739111990",
         "https://openalex.org/W2757803490",
-        "https://openalex.org/W1981368803",
-        "https://openalex.org/W2030330123",
         "https://openalex.org/W2767044503",
-        "https://openalex.org/W4388451495",
-        "https://openalex.org/W2048140462",
-        "https://openalex.org/W2103111465",
-        "https://openalex.org/W2038210983",
-        "https://openalex.org/W2005136695",
-        "https://openalex.org/W3198890017",
-        "https://openalex.org/W2912236411",
-        "https://openalex.org/W1981495252",
-        "https://openalex.org/W2068994203",
-        "https://openalex.org/W2148424525",
-        "https://openalex.org/W2157886206",
-        "https://openalex.org/W4309116835",
-        "https://openalex.org/W2542129052",
         "https://openalex.org/W2778086665",
-        "https://openalex.org/W4237753401",
+        "https://openalex.org/W2799753869",
+        "https://openalex.org/W2836979891",
+        "https://openalex.org/W2883836825",
+        "https://openalex.org/W2885246934",
+        "https://openalex.org/W2896855964",
+        "https://openalex.org/W2908506573",
+        "https://openalex.org/W2912236411",
+        "https://openalex.org/W2914340838",
+        "https://openalex.org/W2950417131",
+        "https://openalex.org/W3011088795",
+        "https://openalex.org/W3022329226",
+        "https://openalex.org/W3034374563",
+        "https://openalex.org/W3036670858",
+        "https://openalex.org/W3096067749",
         "https://openalex.org/W3098467665",
-        "https://openalex.org/W3123129621",
-        "https://openalex.org/W3106042047",
         "https://openalex.org/W3101113424",
-        "https://openalex.org/W3034374563"
+        "https://openalex.org/W3106042047",
+        "https://openalex.org/W3123129621",
+        "https://openalex.org/W3198890017",
+        "https://openalex.org/W3214911168",
+        "https://openalex.org/W4200394169",
+        "https://openalex.org/W4225278582",
+        "https://openalex.org/W4233998925",
+        "https://openalex.org/W4237753401",
+        "https://openalex.org/W4282561512",
+        "https://openalex.org/W4309116835",
+        "https://openalex.org/W4380422115",
+        "https://openalex.org/W4388166534",
+        "https://openalex.org/W4388451495",
+        "https://openalex.org/W4401019443",
+        "https://openalex.org/W4401094661",
+        "https://openalex.org/W4401998787"
       ],
       "related_works": [
         "https://openalex.org/W2186918296",
@@ -74474,7 +75197,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2025-12-28T23:10:05.387466",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -76577,7 +77300,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://arxiv.org/pdf/2512.14438",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -77294,7 +78017,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2026-01-31T01:02:49.919210",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2025-12-18T00:00:00"
     },
     {
@@ -83387,8 +84110,8 @@
       "sustainable_development_goals": [
         {
           "display_name": "Climate action",
-          "score": 0.40414997935295105,
-          "id": "https://metadata.un.org/sdg/13"
+          "id": "https://metadata.un.org/sdg/13",
+          "score": 0.40414997935295105
         }
       ],
       "awards": [],

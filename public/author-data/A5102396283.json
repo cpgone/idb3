@@ -196,7 +196,7 @@
       {
         "id": "https://openalex.org/T12316",
         "display_name": "Oil Spill Detection and Mitigation",
-        "value": 0.0001664,
+        "value": 0.0001663,
         "subfield": {
           "id": "https://openalex.org/subfields/2310",
           "display_name": "Pollution"
@@ -281,28 +281,34 @@
     ],
     "x_concepts": [
       {
-        "id": "105569014",
-        "wikidata": "https://www.wikidata.org/wiki/Q3271208",
-        "display_name": "Porous medium",
-        "score": 0.4502592980861664
+        "id": "192562407",
+        "wikidata": "https://www.wikidata.org/wiki/Q228736",
+        "display_name": "Materials science",
+        "score": 0.8112964630126953
       },
       {
-        "id": "105923489",
-        "wikidata": "https://www.wikidata.org/wiki/Q133235",
-        "display_name": "Combustion",
-        "score": 0.23990333080291748
+        "id": "42360764",
+        "wikidata": "https://www.wikidata.org/wiki/Q83588",
+        "display_name": "Chemical engineering",
+        "score": 0.599798321723938
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0.14639025926589966
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.5880287885665894
       },
       {
-        "id": "10138342",
-        "wikidata": "https://www.wikidata.org/wiki/Q43015",
-        "display_name": "Finance",
-        "score": 0
+        "id": "127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+        "display_name": "Engineering",
+        "score": 0.4227992594242096
+      },
+      {
+        "id": "178790620",
+        "wikidata": "https://www.wikidata.org/wiki/Q11351",
+        "display_name": "Organic chemistry",
+        "score": 0.37271320819854736
       }
     ],
     "counts_by_year": [
@@ -377,7 +383,7 @@
     },
     "block_key": "m nazar",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5102396283",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -1645,9 +1651,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4399999976158142,
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure",
-          "score": 0.4399999976158142
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
@@ -2417,9 +2423,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8799999952316284,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water",
-          "score": 0.8799999952316284
+          "display_name": "Life below water"
         }
       ],
       "awards": [
@@ -3389,9 +3395,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8700000047683716,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water",
-          "score": 0.8700000047683716
+          "display_name": "Life below water"
         }
       ],
       "awards": [
@@ -7277,9 +7283,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.8399999737739563,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water",
-          "score": 0.8399999737739563
+          "display_name": "Life below water"
         }
       ],
       "awards": [
@@ -7887,7 +7893,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://www.mdpi.com/1420-3049/28/15/5794/pdf?version=1690866814",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -8101,7 +8107,7 @@
       "has_fulltext": true,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.84575646,
+        "value": 0.84408318,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -8519,6 +8525,62 @@
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
           "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000081",
+          "descriptor_name": "Acetamides",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000818",
+          "descriptor_name": "Animals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013501",
+          "descriptor_name": "Surface-Active Agents",
+          "qualifier_ui": "Q000633",
+          "qualifier_name": "toxicity",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013501",
+          "descriptor_name": "Surface-Active Agents",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059392",
+          "descriptor_name": "Petroleum Pollution",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D032084",
+          "descriptor_name": "Citrus sinensis",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015027",
+          "descriptor_name": "Zebrafish",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
         }
       ],
       "locations_count": 5,
@@ -8708,9 +8770,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.49000000953674316,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.49000000953674316
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -8730,59 +8792,59 @@
       },
       "referenced_works_count": 53,
       "referenced_works": [
-        "https://openalex.org/W3095929287",
-        "https://openalex.org/W3117785692",
-        "https://openalex.org/W2791256881",
-        "https://openalex.org/W4383955831",
-        "https://openalex.org/W3201690982",
-        "https://openalex.org/W4225276295",
-        "https://openalex.org/W4293153047",
-        "https://openalex.org/W4211122457",
-        "https://openalex.org/W3149904710",
-        "https://openalex.org/W4286203188",
-        "https://openalex.org/W4318992156",
-        "https://openalex.org/W3194992274",
-        "https://openalex.org/W2909167655",
-        "https://openalex.org/W2884700451",
-        "https://openalex.org/W3202868527",
-        "https://openalex.org/W2119542232",
-        "https://openalex.org/W2327323698",
-        "https://openalex.org/W3126444375",
-        "https://openalex.org/W2153926264",
+        "https://openalex.org/W1578556831",
+        "https://openalex.org/W1968502188",
+        "https://openalex.org/W1996980281",
+        "https://openalex.org/W2007928196",
         "https://openalex.org/W2025464031",
+        "https://openalex.org/W2064704972",
+        "https://openalex.org/W2119542232",
+        "https://openalex.org/W2153926264",
+        "https://openalex.org/W2155447762",
+        "https://openalex.org/W2205540358",
+        "https://openalex.org/W2286539949",
+        "https://openalex.org/W2327323698",
+        "https://openalex.org/W2418647475",
+        "https://openalex.org/W2791256881",
+        "https://openalex.org/W2792149723",
+        "https://openalex.org/W2794062131",
+        "https://openalex.org/W2796820669",
+        "https://openalex.org/W2801915308",
+        "https://openalex.org/W2884700451",
+        "https://openalex.org/W2909167655",
+        "https://openalex.org/W2913485098",
         "https://openalex.org/W2949399968",
         "https://openalex.org/W2971468541",
-        "https://openalex.org/W2792149723",
-        "https://openalex.org/W1996980281",
-        "https://openalex.org/W3096154377",
-        "https://openalex.org/W4319791725",
-        "https://openalex.org/W2286539949",
-        "https://openalex.org/W2801915308",
         "https://openalex.org/W2991369179",
-        "https://openalex.org/W2794062131",
-        "https://openalex.org/W3209762752",
-        "https://openalex.org/W3158284959",
-        "https://openalex.org/W4220926833",
-        "https://openalex.org/W3134856963",
-        "https://openalex.org/W4313463284",
-        "https://openalex.org/W1578556831",
-        "https://openalex.org/W4294190866",
         "https://openalex.org/W3005405369",
-        "https://openalex.org/W4283710100",
         "https://openalex.org/W3026392129",
-        "https://openalex.org/W2007928196",
-        "https://openalex.org/W2913485098",
-        "https://openalex.org/W6682792731",
-        "https://openalex.org/W1968502188",
+        "https://openalex.org/W3095929287",
+        "https://openalex.org/W3096154377",
         "https://openalex.org/W3111598384",
-        "https://openalex.org/W2796820669",
-        "https://openalex.org/W3164386292",
-        "https://openalex.org/W2418647475",
-        "https://openalex.org/W2205540358",
         "https://openalex.org/W3116591467",
-        "https://openalex.org/W2064704972",
+        "https://openalex.org/W3117785692",
+        "https://openalex.org/W3126444375",
+        "https://openalex.org/W3134856963",
+        "https://openalex.org/W3149904710",
+        "https://openalex.org/W3158284959",
+        "https://openalex.org/W3164386292",
+        "https://openalex.org/W3194992274",
+        "https://openalex.org/W3201690982",
+        "https://openalex.org/W3202868527",
+        "https://openalex.org/W3209762752",
+        "https://openalex.org/W4211122457",
+        "https://openalex.org/W4220926833",
         "https://openalex.org/W4221015759",
-        "https://openalex.org/W2155447762"
+        "https://openalex.org/W4225276295",
+        "https://openalex.org/W4283710100",
+        "https://openalex.org/W4286203188",
+        "https://openalex.org/W4293153047",
+        "https://openalex.org/W4294190866",
+        "https://openalex.org/W4313463284",
+        "https://openalex.org/W4318992156",
+        "https://openalex.org/W4319791725",
+        "https://openalex.org/W4383955831",
+        "https://openalex.org/W6682792731"
       ],
       "related_works": [
         "https://openalex.org/W1963608337",
@@ -9353,7 +9415,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2026-01-25T03:40:55.926884",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -10913,9 +10975,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.46000000834465027,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.46000000834465027
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -13205,9 +13267,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4099999964237213,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.4099999964237213
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -15514,9 +15576,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.5299999713897705,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.5299999713897705
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -17358,9 +17420,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.550000011920929,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.550000011920929
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -18330,9 +18392,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.699999988079071,
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.699999988079071
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -19007,9 +19069,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.699999988079071,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.699999988079071
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -19789,9 +19851,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.6000000238418579,
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.6000000238418579
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -22684,9 +22746,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.47999998927116394,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.47999998927116394
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -24735,9 +24797,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.44999998807907104,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water",
-          "score": 0.44999998807907104
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
@@ -26661,9 +26723,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4399999976158142,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.4399999976158142
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],

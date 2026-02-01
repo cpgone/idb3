@@ -212,7 +212,7 @@
       {
         "id": "https://openalex.org/T10572",
         "display_name": "Geophysical and Geoelectrical Methods",
-        "value": 0.0002046,
+        "value": 0.0002045,
         "subfield": {
           "id": "https://openalex.org/subfields/1908",
           "display_name": "Geophysics"
@@ -263,7 +263,7 @@
       {
         "id": "https://openalex.org/T12078",
         "display_name": "Environmental remediation with nanomaterials",
-        "value": 0.0000689,
+        "value": 0.0000688,
         "subfield": {
           "id": "https://openalex.org/subfields/2204",
           "display_name": "Biomedical Engineering"
@@ -280,7 +280,7 @@
       {
         "id": "https://openalex.org/T11231",
         "display_name": "Microbial Fuel Cells and Bioremediation",
-        "value": 0.0000552,
+        "value": 0.0000551,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -297,28 +297,34 @@
     ],
     "x_concepts": [
       {
-        "id": "102579867",
-        "wikidata": "https://www.wikidata.org/wiki/Q2914346",
-        "display_name": "Pore water pressure",
-        "score": 0.736087441444397
+        "id": "127313418",
+        "wikidata": "https://www.wikidata.org/wiki/Q1069",
+        "display_name": "Geology",
+        "score": 0.8906639814376831
       },
       {
-        "id": "100187453",
-        "wikidata": "https://www.wikidata.org/wiki/Q7632182",
-        "display_name": "Subsurface flow",
-        "score": 0.5832349061965942
+        "id": "39432304",
+        "wikidata": "https://www.wikidata.org/wiki/Q188847",
+        "display_name": "Environmental science",
+        "score": 0.7529252767562866
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0
+        "id": "185592680",
+        "wikidata": "https://www.wikidata.org/wiki/Q2329",
+        "display_name": "Chemistry",
+        "score": 0.6595426201820374
       },
       {
-        "id": "104779481",
-        "wikidata": "https://www.wikidata.org/wiki/Q50707",
-        "display_name": "Composite number",
-        "score": 0
+        "id": "127413603",
+        "wikidata": "https://www.wikidata.org/wiki/Q11023",
+        "display_name": "Engineering",
+        "score": 0.38018369674682617
+      },
+      {
+        "id": "86803240",
+        "wikidata": "https://www.wikidata.org/wiki/Q420",
+        "display_name": "Biology",
+        "score": 0.17826613783836365
       }
     ],
     "counts_by_year": [
@@ -411,7 +417,7 @@
     },
     "block_key": "p kirmizakis",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5019303345",
-    "updated_date": "2026-01-30T04:21:33.591335",
+    "updated_date": "2026-02-01T04:19:59.206561",
     "created_date": "2022-09-29"
   },
   "works": [
@@ -16311,7 +16317,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://www.nature.com/articles/s41598-022-24283-6.pdf",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -16739,7 +16745,7 @@
       "has_fulltext": true,
       "cited_by_count": 14,
       "citation_normalized_percentile": {
-        "value": 0.74845442,
+        "value": 0.74835001,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -17143,6 +17149,62 @@
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008738",
+          "descriptor_name": "Methyl Ethers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002606",
+          "descriptor_name": "Charcoal",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D001554",
+          "descriptor_name": "Benzene",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014050",
+          "descriptor_name": "Toluene",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000080463",
+          "descriptor_name": "Sand",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007501",
+          "descriptor_name": "Iron",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004785",
+          "descriptor_name": "Environmental Pollutants",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D002119",
+          "descriptor_name": "Calcium Carbonate",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
         }
       ],
       "locations_count": 4,
@@ -17333,62 +17395,62 @@
       },
       "referenced_works_count": 56,
       "referenced_works": [
-        "https://openalex.org/W2995306474",
-        "https://openalex.org/W2113132118",
-        "https://openalex.org/W4243873984",
-        "https://openalex.org/W2767527270",
-        "https://openalex.org/W2889164837",
-        "https://openalex.org/W3092873732",
-        "https://openalex.org/W3084330309",
-        "https://openalex.org/W2972823733",
-        "https://openalex.org/W2088101217",
-        "https://openalex.org/W2023039467",
-        "https://openalex.org/W1987741497",
-        "https://openalex.org/W2313822115",
-        "https://openalex.org/W1975866599",
-        "https://openalex.org/W2041523875",
-        "https://openalex.org/W2056556583",
-        "https://openalex.org/W2047056716",
-        "https://openalex.org/W2065771202",
-        "https://openalex.org/W2740556807",
-        "https://openalex.org/W2059582758",
-        "https://openalex.org/W2037261195",
-        "https://openalex.org/W2074422850",
-        "https://openalex.org/W2021737136",
-        "https://openalex.org/W2019086822",
-        "https://openalex.org/W1988438344",
-        "https://openalex.org/W2055719344",
-        "https://openalex.org/W4207046531",
-        "https://openalex.org/W3130475157",
-        "https://openalex.org/W2019543794",
-        "https://openalex.org/W2080648134",
-        "https://openalex.org/W2611881747",
-        "https://openalex.org/W2027315461",
-        "https://openalex.org/W1995253277",
-        "https://openalex.org/W2142107860",
-        "https://openalex.org/W3116542309",
-        "https://openalex.org/W3097351501",
-        "https://openalex.org/W2301350035",
-        "https://openalex.org/W3011829597",
-        "https://openalex.org/W3211398701",
-        "https://openalex.org/W2615638661",
-        "https://openalex.org/W2092102682",
-        "https://openalex.org/W2912251537",
-        "https://openalex.org/W1965433516",
-        "https://openalex.org/W3043576476",
         "https://openalex.org/W572688729",
-        "https://openalex.org/W4251692065",
+        "https://openalex.org/W1965433516",
+        "https://openalex.org/W1975866599",
+        "https://openalex.org/W1987741497",
+        "https://openalex.org/W1988438344",
+        "https://openalex.org/W1995253277",
+        "https://openalex.org/W2017703532",
+        "https://openalex.org/W2019086822",
+        "https://openalex.org/W2019543794",
+        "https://openalex.org/W2021737136",
+        "https://openalex.org/W2023039467",
+        "https://openalex.org/W2027315461",
+        "https://openalex.org/W2037261195",
+        "https://openalex.org/W2038733255",
+        "https://openalex.org/W2041523875",
+        "https://openalex.org/W2047056716",
+        "https://openalex.org/W2055719344",
+        "https://openalex.org/W2056556583",
+        "https://openalex.org/W2059582758",
+        "https://openalex.org/W2065232399",
+        "https://openalex.org/W2065771202",
+        "https://openalex.org/W2066988910",
+        "https://openalex.org/W2074422850",
+        "https://openalex.org/W2080648134",
+        "https://openalex.org/W2082698192",
+        "https://openalex.org/W2088101217",
+        "https://openalex.org/W2092102682",
+        "https://openalex.org/W2113132118",
+        "https://openalex.org/W2136625667",
+        "https://openalex.org/W2142107860",
+        "https://openalex.org/W2301350035",
+        "https://openalex.org/W2313822115",
         "https://openalex.org/W2591538099",
+        "https://openalex.org/W2611881747",
+        "https://openalex.org/W2615638661",
+        "https://openalex.org/W2740556807",
+        "https://openalex.org/W2767527270",
         "https://openalex.org/W2805133793",
+        "https://openalex.org/W2889164837",
+        "https://openalex.org/W2912251537",
         "https://openalex.org/W2919826656",
         "https://openalex.org/W2972114138",
-        "https://openalex.org/W2082698192",
-        "https://openalex.org/W2065232399",
-        "https://openalex.org/W2136625667",
-        "https://openalex.org/W2017703532",
-        "https://openalex.org/W2038733255",
+        "https://openalex.org/W2972823733",
+        "https://openalex.org/W2995306474",
+        "https://openalex.org/W3011829597",
+        "https://openalex.org/W3043576476",
+        "https://openalex.org/W3084330309",
+        "https://openalex.org/W3092873732",
+        "https://openalex.org/W3097351501",
+        "https://openalex.org/W3116542309",
+        "https://openalex.org/W3130475157",
+        "https://openalex.org/W3211398701",
+        "https://openalex.org/W4207046531",
         "https://openalex.org/W4210910403",
-        "https://openalex.org/W2066988910"
+        "https://openalex.org/W4243873984",
+        "https://openalex.org/W4251692065"
       ],
       "related_works": [
         "https://openalex.org/W2067451517",
@@ -17417,7 +17479,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2026-01-25T03:40:55.926884",
+      "updated_date": "2026-02-01T17:26:38.677471",
       "created_date": "2025-10-10T00:00:00"
     },
     {
