@@ -28,6 +28,7 @@ import {
 } from "recharts";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import insightsConfig from "../../data/config/insightsconfig.json";
+import venueTypeOverridesCsv from "../../data/config/venue-type-overrides.csv?raw";
 
 type Range = { from: number | null; to: number | null };
 
@@ -164,10 +165,13 @@ export default function AuthorDetail() {
   const [openAlexDetails, setOpenAlexDetails] = useState<OpenAlexAuthor | null>(null);
   const PAGE_SIZE = 15;
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-  type PublicationSortField = "title" | "firstAuthor" | "year" | "venue" | "citations";
+  type PublicationSortField = "title" | "firstAuthor" | "year" | "topics" | "institutions" | "venue" | "citations";
   const [sortBy, setSortBy] = useState<PublicationSortField>("year");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [workSearch, setWorkSearch] = useState("");
+  const [venueTypeFilter, setVenueTypeFilter] = useState<
+    "all" | "journal" | "conference" | "other"
+  >("all");
   const INSIGHTS_PAGE_SIZE = 8;
   const [visibleInsightCount, setVisibleInsightCount] = useState(INSIGHTS_PAGE_SIZE);
   const [insightsRangeA, setInsightsRangeA] = useState<Range>({ from: null, to: null });
@@ -495,7 +499,44 @@ export default function AuthorDetail() {
       .map(([topic, count]) => ({ topic, count }));
   }, [rangeFilteredWorks, authorTopTopicsCount]);
 
-  const filteredWorks = useMemo(() => {
+  const conferenceKeywords = [
+    "conference",
+    "proceedings",
+    "symposium",
+    "workshop",
+    "congress",
+    "meeting",
+    "annual",
+  ];
+
+  const venueOverrides = useMemo(() => {
+    const map = new Map<string, "journal" | "conference" | "other">();
+    const lines = (venueTypeOverridesCsv || "")
+      .split(/\r?\n/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+    if (!lines.length) return map;
+    const startIndex = lines[0].toLowerCase().startsWith("venue,") ? 1 : 0;
+    for (let i = startIndex; i < lines.length; i += 1) {
+      const [venueRaw, typeRaw] = lines[i].split(",").map((v) => v.trim());
+      if (!venueRaw || !typeRaw) continue;
+      const type = typeRaw.toLowerCase();
+      if (type !== "journal" && type !== "conference" && type !== "other") continue;
+      map.set(venueRaw.toLowerCase(), type as "journal" | "conference" | "other");
+    }
+    return map;
+  }, []);
+
+  const classifyVenueType = (venue: string | undefined) => {
+    const v = (venue || "").trim().toLowerCase();
+    if (!v) return "other" as const;
+    const override = venueOverrides.get(v);
+    if (override) return override;
+    const isConference = conferenceKeywords.some((kw) => v.includes(kw));
+    return isConference ? ("conference" as const) : ("journal" as const);
+  };
+
+  const baseFilteredWorks = useMemo(() => {
     const query = workSearch.trim().toLowerCase();
     if (!query) return rangeFilteredWorks;
     const tokens = query.split(/\s+/).filter(Boolean);
@@ -516,6 +557,25 @@ export default function AuthorDetail() {
       return tokens.every((token) => haystack.includes(token));
     });
   }, [rangeFilteredWorks, workSearch]);
+
+  const filteredWorks = useMemo(() => {
+    if (venueTypeFilter === "all") return baseFilteredWorks;
+    return baseFilteredWorks.filter((w) => classifyVenueType(w.venue) === venueTypeFilter);
+  }, [baseFilteredWorks, venueTypeFilter, venueOverrides]);
+
+  const venueTypeCounts = useMemo(() => {
+    const total = baseFilteredWorks.length;
+    let journals = 0;
+    let conferences = 0;
+    let others = 0;
+    baseFilteredWorks.forEach((w) => {
+      const type = classifyVenueType(w.venue);
+      if (type === "journal") journals += 1;
+      else if (type === "conference") conferences += 1;
+      else others += 1;
+    });
+    return { all: total, journal: journals, conference: conferences, other: others };
+  }, [baseFilteredWorks, venueOverrides]);
 
   const applyInsightsPreset = (span: number) => {
     if (!allYears.length) return;
@@ -843,6 +903,8 @@ export default function AuthorDetail() {
       }
       if (field === "citations") return w.citations ?? 0;
       if (field === "venue") return (w.venue || "").toLowerCase();
+      if (field === "topics") return (w.topics || []).join(", ").toLowerCase();
+      if (field === "institutions") return (w.institutions || []).join(", ").toLowerCase();
       if (field === "firstAuthor") {
         const first = (w.allAuthors || [])[0] || "";
         const last =
@@ -2024,18 +2086,91 @@ export default function AuthorDetail() {
               <FileText className="h-5 w-5 text-primary" />
               <span>Publications</span>
             </CardTitle>
-            <Input
-              value={workSearch}
-              onChange={(e) => {
-                setVisibleCount(PAGE_SIZE);
-                setWorkSearch(e.target.value);
-              }}
-              placeholder="Search title, author, venue..."
-              className="h-9 text-sm sm:w-72"
-            />
           </CardHeader>
           <CardContent>
             <>
+              {allYears.length > 0 && (
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-3 text-[11px] text-muted-foreground">
+                  <Input
+                    value={workSearch}
+                    onChange={(e) => {
+                      setVisibleCount(PAGE_SIZE);
+                      setWorkSearch(e.target.value);
+                    }}
+                    placeholder="Search title, author, venue..."
+                    className="h-8 text-xs sm:w-72"
+                  />
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="font-semibold text-foreground">Year range:</span>
+                    <select
+                      className="h-7 rounded border border-border bg-background px-2 text-xs"
+                      value={startYear ?? ""}
+                      onChange={(e) => {
+                        const value = Number(e.target.value);
+                        setStartYear(value);
+                        if (endYear != null && value > endYear) setEndYear(value);
+                      }}
+                    >
+                      {allYears.map((y) => (
+                        <option key={y} value={y}>
+                          {y}
+                        </option>
+                      ))}
+                    </select>
+                    <span>to</span>
+                    <select
+                      className="h-7 rounded border border-border bg-background px-2 text-xs"
+                      value={endYear ?? ""}
+                      onChange={(e) => {
+                        const value = Number(e.target.value);
+                        setEndYear(value);
+                        if (startYear != null && value < startYear) setStartYear(value);
+                      }}
+                    >
+                      {allYears.map((y) => (
+                        <option key={y} value={y}>
+                          {y}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              )}
+              <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-semibold text-foreground">Venue type</span>
+                  {(["all", "journal", "conference", "other"] as const).map((value) => (
+                    <button
+                      key={value}
+                      type="button"
+                      className={`rounded-full px-3 py-1 text-[11px] transition ${
+                        venueTypeFilter === value
+                          ? "bg-muted text-foreground"
+                          : "text-muted-foreground hover:bg-muted/40"
+                      }`}
+                      onClick={() => {
+                        setVenueTypeFilter(value);
+                        setVisibleCount(PAGE_SIZE);
+                      }}
+                      aria-pressed={venueTypeFilter === value}
+                    >
+                      {value === "all"
+                        ? "All"
+                        : value === "journal"
+                          ? "Journals"
+                          : value === "conference"
+                            ? "Conferences"
+                            : "Others"}
+                      <span className="ml-1 text-[10px] text-muted-foreground">
+                        ({venueTypeCounts[value]})
+                      </span>
+                    </button>
+                  ))}
+                </div>
+                <span>
+                  Showing {visibleWorks.length} of {sortedWorks.length} publications
+                </span>
+              </div>
               <div className="overflow-x-auto rounded-md border border-border/60 bg-card/40">
                 <Table className="min-w-full">
                   <TableHeader>
@@ -2066,7 +2201,7 @@ export default function AuthorDetail() {
                           className="flex w-full items-center justify-end gap-1 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground border-0 focus-visible:outline-none"
                           onClick={() => toggleSort("year")}
                         >
-                          Year
+                          Date
                           <ArrowUpDown className="h-3 w-3" />
                         </button>
                       </TableHead>
@@ -2128,6 +2263,20 @@ export default function AuthorDetail() {
                         }
                         return publicationDate;
                       })();
+                      const displayDate = (() => {
+                        if (publicationDate) {
+                          const date = new Date(publicationDate);
+                          if (!Number.isNaN(date.getTime())) {
+                            return date.toLocaleDateString(undefined, {
+                              year: "numeric",
+                              month: "short",
+                              day: "numeric",
+                            });
+                          }
+                          return publicationDate;
+                        }
+                        return year ? String(year) : "";
+                      })();
                       const venue = work.venue || "";
                       const citations = work.citations ?? 0;
 
@@ -2161,21 +2310,21 @@ export default function AuthorDetail() {
 
                                 {displayFirstAuthor && (
                                   <>
-                                    <span>•</span>
+                                    <span>|</span>
                                     <span>{displayFirstAuthor}</span>
                                   </>
                                 )}
 
-                                {year && (
+                                {displayDate && (
                                   <>
-                                    <span>•</span>
-                                    <span title={publicationDateLabel || undefined}>{year}</span>
+                                    <span>|</span>
+                                    <span>{displayDate}</span>
                                   </>
                                 )}
 
                                 {typeof citations === "number" && citations > 0 && (
                                   <>
-                                    <span>•</span>
+                                    <span>|</span>
                                     <span>{citations} citations</span>
                                   </>
                                 )}
