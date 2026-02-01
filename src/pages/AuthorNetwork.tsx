@@ -7,8 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SiteShell } from "@/components/SiteShell";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Input } from "@/components/ui/input";
-import type { OpenAlexAuthor, OpenAlexWork } from "@/services/openAlex";
 import { authors } from "@/data/authors.generated";
+import { worksTable } from "@/data/worksTable.generated";
 import { toast } from "@/components/ui/use-toast";
 
 type CoAuthorRow = {
@@ -39,10 +39,6 @@ const normalizeOpenAlexId = (raw?: string | null) => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const [works, setWorks] = useState<OpenAlexWork[]>([]);
-  const [details, setDetails] = useState<OpenAlexAuthor | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<"name" | "institutions" | "jointPublications" | "totalCitations">(
     "jointPublications",
   );
@@ -51,6 +47,8 @@ const normalizeOpenAlexId = (raw?: string | null) => {
   const [endYear, setEndYear] = useState<number | null>(null);
   const [visibleCount, setVisibleCount] = useState(15);
   const [searchQuery, setSearchQuery] = useState("");
+  const isLoading = false;
+  const error: string | null = null;
 
   const localAuthor = useMemo(
     () =>
@@ -76,43 +74,33 @@ const normalizeOpenAlexId = (raw?: string | null) => {
     return direct || null;
   }, [id, localAuthor]);
 
-  useEffect(() => {
-    if (!id || !resolvedOpenAlexId) return;
+  const focalName = localAuthor?.name || (typeof id === "string" ? id : "");
+  const focalNameLower = focalName.trim().toLowerCase();
 
-    const baseUrl =
-      typeof import.meta.env.BASE_URL === "string" ? import.meta.env.BASE_URL : "/";
-    const authorDataUrl = `${baseUrl.replace(/\/$/, "/")}author-data/${resolvedOpenAlexId}.json`;
-
-    const run = async () => {
-      setIsLoading(true);
-      setError(null);
-      try {
-        const res = await fetch(authorDataUrl);
-        if (!res.ok) {
-          throw new Error(`No cached data for ${id}`);
-        }
-        const data: { details?: OpenAlexAuthor; works?: OpenAlexWork[] } = await res.json();
-        setDetails(data.details ?? null);
-        setWorks(data.works ?? []);
-      } catch {
-        setError("Failed to load co-author data for this author.");
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    run();
-  }, [id, resolvedOpenAlexId]);
+  const authorWorks = useMemo(() => {
+    if (!worksTable.length) return [];
+    if (!resolvedOpenAlexId && !focalNameLower) return [];
+    return worksTable.filter((work) => {
+      const ids = work.allAuthorOpenAlexIds || [];
+      const names = work.allAuthors || [];
+      const idMatch = resolvedOpenAlexId ? ids.includes(resolvedOpenAlexId) : false;
+      const nameMatch =
+        !resolvedOpenAlexId && focalNameLower
+          ? names.some((name) => name?.trim().toLowerCase() === focalNameLower)
+          : false;
+      return idMatch || nameMatch;
+    });
+  }, [focalNameLower, resolvedOpenAlexId]);
 
   const allYears = useMemo(() => {
     const years = new Set<number>();
-    for (const work of works) {
-      if (work.publication_year) {
-        years.add(work.publication_year);
+    for (const work of authorWorks) {
+      if (work.year) {
+        years.add(work.year);
       }
     }
     return Array.from(years).sort((a, b) => a - b);
-  }, [works]);
+  }, [authorWorks]);
 
 useEffect(() => {
   if (!allYears.length) return;
@@ -125,54 +113,51 @@ useEffect(() => {
 
 
   const filteredWorks = useMemo(() => {
-    if (!works.length) return [];
-    if (!allYears.length) return works;
+    if (!authorWorks.length) return [];
+    if (!allYears.length) return authorWorks;
 
     const from = startYear ?? allYears[0];
     const to = endYear ?? allYears[allYears.length - 1];
 
-    return works.filter(
-      (work) => work.publication_year >= from && work.publication_year <= to,
-    );
-  }, [works, allYears, startYear, endYear]);
+    return authorWorks.filter((work) => work.year >= from && work.year <= to);
+  }, [authorWorks, allYears, startYear, endYear]);
 
   const coAuthors = useMemo<CoAuthorRow[]>(() => {
-    if (!id || !resolvedOpenAlexId) return [];
+    if (!id && !resolvedOpenAlexId && !focalNameLower) return [];
 
     const byKey = new Map<string, CoAuthorRow>();
 
     for (const work of filteredWorks) {
-      const authorships = work.authorships ?? [];
-      const focalPresent = authorships.some((a) =>
-        (a.author?.id || "").endsWith(resolvedOpenAlexId || ""),
-      );
+      const authorNames = work.allAuthors || [];
+      const authorIds = work.allAuthorOpenAlexIds || [];
+      const focalPresent =
+        (resolvedOpenAlexId && authorIds.includes(resolvedOpenAlexId)) ||
+        (!resolvedOpenAlexId &&
+          focalNameLower &&
+          authorNames.some((name) => name?.trim().toLowerCase() === focalNameLower));
       if (!focalPresent) continue;
 
-      const yearCitations = work.cited_by_count ?? 0;
+      const yearCitations = work.citations ?? 0;
+      const workInstitutions = (work.institutions || []).filter(Boolean);
 
-      for (const a of authorships) {
-        const rawId = a.author?.id || "";
-        const parts = rawId.split("/");
-        const authorId = parts[parts.length - 1];
-        if (!authorId || authorId === id) continue;
+      authorNames.forEach((rawName, index) => {
+        const name = rawName?.trim();
+        if (!name) return;
+        const authorId = authorIds[index] || "";
 
-        const displayName = a.author?.display_name || authorId;
-        const key = normalizeName(displayName);
+        if (resolvedOpenAlexId && authorId === resolvedOpenAlexId) return;
+        if (focalNameLower && name.toLowerCase() === focalNameLower) return;
 
+        const key = name;
         const local = authors.find(
           (auth) =>
-            auth.openAlexId === authorId || normalizeName(auth.name) === key,
+            (authorId && auth.openAlexId === authorId) ||
+            normalizeName(auth.name) === normalizeName(name),
         );
-
-        const name = local?.name || displayName;
-        const institutions = (a.institutions ?? [])
-          .map((inst) => inst.display_name)
-          .filter(Boolean)
-          .join(", ");
 
         const existing = byKey.get(key) ?? {
           id: local?.openAlexId || authorId,
-          name,
+          name: local?.name || name,
           institutions: "",
           jointPublications: 0,
           totalCitations: 0,
@@ -181,26 +166,26 @@ useEffect(() => {
 
         existing.jointPublications += 1;
         existing.totalCitations += yearCitations;
-        if (institutions) {
+        if (workInstitutions.length) {
           const merged = new Set(
             `${existing.institutions}${
-              existing.institutions && institutions ? ", " : ""
-            }${institutions}`
+              existing.institutions && workInstitutions.length ? ", " : ""
+            }${workInstitutions.join(", ")}`
               .split(",")
               .map((s) => s.trim())
               .filter(Boolean),
-            );
-            existing.institutions = Array.from(merged).join(", ");
-          }
+          );
+          existing.institutions = Array.from(merged).join(", ");
+        }
 
         byKey.set(key, existing);
-      }
+      });
     }
 
     const rows = Array.from(byKey.values());
     rows.sort((a, b) => b.jointPublications - a.jointPublications);
     return rows;
-  }, [filteredWorks, id, resolvedOpenAlexId]);
+  }, [filteredWorks, focalNameLower, id, resolvedOpenAlexId]);
 
   const filteredCoAuthors = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
@@ -261,12 +246,15 @@ useEffect(() => {
     }
   };
 
-  const title = details?.display_name || localAuthor?.name || id || "Co-author network";
+  const title = localAuthor?.name || id || "Co-author network";
 
   const goToPublications = (row: CoAuthorRow, mode: "publications" | "citations") => {
     const search = new URLSearchParams();
-    if (details?.display_name) {
-      search.set("author", details.display_name);
+    if (localAuthor?.name || title) {
+      search.set("author", localAuthor?.name || title);
+    }
+    if (resolvedOpenAlexId) {
+      search.set("authorId", resolvedOpenAlexId);
     }
     if (row.name) search.set("coauthor", row.name);
     if (startYear != null) search.set("fromYear", String(startYear));
@@ -432,7 +420,7 @@ useEffect(() => {
 
             {!isLoading && !error && sortedCoAuthors.length === 0 && (
               <p className="text-xs text-muted-foreground">
-                No co-author records were found for this author in the cached OpenAlex data.
+                No co-author records were found for this author in the snapshot data.
               </p>
             )}
 

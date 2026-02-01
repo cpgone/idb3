@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
 import { Input } from "@/components/ui/input";
 import { makeWorkKey, normalizeOpenAlexId } from "@/lib/utils";
+import { filterWorks } from "@/lib/blacklist";
 
 type MemberSortField = "name" | "coAuthors" | "topics" | "publications" | "citations" | "hIndex";
 
@@ -60,6 +61,8 @@ const Members = () => {
   }, [allYears]);
 
 
+  const cleanedWorks = useMemo(() => filterWorks(worksTable), []);
+
   const metricsByAuthor = useMemo(() => {
     if (!allYears.length) {
       return new Map<
@@ -87,7 +90,7 @@ const Members = () => {
     };
     const temp = new Map<string, Bucket>();
 
-    worksTable.forEach((work) => {
+    cleanedWorks.forEach((work) => {
       if (!work.year) return;
       if (work.year < from || work.year > to) return;
 
@@ -201,7 +204,7 @@ const Members = () => {
     }
 
     return result;
-  }, [allYears, startYear, endYear]);
+  }, [allYears, startYear, endYear, cleanedWorks]);
 
   const rows = useMemo<MemberRow[]>(() => {
     return authors.map((author) => {
@@ -274,30 +277,33 @@ const Members = () => {
     return { from, to };
   };
 
-  const buildMemberPublicationsPath = (authorName: string) => {
+  const buildMemberPublicationsPath = (authorName: string, authorId?: string) => {
     const search = new URLSearchParams();
     const { from, to } = buildYearRange();
     if (from != null) search.set("fromYear", String(from));
     if (to != null) search.set("toYear", String(to));
     search.set("author", authorName);
+    if (authorId) search.set("authorId", authorId);
     return `/publications?${search.toString()}`;
   };
 
-  const buildMemberCitationsPath = (authorName: string) => {
+  const buildMemberCitationsPath = (authorName: string, authorId?: string) => {
     const search = new URLSearchParams();
     const { from, to } = buildYearRange();
     if (from != null) search.set("fromYear", String(from));
     if (to != null) search.set("toYear", String(to));
     search.set("author", authorName);
+    if (authorId) search.set("authorId", authorId);
     return `/citations?${search.toString()}`;
   };
 
-  const buildMemberTopicsPath = (authorName: string) => {
+  const buildMemberTopicsPath = (authorName: string, authorId?: string) => {
     const search = new URLSearchParams();
     const { from, to } = buildYearRange();
     if (from != null) search.set("fromYear", String(from));
     if (to != null) search.set("toYear", String(to));
     search.set("author", authorName);
+    if (authorId) search.set("authorId", authorId);
     return `/topics?${search.toString()}`;
   };
 
@@ -375,10 +381,16 @@ const Members = () => {
   return (
     <SiteShell>
       <main className="container mx-auto px-4 py-6 space-y-4">
-        <Button variant="ghost" onClick={() => navigate("/")}>
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to dashboard
-        </Button>
+        <div className="flex flex-wrap items-center gap-3">
+          <Button variant="ghost" onClick={() => navigate("/")}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to dashboard
+          </Button>
+          <Button variant="ghost" onClick={() => navigate(-1)}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to previous
+          </Button>
+        </div>
 
         <Card className="border-border/60">
           <CardHeader className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -564,7 +576,7 @@ const Members = () => {
                       <TableCell className="hidden md:table-cell text-right cell-compact font-medium text-foreground">
                         {row.topics > 0 ? (
                           <Link
-                            to={buildMemberTopicsPath(row.name)}
+                            to={buildMemberTopicsPath(row.name, row.openAlexId)}
                             className="text-primary hover:underline"
                           >
                             {row.topics}
@@ -576,7 +588,7 @@ const Members = () => {
                       <TableCell className="hidden md:table-cell text-right cell-compact font-medium text-foreground">
                         {row.publications > 0 ? (
                           <Link
-                            to={buildMemberPublicationsPath(row.name)}
+                            to={buildMemberPublicationsPath(row.name, row.openAlexId)}
                             className="text-primary hover:underline"
                           >
                             {row.publications}
@@ -588,7 +600,7 @@ const Members = () => {
                       <TableCell className="hidden md:table-cell text-right cell-compact font-medium text-foreground">
                         {row.citations > 0 ? (
                           <Link
-                            to={buildMemberCitationsPath(row.name)}
+                            to={buildMemberCitationsPath(row.name, row.openAlexId)}
                             className="text-primary hover:underline"
                           >
                             {row.citations}

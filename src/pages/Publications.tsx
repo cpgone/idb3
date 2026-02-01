@@ -174,6 +174,7 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
   const topicFilter = params.get("topic") || "";
   const institutionFilter = params.get("institution") || "";
   const authorFilter = params.get("author") || "";
+  const authorIdFilter = params.get("authorId") || "";
   const coAuthorFilter = params.get("coauthor") || "";
   const fromYearParam = params.get("fromYear");
   const toYearParam = params.get("toYear");
@@ -264,7 +265,9 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
       if (topicFilter && !(w.topics || []).includes(topicFilter)) return false;
       if (institutionFilter && !(w.institutions || []).includes(institutionFilter))
         return false;
-      if (
+      if (authorIdFilter) {
+        if (!(w.allAuthorOpenAlexIds || []).includes(authorIdFilter)) return false;
+      } else if (
         authorFilter &&
         !(w.allAuthors || []).some(
           (name) => namesRoughlyMatch(name, authorFilter),
@@ -312,6 +315,7 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
     topicFilter,
     institutionFilter,
     authorFilter,
+    authorIdFilter,
     coAuthorFilter,
   ]);
 

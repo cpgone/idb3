@@ -106,10 +106,11 @@ The `npm run refresh:data` script runs:
    - `generate-author-identifiers.cjs` → `src/data/authorIdentifiers.generated.ts`
 
 5) **UI pages consume generated tables**
-   - `src/pages/Index.tsx` (dashboard)
-   - `src/pages/Authors.tsx` / `AuthorDetail.tsx`
-   - `src/pages/Publications.tsx`, `Topics.tsx`, `Institutions.tsx`
-   - `src/pages/Insights.tsx` (topic insights)
+- `src/pages/Index.tsx` (dashboard)
+- `src/pages/Authors.tsx` / `AuthorDetail.tsx`
+- `src/pages/Publications.tsx`, `Topics.tsx`, `Institutions.tsx`
+- `src/pages/AuthorNetwork.tsx` (co-author network uses `worksTable` snapshot)
+- `src/pages/Insights.tsx` (topic insights)
 
 ## How the dashboard works (summary)
 
@@ -119,4 +120,3 @@ The `npm run refresh:data` script runs:
   - cached author details (`public/author-data/*.json`),
   - generated works table,
   - derived summaries (publications, citations, topics, institutions, h-index).
-

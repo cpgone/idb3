@@ -777,9 +777,6 @@ export default function AuthorDetail() {
       };
     }
 
-    const from = startYear;
-    const to = endYear;
-
     const citationsList: number[] = [];
     let totalPublications = 0;
     const topicSet = new Set<string>();
@@ -787,8 +784,6 @@ export default function AuthorDetail() {
 
     for (const w of uniqueAuthorWorks) {
       if (!w.year) continue;
-      if (from != null && w.year < from) continue;
-      if (to != null && w.year > to) continue;
 
       totalPublications += 1;
       citationsList.push(w.citations ?? 0);
@@ -821,7 +816,7 @@ export default function AuthorDetail() {
       topics: topicSet.size,
       institutions: institutionSet.size,
     };
-  }, [id, uniqueAuthorWorks, startYear, endYear]);
+  }, [id, uniqueAuthorWorks]);
 
 
 
@@ -829,6 +824,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
     return `/publications?${search.toString()}`;
@@ -838,6 +834,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
     return `/citations?${search.toString()}`;
@@ -847,6 +844,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
     return `/topics?${search.toString()}`;
@@ -856,6 +854,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
     search.set("topic", topicName);
@@ -866,6 +865,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (range.from != null) search.set("fromYear", String(range.from));
     if (range.to != null) search.set("toYear", String(range.to));
     search.set("topic", topicName);
@@ -876,6 +876,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (range.from != null) search.set("fromYear", String(range.from));
     if (range.to != null) search.set("toYear", String(range.to));
     search.set("topic", topicName);
@@ -886,6 +887,7 @@ export default function AuthorDetail() {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
+    if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
     return `/institutions?${search.toString()}`;

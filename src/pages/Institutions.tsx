@@ -40,6 +40,7 @@ const InstitutionsPage = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const authorFilter = searchParams.get("author") || "";
+  const authorIdFilter = searchParams.get("authorId") || "";
   const fromYearParam = searchParams.get("fromYear");
   const toYearParam = searchParams.get("toYear");
 
@@ -98,7 +99,9 @@ useEffect(() => {
     const normalizedAuthor = normalizeName(authorFilter);
 
     for (const work of cleanWorks) {
-      if (
+      if (authorIdFilter) {
+        if (!(work.allAuthorOpenAlexIds || []).includes(authorIdFilter)) continue;
+      } else if (
         normalizedAuthor &&
         !(work.allAuthors || []).some(
           (name) => normalizeName(name) === normalizedAuthor,
@@ -126,7 +129,7 @@ useEffect(() => {
     }
 
     return Array.from(byName.values());
-  }, [authorFilter, startYear, endYear, allYears, cleanWorks]);
+  }, [authorFilter, authorIdFilter, startYear, endYear, allYears, cleanWorks]);
 
   const buildYearRange = () => {
     const from = startYear ?? (allYears.length ? allYears[0] : undefined);
@@ -139,6 +142,8 @@ useEffect(() => {
     const { from, to } = buildYearRange();
     if (from != null) search.set("fromYear", String(from));
     if (to != null) search.set("toYear", String(to));
+    if (authorFilter) search.set("author", authorFilter);
+    if (authorIdFilter) search.set("authorId", authorIdFilter);
     search.set("institution", institutionName);
     return `/publications?${search.toString()}`;
   };
@@ -148,6 +153,8 @@ useEffect(() => {
     const { from, to } = buildYearRange();
     if (from != null) search.set("fromYear", String(from));
     if (to != null) search.set("toYear", String(to));
+    if (authorFilter) search.set("author", authorFilter);
+    if (authorIdFilter) search.set("authorId", authorIdFilter);
     search.set("institution", institutionName);
     return `/citations?${search.toString()}`;
   };
