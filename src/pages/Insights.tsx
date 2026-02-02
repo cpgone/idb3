@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { SiteShell } from "@/components/SiteShell";
 import { worksTable } from "@/data/worksTable.generated";
 import { filterWorks } from "@/lib/blacklist";
@@ -23,17 +23,8 @@ import {
   ChevronUp,
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  Line,
-  LineChart,
-  CartesianGrid,
-  XAxis,
-  YAxis,
-  Tooltip as RechartsTooltip,
-  ResponsiveContainer,
-  Legend as RechartsLegend,
-  ReferenceArea,
-} from "recharts";
+import Plot from "react-plotly.js";
+import Plotly from "plotly.js-dist-min";
 import insightsConfig from "../../data/config/insightsconfig.json";
 
 type Range = { from: number | null; to: number | null };
@@ -161,27 +152,13 @@ const InsightsPage = () => {
   const [showChart, setShowChart] = useState(true);
   const [compareMode, setCompareMode] = useState(true);
   const [chartScale, setChartScale] = useState<"linear" | "log">("linear");
-  const [xDomain, setXDomain] = useState<[number, number] | null>(null);
-  const [yDomain, setYDomain] = useState<[number, number] | null>(null);
-  const [dragStart, setDragStart] = useState<number | null>(null);
-  const [dragEnd, setDragEnd] = useState<number | null>(null);
-  const [isPanning, setIsPanning] = useState(false);
-  const [panStart, setPanStart] = useState<number | null>(null);
-  const [panDomain, setPanDomain] = useState<[number, number] | null>(null);
-  const [panStartX, setPanStartX] = useState<number | null>(null);
-  const [panStartY, setPanStartY] = useState<number | null>(null);
-  const [panDomainY, setPanDomainY] = useState<[number, number] | null>(null);
-  const [axisPanMode, setAxisPanMode] = useState<"x" | "y" | null>(null);
-  const [focusedAxis, setFocusedAxis] = useState<"x" | "y" | null>(null);
-  const panWidthRef = useRef<number | null>(null);
-  const panHeightRef = useRef<number | null>(null);
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [showPubsSeries, setShowPubsSeries] = useState(true);
   const [showCitesSeries, setShowCitesSeries] = useState(false);
   const [visibleRows, setVisibleRows] = useState(25);
   const [topicColors, setTopicColors] = useState<Record<string, string>>({});
   const initializedSelection = useRef(false);
-  const chartRef = useRef<HTMLDivElement | null>(null);
+  const plotlyRef = useRef<any>(null);
   const [showChartExportMenu, setShowChartExportMenu] = useState(false);
 
   useEffect(() => {
@@ -370,323 +347,19 @@ const InsightsPage = () => {
     });
   }, [selectedTopics, chartYearRange.from, chartYearRange.to, cleanWorks, chartScale]);
 
-  const chartExtent = useMemo(() => {
-    let min = Number.POSITIVE_INFINITY;
-    let max = Number.NEGATIVE_INFINITY;
-    const [xMin, xMax] = xDomain ?? [chartYearRange.from, chartYearRange.to];
-    chartData.forEach((row) => {
-      const year = row.year as number | undefined;
-      if (typeof year !== "number") return;
-      if (xMin != null && year < xMin) return;
-      if (xMax != null && year > xMax) return;
-      selectedTopics.forEach((topic) => {
-        if (showPubsSeries) {
-          const p = row[`${topic}-pubs`] as number | undefined;
-          if (typeof p === "number") {
-            min = Math.min(min, p);
-            max = Math.max(max, p);
-          }
-        }
-        if (showCitesSeries) {
-          const c = row[`${topic}-cites`] as number | undefined;
-          if (typeof c === "number") {
-            min = Math.min(min, c);
-            max = Math.max(max, c);
-          }
-        }
-      });
-    });
-    if (!isFinite(min) || !isFinite(max)) return null;
-    if (min === max) return { min: Math.max(0, min - 1), max: max + 1 };
-    return { min, max };
-  }, [chartData, selectedTopics, xDomain, chartYearRange.from, chartYearRange.to, showPubsSeries, showCitesSeries]);
-
-  const xTicks = useMemo(() => {
-    if (!chartData.length) return undefined;
-    const years = chartData.map((row) => row.year as number).filter((y) => typeof y === "number");
-    if (years.length <= 8) return years;
-    const step = Math.ceil(years.length / 8);
-    return years.filter((_, idx) => idx % step === 0 || idx === years.length - 1);
-  }, [chartData]);
-
-  const xAxisDomain = useMemo<[number | "auto", number | "auto"]>(() => {
-    if (xDomain) return xDomain;
-    if (chartYearRange.from != null && chartYearRange.to != null) return [chartYearRange.from, chartYearRange.to];
-    return ["auto", "auto"];
-  }, [xDomain, chartYearRange.from, chartYearRange.to]);
-
-  const yAxisDomain = useMemo<[number | "auto", number | "auto"]>(() => {
-    if (yDomain) return yDomain;
-    if (!chartExtent) return ["auto", "auto"];
-    if (chartScale === "log") return [Math.max(0.1, chartExtent.min || 0.1), "auto"];
-    const pad = Math.max(1, (chartExtent.max - chartExtent.min) * 0.08);
-    return [Math.max(0, chartExtent.min - pad), chartExtent.max + pad];
-  }, [yDomain, chartExtent, chartScale]);
-
+  
   const resetAxes = () => {
-    setXDomain(null);
-    setYDomain(null);
-    setDragStart(null);
-    setDragEnd(null);
     setChartScale("linear");
-    setIsPanning(false);
-    setPanStart(null);
-    setPanDomain(null);
-    setPanStartX(null);
-    setPanStartY(null);
-    setPanDomainY(null);
-    setAxisPanMode(null);
-    setFocusedAxis(null);
-    panWidthRef.current = null;
-    panHeightRef.current = null;
-  };
-
-  const resolveActiveYear = (state: any) => {
-    if (typeof state?.activeLabel === "number") return state.activeLabel as number;
-    const payloadYear = state?.activePayload?.[0]?.payload?.year;
-    return typeof payloadYear === "number" ? payloadYear : null;
-  };
-
-  const resolveChartX = (state: any) => {
-    return typeof state?.chartX === "number" ? state.chartX : null;
-  };
-
-  const resolveChartY = (state: any) => {
-    return typeof state?.chartY === "number" ? state.chartY : null;
-  };
-
-  const clampYDomain = useCallback(
-    (start: number, end: number) => {
-      if (!chartExtent) return [start, end] as [number, number];
-      const min = chartExtent.min;
-      const max = chartExtent.max;
-      const span = end - start;
-      if (span >= max - min) return [min, max] as [number, number];
-      const clampedStart = Math.max(min, Math.min(start, max - span));
-      return [clampedStart, clampedStart + span] as [number, number];
-    },
-    [chartExtent],
-  );
-
-  const clampXDomain = useCallback(
-    (start: number, end: number) => {
-      if (chartYearRange.from == null || chartYearRange.to == null) return [start, end] as [number, number];
-      const min = chartYearRange.from;
-      const max = chartYearRange.to;
-      const span = end - start;
-      if (span >= max - min) return [min, max] as [number, number];
-      const clampedStart = Math.max(min, Math.min(start, max - span));
-      return [clampedStart, clampedStart + span] as [number, number];
-    },
-    [chartYearRange.from, chartYearRange.to],
-  );
-
-  const resolveAxisMode = (
-    chartX: number | null,
-    chartY: number | null,
-    width: number | null,
-    height: number | null,
-  ): "x" | "y" => {
-    if (chartY != null && height != null && chartY >= height - 40) return "x";
-    if (chartX != null && chartX <= 60) return "y";
-    return "x";
-  };
-
-  const handleWheelZoomY = useCallback(
-    (event: {
-      deltaY: number;
-      shiftKey: boolean;
-      preventDefault: () => void;
-      stopPropagation: () => void;
-    }) => {
-      event.preventDefault();
-      event.stopPropagation();
-      const factor = event.deltaY > 0 ? 1.1 : 0.9;
-      const zoomXAxis =
-        focusedAxis === "x" ? true : focusedAxis === "y" ? false : event.shiftKey;
-      if (zoomXAxis) {
-        if (chartYearRange.from == null || chartYearRange.to == null) return;
-        const [currentMin, currentMax] = xDomain ?? [chartYearRange.from, chartYearRange.to];
-        const span = Math.max(1, currentMax - currentMin);
-        const center = currentMin + span / 2;
-        const newSpan = Math.max(1, span * factor);
-        const nextMin = center - newSpan / 2;
-        const nextMax = center + newSpan / 2;
-        setXDomain(clampXDomain(nextMin, nextMax));
-        return;
-      }
-      if (!chartExtent) return;
-      const [currentMin, currentMax] = yDomain ?? [chartExtent.min, chartExtent.max];
-      const span = Math.max(1, currentMax - currentMin);
-      const center = currentMin + span / 2;
-      let newSpan = span * factor;
-      if (chartScale === "log") {
-        const logMin = Math.log10(Math.max(currentMin, 0.1));
-        const logMax = Math.log10(Math.max(currentMax, 0.1));
-        const logSpan = Math.max(0.1, logMax - logMin) * factor;
-        const logCenter = (logMin + logMax) / 2;
-        const newLogMin = logCenter - logSpan / 2;
-        const newLogMax = logCenter + logSpan / 2;
-        setYDomain([Math.max(0.1, 10 ** newLogMin), Math.max(0.2, 10 ** newLogMax)]);
-        return;
-      }
-      newSpan = Math.max(1, newSpan);
-      const newMin = Math.max(0, center - newSpan / 2);
-      const newMax = center + newSpan / 2;
-      setYDomain([newMin, newMax]);
-    },
-    [
-      chartExtent,
-      chartScale,
-      chartYearRange.from,
-      chartYearRange.to,
-      clampXDomain,
-      xDomain,
-      yDomain,
-      focusedAxis,
-    ],
-  );
-
-  useEffect(() => {
-    const el = chartRef.current;
-    if (!el) return;
-    const onWheel = (event: WheelEvent) => {
-      handleWheelZoomY(event);
-    };
-    el.addEventListener("wheel", onWheel, { passive: false });
-    return () => {
-      el.removeEventListener("wheel", onWheel);
-    };
-  }, [handleWheelZoomY]);
-
-  const handleDragStart = (state: any, event?: any) => {
-    const year = resolveActiveYear(state);
-    if (year == null) return;
-    if (event?.shiftKey) {
-      const year = resolveActiveYear(state);
-      if (year == null) return;
-      setDragStart(year);
-      setDragEnd(year);
-      return;
-    }
-    {
-      const baseDomain =
-        xDomain ?? (chartYearRange.from != null && chartYearRange.to != null ? [chartYearRange.from, chartYearRange.to] : null);
-      if (!baseDomain) return;
-      const year = resolveActiveYear(state);
-      const chartX = resolveChartX(state);
-      const chartY = resolveChartY(state);
-      const width = chartRef.current?.getBoundingClientRect().width ?? null;
-      const height = chartRef.current?.getBoundingClientRect().height ?? null;
-      panWidthRef.current = width && width > 0 ? width : null;
-      panHeightRef.current = height && height > 0 ? height : null;
-
-      // Axis drag zones: left gutter pans Y, bottom gutter pans X (Plotly-like)
-      const axisMode = resolveAxisMode(chartX, chartY, panWidthRef.current, panHeightRef.current);
-      setAxisPanMode(axisMode);
-      setFocusedAxis(axisMode);
-
-      if (axisMode === "y") {
-        if (!chartExtent) return;
-        const baseY: [number, number] =
-          yDomain ?? [chartExtent.min, chartExtent.max];
-        setIsPanning(true);
-        setPanStart(year ?? null);
-        setPanStartX(chartX);
-        setPanStartY(chartY);
-        setPanDomain(baseDomain);
-        setPanDomainY(baseY);
-        return;
-      }
-      if (!xDomain && chartYearRange.from != null && chartYearRange.to != null) {
-        const fullSpan = chartYearRange.to - chartYearRange.from;
-        const windowSpan = Math.max(2, Math.round(fullSpan * 0.4));
-        const center =
-          year != null ? year : (chartYearRange.from + chartYearRange.to) / 2;
-        const rawStart = center - windowSpan / 2;
-        const clampedStart = Math.max(chartYearRange.from, Math.min(rawStart, chartYearRange.to - windowSpan));
-        const windowDomain: [number, number] = [clampedStart, clampedStart + windowSpan];
-        setXDomain(windowDomain);
-        setIsPanning(true);
-        setPanStart(year ?? null);
-        setPanStartX(chartX);
-        setPanDomain(windowDomain);
-        return;
-      }
-      setIsPanning(true);
-      setPanStart(year ?? null);
-      setPanStartX(chartX);
-      setPanDomain(baseDomain);
-      return;
+    if (plotlyRef.current) {
+      Plotly.relayout(plotlyRef.current, {
+        "xaxis.autorange": true,
+        "yaxis.autorange": true,
+        "yaxis.type": "linear",
+      });
     }
   };
 
-  const handleDragMove = (state: any) => {
-    const year = resolveActiveYear(state);
-    if (isPanning && panDomainY && panHeightRef.current) {
-      const chartY = resolveChartY(state);
-      if (chartY != null && panStartY != null) {
-        const deltaPx = chartY - panStartY;
-        const span = panDomainY[1] - panDomainY[0];
-        const deltaVal = (deltaPx / panHeightRef.current) * span;
-        let nextStart = panDomainY[0] + deltaVal;
-        let nextEnd = panDomainY[1] + deltaVal;
-        if (chartScale === "log") {
-          nextStart = Math.max(0.1, nextStart);
-          nextEnd = Math.max(nextStart + 0.1, nextEnd);
-        } else {
-          [nextStart, nextEnd] = clampYDomain(nextStart, nextEnd);
-        }
-        setYDomain([nextStart, nextEnd]);
-        return;
-      }
-    }
-    if (isPanning && panStart != null && panDomain) {
-      const chartX = resolveChartX(state);
-      const span = panDomain[1] - panDomain[0];
-      if (chartX != null && panStartX != null && panWidthRef.current) {
-        const deltaPx = chartX - panStartX;
-        const deltaYears = -(deltaPx / panWidthRef.current) * span;
-        const nextStart = panDomain[0] + deltaYears;
-        const nextEnd = panDomain[1] + deltaYears;
-        setXDomain(clampXDomain(nextStart, nextEnd));
-        return;
-      }
-      if (year != null) {
-        const delta = year - panStart;
-        const nextStart = panDomain[0] + delta;
-        const nextEnd = panDomain[1] + delta;
-        setXDomain(clampXDomain(nextStart, nextEnd));
-      }
-      return;
-    }
-    if (dragStart == null) return;
-    if (year == null) return;
-    setDragEnd(year);
-  };
-
-  const handleDragEnd = () => {
-    if (isPanning) {
-      setIsPanning(false);
-      setPanStart(null);
-      setPanDomain(null);
-      setPanStartX(null);
-      setPanStartY(null);
-      setPanDomainY(null);
-      setAxisPanMode(null);
-      panWidthRef.current = null;
-      panHeightRef.current = null;
-      return;
-    }
-    if (dragStart != null && dragEnd != null && dragStart !== dragEnd) {
-      const [start, end] = dragStart < dragEnd ? [dragStart, dragEnd] : [dragEnd, dragStart];
-      setXDomain([start, end]);
-    }
-    setDragStart(null);
-    setDragEnd(null);
-  };
-
-  const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6", "#6366f1"];
+const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6", "#6366f1"];
 
   const topicColor = (topic: string) => {
     if (topicColors[topic]) return topicColors[topic];
@@ -702,6 +375,69 @@ const InsightsPage = () => {
       return { ...prev, [topic]: next };
     });
   };
+
+  const plotTraces = useMemo(() => {
+    if (!chartData.length || !selectedTopics.length) return [];
+    const years = chartData.map((row) => row.year as number);
+    return selectedTopics.flatMap((topic) => {
+      const pubs = chartData.map((row) => row[`${topic}-pubs`] as number);
+      const cites = chartData.map((row) => row[`${topic}-cites`] as number);
+      const color = topicColor(topic);
+      const traces: Array<Record<string, unknown>> = [];
+      if (showPubsSeries) {
+        traces.push({
+          x: years,
+          y: pubs,
+          type: "scatter",
+          mode: "lines",
+          name: `${topic} pubs`,
+          line: { color, width: 2 },
+        });
+      }
+      if (showCitesSeries) {
+        traces.push({
+          x: years,
+          y: cites,
+          type: "scatter",
+          mode: "lines",
+          name: `${topic} cites`,
+          line: { color, width: 2, dash: "dash" },
+        });
+      }
+      return traces;
+    });
+  }, [chartData, selectedTopics, showPubsSeries, showCitesSeries, topicColors]);
+
+  const plotLayout = useMemo(
+    () => ({
+      margin: { l: 50, r: 20, t: 10, b: 40 },
+      xaxis: {
+        title: "Year",
+        type: "linear",
+        tickmode: "auto",
+      },
+      yaxis: {
+        title: "Count",
+        type: chartScale === "log" ? "log" : "linear",
+        rangemode: chartScale === "log" ? "nonnegative" : "tozero",
+      },
+      dragmode: "pan",
+      hovermode: "x unified",
+      legend: { orientation: "h", y: 1.15, x: 0 },
+      uirevision: "insights",
+    }),
+    [chartScale],
+  );
+
+  const plotConfig = useMemo(
+    () => ({
+      displaylogo: false,
+      displayModeBar: true,
+      responsive: true,
+      scrollZoom: true,
+    }),
+    [],
+  );
 
   useEffect(() => {
     if (initializedSelection.current) return;
@@ -852,57 +588,11 @@ const InsightsPage = () => {
   };
 
   const handleExportChart = (format: "svg" | "png") => {
-    const svg = chartRef.current?.querySelector("svg");
-    if (!svg) return;
-    const serializer = new XMLSerializer();
-    const source = serializer.serializeToString(svg);
-    const rect = svg.getBoundingClientRect();
-    const width = Math.max(1, Math.round(rect.width));
-    const height = Math.max(1, Math.round(rect.height));
-    const chartInner = source.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "");
-    const background = getComputedStyle(document.body).backgroundColor || "#ffffff";
-    const combinedSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-      <rect width="100%" height="100%" fill="${background}" />
-      ${chartInner}
-    </svg>`;
-
-    const blob = new Blob([combinedSvg], { type: "image/svg+xml;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const timestamp = Date.now();
-
-    if (format === "svg") {
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = `insights-chart-${timestamp}.svg`;
-      link.click();
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
-      return;
-    }
-
-    const img = new Image();
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = width;
-      canvas.height = height;
-      const ctx = canvas.getContext("2d");
-      if (!ctx) return;
-      ctx.fillStyle = background;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(img, 0, 0, width, height);
-      canvas.toBlob((pngBlob) => {
-        if (!pngBlob) return;
-        const pngUrl = URL.createObjectURL(pngBlob);
-        const link = document.createElement("a");
-        link.href = pngUrl;
-        link.download = `insights-chart-${timestamp}.png`;
-        link.click();
-        setTimeout(() => {
-          URL.revokeObjectURL(pngUrl);
-          URL.revokeObjectURL(url);
-        }, 1000);
-      }, "image/png");
-    };
-    img.src = url;
+    if (!plotlyRef.current) return;
+    Plotly.downloadImage(plotlyRef.current, {
+      format,
+      filename: `insights-chart-${Date.now()}`,
+    });
   };
 
   const handleRangeChange = (
@@ -1184,7 +874,7 @@ const InsightsPage = () => {
 
             {showChart && (
               <Card className="border-border/60 mb-4">
-                <CardContent className="flex h-[380px] sm:h-[320px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
+                <CardContent className="flex h-[520px] sm:h-[420px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
                   <div className="flex flex-wrap items-center gap-3 text-[11px] text-muted-foreground">
                     <div className="flex flex-wrap items-center gap-2">
                       <Button
@@ -1277,110 +967,26 @@ const InsightsPage = () => {
                       ) : null}
                     </div>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3 text-[11px] text-muted-foreground">
-                    {selectedTopics.map((topic) => (
-                      <span key={topic} className="flex items-center gap-2 text-foreground">
-                        <button
-                          type="button"
-                          className="h-2 w-2 rounded-full"
-                          style={{ backgroundColor: topicColor(topic) }}
-                          onClick={() => cycleTopicColor(topic)}
-                          title="Change line color"
-                        />
-                        <span className="hidden sm:inline">{topic}</span>
-                      </span>
-                    ))}
-                  </div>
                   {selectedTopics.length === 0 ? (
                     <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
                       Select topics to plot.
                     </div>
                   ) : (
-                    <div
-                      ref={chartRef}
-                      className="w-full flex-1 min-h-0 overscroll-contain"
-                    >
-                      <ResponsiveContainer width="100%" height="100%">
-                        <LineChart
-                          data={chartData}
-                          margin={{ left: 6, right: 16, top: 0, bottom: 6 }}
-                          onMouseDown={handleDragStart}
-                          onMouseMove={handleDragMove}
-                          onMouseUp={handleDragEnd}
-                        >
-                          <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                          <XAxis
-                            dataKey="year"
-                            type="number"
-                            tickMargin={6}
-                            domain={xAxisDomain}
-                            ticks={xTicks}
-                            interval="preserveStartEnd"
-                            padding={{ left: 6, right: 6 }}
-                            allowDecimals={false}
-                            allowDataOverflow
-                            stroke="#1f2937"
-                            axisLine={{ stroke: "#1f2937", strokeWidth: 1.2 }}
-                            tickLine={{ stroke: "#1f2937" }}
-                            tick={{
-                              fill: "#1f2937",
-                              fontSize: 12,
-                            }}
-                          />
-                          <YAxis
-                            type="number"
-                            scale={chartScale === "log" ? "log" : "linear"}
-                            domain={yAxisDomain}
-                            allowDecimals={false}
-                            allowDataOverflow
-                            stroke="#1f2937"
-                            axisLine={{ stroke: "#1f2937", strokeWidth: 1.2 }}
-                            tickLine={{ stroke: "#1f2937" }}
-                            width={30}
-                            tickMargin={4}
-                            tick={{
-                              fill: "#1f2937",
-                              fontSize: 12,
-                            }}
-                          />
-                          {dragStart != null && dragEnd != null && dragStart !== dragEnd && (
-                            <ReferenceArea
-                              x1={dragStart}
-                              x2={dragEnd}
-                              strokeOpacity={0.1}
-                              fill="#0ea5e9"
-                              fillOpacity={0.1}
-                            />
-                          )}
-                          {showPubsSeries &&
-                            selectedTopics.map((topic) => (
-                              <Line
-                                key={`${topic}-pubs`}
-                                type="monotone"
-                                dataKey={`${topic}-pubs`}
-                                name={`${topic} pubs`}
-                                stroke={topicColor(topic)}
-                                strokeWidth={2}
-                                dot={false}
-                                isAnimationActive={false}
-                              />
-                            ))}
-                          {showCitesSeries &&
-                            selectedTopics.map((topic) => (
-                              <Line
-                                key={`${topic}-cites`}
-                                type="monotone"
-                                dataKey={`${topic}-cites`}
-                                name={`${topic} cites`}
-                                stroke={topicColor(topic)}
-                                strokeWidth={2}
-                                strokeDasharray="4 2"
-                                dot={false}
-                                isAnimationActive={false}
-                              />
-                            ))}
-                        </LineChart>
-                      </ResponsiveContainer>
+                    <div className="w-full flex-1 min-h-0">
+                      <Plot
+                        data={plotTraces}
+                        layout={plotLayout}
+                        config={plotConfig}
+                        useResizeHandler
+                        style={{ width: "100%", height: "100%" }}
+                        plotly={Plotly}
+                        onInitialized={(_figure, graphDiv) => {
+                          plotlyRef.current = graphDiv;
+                        }}
+                        onUpdate={(_figure, graphDiv) => {
+                          plotlyRef.current = graphDiv;
+                        }}
+                      />
                     </div>
                   )}
                 </CardContent>
