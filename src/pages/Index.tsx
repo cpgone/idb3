@@ -108,6 +108,12 @@ const Index = () => {
   const [showPublications, setShowPublications] = useState(true);
   const [showCitations, setShowCitations] = useState(false);
   const [showInstitutions, setShowInstitutions] = useState(false);
+  const [chartSeriesColors, setChartSeriesColors] = useState({
+    topics: "#22c55e",
+    institutions: "#0ea5e9",
+    publications: "#7c3aed",
+    citations: "#f97316",
+  });
   const [showExportMenu, setShowExportMenu] = useState(false);
   const chartRef = useRef<HTMLDivElement | null>(null);
 
@@ -490,46 +496,39 @@ const Index = () => {
                     </div>
                   )}
                   <div className="ml-auto flex flex-wrap items-center gap-3 pr-10">
-                    <button
-                      type="button"
-                      onClick={() => setShowTopics((prev) => !prev)}
-                      className={`flex items-center gap-2 rounded px-2 py-1 transition-colors ${
-                        showTopics ? "bg-muted text-foreground" : "text-muted-foreground hover:bg-muted/60"
-                      }`}
-                    >
-                      <span className="inline-block h-2 w-2 rounded-sm bg-[#22c55e]" />
-                      <span>Topics</span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowInstitutions((prev) => !prev)}
-                      className={`flex items-center gap-2 rounded px-2 py-1 transition-colors ${
-                        showInstitutions ? "bg-muted text-foreground" : "text-muted-foreground hover:bg-muted/60"
-                      }`}
-                    >
-                      <span className="inline-block h-2 w-2 rounded-sm bg-[#0ea5e9]" />
-                      <span>Institutions</span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowPublications((prev) => !prev)}
-                      className={`flex items-center gap-2 rounded px-2 py-1 transition-colors ${
-                        showPublications ? "bg-muted text-foreground" : "text-muted-foreground hover:bg-muted/60"
-                      }`}
-                    >
-                      <span className="inline-block h-2 w-2 rounded-sm bg-[#7c3aed]" />
-                      <span>Publications</span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowCitations((prev) => !prev)}
-                      className={`flex items-center gap-2 rounded px-2 py-1 transition-colors ${
-                        showCitations ? "bg-muted text-foreground" : "text-muted-foreground hover:bg-muted/60"
-                      }`}
-                    >
-                      <span className="inline-block h-1.5 w-4 rounded-sm bg-[#f97316]" />
-                      <span>Citations</span>
-                    </button>
+                    {[
+                      { key: "topics", label: "Topics", visible: showTopics, toggle: setShowTopics },
+                      { key: "institutions", label: "Institutions", visible: showInstitutions, toggle: setShowInstitutions },
+                      { key: "publications", label: "Publications", visible: showPublications, toggle: setShowPublications },
+                      { key: "citations", label: "Citations", visible: showCitations, toggle: setShowCitations },
+                    ].map(({ key, label, visible, toggle }) => (
+                      <button
+                        key={key}
+                        type="button"
+                        onClick={() => toggle((prev) => !prev)}
+                        className={`flex items-center gap-2 rounded px-2 py-1 text-[11px] transition-colors ${
+                          visible ? "text-foreground" : "text-muted-foreground"
+                        }`}
+                        aria-pressed={visible}
+                      >
+                        <input
+                          type="color"
+                          value={chartSeriesColors[key as keyof typeof chartSeriesColors]}
+                          onChange={(event) =>
+                            setChartSeriesColors((prev) => ({
+                              ...prev,
+                              [key]: event.target.value,
+                            }))
+                          }
+                          className={`h-4 w-4 cursor-pointer rounded-full border border-border bg-transparent p-0 ${
+                            visible ? "" : "opacity-50"
+                          }`}
+                          aria-label={`Set ${label} color`}
+                          onClick={(event) => event.stopPropagation()}
+                        />
+                        <span className={visible ? "" : "opacity-60"}>{label}</span>
+                      </button>
+                    ))}
                   </div>
                 </div>
                 <div className="absolute right-3 top-3">
