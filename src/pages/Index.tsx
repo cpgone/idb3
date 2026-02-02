@@ -271,10 +271,10 @@ const Index = () => {
     const estimateTextWidth = (text: string) => Math.max(10, text.length * 7);
 
     const legendItems = [
-      showTopics ? { label: "Topics", color: "#22c55e" } : null,
-      showInstitutions ? { label: "Institutions", color: "#0ea5e9" } : null,
-      showPublications ? { label: "Publications", color: "#7c3aed" } : null,
-      showCitations ? { label: "Citations", color: "#f97316" } : null,
+      showTopics ? { label: "Topics", color: chartSeriesColors.topics } : null,
+      showInstitutions ? { label: "Institutions", color: chartSeriesColors.institutions } : null,
+      showPublications ? { label: "Publications", color: chartSeriesColors.publications } : null,
+      showCitations ? { label: "Citations", color: chartSeriesColors.citations } : null,
     ].filter(Boolean) as { label: string; color: string }[];
 
     const legendWidth =
