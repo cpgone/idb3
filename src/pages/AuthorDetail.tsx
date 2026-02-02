@@ -17,10 +17,9 @@ import { filterWorks } from "@/lib/blacklist";
 import { repairUtf8 } from "@/lib/textRepair";
 import {
   Bar,
-  BarChart,
   CartesianGrid,
+  ComposedChart,
   Line,
-  LineChart,
   ResponsiveContainer,
   Tooltip as RechartsTooltip,
   XAxis,
@@ -72,6 +71,9 @@ const defaultYearRangeConfig =
   (insightsConfig as { defaultYearRange?: { from?: number | null; to?: number | null } })
     ?.defaultYearRange ||
   {};
+const defaultYearRangeCharts =
+  (insightsConfig as { defaultYearRangeCharts?: { from?: number | null; to?: number | null } })
+    ?.defaultYearRangeCharts || defaultYearRangeConfig;
 
 const authorTopTopicsCount =
   (insightsConfig as { authorTopTopicsCount?: number })?.authorTopTopicsCount ?? 4;
@@ -389,20 +391,70 @@ export default function AuthorDetail() {
         year: number;
         publications: number;
         citations: number;
+        topics: Set<string>;
+        institutions: Set<string>;
+        coAuthors: Set<string>;
       }
     >();
+
+    const selfNames = new Set(
+      [
+        localAuthor?.name,
+        displayName,
+        openAlexDetails?.display_name,
+        ...(openAlexDetails?.display_name_alternatives || []),
+      ]
+        .map((name) => (name || "").trim().toLowerCase())
+        .filter(Boolean),
+    );
 
     for (const work of uniqueAuthorWorks) {
       const year = work.year;
       if (!year) continue;
-      const existing = byYear.get(year) ?? { year, publications: 0, citations: 0 };
+      const existing =
+        byYear.get(year) ??
+        {
+          year,
+          publications: 0,
+          citations: 0,
+          topics: new Set<string>(),
+          institutions: new Set<string>(),
+          coAuthors: new Set<string>(),
+        };
       existing.publications += 1;
       existing.citations += work.citations ?? 0;
+      (work.topics || []).forEach((topic) => {
+        if (topic) existing.topics.add(topic);
+      });
+      (work.institutions || []).forEach((inst) => {
+        if (inst) existing.institutions.add(inst);
+      });
+      (work.allAuthors || []).forEach((name) => {
+        const cleaned = (name || "").trim();
+        if (!cleaned) return;
+        if (selfNames.has(cleaned.toLowerCase())) return;
+        existing.coAuthors.add(cleaned);
+      });
       byYear.set(year, existing);
     }
 
-    return Array.from(byYear.values()).sort((a, b) => a.year - b.year);
-  }, [uniqueAuthorWorks]);
+    return Array.from(byYear.values())
+      .map((row) => ({
+        year: row.year,
+        publications: row.publications,
+        citations: row.citations,
+        topics: row.topics.size,
+        institutions: row.institutions.size,
+        coAuthors: row.coAuthors.size,
+      }))
+      .sort((a, b) => a.year - b.year);
+  }, [
+    uniqueAuthorWorks,
+    localAuthor?.name,
+    displayName,
+    openAlexDetails?.display_name,
+    openAlexDetails?.display_name_alternatives,
+  ]);
 
   const allYears = useMemo(() => yearlyStats.map((s) => s.year), [yearlyStats]);
 
@@ -415,14 +467,21 @@ export default function AuthorDetail() {
 
   const [startYear, setStartYear] = useState<number | null>(null);
   const [endYear, setEndYear] = useState<number | null>(null);
+  const [impactSeries, setImpactSeries] = useState({
+    publications: { visible: true, color: "#f59e0b" },
+    topics: { visible: true, color: "#22c55e" },
+    institutions: { visible: false, color: "#3b82f6" },
+    citations: { visible: false, color: "#1e40af" },
+    coAuthors: { visible: false, color: "#f97316" },
+  });
 
   useEffect(() => {
     if (!yearOptions.length) return;
-    const fallbackStart = defaultYearRangeConfig.from ?? yearOptions[0];
-    const fallbackEnd = defaultYearRangeConfig.to ?? yearOptions[yearOptions.length - 1];
+    const fallbackStart = defaultYearRangeCharts.from ?? yearOptions[0];
+    const fallbackEnd = defaultYearRangeCharts.to ?? yearOptions[yearOptions.length - 1];
     setStartYear((prev) => (prev == null ? fallbackStart : prev));
     setEndYear((prev) => (prev == null ? fallbackEnd : prev));
-  }, [yearOptions, defaultYearRangeConfig.from, defaultYearRangeConfig.to]);
+  }, [yearOptions, defaultYearRangeCharts.from, defaultYearRangeCharts.to]);
 
   useEffect(() => {
     if (!allYears.length) return;
@@ -1499,13 +1558,7 @@ export default function AuthorDetail() {
 
         {yearlyStats.length > 0 && (
           <Card className="border-border/60">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <BarChart3 className="h-5 w-5 text-primary" />
-                <span>Impact over time</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-6 pt-6">
               <div>
                 <div className="mb-3 flex flex-col gap-3 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-2">
@@ -1543,28 +1596,54 @@ export default function AuthorDetail() {
                     </select>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-4">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className="inline-block h-3 w-3 rounded-sm"
-                        style={{ backgroundColor: "hsl(var(--accent))" }}
-                        aria-hidden
-                      />
-                      <span className="text-foreground">Publications (bars)</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className="inline-block h-3 w-3 rounded-full border-2"
-                        style={{ borderColor: "hsl(var(--primary))" }}
-                        aria-hidden
-                      />
-                      <span className="text-foreground">Citations (line)</span>
-                    </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    {[
+                      { key: "publications", label: "Publications", shape: "square" },
+                      { key: "topics", label: "Topics", shape: "square" },
+                      { key: "institutions", label: "Institutions", shape: "square" },
+                      { key: "citations", label: "Citations", shape: "circle" },
+                      { key: "coAuthors", label: "Co-authors", shape: "circle" },
+                    ].map(({ key, label, shape }) => {
+                      const series = impactSeries[key as keyof typeof impactSeries];
+                      return (
+                        <button
+                          key={key}
+                          type="button"
+                          className={`flex items-center gap-2 rounded px-2 py-1 text-[11px] transition ${
+                            series.visible ? "text-foreground" : "text-muted-foreground"
+                          }`}
+                          onClick={() =>
+                            setImpactSeries((prev) => ({
+                              ...prev,
+                              [key]: { ...prev[key as keyof typeof prev], visible: !series.visible },
+                            }))
+                          }
+                          aria-pressed={series.visible}
+                        >
+                          <input
+                            type="color"
+                            value={series.color}
+                            onChange={(event) =>
+                              setImpactSeries((prev) => ({
+                                ...prev,
+                                [key]: { ...prev[key as keyof typeof prev], color: event.target.value },
+                              }))
+                            }
+                            className={`h-4 w-4 cursor-pointer rounded-full border border-border bg-transparent p-0 ${
+                              series.visible ? "" : "opacity-50"
+                            }`}
+                            aria-label={`Set ${label} color`}
+                            onClick={(event) => event.stopPropagation()}
+                          />
+                          <span className={series.visible ? "" : "opacity-60"}>{label}</span>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
                 <div className="h-56 w-full">
                   <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={filteredYearlyStats}>
+                    <ComposedChart data={filteredYearlyStats}>
                       <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
                       <XAxis
                         dataKey="year"
@@ -1589,49 +1668,44 @@ export default function AuthorDetail() {
                           borderRadius: "6px",
                         }}
                       />
-                      <Bar dataKey="publications" fill="hsl(var(--accent))" name="Publications" />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-
-              <div>
-                <div className="h-56 w-full">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={filteredYearlyStats}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                      <XAxis
-                        dataKey="year"
-                        stroke="hsl(var(--muted-foreground))"
-                        tick={{
-                          fill: "hsl(var(--muted-foreground))",
-                          fontSize: 11,
-                          fontWeight: 500,
-                        }}
-                      />
-                      <YAxis
-                        stroke="hsl(var(--muted-foreground))"
-                        tick={{
-                          fill: "hsl(var(--muted-foreground))",
-                          fontSize: 11,
-                        }}
-                      />
-                      <RechartsTooltip
-                        contentStyle={{
-                          backgroundColor: "hsl(var(--card))",
-                          border: "1px solid hsl(var(--border))",
-                          borderRadius: "6px",
-                        }}
-                      />
-                      <Line
-                        type="monotone"
-                        dataKey="citations"
-                        stroke="hsl(var(--primary))"
-                        strokeWidth={2}
-                        dot={{ r: 3 }}
-                        name="Citations"
-                      />
-                    </LineChart>
+                      {impactSeries.publications.visible && (
+                        <Bar
+                          dataKey="publications"
+                          fill={impactSeries.publications.color}
+                          name="Publications"
+                        />
+                      )}
+                      {impactSeries.topics.visible && (
+                        <Bar dataKey="topics" fill={impactSeries.topics.color} name="Topics" />
+                      )}
+                      {impactSeries.institutions.visible && (
+                        <Bar
+                          dataKey="institutions"
+                          fill={impactSeries.institutions.color}
+                          name="Institutions"
+                        />
+                      )}
+                      {impactSeries.citations.visible && (
+                        <Line
+                          type="monotone"
+                          dataKey="citations"
+                          stroke={impactSeries.citations.color}
+                          strokeWidth={2}
+                          dot={{ r: 3 }}
+                          name="Citations"
+                        />
+                      )}
+                      {impactSeries.coAuthors.visible && (
+                        <Line
+                          type="monotone"
+                          dataKey="coAuthors"
+                          stroke={impactSeries.coAuthors.color}
+                          strokeWidth={2}
+                          dot={{ r: 3 }}
+                          name="Co-authors"
+                        />
+                      )}
+                    </ComposedChart>
                   </ResponsiveContainer>
                 </div>
               </div>
