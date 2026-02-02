@@ -380,7 +380,7 @@ const Members = () => {
 
   return (
     <SiteShell>
-      <main className="container mx-auto px-4 py-6 space-y-4">
+      <main className="container mx-auto px-4 py-6 space-y-6">
         <div className="flex flex-wrap items-center gap-3">
           <Button variant="ghost" onClick={() => navigate("/")}>
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -393,31 +393,13 @@ const Members = () => {
         </div>
 
         <Card className="border-border/60">
-          <CardHeader className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3 sm:flex-1">
+          <CardHeader className="space-y-3">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-primary" />
                 <CardTitle>Members</CardTitle>
               </div>
-              <div className="flex w-full justify-center text-xs text-muted-foreground">
-                <div className="relative w-full max-w-md">
-                  <Input
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => {
-                      setSearchQuery(e.target.value);
-                      setVisibleCount(PAGE_SIZE);
-                    }}
-                    placeholder="Search members, affiliations…"
-                    className="h-8 pl-7 pr-2 text-xs"
-                  />
-                  <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
-                </div>
-              </div>
-
-            </div>
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                 <Button
                   variant="outline"
                   size="icon"
@@ -445,6 +427,21 @@ const Members = () => {
                 >
                   <LinkIcon className="h-3 w-3" />
                 </Button>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="relative w-full max-w-md">
+                <Input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    setVisibleCount(PAGE_SIZE);
+                  }}
+                  placeholder="Search members, affiliations..."
+                  className="h-8 pl-7 pr-2 text-xs"
+                />
+                <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
               </div>
             </div>
           </CardHeader>

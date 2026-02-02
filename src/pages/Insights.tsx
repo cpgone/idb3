@@ -168,6 +168,13 @@ const InsightsPage = () => {
   const [isPanning, setIsPanning] = useState(false);
   const [panStart, setPanStart] = useState<number | null>(null);
   const [panDomain, setPanDomain] = useState<[number, number] | null>(null);
+  const [panStartX, setPanStartX] = useState<number | null>(null);
+  const [panStartY, setPanStartY] = useState<number | null>(null);
+  const [panDomainY, setPanDomainY] = useState<[number, number] | null>(null);
+  const [axisPanMode, setAxisPanMode] = useState<"x" | "y" | null>(null);
+  const [focusedAxis, setFocusedAxis] = useState<"x" | "y" | null>(null);
+  const panWidthRef = useRef<number | null>(null);
+  const panHeightRef = useRef<number | null>(null);
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [showPubsSeries, setShowPubsSeries] = useState(true);
   const [showCitesSeries, setShowCitesSeries] = useState(false);
@@ -425,6 +432,13 @@ const InsightsPage = () => {
     setIsPanning(false);
     setPanStart(null);
     setPanDomain(null);
+    setPanStartX(null);
+    setPanStartY(null);
+    setPanDomainY(null);
+    setAxisPanMode(null);
+    setFocusedAxis(null);
+    panWidthRef.current = null;
+    panHeightRef.current = null;
   };
 
   const resolveActiveYear = (state: any) => {
@@ -432,6 +446,27 @@ const InsightsPage = () => {
     const payloadYear = state?.activePayload?.[0]?.payload?.year;
     return typeof payloadYear === "number" ? payloadYear : null;
   };
+
+  const resolveChartX = (state: any) => {
+    return typeof state?.chartX === "number" ? state.chartX : null;
+  };
+
+  const resolveChartY = (state: any) => {
+    return typeof state?.chartY === "number" ? state.chartY : null;
+  };
+
+  const clampYDomain = useCallback(
+    (start: number, end: number) => {
+      if (!chartExtent) return [start, end] as [number, number];
+      const min = chartExtent.min;
+      const max = chartExtent.max;
+      const span = end - start;
+      if (span >= max - min) return [min, max] as [number, number];
+      const clampedStart = Math.max(min, Math.min(start, max - span));
+      return [clampedStart, clampedStart + span] as [number, number];
+    },
+    [chartExtent],
+  );
 
   const clampXDomain = useCallback(
     (start: number, end: number) => {
@@ -446,6 +481,17 @@ const InsightsPage = () => {
     [chartYearRange.from, chartYearRange.to],
   );
 
+  const resolveAxisMode = (
+    chartX: number | null,
+    chartY: number | null,
+    width: number | null,
+    height: number | null,
+  ): "x" | "y" => {
+    if (chartY != null && height != null && chartY >= height - 40) return "x";
+    if (chartX != null && chartX <= 60) return "y";
+    return "x";
+  };
+
   const handleWheelZoomY = useCallback(
     (event: {
       deltaY: number;
@@ -456,7 +502,9 @@ const InsightsPage = () => {
       event.preventDefault();
       event.stopPropagation();
       const factor = event.deltaY > 0 ? 1.1 : 0.9;
-      if (event.shiftKey) {
+      const zoomXAxis =
+        focusedAxis === "x" ? true : focusedAxis === "y" ? false : event.shiftKey;
+      if (zoomXAxis) {
         if (chartYearRange.from == null || chartYearRange.to == null) return;
         const [currentMin, currentMax] = xDomain ?? [chartYearRange.from, chartYearRange.to];
         const span = Math.max(1, currentMax - currentMin);
@@ -495,6 +543,7 @@ const InsightsPage = () => {
       clampXDomain,
       xDomain,
       yDomain,
+      focusedAxis,
     ],
   );
 
@@ -514,41 +563,105 @@ const InsightsPage = () => {
     const year = resolveActiveYear(state);
     if (year == null) return;
     if (event?.shiftKey) {
+      const year = resolveActiveYear(state);
+      if (year == null) return;
+      setDragStart(year);
+      setDragEnd(year);
+      return;
+    }
+    {
       const baseDomain =
         xDomain ?? (chartYearRange.from != null && chartYearRange.to != null ? [chartYearRange.from, chartYearRange.to] : null);
       if (!baseDomain) return;
+      const year = resolveActiveYear(state);
+      const chartX = resolveChartX(state);
+      const chartY = resolveChartY(state);
+      const width = chartRef.current?.getBoundingClientRect().width ?? null;
+      const height = chartRef.current?.getBoundingClientRect().height ?? null;
+      panWidthRef.current = width && width > 0 ? width : null;
+      panHeightRef.current = height && height > 0 ? height : null;
+
+      // Axis drag zones: left gutter pans Y, bottom gutter pans X (Plotly-like)
+      const axisMode = resolveAxisMode(chartX, chartY, panWidthRef.current, panHeightRef.current);
+      setAxisPanMode(axisMode);
+      setFocusedAxis(axisMode);
+
+      if (axisMode === "y") {
+        if (!chartExtent) return;
+        const baseY: [number, number] =
+          yDomain ?? [chartExtent.min, chartExtent.max];
+        setIsPanning(true);
+        setPanStart(year ?? null);
+        setPanStartX(chartX);
+        setPanStartY(chartY);
+        setPanDomain(baseDomain);
+        setPanDomainY(baseY);
+        return;
+      }
       if (!xDomain && chartYearRange.from != null && chartYearRange.to != null) {
         const fullSpan = chartYearRange.to - chartYearRange.from;
         const windowSpan = Math.max(2, Math.round(fullSpan * 0.4));
-        const rawStart = year - windowSpan / 2;
+        const center =
+          year != null ? year : (chartYearRange.from + chartYearRange.to) / 2;
+        const rawStart = center - windowSpan / 2;
         const clampedStart = Math.max(chartYearRange.from, Math.min(rawStart, chartYearRange.to - windowSpan));
         const windowDomain: [number, number] = [clampedStart, clampedStart + windowSpan];
         setXDomain(windowDomain);
         setIsPanning(true);
-        setPanStart(year);
+        setPanStart(year ?? null);
+        setPanStartX(chartX);
         setPanDomain(windowDomain);
         return;
       }
       setIsPanning(true);
-      setPanStart(year);
+      setPanStart(year ?? null);
+      setPanStartX(chartX);
       setPanDomain(baseDomain);
       return;
     }
-    setDragStart(year);
-    setDragEnd(year);
   };
 
   const handleDragMove = (state: any) => {
     const year = resolveActiveYear(state);
-    if (year == null) return;
+    if (isPanning && panDomainY && panHeightRef.current) {
+      const chartY = resolveChartY(state);
+      if (chartY != null && panStartY != null) {
+        const deltaPx = chartY - panStartY;
+        const span = panDomainY[1] - panDomainY[0];
+        const deltaVal = (deltaPx / panHeightRef.current) * span;
+        let nextStart = panDomainY[0] + deltaVal;
+        let nextEnd = panDomainY[1] + deltaVal;
+        if (chartScale === "log") {
+          nextStart = Math.max(0.1, nextStart);
+          nextEnd = Math.max(nextStart + 0.1, nextEnd);
+        } else {
+          [nextStart, nextEnd] = clampYDomain(nextStart, nextEnd);
+        }
+        setYDomain([nextStart, nextEnd]);
+        return;
+      }
+    }
     if (isPanning && panStart != null && panDomain) {
-      const delta = year - panStart;
-      const nextStart = panDomain[0] + delta;
-      const nextEnd = panDomain[1] + delta;
-      setXDomain(clampXDomain(nextStart, nextEnd));
+      const chartX = resolveChartX(state);
+      const span = panDomain[1] - panDomain[0];
+      if (chartX != null && panStartX != null && panWidthRef.current) {
+        const deltaPx = chartX - panStartX;
+        const deltaYears = -(deltaPx / panWidthRef.current) * span;
+        const nextStart = panDomain[0] + deltaYears;
+        const nextEnd = panDomain[1] + deltaYears;
+        setXDomain(clampXDomain(nextStart, nextEnd));
+        return;
+      }
+      if (year != null) {
+        const delta = year - panStart;
+        const nextStart = panDomain[0] + delta;
+        const nextEnd = panDomain[1] + delta;
+        setXDomain(clampXDomain(nextStart, nextEnd));
+      }
       return;
     }
     if (dragStart == null) return;
+    if (year == null) return;
     setDragEnd(year);
   };
 
@@ -557,6 +670,12 @@ const InsightsPage = () => {
       setIsPanning(false);
       setPanStart(null);
       setPanDomain(null);
+      setPanStartX(null);
+      setPanStartY(null);
+      setPanDomainY(null);
+      setAxisPanMode(null);
+      panWidthRef.current = null;
+      panHeightRef.current = null;
       return;
     }
     if (dragStart != null && dragEnd != null && dragStart !== dragEnd) {
@@ -827,8 +946,8 @@ const InsightsPage = () => {
 
   return (
     <SiteShell>
-      <main className="container mx-auto px-4 py-6 space-y-4">
-        <div className="flex flex-wrap gap-2">
+      <main className="container mx-auto px-4 py-6 space-y-6">
+        <div className="flex flex-wrap items-center gap-3">
           <Button variant="ghost" onClick={() => navigate("/")}>
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to dashboard
@@ -839,50 +958,50 @@ const InsightsPage = () => {
         </div>
 
         <Card className="border-border/60">
-          <CardHeader className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3 sm:flex-1">
+          <CardHeader className="space-y-3">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <FileTextIcon className="h-5 w-5 text-primary" />
                 <CardTitle className="text-base sm:text-lg text-foreground">Topic insights</CardTitle>
               </div>
-            </div>
-            <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8"
-                onClick={handlePrint}
-                title="Save PDF"
-              >
-                <Download className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8"
-                onClick={handleExportCsv}
-                title="Export CSV"
-              >
-                <FileText className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8"
-                onClick={handleShareLinkedIn}
-                title="Share on LinkedIn"
-              >
-                <Linkedin className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8"
-                onClick={handleCopyLink}
-                title="Copy link"
-              >
-                <LinkIcon className="h-4 w-4" />
-              </Button>
+              <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handlePrint}
+                  title="Save PDF"
+                >
+                  <Download className="h-4 w-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleExportCsv}
+                  title="Export CSV"
+                >
+                  <FileText className="h-4 w-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleShareLinkedIn}
+                  title="Share on LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleCopyLink}
+                  title="Copy link"
+                >
+                  <LinkIcon className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
           </CardHeader>
           <CardContent className="space-y-3">
@@ -902,62 +1021,52 @@ const InsightsPage = () => {
               <div className="flex flex-col items-end gap-2 text-xs text-muted-foreground">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold text-foreground">View</span>
-                  <button
+                  <Button
                     type="button"
-                    className={`rounded px-2 py-1 text-[11px] ${compareMode ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
+                    variant={compareMode ? "secondary" : "outline"}
+                    size="sm"
+                    className="h-7 text-[11px]"
                     onClick={() => setCompareMode(true)}
                   >
                     Compare A vs B
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     type="button"
-                    className={`rounded px-2 py-1 text-[11px] ${!compareMode ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
+                    variant={!compareMode ? "secondary" : "outline"}
+                    size="sm"
+                    className="h-7 text-[11px]"
                     onClick={() => setCompareMode(false)}
                   >
                     Single period
-                  </button>
+                  </Button>
                 </div>
                 {compareMode && (
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="font-semibold text-foreground">Quick presets</span>
-                    <button
+                    <Button
                       type="button"
-                      className="rounded px-2 py-1 text-[11px] text-muted-foreground hover:bg-muted/40"
+                      variant="outline"
+                      size="sm"
+                      className="h-7 text-[11px]"
                       onClick={() => applyRollingPreset(5)}
                     >
                       Last 5y vs prior 5y
-                    </button>
-                    <button
+                    </Button>
+                    <Button
                       type="button"
-                      className="rounded px-2 py-1 text-[11px] text-muted-foreground hover:bg-muted/40"
+                      variant="outline"
+                      size="sm"
+                      className="h-7 text-[11px]"
                       onClick={() => applyRollingPreset(3)}
                     >
                       Last 3y vs prior 3y
-                    </button>
+                    </Button>
                   </div>
                 )}
               </div>
             </div>
             <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
               <div className="flex flex-wrap items-center gap-3">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="h-7 text-[11px]"
-                  onClick={() => setShowLegend((prev) => !prev)}
-                >
-                  {showLegend ? (
-                    <>
-                      <ChevronUp className="h-3 w-3" />
-                      Hide legend
-                    </>
-                  ) : (
-                    <>
-                      <ChevronDown className="h-3 w-3" />
-                      Show legend
-                    </>
-                  )}
-                </Button>
                 <Button
                   variant="outline"
                   size="sm"
@@ -1013,9 +1122,32 @@ const InsightsPage = () => {
                       </select>
                     </>
                   ) : (
-                    <span className="rounded border border-border bg-muted/40 px-2 py-1 text-[11px] text-foreground">
-                      All years {rangeA.from ?? ""}-{rangeA.to ?? ""}
-                    </span>
+                    <>
+                      <label className="font-semibold text-foreground">From</label>
+                      <select
+                        className="h-8 rounded border border-border bg-background px-2 text-xs"
+                        value={rangeA.from ?? ""}
+                        onChange={(e) => handleRangeChange("A", "from", Number(e.target.value))}
+                      >
+                        {allYears.map((y) => (
+                          <option key={y} value={y}>
+                            {y}
+                          </option>
+                        ))}
+                      </select>
+                      <label className="font-semibold text-foreground">to</label>
+                      <select
+                        className="h-8 rounded border border-border bg-background px-2 text-xs"
+                        value={rangeA.to ?? ""}
+                        onChange={(e) => handleRangeChange("A", "to", Number(e.target.value))}
+                      >
+                        {allYears.map((y) => (
+                          <option key={y} value={y}>
+                            {y}
+                          </option>
+                        ))}
+                      </select>
+                    </>
                   )}
                 </div>
                 {compareMode && (
@@ -1055,54 +1187,60 @@ const InsightsPage = () => {
                 <CardContent className="flex h-[380px] sm:h-[320px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
                   <div className="flex flex-wrap items-center gap-3 text-[11px] text-muted-foreground">
                     <div className="flex flex-wrap items-center gap-2">
-                      <button
+                      <Button
                         type="button"
-                        className={`flex items-center gap-2 rounded px-2 py-1 transition ${
-                          showPubsSeries ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
-                        }`}
+                        variant={showPubsSeries ? "secondary" : "outline"}
+                        size="sm"
+                        className="h-7 text-[11px] flex items-center gap-2"
                         onClick={() => setShowPubsSeries((prev) => !prev)}
                         title="Publications (solid)"
                         aria-label="Publications (solid)"
                       >
                         <BookOpen className="h-3 w-3" />
                         <span className="inline-block h-0.5 w-4 rounded bg-current" />
-                      </button>
-                      <button
+                      </Button>
+                      <Button
                         type="button"
-                        className={`flex items-center gap-2 rounded px-2 py-1 transition ${
-                          showCitesSeries ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
-                        }`}
+                        variant={showCitesSeries ? "secondary" : "outline"}
+                        size="sm"
+                        className="h-7 text-[11px] flex items-center gap-2"
                         onClick={() => setShowCitesSeries((prev) => !prev)}
                         title="Citations (dashed)"
                         aria-label="Citations (dashed)"
                       >
                         <BarChart3 className="h-3 w-3" />
                         <span className="inline-block h-0 w-5 border-t-2 border-dashed border-current" />
-                      </button>
-                      <span className="flex items-center gap-2 text-[11px] text-muted-foreground">
-                        <button
-                          className={`rounded px-2 py-1 text-[11px] ${chartScale === "linear" ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
-                          onClick={() => setChartScale("linear")}
+                      </Button>
+                      <div className="flex items-center gap-2">
+                        <Button
                           type="button"
+                          variant={chartScale === "linear" ? "secondary" : "outline"}
+                          size="sm"
+                          className="h-7 text-[11px]"
+                          onClick={() => setChartScale("linear")}
                         >
                           Linear
-                        </button>
-                        <button
-                          className={`rounded px-2 py-1 text-[11px] ${chartScale === "log" ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
-                          onClick={() => setChartScale("log")}
+                        </Button>
+                        <Button
                           type="button"
+                          variant={chartScale === "log" ? "secondary" : "outline"}
+                          size="sm"
+                          className="h-7 text-[11px]"
+                          onClick={() => setChartScale("log")}
                         >
                           Log
-                        </button>
-                      </span>
-                      <button
+                        </Button>
+                      </div>
+                      <Button
                         type="button"
-                        className="rounded bg-muted px-2 py-1 text-[11px] text-foreground transition hover:bg-muted/70"
+                        variant="outline"
+                        size="sm"
+                        className="h-7 text-[11px]"
                         onClick={resetAxes}
                         title="Reset zoom on both axes"
                       >
                         Reset axes
-                      </button>
+                      </Button>
                     </div>
                     <div className="ml-auto relative flex items-center gap-1">
                       <button
@@ -1249,84 +1387,106 @@ const InsightsPage = () => {
               </Card>
             )}
 
-            {showLegend && (
-              <div className="rounded-md border border-border/60 bg-muted/40 p-3 text-[11px] text-muted-foreground">
-                {compareMode ? (
-                  <div className="grid gap-3 md:grid-cols-2">
+            <div className="rounded-md border border-border/60 bg-muted/40 p-3 text-[11px] text-muted-foreground">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-7 text-[11px]"
+                  onClick={() => setShowLegend((prev) => !prev)}
+                >
+                  {showLegend ? (
+                    <>
+                      <ChevronUp className="h-3 w-3" />
+                      Hide legend
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown className="h-3 w-3" />
+                      Show legend
+                    </>
+                  )}
+                </Button>
+              </div>
+              {showLegend && (
+                <div className="mt-3">
+                  {compareMode ? (
+                    <div className="grid gap-3 md:grid-cols-2">
+                      <div className="space-y-2">
+                        <div className="font-semibold text-foreground">Legend</div>
+                        <div className="grid gap-1 sm:grid-cols-2">
+                          <span className="inline-flex items-center gap-2">
+                            <BookOpen className="h-3 w-3 text-primary" />
+                            Pubs A = Period A publications
+                          </span>
+                          <span className="inline-flex items-center gap-2">
+                            <BookOpen className="h-3 w-3 text-primary" />
+                            Pubs B = Period B publications
+                          </span>
+                          <span className="inline-flex items-center gap-2">
+                            <BookOpen className="h-3 w-3 text-primary" />
+                            Pubs Delta% = % change from Period A to B
+                          </span>
+                          <span className="inline-flex items-center gap-2">
+                            <BarChart3 className="h-3 w-3 text-primary" />
+                            Cites A = Period A citations
+                          </span>
+                          <span className="inline-flex items-center gap-2">
+                            <BarChart3 className="h-3 w-3 text-primary" />
+                            Cites B = Period B citations
+                          </span>
+                          <span className="inline-flex items-center gap-2">
+                            <BarChart3 className="h-3 w-3 text-primary" />
+                            Cites Delta% = % change from Period A to B
+                          </span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-3">
+                          <span className="font-semibold text-foreground">Badges:</span>
+                          <span className="inline-flex items-center gap-1">
+                            <span className={`inline-flex items-center justify-center rounded-full p-1 ${badgeTone("Stable")}`}>
+                              <BookOpen className="h-3 w-3" />
+                            </span>
+                            Publications trend
+                          </span>
+                          <span className="inline-flex items-center gap-1">
+                            <span className={`inline-flex items-center justify-center rounded-full p-1 ${badgeTone("Stable")}`}>
+                              <BarChart3 className="h-3 w-3" />
+                            </span>
+                            Citations trend
+                          </span>
+                        </div>
+                      </div>
+                      <div className="space-y-1 text-foreground">
+                        <div className="font-semibold">Insights</div>
+                        <ul className="list-disc pl-4 space-y-0.5">
+                          <li>Emerging: only in Period B</li>
+                          <li>Declining: missing in Period B or both drop &gt;20%</li>
+                          <li>Strong surge: publications &gt;=2x and citations &gt;=2x</li>
+                          <li>Growing priority: publications &gt;=1.5x and citations &gt;=1.2x</li>
+                          <li>Impact-led: citations &gt;=1.5x with publications flat/declining</li>
+                          <li>Output rising, impact softening: publications &gt;=1.2x but citations &lt;0.9x</li>
+                          <li>Stable: otherwise</li>
+                        </ul>
+                      </div>
+                    </div>
+                  ) : (
                     <div className="space-y-2">
                       <div className="font-semibold text-foreground">Legend</div>
                       <div className="grid gap-1 sm:grid-cols-2">
                         <span className="inline-flex items-center gap-2">
                           <BookOpen className="h-3 w-3 text-primary" />
-                          Pubs A = Period A publications
-                        </span>
-                        <span className="inline-flex items-center gap-2">
-                          <BookOpen className="h-3 w-3 text-primary" />
-                          Pubs B = Period B publications
-                        </span>
-                        <span className="inline-flex items-center gap-2">
-                          <BookOpen className="h-3 w-3 text-primary" />
-                          Pubs Δ% = % change from Period A to B
+                          Pubs = publications in selected period
                         </span>
                         <span className="inline-flex items-center gap-2">
                           <BarChart3 className="h-3 w-3 text-primary" />
-                          Cites A = Period A citations
-                        </span>
-                        <span className="inline-flex items-center gap-2">
-                          <BarChart3 className="h-3 w-3 text-primary" />
-                          Cites B = Period B citations
-                        </span>
-                        <span className="inline-flex items-center gap-2">
-                          <BarChart3 className="h-3 w-3 text-primary" />
-                          Cites Δ% = % change from Period A to B
-                        </span>
-                      </div>
-                      <div className="flex flex-wrap items-center gap-3">
-                        <span className="font-semibold text-foreground">Badges:</span>
-                        <span className="inline-flex items-center gap-1">
-                          <span className={`inline-flex items-center justify-center rounded-full p-1 ${badgeTone("Stable")}`}>
-                            <BookOpen className="h-3 w-3" />
-                          </span>
-                          Publications trend
-                        </span>
-                        <span className="inline-flex items-center gap-1">
-                          <span className={`inline-flex items-center justify-center rounded-full p-1 ${badgeTone("Stable")}`}>
-                            <BarChart3 className="h-3 w-3" />
-                          </span>
-                          Citations trend
+                          Cites = citations in selected period
                         </span>
                       </div>
                     </div>
-                    <div className="space-y-1 text-foreground">
-                      <div className="font-semibold">Insights</div>
-                      <ul className="list-disc pl-4 space-y-0.5">
-                        <li>Emerging: only in Period B</li>
-                        <li>Declining: missing in Period B or both drop &gt;20%</li>
-                        <li>Strong surge: publications ≥2x and citations ≥2x</li>
-                        <li>Growing priority: publications ≥1.5x and citations ≥1.2x</li>
-                        <li>Impact-led: citations ≥1.5x with publications flat/declining</li>
-                        <li>Output rising, impact softening: publications ≥1.2x but citations &lt;0.9x</li>
-                        <li>Stable: otherwise</li>
-                      </ul>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="space-y-2">
-                    <div className="font-semibold text-foreground">Legend</div>
-                    <div className="grid gap-1 sm:grid-cols-2">
-                      <span className="inline-flex items-center gap-2">
-                        <BookOpen className="h-3 w-3 text-primary" />
-                        Pubs = publications in selected period
-                      </span>
-                      <span className="inline-flex items-center gap-2">
-                        <BarChart3 className="h-3 w-3 text-primary" />
-                        Cites = citations in selected period
-                      </span>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
+                  )}
+                </div>
+              )}
+            </div>
 
             <div className="overflow-auto rounded-md border border-border/60" id="insights-table">
               <table className="min-w-full text-sm">
@@ -1371,7 +1531,7 @@ const InsightsPage = () => {
                             setSortDir((prev) => (sortKey === "pubsDelta" && prev === "desc" ? "asc" : "desc"));
                           }}
                         >
-                          Pubs Δ%
+                          Pubs Delta%
                           <ArrowUpDown className="h-3 w-3" />
                         </button>
                       </th>
@@ -1414,7 +1574,7 @@ const InsightsPage = () => {
                             setSortDir((prev) => (sortKey === "citesDelta" && prev === "desc" ? "asc" : "desc"));
                           }}
                         >
-                          Cites Δ%
+                          Cites Delta%
                           <ArrowUpDown className="h-3 w-3" />
                         </button>
                       </th>
@@ -1458,7 +1618,7 @@ const InsightsPage = () => {
                                 }`}
                                 title={selected ? "Remove from chart" : "Add to chart"}
                               >
-                                {selected ? "✓" : "+"}
+                                {selected ? "x" : "+"}
                               </button>
                             )}
                             <Tag className="h-3.5 w-3.5 text-primary" />
