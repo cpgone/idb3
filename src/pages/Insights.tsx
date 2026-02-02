@@ -161,7 +161,6 @@ const InsightsPage = () => {
   const [topicColors, setTopicColors] = useState<Record<string, string>>({});
   const initializedSelection = useRef(false);
   const plotlyRef = useRef<any>(null);
-  const [showChartExportMenu, setShowChartExportMenu] = useState(false);
   const [showChartPopout, setShowChartPopout] = useState(false);
 
   useEffect(() => {
@@ -596,14 +595,6 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
     img.src = url;
   };
 
-  const handleExportChart = (format: "svg" | "png") => {
-    if (!plotlyRef.current) return;
-    Plotly.downloadImage(plotlyRef.current, {
-      format,
-      filename: `insights-chart-${Date.now()}`,
-    });
-  };
-
   const handleRangeChange = (
     which: "A" | "B",
     field: "from" | "to",
@@ -717,7 +708,7 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                   <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 </div>
               </div>
-              <div className="flex flex-col items-end gap-2 text-xs text-muted-foreground">
+              <div className="flex flex-wrap items-center justify-end gap-2 text-xs text-muted-foreground">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold text-foreground">View</span>
                   <Button
@@ -953,38 +944,6 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                         <Maximize2 className="h-3 w-3" />
                         Pop out
                       </Button>
-                      <button
-                        type="button"
-                        onClick={() => setShowChartExportMenu((prev) => !prev)}
-                        className="inline-flex items-center justify-center rounded px-2 py-1 text-muted-foreground hover:bg-muted/60"
-                        title="Export chart"
-                      >
-                        <Download className="h-4 w-4" />
-                      </button>
-                      {showChartExportMenu ? (
-                        <div className="absolute right-0 top-8 z-10 min-w-[110px] rounded-md border border-border bg-popover p-1 shadow-lg">
-                          <button
-                            type="button"
-                            className="w-full rounded px-2 py-1 text-left text-sm hover:bg-muted"
-                            onClick={() => {
-                              handleExportChart("svg");
-                              setShowChartExportMenu(false);
-                            }}
-                          >
-                            Export SVG
-                          </button>
-                          <button
-                            type="button"
-                            className="w-full rounded px-2 py-1 text-left text-sm hover:bg-muted"
-                            onClick={() => {
-                              handleExportChart("png");
-                              setShowChartExportMenu(false);
-                            }}
-                          >
-                            Export PNG
-                          </button>
-                        </div>
-                      ) : null}
                     </div>
                   </div>
                   {selectedTopics.length === 0 ? (

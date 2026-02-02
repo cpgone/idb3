@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy } from "lucide-react";
+import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -26,6 +26,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import Plot from "react-plotly.js";
+import Plotly from "plotly.js-dist-min";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import insightsConfig from "../../data/config/insightsconfig.json";
 import venueTypeOverridesCsv from "../../data/config/venue-type-overrides.csv?raw";
@@ -181,6 +183,7 @@ export default function AuthorDetail() {
   const [compareInsights, setCompareInsights] = useState(true);
   const [showInsightsChart, setShowInsightsChart] = useState(true);
   const [showInsightsLegend, setShowInsightsLegend] = useState(true);
+  const [showAuthorInsightsPopout, setShowAuthorInsightsPopout] = useState(false);
   const [insightSearch, setInsightSearch] = useState("");
   const [selectedInsightTopics, setSelectedInsightTopics] = useState<string[]>([]);
   const insightSelectionInitialized = useRef(false);
@@ -751,14 +754,98 @@ export default function AuthorDetail() {
     });
   }, [selectedInsightTopics, insightChartYearRange.from, insightChartYearRange.to, uniqueAuthorWorks]);
 
-  const insightTopicColors = useMemo(() => {
-    const palette = ["#0ea5e9", "#f97316", "#16a34a", "#7c3aed", "#dc2626", "#14b8a6"];
-    const map = new Map<string, string>();
-    selectedInsightTopics.forEach((topic, index) => {
-      map.set(topic, palette[index % palette.length]);
+  const [authorInsightTopicColors, setAuthorInsightTopicColors] = useState<Record<string, string>>({});
+  const authorInsightPalette = ["#0ea5e9", "#f97316", "#16a34a", "#7c3aed", "#dc2626", "#14b8a6"];
+
+  const getAuthorInsightColor = useCallback(
+    (topic: string) => {
+      const existing = authorInsightTopicColors[topic];
+      if (existing) return existing;
+      const index = Math.max(0, selectedInsightTopics.indexOf(topic));
+      return authorInsightPalette[index % authorInsightPalette.length];
+    },
+    [authorInsightTopicColors, selectedInsightTopics],
+  );
+
+  const cycleAuthorInsightColor = useCallback(
+    (topic: string) => {
+      setAuthorInsightTopicColors((prev) => {
+        const current = prev[topic] ?? getAuthorInsightColor(topic);
+        const currentIdx = Math.max(0, authorInsightPalette.indexOf(current));
+        const next = authorInsightPalette[(currentIdx + 1) % authorInsightPalette.length];
+        return { ...prev, [topic]: next };
+      });
+    },
+    [getAuthorInsightColor],
+  );
+
+  useEffect(() => {
+    if (!selectedInsightTopics.length) return;
+    setAuthorInsightTopicColors((prev) => {
+      const next = { ...prev };
+      selectedInsightTopics.forEach((topic, index) => {
+        if (!next[topic]) {
+          next[topic] = authorInsightPalette[index % authorInsightPalette.length];
+        }
+      });
+      return next;
     });
-    return map;
   }, [selectedInsightTopics]);
+
+  const authorInsightPlotTraces = useMemo(() => {
+    if (!insightChartData.length || !selectedInsightTopics.length) return [];
+    const years = insightChartData.map((row) => row.year as number);
+    return selectedInsightTopics.flatMap((topic) => {
+      const pubs = insightChartData.map((row) => row[`${topic}-pubs`] as number);
+      const cites = insightChartData.map((row) => row[`${topic}-cites`] as number);
+      const color = getAuthorInsightColor(topic);
+      const traces: Array<Record<string, unknown>> = [];
+      if (showInsightsPubs) {
+        traces.push({
+          x: years,
+          y: pubs,
+          type: "scatter",
+          mode: "lines",
+          name: `${topic} pubs`,
+          line: { color, width: 2 },
+        });
+      }
+      if (showInsightsCites) {
+        traces.push({
+          x: years,
+          y: cites,
+          type: "scatter",
+          mode: "lines",
+          name: `${topic} cites`,
+          line: { color, width: 2, dash: "dash" },
+        });
+      }
+      return traces;
+    });
+  }, [insightChartData, selectedInsightTopics, showInsightsPubs, showInsightsCites, getAuthorInsightColor]);
+
+  const authorInsightPlotLayout = useMemo(
+    () => ({
+      margin: { l: 50, r: 20, t: 10, b: 40 },
+      xaxis: { title: "Year", type: "linear" },
+      yaxis: { title: "Count", type: "linear", rangemode: "tozero" },
+      dragmode: "pan",
+      hovermode: "x unified",
+      legend: { orientation: "h", y: 1.15, x: 0 },
+      uirevision: "author-insights",
+    }),
+    [],
+  );
+
+  const authorInsightPlotConfig = useMemo(
+    () => ({
+      displaylogo: false,
+      displayModeBar: true,
+      responsive: true,
+      scrollZoom: true,
+    }),
+    [],
+  );
 
   const toggleInsightTopicSelection = (topic: string) => {
     setSelectedInsightTopics((prev) =>
@@ -1460,65 +1547,57 @@ export default function AuthorDetail() {
                         <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                       </div>
                     </div>
-                    <div className="flex flex-col items-end gap-2 text-xs text-muted-foreground">
+                    <div className="flex flex-wrap items-center justify-end gap-2 text-xs text-muted-foreground">
                       <div className="flex flex-wrap items-center gap-2">
                         <span className="font-semibold text-foreground">View</span>
-                        <button
+                        <Button
                           type="button"
-                          className={`rounded px-2 py-1 text-[11px] ${compareInsights ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
+                          variant="outline"
+                          size="sm"
+                          className={`h-7 text-[11px] ${compareInsights ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
                           onClick={() => setCompareInsights(true)}
+                          aria-pressed={compareInsights}
                         >
                           Compare A vs B
-                        </button>
-                        <button
+                        </Button>
+                        <Button
                           type="button"
-                          className={`rounded px-2 py-1 text-[11px] ${!compareInsights ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
+                          variant="outline"
+                          size="sm"
+                          className={`h-7 text-[11px] ${!compareInsights ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"}`}
                           onClick={() => setCompareInsights(false)}
+                          aria-pressed={!compareInsights}
                         >
                           Single period
-                        </button>
+                        </Button>
                       </div>
                       {compareInsights && (
                         <div className="flex flex-wrap items-center gap-2">
                           <span className="font-semibold text-foreground">Quick presets</span>
-                          <button
+                          <Button
                             type="button"
-                            className="rounded px-2 py-1 text-[11px] text-muted-foreground hover:bg-muted/40"
+                            variant="outline"
+                            size="sm"
+                            className="h-7 text-[11px] text-muted-foreground hover:bg-muted/40"
                             onClick={() => applyInsightsPreset(5)}
                           >
                             Last 5y vs prior 5y
-                          </button>
-                          <button
+                          </Button>
+                          <Button
                             type="button"
-                            className="rounded px-2 py-1 text-[11px] text-muted-foreground hover:bg-muted/40"
+                            variant="outline"
+                            size="sm"
+                            className="h-7 text-[11px] text-muted-foreground hover:bg-muted/40"
                             onClick={() => applyInsightsPreset(3)}
                           >
                             Last 3y vs prior 3y
-                          </button>
+                          </Button>
                         </div>
                       )}
                     </div>
                   </div>
                   <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
                     <div className="flex flex-wrap items-center gap-3">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="h-7 text-[11px]"
-                        onClick={() => setShowInsightsLegend((prev) => !prev)}
-                      >
-                        {showInsightsLegend ? (
-                          <>
-                            <ChevronUp className="h-3 w-3" />
-                            Hide legend
-                          </>
-                        ) : (
-                          <>
-                            <ChevronDown className="h-3 w-3" />
-                            Show legend
-                          </>
-                        )}
-                      </Button>
                       <Button
                         variant="outline"
                         size="sm"
@@ -1637,45 +1716,52 @@ export default function AuthorDetail() {
                   {showInsightsChart && (
                     <>
                       <Card className="border-border/60 mb-4">
-                        <CardContent className="flex h-[360px] sm:h-[300px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
+                        <CardContent className="flex h-[520px] sm:h-[420px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
                         <div className="flex flex-wrap items-center gap-3 text-[11px] text-muted-foreground">
                           <div className="flex flex-wrap items-center gap-2">
-                            <button
+                            <Button
                               type="button"
-                              className={`flex items-center gap-2 rounded px-2 py-1 transition ${
+                              variant="outline"
+                              size="sm"
+                              className={`h-7 text-[11px] flex items-center gap-2 ${
                                 showInsightsPubs ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
                               }`}
                               onClick={() => setShowInsightsPubs((prev) => !prev)}
                               title="Publications (solid)"
                               aria-label="Publications (solid)"
+                              aria-pressed={showInsightsPubs}
                             >
                               <BookOpen className="h-3 w-3" />
                               <span className="inline-block h-0.5 w-4 rounded bg-current" />
-                            </button>
-                            <button
+                            </Button>
+                            <Button
                               type="button"
-                              className={`flex items-center gap-2 rounded px-2 py-1 transition ${
+                              variant="outline"
+                              size="sm"
+                              className={`h-7 text-[11px] flex items-center gap-2 ${
                                 showInsightsCites ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
                               }`}
                               onClick={() => setShowInsightsCites((prev) => !prev)}
                               title="Citations (dashed)"
                               aria-label="Citations (dashed)"
+                              aria-pressed={showInsightsCites}
                             >
                               <BarChart3 className="h-3 w-3" />
                               <span className="inline-block h-0 w-5 border-t-2 border-dashed border-current" />
-                            </button>
+                            </Button>
                           </div>
-                          <div className="flex flex-wrap items-center gap-2">
-                            {selectedInsightTopics.map((topic) => (
-                              <span key={topic} className="inline-flex items-center gap-2">
-                                <span
-                                  className="inline-block h-2 w-2 rounded-full"
-                                  style={{ backgroundColor: insightTopicColors.get(topic) }}
-                                  aria-hidden
-                                />
-                                <span className="hidden sm:inline">{topic}</span>
-                              </span>
-                            ))}
+                          <div className="ml-auto">
+                            <Button
+                              type="button"
+                              variant="outline"
+                              size="sm"
+                              className="h-7 text-[11px] flex items-center gap-2"
+                              onClick={() => setShowAuthorInsightsPopout(true)}
+                              title="Pop out chart"
+                            >
+                              <Maximize2 className="h-3 w-3" />
+                              Pop out
+                            </Button>
                           </div>
                         </div>
                         {selectedInsightTopics.length === 0 ? (
@@ -1684,52 +1770,21 @@ export default function AuthorDetail() {
                           </div>
                         ) : (
                           <div className="w-full flex-1 min-h-0">
-                            <ResponsiveContainer width="100%" height="100%">
-                              <LineChart data={insightChartData}>
-                                <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                                <XAxis
-                                  dataKey="year"
-                                  stroke="hsl(var(--muted-foreground))"
-                                  tick={{
-                                    fill: "hsl(var(--muted-foreground))",
-                                    fontSize: 11,
-                                    fontWeight: 500,
-                                  }}
-                                />
-                                <YAxis
-                                  stroke="hsl(var(--muted-foreground))"
-                                  tick={{
-                                    fill: "hsl(var(--muted-foreground))",
-                                    fontSize: 11,
-                                  }}
-                                />
-                                {showInsightsPubs &&
-                                  selectedInsightTopics.map((topic) => (
-                                    <Line
-                                      key={`${topic}-pubs`}
-                                      type="monotone"
-                                      dataKey={`${topic}-pubs`}
-                                      name={`${topic} pubs`}
-                                      stroke={insightTopicColors.get(topic)}
-                                      strokeWidth={2}
-                                      dot={false}
-                                    />
-                                  ))}
-                                {showInsightsCites &&
-                                  selectedInsightTopics.map((topic) => (
-                                    <Line
-                                      key={`${topic}-cites`}
-                                      type="monotone"
-                                      dataKey={`${topic}-cites`}
-                                      name={`${topic} cites`}
-                                      stroke={insightTopicColors.get(topic)}
-                                      strokeWidth={2}
-                                      strokeDasharray="4 2"
-                                      dot={false}
-                                    />
-                                  ))}
-                              </LineChart>
-                            </ResponsiveContainer>
+                            <Plot
+                              data={authorInsightPlotTraces}
+                              layout={authorInsightPlotLayout}
+                              config={authorInsightPlotConfig}
+                              useResizeHandler
+                              style={{ width: "100%", height: "100%" }}
+                              plotly={Plotly}
+                              onClick={(event) => {
+                                const point = event?.points?.[0];
+                                if (!point?.data) return;
+                                const name = String(point.data.name || "");
+                                const topic = name.replace(/\s+(pubs|cites)\s*$/i, "").trim();
+                                if (topic) cycleAuthorInsightColor(topic);
+                              }}
+                            />
                           </div>
                         )}
                         </CardContent>
@@ -1737,51 +1792,139 @@ export default function AuthorDetail() {
                     </>
                   )}
 
-                  {showInsightsLegend && compareInsights && (
-                    <div className="rounded-md border border-border/60 bg-muted/40 p-3 text-[11px] text-muted-foreground">
-                      <div className="grid gap-3 md:grid-cols-2">
-                        <div className="space-y-2">
-                          <div className="font-semibold text-foreground">Legend</div>
-                          <div className="grid gap-1 sm:grid-cols-2">
-                            <span className="inline-flex items-center gap-2">
-                              <BookOpen className="h-3 w-3 text-primary" />
-                              Pubs A = Period A publications
-                            </span>
-                            <span className="inline-flex items-center gap-2">
-                              <BookOpen className="h-3 w-3 text-primary" />
-                              Pubs B = Period B publications
-                            </span>
-                            <span className="inline-flex items-center gap-2">
-                              <BookOpen className="h-3 w-3 text-primary" />
-                              Pubs Δ% = % change from Period A to B
-                            </span>
-                            <span className="inline-flex items-center gap-2">
-                              <BarChart3 className="h-3 w-3 text-primary" />
-                              Cites A = Period A citations
-                            </span>
-                            <span className="inline-flex items-center gap-2">
-                              <BarChart3 className="h-3 w-3 text-primary" />
-                              Cites B = Period B citations
-                            </span>
-                            <span className="inline-flex items-center gap-2">
-                              <BarChart3 className="h-3 w-3 text-primary" />
-                              Cites Δ% = % change from Period A to B
-                            </span>
+                  {showAuthorInsightsPopout && (
+                    <div
+                      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+                      role="dialog"
+                      aria-modal="true"
+                    >
+                      <div
+                        className="rounded-lg bg-background shadow-xl border border-border resize overflow-hidden"
+                        style={{
+                          width: "min(95vw, 1200px)",
+                          height: "min(85vh, 720px)",
+                          minWidth: "640px",
+                          minHeight: "420px",
+                          maxWidth: "95vw",
+                          maxHeight: "90vh",
+                        }}
+                      >
+                        <div className="flex h-full flex-col">
+                          <div className="flex items-center justify-between border-b border-border px-4 py-3">
+                            <div className="flex items-center gap-2">
+                              <FileText className="h-4 w-4 text-primary" />
+                              <span className="text-sm font-semibold text-foreground">
+                                Topic insights chart
+                              </span>
+                            </div>
+                            <Button
+                              type="button"
+                              variant="outline"
+                              size="sm"
+                              className="h-8"
+                              onClick={() => setShowAuthorInsightsPopout(false)}
+                              title="Close"
+                            >
+                              <X className="h-4 w-4" />
+                            </Button>
+                          </div>
+                          <div className="p-4 flex-1 min-h-0">
+                            {selectedInsightTopics.length === 0 ? (
+                              <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                                Select topics to plot.
+                              </div>
+                            ) : (
+                              <div className="h-full w-full">
+                                <Plot
+                                  data={authorInsightPlotTraces}
+                                  layout={authorInsightPlotLayout}
+                                  config={authorInsightPlotConfig}
+                                  useResizeHandler
+                                  style={{ width: "100%", height: "100%" }}
+                                  plotly={Plotly}
+                                  onClick={(event) => {
+                                    const point = event?.points?.[0];
+                                    if (!point?.data) return;
+                                    const name = String(point.data.name || "");
+                                    const topic = name.replace(/\s+(pubs|cites)\s*$/i, "").trim();
+                                    if (topic) cycleAuthorInsightColor(topic);
+                                  }}
+                                />
+                              </div>
+                            )}
                           </div>
                         </div>
-                        <div className="space-y-1 text-foreground">
-                          <div className="font-semibold">Insights</div>
-                          <ul className="list-disc pl-4 space-y-0.5">
-                            <li>Emerging: only in Period B</li>
-                            <li>Declining: missing in Period B or both drop &gt;20%</li>
-                            <li>Strong surge: publications &gt;= 2x and citations &gt;= 2x</li>
-                            <li>Growing priority: publications &gt;= 1.5x and citations &gt;= 1.2x</li>
-                            <li>Impact-led: citations &gt;= 1.5x with publications flat/declining</li>
-                            <li>Output rising, impact softening: publications &gt;= 1.2x but citations &lt; 0.9x</li>
-                            <li>Stable: otherwise</li>
-                          </ul>
-                        </div>
                       </div>
+                    </div>
+                  )}
+
+                  {compareInsights && (
+                    <div className="rounded-md border border-border/60 bg-muted/40 p-3 text-[11px] text-muted-foreground">
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="h-7 text-[11px]"
+                          onClick={() => setShowInsightsLegend((prev) => !prev)}
+                        >
+                          {showInsightsLegend ? (
+                            <>
+                              <ChevronUp className="h-3 w-3" />
+                              Hide legend
+                            </>
+                          ) : (
+                            <>
+                              <ChevronDown className="h-3 w-3" />
+                              Show legend
+                            </>
+                          )}
+                        </Button>
+                      </div>
+                      {showInsightsLegend && (
+                        <div className="mt-3 grid gap-3 md:grid-cols-2">
+                          <div className="space-y-2">
+                            <div className="font-semibold text-foreground">Legend</div>
+                            <div className="grid gap-1 sm:grid-cols-2">
+                              <span className="inline-flex items-center gap-2">
+                                <BookOpen className="h-3 w-3 text-primary" />
+                                Pubs A = Period A publications
+                              </span>
+                              <span className="inline-flex items-center gap-2">
+                                <BookOpen className="h-3 w-3 text-primary" />
+                                Pubs B = Period B publications
+                              </span>
+                              <span className="inline-flex items-center gap-2">
+                                <BookOpen className="h-3 w-3 text-primary" />
+                                Pubs Delta% = % change from Period A to B
+                              </span>
+                              <span className="inline-flex items-center gap-2">
+                                <BarChart3 className="h-3 w-3 text-primary" />
+                                Cites A = Period A citations
+                              </span>
+                              <span className="inline-flex items-center gap-2">
+                                <BarChart3 className="h-3 w-3 text-primary" />
+                                Cites B = Period B citations
+                              </span>
+                              <span className="inline-flex items-center gap-2">
+                                <BarChart3 className="h-3 w-3 text-primary" />
+                                Cites Delta% = % change from Period A to B
+                              </span>
+                            </div>
+                          </div>
+                          <div className="space-y-1 text-foreground">
+                            <div className="font-semibold">Insights</div>
+                            <ul className="list-disc pl-4 space-y-0.5">
+                              <li>Emerging: only in Period B</li>
+                              <li>Declining: missing in Period B or both drop &gt;20%</li>
+                              <li>Strong surge: publications &gt;= 2x and citations &gt;= 2x</li>
+                              <li>Growing priority: publications &gt;= 1.5x and citations &gt;= 1.2x</li>
+                              <li>Impact-led: citations &gt;= 1.5x with publications flat/declining</li>
+                              <li>Output rising, impact softening: publications &gt;= 1.2x but citations &lt; 0.9x</li>
+                              <li>Stable: otherwise</li>
+                            </ul>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
@@ -1932,6 +2075,7 @@ export default function AuthorDetail() {
                         const pubsStatus = classifyMetricChange(row.pubsDeltaPct);
                         const citesStatus = classifyMetricChange(row.citesDeltaPct);
                         const selected = selectedInsightTopics.includes(row.topic);
+                        const insightColor = selected ? getAuthorInsightColor(row.topic) : "";
                         return (
                           <tr key={row.topic} className="border-t border-border/60">
                             <td className="px-3 py-2 font-semibold text-foreground">
@@ -1950,9 +2094,13 @@ export default function AuthorDetail() {
                                     {selected ? "-" : "+"}
                                   </button>
                                 )}
-                                <Tag className="h-3.5 w-3.5 text-primary" />
+                                <Tag
+                                  className="h-3.5 w-3.5"
+                                  style={insightColor ? { color: insightColor } : undefined}
+                                />
                                 <span
                                   className={`min-w-0 break-words sm:break-normal ${selected ? "text-primary" : ""}`}
+                                  style={insightColor ? { color: insightColor } : undefined}
                                 >
                                   {row.topic}
                                 </span>
