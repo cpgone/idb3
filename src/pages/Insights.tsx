@@ -19,6 +19,8 @@ import {
   Tag,
   BookOpen,
   BarChart3,
+  Maximize2,
+  X,
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
@@ -160,6 +162,7 @@ const InsightsPage = () => {
   const initializedSelection = useRef(false);
   const plotlyRef = useRef<any>(null);
   const [showChartExportMenu, setShowChartExportMenu] = useState(false);
+  const [showChartPopout, setShowChartPopout] = useState(false);
 
   useEffect(() => {
     if (!allYears.length) return;
@@ -376,6 +379,10 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
     });
   };
 
+  const extractTopicFromTraceName = (name: string) => {
+    return name.replace(/\s+(pubs|cites)\s*$/i, "").trim();
+  };
+
   const plotTraces = useMemo(() => {
     if (!chartData.length || !selectedTopics.length) return [];
     const years = chartData.map((row) => row.year as number);
@@ -391,6 +398,7 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
           type: "scatter",
           mode: "lines",
           name: `${topic} pubs`,
+          customdata: topic,
           line: { color, width: 2 },
         });
       }
@@ -401,6 +409,7 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
           type: "scatter",
           mode: "lines",
           name: `${topic} cites`,
+          customdata: topic,
           line: { color, width: 2, dash: "dash" },
         });
       }
@@ -933,6 +942,17 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                       </Button>
                     </div>
                     <div className="ml-auto relative flex items-center gap-1">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="sm"
+                        className="h-7 text-[11px] flex items-center gap-2"
+                        onClick={() => setShowChartPopout(true)}
+                        title="Pop out chart"
+                      >
+                        <Maximize2 className="h-3 w-3" />
+                        Pop out
+                      </Button>
                       <button
                         type="button"
                         onClick={() => setShowChartExportMenu((prev) => !prev)}
@@ -980,6 +1000,14 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                         useResizeHandler
                         style={{ width: "100%", height: "100%" }}
                         plotly={Plotly}
+                        onClick={(event) => {
+                          const point = event?.points?.[0];
+                          if (!point?.data) return;
+                          const topic =
+                            (point.data.customdata as string | undefined) ||
+                            extractTopicFromTraceName(String(point.data.name || ""));
+                          if (topic) cycleTopicColor(topic);
+                        }}
                         onInitialized={(_figure, graphDiv) => {
                           plotlyRef.current = graphDiv;
                         }}
@@ -991,6 +1019,77 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                   )}
                 </CardContent>
               </Card>
+            )}
+
+            {showChartPopout && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+                role="dialog"
+                aria-modal="true"
+              >
+                <div
+                  className="rounded-lg bg-background shadow-xl border border-border resize overflow-hidden"
+                  style={{
+                    width: "min(95vw, 1200px)",
+                    height: "min(85vh, 720px)",
+                    minWidth: "640px",
+                    minHeight: "420px",
+                    maxWidth: "95vw",
+                    maxHeight: "90vh",
+                  }}
+                >
+                  <div className="flex h-full flex-col">
+                    <div className="flex items-center justify-between border-b border-border px-4 py-3">
+                      <div className="flex items-center gap-2">
+                        <FileTextIcon className="h-4 w-4 text-primary" />
+                        <span className="text-sm font-semibold text-foreground">Topic insights chart</span>
+                      </div>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="sm"
+                        className="h-8"
+                        onClick={() => setShowChartPopout(false)}
+                        title="Close"
+                      >
+                        <X className="h-4 w-4" />
+                      </Button>
+                    </div>
+                    <div className="p-4 flex-1 min-h-0">
+                      {selectedTopics.length === 0 ? (
+                        <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                          Select topics to plot.
+                        </div>
+                      ) : (
+                        <div className="h-full w-full">
+                          <Plot
+                            data={plotTraces}
+                            layout={plotLayout}
+                            config={plotConfig}
+                            useResizeHandler
+                            style={{ width: "100%", height: "100%" }}
+                            plotly={Plotly}
+                            onClick={(event) => {
+                              const point = event?.points?.[0];
+                              if (!point?.data) return;
+                              const topic =
+                                (point.data.customdata as string | undefined) ||
+                                extractTopicFromTraceName(String(point.data.name || ""));
+                              if (topic) cycleTopicColor(topic);
+                            }}
+                            onInitialized={(_figure, graphDiv) => {
+                              plotlyRef.current = graphDiv;
+                            }}
+                            onUpdate={(_figure, graphDiv) => {
+                              plotlyRef.current = graphDiv;
+                            }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
             )}
 
             <div className="rounded-md border border-border/60 bg-muted/40 p-3 text-[11px] text-muted-foreground">
@@ -1209,6 +1308,7 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                     const pubsStatus = classifyMetricChange(row.pubsDeltaPct);
                     const citesStatus = classifyMetricChange(row.citesDeltaPct);
                     const selected = selectedTopics.includes(row.topic);
+                    const topicColorValue = selected ? topicColor(row.topic) : "";
                     return (
                       <tr key={row.topic} className="border-t border-border/60">
                         <td className="px-3 py-2 font-semibold text-foreground">
@@ -1227,8 +1327,16 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                                 {selected ? "x" : "+"}
                               </button>
                             )}
-                            <Tag className="h-3.5 w-3.5 text-primary" />
-                            <span className={selected ? "text-primary" : ""}>{row.topic}</span>
+                            <Tag
+                              className="h-3.5 w-3.5"
+                              style={topicColorValue ? { color: topicColorValue } : undefined}
+                            />
+                            <span
+                              className={selected ? "text-primary" : ""}
+                              style={topicColorValue ? { color: topicColorValue } : undefined}
+                            >
+                              {row.topic}
+                            </span>
                           </div>
                         </td>
                         {compareMode ? (
