@@ -77,8 +77,8 @@ const defaultYearRangeCharts =
 
 const authorTopTopicsCount =
   (insightsConfig as { authorTopTopicsCount?: number })?.authorTopTopicsCount ?? 4;
-const authorTopConceptsCount =
-  (insightsConfig as { authorTopConceptsCount?: number })?.authorTopConceptsCount ?? 4;
+const authorTopConceptsCountRaw =
+  (insightsConfig as { authorTopConceptsCount?: number | null })?.authorTopConceptsCount ?? null;
 
 const formatPct = (value: number | null) => {
   if (value === Infinity) return "New";
@@ -576,7 +576,7 @@ export default function AuthorDetail() {
     return values.reduce((sum, value) => sum + value, 0) / values.length;
   }, [openAlexWorks]);
 
-  const authorConcepts = useMemo(() => {
+  const allAuthorConcepts = useMemo(() => {
     const raw =
       (openAlexDetails as {
         x_concepts?: Array<{ display_name?: string; score?: number; wikidata?: string; id?: string }>;
@@ -584,8 +584,27 @@ export default function AuthorDetail() {
     return raw
       .filter((concept) => concept?.display_name)
       .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
-      .slice(0, Math.max(0, authorTopConceptsCount));
-  }, [openAlexDetails, authorTopConceptsCount]);
+      .slice();
+  }, [openAlexDetails]);
+
+  const [showAllConcepts, setShowAllConcepts] = useState(false);
+
+  useEffect(() => {
+    if (authorTopConceptsCountRaw == null) {
+      setShowAllConcepts(true);
+    }
+  }, [authorTopConceptsCountRaw]);
+
+  const authorConcepts = useMemo(
+    () =>
+      allAuthorConcepts.slice(
+        0,
+        showAllConcepts || authorTopConceptsCountRaw == null
+          ? allAuthorConcepts.length
+          : Math.max(0, authorTopConceptsCountRaw),
+      ),
+    [allAuthorConcepts, showAllConcepts, authorTopConceptsCountRaw],
+  );
 
   const buildConceptUrl = (concept?: { wikidata?: string; id?: string }) => {
     if (concept?.wikidata) return concept.wikidata;
@@ -1288,7 +1307,8 @@ export default function AuthorDetail() {
   return (
     <SiteShell>
       <main className="container mx-auto px-4 py-6 space-y-4">
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center gap-2">
           <Button
             variant="ghost"
             size="sm"
@@ -1307,6 +1327,61 @@ export default function AuthorDetail() {
             <ArrowLeft className="mr-1 h-3 w-3" />
             Back to previous
           </Button>
+          </div>
+          <div className="flex flex-none items-center gap-2">
+            <Button
+              type="button"
+              variant="outline"
+              size="icon"
+              className="h-8 w-8"
+              onClick={handleSavePdf}
+              title="Save PDF"
+            >
+              <Download className="h-3 w-3" />
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              size="icon"
+              className="h-8 w-8"
+              onClick={handleExportWorksCsv}
+              title="Export CSV"
+            >
+              <FileText className="h-3 w-3" />
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              size="icon"
+              className="h-8 w-8"
+              onClick={handleShareLinkedIn}
+              title="Share on LinkedIn"
+            >
+              <Linkedin className="h-3 w-3" />
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              size="icon"
+              className="h-8 w-8"
+              onClick={handleCopyLink}
+              title="Copy link"
+            >
+              <LinkIcon className="h-3 w-3" />
+            </Button>
+            {id && (
+              <Button
+                type="button"
+                variant="outline"
+                size="icon"
+                className="h-8 w-8"
+                onClick={() => navigate(`/author/${id}/network`)}
+                title="View co-author network"
+              >
+                <Network className="h-3 w-3" />
+              </Button>
+            )}
+          </div>
         </div>
         <Card className="border-border/60">
           <CardHeader className="flex flex-col gap-4">
@@ -1420,6 +1495,16 @@ export default function AuthorDetail() {
                             </li>
                           ))}
                         </ul>
+                        {authorTopConceptsCountRaw != null &&
+                          allAuthorConcepts.length > authorTopConceptsCountRaw && (
+                          <button
+                            type="button"
+                            className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
+                            onClick={() => setShowAllConcepts((prev) => !prev)}
+                          >
+                            {showAllConcepts ? "Show less" : "See more"}
+                          </button>
+                        )}
                       </div>
                     )}
                   </div>
@@ -1428,7 +1513,7 @@ export default function AuthorDetail() {
             </div>
 
             <div className="flex w-full flex-wrap items-center gap-3 text-xs text-muted-foreground order-first">
-              <div className="flex flex-1 items-center justify-center">
+              <div className="flex flex-1 items-center justify-end">
                 <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap">
                 <div className="flex items-center gap-1">
                   <FileText className="h-4 w-4 text-primary" />
@@ -1497,60 +1582,7 @@ export default function AuthorDetail() {
                 </div>
               </div>
 
-              <div className="flex flex-none items-center gap-2 justify-end">
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleSavePdf}
-                  title="Save PDF"
-                >
-                  <Download className="h-3 w-3" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleExportWorksCsv}
-                  title="Export CSV"
-                >
-                  <FileText className="h-3 w-3" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleShareLinkedIn}
-                  title="Share on LinkedIn"
-                >
-                  <Linkedin className="h-3 w-3" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleCopyLink}
-                  title="Copy link"
-                >
-                  <LinkIcon className="h-3 w-3" />
-                </Button>
-                {id && (
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="icon"
-                    className="h-8 w-8"
-                    onClick={() => navigate(`/author/${id}/network`)}
-                    title="View co-author network"
-                  >
-                    <Network className="h-3 w-3" />
-                  </Button>
-                )}
-              </div>
+              <div className="flex flex-none items-center gap-2 justify-end" />
             </div>
 
           </CardHeader>
