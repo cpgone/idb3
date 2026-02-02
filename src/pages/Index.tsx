@@ -21,6 +21,35 @@ import {
 import type { TooltipProps } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+const parseHslString = (value: string) => {
+  const parts = value.trim().replace(/,/g, " ").split(/\s+/);
+  if (parts.length < 3) return null;
+  const h = Number(parts[0]);
+  const s = Number(parts[1].replace("%", ""));
+  const l = Number(parts[2].replace("%", ""));
+  if ([h, s, l].some((v) => Number.isNaN(v))) return null;
+  return { h, s, l };
+};
+
+const hslToHex = (h: number, s: number, l: number) => {
+  const sNorm = s / 100;
+  const lNorm = l / 100;
+  const c = (1 - Math.abs(2 * lNorm - 1)) * sNorm;
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  const m = lNorm - c / 2;
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  if (h >= 0 && h < 60) [r, g, b] = [c, x, 0];
+  else if (h >= 60 && h < 120) [r, g, b] = [x, c, 0];
+  else if (h >= 120 && h < 180) [r, g, b] = [0, c, x];
+  else if (h >= 180 && h < 240) [r, g, b] = [0, x, c];
+  else if (h >= 240 && h < 300) [r, g, b] = [x, 0, c];
+  else [r, g, b] = [c, 0, x];
+  const toHex = (n: number) => Math.round((n + m) * 255).toString(16).padStart(2, "0");
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+};
+
 const defaultYearRangeConfig =
   (insightsConfig as {
     defaultYearRangeCharts?: { from?: number | null; to?: number | null };
@@ -200,6 +229,28 @@ const Index = () => {
       return clamped ?? resolvedEnd;
     });
   }, [allYears, defaultYearRangeConfig.from, defaultYearRangeConfig.to]);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const resolveColor = (varName: string, fallback: string) => {
+      const raw = getComputedStyle(document.documentElement).getPropertyValue(varName);
+      const parsed = raw ? parseHslString(raw) : null;
+      return parsed ? hslToHex(parsed.h, parsed.s, parsed.l) : fallback;
+    };
+    const updateColors = () => {
+      setChartSeriesColors({
+        topics: resolveColor("--chart-1", "#22c55e"),
+        institutions: resolveColor("--chart-2", "#0ea5e9"),
+        publications: resolveColor("--chart-3", "#7c3aed"),
+        citations: resolveColor("--chart-4", "#f97316"),
+        coAuthors: resolveColor("--chart-5", "#f59e0b"),
+      });
+    };
+    updateColors();
+    const observer = new MutationObserver(updateColors);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme", "style"] });
+    return () => observer.disconnect();
+  }, []);
 
   const perYearAggregates = useMemo(() => {
     const map = new Map<
@@ -387,13 +438,14 @@ const Index = () => {
     const legendWidth =
       legendItems.reduce((sum, item) => sum + 18 + estimateTextWidth(item.label) + 12, 0) - 12;
     let legendX = Math.max(0, width - legendWidth);
+    const headerTextColor = getComputedStyle(document.body).color || "#111827";
     const legendSvg = legendItems
       .map((item) => {
         const x = legendX;
         legendX += 18 + estimateTextWidth(item.label) + 12;
         return `<g transform="translate(${x},8)">
           <rect x="0" y="2" width="12" height="12" rx="2" fill="${item.color}" />
-          <text x="18" y="13" fill="#111827" font-size="12" font-family="Inter, system-ui, -apple-system, sans-serif">${item.label}</text>
+          <text x="18" y="13" fill="${headerTextColor}" font-size="12" font-family="Inter, system-ui, -apple-system, sans-serif">${item.label}</text>
         </g>`;
       })
       .join("");
@@ -407,7 +459,7 @@ const Index = () => {
 
     const headerSvg = `
       <g>
-        ${yearText ? `<text x="0" y="20" fill="#111827" font-size="12" font-family="Inter, system-ui, -apple-system, sans-serif">${yearText}</text>` : ""}
+        ${yearText ? `<text x="0" y="20" fill="${headerTextColor}" font-size="12" font-family="Inter, system-ui, -apple-system, sans-serif">${yearText}</text>` : ""}
         ${legendSvg}
       </g>
     `;
@@ -695,29 +747,29 @@ const Index = () => {
                       <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
                       <XAxis
                         dataKey="year"
-                        stroke="#1f2937"
-                        axisLine={{ stroke: "#1f2937", strokeWidth: 1.2 }}
-                        tickLine={{ stroke: "#1f2937" }}
+                        stroke="hsl(var(--muted-foreground))"
+                        axisLine={{ stroke: "hsl(var(--muted-foreground))", strokeWidth: 1.2 }}
+                        tickLine={{ stroke: "hsl(var(--muted-foreground))" }}
                         tick={{
-                          fill: "#1f2937",
+                          fill: "hsl(var(--muted-foreground))",
                           fontSize: 12,
                         }}
                         label={{
                           value: "Year",
                           position: "insideBottom",
                           offset: -6,
-                          fill: "#1f2937",
+                          fill: "hsl(var(--muted-foreground))",
                           fontSize: 12,
                           fontWeight: 600,
                         }}
                       />
                       <YAxis
-                        stroke="#1f2937"
-                        axisLine={{ stroke: "#1f2937", strokeWidth: 1.2 }}
-                        tickLine={{ stroke: "#1f2937" }}
+                        stroke="hsl(var(--muted-foreground))"
+                        axisLine={{ stroke: "hsl(var(--muted-foreground))", strokeWidth: 1.2 }}
+                        tickLine={{ stroke: "hsl(var(--muted-foreground))" }}
                         width={34}
                         tick={{
-                          fill: "#1f2937",
+                          fill: "hsl(var(--muted-foreground))",
                           fontSize: 12,
                         }}
                         domain={[0, "auto"]}

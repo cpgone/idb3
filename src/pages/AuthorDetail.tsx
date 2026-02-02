@@ -44,6 +44,35 @@ type TopicInsight = {
   insight: string;
 };
 
+const parseHslString = (value: string) => {
+  const parts = value.trim().replace(/,/g, " ").split(/\s+/);
+  if (parts.length < 3) return null;
+  const h = Number(parts[0]);
+  const s = Number(parts[1].replace("%", ""));
+  const l = Number(parts[2].replace("%", ""));
+  if ([h, s, l].some((v) => Number.isNaN(v))) return null;
+  return { h, s, l };
+};
+
+const hslToHex = (h: number, s: number, l: number) => {
+  const sNorm = s / 100;
+  const lNorm = l / 100;
+  const c = (1 - Math.abs(2 * lNorm - 1)) * sNorm;
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  const m = lNorm - c / 2;
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  if (h >= 0 && h < 60) [r, g, b] = [c, x, 0];
+  else if (h >= 60 && h < 120) [r, g, b] = [x, c, 0];
+  else if (h >= 120 && h < 180) [r, g, b] = [0, c, x];
+  else if (h >= 180 && h < 240) [r, g, b] = [0, x, c];
+  else if (h >= 240 && h < 300) [r, g, b] = [x, 0, c];
+  else [r, g, b] = [c, 0, x];
+  const toHex = (n: number) => Math.round((n + m) * 255).toString(16).padStart(2, "0");
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+};
+
 const normalizeOpenAlexId = (raw?: string | null) => {
   if (!raw) return "";
   return raw.replace(/^https?:\/\/(www\.)?openalex\.org\//i, "").trim();
@@ -476,6 +505,44 @@ export default function AuthorDetail() {
   });
 
   useEffect(() => {
+    if (typeof document === "undefined") return;
+    const resolveColor = (varName: string, fallback: string) => {
+      const raw = getComputedStyle(document.documentElement).getPropertyValue(varName);
+      const parsed = raw ? parseHslString(raw) : null;
+      return parsed ? hslToHex(parsed.h, parsed.s, parsed.l) : fallback;
+    };
+    const updateColors = () => {
+      setImpactSeries((prev) => ({
+        ...prev,
+        publications: {
+          ...prev.publications,
+          color: resolveColor("--chart-3", prev.publications.color),
+        },
+        topics: {
+          ...prev.topics,
+          color: resolveColor("--chart-1", prev.topics.color),
+        },
+        institutions: {
+          ...prev.institutions,
+          color: resolveColor("--chart-2", prev.institutions.color),
+        },
+        citations: {
+          ...prev.citations,
+          color: resolveColor("--chart-4", prev.citations.color),
+        },
+        coAuthors: {
+          ...prev.coAuthors,
+          color: resolveColor("--chart-5", prev.coAuthors.color),
+        },
+      }));
+    };
+    updateColors();
+    const observer = new MutationObserver(updateColors);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme", "style"] });
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     if (!yearOptions.length) return;
     const fallbackStart = defaultYearRangeCharts.from ?? yearOptions[0];
     const fallbackEnd = defaultYearRangeCharts.to ?? yearOptions[yearOptions.length - 1];
@@ -865,7 +932,14 @@ export default function AuthorDetail() {
   }, [selectedInsightTopics, insightChartYearRange.from, insightChartYearRange.to, uniqueAuthorWorks]);
 
   const [authorInsightTopicColors, setAuthorInsightTopicColors] = useState<Record<string, string>>({});
-  const authorInsightPalette = ["#0ea5e9", "#f97316", "#16a34a", "#7c3aed", "#dc2626", "#14b8a6"];
+  const authorInsightPalette = [
+    "hsl(var(--chart-1))",
+    "hsl(var(--chart-2))",
+    "hsl(var(--chart-3))",
+    "hsl(var(--chart-4))",
+    "hsl(var(--chart-5))",
+    "hsl(var(--accent))",
+  ];
 
   const getAuthorInsightColor = useCallback(
     (topic: string) => {

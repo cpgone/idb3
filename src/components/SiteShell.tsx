@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Award } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import siteInfo from "../../data/config/siteinfo.json";
+import themesConfig from "../../data/config/themes.json";
 import announcement from "../../data/config/announcement.json";
 import { Button } from "@/components/ui/button";
 
@@ -23,6 +24,22 @@ interface AnnouncementConfig {
 const typedAnnouncement = announcement as AnnouncementConfig;
 
 export const SiteShell = ({ children }: SiteShellProps) => {
+  const themes = Array.isArray((themesConfig as any).themes)
+    ? ((themesConfig as any).themes as Array<{
+        id: string;
+        label: string;
+        vars: Record<string, string>;
+      }>)
+    : [];
+  const allowThemeSelection =
+    (siteInfo as any).enableThemeSelection !== undefined
+      ? Boolean((siteInfo as any).enableThemeSelection)
+      : true;
+  const defaultThemeId =
+    (siteInfo as any).activeTheme ||
+    (themes.length ? themes[0].id : "default");
+  const [activeThemeId, setActiveThemeId] = useState(defaultThemeId);
+
   const assetBase =
     typeof import.meta.env.BASE_URL === "string" ? import.meta.env.BASE_URL : "/";
   const normalizedLogoPath = siteInfo.logoSrc?.replace(/^\//, "") ?? "";
@@ -90,6 +107,24 @@ export const SiteShell = ({ children }: SiteShellProps) => {
     }
   }, []);
 
+  useEffect(() => {
+    if (typeof window === "undefined" || !themes.length) return;
+    const stored = window.localStorage.getItem("theme");
+    if (stored && themes.some((theme) => theme.id === stored)) {
+      setActiveThemeId(stored);
+    }
+  }, [themes.length]);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const theme = themes.find((item) => item.id === activeThemeId);
+    if (!theme) return;
+    Object.entries(theme.vars || {}).forEach(([key, value]) => {
+      document.documentElement.style.setProperty(`--${key}`, value);
+    });
+    document.documentElement.dataset.theme = theme.id;
+  }, [activeThemeId, themes]);
+
   const navLinks =
     Array.isArray((siteInfo as any).navLinks) && (siteInfo as any).navLinks.length
       ? (siteInfo as any).navLinks
@@ -124,7 +159,30 @@ export const SiteShell = ({ children }: SiteShellProps) => {
               {siteInfo.shortTitle || siteInfo.title}
             </Link>
 
-            <nav className="flex items-center gap-2 text-xs sm:text-sm">
+            <div className="flex items-center gap-3">
+              {allowThemeSelection && themes.length > 1 && (
+                <label className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <span className="font-semibold text-foreground">Theme</span>
+                  <select
+                    className="h-7 rounded border border-border bg-background px-2 text-xs"
+                    value={activeThemeId}
+                    onChange={(event) => {
+                      const next = event.target.value;
+                      setActiveThemeId(next);
+                      if (typeof window !== "undefined") {
+                        window.localStorage.setItem("theme", next);
+                      }
+                    }}
+                  >
+                    {themes.map((theme) => (
+                      <option key={theme.id} value={theme.id}>
+                        {theme.label}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+              <nav className="flex items-center gap-2 text-xs sm:text-sm">
               {navLinks.map((item: { label: string; href: string }) => {
                 const active = isActiveLink(item.href);
                 const isExternal = /^https?:\/\//i.test(item.href);
@@ -145,7 +203,8 @@ export const SiteShell = ({ children }: SiteShellProps) => {
                   </Button>
                 );
               })}
-            </nav>
+              </nav>
+            </div>
           </div>
         </div>
       </header>

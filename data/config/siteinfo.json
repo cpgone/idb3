@@ -6,9 +6,10 @@
   "faviconSrc": "favicon.ico",
   "description": "Integrative Dashboard provides an offline view of research programs, authors, topics, institutions, publications, and citations using locally cached OpenAlex data.",
   "author": "Abdullah Alqubalee",
+  "activeTheme": "default",
+  "enableThemeSelection": false,
   "navLinks": [
     { "label": "Dashboard", "href": "/" },
-    { "label": "Insights", "href": "/insights" },
     { "label": "About", "href": "/about" },
     { "label": "Feedback", "href": "#" },
     { "label": "Help", "href": "/help" }

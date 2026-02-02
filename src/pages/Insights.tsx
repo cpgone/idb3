@@ -361,7 +361,15 @@ const InsightsPage = () => {
     }
   };
 
-const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6", "#6366f1"];
+const palette = [
+  "hsl(var(--chart-1))",
+  "hsl(var(--chart-2))",
+  "hsl(var(--chart-3))",
+  "hsl(var(--chart-4))",
+  "hsl(var(--chart-5))",
+  "hsl(var(--primary))",
+  "hsl(var(--accent))",
+];
 
   const topicColor = (topic: string) => {
     if (topicColors[topic]) return topicColors[topic];
@@ -545,7 +553,7 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
     clone.style.fontSize = "12px";
     clone.style.width = "100%";
     const html = `
-      <div style="font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 12px; padding: 12px; color: #111827;">
+      <div style="font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 12px; padding: 12px; color: hsl(var(--foreground));">
         <div style="display:flex; justify-content: space-between; align-items:center; margin-bottom: 8px;">
           <div><strong>Year range:</strong> ${compareMode ? `${rangeA.from ?? ""}-${rangeA.to ?? ""} vs ${rangeB.from ?? ""}-${rangeB.to ?? ""}` : `${rangeA.from ?? ""}-${rangeA.to ?? ""}`}</div>
           <div><strong>Visible series:</strong> Topics${showInstitutions ? ", Institutions" : ""}${showPublications ? ", Publications" : ""}${showCitations ? ", Citations" : ""}</div>
@@ -576,7 +584,7 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
       canvas.height = 1600;
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
-      ctx.fillStyle = "#ffffff";
+      ctx.fillStyle = getComputedStyle(document.body).backgroundColor || "#ffffff";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(img, 0, 0);
       canvas.toBlob((pngBlob) => {
