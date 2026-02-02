@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X } from "lucide-react";
+import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -75,6 +75,8 @@ const defaultYearRangeConfig =
 
 const authorTopTopicsCount =
   (insightsConfig as { authorTopTopicsCount?: number })?.authorTopTopicsCount ?? 4;
+const authorTopConceptsCount =
+  (insightsConfig as { authorTopConceptsCount?: number })?.authorTopConceptsCount ?? 4;
 
 const formatPct = (value: number | null) => {
   if (value === Infinity) return "New";
@@ -165,6 +167,7 @@ export default function AuthorDetail() {
 
   const [displayName, setDisplayName] = useState<string>("");
   const [openAlexDetails, setOpenAlexDetails] = useState<OpenAlexAuthor | null>(null);
+  const [openAlexWorks, setOpenAlexWorks] = useState<Array<{ fwci?: number | null }>>([]);
   const PAGE_SIZE = 15;
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   type PublicationSortField = "title" | "firstAuthor" | "year" | "topics" | "institutions" | "venue" | "citations";
@@ -183,7 +186,7 @@ export default function AuthorDetail() {
   const [authorInsightsScale, setAuthorInsightsScale] = useState<"linear" | "log">("linear");
   const [compareInsights, setCompareInsights] = useState(true);
   const [showInsightsChart, setShowInsightsChart] = useState(true);
-  const [showInsightsLegend, setShowInsightsLegend] = useState(true);
+  const [showInsightsLegend, setShowInsightsLegend] = useState(false);
   const [showAuthorInsightsPopout, setShowAuthorInsightsPopout] = useState(false);
   const [insightSearch, setInsightSearch] = useState("");
   const [selectedInsightTopics, setSelectedInsightTopics] = useState<string[]>([]);
@@ -344,10 +347,12 @@ export default function AuthorDetail() {
       .then((data) => {
         if (!isActive) return;
         setOpenAlexDetails(data.details ?? null);
+        setOpenAlexWorks(Array.isArray(data.works) ? data.works : []);
       })
       .catch(() => {
         if (!isActive) return;
         setOpenAlexDetails(null);
+        setOpenAlexWorks([]);
       });
 
     return () => {
@@ -502,6 +507,31 @@ export default function AuthorDetail() {
       .slice(0, Math.max(0, authorTopTopicsCount))
       .map(([topic, count]) => ({ topic, count }));
   }, [rangeFilteredWorks, authorTopTopicsCount]);
+
+  const authorFwci = useMemo(() => {
+    const values = openAlexWorks
+      .map((work) => work?.fwci)
+      .filter((value): value is number => typeof value === "number" && !Number.isNaN(value));
+    if (!values.length) return null;
+    return values.reduce((sum, value) => sum + value, 0) / values.length;
+  }, [openAlexWorks]);
+
+  const authorConcepts = useMemo(() => {
+    const raw =
+      (openAlexDetails as {
+        x_concepts?: Array<{ display_name?: string; score?: number; wikidata?: string; id?: string }>;
+      })?.x_concepts ?? [];
+    return raw
+      .filter((concept) => concept?.display_name)
+      .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
+      .slice(0, Math.max(0, authorTopConceptsCount));
+  }, [openAlexDetails, authorTopConceptsCount]);
+
+  const buildConceptUrl = (concept?: { wikidata?: string; id?: string }) => {
+    if (concept?.wikidata) return concept.wikidata;
+    if (concept?.id) return `https://openalex.org/C${concept.id}`;
+    return "";
+  };
 
   const conferenceKeywords = [
     "conference",
@@ -1316,7 +1346,7 @@ export default function AuthorDetail() {
                   </Button>
                 )}
               </div>
-              <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+              <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap text-xs text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <FileText className="h-4 w-4 text-primary" />
                   <Link
@@ -1335,6 +1365,17 @@ export default function AuthorDetail() {
                     {summary.totalCitations} citations
                   </Link>
                 </div>
+                {authorFwci != null && (
+                  <div className="flex items-center gap-1">
+                    <TrendingUp className="h-4 w-4 text-primary" />
+                    <span>
+                      <span className="font-semibold text-foreground">
+                        {authorFwci.toFixed(2)}
+                      </span>{" "}
+                      FWCI
+                    </span>
+                  </div>
+                )}
                 <div className="flex items-center gap-1">
                   <Tags className="h-4 w-4 text-primary" />
                   <Link
@@ -1344,6 +1385,14 @@ export default function AuthorDetail() {
                     {summary.topics} topics
                   </Link>
                 </div>
+                {authorConcepts.length > 0 && (
+                  <div className="flex items-center gap-1">
+                    <Tag className="h-4 w-4 text-primary" />
+                    <span className="font-semibold text-foreground">
+                      {authorConcepts.length} concepts
+                    </span>
+                  </div>
+                )}
                 <div className="flex items-center gap-1">
                   <Building2 className="h-4 w-4 text-primary" />
                   <Link
@@ -1363,27 +1412,56 @@ export default function AuthorDetail() {
                   </span>
                 </div>
               </div>
-              {topTopicsInRange.length > 0 && (
-                <div className="w-full max-w-md text-left">
-                  <div className="font-semibold text-foreground">Top topics</div>
-                  <ul className="list-disc pl-4 text-xs text-muted-foreground">
-                    {topTopicsInRange.map((item) => (
-                      <li key={item.topic} className="mt-1">
+              {(topTopicsInRange.length > 0 || authorConcepts.length > 0) && (
+                <div className="w-full max-w-2xl text-left">
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {topTopicsInRange.length > 0 && (
+                      <div>
+                        <div className="font-semibold text-foreground">Top topics</div>
+                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
+                          {topTopicsInRange.map((item) => (
+                            <li key={item.topic} className="mt-1">
+                              <Link
+                                to={buildAuthorTopicPublicationsPath(item.topic)}
+                                className="hover:underline"
+                              >
+                                {item.topic}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                         <Link
-                          to={buildAuthorTopicPublicationsPath(item.topic)}
-                          className="hover:underline"
+                          to={buildAuthorTopicsPath()}
+                          className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
                         >
-                          {item.topic}
+                          See more
                         </Link>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    to={buildAuthorTopicsPath()}
-                    className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
-                  >
-                    See more
-                  </Link>
+                      </div>
+                    )}
+                    {authorConcepts.length > 0 && (
+                      <div>
+                        <div className="font-semibold text-foreground">Top concepts</div>
+                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
+                          {authorConcepts.map((concept, index) => (
+                            <li key={`${concept.display_name}-${index}`} className="mt-1">
+                              {buildConceptUrl(concept) ? (
+                                <a
+                                  href={buildConceptUrl(concept)}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="hover:underline"
+                                >
+                                  {concept.display_name}
+                                </a>
+                              ) : (
+                                concept.display_name
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
             </div>
