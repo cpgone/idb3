@@ -177,6 +177,7 @@ export default function AuthorDetail() {
   const [venueTypeFilter, setVenueTypeFilter] = useState<
     "all" | "journal" | "conference" | "other"
   >("all");
+  const [showAltNames, setShowAltNames] = useState(false);
   const INSIGHTS_PAGE_SIZE = 8;
   const [visibleInsightCount, setVisibleInsightCount] = useState(INSIGHTS_PAGE_SIZE);
   const [insightsRangeA, setInsightsRangeA] = useState<Range>({ from: null, to: null });
@@ -1281,20 +1282,32 @@ export default function AuthorDetail() {
                 )}
                 {alternativeDisplayNames.length > 0 && (
                   <div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <button
+                      type="button"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+                      onClick={() => setShowAltNames((prev) => !prev)}
+                      aria-expanded={showAltNames}
+                    >
                       <Tag className="h-4 w-4 text-primary" />
-                      <span className="font-semibold text-foreground">OpenAlex alternate names:</span>
-                    </div>
-                    <div className="mt-1 flex flex-wrap gap-2 text-xs">
-                      {alternativeDisplayNames.map((alias) => (
-                        <span
-                          key={alias}
-                          className="rounded-full border border-border/60 bg-background px-2 py-0.5 text-foreground"
-                        >
-                          {alias}
-                        </span>
-                      ))}
-                    </div>
+                      <span className="font-semibold text-foreground">
+                        OpenAlex alternate names
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {showAltNames ? "Hide" : "Show"}
+                      </span>
+                    </button>
+                    {showAltNames && (
+                      <div className="mt-1 flex flex-wrap gap-2 text-xs">
+                        {alternativeDisplayNames.map((alias) => (
+                          <span
+                            key={alias}
+                            className="rounded-full border border-border/60 bg-background px-2 py-0.5 text-foreground"
+                          >
+                            {alias}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -1355,8 +1368,9 @@ export default function AuthorDetail() {
               )}
             </div>
 
-            <div className="flex w-full flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground order-first">
-              <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap">
+            <div className="flex w-full flex-wrap items-center gap-3 text-xs text-muted-foreground order-first">
+              <div className="flex flex-1 items-center justify-center">
+                <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap">
                 <div className="flex items-center gap-1">
                   <FileText className="h-4 w-4 text-primary" />
                   <Link
@@ -1421,9 +1435,10 @@ export default function AuthorDetail() {
                     h-index
                   </span>
                 </div>
+                </div>
               </div>
 
-              <div className="flex flex-none items-center gap-2">
+              <div className="flex flex-none items-center gap-2 justify-end">
                 <Button
                   type="button"
                   variant="outline"
