@@ -1228,20 +1228,30 @@ export default function AuthorDetail() {
   return (
     <SiteShell>
       <main className="container mx-auto px-4 py-6 space-y-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="w-fit px-2 text-xs"
+            onClick={() => navigate("/")}
+          >
+            <ArrowLeft className="mr-1 h-3 w-3" />
+            Back to dashboard
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="w-fit px-2 text-xs"
+            onClick={() => navigate(-1)}
+          >
+            <ArrowLeft className="mr-1 h-3 w-3" />
+            Back to previous
+          </Button>
+        </div>
         <Card className="border-border/60">
-          <CardHeader className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-1 flex-col gap-3">
-              <div className="flex gap-2">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="w-fit px-2 text-xs"
-                  onClick={() => navigate("/")}
-                >
-                  <ArrowLeft className="mr-1 h-3 w-3" />
-                  Back to dashboard
-                </Button>
-              </div>
+          <CardHeader className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between order-last">
+              <div className="flex flex-1 flex-col gap-3">
               <CardTitle className="flex items-center gap-2">
 
                 <User className="h-5 w-5 text-primary" />
@@ -1289,64 +1299,64 @@ export default function AuthorDetail() {
                 )}
               </div>
 
+              </div>
+
+              {(topTopicsInRange.length > 0 || authorConcepts.length > 0) && (
+                <div className="w-full max-w-2xl text-left">
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {topTopicsInRange.length > 0 && (
+                      <div>
+                        <div className="font-semibold text-foreground">Top topics</div>
+                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
+                          {topTopicsInRange.map((item) => (
+                            <li key={item.topic} className="mt-1">
+                              <Link
+                                to={buildAuthorTopicPublicationsPath(item.topic)}
+                                className="hover:underline"
+                              >
+                                {item.topic}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                        <Link
+                          to={buildAuthorTopicsPath()}
+                          className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
+                        >
+                          See more
+                        </Link>
+                      </div>
+                    )}
+                    {authorConcepts.length > 0 && (
+                      <div>
+                        <div className="font-semibold text-foreground">Top concepts</div>
+                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
+                          {authorConcepts.map((concept, index) => (
+                            <li key={`${concept.display_name}-${index}`} className="mt-1">
+                              {buildConceptUrl(concept) ? (
+                                <a
+                                  href={buildConceptUrl(concept)}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="hover:underline"
+                                >
+                                  {concept.display_name}
+                                </a>
+                              ) : (
+                                concept.display_name
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
 
-            <div className="flex flex-col items-end gap-3 text-xs text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleSavePdf}
-                  title="Save PDF"
-                >
-                  <Download className="h-3 w-3" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleExportWorksCsv}
-                  title="Export CSV"
-                >
-                  <FileText className="h-3 w-3" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleShareLinkedIn}
-                  title="Share on LinkedIn"
-                >
-                  <Linkedin className="h-3 w-3" />
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={handleCopyLink}
-                  title="Copy link"
-                >
-                  <LinkIcon className="h-3 w-3" />
-                </Button>
-                {id && (
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="icon"
-                    className="h-8 w-8"
-                    onClick={() => navigate(`/author/${id}/network`)}
-                    title="View co-author network"
-                  >
-                    <Network className="h-3 w-3" />
-                  </Button>
-                )}
-              </div>
-              <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap text-xs text-muted-foreground">
+            <div className="flex w-full flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground order-first">
+              <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap">
                 <div className="flex items-center gap-1">
                   <FileText className="h-4 w-4 text-primary" />
                   <Link
@@ -1412,58 +1422,61 @@ export default function AuthorDetail() {
                   </span>
                 </div>
               </div>
-              {(topTopicsInRange.length > 0 || authorConcepts.length > 0) && (
-                <div className="w-full max-w-2xl text-left">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {topTopicsInRange.length > 0 && (
-                      <div>
-                        <div className="font-semibold text-foreground">Top topics</div>
-                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
-                          {topTopicsInRange.map((item) => (
-                            <li key={item.topic} className="mt-1">
-                              <Link
-                                to={buildAuthorTopicPublicationsPath(item.topic)}
-                                className="hover:underline"
-                              >
-                                {item.topic}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <Link
-                          to={buildAuthorTopicsPath()}
-                          className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
-                        >
-                          See more
-                        </Link>
-                      </div>
-                    )}
-                    {authorConcepts.length > 0 && (
-                      <div>
-                        <div className="font-semibold text-foreground">Top concepts</div>
-                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
-                          {authorConcepts.map((concept, index) => (
-                            <li key={`${concept.display_name}-${index}`} className="mt-1">
-                              {buildConceptUrl(concept) ? (
-                                <a
-                                  href={buildConceptUrl(concept)}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  className="hover:underline"
-                                >
-                                  {concept.display_name}
-                                </a>
-                              ) : (
-                                concept.display_name
-                              )}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
+
+              <div className="flex flex-none items-center gap-2">
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleSavePdf}
+                  title="Save PDF"
+                >
+                  <Download className="h-3 w-3" />
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleExportWorksCsv}
+                  title="Export CSV"
+                >
+                  <FileText className="h-3 w-3" />
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleShareLinkedIn}
+                  title="Share on LinkedIn"
+                >
+                  <Linkedin className="h-3 w-3" />
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="icon"
+                  className="h-8 w-8"
+                  onClick={handleCopyLink}
+                  title="Copy link"
+                >
+                  <LinkIcon className="h-3 w-3" />
+                </Button>
+                {id && (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8"
+                    onClick={() => navigate(`/author/${id}/network`)}
+                    title="View co-author network"
+                  >
+                    <Network className="h-3 w-3" />
+                  </Button>
+                )}
+              </div>
             </div>
 
           </CardHeader>
