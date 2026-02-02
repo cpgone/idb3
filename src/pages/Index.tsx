@@ -62,6 +62,7 @@ type DashboardConfig = {
     programs: boolean;
     members: boolean;
     topics: boolean;
+    insights: boolean;
     institutions: boolean;
     publications: boolean;
     citations: boolean;
@@ -76,10 +77,64 @@ const dashboardConfig = (dashboardConfigJson as DashboardConfig) || {
     programs: false,
     members: true,
     topics: true,
+    insights: true,
     institutions: true,
     publications: true,
     citations: true,
   },
+};
+
+const thresholdsConfig =
+  (insightsConfig as { insightThresholds?: any })?.insightThresholds || {
+    strongSurge: { pubs: 2, cites: 2 },
+    growingPriority: { pubs: 1.5, cites: 1.2 },
+    impactLed: { cites: 1.5, pubsMax: 1 },
+    outputSoftening: { pubs: 1.2, citesMax: 0.9 },
+    declineDrop: 0.8,
+  };
+
+const deriveInsight = (pubsA: number, pubsB: number, citesA: number, citesB: number) => {
+  const pubsGrowth = pubsA === 0 ? (pubsB > 0 ? Infinity : 0) : pubsB / pubsA;
+  const citesGrowth = citesA === 0 ? (citesB > 0 ? Infinity : 0) : citesB / citesA;
+
+  const strongSurge = thresholdsConfig.strongSurge || { pubs: 2, cites: 2 };
+  const growingPriority = thresholdsConfig.growingPriority || { pubs: 1.5, cites: 1.2 };
+  const impactLed = thresholdsConfig.impactLed || { cites: 1.5, pubsMax: 1 };
+  const outputSoftening = thresholdsConfig.outputSoftening || { pubs: 1.2, citesMax: 0.9 };
+  const declineDrop = typeof thresholdsConfig.declineDrop === "number" ? thresholdsConfig.declineDrop : 0.8;
+
+  if (pubsA === 0 && pubsB > 0) return "Emerging in period B";
+  if (pubsA > 0 && pubsB === 0) return "Absent in period B";
+  if (pubsGrowth >= strongSurge.pubs && citesGrowth >= strongSurge.cites)
+    return "Strong surge in output and impact";
+  if (pubsGrowth >= growingPriority.pubs && citesGrowth >= growingPriority.cites)
+    return "Growing priority with rising impact";
+  if (pubsGrowth >= outputSoftening.pubs && citesGrowth < outputSoftening.citesMax)
+    return "Output rising, impact softening";
+  if (pubsGrowth < declineDrop && citesGrowth < declineDrop) return "Declining emphasis";
+  if (citesGrowth >= impactLed.cites && pubsGrowth <= (impactLed.pubsMax ?? 1))
+    return "Impact rising faster than output";
+  return "Stable focus";
+};
+
+const buildAggregates = (
+  works: (typeof worksTable)[number][],
+  from: number,
+  to: number,
+) => {
+  const map = new Map<string, { pubs: number; cites: number }>();
+  works.forEach((work) => {
+    if (typeof work.year !== "number") return;
+    if (work.year < from || work.year > to) return;
+    (work.topics || []).forEach((topic) => {
+      if (!topic) return;
+      const current = map.get(topic) || { pubs: 0, cites: 0 };
+      current.pubs += 1;
+      current.cites += work.citations || 0;
+      map.set(topic, current);
+    });
+  });
+  return map;
 };
 
 const Index = () => {
@@ -255,6 +310,45 @@ const Index = () => {
       }));
   }, [allYears, startYear, endYear, perYearAggregates]);
 
+  const insightsTotal = useMemo(() => {
+    if (!allYears.length) return 0;
+    const min = allYears[0];
+    const max = allYears[allYears.length - 1];
+
+    const clamp = (value?: number | null) => {
+      if (value == null || Number.isNaN(value)) return null;
+      return Math.min(Math.max(value, min), max);
+    };
+
+    const defaultsA =
+      (insightsConfig as { insightsDefaultPeriodA?: { from?: number; to?: number } })
+        ?.insightsDefaultPeriodA || {};
+    const defaultsB =
+      (insightsConfig as { insightsDefaultPeriodB?: { from?: number; to?: number } })
+        ?.insightsDefaultPeriodB || {};
+
+    let aFrom = clamp(defaultsA.from) ?? min;
+    let aTo = clamp(defaultsA.to) ?? max;
+    if (aFrom > aTo) [aFrom, aTo] = [aTo, aFrom];
+
+    let bFrom = clamp(defaultsB.from) ?? min;
+    let bTo = clamp(defaultsB.to) ?? max;
+    if (bFrom > bTo) [bFrom, bTo] = [bTo, bFrom];
+
+    const aggA = buildAggregates(cleanWorks, aFrom, aTo);
+    const aggB = buildAggregates(cleanWorks, bFrom, bTo);
+    const topics = new Set<string>([...aggA.keys(), ...aggB.keys()]);
+
+    let count = 0;
+    topics.forEach((topic) => {
+      const a = aggA.get(topic) || { pubs: 0, cites: 0 };
+      const b = aggB.get(topic) || { pubs: 0, cites: 0 };
+      const insight = deriveInsight(a.pubs, b.pubs, a.cites, b.cites);
+      if (insight !== "Stable focus") count += 1;
+    });
+    return count;
+  }, [allYears, cleanWorks]);
+
   const statTrends = useMemo(() => {
     return {
       topics: topicsChartData.map((d) => d.topics),
@@ -416,7 +510,7 @@ const Index = () => {
     <SiteShell>
       <main className="container mx-auto px-4 py-4 sm:py-8">
         {dashboardConfig.showStats && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 mb-6 text-xs sm:text-sm">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 mb-6 text-xs sm:text-sm">
             {dashboardConfig.statCards.members && (
               <StatCard
                 title="Members"
@@ -433,6 +527,15 @@ const Index = () => {
                 trend={{ values: statTrends.topics }}
                 actionLabel="view"
                 onClick={() => navigate("/topics")}
+              />
+            )}
+            {dashboardConfig.statCards.insights && (
+              <StatCard
+                title="Insights"
+                value={<span title={insightsTotal.toLocaleString()}>{insightsTotal.toLocaleString()}</span>}
+                icon={TrendingUp}
+                actionLabel="view"
+                onClick={() => navigate("/insights")}
               />
             )}
             {dashboardConfig.statCards.institutions && (
