@@ -921,16 +921,6 @@ const palette = ["#10b981", "#3b82f6", "#8b5cf6", "#f59e0b", "#ef4444", "#14b8a6
                           Log
                         </Button>
                       </div>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="sm"
-                        className="h-7 text-[11px]"
-                        onClick={resetAxes}
-                        title="Reset zoom on both axes"
-                      >
-                        Reset axes
-                      </Button>
                     </div>
                     <div className="ml-auto relative flex items-center gap-1">
                       <Button

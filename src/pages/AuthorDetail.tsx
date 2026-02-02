@@ -180,6 +180,7 @@ export default function AuthorDetail() {
   const [insightsRangeB, setInsightsRangeB] = useState<Range>({ from: null, to: null });
   const [showInsightsPubs, setShowInsightsPubs] = useState(true);
   const [showInsightsCites, setShowInsightsCites] = useState(false);
+  const [authorInsightsScale, setAuthorInsightsScale] = useState<"linear" | "log">("linear");
   const [compareInsights, setCompareInsights] = useState(true);
   const [showInsightsChart, setShowInsightsChart] = useState(true);
   const [showInsightsLegend, setShowInsightsLegend] = useState(true);
@@ -827,14 +828,24 @@ export default function AuthorDetail() {
   const authorInsightPlotLayout = useMemo(
     () => ({
       margin: { l: 50, r: 20, t: 10, b: 40 },
-      xaxis: { title: "Year", type: "linear" },
-      yaxis: { title: "Count", type: "linear", rangemode: "tozero" },
+      xaxis: {
+        title: "Year",
+        type: "linear",
+        tickmode: "linear",
+        dtick: 1,
+        tickformat: "d",
+      },
+      yaxis: {
+        title: "Count",
+        type: authorInsightsScale,
+        rangemode: "tozero",
+      },
       dragmode: "pan",
       hovermode: "x unified",
       legend: { orientation: "h", y: 1.15, x: 0 },
       uirevision: "author-insights",
     }),
-    [],
+    [authorInsightsScale],
   );
 
   const authorInsightPlotConfig = useMemo(
@@ -1665,9 +1676,44 @@ export default function AuthorDetail() {
                             </select>
                           </>
                         ) : (
-                          <span className="rounded border border-border bg-muted/40 px-2 py-1 text-[11px] text-foreground">
-                            All years {insightsRangeA.from ?? ""}-{insightsRangeA.to ?? ""}
-                          </span>
+                          <>
+                            <label className="font-semibold text-foreground">From</label>
+                            <select
+                              className="h-7 rounded border border-border bg-background px-2 text-xs"
+                              value={insightsRangeA.from ?? ""}
+                              onChange={(e) => {
+                                const value = Number(e.target.value);
+                                setInsightsRangeA((prev) => ({
+                                  from: value,
+                                  to: prev.to != null && value > prev.to ? value : prev.to,
+                                }));
+                              }}
+                            >
+                              {allYears.map((y) => (
+                                <option key={`single-from-${y}`} value={y}>
+                                  {y}
+                                </option>
+                              ))}
+                            </select>
+                            <label className="font-semibold text-foreground">to</label>
+                            <select
+                              className="h-7 rounded border border-border bg-background px-2 text-xs"
+                              value={insightsRangeA.to ?? ""}
+                              onChange={(e) => {
+                                const value = Number(e.target.value);
+                                setInsightsRangeA((prev) => ({
+                                  from: prev.from != null && value < prev.from ? value : prev.from,
+                                  to: value,
+                                }));
+                              }}
+                            >
+                              {allYears.map((y) => (
+                                <option key={`single-to-${y}`} value={y}>
+                                  {y}
+                                </option>
+                              ))}
+                            </select>
+                          </>
                         )}
                       </div>
                       {compareInsights && (
@@ -1718,11 +1764,11 @@ export default function AuthorDetail() {
                       <Card className="border-border/60 mb-4">
                         <CardContent className="flex h-[520px] sm:h-[420px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
                         <div className="flex flex-wrap items-center gap-3 text-[11px] text-muted-foreground">
-                          <div className="flex flex-wrap items-center gap-2">
-                            <Button
-                              type="button"
-                              variant="outline"
-                              size="sm"
+                        <div className="flex flex-wrap items-center gap-2">
+                          <Button
+                            type="button"
+                            variant="outline"
+                            size="sm"
                               className={`h-7 text-[11px] flex items-center gap-2 ${
                                 showInsightsPubs ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
                               }`}
@@ -1748,6 +1794,26 @@ export default function AuthorDetail() {
                             >
                               <BarChart3 className="h-3 w-3" />
                               <span className="inline-block h-0 w-5 border-t-2 border-dashed border-current" />
+                            </Button>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Button
+                              type="button"
+                              variant={authorInsightsScale === "linear" ? "secondary" : "outline"}
+                              size="sm"
+                              className="h-7 text-[11px]"
+                              onClick={() => setAuthorInsightsScale("linear")}
+                            >
+                              Linear
+                            </Button>
+                            <Button
+                              type="button"
+                              variant={authorInsightsScale === "log" ? "secondary" : "outline"}
+                              size="sm"
+                              className="h-7 text-[11px]"
+                              onClick={() => setAuthorInsightsScale("log")}
+                            >
+                              Log
                             </Button>
                           </div>
                           <div className="ml-auto">
