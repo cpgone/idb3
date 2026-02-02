@@ -2568,14 +2568,16 @@ export default function AuthorDetail() {
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-semibold text-foreground">Venue type</span>
                   {(["all", "journal", "conference", "other"] as const).map((value) => (
-                    <button
+                    <Button
                       key={value}
                       type="button"
-                      className={`rounded-full px-3 py-1 text-[11px] transition ${
-                        venueTypeFilter === value
-                          ? "bg-muted text-foreground"
-                          : "text-muted-foreground hover:bg-muted/40"
-                      }`}
+                    variant="outline"
+                    size="sm"
+                    className={`h-7 text-[11px] ${
+                      venueTypeFilter === value
+                        ? "bg-muted text-foreground"
+                        : "text-muted-foreground hover:bg-orange-50 hover:text-orange-700 hover:border-orange-200"
+                    }`}
                       onClick={() => {
                         setVenueTypeFilter(value);
                         setVisibleCount(PAGE_SIZE);
@@ -2592,7 +2594,7 @@ export default function AuthorDetail() {
                       <span className="ml-1 text-[10px] text-muted-foreground">
                         ({venueTypeCounts[value]})
                       </span>
-                    </button>
+                    </Button>
                   ))}
                 </div>
                 <span>
