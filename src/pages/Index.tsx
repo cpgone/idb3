@@ -108,11 +108,13 @@ const Index = () => {
   const [showPublications, setShowPublications] = useState(true);
   const [showCitations, setShowCitations] = useState(false);
   const [showInstitutions, setShowInstitutions] = useState(false);
+  const [showCoAuthors, setShowCoAuthors] = useState(false);
   const [chartSeriesColors, setChartSeriesColors] = useState({
     topics: "#22c55e",
     institutions: "#0ea5e9",
     publications: "#7c3aed",
     citations: "#f97316",
+    coAuthors: "#f59e0b",
   });
   const [showExportMenu, setShowExportMenu] = useState(false);
   const chartRef = useRef<HTMLDivElement | null>(null);
@@ -147,13 +149,19 @@ const Index = () => {
   const perYearAggregates = useMemo(() => {
     const map = new Map<
       number,
-      { publications: number; citations: number; topics: Set<string>; institutions: Set<string> }
+      { publications: number; citations: number; topics: Set<string>; institutions: Set<string>; coAuthors: Set<string> }
     >();
     for (const work of cleanWorks) {
       if (typeof work.year !== "number") continue;
       const entry =
         map.get(work.year) ??
-        { publications: 0, citations: 0, topics: new Set<string>(), institutions: new Set<string>() };
+        {
+          publications: 0,
+          citations: 0,
+          topics: new Set<string>(),
+          institutions: new Set<string>(),
+          coAuthors: new Set<string>(),
+        };
       entry.publications += 1;
       entry.citations += work.citations || 0;
       (work.topics || []).forEach((t) => {
@@ -161,6 +169,9 @@ const Index = () => {
       });
       (work.institutions || []).forEach((inst) => {
         if (inst) entry.institutions.add(inst);
+      });
+      (work.allAuthors || []).forEach((author) => {
+        if (author) entry.coAuthors.add(author);
       });
       map.set(work.year, entry);
     }
@@ -240,6 +251,7 @@ const Index = () => {
         publications: entry.publications,
         citations: entry.citations,
         institutions: entry.institutions.size,
+        coAuthors: entry.coAuthors.size,
       }));
   }, [allYears, startYear, endYear, perYearAggregates]);
 
@@ -275,6 +287,7 @@ const Index = () => {
       showInstitutions ? { label: "Institutions", color: chartSeriesColors.institutions } : null,
       showPublications ? { label: "Publications", color: chartSeriesColors.publications } : null,
       showCitations ? { label: "Citations", color: chartSeriesColors.citations } : null,
+      showCoAuthors ? { label: "Co-authors", color: chartSeriesColors.coAuthors } : null,
     ].filter(Boolean) as { label: string; color: string }[];
 
     const legendWidth =
@@ -501,6 +514,7 @@ const Index = () => {
                       { key: "institutions", label: "Institutions", visible: showInstitutions, toggle: setShowInstitutions },
                       { key: "publications", label: "Publications", visible: showPublications, toggle: setShowPublications },
                       { key: "citations", label: "Citations", visible: showCitations, toggle: setShowCitations },
+                      { key: "coAuthors", label: "Co-authors", visible: showCoAuthors, toggle: setShowCoAuthors },
                     ].map(({ key, label, visible, toggle }) => (
                       <button
                         key={key}
@@ -604,25 +618,20 @@ const Index = () => {
                           fontSize: 12,
                         }}
                         domain={[0, "auto"]}
-                        label={{
-                          value: "Count",
-                          angle: -90,
-                          position: "insideLeft",
-                          dx: -8,
-                          fill: "#1f2937",
-                          fontSize: 12,
-                          fontWeight: 600,
-                        }}
                       />
                       <Tooltip content={<SimpleTooltip />} />
                       {showTopics ? (
-                        <Bar dataKey="topics" name="Topics (unique topics)" fill="#22c55e" />
+                        <Bar
+                          dataKey="topics"
+                          name="Topics (unique topics)"
+                          fill={chartSeriesColors.topics}
+                        />
                       ) : null}
                       {showInstitutions ? (
                         <Bar
                           dataKey="institutions"
                           name="Institutions"
-                          fill="#0ea5e9"
+                          fill={chartSeriesColors.institutions}
                           opacity={0.85}
                         />
                       ) : null}
@@ -630,7 +639,7 @@ const Index = () => {
                         <Bar
                           dataKey="publications"
                           name="Publications"
-                          fill="#7c3aed"
+                          fill={chartSeriesColors.publications}
                           opacity={0.8}
                         />
                       ) : null}
@@ -639,7 +648,18 @@ const Index = () => {
                           type="monotone"
                           dataKey="citations"
                           name="Citations"
-                          stroke="#f97316"
+                          stroke={chartSeriesColors.citations}
+                          strokeWidth={2}
+                          dot={{ r: 3 }}
+                          activeDot={{ r: 4 }}
+                        />
+                      ) : null}
+                      {showCoAuthors ? (
+                        <Line
+                          type="monotone"
+                          dataKey="coAuthors"
+                          name="Co-authors"
+                          stroke={chartSeriesColors.coAuthors}
                           strokeWidth={2}
                           dot={{ r: 3 }}
                           activeDot={{ r: 4 }}
