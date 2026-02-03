@@ -261,7 +261,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.000069,
+        "value": 0.0000689,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -420,7 +420,7 @@
     },
     "block_key": "h khan",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5046264836",
-    "updated_date": "2026-02-01T04:19:59.206561",
+    "updated_date": "2026-02-02T04:24:01.495945",
     "created_date": "2021-01-05"
   },
   "works": [
@@ -481,7 +481,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://www.osti.gov/biblio/1777482",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -772,9 +772,9 @@
       "apc_paid": null,
       "fwci": 7.38464016,
       "has_fulltext": false,
-      "cited_by_count": 85,
+      "cited_by_count": 90,
       "citation_normalized_percentile": {
-        "value": 0.98138378,
+        "value": 0.98138433,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -1128,6 +1128,48 @@
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000067071",
+          "descriptor_name": "Hydraulic Fracking",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008903",
+          "descriptor_name": "Minerals",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059206",
+          "descriptor_name": "Natural Gas",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D061329",
+          "descriptor_name": "Oil and Gas Fields",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062065",
+          "descriptor_name": "Wastewater",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
         }
       ],
       "locations_count": 6,
@@ -1343,9 +1385,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.8100000023841858,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [
@@ -2123,6 +2165,10 @@
       },
       "counts_by_year": [
         {
+          "year": 2026,
+          "cited_by_count": 5
+        },
+        {
           "year": 2025,
           "cited_by_count": 22
         },
@@ -2143,7 +2189,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-06T03:46:38.306776",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -2512,7 +2558,7 @@
       "has_fulltext": false,
       "cited_by_count": 54,
       "citation_normalized_percentile": {
-        "value": 0.94308549,
+        "value": 0.94255654,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -2795,9 +2841,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Industry, innovation and infrastructure",
+          "id": "https://metadata.un.org/sdg/9",
           "score": 0.41999998688697815,
-          "id": "https://metadata.un.org/sdg/9"
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
@@ -3079,7 +3125,7 @@
           "cited_by_count": 27
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2026-01-21T23:30:37.877113",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -3262,7 +3308,7 @@
       "has_fulltext": false,
       "cited_by_count": 23,
       "citation_normalized_percentile": {
-        "value": 0.92701347,
+        "value": 0.92670958,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -3621,9 +3667,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Life below water",
+          "id": "https://metadata.un.org/sdg/14",
           "score": 0.5600000023841858,
-          "id": "https://metadata.un.org/sdg/14"
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
@@ -4646,7 +4692,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-06T03:46:38.306776",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -4705,7 +4751,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://pubs.acs.org/doi/pdf/10.1021/acsomega.3c00543",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -4840,7 +4886,7 @@
       "has_fulltext": false,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.59770094,
+        "value": 0.59704889,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -5268,45 +5314,45 @@
       },
       "referenced_works_count": 39,
       "referenced_works": [
-        "https://openalex.org/W3112566039",
-        "https://openalex.org/W3157475181",
-        "https://openalex.org/W2227257476",
-        "https://openalex.org/W3213354485",
-        "https://openalex.org/W2009540849",
-        "https://openalex.org/W3192137883",
-        "https://openalex.org/W2085353092",
-        "https://openalex.org/W2727313509",
-        "https://openalex.org/W3159834579",
-        "https://openalex.org/W3035735668",
-        "https://openalex.org/W2019911094",
-        "https://openalex.org/W3169483308",
-        "https://openalex.org/W1973822321",
-        "https://openalex.org/W3037757351",
-        "https://openalex.org/W3177483741",
-        "https://openalex.org/W2611760773",
-        "https://openalex.org/W4285150923",
-        "https://openalex.org/W4280511007",
-        "https://openalex.org/W3120445381",
-        "https://openalex.org/W3083154553",
-        "https://openalex.org/W2038877510",
-        "https://openalex.org/W2063905938",
         "https://openalex.org/W889269103",
-        "https://openalex.org/W4225309561",
-        "https://openalex.org/W4285392669",
         "https://openalex.org/W1591074876",
-        "https://openalex.org/W3038873814",
-        "https://openalex.org/W2916940749",
-        "https://openalex.org/W2047344824",
-        "https://openalex.org/W2016454789",
-        "https://openalex.org/W2167279371",
-        "https://openalex.org/W2732994810",
-        "https://openalex.org/W2484345417",
-        "https://openalex.org/W3033820737",
+        "https://openalex.org/W1973822321",
+        "https://openalex.org/W2009540849",
         "https://openalex.org/W2012328782",
-        "https://openalex.org/W2896065681",
-        "https://openalex.org/W3186952084",
+        "https://openalex.org/W2016454789",
+        "https://openalex.org/W2019911094",
+        "https://openalex.org/W2038877510",
+        "https://openalex.org/W2047344824",
+        "https://openalex.org/W2063905938",
+        "https://openalex.org/W2085353092",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2227257476",
+        "https://openalex.org/W2274890436",
+        "https://openalex.org/W2484345417",
+        "https://openalex.org/W2611760773",
+        "https://openalex.org/W2727313509",
+        "https://openalex.org/W2732994810",
         "https://openalex.org/W2886612495",
-        "https://openalex.org/W2274890436"
+        "https://openalex.org/W2896065681",
+        "https://openalex.org/W2916940749",
+        "https://openalex.org/W3033820737",
+        "https://openalex.org/W3035735668",
+        "https://openalex.org/W3037757351",
+        "https://openalex.org/W3038873814",
+        "https://openalex.org/W3083154553",
+        "https://openalex.org/W3112566039",
+        "https://openalex.org/W3120445381",
+        "https://openalex.org/W3157475181",
+        "https://openalex.org/W3159834579",
+        "https://openalex.org/W3169483308",
+        "https://openalex.org/W3177483741",
+        "https://openalex.org/W3186952084",
+        "https://openalex.org/W3192137883",
+        "https://openalex.org/W3213354485",
+        "https://openalex.org/W4225309561",
+        "https://openalex.org/W4280511007",
+        "https://openalex.org/W4285150923",
+        "https://openalex.org/W4285392669"
       ],
       "related_works": [
         "https://openalex.org/W1991722200",
@@ -5906,6 +5952,1201 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
+      "id": "https://openalex.org/W4401934105",
+      "doi": "https://doi.org/10.1021/acs.energyfuels.4c02809",
+      "title": "Evaluating CO<sub>2</sub> Residuals in Water Aquifers and Depleted Oil Reservoirs via X-ray Core-Flooding Experiments",
+      "display_name": "Evaluating CO<sub>2</sub> Residuals in Water Aquifers and Depleted Oil Reservoirs via X-ray Core-Flooding Experiments",
+      "publication_year": 2024,
+      "publication_date": "2024-08-27",
+      "ids": {
+        "openalex": "https://openalex.org/W4401934105",
+        "doi": "https://doi.org/10.1021/acs.energyfuels.4c02809"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1021/acs.energyfuels.4c02809",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1021/acs.energyfuels.4c02809",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S186935893",
+          "display_name": "Energy & Fuels",
+          "issn_l": "0887-0624",
+          "issn": [
+            "0887-0624",
+            "1520-5029"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320006",
+          "host_organization_name": "American Chemical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320006"
+          ],
+          "host_organization_lineage_names": [
+            "American Chemical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Energy &amp; Fuels",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5041388535",
+            "display_name": "Ummu-kulthum Lawal",
+            "orcid": "https://orcid.org/0009-0001-2744-4053"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ummu-kulthum Lawal",
+          "raw_affiliation_strings": [
+            "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5046264836",
+            "display_name": "Hasan Javed Khan",
+            "orcid": "https://orcid.org/0000-0001-8867-8438"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hasan J Khan",
+          "raw_affiliation_strings": [
+            "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050065390",
+            "display_name": "Shabeeb Alajmei",
+            "orcid": "https://orcid.org/0000-0002-5816-4214"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shabeeb Alajmei",
+          "raw_affiliation_strings": [
+            "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
+            "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5059738250",
+            "display_name": "Ahmed Al‐Yaseri",
+            "orcid": "https://orcid.org/0000-0001-9094-1258"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Ahmed Al-Yaseri",
+          "raw_affiliation_strings": [
+            "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 4,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5059738250"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 1.16242535,
+      "has_fulltext": false,
+      "cited_by_count": 3,
+      "citation_normalized_percentile": {
+        "value": 0.66270886,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 95,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "38",
+        "issue": "18",
+        "first_page": "17761",
+        "last_page": "17769"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11302",
+        "display_name": "CO2 Sequestration and Geologic Interactions",
+        "score": 1,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2305",
+          "display_name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/23",
+          "display_name": "Environmental Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11302",
+          "display_name": "CO2 Sequestration and Geologic Interactions",
+          "score": 1,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2305",
+            "display_name": "Environmental Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10491",
+          "display_name": "Enhanced Oil Recovery Techniques",
+          "score": 0.9994000196456909,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10967",
+          "display_name": "Carbon Dioxide Capture Technologies",
+          "score": 0.998199999332428,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2210",
+            "display_name": "Mechanical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/core-sample",
+          "display_name": "Core sample",
+          "score": 0.7874808311462402
+        },
+        {
+          "id": "https://openalex.org/keywords/residual-oil",
+          "display_name": "Residual oil",
+          "score": 0.6307253241539001
+        },
+        {
+          "id": "https://openalex.org/keywords/wetting",
+          "display_name": "Wetting",
+          "score": 0.5546205043792725
+        },
+        {
+          "id": "https://openalex.org/keywords/saturation",
+          "display_name": "Saturation (graph theory)",
+          "score": 0.5379263758659363
+        },
+        {
+          "id": "https://openalex.org/keywords/aquifer",
+          "display_name": "Aquifer",
+          "score": 0.5324293971061707
+        },
+        {
+          "id": "https://openalex.org/keywords/enhanced-oil-recovery",
+          "display_name": "Enhanced oil recovery",
+          "score": 0.5087855458259583
+        },
+        {
+          "id": "https://openalex.org/keywords/petroleum-engineering",
+          "display_name": "Petroleum engineering",
+          "score": 0.5082687735557556
+        },
+        {
+          "id": "https://openalex.org/keywords/petroleum-reservoir",
+          "display_name": "Petroleum reservoir",
+          "score": 0.4661383032798767
+        },
+        {
+          "id": "https://openalex.org/keywords/supercritical-fluid",
+          "display_name": "Supercritical fluid",
+          "score": 0.4481738805770874
+        },
+        {
+          "id": "https://openalex.org/keywords/adsorption",
+          "display_name": "Adsorption",
+          "score": 0.4251425266265869
+        },
+        {
+          "id": "https://openalex.org/keywords/mineralogy",
+          "display_name": "Mineralogy",
+          "score": 0.41488635540008545
+        },
+        {
+          "id": "https://openalex.org/keywords/geology",
+          "display_name": "Geology",
+          "score": 0.37640976905822754
+        },
+        {
+          "id": "https://openalex.org/keywords/core",
+          "display_name": "Core (optical fiber)",
+          "score": 0.3382037281990051
+        },
+        {
+          "id": "https://openalex.org/keywords/chemistry",
+          "display_name": "Chemistry",
+          "score": 0.2862037420272827
+        },
+        {
+          "id": "https://openalex.org/keywords/materials-science",
+          "display_name": "Materials science",
+          "score": 0.2541901171207428
+        },
+        {
+          "id": "https://openalex.org/keywords/groundwater",
+          "display_name": "Groundwater",
+          "score": 0.25277382135391235
+        },
+        {
+          "id": "https://openalex.org/keywords/geotechnical-engineering",
+          "display_name": "Geotechnical engineering",
+          "score": 0.18540212512016296
+        },
+        {
+          "id": "https://openalex.org/keywords/composite-material",
+          "display_name": "Composite material",
+          "score": 0.1057232916355133
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C112213829",
+          "wikidata": "https://www.wikidata.org/wiki/Q1942237",
+          "display_name": "Core sample",
+          "level": 3,
+          "score": 0.7874808311462402
+        },
+        {
+          "id": "https://openalex.org/C2776124570",
+          "wikidata": "https://www.wikidata.org/wiki/Q16999820",
+          "display_name": "Residual oil",
+          "level": 2,
+          "score": 0.6307253241539001
+        },
+        {
+          "id": "https://openalex.org/C134514944",
+          "wikidata": "https://www.wikidata.org/wiki/Q817136",
+          "display_name": "Wetting",
+          "level": 2,
+          "score": 0.5546205043792725
+        },
+        {
+          "id": "https://openalex.org/C9930424",
+          "wikidata": "https://www.wikidata.org/wiki/Q7426587",
+          "display_name": "Saturation (graph theory)",
+          "level": 2,
+          "score": 0.5379263758659363
+        },
+        {
+          "id": "https://openalex.org/C75622301",
+          "wikidata": "https://www.wikidata.org/wiki/Q208791",
+          "display_name": "Aquifer",
+          "level": 3,
+          "score": 0.5324293971061707
+        },
+        {
+          "id": "https://openalex.org/C2779681308",
+          "wikidata": "https://www.wikidata.org/wiki/Q1049254",
+          "display_name": "Enhanced oil recovery",
+          "level": 2,
+          "score": 0.5087855458259583
+        },
+        {
+          "id": "https://openalex.org/C78762247",
+          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
+          "display_name": "Petroleum engineering",
+          "level": 1,
+          "score": 0.5082687735557556
+        },
+        {
+          "id": "https://openalex.org/C113215200",
+          "wikidata": "https://www.wikidata.org/wiki/Q1845437",
+          "display_name": "Petroleum reservoir",
+          "level": 2,
+          "score": 0.4661383032798767
+        },
+        {
+          "id": "https://openalex.org/C118419359",
+          "wikidata": "https://www.wikidata.org/wiki/Q682585",
+          "display_name": "Supercritical fluid",
+          "level": 2,
+          "score": 0.4481738805770874
+        },
+        {
+          "id": "https://openalex.org/C150394285",
+          "wikidata": "https://www.wikidata.org/wiki/Q180254",
+          "display_name": "Adsorption",
+          "level": 2,
+          "score": 0.4251425266265869
+        },
+        {
+          "id": "https://openalex.org/C199289684",
+          "wikidata": "https://www.wikidata.org/wiki/Q83353",
+          "display_name": "Mineralogy",
+          "level": 1,
+          "score": 0.41488635540008545
+        },
+        {
+          "id": "https://openalex.org/C127313418",
+          "wikidata": "https://www.wikidata.org/wiki/Q1069",
+          "display_name": "Geology",
+          "level": 0,
+          "score": 0.37640976905822754
+        },
+        {
+          "id": "https://openalex.org/C2164484",
+          "wikidata": "https://www.wikidata.org/wiki/Q5170150",
+          "display_name": "Core (optical fiber)",
+          "level": 2,
+          "score": 0.3382037281990051
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0.2862037420272827
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.2541901171207428
+        },
+        {
+          "id": "https://openalex.org/C76177295",
+          "wikidata": "https://www.wikidata.org/wiki/Q161598",
+          "display_name": "Groundwater",
+          "level": 2,
+          "score": 0.25277382135391235
+        },
+        {
+          "id": "https://openalex.org/C187320778",
+          "wikidata": "https://www.wikidata.org/wiki/Q1349130",
+          "display_name": "Geotechnical engineering",
+          "level": 1,
+          "score": 0.18540212512016296
+        },
+        {
+          "id": "https://openalex.org/C159985019",
+          "wikidata": "https://www.wikidata.org/wiki/Q181790",
+          "display_name": "Composite material",
+          "level": 1,
+          "score": 0.1057232916355133
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0
+        },
+        {
+          "id": "https://openalex.org/C114614502",
+          "wikidata": "https://www.wikidata.org/wiki/Q76592",
+          "display_name": "Combinatorics",
+          "level": 1,
+          "score": 0
+        },
+        {
+          "id": "https://openalex.org/C178790620",
+          "wikidata": "https://www.wikidata.org/wiki/Q11351",
+          "display_name": "Organic chemistry",
+          "level": 1,
+          "score": 0
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.1021/acs.energyfuels.4c02809",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1021/acs.energyfuels.4c02809",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S186935893",
+            "display_name": "Energy & Fuels",
+            "issn_l": "0887-0624",
+            "issn": [
+              "0887-0624",
+              "1520-5029"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320006",
+            "host_organization_name": "American Chemical Society",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320006"
+            ],
+            "host_organization_lineage_names": [
+              "American Chemical Society"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Energy &amp; Fuels",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.7099999785423279,
+          "display_name": "Clean water and sanitation"
+        }
+      ],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320322323",
+          "display_name": "King Fahd University of Petroleum and Minerals",
+          "ror": "https://ror.org/03yez3163"
+        }
+      ],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 54,
+      "referenced_works": [
+        "https://openalex.org/W1538744519",
+        "https://openalex.org/W1563495182",
+        "https://openalex.org/W1593347402",
+        "https://openalex.org/W1752061138",
+        "https://openalex.org/W1913780967",
+        "https://openalex.org/W1966113633",
+        "https://openalex.org/W1979952782",
+        "https://openalex.org/W1999343105",
+        "https://openalex.org/W2015228833",
+        "https://openalex.org/W2020776530",
+        "https://openalex.org/W2041567011",
+        "https://openalex.org/W2043712969",
+        "https://openalex.org/W2046769475",
+        "https://openalex.org/W2086772897",
+        "https://openalex.org/W2163353140",
+        "https://openalex.org/W2170976584",
+        "https://openalex.org/W2256339549",
+        "https://openalex.org/W2291348130",
+        "https://openalex.org/W2326343681",
+        "https://openalex.org/W2509792282",
+        "https://openalex.org/W2514194095",
+        "https://openalex.org/W2727786885",
+        "https://openalex.org/W2784350055",
+        "https://openalex.org/W2786589993",
+        "https://openalex.org/W2789241851",
+        "https://openalex.org/W2837182345",
+        "https://openalex.org/W2913173373",
+        "https://openalex.org/W2914065784",
+        "https://openalex.org/W2914915312",
+        "https://openalex.org/W2996562653",
+        "https://openalex.org/W2996868476",
+        "https://openalex.org/W3003344051",
+        "https://openalex.org/W3048715918",
+        "https://openalex.org/W3167825944",
+        "https://openalex.org/W3191475654",
+        "https://openalex.org/W3196546975",
+        "https://openalex.org/W3198821762",
+        "https://openalex.org/W3216798413",
+        "https://openalex.org/W4200363055",
+        "https://openalex.org/W4247351215",
+        "https://openalex.org/W4286250849",
+        "https://openalex.org/W4290779366",
+        "https://openalex.org/W4293745122",
+        "https://openalex.org/W4306746332",
+        "https://openalex.org/W4309569627",
+        "https://openalex.org/W4311255578",
+        "https://openalex.org/W4366091747",
+        "https://openalex.org/W4389246065",
+        "https://openalex.org/W4391027463",
+        "https://openalex.org/W4391404819",
+        "https://openalex.org/W4396734029",
+        "https://openalex.org/W4399993244",
+        "https://openalex.org/W4400641317",
+        "https://openalex.org/W4401257009"
+      ],
+      "related_works": [
+        "https://openalex.org/W2837182345",
+        "https://openalex.org/W2082599112",
+        "https://openalex.org/W1977773355",
+        "https://openalex.org/W1997529216",
+        "https://openalex.org/W2599768182",
+        "https://openalex.org/W3137035199",
+        "https://openalex.org/W2334443348",
+        "https://openalex.org/W4361804549",
+        "https://openalex.org/W2884767996",
+        "https://openalex.org/W1268378685"
+      ],
+      "abstract_inverted_index": {
+        "2": [
+          147
+        ],
+        "The": [
+          0,
+          44,
+          135,
+          158,
+          176
+        ],
+        "success": [
+          1
+        ],
+        "of": [
+          2,
+          10,
+          69,
+          82,
+          108,
+          118,
+          133,
+          138,
+          213,
+          232
+        ],
+        "carbon": [
+          3
+        ],
+        "dioxide": [
+          4
+        ],
+        "storage": [
+          5
+        ],
+        "depends": [
+          6
+        ],
+        "on": [
+          7,
+          105,
+          124,
+          219
+        ],
+        "the": [
+          8,
+          11,
+          17,
+          31,
+          35,
+          61,
+          67,
+          70,
+          80,
+          83,
+          93,
+          96,
+          99,
+          102,
+          106,
+          139,
+          166,
+          173,
+          179,
+          184,
+          195,
+          203,
+          210,
+          220,
+          229,
+          233
+        ],
+        "security": [
+          9,
+          20
+        ],
+        "stored": [
+          12,
+          50
+        ],
+        "gas": [
+          13
+        ],
+        "from": [
+          14,
+          178
+        ],
+        "leakage": [
+          15
+        ],
+        "to": [
+          16,
+          38,
+          78,
+          152,
+          164,
+          194
+        ],
+        "surface.": [
+          18,
+          205
+        ],
+        "This": [
+          19,
+          206
+        ],
+        "is": [
+          21,
+          25,
+          49,
+          215,
+          224
+        ],
+        "ensured": [
+          22
+        ],
+        "when": [
+          23
+        ],
+        "there": [
+          24
+        ],
+        "an": [
+          26
+        ],
+        "interaction": [
+          27,
+          97,
+          197
+        ],
+        "between": [
+          28,
+          98,
+          200
+        ],
+        "CO2": [
+          29,
+          48,
+          84,
+          111,
+          119,
+          167,
+          170,
+          189,
+          201,
+          214
+        ],
+        "with": [
+          30,
+          129,
+          146,
+          236
+        ],
+        "formation": [
+          32,
+          45
+        ],
+        "water": [
+          33
+        ],
+        "and": [
+          34,
+          91,
+          101,
+          169,
+          198,
+          202
+        ],
+        "surrounding": [
+          36
+        ],
+        "rock": [
+          37,
+          234
+        ],
+        "trap": [
+          39
+        ],
+        "it": [
+          40,
+          145
+        ],
+        "in": [
+          41,
+          66,
+          87
+        ],
+        "other": [
+          42
+        ],
+        "forms.": [
+          43
+        ],
+        "into": [
+          46
+        ],
+        "which": [
+          47,
+          55
+        ],
+        "has": [
+          51,
+          187
+        ],
+        "a": [
+          52,
+          116,
+          130,
+          154
+        ],
+        "wetting": [
+          53,
+          136
+        ],
+        "phase,": [
+          54
+        ],
+        "can": [
+          56
+        ],
+        "either": [
+          57
+        ],
+        "be": [
+          58
+        ],
+        "water-wet": [
+          59
+        ],
+        "for": [
+          60
+        ],
+        "saline": [
+          62
+        ],
+        "aquifer": [
+          63
+        ],
+        "or": [
+          64
+        ],
+        "oil-wet": [
+          65,
+          185
+        ],
+        "case": [
+          68
+        ],
+        "depleted": [
+          71,
+          155
+        ],
+        "oil": [
+          72,
+          156
+        ],
+        "reservoir.": [
+          73,
+          157
+        ],
+        "Therefore,": [
+          74
+        ],
+        "this": [
+          75,
+          114
+        ],
+        "study": [
+          76,
+          207
+        ],
+        "aims": [
+          77
+        ],
+        "enhance": [
+          79
+        ],
+        "understanding": [
+          81
+        ],
+        "flow": [
+          85
+        ],
+        "behavior": [
+          86
+        ],
+        "Berea": [
+          88,
+          125
+        ],
+        "sandstone": [
+          89,
+          126
+        ],
+        "rocks": [
+          90,
+          109
+        ],
+        "determine": [
+          92
+        ],
+        "role": [
+          94
+        ],
+        "that": [
+          95,
+          183,
+          209
+        ],
+        "fluids": [
+          100
+        ],
+        "solid": [
+          103
+        ],
+        "plays": [
+          104
+        ],
+        "wettability": [
+          107
+        ],
+        "during": [
+          110
+        ],
+        "storage.": [
+          112
+        ],
+        "In": [
+          113
+        ],
+        "work,": [
+          115
+        ],
+        "series": [
+          117
+        ],
+        "core-flooding": [
+          120,
+          174,
+          180
+        ],
+        "experiments": [
+          121,
+          181
+        ],
+        "were": [
+          122
+        ],
+        "performed": [
+          123
+        ],
+        "core": [
+          127
+        ],
+        "samples": [
+          128
+        ],
+        "quartz": [
+          131
+        ],
+        "content": [
+          132
+        ],
+        ">90%.": [
+          134
+        ],
+        "nature": [
+          137
+        ],
+        "sample": [
+          140,
+          186
+        ],
+        "was": [
+          141,
+          162
+        ],
+        "altered": [
+          142
+        ],
+        "by": [
+          143,
+          228
+        ],
+        "treating": [
+          144
+        ],
+        "wt": [
+          148
+        ],
+        "%": [
+          149
+        ],
+        "oleic": [
+          150
+        ],
+        "acid": [
+          151
+        ],
+        "mimic": [
+          153
+        ],
+        "X-ray": [
+          159
+        ],
+        "scanning": [
+          160
+        ],
+        "technique": [
+          161
+        ],
+        "applied": [
+          163
+        ],
+        "detect": [
+          165
+        ],
+        "saturation": [
+          168
+        ],
+        "residual": [
+          171,
+          190,
+          211
+        ],
+        "after": [
+          172
+        ],
+        "experiments.": [
+          175
+        ],
+        "results": [
+          177
+        ],
+        "revealed": [
+          182
+        ],
+        "higher": [
+          188
+        ],
+        "trapping": [
+          191,
+          212
+        ],
+        "(43.2%)": [
+          192
+        ],
+        "due": [
+          193
+        ],
+        "high": [
+          196
+        ],
+        "adsorption": [
+          199
+        ],
+        "organic": [
+          204
+        ],
+        "concluded": [
+          208
+        ],
+        "not": [
+          216
+        ],
+        "only": [
+          217
+        ],
+        "dependent": [
+          218
+        ],
+        "snap-off": [
+          221
+        ],
+        "effect": [
+          222
+        ],
+        "but": [
+          223
+        ],
+        "also": [
+          225
+        ],
+        "greatly": [
+          226
+        ],
+        "advantaged": [
+          227
+        ],
+        "surface": [
+          230
+        ],
+        "chemistry": [
+          231
+        ],
+        "interacting": [
+          235
+        ],
+        "CO2.": [
+          237
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        }
+      ],
+      "updated_date": "2025-11-06T03:46:38.306776",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
       "id": "https://openalex.org/W2751049147",
       "doi": "https://doi.org/10.1016/j.petrol.2017.08.061",
       "title": "Study of formation damage caused by retention of bi-dispersed particles using combined pore-scale simulations and particle flooding experiments",
@@ -6191,13 +7432,13 @@
       ],
       "apc_list": null,
       "apc_paid": null,
-      "fwci": 2.71099225,
+      "fwci": 3.70111917,
       "has_fulltext": false,
       "cited_by_count": 34,
       "citation_normalized_percentile": {
-        "value": 0.88722084,
+        "value": 0.92358968,
         "is_in_top_1_percent": false,
-        "is_in_top_10_percent": false
+        "is_in_top_10_percent": true
       },
       "cited_by_percentile_year": {
         "min": 94,
@@ -6213,12 +7454,12 @@
       "is_paratext": false,
       "is_xpac": false,
       "primary_topic": {
-        "id": "https://openalex.org/T10635",
-        "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+        "id": "https://openalex.org/T10491",
+        "display_name": "Enhanced Oil Recovery Techniques",
         "score": 0.9998000264167786,
         "subfield": {
-          "id": "https://openalex.org/subfields/2210",
-          "display_name": "Mechanical Engineering"
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
         },
         "field": {
           "id": "https://openalex.org/fields/22",
@@ -6231,12 +7472,12 @@
       },
       "topics": [
         {
-          "id": "https://openalex.org/T10635",
-          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+          "id": "https://openalex.org/T10491",
+          "display_name": "Enhanced Oil Recovery Techniques",
           "score": 0.9998000264167786,
           "subfield": {
-            "id": "https://openalex.org/subfields/2210",
-            "display_name": "Mechanical Engineering"
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
           },
           "field": {
             "id": "https://openalex.org/fields/22",
@@ -6248,12 +7489,12 @@
           }
         },
         {
-          "id": "https://openalex.org/T10491",
-          "display_name": "Enhanced Oil Recovery Techniques",
+          "id": "https://openalex.org/T10635",
+          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
           "score": 0.9998000264167786,
           "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
+            "id": "https://openalex.org/subfields/2210",
+            "display_name": "Mechanical Engineering"
           },
           "field": {
             "id": "https://openalex.org/fields/22",
@@ -6566,9 +7807,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.7400000095367432,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [
@@ -6599,49 +7840,49 @@
       "content_urls": null,
       "referenced_works_count": 43,
       "referenced_works": [
-        "https://openalex.org/W2048340958",
-        "https://openalex.org/W2008106935",
-        "https://openalex.org/W2033601301",
-        "https://openalex.org/W2020289012",
-        "https://openalex.org/W6666538664",
-        "https://openalex.org/W2022121311",
-        "https://openalex.org/W2119385922",
-        "https://openalex.org/W2050809122",
-        "https://openalex.org/W2073775990",
-        "https://openalex.org/W1995388971",
-        "https://openalex.org/W2080768125",
-        "https://openalex.org/W2047190012",
-        "https://openalex.org/W2072017715",
-        "https://openalex.org/W2035016447",
-        "https://openalex.org/W1982247117",
-        "https://openalex.org/W2462665947",
-        "https://openalex.org/W2889492457",
-        "https://openalex.org/W2011454852",
-        "https://openalex.org/W2056480385",
-        "https://openalex.org/W2315449652",
-        "https://openalex.org/W6628013501",
-        "https://openalex.org/W1976140685",
-        "https://openalex.org/W2077282742",
-        "https://openalex.org/W113179494",
-        "https://openalex.org/W1980847218",
-        "https://openalex.org/W1971708911",
-        "https://openalex.org/W2090933745",
-        "https://openalex.org/W6788029972",
-        "https://openalex.org/W1972559519",
         "https://openalex.org/W23818226",
+        "https://openalex.org/W113179494",
+        "https://openalex.org/W1231066391",
+        "https://openalex.org/W1971708911",
+        "https://openalex.org/W1972559519",
+        "https://openalex.org/W1976140685",
+        "https://openalex.org/W1980847218",
+        "https://openalex.org/W1982247117",
+        "https://openalex.org/W1995388971",
+        "https://openalex.org/W2008106935",
+        "https://openalex.org/W2011454852",
+        "https://openalex.org/W2020289012",
+        "https://openalex.org/W2022121311",
+        "https://openalex.org/W2024971210",
+        "https://openalex.org/W2033601301",
+        "https://openalex.org/W2035016447",
+        "https://openalex.org/W2047190012",
+        "https://openalex.org/W2048340958",
+        "https://openalex.org/W2050809122",
         "https://openalex.org/W2052408262",
+        "https://openalex.org/W2056480385",
+        "https://openalex.org/W2064259072",
+        "https://openalex.org/W2072017715",
+        "https://openalex.org/W2073775990",
+        "https://openalex.org/W2077282742",
+        "https://openalex.org/W2080768125",
+        "https://openalex.org/W2090933745",
         "https://openalex.org/W2110187357",
-        "https://openalex.org/W6729390256",
-        "https://openalex.org/W2618120638",
+        "https://openalex.org/W2119385922",
+        "https://openalex.org/W2277330124",
+        "https://openalex.org/W2315449652",
+        "https://openalex.org/W2462665947",
         "https://openalex.org/W2550402147",
+        "https://openalex.org/W2618120638",
+        "https://openalex.org/W2889492457",
+        "https://openalex.org/W3120023447",
         "https://openalex.org/W3148949005",
         "https://openalex.org/W3157489207",
         "https://openalex.org/W4285719527",
-        "https://openalex.org/W3120023447",
-        "https://openalex.org/W1231066391",
-        "https://openalex.org/W2277330124",
-        "https://openalex.org/W2064259072",
-        "https://openalex.org/W2024971210"
+        "https://openalex.org/W6628013501",
+        "https://openalex.org/W6666538664",
+        "https://openalex.org/W6729390256",
+        "https://openalex.org/W6788029972"
       ],
       "related_works": [
         "https://openalex.org/W2355608013",
@@ -6748,7 +7989,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://www.mdpi.com/1996-1073/14/1/21/pdf?version=1608713684",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -6919,7 +8160,7 @@
       "has_fulltext": true,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.77032526,
+        "value": 0.7715243,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -7393,52 +8634,52 @@
       },
       "referenced_works_count": 46,
       "referenced_works": [
-        "https://openalex.org/W2764202294",
-        "https://openalex.org/W1448737132",
-        "https://openalex.org/W6703519869",
-        "https://openalex.org/W2019006773",
-        "https://openalex.org/W2568919292",
-        "https://openalex.org/W2024446193",
-        "https://openalex.org/W1990055209",
-        "https://openalex.org/W1967835857",
-        "https://openalex.org/W2946125148",
-        "https://openalex.org/W2965719377",
-        "https://openalex.org/W3047916457",
-        "https://openalex.org/W2101691304",
-        "https://openalex.org/W4229707794",
-        "https://openalex.org/W2048545185",
-        "https://openalex.org/W889269103",
-        "https://openalex.org/W2611760773",
-        "https://openalex.org/W417213533",
-        "https://openalex.org/W2779394813",
-        "https://openalex.org/W2061278533",
-        "https://openalex.org/W2082094414",
-        "https://openalex.org/W2975872888",
-        "https://openalex.org/W2783673240",
-        "https://openalex.org/W2723131247",
-        "https://openalex.org/W3005964829",
         "https://openalex.org/W183398455",
-        "https://openalex.org/W2021346135",
-        "https://openalex.org/W2027111125",
-        "https://openalex.org/W2075089440",
-        "https://openalex.org/W2573528742",
-        "https://openalex.org/W2597929037",
-        "https://openalex.org/W2082205240",
-        "https://openalex.org/W3028501049",
-        "https://openalex.org/W1976225149",
-        "https://openalex.org/W2002657911",
-        "https://openalex.org/W2872489315",
-        "https://openalex.org/W1966546505",
-        "https://openalex.org/W4247419735",
-        "https://openalex.org/W1994321405",
-        "https://openalex.org/W2749019574",
+        "https://openalex.org/W417213533",
+        "https://openalex.org/W889269103",
+        "https://openalex.org/W1448737132",
         "https://openalex.org/W1567673461",
+        "https://openalex.org/W1966546505",
+        "https://openalex.org/W1967835857",
+        "https://openalex.org/W1976225149",
+        "https://openalex.org/W1990055209",
+        "https://openalex.org/W1994321405",
+        "https://openalex.org/W2002657911",
+        "https://openalex.org/W2019006773",
+        "https://openalex.org/W2021346135",
+        "https://openalex.org/W2024446193",
+        "https://openalex.org/W2027111125",
+        "https://openalex.org/W2048545185",
         "https://openalex.org/W2058238342",
-        "https://openalex.org/W6687079641",
-        "https://openalex.org/W2606040009",
+        "https://openalex.org/W2061278533",
+        "https://openalex.org/W2075089440",
+        "https://openalex.org/W2082094414",
+        "https://openalex.org/W2082205240",
+        "https://openalex.org/W2101691304",
         "https://openalex.org/W2188851458",
         "https://openalex.org/W2337607404",
-        "https://openalex.org/W2761285935"
+        "https://openalex.org/W2568919292",
+        "https://openalex.org/W2573528742",
+        "https://openalex.org/W2597929037",
+        "https://openalex.org/W2606040009",
+        "https://openalex.org/W2611760773",
+        "https://openalex.org/W2723131247",
+        "https://openalex.org/W2749019574",
+        "https://openalex.org/W2761285935",
+        "https://openalex.org/W2764202294",
+        "https://openalex.org/W2779394813",
+        "https://openalex.org/W2783673240",
+        "https://openalex.org/W2872489315",
+        "https://openalex.org/W2946125148",
+        "https://openalex.org/W2965719377",
+        "https://openalex.org/W2975872888",
+        "https://openalex.org/W3005964829",
+        "https://openalex.org/W3028501049",
+        "https://openalex.org/W3047916457",
+        "https://openalex.org/W4229707794",
+        "https://openalex.org/W4247419735",
+        "https://openalex.org/W6687079641",
+        "https://openalex.org/W6703519869"
       ],
       "related_works": [
         "https://openalex.org/W1973284405",
@@ -7952,7 +9193,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-25T03:40:55.926884",
+      "updated_date": "2025-11-06T03:46:38.306776",
       "created_date": "2021-01-05T00:00:00"
     },
     {
@@ -8009,7 +9250,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://www.osti.gov/biblio/2345051",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -8137,7 +9378,7 @@
       "has_fulltext": false,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.76047011,
+        "value": 0.76176026,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -8481,25 +9722,25 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Life below water",
+          "id": "https://metadata.un.org/sdg/14",
           "score": 0.5299999713897705,
-          "id": "https://metadata.un.org/sdg/14"
+          "display_name": "Life below water"
         }
       ],
       "awards": [
-        {
-          "id": "https://openalex.org/G6738036802",
-          "display_name": null,
-          "funder_award_id": "DESC0019165",
-          "funder_id": "https://openalex.org/F4320306084",
-          "funder_display_name": "U.S. Department of Energy"
-        },
         {
           "id": "https://openalex.org/G2581671914",
           "display_name": null,
           "funder_award_id": "ECCS-2026822",
           "funder_id": "https://openalex.org/F4320306076",
           "funder_display_name": "National Science Foundation"
+        },
+        {
+          "id": "https://openalex.org/G6738036802",
+          "display_name": null,
+          "funder_award_id": "DESC0019165",
+          "funder_id": "https://openalex.org/F4320306084",
+          "funder_display_name": "U.S. Department of Energy"
         }
       ],
       "funders": [
@@ -8526,67 +9767,67 @@
       "content_urls": null,
       "referenced_works_count": 61,
       "referenced_works": [
-        "https://openalex.org/W1984528883",
-        "https://openalex.org/W2318921329",
-        "https://openalex.org/W3007957805",
-        "https://openalex.org/W1983991449",
         "https://openalex.org/W889269103",
-        "https://openalex.org/W2885540871",
-        "https://openalex.org/W1982830513",
-        "https://openalex.org/W2274890436",
-        "https://openalex.org/W2007167536",
-        "https://openalex.org/W2772828096",
-        "https://openalex.org/W2469597472",
-        "https://openalex.org/W2611760773",
-        "https://openalex.org/W2887626075",
-        "https://openalex.org/W2782374278",
-        "https://openalex.org/W3169483308",
-        "https://openalex.org/W3112696784",
-        "https://openalex.org/W2779394813",
-        "https://openalex.org/W3177483741",
-        "https://openalex.org/W2337607404",
-        "https://openalex.org/W2556123654",
-        "https://openalex.org/W2998441027",
-        "https://openalex.org/W3159834579",
-        "https://openalex.org/W2739382415",
-        "https://openalex.org/W2994907532",
-        "https://openalex.org/W2955911304",
-        "https://openalex.org/W3044842330",
-        "https://openalex.org/W3186952084",
-        "https://openalex.org/W3080456854",
-        "https://openalex.org/W3115859560",
-        "https://openalex.org/W2971314738",
-        "https://openalex.org/W3017489781",
-        "https://openalex.org/W1983156380",
         "https://openalex.org/W1591074876",
-        "https://openalex.org/W2967176533",
-        "https://openalex.org/W2022089761",
+        "https://openalex.org/W1982830513",
+        "https://openalex.org/W1983156380",
+        "https://openalex.org/W1983991449",
+        "https://openalex.org/W1984528883",
+        "https://openalex.org/W2007167536",
         "https://openalex.org/W2016454789",
+        "https://openalex.org/W2022089761",
         "https://openalex.org/W2047344824",
-        "https://openalex.org/W2896656401",
-        "https://openalex.org/W3109304732",
-        "https://openalex.org/W2512486583",
-        "https://openalex.org/W3016526368",
-        "https://openalex.org/W3120445381",
-        "https://openalex.org/W2167279371",
         "https://openalex.org/W2133059825",
+        "https://openalex.org/W2167279371",
         "https://openalex.org/W2228548648",
+        "https://openalex.org/W2274890436",
+        "https://openalex.org/W2318921329",
+        "https://openalex.org/W2337607404",
+        "https://openalex.org/W2469597472",
+        "https://openalex.org/W2512486583",
+        "https://openalex.org/W2556123654",
         "https://openalex.org/W2597929037",
+        "https://openalex.org/W2611760773",
         "https://openalex.org/W2727313509",
+        "https://openalex.org/W2739382415",
         "https://openalex.org/W2743730588",
-        "https://openalex.org/W2793038267",
         "https://openalex.org/W2752681220",
-        "https://openalex.org/W2806010776",
-        "https://openalex.org/W2900720963",
-        "https://openalex.org/W2958756741",
-        "https://openalex.org/W3093647517",
         "https://openalex.org/W2753647973",
-        "https://openalex.org/W2784349723",
-        "https://openalex.org/W3004806480",
-        "https://openalex.org/W3082530550",
         "https://openalex.org/W2770142658",
-        "https://openalex.org/W3189548543",
-        "https://openalex.org/W3102532612"
+        "https://openalex.org/W2772828096",
+        "https://openalex.org/W2779394813",
+        "https://openalex.org/W2782374278",
+        "https://openalex.org/W2784349723",
+        "https://openalex.org/W2793038267",
+        "https://openalex.org/W2806010776",
+        "https://openalex.org/W2885540871",
+        "https://openalex.org/W2887626075",
+        "https://openalex.org/W2896656401",
+        "https://openalex.org/W2900720963",
+        "https://openalex.org/W2955911304",
+        "https://openalex.org/W2958756741",
+        "https://openalex.org/W2967176533",
+        "https://openalex.org/W2971314738",
+        "https://openalex.org/W2994907532",
+        "https://openalex.org/W2998441027",
+        "https://openalex.org/W3004806480",
+        "https://openalex.org/W3007957805",
+        "https://openalex.org/W3016526368",
+        "https://openalex.org/W3017489781",
+        "https://openalex.org/W3044842330",
+        "https://openalex.org/W3080456854",
+        "https://openalex.org/W3082530550",
+        "https://openalex.org/W3093647517",
+        "https://openalex.org/W3102532612",
+        "https://openalex.org/W3109304732",
+        "https://openalex.org/W3112696784",
+        "https://openalex.org/W3115859560",
+        "https://openalex.org/W3120445381",
+        "https://openalex.org/W3159834579",
+        "https://openalex.org/W3169483308",
+        "https://openalex.org/W3177483741",
+        "https://openalex.org/W3186952084",
+        "https://openalex.org/W3189548543"
       ],
       "related_works": [
         "https://openalex.org/W2980694549",
@@ -9790,7 +11031,7 @@
       "has_fulltext": false,
       "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.77433478,
+        "value": 0.77290413,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -10080,9 +11321,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Responsible consumption and production",
+          "id": "https://metadata.un.org/sdg/12",
           "score": 0.47999998927116394,
-          "id": "https://metadata.un.org/sdg/12"
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [
@@ -10108,31 +11349,31 @@
       "content_urls": null,
       "referenced_works_count": 25,
       "referenced_works": [
-        "https://openalex.org/W1999238469",
-        "https://openalex.org/W1981664308",
-        "https://openalex.org/W2061007785",
-        "https://openalex.org/W2040186355",
-        "https://openalex.org/W3155667869",
-        "https://openalex.org/W2056767415",
-        "https://openalex.org/W2793229923",
-        "https://openalex.org/W2008859314",
-        "https://openalex.org/W2042674693",
-        "https://openalex.org/W2888024065",
-        "https://openalex.org/W2950884568",
         "https://openalex.org/W1978567419",
-        "https://openalex.org/W2792005369",
-        "https://openalex.org/W2587987101",
-        "https://openalex.org/W2898537194",
-        "https://openalex.org/W2121920631",
-        "https://openalex.org/W2803262068",
-        "https://openalex.org/W2947516849",
-        "https://openalex.org/W3011024902",
-        "https://openalex.org/W3108634557",
-        "https://openalex.org/W3215400527",
+        "https://openalex.org/W1981664308",
+        "https://openalex.org/W1999238469",
         "https://openalex.org/W2006219378",
+        "https://openalex.org/W2008859314",
+        "https://openalex.org/W2040186355",
+        "https://openalex.org/W2042674693",
+        "https://openalex.org/W2056767415",
+        "https://openalex.org/W2061007785",
+        "https://openalex.org/W2121920631",
+        "https://openalex.org/W2587987101",
         "https://openalex.org/W2600707209",
+        "https://openalex.org/W2792005369",
+        "https://openalex.org/W2793229923",
+        "https://openalex.org/W2803262068",
+        "https://openalex.org/W2888024065",
+        "https://openalex.org/W2898537194",
+        "https://openalex.org/W2947516849",
+        "https://openalex.org/W2950884568",
+        "https://openalex.org/W3011024902",
+        "https://openalex.org/W3093024954",
+        "https://openalex.org/W3108634557",
         "https://openalex.org/W3124849538",
-        "https://openalex.org/W3093024954"
+        "https://openalex.org/W3155667869",
+        "https://openalex.org/W3215400527"
       ],
       "related_works": [
         "https://openalex.org/W2111016365",
@@ -10718,7 +11959,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://arxiv.org/pdf/2006.15034",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -10891,7 +12132,7 @@
       "has_fulltext": false,
       "cited_by_count": 5,
       "citation_normalized_percentile": {
-        "value": 0.49481149,
+        "value": 0.49662838,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -11302,9 +12543,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.550000011920929,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -11316,79 +12557,79 @@
       "content_urls": null,
       "referenced_works_count": 73,
       "referenced_works": [
-        "https://openalex.org/W2947475442",
-        "https://openalex.org/W2795914600",
-        "https://openalex.org/W7071373836",
-        "https://openalex.org/W2963536606",
-        "https://openalex.org/W1963713322",
-        "https://openalex.org/W2933205899",
-        "https://openalex.org/W6658268894",
-        "https://openalex.org/W2186319775",
-        "https://openalex.org/W2116083566",
-        "https://openalex.org/W1968841838",
-        "https://openalex.org/W2043558449",
-        "https://openalex.org/W6768969932",
-        "https://openalex.org/W6669561437",
-        "https://openalex.org/W2044062034",
-        "https://openalex.org/W2160502327",
-        "https://openalex.org/W2026184211",
-        "https://openalex.org/W2023358109",
-        "https://openalex.org/W2325644932",
-        "https://openalex.org/W2883701166",
-        "https://openalex.org/W2913445052",
-        "https://openalex.org/W3166836634",
-        "https://openalex.org/W2076098565",
-        "https://openalex.org/W2198868045",
-        "https://openalex.org/W6669962880",
-        "https://openalex.org/W2046157523",
-        "https://openalex.org/W6768875213",
-        "https://openalex.org/W2035397838",
-        "https://openalex.org/W6743085746",
-        "https://openalex.org/W1971643651",
-        "https://openalex.org/W2095814622",
-        "https://openalex.org/W1987545527",
-        "https://openalex.org/W6679703298",
-        "https://openalex.org/W6751733241",
-        "https://openalex.org/W2133059825",
-        "https://openalex.org/W2051512844",
-        "https://openalex.org/W6668013635",
-        "https://openalex.org/W2124630741",
-        "https://openalex.org/W2167279371",
-        "https://openalex.org/W2099540110",
         "https://openalex.org/W192226509",
-        "https://openalex.org/W2620251743",
-        "https://openalex.org/W2312789133",
+        "https://openalex.org/W1041394874",
         "https://openalex.org/W1516711056",
-        "https://openalex.org/W2002011757",
+        "https://openalex.org/W1580073435",
+        "https://openalex.org/W1963713322",
+        "https://openalex.org/W1968841838",
+        "https://openalex.org/W1971643651",
+        "https://openalex.org/W1987545527",
         "https://openalex.org/W1993465170",
+        "https://openalex.org/W2002011757",
         "https://openalex.org/W2002224451",
+        "https://openalex.org/W2023358109",
+        "https://openalex.org/W2026184211",
+        "https://openalex.org/W2029837300",
+        "https://openalex.org/W2034259894",
+        "https://openalex.org/W2035397838",
+        "https://openalex.org/W2041660661",
+        "https://openalex.org/W2043558449",
+        "https://openalex.org/W2044062034",
+        "https://openalex.org/W2046157523",
+        "https://openalex.org/W2051512844",
         "https://openalex.org/W2058046601",
+        "https://openalex.org/W2062979420",
+        "https://openalex.org/W2069153185",
+        "https://openalex.org/W2076098565",
+        "https://openalex.org/W2076836664",
+        "https://openalex.org/W2078474490",
+        "https://openalex.org/W2095814622",
+        "https://openalex.org/W2099540110",
         "https://openalex.org/W2110187357",
+        "https://openalex.org/W2116083566",
+        "https://openalex.org/W2124630741",
+        "https://openalex.org/W2131622490",
+        "https://openalex.org/W2133059825",
+        "https://openalex.org/W2138273374",
         "https://openalex.org/W2151135583",
+        "https://openalex.org/W2160502327",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2186319775",
+        "https://openalex.org/W2198868045",
+        "https://openalex.org/W2312789133",
+        "https://openalex.org/W2325644932",
+        "https://openalex.org/W2437926689",
+        "https://openalex.org/W2537324357",
         "https://openalex.org/W2613283936",
         "https://openalex.org/W2618120638",
-        "https://openalex.org/W2537324357",
-        "https://openalex.org/W2069153185",
-        "https://openalex.org/W2062979420",
-        "https://openalex.org/W1041394874",
-        "https://openalex.org/W1580073435",
+        "https://openalex.org/W2620251743",
         "https://openalex.org/W2746080364",
-        "https://openalex.org/W2041660661",
-        "https://openalex.org/W2034259894",
-        "https://openalex.org/W2029837300",
-        "https://openalex.org/W3119025646",
+        "https://openalex.org/W2795914600",
         "https://openalex.org/W2805554858",
+        "https://openalex.org/W2883701166",
+        "https://openalex.org/W2913445052",
+        "https://openalex.org/W2933205899",
+        "https://openalex.org/W2947475442",
+        "https://openalex.org/W2963536606",
+        "https://openalex.org/W2979444242",
         "https://openalex.org/W2979715211",
         "https://openalex.org/W2980149724",
-        "https://openalex.org/W2979444242",
-        "https://openalex.org/W2437926689",
-        "https://openalex.org/W2138273374",
-        "https://openalex.org/W2131622490",
-        "https://openalex.org/W4288672806",
+        "https://openalex.org/W3119025646",
+        "https://openalex.org/W3166836634",
         "https://openalex.org/W3214143902",
         "https://openalex.org/W4231012843",
-        "https://openalex.org/W2076836664",
-        "https://openalex.org/W2078474490"
+        "https://openalex.org/W4288672806",
+        "https://openalex.org/W6658268894",
+        "https://openalex.org/W6668013635",
+        "https://openalex.org/W6669561437",
+        "https://openalex.org/W6669962880",
+        "https://openalex.org/W6679703298",
+        "https://openalex.org/W6743085746",
+        "https://openalex.org/W6751733241",
+        "https://openalex.org/W6768875213",
+        "https://openalex.org/W6768969932",
+        "https://openalex.org/W7071373836"
       ],
       "related_works": [
         "https://openalex.org/W4281777051",
@@ -11735,7 +12976,7 @@
       "has_fulltext": false,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.96171079,
+        "value": 0.96309813,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -11788,8 +13029,8 @@
           }
         },
         {
-          "id": "https://openalex.org/T10892",
-          "display_name": "Drilling and Well Engineering",
+          "id": "https://openalex.org/T10491",
+          "display_name": "Enhanced Oil Recovery Techniques",
           "score": 0.9998999834060669,
           "subfield": {
             "id": "https://openalex.org/subfields/2212",
@@ -11805,8 +13046,8 @@
           }
         },
         {
-          "id": "https://openalex.org/T10491",
-          "display_name": "Enhanced Oil Recovery Techniques",
+          "id": "https://openalex.org/T10892",
+          "display_name": "Drilling and Well Engineering",
           "score": 0.9998999834060669,
           "subfield": {
             "id": "https://openalex.org/subfields/2212",
@@ -12040,28 +13281,28 @@
       "content_urls": null,
       "referenced_works_count": 22,
       "referenced_works": [
-        "https://openalex.org/W2048340958",
-        "https://openalex.org/W2020289012",
-        "https://openalex.org/W6658583261",
-        "https://openalex.org/W2119385922",
-        "https://openalex.org/W2122628130",
-        "https://openalex.org/W2072017715",
-        "https://openalex.org/W1982247117",
-        "https://openalex.org/W6664035265",
-        "https://openalex.org/W2047601718",
         "https://openalex.org/W1231066391",
-        "https://openalex.org/W1976140685",
-        "https://openalex.org/W6667672167",
-        "https://openalex.org/W6647366704",
         "https://openalex.org/W1970354287",
-        "https://openalex.org/W4239138611",
-        "https://openalex.org/W4233208838",
-        "https://openalex.org/W2068497863",
-        "https://openalex.org/W2094935564",
+        "https://openalex.org/W1976140685",
+        "https://openalex.org/W1982247117",
         "https://openalex.org/W1987452151",
+        "https://openalex.org/W2020289012",
+        "https://openalex.org/W2031524765",
+        "https://openalex.org/W2047601718",
+        "https://openalex.org/W2048340958",
         "https://openalex.org/W2054841646",
         "https://openalex.org/W2057281537",
-        "https://openalex.org/W2031524765"
+        "https://openalex.org/W2068497863",
+        "https://openalex.org/W2072017715",
+        "https://openalex.org/W2094935564",
+        "https://openalex.org/W2119385922",
+        "https://openalex.org/W2122628130",
+        "https://openalex.org/W4233208838",
+        "https://openalex.org/W4239138611",
+        "https://openalex.org/W6647366704",
+        "https://openalex.org/W6658583261",
+        "https://openalex.org/W6664035265",
+        "https://openalex.org/W6667672167"
       ],
       "related_works": [
         "https://openalex.org/W100111986",
@@ -12873,7 +14114,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "http://methods-x.com/article/S2215016118301250/pdf",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -13008,7 +14249,7 @@
       "has_fulltext": true,
       "cited_by_count": 8,
       "citation_normalized_percentile": {
-        "value": 0.80871283,
+        "value": 0.80951032,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -13472,11 +14713,11 @@
       },
       "referenced_works_count": 5,
       "referenced_works": [
-        "https://openalex.org/W2167279371",
         "https://openalex.org/W2133059825",
-        "https://openalex.org/W6738021811",
+        "https://openalex.org/W2167279371",
         "https://openalex.org/W2618120638",
-        "https://openalex.org/W3165490747"
+        "https://openalex.org/W3165490747",
+        "https://openalex.org/W6738021811"
       ],
       "related_works": [
         "https://openalex.org/W3006540667",
@@ -13509,7 +14750,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-25T03:40:55.926884",
+      "updated_date": "2026-01-13T01:12:25.745995",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -13680,7 +14921,7 @@
       "has_fulltext": false,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.798879,
+        "value": 0.79541694,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -13733,23 +14974,6 @@
           }
         },
         {
-          "id": "https://openalex.org/T10894",
-          "display_name": "Groundwater flow and contamination studies",
-          "score": 0.9997000098228455,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2305",
-            "display_name": "Environmental Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/23",
-            "display_name": "Environmental Science"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
           "id": "https://openalex.org/T10635",
           "display_name": "Hydraulic Fracturing and Reservoir Analysis",
           "score": 0.9997000098228455,
@@ -13760,6 +14984,23 @@
           "field": {
             "id": "https://openalex.org/fields/22",
             "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10894",
+          "display_name": "Groundwater flow and contamination studies",
+          "score": 0.9997000098228455,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2305",
+            "display_name": "Environmental Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
           },
           "domain": {
             "id": "https://openalex.org/domains/3",
@@ -14173,9 +15414,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.41999998688697815,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -14189,82 +15430,82 @@
       },
       "referenced_works_count": 76,
       "referenced_works": [
-        "https://openalex.org/W2004713696",
-        "https://openalex.org/W2287923385",
-        "https://openalex.org/W2610269235",
-        "https://openalex.org/W107427765",
-        "https://openalex.org/W2965662695",
-        "https://openalex.org/W2034251270",
-        "https://openalex.org/W2228548648",
-        "https://openalex.org/W2462377297",
-        "https://openalex.org/W2769749296",
-        "https://openalex.org/W3121837258",
-        "https://openalex.org/W2043008468",
-        "https://openalex.org/W2746652693",
-        "https://openalex.org/W3041023366",
-        "https://openalex.org/W2043617356",
-        "https://openalex.org/W2315726918",
-        "https://openalex.org/W2328091345",
-        "https://openalex.org/W1526639061",
-        "https://openalex.org/W1973425384",
-        "https://openalex.org/W2555952695",
-        "https://openalex.org/W1997473003",
-        "https://openalex.org/W2885869354",
-        "https://openalex.org/W2115041731",
-        "https://openalex.org/W2044062034",
-        "https://openalex.org/W1977296700",
-        "https://openalex.org/W2014707037",
-        "https://openalex.org/W1963878777",
-        "https://openalex.org/W2136544811",
-        "https://openalex.org/W3176031384",
-        "https://openalex.org/W2811078423",
-        "https://openalex.org/W3089056271",
-        "https://openalex.org/W3111443900",
-        "https://openalex.org/W2053447043",
-        "https://openalex.org/W2531172916",
-        "https://openalex.org/W2967757476",
-        "https://openalex.org/W2035397838",
-        "https://openalex.org/W2236623899",
-        "https://openalex.org/W2914101991",
-        "https://openalex.org/W2049199662",
-        "https://openalex.org/W4289942223",
-        "https://openalex.org/W2065158846",
-        "https://openalex.org/W4394871780",
-        "https://openalex.org/W2089162141",
-        "https://openalex.org/W2538125196",
-        "https://openalex.org/W2149736938",
-        "https://openalex.org/W3209340835",
-        "https://openalex.org/W2167279371",
-        "https://openalex.org/W2017201931",
-        "https://openalex.org/W2325996469",
-        "https://openalex.org/W2890456542",
-        "https://openalex.org/W3081950255",
-        "https://openalex.org/W2724555182",
-        "https://openalex.org/W2946535696",
-        "https://openalex.org/W2058046601",
-        "https://openalex.org/W2515105075",
-        "https://openalex.org/W2786589993",
-        "https://openalex.org/W3200261571",
-        "https://openalex.org/W2018980181",
-        "https://openalex.org/W2342479095",
-        "https://openalex.org/W2346710808",
-        "https://openalex.org/W2062619611",
-        "https://openalex.org/W2056667120",
-        "https://openalex.org/W2070946082",
-        "https://openalex.org/W2068349868",
-        "https://openalex.org/W2044098605",
-        "https://openalex.org/W2940825479",
-        "https://openalex.org/W2908979910",
-        "https://openalex.org/W3102532612",
-        "https://openalex.org/W1979984257",
-        "https://openalex.org/W4212919324",
-        "https://openalex.org/W4206519171",
-        "https://openalex.org/W4248653896",
         "https://openalex.org/W70778597",
+        "https://openalex.org/W107427765",
         "https://openalex.org/W375411588",
         "https://openalex.org/W1488969766",
+        "https://openalex.org/W1526639061",
+        "https://openalex.org/W1963878777",
+        "https://openalex.org/W1973425384",
+        "https://openalex.org/W1977296700",
+        "https://openalex.org/W1979984257",
+        "https://openalex.org/W1997473003",
+        "https://openalex.org/W2004713696",
         "https://openalex.org/W2010311155",
-        "https://openalex.org/W2012882946"
+        "https://openalex.org/W2012882946",
+        "https://openalex.org/W2014707037",
+        "https://openalex.org/W2017201931",
+        "https://openalex.org/W2018980181",
+        "https://openalex.org/W2034251270",
+        "https://openalex.org/W2035397838",
+        "https://openalex.org/W2043008468",
+        "https://openalex.org/W2043617356",
+        "https://openalex.org/W2044062034",
+        "https://openalex.org/W2044098605",
+        "https://openalex.org/W2049199662",
+        "https://openalex.org/W2053447043",
+        "https://openalex.org/W2056667120",
+        "https://openalex.org/W2058046601",
+        "https://openalex.org/W2062619611",
+        "https://openalex.org/W2065158846",
+        "https://openalex.org/W2068349868",
+        "https://openalex.org/W2070946082",
+        "https://openalex.org/W2089162141",
+        "https://openalex.org/W2115041731",
+        "https://openalex.org/W2136544811",
+        "https://openalex.org/W2149736938",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2228548648",
+        "https://openalex.org/W2236623899",
+        "https://openalex.org/W2287923385",
+        "https://openalex.org/W2315726918",
+        "https://openalex.org/W2325996469",
+        "https://openalex.org/W2328091345",
+        "https://openalex.org/W2342479095",
+        "https://openalex.org/W2346710808",
+        "https://openalex.org/W2462377297",
+        "https://openalex.org/W2515105075",
+        "https://openalex.org/W2531172916",
+        "https://openalex.org/W2538125196",
+        "https://openalex.org/W2555952695",
+        "https://openalex.org/W2610269235",
+        "https://openalex.org/W2724555182",
+        "https://openalex.org/W2746652693",
+        "https://openalex.org/W2769749296",
+        "https://openalex.org/W2786589993",
+        "https://openalex.org/W2811078423",
+        "https://openalex.org/W2885869354",
+        "https://openalex.org/W2890456542",
+        "https://openalex.org/W2908979910",
+        "https://openalex.org/W2914101991",
+        "https://openalex.org/W2940825479",
+        "https://openalex.org/W2946535696",
+        "https://openalex.org/W2965662695",
+        "https://openalex.org/W2967757476",
+        "https://openalex.org/W3041023366",
+        "https://openalex.org/W3081950255",
+        "https://openalex.org/W3089056271",
+        "https://openalex.org/W3102532612",
+        "https://openalex.org/W3111443900",
+        "https://openalex.org/W3121837258",
+        "https://openalex.org/W3176031384",
+        "https://openalex.org/W3200261571",
+        "https://openalex.org/W3209340835",
+        "https://openalex.org/W4206519171",
+        "https://openalex.org/W4212919324",
+        "https://openalex.org/W4248653896",
+        "https://openalex.org/W4289942223",
+        "https://openalex.org/W4394871780"
       ],
       "related_works": [
         "https://openalex.org/W2763652138",
@@ -14985,7 +16226,7 @@
       "has_fulltext": false,
       "cited_by_count": 11,
       "citation_normalized_percentile": {
-        "value": 0.75317157,
+        "value": 0.75201617,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -15277,9 +16518,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.5699999928474426,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -15291,82 +16532,82 @@
       "content_urls": null,
       "referenced_works_count": 76,
       "referenced_works": [
-        "https://openalex.org/W6682376951",
-        "https://openalex.org/W6646809305",
-        "https://openalex.org/W6631016526",
-        "https://openalex.org/W6684638327",
-        "https://openalex.org/W6657177671",
-        "https://openalex.org/W7071373836",
-        "https://openalex.org/W6645599346",
-        "https://openalex.org/W6658110292",
-        "https://openalex.org/W6748173620",
-        "https://openalex.org/W2593977757",
-        "https://openalex.org/W6662654115",
-        "https://openalex.org/W6753316556",
-        "https://openalex.org/W6681745871",
-        "https://openalex.org/W6658268894",
-        "https://openalex.org/W2753647973",
-        "https://openalex.org/W6651857267",
-        "https://openalex.org/W6668261807",
-        "https://openalex.org/W6642451140",
-        "https://openalex.org/W6743960924",
-        "https://openalex.org/W6673301784",
-        "https://openalex.org/W6680096826",
-        "https://openalex.org/W6729538191",
-        "https://openalex.org/W6650400369",
-        "https://openalex.org/W6655379356",
-        "https://openalex.org/W622966817",
         "https://openalex.org/W77180615",
-        "https://openalex.org/W6657143101",
-        "https://openalex.org/W6662440612",
-        "https://openalex.org/W6682845287",
-        "https://openalex.org/W6673402437",
-        "https://openalex.org/W6664149551",
-        "https://openalex.org/W6653507702",
-        "https://openalex.org/W6645643914",
-        "https://openalex.org/W6659093875",
-        "https://openalex.org/W6628013501",
-        "https://openalex.org/W2784349723",
-        "https://openalex.org/W2751049147",
-        "https://openalex.org/W2550429419",
-        "https://openalex.org/W2618120638",
-        "https://openalex.org/W2791148937",
-        "https://openalex.org/W2531092595",
-        "https://openalex.org/W2053950243",
-        "https://openalex.org/W2049171635",
-        "https://openalex.org/W2072017715",
-        "https://openalex.org/W2047344824",
-        "https://openalex.org/W2006093219",
-        "https://openalex.org/W2001253823",
+        "https://openalex.org/W622966817",
+        "https://openalex.org/W1231066391",
+        "https://openalex.org/W1516711056",
+        "https://openalex.org/W1583165437",
+        "https://openalex.org/W1968431560",
+        "https://openalex.org/W1980448966",
         "https://openalex.org/W1982247117",
         "https://openalex.org/W1986059245",
-        "https://openalex.org/W2033601301",
-        "https://openalex.org/W2030366724",
-        "https://openalex.org/W2027628270",
+        "https://openalex.org/W2001253823",
+        "https://openalex.org/W2006093219",
+        "https://openalex.org/W2012212083",
         "https://openalex.org/W2020289012",
-        "https://openalex.org/W2035016447",
+        "https://openalex.org/W2027628270",
         "https://openalex.org/W2029837300",
+        "https://openalex.org/W2030366724",
+        "https://openalex.org/W2033601301",
+        "https://openalex.org/W2035016447",
+        "https://openalex.org/W2047344824",
+        "https://openalex.org/W2049171635",
+        "https://openalex.org/W2053950243",
+        "https://openalex.org/W2072017715",
+        "https://openalex.org/W2090862584",
+        "https://openalex.org/W2090933745",
+        "https://openalex.org/W2091867118",
         "https://openalex.org/W2133059825",
-        "https://openalex.org/W2147334791",
         "https://openalex.org/W2146219427",
+        "https://openalex.org/W2147334791",
+        "https://openalex.org/W2153120674",
         "https://openalex.org/W2156755609",
         "https://openalex.org/W2158480805",
         "https://openalex.org/W2167279371",
-        "https://openalex.org/W2153120674",
-        "https://openalex.org/W2090862584",
-        "https://openalex.org/W2091867118",
-        "https://openalex.org/W2090933745",
-        "https://openalex.org/W3119025646",
-        "https://openalex.org/W3158760634",
-        "https://openalex.org/W3153221082",
+        "https://openalex.org/W2531092595",
+        "https://openalex.org/W2550429419",
+        "https://openalex.org/W2593977757",
+        "https://openalex.org/W2618120638",
+        "https://openalex.org/W2751049147",
+        "https://openalex.org/W2753647973",
+        "https://openalex.org/W2784349723",
+        "https://openalex.org/W2791148937",
         "https://openalex.org/W2883701166",
+        "https://openalex.org/W3119025646",
+        "https://openalex.org/W3153221082",
         "https://openalex.org/W3157489207",
-        "https://openalex.org/W2012212083",
-        "https://openalex.org/W1231066391",
-        "https://openalex.org/W1516711056",
-        "https://openalex.org/W1980448966",
-        "https://openalex.org/W1583165437",
-        "https://openalex.org/W1968431560"
+        "https://openalex.org/W3158760634",
+        "https://openalex.org/W6628013501",
+        "https://openalex.org/W6631016526",
+        "https://openalex.org/W6642451140",
+        "https://openalex.org/W6645599346",
+        "https://openalex.org/W6645643914",
+        "https://openalex.org/W6646809305",
+        "https://openalex.org/W6650400369",
+        "https://openalex.org/W6651857267",
+        "https://openalex.org/W6653507702",
+        "https://openalex.org/W6655379356",
+        "https://openalex.org/W6657143101",
+        "https://openalex.org/W6657177671",
+        "https://openalex.org/W6658110292",
+        "https://openalex.org/W6658268894",
+        "https://openalex.org/W6659093875",
+        "https://openalex.org/W6662440612",
+        "https://openalex.org/W6662654115",
+        "https://openalex.org/W6664149551",
+        "https://openalex.org/W6668261807",
+        "https://openalex.org/W6673301784",
+        "https://openalex.org/W6673402437",
+        "https://openalex.org/W6680096826",
+        "https://openalex.org/W6681745871",
+        "https://openalex.org/W6682376951",
+        "https://openalex.org/W6682845287",
+        "https://openalex.org/W6684638327",
+        "https://openalex.org/W6729538191",
+        "https://openalex.org/W6743960924",
+        "https://openalex.org/W6748173620",
+        "https://openalex.org/W6753316556",
+        "https://openalex.org/W7071373836"
       ],
       "related_works": [
         "https://openalex.org/W3146752240",
@@ -16022,7 +17263,7 @@
       "has_fulltext": false,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.59079602,
+        "value": 0.59203158,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -16277,50 +17518,50 @@
       "content_urls": null,
       "referenced_works_count": 44,
       "referenced_works": [
-        "https://openalex.org/W6646809305",
-        "https://openalex.org/W2033601301",
-        "https://openalex.org/W2020289012",
-        "https://openalex.org/W1999847043",
-        "https://openalex.org/W2141328271",
-        "https://openalex.org/W1967555505",
-        "https://openalex.org/W2072017715",
-        "https://openalex.org/W1982247117",
-        "https://openalex.org/W1992426404",
-        "https://openalex.org/W2061662254",
-        "https://openalex.org/W6695026047",
-        "https://openalex.org/W2751049147",
-        "https://openalex.org/W2883701166",
-        "https://openalex.org/W2913445052",
-        "https://openalex.org/W6797578668",
-        "https://openalex.org/W1496829959",
-        "https://openalex.org/W2046157523",
-        "https://openalex.org/W2022089761",
-        "https://openalex.org/W2315449652",
+        "https://openalex.org/W124181313",
+        "https://openalex.org/W601879019",
         "https://openalex.org/W1231066391",
+        "https://openalex.org/W1496829959",
+        "https://openalex.org/W1967555505",
         "https://openalex.org/W1970558787",
-        "https://openalex.org/W2805554858",
-        "https://openalex.org/W4255193163",
-        "https://openalex.org/W6767990846",
+        "https://openalex.org/W1982247117",
+        "https://openalex.org/W1986059245",
+        "https://openalex.org/W1992426404",
+        "https://openalex.org/W1999847043",
+        "https://openalex.org/W2020289012",
+        "https://openalex.org/W2022089761",
+        "https://openalex.org/W2030366724",
+        "https://openalex.org/W2033601301",
+        "https://openalex.org/W2046157523",
+        "https://openalex.org/W2061662254",
+        "https://openalex.org/W2072017715",
+        "https://openalex.org/W2072792847",
+        "https://openalex.org/W2141328271",
         "https://openalex.org/W2142491237",
         "https://openalex.org/W2153120674",
+        "https://openalex.org/W2158480805",
+        "https://openalex.org/W2277330124",
+        "https://openalex.org/W2315449652",
+        "https://openalex.org/W2537324357",
         "https://openalex.org/W2550402147",
+        "https://openalex.org/W2593977757",
+        "https://openalex.org/W2618120638",
         "https://openalex.org/W2748854859",
-        "https://openalex.org/W6668826359",
-        "https://openalex.org/W2072792847",
-        "https://openalex.org/W1986059245",
-        "https://openalex.org/W601879019",
-        "https://openalex.org/W124181313",
+        "https://openalex.org/W2751049147",
+        "https://openalex.org/W2805554858",
+        "https://openalex.org/W2883701166",
+        "https://openalex.org/W2913445052",
         "https://openalex.org/W2972512554",
-        "https://openalex.org/W4285719527",
+        "https://openalex.org/W3171235728",
         "https://openalex.org/W4236196298",
         "https://openalex.org/W4252340023",
-        "https://openalex.org/W2593977757",
-        "https://openalex.org/W2537324357",
-        "https://openalex.org/W2618120638",
-        "https://openalex.org/W2277330124",
-        "https://openalex.org/W2158480805",
-        "https://openalex.org/W2030366724",
-        "https://openalex.org/W3171235728"
+        "https://openalex.org/W4255193163",
+        "https://openalex.org/W4285719527",
+        "https://openalex.org/W6646809305",
+        "https://openalex.org/W6668826359",
+        "https://openalex.org/W6695026047",
+        "https://openalex.org/W6767990846",
+        "https://openalex.org/W6797578668"
       ],
       "related_works": [
         "https://openalex.org/W2324615561",
@@ -16977,7 +18218,7 @@
       "has_fulltext": true,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.6636916,
+        "value": 0.66187202,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -17242,9 +18483,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Sustainable cities and communities",
+          "id": "https://metadata.un.org/sdg/11",
           "score": 0.41999998688697815,
-          "id": "https://metadata.un.org/sdg/11"
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -17260,14 +18501,14 @@
       "referenced_works_count": 10,
       "referenced_works": [
         "https://openalex.org/W1524569556",
-        "https://openalex.org/W2560788722",
-        "https://openalex.org/W2099690470",
-        "https://openalex.org/W2799868038",
-        "https://openalex.org/W2155759446",
-        "https://openalex.org/W2133706855",
-        "https://openalex.org/W4254856948",
-        "https://openalex.org/W2590624658",
         "https://openalex.org/W2041243828",
+        "https://openalex.org/W2099690470",
+        "https://openalex.org/W2133706855",
+        "https://openalex.org/W2155759446",
+        "https://openalex.org/W2560788722",
+        "https://openalex.org/W2590624658",
+        "https://openalex.org/W2799868038",
+        "https://openalex.org/W4254856948",
         "https://openalex.org/W4410162152"
       ],
       "related_works": [
@@ -17973,7 +19214,7 @@
       "has_fulltext": false,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.69013078,
+        "value": 0.68605228,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -18213,9 +19454,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Life below water",
+          "id": "https://metadata.un.org/sdg/14",
           "score": 0.4699999988079071,
-          "id": "https://metadata.un.org/sdg/14"
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
@@ -18227,37 +19468,37 @@
       "content_urls": null,
       "referenced_works_count": 31,
       "referenced_works": [
-        "https://openalex.org/W2079467215",
-        "https://openalex.org/W3112566039",
-        "https://openalex.org/W2227257476",
-        "https://openalex.org/W3213354485",
+        "https://openalex.org/W889269103",
+        "https://openalex.org/W1021248308",
         "https://openalex.org/W2009540849",
+        "https://openalex.org/W2047344824",
+        "https://openalex.org/W2057749170",
+        "https://openalex.org/W2063905938",
+        "https://openalex.org/W2079467215",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2227257476",
+        "https://openalex.org/W2274890436",
+        "https://openalex.org/W2568353858",
+        "https://openalex.org/W2899496639",
+        "https://openalex.org/W2955911304",
         "https://openalex.org/W3035735668",
+        "https://openalex.org/W3112566039",
+        "https://openalex.org/W3118779618",
+        "https://openalex.org/W3120445381",
+        "https://openalex.org/W3126690732",
         "https://openalex.org/W3169483308",
         "https://openalex.org/W3177483741",
-        "https://openalex.org/W4220895091",
-        "https://openalex.org/W1021248308",
-        "https://openalex.org/W3118779618",
-        "https://openalex.org/W2899496639",
-        "https://openalex.org/W4323308051",
-        "https://openalex.org/W6624219045",
-        "https://openalex.org/W2063905938",
-        "https://openalex.org/W6694482256",
-        "https://openalex.org/W2955911304",
-        "https://openalex.org/W3126690732",
-        "https://openalex.org/W4385547557",
-        "https://openalex.org/W2568353858",
-        "https://openalex.org/W2167279371",
-        "https://openalex.org/W6800726961",
-        "https://openalex.org/W3120445381",
-        "https://openalex.org/W2057749170",
-        "https://openalex.org/W6759655449",
-        "https://openalex.org/W2047344824",
-        "https://openalex.org/W4280511007",
-        "https://openalex.org/W889269103",
         "https://openalex.org/W3194247425",
+        "https://openalex.org/W3213354485",
+        "https://openalex.org/W4220895091",
         "https://openalex.org/W4234287562",
-        "https://openalex.org/W2274890436"
+        "https://openalex.org/W4280511007",
+        "https://openalex.org/W4323308051",
+        "https://openalex.org/W4385547557",
+        "https://openalex.org/W6624219045",
+        "https://openalex.org/W6694482256",
+        "https://openalex.org/W6759655449",
+        "https://openalex.org/W6800726961"
       ],
       "related_works": [
         "https://openalex.org/W4220751669",
@@ -18947,1197 +20188,6 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
-      "id": "https://openalex.org/W4401934105",
-      "doi": "https://doi.org/10.1021/acs.energyfuels.4c02809",
-      "title": "Evaluating CO<sub>2</sub> Residuals in Water Aquifers and Depleted Oil Reservoirs via X-ray Core-Flooding Experiments",
-      "display_name": "Evaluating CO<sub>2</sub> Residuals in Water Aquifers and Depleted Oil Reservoirs via X-ray Core-Flooding Experiments",
-      "publication_year": 2024,
-      "publication_date": "2024-08-27",
-      "ids": {
-        "openalex": "https://openalex.org/W4401934105",
-        "doi": "https://doi.org/10.1021/acs.energyfuels.4c02809"
-      },
-      "language": "en",
-      "primary_location": {
-        "id": "doi:10.1021/acs.energyfuels.4c02809",
-        "is_oa": false,
-        "landing_page_url": "https://doi.org/10.1021/acs.energyfuels.4c02809",
-        "pdf_url": null,
-        "source": {
-          "id": "https://openalex.org/S186935893",
-          "display_name": "Energy & Fuels",
-          "issn_l": "0887-0624",
-          "issn": [
-            "0887-0624",
-            "1520-5029"
-          ],
-          "is_oa": false,
-          "is_in_doaj": false,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310320006",
-          "host_organization_name": "American Chemical Society",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310320006"
-          ],
-          "host_organization_lineage_names": [
-            "American Chemical Society"
-          ],
-          "type": "journal"
-        },
-        "license": null,
-        "license_id": null,
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Energy &amp; Fuels",
-        "raw_type": "journal-article"
-      },
-      "type": "article",
-      "indexed_in": [
-        "crossref"
-      ],
-      "open_access": {
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "any_repository_has_fulltext": false
-      },
-      "authorships": [
-        {
-          "author_position": "first",
-          "author": {
-            "id": "https://openalex.org/A5041388535",
-            "display_name": "Ummu-kulthum Lawal",
-            "orcid": "https://orcid.org/0009-0001-2744-4053"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Ummu-kulthum Lawal",
-          "raw_affiliation_strings": [
-            "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5046264836",
-            "display_name": "Hasan Javed Khan",
-            "orcid": "https://orcid.org/0000-0001-8867-8438"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Hasan J Khan",
-          "raw_affiliation_strings": [
-            "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5050065390",
-            "display_name": "Shabeeb Alajmei",
-            "orcid": "https://orcid.org/0000-0002-5816-4214"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Shabeeb Alajmei",
-          "raw_affiliation_strings": [
-            "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
-            "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Petroleum Engineering Department, College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "last",
-          "author": {
-            "id": "https://openalex.org/A5059738250",
-            "display_name": "Ahmed Al‐Yaseri",
-            "orcid": "https://orcid.org/0000-0001-9094-1258"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": true,
-          "raw_author_name": "Ahmed Al-Yaseri",
-          "raw_affiliation_strings": [
-            "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center of Integrative Petroleum Research (CIPR), College of Petroleum Engineering and Geoscience, King Fahd University of Petroleum and Minerals, 34463 Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        }
-      ],
-      "institutions": [],
-      "countries_distinct_count": 1,
-      "institutions_distinct_count": 4,
-      "corresponding_author_ids": [
-        "https://openalex.org/A5059738250"
-      ],
-      "corresponding_institution_ids": [
-        "https://openalex.org/I134085113"
-      ],
-      "apc_list": null,
-      "apc_paid": null,
-      "fwci": 0.77495023,
-      "has_fulltext": false,
-      "cited_by_count": 2,
-      "citation_normalized_percentile": {
-        "value": 0.5982355,
-        "is_in_top_1_percent": false,
-        "is_in_top_10_percent": false
-      },
-      "cited_by_percentile_year": {
-        "min": 95,
-        "max": 96
-      },
-      "biblio": {
-        "volume": "38",
-        "issue": "18",
-        "first_page": "17761",
-        "last_page": "17769"
-      },
-      "is_retracted": false,
-      "is_paratext": false,
-      "is_xpac": false,
-      "primary_topic": {
-        "id": "https://openalex.org/T11302",
-        "display_name": "CO2 Sequestration and Geologic Interactions",
-        "score": 1,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2305",
-          "display_name": "Environmental Engineering"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/23",
-          "display_name": "Environmental Science"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/3",
-          "display_name": "Physical Sciences"
-        }
-      },
-      "topics": [
-        {
-          "id": "https://openalex.org/T11302",
-          "display_name": "CO2 Sequestration and Geologic Interactions",
-          "score": 1,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2305",
-            "display_name": "Environmental Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/23",
-            "display_name": "Environmental Science"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10491",
-          "display_name": "Enhanced Oil Recovery Techniques",
-          "score": 0.9994000196456909,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10967",
-          "display_name": "Carbon Dioxide Capture Technologies",
-          "score": 0.998199999332428,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2210",
-            "display_name": "Mechanical Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        }
-      ],
-      "keywords": [
-        {
-          "id": "https://openalex.org/keywords/core-sample",
-          "display_name": "Core sample",
-          "score": 0.7874808311462402
-        },
-        {
-          "id": "https://openalex.org/keywords/residual-oil",
-          "display_name": "Residual oil",
-          "score": 0.6307253241539001
-        },
-        {
-          "id": "https://openalex.org/keywords/wetting",
-          "display_name": "Wetting",
-          "score": 0.5546205043792725
-        },
-        {
-          "id": "https://openalex.org/keywords/saturation",
-          "display_name": "Saturation (graph theory)",
-          "score": 0.5379263758659363
-        },
-        {
-          "id": "https://openalex.org/keywords/aquifer",
-          "display_name": "Aquifer",
-          "score": 0.5324293971061707
-        },
-        {
-          "id": "https://openalex.org/keywords/enhanced-oil-recovery",
-          "display_name": "Enhanced oil recovery",
-          "score": 0.5087855458259583
-        },
-        {
-          "id": "https://openalex.org/keywords/petroleum-engineering",
-          "display_name": "Petroleum engineering",
-          "score": 0.5082687735557556
-        },
-        {
-          "id": "https://openalex.org/keywords/petroleum-reservoir",
-          "display_name": "Petroleum reservoir",
-          "score": 0.4661383032798767
-        },
-        {
-          "id": "https://openalex.org/keywords/supercritical-fluid",
-          "display_name": "Supercritical fluid",
-          "score": 0.4481738805770874
-        },
-        {
-          "id": "https://openalex.org/keywords/adsorption",
-          "display_name": "Adsorption",
-          "score": 0.4251425266265869
-        },
-        {
-          "id": "https://openalex.org/keywords/mineralogy",
-          "display_name": "Mineralogy",
-          "score": 0.41488635540008545
-        },
-        {
-          "id": "https://openalex.org/keywords/geology",
-          "display_name": "Geology",
-          "score": 0.37640976905822754
-        },
-        {
-          "id": "https://openalex.org/keywords/core",
-          "display_name": "Core (optical fiber)",
-          "score": 0.3382037281990051
-        },
-        {
-          "id": "https://openalex.org/keywords/chemistry",
-          "display_name": "Chemistry",
-          "score": 0.2862037420272827
-        },
-        {
-          "id": "https://openalex.org/keywords/materials-science",
-          "display_name": "Materials science",
-          "score": 0.2541901171207428
-        },
-        {
-          "id": "https://openalex.org/keywords/groundwater",
-          "display_name": "Groundwater",
-          "score": 0.25277382135391235
-        },
-        {
-          "id": "https://openalex.org/keywords/geotechnical-engineering",
-          "display_name": "Geotechnical engineering",
-          "score": 0.18540212512016296
-        },
-        {
-          "id": "https://openalex.org/keywords/composite-material",
-          "display_name": "Composite material",
-          "score": 0.1057232916355133
-        }
-      ],
-      "concepts": [
-        {
-          "id": "https://openalex.org/C112213829",
-          "wikidata": "https://www.wikidata.org/wiki/Q1942237",
-          "display_name": "Core sample",
-          "level": 3,
-          "score": 0.7874808311462402
-        },
-        {
-          "id": "https://openalex.org/C2776124570",
-          "wikidata": "https://www.wikidata.org/wiki/Q16999820",
-          "display_name": "Residual oil",
-          "level": 2,
-          "score": 0.6307253241539001
-        },
-        {
-          "id": "https://openalex.org/C134514944",
-          "wikidata": "https://www.wikidata.org/wiki/Q817136",
-          "display_name": "Wetting",
-          "level": 2,
-          "score": 0.5546205043792725
-        },
-        {
-          "id": "https://openalex.org/C9930424",
-          "wikidata": "https://www.wikidata.org/wiki/Q7426587",
-          "display_name": "Saturation (graph theory)",
-          "level": 2,
-          "score": 0.5379263758659363
-        },
-        {
-          "id": "https://openalex.org/C75622301",
-          "wikidata": "https://www.wikidata.org/wiki/Q208791",
-          "display_name": "Aquifer",
-          "level": 3,
-          "score": 0.5324293971061707
-        },
-        {
-          "id": "https://openalex.org/C2779681308",
-          "wikidata": "https://www.wikidata.org/wiki/Q1049254",
-          "display_name": "Enhanced oil recovery",
-          "level": 2,
-          "score": 0.5087855458259583
-        },
-        {
-          "id": "https://openalex.org/C78762247",
-          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
-          "display_name": "Petroleum engineering",
-          "level": 1,
-          "score": 0.5082687735557556
-        },
-        {
-          "id": "https://openalex.org/C113215200",
-          "wikidata": "https://www.wikidata.org/wiki/Q1845437",
-          "display_name": "Petroleum reservoir",
-          "level": 2,
-          "score": 0.4661383032798767
-        },
-        {
-          "id": "https://openalex.org/C118419359",
-          "wikidata": "https://www.wikidata.org/wiki/Q682585",
-          "display_name": "Supercritical fluid",
-          "level": 2,
-          "score": 0.4481738805770874
-        },
-        {
-          "id": "https://openalex.org/C150394285",
-          "wikidata": "https://www.wikidata.org/wiki/Q180254",
-          "display_name": "Adsorption",
-          "level": 2,
-          "score": 0.4251425266265869
-        },
-        {
-          "id": "https://openalex.org/C199289684",
-          "wikidata": "https://www.wikidata.org/wiki/Q83353",
-          "display_name": "Mineralogy",
-          "level": 1,
-          "score": 0.41488635540008545
-        },
-        {
-          "id": "https://openalex.org/C127313418",
-          "wikidata": "https://www.wikidata.org/wiki/Q1069",
-          "display_name": "Geology",
-          "level": 0,
-          "score": 0.37640976905822754
-        },
-        {
-          "id": "https://openalex.org/C2164484",
-          "wikidata": "https://www.wikidata.org/wiki/Q5170150",
-          "display_name": "Core (optical fiber)",
-          "level": 2,
-          "score": 0.3382037281990051
-        },
-        {
-          "id": "https://openalex.org/C185592680",
-          "wikidata": "https://www.wikidata.org/wiki/Q2329",
-          "display_name": "Chemistry",
-          "level": 0,
-          "score": 0.2862037420272827
-        },
-        {
-          "id": "https://openalex.org/C192562407",
-          "wikidata": "https://www.wikidata.org/wiki/Q228736",
-          "display_name": "Materials science",
-          "level": 0,
-          "score": 0.2541901171207428
-        },
-        {
-          "id": "https://openalex.org/C76177295",
-          "wikidata": "https://www.wikidata.org/wiki/Q161598",
-          "display_name": "Groundwater",
-          "level": 2,
-          "score": 0.25277382135391235
-        },
-        {
-          "id": "https://openalex.org/C187320778",
-          "wikidata": "https://www.wikidata.org/wiki/Q1349130",
-          "display_name": "Geotechnical engineering",
-          "level": 1,
-          "score": 0.18540212512016296
-        },
-        {
-          "id": "https://openalex.org/C159985019",
-          "wikidata": "https://www.wikidata.org/wiki/Q181790",
-          "display_name": "Composite material",
-          "level": 1,
-          "score": 0.1057232916355133
-        },
-        {
-          "id": "https://openalex.org/C33923547",
-          "wikidata": "https://www.wikidata.org/wiki/Q395",
-          "display_name": "Mathematics",
-          "level": 0,
-          "score": 0
-        },
-        {
-          "id": "https://openalex.org/C114614502",
-          "wikidata": "https://www.wikidata.org/wiki/Q76592",
-          "display_name": "Combinatorics",
-          "level": 1,
-          "score": 0
-        },
-        {
-          "id": "https://openalex.org/C178790620",
-          "wikidata": "https://www.wikidata.org/wiki/Q11351",
-          "display_name": "Organic chemistry",
-          "level": 1,
-          "score": 0
-        }
-      ],
-      "mesh": [],
-      "locations_count": 1,
-      "locations": [
-        {
-          "id": "doi:10.1021/acs.energyfuels.4c02809",
-          "is_oa": false,
-          "landing_page_url": "https://doi.org/10.1021/acs.energyfuels.4c02809",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S186935893",
-            "display_name": "Energy & Fuels",
-            "issn_l": "0887-0624",
-            "issn": [
-              "0887-0624",
-              "1520-5029"
-            ],
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": true,
-            "host_organization": "https://openalex.org/P4310320006",
-            "host_organization_name": "American Chemical Society",
-            "host_organization_lineage": [
-              "https://openalex.org/P4310320006"
-            ],
-            "host_organization_lineage_names": [
-              "American Chemical Society"
-            ],
-            "type": "journal"
-          },
-          "license": null,
-          "license_id": null,
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Energy &amp; Fuels",
-          "raw_type": "journal-article"
-        }
-      ],
-      "best_oa_location": null,
-      "sustainable_development_goals": [
-        {
-          "display_name": "Clean water and sanitation",
-          "score": 0.7099999785423279,
-          "id": "https://metadata.un.org/sdg/6"
-        }
-      ],
-      "awards": [],
-      "funders": [
-        {
-          "id": "https://openalex.org/F4320322323",
-          "display_name": "King Fahd University of Petroleum and Minerals",
-          "ror": "https://ror.org/03yez3163"
-        }
-      ],
-      "has_content": {
-        "pdf": false,
-        "grobid_xml": false
-      },
-      "content_urls": null,
-      "referenced_works_count": 54,
-      "referenced_works": [
-        "https://openalex.org/W2914915312",
-        "https://openalex.org/W3003344051",
-        "https://openalex.org/W2913173373",
-        "https://openalex.org/W2784350055",
-        "https://openalex.org/W2291348130",
-        "https://openalex.org/W2256339549",
-        "https://openalex.org/W4366091747",
-        "https://openalex.org/W1913780967",
-        "https://openalex.org/W2170976584",
-        "https://openalex.org/W4247351215",
-        "https://openalex.org/W2020776530",
-        "https://openalex.org/W2786589993",
-        "https://openalex.org/W4399993244",
-        "https://openalex.org/W4309569627",
-        "https://openalex.org/W3198821762",
-        "https://openalex.org/W4306746332",
-        "https://openalex.org/W2509792282",
-        "https://openalex.org/W4290779366",
-        "https://openalex.org/W4401257009",
-        "https://openalex.org/W4391027463",
-        "https://openalex.org/W2727786885",
-        "https://openalex.org/W4286250849",
-        "https://openalex.org/W4311255578",
-        "https://openalex.org/W3048715918",
-        "https://openalex.org/W3191475654",
-        "https://openalex.org/W2041567011",
-        "https://openalex.org/W2163353140",
-        "https://openalex.org/W3196546975",
-        "https://openalex.org/W4396734029",
-        "https://openalex.org/W4200363055",
-        "https://openalex.org/W4389246065",
-        "https://openalex.org/W4400641317",
-        "https://openalex.org/W1538744519",
-        "https://openalex.org/W4293745122",
-        "https://openalex.org/W2914065784",
-        "https://openalex.org/W2789241851",
-        "https://openalex.org/W2015228833",
-        "https://openalex.org/W2326343681",
-        "https://openalex.org/W1752061138",
-        "https://openalex.org/W2086772897",
-        "https://openalex.org/W1979952782",
-        "https://openalex.org/W2046769475",
-        "https://openalex.org/W1593347402",
-        "https://openalex.org/W2514194095",
-        "https://openalex.org/W1966113633",
-        "https://openalex.org/W2996868476",
-        "https://openalex.org/W3167825944",
-        "https://openalex.org/W2837182345",
-        "https://openalex.org/W4391404819",
-        "https://openalex.org/W1999343105",
-        "https://openalex.org/W2043712969",
-        "https://openalex.org/W2996562653",
-        "https://openalex.org/W3216798413",
-        "https://openalex.org/W1563495182"
-      ],
-      "related_works": [
-        "https://openalex.org/W2837182345",
-        "https://openalex.org/W2082599112",
-        "https://openalex.org/W1977773355",
-        "https://openalex.org/W1997529216",
-        "https://openalex.org/W2599768182",
-        "https://openalex.org/W3137035199",
-        "https://openalex.org/W2334443348",
-        "https://openalex.org/W4361804549",
-        "https://openalex.org/W2884767996",
-        "https://openalex.org/W1268378685"
-      ],
-      "abstract_inverted_index": {
-        "2": [
-          147
-        ],
-        "The": [
-          0,
-          44,
-          135,
-          158,
-          176
-        ],
-        "success": [
-          1
-        ],
-        "of": [
-          2,
-          10,
-          69,
-          82,
-          108,
-          118,
-          133,
-          138,
-          213,
-          232
-        ],
-        "carbon": [
-          3
-        ],
-        "dioxide": [
-          4
-        ],
-        "storage": [
-          5
-        ],
-        "depends": [
-          6
-        ],
-        "on": [
-          7,
-          105,
-          124,
-          219
-        ],
-        "the": [
-          8,
-          11,
-          17,
-          31,
-          35,
-          61,
-          67,
-          70,
-          80,
-          83,
-          93,
-          96,
-          99,
-          102,
-          106,
-          139,
-          166,
-          173,
-          179,
-          184,
-          195,
-          203,
-          210,
-          220,
-          229,
-          233
-        ],
-        "security": [
-          9,
-          20
-        ],
-        "stored": [
-          12,
-          50
-        ],
-        "gas": [
-          13
-        ],
-        "from": [
-          14,
-          178
-        ],
-        "leakage": [
-          15
-        ],
-        "to": [
-          16,
-          38,
-          78,
-          152,
-          164,
-          194
-        ],
-        "surface.": [
-          18,
-          205
-        ],
-        "This": [
-          19,
-          206
-        ],
-        "is": [
-          21,
-          25,
-          49,
-          215,
-          224
-        ],
-        "ensured": [
-          22
-        ],
-        "when": [
-          23
-        ],
-        "there": [
-          24
-        ],
-        "an": [
-          26
-        ],
-        "interaction": [
-          27,
-          97,
-          197
-        ],
-        "between": [
-          28,
-          98,
-          200
-        ],
-        "CO2": [
-          29,
-          48,
-          84,
-          111,
-          119,
-          167,
-          170,
-          189,
-          201,
-          214
-        ],
-        "with": [
-          30,
-          129,
-          146,
-          236
-        ],
-        "formation": [
-          32,
-          45
-        ],
-        "water": [
-          33
-        ],
-        "and": [
-          34,
-          91,
-          101,
-          169,
-          198,
-          202
-        ],
-        "surrounding": [
-          36
-        ],
-        "rock": [
-          37,
-          234
-        ],
-        "trap": [
-          39
-        ],
-        "it": [
-          40,
-          145
-        ],
-        "in": [
-          41,
-          66,
-          87
-        ],
-        "other": [
-          42
-        ],
-        "forms.": [
-          43
-        ],
-        "into": [
-          46
-        ],
-        "which": [
-          47,
-          55
-        ],
-        "has": [
-          51,
-          187
-        ],
-        "a": [
-          52,
-          116,
-          130,
-          154
-        ],
-        "wetting": [
-          53,
-          136
-        ],
-        "phase,": [
-          54
-        ],
-        "can": [
-          56
-        ],
-        "either": [
-          57
-        ],
-        "be": [
-          58
-        ],
-        "water-wet": [
-          59
-        ],
-        "for": [
-          60
-        ],
-        "saline": [
-          62
-        ],
-        "aquifer": [
-          63
-        ],
-        "or": [
-          64
-        ],
-        "oil-wet": [
-          65,
-          185
-        ],
-        "case": [
-          68
-        ],
-        "depleted": [
-          71,
-          155
-        ],
-        "oil": [
-          72,
-          156
-        ],
-        "reservoir.": [
-          73,
-          157
-        ],
-        "Therefore,": [
-          74
-        ],
-        "this": [
-          75,
-          114
-        ],
-        "study": [
-          76,
-          207
-        ],
-        "aims": [
-          77
-        ],
-        "enhance": [
-          79
-        ],
-        "understanding": [
-          81
-        ],
-        "flow": [
-          85
-        ],
-        "behavior": [
-          86
-        ],
-        "Berea": [
-          88,
-          125
-        ],
-        "sandstone": [
-          89,
-          126
-        ],
-        "rocks": [
-          90,
-          109
-        ],
-        "determine": [
-          92
-        ],
-        "role": [
-          94
-        ],
-        "that": [
-          95,
-          183,
-          209
-        ],
-        "fluids": [
-          100
-        ],
-        "solid": [
-          103
-        ],
-        "plays": [
-          104
-        ],
-        "wettability": [
-          107
-        ],
-        "during": [
-          110
-        ],
-        "storage.": [
-          112
-        ],
-        "In": [
-          113
-        ],
-        "work,": [
-          115
-        ],
-        "series": [
-          117
-        ],
-        "core-flooding": [
-          120,
-          174,
-          180
-        ],
-        "experiments": [
-          121,
-          181
-        ],
-        "were": [
-          122
-        ],
-        "performed": [
-          123
-        ],
-        "core": [
-          127
-        ],
-        "samples": [
-          128
-        ],
-        "quartz": [
-          131
-        ],
-        "content": [
-          132
-        ],
-        ">90%.": [
-          134
-        ],
-        "nature": [
-          137
-        ],
-        "sample": [
-          140,
-          186
-        ],
-        "was": [
-          141,
-          162
-        ],
-        "altered": [
-          142
-        ],
-        "by": [
-          143,
-          228
-        ],
-        "treating": [
-          144
-        ],
-        "wt": [
-          148
-        ],
-        "%": [
-          149
-        ],
-        "oleic": [
-          150
-        ],
-        "acid": [
-          151
-        ],
-        "mimic": [
-          153
-        ],
-        "X-ray": [
-          159
-        ],
-        "scanning": [
-          160
-        ],
-        "technique": [
-          161
-        ],
-        "applied": [
-          163
-        ],
-        "detect": [
-          165
-        ],
-        "saturation": [
-          168
-        ],
-        "residual": [
-          171,
-          190,
-          211
-        ],
-        "after": [
-          172
-        ],
-        "experiments.": [
-          175
-        ],
-        "results": [
-          177
-        ],
-        "revealed": [
-          182
-        ],
-        "higher": [
-          188
-        ],
-        "trapping": [
-          191,
-          212
-        ],
-        "(43.2%)": [
-          192
-        ],
-        "due": [
-          193
-        ],
-        "high": [
-          196
-        ],
-        "adsorption": [
-          199
-        ],
-        "organic": [
-          204
-        ],
-        "concluded": [
-          208
-        ],
-        "not": [
-          216
-        ],
-        "only": [
-          217
-        ],
-        "dependent": [
-          218
-        ],
-        "snap-off": [
-          221
-        ],
-        "effect": [
-          222
-        ],
-        "but": [
-          223
-        ],
-        "also": [
-          225
-        ],
-        "greatly": [
-          226
-        ],
-        "advantaged": [
-          227
-        ],
-        "surface": [
-          230
-        ],
-        "chemistry": [
-          231
-        ],
-        "interacting": [
-          235
-        ],
-        "CO2.": [
-          237
-        ]
-      },
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 2
-        }
-      ],
-      "updated_date": "2025-11-06T03:46:38.306776",
-      "created_date": "2025-10-10T00:00:00"
-    },
-    {
       "id": "https://openalex.org/W4405133038",
       "doi": "https://doi.org/10.1007/s11242-024-02138-0",
       "title": "The Impact of Acid Strength and Mineral Composition on Spontaneous Imbibition with Reactive Fluids",
@@ -20193,7 +20243,7 @@
         "is_oa": true,
         "oa_status": "hybrid",
         "oa_url": "https://link.springer.com/content/pdf/10.1007/s11242-024-02138-0.pdf",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -20292,7 +20342,7 @@
       "has_fulltext": false,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.64517149,
+        "value": 0.64117528,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -20694,83 +20744,83 @@
       },
       "referenced_works_count": 77,
       "referenced_works": [
-        "https://openalex.org/W2947475442",
-        "https://openalex.org/W2806761155",
-        "https://openalex.org/W2793772260",
-        "https://openalex.org/W2068349868",
-        "https://openalex.org/W2056667120",
-        "https://openalex.org/W2741424213",
-        "https://openalex.org/W2037973332",
-        "https://openalex.org/W2963536606",
         "https://openalex.org/W107427765",
-        "https://openalex.org/W2965662695",
-        "https://openalex.org/W2080708427",
-        "https://openalex.org/W2079744659",
-        "https://openalex.org/W4293169064",
-        "https://openalex.org/W3121837258",
-        "https://openalex.org/W4229069120",
-        "https://openalex.org/W2046928966",
-        "https://openalex.org/W2315726918",
-        "https://openalex.org/W2335341730",
-        "https://openalex.org/W1589214806",
-        "https://openalex.org/W1997473003",
-        "https://openalex.org/W2885869354",
-        "https://openalex.org/W2044062034",
-        "https://openalex.org/W2090731582",
-        "https://openalex.org/W2891265191",
-        "https://openalex.org/W2961145271",
-        "https://openalex.org/W3129054369",
         "https://openalex.org/W182918936",
-        "https://openalex.org/W2010311155",
-        "https://openalex.org/W2312690937",
-        "https://openalex.org/W3038055842",
-        "https://openalex.org/W2396188525",
-        "https://openalex.org/W4212793922",
-        "https://openalex.org/W2021585059",
-        "https://openalex.org/W3089056271",
-        "https://openalex.org/W3017489781",
-        "https://openalex.org/W1981530596",
-        "https://openalex.org/W3189963916",
-        "https://openalex.org/W2053447043",
-        "https://openalex.org/W3024198876",
-        "https://openalex.org/W2088982940",
-        "https://openalex.org/W2035397838",
-        "https://openalex.org/W2122340771",
-        "https://openalex.org/W2610397617",
-        "https://openalex.org/W2236623899",
-        "https://openalex.org/W3164269048",
-        "https://openalex.org/W4390910066",
-        "https://openalex.org/W2013306136",
-        "https://openalex.org/W2044098605",
-        "https://openalex.org/W2995051401",
-        "https://openalex.org/W4394871780",
-        "https://openalex.org/W2036709539",
-        "https://openalex.org/W2149736938",
-        "https://openalex.org/W2335175337",
-        "https://openalex.org/W2038668414",
-        "https://openalex.org/W2167279371",
-        "https://openalex.org/W1818872831",
-        "https://openalex.org/W2509792282",
-        "https://openalex.org/W2017201931",
         "https://openalex.org/W1488969766",
-        "https://openalex.org/W2342479095",
+        "https://openalex.org/W1589214806",
+        "https://openalex.org/W1818872831",
+        "https://openalex.org/W1981530596",
+        "https://openalex.org/W1997473003",
         "https://openalex.org/W2005898692",
-        "https://openalex.org/W4210735091",
+        "https://openalex.org/W2010311155",
+        "https://openalex.org/W2013306136",
+        "https://openalex.org/W2017201931",
+        "https://openalex.org/W2021585059",
+        "https://openalex.org/W2035397838",
+        "https://openalex.org/W2036709539",
+        "https://openalex.org/W2037973332",
+        "https://openalex.org/W2038668414",
+        "https://openalex.org/W2044062034",
+        "https://openalex.org/W2044098605",
+        "https://openalex.org/W2046921704",
+        "https://openalex.org/W2046928966",
+        "https://openalex.org/W2053447043",
+        "https://openalex.org/W2056667120",
+        "https://openalex.org/W2058046601",
+        "https://openalex.org/W2068349868",
+        "https://openalex.org/W2079744659",
+        "https://openalex.org/W2080708427",
+        "https://openalex.org/W2088982940",
+        "https://openalex.org/W2090731582",
+        "https://openalex.org/W2122340771",
         "https://openalex.org/W2133364621",
+        "https://openalex.org/W2149736938",
         "https://openalex.org/W2162604832",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2236623899",
+        "https://openalex.org/W2312690937",
+        "https://openalex.org/W2315726918",
+        "https://openalex.org/W2335175337",
+        "https://openalex.org/W2335341730",
+        "https://openalex.org/W2342479095",
+        "https://openalex.org/W2396188525",
+        "https://openalex.org/W2509792282",
+        "https://openalex.org/W2560344443",
+        "https://openalex.org/W2569993485",
+        "https://openalex.org/W2610397617",
+        "https://openalex.org/W2741424213",
+        "https://openalex.org/W2744645316",
+        "https://openalex.org/W2793772260",
+        "https://openalex.org/W2806761155",
+        "https://openalex.org/W2884474051",
+        "https://openalex.org/W2885869354",
+        "https://openalex.org/W2891265191",
         "https://openalex.org/W2898915310",
+        "https://openalex.org/W2947475442",
+        "https://openalex.org/W2961145271",
+        "https://openalex.org/W2963536606",
+        "https://openalex.org/W2965662695",
+        "https://openalex.org/W2981285583",
+        "https://openalex.org/W2995051401",
+        "https://openalex.org/W3017489781",
+        "https://openalex.org/W3024198876",
+        "https://openalex.org/W3038055842",
+        "https://openalex.org/W3089056271",
+        "https://openalex.org/W3121837258",
+        "https://openalex.org/W3129054369",
+        "https://openalex.org/W3164269048",
+        "https://openalex.org/W3189963916",
+        "https://openalex.org/W4206131710",
+        "https://openalex.org/W4210735091",
+        "https://openalex.org/W4212793922",
+        "https://openalex.org/W4212843140",
+        "https://openalex.org/W4229069120",
+        "https://openalex.org/W4293169064",
         "https://openalex.org/W4296251436",
         "https://openalex.org/W4304889709",
-        "https://openalex.org/W4212843140",
-        "https://openalex.org/W2058046601",
-        "https://openalex.org/W2560344443",
-        "https://openalex.org/W2046921704",
-        "https://openalex.org/W2884474051",
-        "https://openalex.org/W2569993485",
-        "https://openalex.org/W2981285583",
-        "https://openalex.org/W4206131710",
         "https://openalex.org/W4387411177",
-        "https://openalex.org/W2744645316"
+        "https://openalex.org/W4390910066",
+        "https://openalex.org/W4394871780"
       ],
       "related_works": [
         "https://openalex.org/W2004690139",
@@ -21534,7 +21584,7 @@
       "has_fulltext": false,
       "cited_by_count": 1,
       "citation_normalized_percentile": {
-        "value": 0.4905366,
+        "value": 0.4872835,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -21882,35 +21932,35 @@
       "content_urls": null,
       "referenced_works_count": 29,
       "referenced_works": [
+        "https://openalex.org/W1967327961",
         "https://openalex.org/W1981664308",
+        "https://openalex.org/W1983379038",
         "https://openalex.org/W1999238469",
-        "https://openalex.org/W2587987101",
-        "https://openalex.org/W2950884568",
-        "https://openalex.org/W3093024954",
-        "https://openalex.org/W2947516849",
-        "https://openalex.org/W2983606640",
         "https://openalex.org/W2006219378",
         "https://openalex.org/W2056767415",
-        "https://openalex.org/W3155964763",
-        "https://openalex.org/W1983379038",
-        "https://openalex.org/W2594627381",
-        "https://openalex.org/W4383740499",
         "https://openalex.org/W2097911916",
-        "https://openalex.org/W3044386657",
-        "https://openalex.org/W3215400527",
-        "https://openalex.org/W4320484935",
-        "https://openalex.org/W2896656401",
-        "https://openalex.org/W4399805610",
-        "https://openalex.org/W3124849538",
-        "https://openalex.org/W2809926108",
-        "https://openalex.org/W3108634557",
-        "https://openalex.org/W4313200447",
-        "https://openalex.org/W4376644772",
-        "https://openalex.org/W1967327961",
-        "https://openalex.org/W2971934997",
-        "https://openalex.org/W2728504879",
         "https://openalex.org/W2268803348",
-        "https://openalex.org/W2596296837"
+        "https://openalex.org/W2587987101",
+        "https://openalex.org/W2594627381",
+        "https://openalex.org/W2596296837",
+        "https://openalex.org/W2728504879",
+        "https://openalex.org/W2809926108",
+        "https://openalex.org/W2896656401",
+        "https://openalex.org/W2947516849",
+        "https://openalex.org/W2950884568",
+        "https://openalex.org/W2971934997",
+        "https://openalex.org/W2983606640",
+        "https://openalex.org/W3044386657",
+        "https://openalex.org/W3093024954",
+        "https://openalex.org/W3108634557",
+        "https://openalex.org/W3124849538",
+        "https://openalex.org/W3155964763",
+        "https://openalex.org/W3215400527",
+        "https://openalex.org/W4313200447",
+        "https://openalex.org/W4320484935",
+        "https://openalex.org/W4376644772",
+        "https://openalex.org/W4383740499",
+        "https://openalex.org/W4399805610"
       ],
       "related_works": [
         "https://openalex.org/W2920901296",
@@ -22871,11 +22921,11 @@
       ],
       "apc_list": null,
       "apc_paid": null,
-      "fwci": 1.53403456,
+      "fwci": 1.98755427,
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.75977817,
+        "value": 0.84379057,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -22893,12 +22943,12 @@
       "is_paratext": false,
       "is_xpac": false,
       "primary_topic": {
-        "id": "https://openalex.org/T10892",
-        "display_name": "Drilling and Well Engineering",
+        "id": "https://openalex.org/T10399",
+        "display_name": "Hydrocarbon exploration and reservoir analysis",
         "score": 0.9998999834060669,
         "subfield": {
-          "id": "https://openalex.org/subfields/2212",
-          "display_name": "Ocean Engineering"
+          "id": "https://openalex.org/subfields/2211",
+          "display_name": "Mechanics of Materials"
         },
         "field": {
           "id": "https://openalex.org/fields/22",
@@ -22911,12 +22961,12 @@
       },
       "topics": [
         {
-          "id": "https://openalex.org/T10892",
-          "display_name": "Drilling and Well Engineering",
+          "id": "https://openalex.org/T10399",
+          "display_name": "Hydrocarbon exploration and reservoir analysis",
           "score": 0.9998999834060669,
           "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
+            "id": "https://openalex.org/subfields/2211",
+            "display_name": "Mechanics of Materials"
           },
           "field": {
             "id": "https://openalex.org/fields/22",
@@ -22945,12 +22995,12 @@
           }
         },
         {
-          "id": "https://openalex.org/T10399",
-          "display_name": "Hydrocarbon exploration and reservoir analysis",
+          "id": "https://openalex.org/T10892",
+          "display_name": "Drilling and Well Engineering",
           "score": 0.9998999834060669,
           "subfield": {
-            "id": "https://openalex.org/subfields/2211",
-            "display_name": "Mechanics of Materials"
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
           },
           "field": {
             "id": "https://openalex.org/fields/22",
@@ -23172,9 +23222,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Life in Land",
+          "id": "https://metadata.un.org/sdg/15",
           "score": 0.41999998688697815,
-          "id": "https://metadata.un.org/sdg/15"
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -23186,27 +23236,27 @@
       "content_urls": null,
       "referenced_works_count": 21,
       "referenced_works": [
-        "https://openalex.org/W6727999955",
-        "https://openalex.org/W7071373836",
-        "https://openalex.org/W6665772037",
-        "https://openalex.org/W2277330124",
-        "https://openalex.org/W3171235728",
-        "https://openalex.org/W3004806480",
-        "https://openalex.org/W6753316556",
-        "https://openalex.org/W2913445052",
-        "https://openalex.org/W2018478603",
-        "https://openalex.org/W6679703298",
         "https://openalex.org/W1516711056",
-        "https://openalex.org/W6746296803",
         "https://openalex.org/W2002833073",
-        "https://openalex.org/W2072792847",
-        "https://openalex.org/W2766899215",
-        "https://openalex.org/W3119025646",
-        "https://openalex.org/W2131622490",
-        "https://openalex.org/W2883701166",
+        "https://openalex.org/W2018478603",
         "https://openalex.org/W2049171635",
         "https://openalex.org/W2061529213",
-        "https://openalex.org/W2531092595"
+        "https://openalex.org/W2072792847",
+        "https://openalex.org/W2131622490",
+        "https://openalex.org/W2277330124",
+        "https://openalex.org/W2531092595",
+        "https://openalex.org/W2766899215",
+        "https://openalex.org/W2883701166",
+        "https://openalex.org/W2913445052",
+        "https://openalex.org/W3004806480",
+        "https://openalex.org/W3119025646",
+        "https://openalex.org/W3171235728",
+        "https://openalex.org/W6665772037",
+        "https://openalex.org/W6679703298",
+        "https://openalex.org/W6727999955",
+        "https://openalex.org/W6746296803",
+        "https://openalex.org/W6753316556",
+        "https://openalex.org/W7071373836"
       ],
       "related_works": [
         "https://openalex.org/W2009450764",
@@ -24304,7 +24354,7 @@
       "has_fulltext": false,
       "cited_by_count": 1,
       "citation_normalized_percentile": {
-        "value": 0.42287154,
+        "value": 0.42331339,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -24598,9 +24648,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Responsible consumption and production",
+          "id": "https://metadata.un.org/sdg/12",
           "score": 0.4399999976158142,
-          "id": "https://metadata.un.org/sdg/12"
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -24612,34 +24662,34 @@
       "content_urls": null,
       "referenced_works_count": 28,
       "referenced_works": [
-        "https://openalex.org/W6650665378",
-        "https://openalex.org/W4320484935",
-        "https://openalex.org/W6764188450",
-        "https://openalex.org/W2983606640",
-        "https://openalex.org/W6735451534",
-        "https://openalex.org/W2006219378",
-        "https://openalex.org/W2097911916",
-        "https://openalex.org/W2075811953",
-        "https://openalex.org/W2093695105",
-        "https://openalex.org/W1999238469",
-        "https://openalex.org/W2025977528",
-        "https://openalex.org/W3093024954",
         "https://openalex.org/W1975590691",
-        "https://openalex.org/W2587987101",
-        "https://openalex.org/W3155964763",
+        "https://openalex.org/W1978567419",
+        "https://openalex.org/W1981664308",
         "https://openalex.org/W1986883681",
-        "https://openalex.org/W6693639819",
+        "https://openalex.org/W1999238469",
+        "https://openalex.org/W2006219378",
         "https://openalex.org/W2008859314",
-        "https://openalex.org/W6666325691",
+        "https://openalex.org/W2012328782",
+        "https://openalex.org/W2025977528",
         "https://openalex.org/W2029121530",
         "https://openalex.org/W2056767415",
-        "https://openalex.org/W3215400527",
-        "https://openalex.org/W2012328782",
-        "https://openalex.org/W1978567419",
+        "https://openalex.org/W2075811953",
+        "https://openalex.org/W2093695105",
+        "https://openalex.org/W2097911916",
+        "https://openalex.org/W2268803348",
+        "https://openalex.org/W2587987101",
         "https://openalex.org/W2947516849",
-        "https://openalex.org/W1981664308",
         "https://openalex.org/W2950884568",
-        "https://openalex.org/W2268803348"
+        "https://openalex.org/W2983606640",
+        "https://openalex.org/W3093024954",
+        "https://openalex.org/W3155964763",
+        "https://openalex.org/W3215400527",
+        "https://openalex.org/W4320484935",
+        "https://openalex.org/W6650665378",
+        "https://openalex.org/W6666325691",
+        "https://openalex.org/W6693639819",
+        "https://openalex.org/W6735451534",
+        "https://openalex.org/W6764188450"
       ],
       "related_works": [
         "https://openalex.org/W2920901296",
@@ -25318,7 +25368,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "http://hdl.handle.net/2152/47001",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -25669,9 +25719,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
+          "id": "https://metadata.un.org/sdg/13",
           "score": 0.8299999833106995,
-          "id": "https://metadata.un.org/sdg/13"
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -25982,7 +26032,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-06T06:51:31.235846",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -26033,7 +26083,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://doi.org/10.17612/p7k01c",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -26444,7 +26494,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-12T23:11:45.498971",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -26495,7 +26545,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://doi.org/10.17612/p7d96t",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -27289,7 +27339,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-06T06:51:31.235846",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -27340,7 +27390,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://doi.org/10.17612/rj9p-9438",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -27655,9 +27705,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
+          "id": "https://metadata.un.org/sdg/13",
           "score": 0.41999998688697815,
-          "id": "https://metadata.un.org/sdg/13"
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -28119,7 +28169,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-12T23:11:45.498971",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -28170,7 +28220,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://doi.org/10.17612/p78m25",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -28511,9 +28561,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
+          "id": "https://metadata.un.org/sdg/13",
           "score": 0.5699999928474426,
-          "id": "https://metadata.un.org/sdg/13"
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -28730,7 +28780,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-12T23:11:45.498971",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -28781,7 +28831,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://doi.org/10.17612/vamk-ta18",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -29154,7 +29204,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-12T23:11:45.498971",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -29192,7 +29242,7 @@
         "is_oa": true,
         "oa_status": "green",
         "oa_url": "https://doi.org/10.26153/tsw/13785",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -29468,9 +29518,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
+          "id": "https://metadata.un.org/sdg/13",
           "score": 0.41999998688697815,
-          "id": "https://metadata.un.org/sdg/13"
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -30626,7 +30676,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.28537275,
+        "value": 0.28499454,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -30899,9 +30949,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
+          "id": "https://metadata.un.org/sdg/13",
           "score": 0.5099999904632568,
-          "id": "https://metadata.un.org/sdg/13"
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -31072,7 +31122,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.21953775,
+        "value": 0.21897597,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -31453,7 +31503,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.24809566,
+        "value": 0.24817221,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -31784,7 +31834,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.05700713,
+        "value": 0.05694761,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -32006,9 +32056,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.5400000214576721,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -32020,21 +32070,21 @@
       "content_urls": null,
       "referenced_works_count": 15,
       "referenced_works": [
-        "https://openalex.org/W4293169064",
+        "https://openalex.org/W1968359425",
+        "https://openalex.org/W1980661532",
+        "https://openalex.org/W1990250430",
+        "https://openalex.org/W2053447043",
+        "https://openalex.org/W2058046601",
+        "https://openalex.org/W2317864853",
+        "https://openalex.org/W2319070905",
         "https://openalex.org/W2555952695",
         "https://openalex.org/W2885869354",
-        "https://openalex.org/W2317864853",
-        "https://openalex.org/W6840202740",
-        "https://openalex.org/W3111443900",
-        "https://openalex.org/W6618983673",
         "https://openalex.org/W2908979910",
-        "https://openalex.org/W2058046601",
-        "https://openalex.org/W2319070905",
-        "https://openalex.org/W1980661532",
-        "https://openalex.org/W2053447043",
-        "https://openalex.org/W1968359425",
-        "https://openalex.org/W1990250430",
-        "https://openalex.org/W4286214939"
+        "https://openalex.org/W3111443900",
+        "https://openalex.org/W4286214939",
+        "https://openalex.org/W4293169064",
+        "https://openalex.org/W6618983673",
+        "https://openalex.org/W6840202740"
       ],
       "related_works": [
         "https://openalex.org/W2004690139",
@@ -32735,7 +32785,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://essopenarchive.org/doi/pdf/10.22541/essoar.171441657.70464075",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": null
       },
       "authorships": [
         {
@@ -32826,7 +32876,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.0707818,
+        "value": 0.07031767,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -33168,9 +33218,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.44999998807907104,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -33710,7 +33760,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2026-01-27T00:41:06.130819",
+      "updated_date": "2025-11-06T06:51:31.235846",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -33827,7 +33877,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.20583408,
+        "value": 0.20397406,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -33877,23 +33927,6 @@
           }
         },
         {
-          "id": "https://openalex.org/T10894",
-          "display_name": "Groundwater flow and contamination studies",
-          "score": 0.9970999956130981,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2305",
-            "display_name": "Environmental Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/23",
-            "display_name": "Environmental Science"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
           "id": "https://openalex.org/T10399",
           "display_name": "Hydrocarbon exploration and reservoir analysis",
           "score": 0.9970999956130981,
@@ -33904,6 +33937,23 @@
           "field": {
             "id": "https://openalex.org/fields/22",
             "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10894",
+          "display_name": "Groundwater flow and contamination studies",
+          "score": 0.9970999956130981,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2305",
+            "display_name": "Environmental Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
           },
           "domain": {
             "id": "https://openalex.org/domains/3",
@@ -34015,9 +34065,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
           "score": 0.8299999833106995,
-          "id": "https://metadata.un.org/sdg/6"
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -34029,19 +34079,19 @@
       "content_urls": null,
       "referenced_works_count": 13,
       "referenced_works": [
-        "https://openalex.org/W2601810315",
+        "https://openalex.org/W1983511131",
         "https://openalex.org/W1987042167",
-        "https://openalex.org/W6661697663",
-        "https://openalex.org/W2028218966",
         "https://openalex.org/W2016843769",
+        "https://openalex.org/W2027855275",
+        "https://openalex.org/W2028218966",
+        "https://openalex.org/W2044686992",
         "https://openalex.org/W2059694972",
+        "https://openalex.org/W2512136147",
         "https://openalex.org/W2531462467",
+        "https://openalex.org/W2601810315",
         "https://openalex.org/W3046006994",
         "https://openalex.org/W4280641498",
-        "https://openalex.org/W2027855275",
-        "https://openalex.org/W1983511131",
-        "https://openalex.org/W2512136147",
-        "https://openalex.org/W2044686992"
+        "https://openalex.org/W6661697663"
       ],
       "related_works": [
         "https://openalex.org/W2899084033",
@@ -34921,7 +34971,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.01066531,
+        "value": 0.01391277,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -34936,16 +34986,16 @@
       "is_paratext": false,
       "is_xpac": false,
       "primary_topic": {
-        "id": "https://openalex.org/T11302",
-        "display_name": "CO2 Sequestration and Geologic Interactions",
+        "id": "https://openalex.org/T10491",
+        "display_name": "Enhanced Oil Recovery Techniques",
         "score": 0.9998999834060669,
         "subfield": {
-          "id": "https://openalex.org/subfields/2305",
-          "display_name": "Environmental Engineering"
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
         },
         "field": {
-          "id": "https://openalex.org/fields/23",
-          "display_name": "Environmental Science"
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
         },
         "domain": {
           "id": "https://openalex.org/domains/3",
@@ -34953,23 +35003,6 @@
         }
       },
       "topics": [
-        {
-          "id": "https://openalex.org/T11302",
-          "display_name": "CO2 Sequestration and Geologic Interactions",
-          "score": 0.9998999834060669,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2305",
-            "display_name": "Environmental Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/23",
-            "display_name": "Environmental Science"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
         {
           "id": "https://openalex.org/T10491",
           "display_name": "Enhanced Oil Recovery Techniques",
@@ -34981,6 +35014,23 @@
           "field": {
             "id": "https://openalex.org/fields/22",
             "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11302",
+          "display_name": "CO2 Sequestration and Geologic Interactions",
+          "score": 0.9998999834060669,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2305",
+            "display_name": "Environmental Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/23",
+            "display_name": "Environmental Science"
           },
           "domain": {
             "id": "https://openalex.org/domains/3",
@@ -35156,58 +35206,58 @@
       "content_urls": null,
       "referenced_works_count": 52,
       "referenced_works": [
-        "https://openalex.org/W3003344051",
-        "https://openalex.org/W2914915312",
-        "https://openalex.org/W4388867379",
-        "https://openalex.org/W2170976584",
-        "https://openalex.org/W4381510972",
-        "https://openalex.org/W2291348130",
-        "https://openalex.org/W4399993244",
-        "https://openalex.org/W1987348461",
-        "https://openalex.org/W2020776530",
-        "https://openalex.org/W2011234952",
-        "https://openalex.org/W2999913139",
-        "https://openalex.org/W3199640922",
-        "https://openalex.org/W2786589993",
-        "https://openalex.org/W2261455217",
-        "https://openalex.org/W3198821762",
-        "https://openalex.org/W2256339549",
-        "https://openalex.org/W1913780967",
-        "https://openalex.org/W2909785124",
-        "https://openalex.org/W1652711717",
-        "https://openalex.org/W4366091747",
-        "https://openalex.org/W2547019664",
-        "https://openalex.org/W2161985367",
-        "https://openalex.org/W1995763105",
-        "https://openalex.org/W4220709308",
-        "https://openalex.org/W2509792282",
-        "https://openalex.org/W2409547282",
-        "https://openalex.org/W2837182345",
-        "https://openalex.org/W3208445195",
-        "https://openalex.org/W4318218893",
-        "https://openalex.org/W2041780639",
-        "https://openalex.org/W3181744852",
-        "https://openalex.org/W4308485013",
-        "https://openalex.org/W2032014907",
-        "https://openalex.org/W4389246065",
-        "https://openalex.org/W4293745122",
-        "https://openalex.org/W4391027463",
-        "https://openalex.org/W4306746332",
-        "https://openalex.org/W4396734029",
-        "https://openalex.org/W4200363055",
-        "https://openalex.org/W2015941956",
         "https://openalex.org/W1026812169",
-        "https://openalex.org/W3046276442",
-        "https://openalex.org/W2041380989",
-        "https://openalex.org/W3086964129",
-        "https://openalex.org/W2058170548",
-        "https://openalex.org/W4401934105",
-        "https://openalex.org/W4281669102",
+        "https://openalex.org/W1652711717",
+        "https://openalex.org/W1913780967",
         "https://openalex.org/W1964559902",
+        "https://openalex.org/W1987348461",
+        "https://openalex.org/W1995763105",
+        "https://openalex.org/W2011234952",
+        "https://openalex.org/W2015941956",
+        "https://openalex.org/W2020776530",
         "https://openalex.org/W2026169752",
+        "https://openalex.org/W2032014907",
+        "https://openalex.org/W2041380989",
+        "https://openalex.org/W2041780639",
+        "https://openalex.org/W2058170548",
         "https://openalex.org/W2070818468",
+        "https://openalex.org/W2161985367",
+        "https://openalex.org/W2170976584",
         "https://openalex.org/W2217265770",
-        "https://openalex.org/W3216798413"
+        "https://openalex.org/W2256339549",
+        "https://openalex.org/W2261455217",
+        "https://openalex.org/W2291348130",
+        "https://openalex.org/W2409547282",
+        "https://openalex.org/W2509792282",
+        "https://openalex.org/W2547019664",
+        "https://openalex.org/W2786589993",
+        "https://openalex.org/W2837182345",
+        "https://openalex.org/W2909785124",
+        "https://openalex.org/W2914915312",
+        "https://openalex.org/W2999913139",
+        "https://openalex.org/W3003344051",
+        "https://openalex.org/W3046276442",
+        "https://openalex.org/W3086964129",
+        "https://openalex.org/W3181744852",
+        "https://openalex.org/W3198821762",
+        "https://openalex.org/W3199640922",
+        "https://openalex.org/W3208445195",
+        "https://openalex.org/W3216798413",
+        "https://openalex.org/W4200363055",
+        "https://openalex.org/W4220709308",
+        "https://openalex.org/W4281669102",
+        "https://openalex.org/W4293745122",
+        "https://openalex.org/W4306746332",
+        "https://openalex.org/W4308485013",
+        "https://openalex.org/W4318218893",
+        "https://openalex.org/W4366091747",
+        "https://openalex.org/W4381510972",
+        "https://openalex.org/W4388867379",
+        "https://openalex.org/W4389246065",
+        "https://openalex.org/W4391027463",
+        "https://openalex.org/W4396734029",
+        "https://openalex.org/W4399993244",
+        "https://openalex.org/W4401934105"
       ],
       "related_works": [
         "https://openalex.org/W2489835961",
@@ -35333,7 +35383,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.34390061,
+        "value": 0.33106211,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -35738,7 +35788,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.31479685,
+        "value": 0.30313513,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -36007,9 +36057,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
+          "id": "https://metadata.un.org/sdg/13",
           "score": 0.5699999928474426,
-          "id": "https://metadata.un.org/sdg/13"
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -36430,7 +36480,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.35562775,
+        "value": 0.34219296,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -36545,25 +36595,25 @@
       "content_urls": null,
       "referenced_works_count": 19,
       "referenced_works": [
-        "https://openalex.org/W4231633553",
-        "https://openalex.org/W2316689652",
-        "https://openalex.org/W2907218955",
-        "https://openalex.org/W2005852999",
-        "https://openalex.org/W2151489236",
         "https://openalex.org/W889269103",
+        "https://openalex.org/W1484346556",
+        "https://openalex.org/W1964404059",
+        "https://openalex.org/W2005852999",
+        "https://openalex.org/W2039355041",
+        "https://openalex.org/W2065596651",
         "https://openalex.org/W2086837829",
         "https://openalex.org/W2122891192",
-        "https://openalex.org/W1484346556",
-        "https://openalex.org/W2896824457",
-        "https://openalex.org/W1964404059",
-        "https://openalex.org/W2994687871",
-        "https://openalex.org/W2889422970",
-        "https://openalex.org/W2039355041",
         "https://openalex.org/W2131164122",
+        "https://openalex.org/W2151489236",
+        "https://openalex.org/W2316689652",
         "https://openalex.org/W2743383816",
+        "https://openalex.org/W2889422970",
+        "https://openalex.org/W2896824457",
+        "https://openalex.org/W2907218955",
+        "https://openalex.org/W2994687871",
         "https://openalex.org/W3028427599",
-        "https://openalex.org/W2065596651",
-        "https://openalex.org/W4206519528"
+        "https://openalex.org/W4206519528",
+        "https://openalex.org/W4231633553"
       ],
       "related_works": [],
       "abstract_inverted_index": {
@@ -37746,7 +37796,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.32519847,
+        "value": 0.31184388,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -37861,16 +37911,16 @@
       "content_urls": null,
       "referenced_works_count": 10,
       "referenced_works": [
-        "https://openalex.org/W3084386898",
-        "https://openalex.org/W4407551674",
-        "https://openalex.org/W2984659082",
-        "https://openalex.org/W4409563181",
-        "https://openalex.org/W4407673613",
-        "https://openalex.org/W4392644115",
-        "https://openalex.org/W4365508996",
         "https://openalex.org/W1967557681",
+        "https://openalex.org/W2984659082",
+        "https://openalex.org/W3084386898",
+        "https://openalex.org/W3198253279",
         "https://openalex.org/W4225272938",
-        "https://openalex.org/W3198253279"
+        "https://openalex.org/W4365508996",
+        "https://openalex.org/W4392644115",
+        "https://openalex.org/W4407551674",
+        "https://openalex.org/W4407673613",
+        "https://openalex.org/W4409563181"
       ],
       "related_works": [],
       "abstract_inverted_index": {
@@ -38864,7 +38914,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.41985143,
+        "value": 0.40537752,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -38979,31 +39029,31 @@
       "content_urls": null,
       "referenced_works_count": 25,
       "referenced_works": [
-        "https://openalex.org/W2739681533",
         "https://openalex.org/W2028109196",
+        "https://openalex.org/W2095913453",
+        "https://openalex.org/W2167279371",
+        "https://openalex.org/W2263197396",
+        "https://openalex.org/W2403662965",
+        "https://openalex.org/W2586418003",
         "https://openalex.org/W2601810315",
+        "https://openalex.org/W2739681533",
+        "https://openalex.org/W2767600584",
+        "https://openalex.org/W2863672112",
         "https://openalex.org/W2944987242",
+        "https://openalex.org/W2949600639",
+        "https://openalex.org/W4205531388",
+        "https://openalex.org/W4283071495",
+        "https://openalex.org/W4317618574",
+        "https://openalex.org/W4320716754",
+        "https://openalex.org/W4321238816",
+        "https://openalex.org/W4382449308",
+        "https://openalex.org/W4387709073",
+        "https://openalex.org/W4401349077",
+        "https://openalex.org/W4406160145",
+        "https://openalex.org/W4406571983",
         "https://openalex.org/W4407607931",
         "https://openalex.org/W4408659711",
-        "https://openalex.org/W4382449308",
-        "https://openalex.org/W2863672112",
-        "https://openalex.org/W4401349077",
-        "https://openalex.org/W2403662965",
-        "https://openalex.org/W4317618574",
-        "https://openalex.org/W2949600639",
-        "https://openalex.org/W4410156885",
-        "https://openalex.org/W4320716754",
-        "https://openalex.org/W2586418003",
-        "https://openalex.org/W2167279371",
-        "https://openalex.org/W4387709073",
-        "https://openalex.org/W2263197396",
-        "https://openalex.org/W4406571983",
-        "https://openalex.org/W4283071495",
-        "https://openalex.org/W4205531388",
-        "https://openalex.org/W4406160145",
-        "https://openalex.org/W2767600584",
-        "https://openalex.org/W4321238816",
-        "https://openalex.org/W2095913453"
+        "https://openalex.org/W4410156885"
       ],
       "related_works": [],
       "abstract_inverted_index": {
@@ -40313,7 +40363,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.06060088,
+        "value": 0.06059917,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
