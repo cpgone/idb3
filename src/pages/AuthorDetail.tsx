@@ -2113,33 +2113,35 @@ export default function AuthorDetail() {
 
         {uniqueAuthorWorks.length > 0 && (
           <Card className="border-border/60">
-            <CardHeader className="flex items-center justify-between gap-2">
-              <div className="flex items-center gap-2">
+            <CardHeader className="flex w-full flex-nowrap items-center justify-start gap-2 text-left">
+              <div className="flex min-w-0 items-center gap-2 mr-auto">
                  <CardTitle className="flex items-center gap-2">
                    <Tags className="h-5 w-5 text-primary" />
                    <span>Topic insights</span>
                  </CardTitle>
               </div>
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                className="h-7 text-[11px] text-muted-foreground hover:text-foreground"
-                onClick={() => setShowTopicInsightsSection((prev) => !prev)}
-                aria-expanded={showTopicInsightsSection}
-              >
-                {showTopicInsightsSection ? (
-                  <>
-                    <ChevronUp className="mr-1 h-3 w-3" />
-                    Collapse
-                  </>
-                ) : (
-                  <>
-                    <ChevronDown className="mr-1 h-3 w-3" />
-                    Expand
-                  </>
-                )}
-              </Button>
+              <div className="ml-auto shrink-0">
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 whitespace-nowrap text-[11px] text-muted-foreground hover:text-foreground"
+                  onClick={() => setShowTopicInsightsSection((prev) => !prev)}
+                  aria-expanded={showTopicInsightsSection}
+                >
+                  {showTopicInsightsSection ? (
+                    <>
+                      <ChevronUp className="mr-1 h-3 w-3" />
+                      Collapse
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown className="mr-1 h-3 w-3" />
+                      Expand
+                    </>
+                  )}
+                </Button>
+              </div>
             </CardHeader>
             {showTopicInsightsSection && (
               <CardContent>
@@ -2890,31 +2892,33 @@ export default function AuthorDetail() {
         )}
 
         <Card className="border-border/60">
-          <CardHeader className="flex items-center justify-between gap-2">
-            <CardTitle className="flex items-center gap-2">
+          <CardHeader className="flex w-full flex-nowrap items-center justify-start gap-2 text-left">
+            <CardTitle className="flex min-w-0 items-center gap-2 mr-auto">
               <FileText className="h-5 w-5 text-primary" />
               <span>Publications</span>
             </CardTitle>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              className="h-7 text-[11px] text-muted-foreground hover:text-foreground"
-              onClick={() => setShowPublicationsSection((prev) => !prev)}
-              aria-expanded={showPublicationsSection}
-            >
-              {showPublicationsSection ? (
-                <>
-                  <ChevronUp className="mr-1 h-3 w-3" />
-                  Collapse
-                </>
-              ) : (
-                <>
-                  <ChevronDown className="mr-1 h-3 w-3" />
-                  Expand
-                </>
-              )}
-            </Button>
+            <div className="ml-auto shrink-0">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="h-7 whitespace-nowrap text-[11px] text-muted-foreground hover:text-foreground"
+                onClick={() => setShowPublicationsSection((prev) => !prev)}
+                aria-expanded={showPublicationsSection}
+              >
+                {showPublicationsSection ? (
+                  <>
+                    <ChevronUp className="mr-1 h-3 w-3" />
+                    Collapse
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown className="mr-1 h-3 w-3" />
+                    Expand
+                  </>
+                )}
+              </Button>
+            </div>
           </CardHeader>
           {showPublicationsSection && (
             <CardContent>

@@ -489,7 +489,7 @@ const InsightsPage = () => {
       },
       dragmode: "pan",
       hovermode: "x unified",
-      legend: { orientation: "h", y: 1.15, x: 0 },
+      legend: { orientation: "h", y: 1.15, x: 0, itemclick: false, itemdoubleclick: false },
       uirevision: "insights",
     }),
     [chartScale],
@@ -1001,18 +1001,25 @@ const InsightsPage = () => {
                     </div>
                   ) : (
                     <div className="w-full flex-1 min-h-0">
-                      <Plot
-                        data={plotTraces}
-                        layout={plotLayout}
-                        config={plotConfig}
-                        useResizeHandler
-                        style={{ width: "100%", height: "100%" }}
-                        plotly={Plotly}
-                        onClick={(event) => {
-                          const point = event?.points?.[0];
-                          if (!point?.data) return;
-                          const topic =
-                            (point.data.customdata as string | undefined) ||
+                        <Plot
+                          data={plotTraces}
+                          layout={plotLayout}
+                          config={plotConfig}
+                          useResizeHandler
+                          style={{ width: "100%", height: "100%" }}
+                          plotly={Plotly}
+                          onLegendClick={(event) => {
+                            const trace = event?.curveNumber != null ? plotTraces[event.curveNumber] : null;
+                            const name = trace && typeof trace.name === "string" ? trace.name : "";
+                            const topic = extractTopicFromTraceName(name);
+                            if (topic) cycleTopicColor(topic);
+                            return false;
+                          }}
+                          onClick={(event) => {
+                            const point = event?.points?.[0];
+                            if (!point?.data) return;
+                            const topic =
+                              (point.data.customdata as string | undefined) ||
                             extractTopicFromTraceName(String(point.data.name || ""));
                           if (topic) cycleTopicColor(topic);
                         }}
@@ -1077,6 +1084,13 @@ const InsightsPage = () => {
                             useResizeHandler
                             style={{ width: "100%", height: "100%" }}
                             plotly={Plotly}
+                            onLegendClick={(event) => {
+                              const trace = event?.curveNumber != null ? plotTraces[event.curveNumber] : null;
+                              const name = trace && typeof trace.name === "string" ? trace.name : "";
+                              const topic = extractTopicFromTraceName(name);
+                              if (topic) cycleTopicColor(topic);
+                              return false;
+                            }}
                             onClick={(event) => {
                               const point = event?.points?.[0];
                               if (!point?.data) return;
