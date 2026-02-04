@@ -176,6 +176,7 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
   const authorFilter = params.get("author") || "";
   const authorIdFilter = params.get("authorId") || "";
   const coAuthorFilter = params.get("coauthor") || "";
+  const venueFilter = params.get("venue") || "";
   const fromYearParam = params.get("fromYear");
   const toYearParam = params.get("toYear");
   const [sortBy, setSortBy] = useState<PublicationSortField>(
@@ -265,6 +266,11 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
       if (topicFilter && !(w.topics || []).includes(topicFilter)) return false;
       if (institutionFilter && !(w.institutions || []).includes(institutionFilter))
         return false;
+      if (
+        venueFilter &&
+        (w.venue || "").trim().toLowerCase() !== venueFilter.trim().toLowerCase()
+      )
+        return false;
       if (authorIdFilter) {
         if (!(w.allAuthorOpenAlexIds || []).includes(authorIdFilter)) return false;
       } else if (
@@ -317,6 +323,7 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
     authorFilter,
     authorIdFilter,
     coAuthorFilter,
+    venueFilter,
   ]);
 
   const filtered = useMemo(() => {

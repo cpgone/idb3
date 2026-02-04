@@ -108,6 +108,8 @@ const authorTopTopicsCount =
   (insightsConfig as { authorTopTopicsCount?: number })?.authorTopTopicsCount ?? 4;
 const authorTopConceptsCountRaw =
   (insightsConfig as { authorTopConceptsCount?: number | null })?.authorTopConceptsCount ?? null;
+const authorTopJournalsCountRaw =
+  (insightsConfig as { authorTopJournalsCount?: number | null })?.authorTopJournalsCount ?? 5;
 
 const formatPct = (value: number | null) => {
   if (value === Infinity) return "New";
@@ -209,6 +211,7 @@ export default function AuthorDetail() {
     "all" | "journal" | "conference" | "other"
   >("all");
   const [showAltNames, setShowAltNames] = useState(false);
+  const [showJournalsPopout, setShowJournalsPopout] = useState(false);
   const INSIGHTS_PAGE_SIZE = 8;
   const [visibleInsightCount, setVisibleInsightCount] = useState(INSIGHTS_PAGE_SIZE);
   const [insightsRangeA, setInsightsRangeA] = useState<Range>({ from: null, to: null });
@@ -673,6 +676,7 @@ export default function AuthorDetail() {
     [allAuthorConcepts, showAllConcepts, authorTopConceptsCountRaw],
   );
 
+
   const buildConceptUrl = (concept?: { wikidata?: string; id?: string }) => {
     if (concept?.wikidata) return concept.wikidata;
     if (concept?.id) return `https://openalex.org/C${concept.id}`;
@@ -716,6 +720,33 @@ export default function AuthorDetail() {
     return isConference ? ("conference" as const) : ("journal" as const);
   };
 
+  const allJournals = useMemo(() => {
+    const map = new Map<string, { name: string; count: number }>();
+    uniqueAuthorWorks.forEach((work) => {
+      if (!work.year) return;
+      const venue = (work.venue || "").trim();
+      if (!venue) return;
+      if (classifyVenueType(venue) !== "journal") return;
+      const key = venue.toLowerCase();
+      const existing = map.get(key) ?? { name: venue, count: 0 };
+      existing.count += 1;
+      map.set(key, existing);
+    });
+
+    const items = Array.from(map.values()).sort(
+      (a, b) => b.count - a.count || a.name.localeCompare(b.name),
+    );
+    return items;
+  }, [uniqueAuthorWorks, venueOverrides]);
+
+  const topJournals = useMemo(() => {
+    const limit =
+      authorTopJournalsCountRaw == null
+        ? allJournals.length
+        : Math.max(0, authorTopJournalsCountRaw);
+    return allJournals.slice(0, limit);
+  }, [allJournals, authorTopJournalsCountRaw]);
+
   const baseFilteredWorks = useMemo(() => {
     const query = workSearch.trim().toLowerCase();
     if (!query) return rangeFilteredWorks;
@@ -756,6 +787,20 @@ export default function AuthorDetail() {
     });
     return { all: total, journal: journals, conference: conferences, other: others };
   }, [baseFilteredWorks, venueOverrides]);
+
+  const publicationTypeCounts = useMemo(() => {
+    let journals = 0;
+    let conferences = 0;
+    let others = 0;
+    uniqueAuthorWorks.forEach((w) => {
+      if (!w.year) return;
+      const type = classifyVenueType(w.venue);
+      if (type === "journal") journals += 1;
+      else if (type === "conference") conferences += 1;
+      else others += 1;
+    });
+    return { journal: journals, conference: conferences, other: others };
+  }, [uniqueAuthorWorks, venueOverrides]);
 
   const applyInsightsPreset = (span: number) => {
     if (!allYears.length) return;
@@ -1101,13 +1146,14 @@ export default function AuthorDetail() {
 
 
 
-  const buildAuthorPublicationsPath = () => {
+  const buildAuthorPublicationsPath = (venue?: string) => {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
     if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
+    if (venue) search.set("venue", venue);
     return `/publications?${search.toString()}`;
   };
 
@@ -1460,7 +1506,7 @@ export default function AuthorDetail() {
         <Card className="border-border/60">
           <CardHeader className="flex flex-col gap-4">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between order-last">
-              <div className="flex flex-1 flex-col gap-3">
+              <div className="flex flex-1 flex-col gap-3 lg:basis-1/3 lg:max-w-[420px]">
               <CardTitle className="flex items-center gap-2">
 
                 <User className="h-5 w-5 text-primary" />
@@ -1522,34 +1568,69 @@ export default function AuthorDetail() {
 
               </div>
 
-              {(topTopicsInRange.length > 0 || authorConcepts.length > 0) && (
-                <div className="w-full max-w-2xl text-left">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {topTopicsInRange.length > 0 && (
-                      <div>
-                        <div className="font-semibold text-foreground">Top topics</div>
-                        <ul className="list-disc pl-4 text-xs text-muted-foreground">
-                          {topTopicsInRange.map((item) => (
-                            <li key={item.topic} className="mt-1">
-                              <Link
-                                to={buildAuthorTopicPublicationsPath(item.topic)}
-                                className="hover:underline"
+              {(topTopicsInRange.length > 0 ||
+                authorConcepts.length > 0 ||
+                topJournals.length > 0) && (
+                <div className="w-full text-left lg:flex-1">
+                  <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
+                    <div className="flex-1">
+                      <div className="grid gap-4 sm:grid-cols-2">
+                        {topTopicsInRange.length > 0 && (
+                          <div>
+                            <div className="font-semibold text-foreground">Top topics</div>
+                            <ul className="list-disc pl-4 text-xs text-muted-foreground">
+                              {topTopicsInRange.map((item) => (
+                                <li key={item.topic} className="mt-1">
+                                  <Link
+                                    to={buildAuthorTopicPublicationsPath(item.topic)}
+                                    className="hover:underline"
+                                  >
+                                    {item.topic}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                            <Link
+                              to={buildAuthorTopicsPath()}
+                              className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
+                            >
+                              See more
+                            </Link>
+                          </div>
+                        )}
+                        {topJournals.length > 0 && (
+                          <div>
+                            <div className="font-semibold text-foreground">Top journals</div>
+                            <ul className="list-disc pl-4 text-xs text-muted-foreground">
+                              {topJournals.map((journal) => (
+                                <li key={journal.name} className="mt-1">
+                                  <Link
+                                    to={buildAuthorPublicationsPath(journal.name)}
+                                    className="text-foreground hover:underline"
+                                  >
+                                    {journal.name}
+                                  </Link>{" "}
+                                  <span className="text-[11px] text-muted-foreground">
+                                    ({journal.count})
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                            {allJournals.length > topJournals.length && (
+                              <button
+                                type="button"
+                                className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
+                                onClick={() => setShowJournalsPopout(true)}
                               >
-                                {item.topic}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                        <Link
-                          to={buildAuthorTopicsPath()}
-                          className="mt-1 inline-block text-[11px] font-semibold text-primary hover:underline"
-                        >
-                          See more
-                        </Link>
+                                See more
+                              </button>
+                            )}
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
                     {authorConcepts.length > 0 && (
-                      <div>
+                      <div className="lg:w-56">
                         <div className="font-semibold text-foreground">Top concepts</div>
                         <ul className="list-disc pl-4 text-xs text-muted-foreground">
                           {authorConcepts.map((concept, index) => (
@@ -1584,6 +1665,69 @@ export default function AuthorDetail() {
                   </div>
                 </div>
               )}
+              {showJournalsPopout && (
+                <div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+                  role="dialog"
+                  aria-modal="true"
+                >
+                  <div
+                    className="rounded-lg bg-background shadow-xl border border-border overflow-hidden"
+                    style={{
+                      width: "min(90vw, 720px)",
+                      height: "min(80vh, 640px)",
+                      minWidth: "360px",
+                      minHeight: "320px",
+                      maxWidth: "95vw",
+                      maxHeight: "90vh",
+                    }}
+                  >
+                    <div className="flex h-full flex-col">
+                      <div className="flex items-center justify-between border-b border-border px-4 py-3">
+                        <div className="flex items-center gap-2">
+                          <FileText className="h-4 w-4 text-primary" />
+                          <span className="text-sm font-semibold text-foreground">
+                            Top journals
+                          </span>
+                        </div>
+                        <Button
+                          type="button"
+                          variant="outline"
+                          size="sm"
+                          className="h-8"
+                          onClick={() => setShowJournalsPopout(false)}
+                          title="Close"
+                        >
+                          <X className="h-4 w-4" />
+                        </Button>
+                      </div>
+                      <div className="p-4 flex-1 overflow-auto">
+                        {allJournals.length === 0 ? (
+                          <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+                            No journals available.
+                          </div>
+                        ) : (
+                          <ul className="list-disc pl-5 text-sm text-muted-foreground">
+                            {allJournals.map((journal) => (
+                              <li key={journal.name} className="mt-2">
+                                <Link
+                                  to={buildAuthorPublicationsPath(journal.name)}
+                                  className="text-foreground hover:underline"
+                                >
+                                  {journal.name}
+                                </Link>{" "}
+                                <span className="text-[11px] text-muted-foreground">
+                                  ({journal.count})
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="flex w-full flex-wrap items-center gap-3 text-xs text-muted-foreground order-first">
@@ -1597,6 +1741,11 @@ export default function AuthorDetail() {
                   >
                     {summary.totalPublications} publications
                   </Link>
+                  <span className="text-muted-foreground">
+                    ({publicationTypeCounts.journal} journals,{" "}
+                    {publicationTypeCounts.conference} conferences,{" "}
+                    {publicationTypeCounts.other} others)
+                  </span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Award className="h-4 w-4 text-primary" />
@@ -1627,14 +1776,6 @@ export default function AuthorDetail() {
                     {summary.topics} topics
                   </Link>
                 </div>
-                {authorConcepts.length > 0 && (
-                  <div className="flex items-center gap-1">
-                    <Tag className="h-4 w-4 text-primary" />
-                    <span className="font-semibold text-foreground">
-                      {authorConcepts.length} concepts
-                    </span>
-                  </div>
-                )}
                 <div className="flex items-center gap-1">
                   <Building2 className="h-4 w-4 text-primary" />
                   <Link
