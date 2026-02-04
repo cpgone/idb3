@@ -282,7 +282,7 @@
     },
     "block_key": "t al-shafloot",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5114504290",
-    "updated_date": "2026-02-02T04:24:01.495945",
+    "updated_date": "2026-02-03T19:50:13.913683",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -734,16 +734,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Industry, innovation and infrastructure",
+          "score": 0.41999998688697815,
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.41999998688697815
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 15,
@@ -1863,8 +1863,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 39,
@@ -3194,21 +3194,21 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Responsible consumption and production",
+          "score": 0.44999998807907104,
           "id": "https://metadata.un.org/sdg/12",
-          "score": 0.44999998807907104
+          "display_name": "Responsible consumption and production"
         },
         {
-          "display_name": "Industry, innovation and infrastructure",
+          "score": 0.4300000071525574,
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.4300000071525574
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 48,
