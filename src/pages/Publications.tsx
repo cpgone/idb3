@@ -177,6 +177,7 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
   const authorIdFilter = params.get("authorId") || "";
   const coAuthorFilter = params.get("coauthor") || "";
   const venueFilter = params.get("venue") || "";
+  const venueTypeParam = params.get("venueType") || "";
   const fromYearParam = params.get("fromYear");
   const toYearParam = params.get("toYear");
   const [sortBy, setSortBy] = useState<PublicationSortField>(
@@ -187,7 +188,11 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [venueTypeFilter, setVenueTypeFilter] = useState<
     "all" | "journal" | "conference" | "other"
-  >("all");
+  >(
+    venueTypeParam === "journal" || venueTypeParam === "conference" || venueTypeParam === "other"
+      ? venueTypeParam
+      : "all",
+  );
 
   const allYears = useMemo(() => {
     const years = new Set<number>();
@@ -196,6 +201,18 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
     }
     return Array.from(years).sort((a, b) => a - b);
   }, []);
+
+  useEffect(() => {
+    if (
+      venueTypeParam === "journal" ||
+      venueTypeParam === "conference" ||
+      venueTypeParam === "other"
+    ) {
+      setVenueTypeFilter(venueTypeParam);
+    } else if (!venueTypeParam) {
+      setVenueTypeFilter("all");
+    }
+  }, [venueTypeParam]);
 
   const [startYear, setStartYear] = useState<number | null>(
     fromYearParam ? Number(fromYearParam) : null,

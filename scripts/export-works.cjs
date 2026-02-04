@@ -107,6 +107,7 @@ const main = () => {
     "year",
     "venue",
     "citations",
+    "fwci",
     "coauthor_openalex_ids",
   ];
 
@@ -228,6 +229,7 @@ const main = () => {
         work.publication_year ?? "",
         work.primary_location?.source?.display_name || "",
         work.cited_by_count ?? "",
+        work.fwci ?? "",
         coauthorIds.join("|"),
       ];
 

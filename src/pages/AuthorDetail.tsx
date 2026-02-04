@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X, TrendingUp } from "lucide-react";
+import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X, TrendingUp, Users, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -245,6 +245,9 @@ export default function AuthorDetail() {
   const [insightSearch, setInsightSearch] = useState("");
   const [selectedInsightTopics, setSelectedInsightTopics] = useState<string[]>([]);
   const insightSelectionInitialized = useRef(false);
+  const [showTopicInsightsSection, setShowTopicInsightsSection] = useState(false);
+  const [showPublicationsSection, setShowPublicationsSection] = useState(false);
+  const [isNarrowViewport, setIsNarrowViewport] = useState(false);
   const [insightsSortKey, setInsightsSortKey] = useState<
     "topic" | "pubsA" | "pubsB" | "pubsDelta" | "citesA" | "citesB" | "citesDelta" | "insight"
   >("pubsB");
@@ -618,6 +621,25 @@ export default function AuthorDetail() {
     const max = allYears[allYears.length - 1];
     setInsightsRangeA({ from: min, to: max });
   }, [compareInsights, allYears]);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const media = window.matchMedia("(max-width: 640px)");
+    const update = () => setIsNarrowViewport(media.matches);
+    update();
+    if (media.addEventListener) {
+      media.addEventListener("change", update);
+    } else {
+      media.addListener(update);
+    }
+    return () => {
+      if (media.removeEventListener) {
+        media.removeEventListener("change", update);
+      } else {
+        media.removeListener(update);
+      }
+    };
+  }, []);
 
 
   useEffect(() => {
@@ -1006,14 +1028,17 @@ export default function AuthorDetail() {
   }, [selectedInsightTopics, insightChartYearRange.from, insightChartYearRange.to, uniqueAuthorWorks]);
 
   const [authorInsightTopicColors, setAuthorInsightTopicColors] = useState<Record<string, string>>({});
-  const authorInsightPalette = [
-    "hsl(var(--chart-1))",
-    "hsl(var(--chart-2))",
-    "hsl(var(--chart-3))",
-    "hsl(var(--chart-4))",
-    "hsl(var(--chart-5))",
-    "hsl(var(--accent))",
+  const authorInsightPaletteVars = [
+    "--chart-1",
+    "--chart-2",
+    "--chart-3",
+    "--chart-4",
+    "--chart-5",
+    "--accent",
   ];
+  const [authorInsightPalette, setAuthorInsightPalette] = useState<string[]>(() =>
+    authorInsightPaletteVars.map((varName) => `hsl(var(${varName}))`),
+  );
 
   const getAuthorInsightColor = useCallback(
     (topic: string) => {
@@ -1022,7 +1047,7 @@ export default function AuthorDetail() {
       const index = Math.max(0, selectedInsightTopics.indexOf(topic));
       return authorInsightPalette[index % authorInsightPalette.length];
     },
-    [authorInsightTopicColors, selectedInsightTopics],
+    [authorInsightTopicColors, selectedInsightTopics, authorInsightPalette],
   );
 
   const cycleAuthorInsightColor = useCallback(
@@ -1034,7 +1059,7 @@ export default function AuthorDetail() {
         return { ...prev, [topic]: next };
       });
     },
-    [getAuthorInsightColor],
+    [getAuthorInsightColor, authorInsightPalette],
   );
 
   useEffect(() => {
@@ -1049,6 +1074,20 @@ export default function AuthorDetail() {
       return next;
     });
   }, [selectedInsightTopics]);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const resolveColor = (varName: string, fallback: string) => {
+      const raw = getComputedStyle(document.documentElement).getPropertyValue(varName);
+      const parsed = raw ? parseHslString(raw) : null;
+      return parsed ? hslToHex(parsed.h, parsed.s, parsed.l) : fallback;
+    };
+    setAuthorInsightPalette((prev) =>
+      authorInsightPaletteVars.map((varName, index) =>
+        resolveColor(varName, prev[index] ?? "#64748b"),
+      ),
+    );
+  }, []);
 
   const authorInsightPlotTraces = useMemo(() => {
     if (!insightChartData.length || !selectedInsightTopics.length) return [];
@@ -1082,28 +1121,37 @@ export default function AuthorDetail() {
     });
   }, [insightChartData, selectedInsightTopics, showInsightsPubs, showInsightsCites, getAuthorInsightColor]);
 
-  const authorInsightPlotLayout = useMemo(
-    () => ({
+  const authorInsightPlotLayout = useMemo(() => {
+    const span =
+      insightChartYearRange.from != null && insightChartYearRange.to != null
+        ? insightChartYearRange.to - insightChartYearRange.from
+        : 0;
+    const baseTick = span > 30 ? 5 : span > 20 ? 2 : 1;
+    const dtick = isNarrowViewport ? Math.max(5, baseTick * 3) : baseTick;
+    const tickSize = isNarrowViewport ? 10 : 12;
+    return {
       margin: { l: 50, r: 20, t: 10, b: 40 },
       xaxis: {
         title: "Year",
         type: "linear",
         tickmode: "linear",
-        dtick: 1,
+        dtick,
         tickformat: "d",
+        tickangle: 0,
+        tickfont: { size: tickSize },
       },
       yaxis: {
         title: "Count",
         type: authorInsightsScale,
         rangemode: "tozero",
+        tickfont: { size: tickSize },
       },
       dragmode: "pan",
       hovermode: "x unified",
       legend: { orientation: "h", y: 1.15, x: 0 },
       uirevision: "author-insights",
-    }),
-    [authorInsightsScale],
-  );
+    };
+  }, [authorInsightsScale, insightChartYearRange.from, insightChartYearRange.to, isNarrowViewport]);
 
   const authorInsightPlotConfig = useMemo(
     () => ({
@@ -1175,14 +1223,18 @@ export default function AuthorDetail() {
 
 
 
-  const buildAuthorPublicationsPath = (venue?: string) => {
+  const buildAuthorPublicationsPath = (options?: {
+    venue?: string;
+    venueType?: "journal" | "conference" | "other";
+  }) => {
     const search = new URLSearchParams();
     const authorName = localAuthor?.name;
     if (authorName) search.set("author", authorName);
     if (resolvedOpenAlexId) search.set("authorId", resolvedOpenAlexId);
     if (startYear != null) search.set("fromYear", String(startYear));
     if (endYear != null) search.set("toYear", String(endYear));
-    if (venue) search.set("venue", venue);
+    if (options?.venue) search.set("venue", options.venue);
+    if (options?.venueType) search.set("venueType", options.venueType);
     return `/publications?${search.toString()}`;
   };
 
@@ -1671,7 +1723,7 @@ export default function AuthorDetail() {
                               {topJournals.map((journal) => (
                                 <li key={journal.name} className="mt-1">
                                   <Link
-                                    to={buildAuthorPublicationsPath(journal.name)}
+                                    to={buildAuthorPublicationsPath({ venue: journal.name })}
                                     className="text-foreground hover:underline"
                                   >
                                     {journal.name}
@@ -1789,10 +1841,10 @@ export default function AuthorDetail() {
                           <ul className="list-disc pl-5 text-sm text-muted-foreground">
                             {allJournals.map((journal) => (
                               <li key={journal.name} className="mt-2">
-                                <Link
-                                  to={buildAuthorPublicationsPath(journal.name)}
-                                  className="text-foreground hover:underline"
-                                >
+                                  <Link
+                                    to={buildAuthorPublicationsPath({ venue: journal.name })}
+                                    className="text-foreground hover:underline"
+                                  >
                                   {journal.name}
                                 </Link>{" "}
                                 <span className="text-[11px] text-muted-foreground">
@@ -1810,8 +1862,8 @@ export default function AuthorDetail() {
             </div>
 
             <div className="flex w-full flex-wrap items-center gap-3 text-xs text-muted-foreground order-first">
-              <div className="flex flex-1 items-center justify-end">
-                <div className="flex flex-nowrap items-center gap-4 overflow-x-auto whitespace-nowrap">
+              <div className="flex w-full flex-1 min-w-0 items-center justify-start sm:justify-end">
+                <div className="flex w-full flex-wrap items-center gap-3 whitespace-normal sm:w-auto sm:flex-nowrap sm:gap-4 sm:whitespace-nowrap">
                 <div className="flex items-center gap-1">
                   <FileText className="h-4 w-4 text-primary" />
                   <Link
@@ -1820,10 +1872,30 @@ export default function AuthorDetail() {
                   >
                     {summary.totalPublications} publications
                   </Link>
-                  <span className="text-muted-foreground">
-                    ({publicationTypeCounts.journal} journals,{" "}
-                    {publicationTypeCounts.conference} conferences,{" "}
-                    {publicationTypeCounts.other} others)
+                  <span className="text-muted-foreground inline-flex items-center gap-2">
+                    (
+                    <Link
+                      to={buildAuthorPublicationsPath({ venueType: "journal" })}
+                      className="inline-flex items-center gap-1 text-primary hover:underline"
+                    >
+                      <BookOpen className="h-3.5 w-3.5" />
+                      {publicationTypeCounts.journal}
+                    </Link>
+                    <Link
+                      to={buildAuthorPublicationsPath({ venueType: "conference" })}
+                      className="inline-flex items-center gap-1 text-primary hover:underline"
+                    >
+                      <Users className="h-3.5 w-3.5" />
+                      {publicationTypeCounts.conference}
+                    </Link>
+                    <Link
+                      to={buildAuthorPublicationsPath({ venueType: "other" })}
+                      className="inline-flex items-center gap-1 text-primary hover:underline"
+                    >
+                      <Layers className="h-3.5 w-3.5" />
+                      {publicationTypeCounts.other}
+                    </Link>
+                    )
                   </span>
                 </div>
                 <div className="flex items-center gap-1">
@@ -2041,15 +2113,36 @@ export default function AuthorDetail() {
 
         {uniqueAuthorWorks.length > 0 && (
           <Card className="border-border/60">
-            <CardHeader className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <CardHeader className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2">
                  <CardTitle className="flex items-center gap-2">
                    <Tags className="h-5 w-5 text-primary" />
                    <span>Topic insights</span>
                  </CardTitle>
               </div>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="h-7 text-[11px] text-muted-foreground hover:text-foreground"
+                onClick={() => setShowTopicInsightsSection((prev) => !prev)}
+                aria-expanded={showTopicInsightsSection}
+              >
+                {showTopicInsightsSection ? (
+                  <>
+                    <ChevronUp className="mr-1 h-3 w-3" />
+                    Collapse
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown className="mr-1 h-3 w-3" />
+                    Expand
+                  </>
+                )}
+              </Button>
             </CardHeader>
-            <CardContent>
+            {showTopicInsightsSection && (
+              <CardContent>
                 <div className="mb-4 space-y-3">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="flex w-full max-w-lg items-center">
@@ -2268,15 +2361,15 @@ export default function AuthorDetail() {
                   {showInsightsChart && (
                     <>
                       <Card className="border-border/60 mb-4">
-                        <CardContent className="flex h-[520px] sm:h-[420px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
+                        <CardContent className="flex h-[360px] sm:h-[320px] flex-col space-y-3 overflow-hidden pb-4 pt-4">
                         <div className="flex flex-wrap items-center gap-3 text-[11px] text-muted-foreground">
                         <div className="flex flex-wrap items-center gap-2">
                           <Button
                             type="button"
-                            variant="outline"
+                            variant={showInsightsPubs ? "secondary" : "outline"}
                             size="sm"
                               className={`h-7 text-[11px] flex items-center gap-2 ${
-                                showInsightsPubs ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
+                                showInsightsPubs ? "text-foreground" : "text-muted-foreground hover:bg-muted/40"
                               }`}
                               onClick={() => setShowInsightsPubs((prev) => !prev)}
                               title="Publications (solid)"
@@ -2288,10 +2381,10 @@ export default function AuthorDetail() {
                             </Button>
                             <Button
                               type="button"
-                              variant="outline"
+                              variant={showInsightsCites ? "secondary" : "outline"}
                               size="sm"
                               className={`h-7 text-[11px] flex items-center gap-2 ${
-                                showInsightsCites ? "bg-muted/50 text-foreground" : "text-muted-foreground hover:bg-muted/40"
+                                showInsightsCites ? "text-foreground" : "text-muted-foreground hover:bg-muted/40"
                               }`}
                               onClick={() => setShowInsightsCites((prev) => !prev)}
                               title="Citations (dashed)"
@@ -2327,12 +2420,11 @@ export default function AuthorDetail() {
                               type="button"
                               variant="outline"
                               size="sm"
-                              className="h-7 text-[11px] flex items-center gap-2"
+                              className="h-7 w-7 p-0 flex items-center justify-center"
                               onClick={() => setShowAuthorInsightsPopout(true)}
                               title="Pop out chart"
                             >
                               <Maximize2 className="h-3 w-3" />
-                              Pop out
                             </Button>
                           </div>
                         </div>
@@ -2366,20 +2458,14 @@ export default function AuthorDetail() {
 
                   {showAuthorInsightsPopout && (
                     <div
-                      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+                      className="fixed inset-0 z-50 bg-black/50 p-4 relative"
                       role="dialog"
                       aria-modal="true"
+                      onClick={() => setShowAuthorInsightsPopout(false)}
                     >
                       <div
-                        className="rounded-lg bg-background shadow-xl border border-border resize overflow-hidden"
-                        style={{
-                          width: "min(95vw, 1200px)",
-                          height: "min(85vh, 720px)",
-                          minWidth: "640px",
-                          minHeight: "420px",
-                          maxWidth: "95vw",
-                          maxHeight: "90vh",
-                        }}
+                        className="rounded-lg bg-background shadow-xl border border-border overflow-hidden resize w-[90vw] h-[50vh] max-w-[900px] max-h-[60vh] sm:w-[60vw] sm:h-[60vh] sm:min-w-[480px] sm:min-h-[360px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <div className="flex h-full flex-col">
                           <div className="flex items-center justify-between border-b border-border px-4 py-3">
@@ -2799,17 +2885,39 @@ export default function AuthorDetail() {
                   </div>
                 )}
               </CardContent>
+            )}
           </Card>
         )}
 
         <Card className="border-border/60">
-          <CardHeader className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+          <CardHeader className="flex items-center justify-between gap-2">
             <CardTitle className="flex items-center gap-2">
               <FileText className="h-5 w-5 text-primary" />
               <span>Publications</span>
             </CardTitle>
+            <Button
+              type="button"
+              variant="ghost"
+              size="sm"
+              className="h-7 text-[11px] text-muted-foreground hover:text-foreground"
+              onClick={() => setShowPublicationsSection((prev) => !prev)}
+              aria-expanded={showPublicationsSection}
+            >
+              {showPublicationsSection ? (
+                <>
+                  <ChevronUp className="mr-1 h-3 w-3" />
+                  Collapse
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="mr-1 h-3 w-3" />
+                  Expand
+                </>
+              )}
+            </Button>
           </CardHeader>
-          <CardContent>
+          {showPublicationsSection && (
+            <CardContent>
             <>
               {allYears.length > 0 && (
                 <div className="mb-3 flex flex-wrap items-center justify-between gap-3 text-[11px] text-muted-foreground">
@@ -3141,7 +3249,8 @@ export default function AuthorDetail() {
                 </div>
               )}
             </>
-          </CardContent>
+            </CardContent>
+          )}
 
         </Card>
       </main>

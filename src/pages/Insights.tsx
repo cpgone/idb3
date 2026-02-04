@@ -51,6 +51,39 @@ const thresholdsConfig =
     declineDrop: 0.8,
   };
 
+const insightsDefaultSelectedTopicsCount =
+  (insightsConfig as { insightsDefaultSelectedTopicsCount?: number })?.insightsDefaultSelectedTopicsCount ??
+  5;
+
+const parseHslString = (value: string) => {
+  const parts = value.trim().replace(/,/g, " ").split(/\s+/);
+  if (parts.length < 3) return null;
+  const h = Number(parts[0]);
+  const s = Number(parts[1].replace("%", ""));
+  const l = Number(parts[2].replace("%", ""));
+  if ([h, s, l].some((v) => Number.isNaN(v))) return null;
+  return { h, s, l };
+};
+
+const hslToHex = (h: number, s: number, l: number) => {
+  const sNorm = s / 100;
+  const lNorm = l / 100;
+  const c = (1 - Math.abs(2 * lNorm - 1)) * sNorm;
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  const m = lNorm - c / 2;
+  let r = 0;
+  let g = 0;
+  let b = 0;
+  if (h >= 0 && h < 60) [r, g, b] = [c, x, 0];
+  else if (h >= 60 && h < 120) [r, g, b] = [x, c, 0];
+  else if (h >= 120 && h < 180) [r, g, b] = [0, c, x];
+  else if (h >= 180 && h < 240) [r, g, b] = [0, x, c];
+  else if (h >= 240 && h < 300) [r, g, b] = [x, 0, c];
+  else [r, g, b] = [c, 0, x];
+  const toHex = (n: number) => Math.round((n + m) * 255).toString(16).padStart(2, "0");
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+};
+
 const formatPct = (value: number | null) => {
   if (value === Infinity) return "New";
   if (value === -Infinity) return "Absent";
@@ -361,15 +394,18 @@ const InsightsPage = () => {
     }
   };
 
-const palette = [
-  "hsl(var(--chart-1))",
-  "hsl(var(--chart-2))",
-  "hsl(var(--chart-3))",
-  "hsl(var(--chart-4))",
-  "hsl(var(--chart-5))",
-  "hsl(var(--primary))",
-  "hsl(var(--accent))",
-];
+  const paletteVars = [
+    "--chart-1",
+    "--chart-2",
+    "--chart-3",
+    "--chart-4",
+    "--chart-5",
+    "--primary",
+    "--accent",
+  ];
+  const [palette, setPalette] = useState<string[]>(() =>
+    paletteVars.map((varName) => `hsl(var(${varName}))`),
+  );
 
   const topicColor = (topic: string) => {
     if (topicColors[topic]) return topicColors[topic];
@@ -385,6 +421,20 @@ const palette = [
       return { ...prev, [topic]: next };
     });
   };
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const resolveColor = (varName: string, fallback: string) => {
+      const raw = getComputedStyle(document.documentElement).getPropertyValue(varName);
+      const parsed = raw ? parseHslString(raw) : null;
+      return parsed ? hslToHex(parsed.h, parsed.s, parsed.l) : fallback;
+    };
+    setPalette((prev) =>
+      paletteVars.map((varName, index) =>
+        resolveColor(varName, prev[index] ?? "#64748b"),
+      ),
+    );
+  }, []);
 
   const extractTopicFromTraceName = (name: string) => {
     return name.replace(/\s+(pubs|cites)\s*$/i, "").trim();
@@ -459,9 +509,10 @@ const palette = [
     if (initializedSelection.current) return;
     if (insights.length) {
       initializedSelection.current = true;
-      setSelectedTopics(insights.slice(0, 5).map((row) => row.topic));
+      const limit = Math.max(0, insightsDefaultSelectedTopicsCount);
+      setSelectedTopics(insights.slice(0, limit).map((row) => row.topic));
     }
-  }, [insights]);
+  }, [insights, insightsDefaultSelectedTopicsCount]);
 
   useEffect(() => {
     setVisibleRows(25);
@@ -940,7 +991,7 @@ const palette = [
                         title="Pop out chart"
                       >
                         <Maximize2 className="h-3 w-3" />
-                        Pop out
+                        
                       </Button>
                     </div>
                   </div>

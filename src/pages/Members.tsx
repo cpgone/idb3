@@ -37,12 +37,6 @@ const Members = () => {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [searchQuery, setSearchQuery] = useState("");
-  const [fwciByAuthor, setFwciByAuthor] = useState<Record<string, number | null>>({});
-
-  const buildAuthorDataUrl = (openAlexId: string) => {
-    const baseUrl = typeof import.meta.env.BASE_URL === "string" ? import.meta.env.BASE_URL : "/";
-    return `${baseUrl.replace(/\/$/, "/")}author-data/${openAlexId}.json`;
-  };
 
   const allYears = useMemo(() => {
     const years = new Set<number>();
@@ -77,6 +71,7 @@ const Members = () => {
         {
           publications: number;
           citations: number;
+          fwci: number | null;
           hIndex: number;
           institutions: string[];
           coAuthors: string[];
@@ -90,6 +85,7 @@ const Members = () => {
 
     type Bucket = {
       citationsList: number[];
+      fwciList: number[];
       seenWorkKeys: Set<string>;
       institutions: Set<string>;
       coAuthors: Set<string>;
@@ -148,6 +144,7 @@ const Members = () => {
           temp.get(key) ??
           {
             citationsList: [],
+            fwciList: [],
             seenWorkKeys: new Set<string>(),
             institutions: new Set<string>(),
             coAuthors: new Set<string>(),
@@ -159,6 +156,9 @@ const Members = () => {
         }
         bucket.seenWorkKeys.add(workKey);
         bucket.citationsList.push(citations);
+        if (typeof work.fwci === "number" && !Number.isNaN(work.fwci)) {
+          bucket.fwciList.push(work.fwci);
+        }
         (work.institutions || []).forEach((inst) => {
           if (inst) bucket.institutions.add(inst);
         });
@@ -184,6 +184,7 @@ const Members = () => {
       {
         publications: number;
         citations: number;
+        fwci: number | null;
         hIndex: number;
         institutions: string[];
         coAuthors: string[];
@@ -194,6 +195,10 @@ const Members = () => {
     for (const [key, value] of temp) {
       const pubs = value.seenWorkKeys.size;
       const citations = value.citationsList.reduce((sum, c) => sum + c, 0);
+      const fwci =
+        value.fwciList.length > 0
+          ? value.fwciList.reduce((sum, v) => sum + v, 0) / value.fwciList.length
+          : null;
       const sorted = [...value.citationsList].sort((a, b) => b - a);
       let h = 0;
       for (let i = 0; i < sorted.length; i += 1) {
@@ -203,6 +208,7 @@ const Members = () => {
       result.set(key, {
         publications: pubs,
         citations,
+        fwci,
         hIndex: h,
         institutions: Array.from(value.institutions),
         coAuthors: Array.from(value.coAuthors),
@@ -232,12 +238,12 @@ const Members = () => {
         topics: metrics ? metrics.topics.length : 0,
         publications: metrics ? metrics.publications : 0,
         citations: metrics ? metrics.citations : 0,
-        fwci: normalizedId ? fwciByAuthor[normalizedId] ?? null : null,
+        fwci: metrics ? metrics.fwci : null,
         hIndex: metrics ? metrics.hIndex : author.hIndex,
         openAlexId: author.openAlexId,
       };
     });
-  }, [metricsByAuthor, fwciByAuthor]);
+  }, [metricsByAuthor]);
 
   const filteredRows = useMemo(() => {
     let next = rows;
@@ -281,53 +287,6 @@ const Members = () => {
   const visibleRows = sortedRows.slice(0, visibleCount);
   const hasMoreToShow = visibleCount < sortedRows.length;
 
-  useEffect(() => {
-    const targets = visibleRows
-      .map((row) => normalizeOpenAlexId(row.openAlexId))
-      .filter((id): id is string => !!id)
-      .filter((id) => fwciByAuthor[id] === undefined);
-
-    if (!targets.length) return;
-
-    let isActive = true;
-
-    const loadFwci = async () => {
-      const results = await Promise.all(
-        targets.map(async (id) => {
-          try {
-            const response = await fetch(buildAuthorDataUrl(id));
-            if (!response.ok) throw new Error("Failed to load author data");
-            const data = await response.json();
-            const works = Array.isArray(data?.works) ? data.works : [];
-            const values = works
-              .map((work: { fwci?: number | null }) => work?.fwci)
-              .filter((value: number | null | undefined): value is number => typeof value === "number" && !Number.isNaN(value));
-            const avg = values.length
-              ? values.reduce((sum, value) => sum + value, 0) / values.length
-              : null;
-            return { id, fwci: avg };
-          } catch {
-            return { id, fwci: null };
-          }
-        }),
-      );
-
-      if (!isActive) return;
-      setFwciByAuthor((prev) => {
-        const next = { ...prev };
-        results.forEach(({ id, fwci }) => {
-          next[id] = fwci;
-        });
-        return next;
-      });
-    };
-
-    loadFwci();
-
-    return () => {
-      isActive = false;
-    };
-  }, [visibleRows, fwciByAuthor]);
 
   const buildYearRange = () => {
     const from = startYear ?? (allYears.length ? allYears[0] : undefined);

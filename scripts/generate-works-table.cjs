@@ -108,6 +108,8 @@ const main = () => {
   const venueKey = workHeaders.find((h) => h.toLowerCase() === "venue") || "venue";
   const citationsKey =
     workHeaders.find((h) => h.toLowerCase() === "citations") || "citations";
+  const fwciKey =
+    workHeaders.find((h) => h.toLowerCase() === "fwci") || "fwci";
 
   const topicWorkIdKey =
     topicHeaders.find((h) => h.toLowerCase() === "work_id") || "work_id";
@@ -156,6 +158,8 @@ const main = () => {
     const year = Number(row[yearKey] || "0");
     const venue = row[venueKey] || "";
     const citations = Number(row[citationsKey] || "0");
+    const fwciRaw = Number(row[fwciKey] || "");
+    const fwci = Number.isFinite(fwciRaw) ? fwciRaw : null;
     const primaryAuthorOpenAlexId = (row[authorOpenAlexIdKey] || "").trim();
     const coauthorIdsRaw = row[coauthorOpenAlexIdsKey] || "";
     const coauthorOpenAlexIds = coauthorIdsRaw
@@ -189,6 +193,7 @@ const main = () => {
       year,
       venue,
       citations,
+      fwci,
       topics: Array.from(topicsSet),
       institutions: Array.from(institutionsSet),
     });
@@ -211,6 +216,7 @@ const main = () => {
     "  year: number;\n" +
     "  venue: string;\n" +
     "  citations: number;\n" +
+    "  fwci: number | null;\n" +
     "  topics: string[];\n" +
     "  institutions: string[];\n" +
     "}\n\n" +
