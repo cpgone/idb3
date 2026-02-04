@@ -110,6 +110,19 @@ const authorTopConceptsCountRaw =
   (insightsConfig as { authorTopConceptsCount?: number | null })?.authorTopConceptsCount ?? null;
 const authorTopJournalsCountRaw =
   (insightsConfig as { authorTopJournalsCount?: number | null })?.authorTopJournalsCount ?? 5;
+const insightsDefaultSelectedTopicsCount =
+  (insightsConfig as { insightsDefaultSelectedTopicsCount?: number })?.insightsDefaultSelectedTopicsCount ??
+  5;
+const insightsDefaultCompare =
+  (insightsConfig as { insightsDefaultCompare?: boolean })?.insightsDefaultCompare ?? true;
+const insightsDefaultMetric =
+  (insightsConfig as { insightsDefaultMetric?: "pubs" | "cites" })?.insightsDefaultMetric ?? "pubs";
+const insightsDefaultScale =
+  (insightsConfig as { insightsDefaultScale?: "linear" | "log" })?.insightsDefaultScale ?? "linear";
+const insightsDefaultShowChart =
+  (insightsConfig as { insightsDefaultShowChart?: boolean })?.insightsDefaultShowChart ?? true;
+const insightsDefaultShowLegend =
+  (insightsConfig as { insightsDefaultShowLegend?: boolean })?.insightsDefaultShowLegend ?? false;
 
 const formatPct = (value: number | null) => {
   if (value === Infinity) return "New";
@@ -216,12 +229,18 @@ export default function AuthorDetail() {
   const [visibleInsightCount, setVisibleInsightCount] = useState(INSIGHTS_PAGE_SIZE);
   const [insightsRangeA, setInsightsRangeA] = useState<Range>({ from: null, to: null });
   const [insightsRangeB, setInsightsRangeB] = useState<Range>({ from: null, to: null });
-  const [showInsightsPubs, setShowInsightsPubs] = useState(true);
-  const [showInsightsCites, setShowInsightsCites] = useState(false);
-  const [authorInsightsScale, setAuthorInsightsScale] = useState<"linear" | "log">("linear");
-  const [compareInsights, setCompareInsights] = useState(true);
-  const [showInsightsChart, setShowInsightsChart] = useState(true);
-  const [showInsightsLegend, setShowInsightsLegend] = useState(false);
+  const [showInsightsPubs, setShowInsightsPubs] = useState(
+    insightsDefaultMetric !== "cites",
+  );
+  const [showInsightsCites, setShowInsightsCites] = useState(
+    insightsDefaultMetric === "cites",
+  );
+  const [authorInsightsScale, setAuthorInsightsScale] = useState<"linear" | "log">(
+    insightsDefaultScale === "log" ? "log" : "linear",
+  );
+  const [compareInsights, setCompareInsights] = useState(insightsDefaultCompare);
+  const [showInsightsChart, setShowInsightsChart] = useState(insightsDefaultShowChart);
+  const [showInsightsLegend, setShowInsightsLegend] = useState(insightsDefaultShowLegend);
   const [showAuthorInsightsPopout, setShowAuthorInsightsPopout] = useState(false);
   const [insightSearch, setInsightSearch] = useState("");
   const [selectedInsightTopics, setSelectedInsightTopics] = useState<string[]>([]);
@@ -695,6 +714,13 @@ export default function AuthorDetail() {
 
   const venueOverrides = useMemo(() => {
     const map = new Map<string, "journal" | "conference" | "other">();
+    const splitCsvLine = (line: string) => {
+      const match = line.match(/^\s*(?:"([^"]*)"|([^,]*))\s*,\s*(.+)\s*$/);
+      if (!match) return null;
+      const venue = (match[1] ?? match[2] ?? "").trim();
+      const type = match[3]?.trim() ?? "";
+      return venue && type ? [venue, type] : null;
+    };
     const lines = (venueTypeOverridesCsv || "")
       .split(/\r?\n/)
       .map((l) => l.trim())
@@ -702,7 +728,9 @@ export default function AuthorDetail() {
     if (!lines.length) return map;
     const startIndex = lines[0].toLowerCase().startsWith("venue,") ? 1 : 0;
     for (let i = startIndex; i < lines.length; i += 1) {
-      const [venueRaw, typeRaw] = lines[i].split(",").map((v) => v.trim());
+      const parsed = splitCsvLine(lines[i]);
+      if (!parsed) continue;
+      const [venueRaw, typeRaw] = parsed;
       if (!venueRaw || !typeRaw) continue;
       const type = typeRaw.toLowerCase();
       if (type !== "journal" && type !== "conference" && type !== "other") continue;
@@ -921,10 +949,11 @@ export default function AuthorDetail() {
     }
 
     if (!insightSelectionInitialized.current || selectedInsightTopics.length === 0) {
-      setSelectedInsightTopics(authorInsights.slice(0, 5).map((row) => row.topic));
+      const limit = Math.max(0, insightsDefaultSelectedTopicsCount);
+      setSelectedInsightTopics(authorInsights.slice(0, limit).map((row) => row.topic));
       insightSelectionInitialized.current = true;
     }
-  }, [authorInsights, selectedInsightTopics.length]);
+  }, [authorInsights, selectedInsightTopics.length, insightsDefaultSelectedTopicsCount]);
 
   const insightChartYearRange = useMemo(() => {
     if (!allYears.length) return { from: null as number | null, to: null as number | null };

@@ -226,6 +226,13 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
 
   const venueOverrides = useMemo(() => {
     const map = new Map<string, "journal" | "conference" | "other">();
+    const splitCsvLine = (line: string) => {
+      const match = line.match(/^\s*(?:"([^"]*)"|([^,]*))\s*,\s*(.+)\s*$/);
+      if (!match) return null;
+      const venue = (match[1] ?? match[2] ?? "").trim();
+      const type = match[3]?.trim() ?? "";
+      return venue && type ? [venue, type] : null;
+    };
     const lines = (venueTypeOverridesCsv || "")
       .split(/\r?\n/)
       .map((l) => l.trim())
@@ -233,7 +240,9 @@ const PublicationsPage = ({ mode = "publications" }: PublicationsPageProps) => {
     if (!lines.length) return map;
     const startIndex = lines[0].toLowerCase().startsWith("venue,") ? 1 : 0;
     for (let i = startIndex; i < lines.length; i += 1) {
-      const [venueRaw, typeRaw] = lines[i].split(",").map((v) => v.trim());
+      const parsed = splitCsvLine(lines[i]);
+      if (!parsed) continue;
+      const [venueRaw, typeRaw] = parsed;
       if (!venueRaw || !typeRaw) continue;
       const type = typeRaw.toLowerCase();
       if (type !== "journal" && type !== "conference" && type !== "other") continue;
