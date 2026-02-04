@@ -1402,6 +1402,43 @@ export default function AuthorDetail() {
     URL.revokeObjectURL(url);
   };
 
+  const handleExportJournalsCsv = () => {
+    if (!allJournals.length) return;
+
+    const clean = (value: unknown) => repairUtf8(value ?? "");
+    const escape = (value: unknown) => {
+      const str = clean(value);
+      if (str === "") return "";
+      const cleaned = str.replace(/\r?\n/g, " ");
+      if (/[",]/.test(cleaned)) {
+        return `"${cleaned.replace(/"/g, '""')}"`;
+      }
+      return cleaned;
+    };
+
+    const headers = ["journal", "publications"];
+    const lines = [
+      headers.join(","),
+      ...allJournals.map((journal) =>
+        [journal.name, journal.count].map(escape).join(","),
+      ),
+    ];
+
+    // Prepend BOM so Excel consistently opens the file as UTF-8
+    const csv = `\uFEFF${lines.join("\n")}`;
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${(localAuthor?.name || name).replace(/\s+/g, "_")}-journals.csv`;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   const handleShareLinkedIn = () => {
     const url = window.location.href;
     const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
@@ -1690,16 +1727,29 @@ export default function AuthorDetail() {
                             Top journals
                           </span>
                         </div>
-                        <Button
-                          type="button"
-                          variant="outline"
-                          size="sm"
-                          className="h-8"
-                          onClick={() => setShowJournalsPopout(false)}
-                          title="Close"
-                        >
-                          <X className="h-4 w-4" />
-                        </Button>
+                        <div className="flex items-center gap-2">
+                          <Button
+                            type="button"
+                            variant="outline"
+                            size="sm"
+                            className="h-8"
+                            onClick={handleExportJournalsCsv}
+                            title="Export CSV"
+                            disabled={!allJournals.length}
+                          >
+                            <Download className="h-4 w-4" />
+                          </Button>
+                          <Button
+                            type="button"
+                            variant="outline"
+                            size="sm"
+                            className="h-8"
+                            onClick={() => setShowJournalsPopout(false)}
+                            title="Close"
+                          >
+                            <X className="h-4 w-4" />
+                          </Button>
+                        </div>
                       </div>
                       <div className="p-4 flex-1 overflow-auto">
                         {allJournals.length === 0 ? (
