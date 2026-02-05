@@ -1784,7 +1784,7 @@ export default function AuthorDetail() {
                     </div>
                     {authorConcepts.length > 0 && (
                       <div className="lg:w-56">
-                        <div className="font-semibold text-foreground">Top concepts</div>
+                        <div className="font-semibold text-foreground">Disciplines</div>
                         <ul className="list-disc pl-4 text-xs text-muted-foreground">
                           {authorConcepts.map((concept, index) => (
                             <li key={`${concept.display_name}-${index}`} className="mt-1">
