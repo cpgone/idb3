@@ -23,6 +23,13 @@ import {
   X,
   ChevronDown,
   ChevronUp,
+  Sparkles,
+  TrendingDown,
+  TrendingUp,
+  ArrowUpRight,
+  Target,
+  Activity,
+  Minus,
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import Plot from "react-plotly.js";
@@ -329,6 +336,40 @@ const InsightsPage = () => {
     sortKey,
     compareMode,
   ]);
+
+  const insightCategories = [
+    { key: "emerging", label: "Emerging", icon: Sparkles },
+    { key: "declining", label: "Declining", icon: TrendingDown },
+    { key: "strongSurge", label: "Strong surge", icon: TrendingUp },
+    { key: "growingPriority", label: "Growing priority", icon: ArrowUpRight },
+    { key: "impactLed", label: "Impact-led", icon: Target },
+    { key: "outputSoftening", label: "Output rising, impact softening", icon: Activity },
+    { key: "stable", label: "Stable", icon: Minus },
+  ] as const;
+
+  const insightCounts = useMemo(() => {
+    const counts: Record<(typeof insightCategories)[number]["key"], number> = {
+      emerging: 0,
+      declining: 0,
+      strongSurge: 0,
+      growingPriority: 0,
+      impactLed: 0,
+      outputSoftening: 0,
+      stable: 0,
+    };
+    insights.forEach((row) => {
+      const label = row.insight || "";
+      if (label === "Emerging in period B") counts.emerging += 1;
+      else if (label === "Absent in period B" || label === "Declining emphasis")
+        counts.declining += 1;
+      else if (label === "Strong surge in output and impact") counts.strongSurge += 1;
+      else if (label === "Growing priority with rising impact") counts.growingPriority += 1;
+      else if (label === "Impact rising faster than output") counts.impactLed += 1;
+      else if (label === "Output rising, impact softening") counts.outputSoftening += 1;
+      else if (label === "Stable focus") counts.stable += 1;
+    });
+    return counts;
+  }, [insights]);
 
   const toggleTopicSelection = (topic: string) => {
     setSelectedTopics((prev) => (prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic]));
@@ -713,7 +754,20 @@ const InsightsPage = () => {
                 <FileTextIcon className="h-5 w-5 text-primary" />
                 <CardTitle className="text-base sm:text-lg text-foreground">Topic insights</CardTitle>
               </div>
-              <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+              <div className="flex flex-wrap items-center justify-end gap-3 text-xs text-muted-foreground self-center">
+                {insightCategories.map(({ key, label, icon: Icon }) => (
+                  <div
+                    key={key}
+                    className="inline-flex items-center gap-1 leading-none text-foreground"
+                    title={label}
+                  >
+                    <Icon className="h-3 w-3 text-primary" />
+                    <span className="font-semibold">{insightCounts[key]}</span>
+                    <span className="text-muted-foreground">
+                      {label.split(" ").slice(0, 2).join(" ")}
+                    </span>
+                  </div>
+                ))}
                 <Button
                   variant="outline"
                   size="icon"
@@ -1138,7 +1192,7 @@ const InsightsPage = () => {
               {showLegend && (
                 <div className="mt-3">
                   {compareMode ? (
-                    <div className="grid gap-3 md:grid-cols-2">
+                    <div className="grid gap-3 md:grid-cols-[0.9fr_1.2fr]">
                       <div className="space-y-2">
                         <div className="font-semibold text-foreground">Legend</div>
                         <div className="grid gap-1 sm:grid-cols-2">
@@ -1183,16 +1237,37 @@ const InsightsPage = () => {
                           </span>
                         </div>
                       </div>
-                      <div className="space-y-1 text-foreground">
+                      <div className="space-y-2 text-foreground">
                         <div className="font-semibold">Insights</div>
-                        <ul className="list-disc pl-4 space-y-0.5">
-                          <li>Emerging: only in Period B</li>
-                          <li>Declining: missing in Period B or both drop &gt;20%</li>
-                          <li>Strong surge: publications &gt;=2x and citations &gt;=2x</li>
-                          <li>Growing priority: publications &gt;=1.5x and citations &gt;=1.2x</li>
-                          <li>Impact-led: citations &gt;=1.5x with publications flat/declining</li>
-                          <li>Output rising, impact softening: publications &gt;=1.2x but citations &lt;0.9x</li>
-                          <li>Stable: otherwise</li>
+                        <ul className="grid gap-2 text-[12px] sm:grid-cols-2">
+                          <li className="flex items-start gap-2">
+                            <Sparkles className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Emerging:</span> only in Period B</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <TrendingDown className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Declining:</span> missing in Period B or both drop &gt;20%</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <TrendingUp className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Strong surge:</span> pubs &gt;=2x and cites &gt;=2x</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <ArrowUpRight className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Growing priority:</span> pubs &gt;=1.5x and cites &gt;=1.2x</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Target className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Impact-led:</span> cites &gt;=1.5x with pubs flat/declining</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Activity className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Output rising, impact softening:</span> pubs &gt;=1.2x but cites &lt;0.9x</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Minus className="h-3 w-3 text-primary" />
+                            <span><span className="font-semibold">Stable:</span> otherwise</span>
+                          </li>
                         </ul>
                       </div>
                     </div>

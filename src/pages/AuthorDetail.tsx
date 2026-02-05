@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X, TrendingUp, Users, Layers } from "lucide-react";
+import { FileText, ArrowUpDown, Download, Linkedin, Link as LinkIcon, User, Network, BarChart3, ArrowLeft, Award, Tags, Tag, Building2, ChevronDown, ChevronUp, BookOpen, Mail, Fingerprint, Search, Globe, Copy, Maximize2, X, TrendingUp, Users, Layers, Sparkles, TrendingDown, ArrowUpRight, Target, Activity, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -1153,6 +1153,41 @@ export default function AuthorDetail() {
     };
   }, [authorInsightsScale, insightChartYearRange.from, insightChartYearRange.to, isNarrowViewport]);
 
+  const insightCategories = [
+    { key: "emerging", label: "Emerging", icon: Sparkles },
+    { key: "declining", label: "Declining", icon: TrendingDown },
+    { key: "strongSurge", label: "Strong surge", icon: TrendingUp },
+    { key: "growingPriority", label: "Growing priority", icon: ArrowUpRight },
+    { key: "impactLed", label: "Impact-led", icon: Target },
+    { key: "outputSoftening", label: "Output rising, impact softening", icon: Activity },
+    { key: "stable", label: "Stable", icon: Minus },
+  ] as const;
+
+  const insightCounts = useMemo(() => {
+    const counts: Record<(typeof insightCategories)[number]["key"], number> = {
+      emerging: 0,
+      declining: 0,
+      strongSurge: 0,
+      growingPriority: 0,
+      impactLed: 0,
+      outputSoftening: 0,
+      stable: 0,
+    };
+    if (!compareInsights) return counts;
+    authorInsights.forEach((row) => {
+      const label = row.insight || "";
+      if (label === "Emerging in period B") counts.emerging += 1;
+      else if (label === "Absent in period B" || label === "Declining emphasis")
+        counts.declining += 1;
+      else if (label === "Strong surge in output and impact") counts.strongSurge += 1;
+      else if (label === "Growing priority with rising impact") counts.growingPriority += 1;
+      else if (label === "Impact rising faster than output") counts.impactLed += 1;
+      else if (label === "Output rising, impact softening") counts.outputSoftening += 1;
+      else if (label === "Stable focus") counts.stable += 1;
+    });
+    return counts;
+  }, [authorInsights, compareInsights]);
+
   const authorInsightPlotConfig = useMemo(
     () => ({
       displaylogo: false,
@@ -2113,36 +2148,56 @@ export default function AuthorDetail() {
 
         {uniqueAuthorWorks.length > 0 && (
           <Card className="border-border/60">
-            <CardHeader className="flex w-full flex-nowrap items-center justify-start gap-2 text-left">
-              <div className="flex min-w-0 items-center gap-2 mr-auto">
-                 <CardTitle className="flex items-center gap-2">
-                   <Tags className="h-5 w-5 text-primary" />
-                   <span>Topic insights</span>
-                 </CardTitle>
-              </div>
-              <div className="ml-auto shrink-0">
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="sm"
-                  className="h-7 whitespace-nowrap text-[11px] text-muted-foreground hover:text-foreground"
-                  onClick={() => setShowTopicInsightsSection((prev) => !prev)}
-                  aria-expanded={showTopicInsightsSection}
-                >
-                  {showTopicInsightsSection ? (
-                    <>
-                      <ChevronUp className="mr-1 h-3 w-3" />
-                      Collapse
-                    </>
-                  ) : (
-                    <>
-                      <ChevronDown className="mr-1 h-3 w-3" />
-                      Expand
-                    </>
-                  )}
-                </Button>
+            <CardHeader
+              className="space-y-2 cursor-pointer select-none"
+              role="button"
+              tabIndex={0}
+              onClick={() => setShowTopicInsightsSection((prev) => !prev)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setShowTopicInsightsSection((prev) => !prev);
+                }
+              }}
+            >
+              <div className="grid w-full grid-cols-[1fr_auto_1fr] items-center gap-2 text-left">
+                <div />
+                <CardTitle className="flex items-center gap-2">
+                  <Tags className="h-5 w-5 text-primary" />
+                  <span>Topic insights</span>
+                </CardTitle>
+                <div />
               </div>
             </CardHeader>
+            <div
+              className="pb-2 cursor-pointer select-none"
+              role="button"
+              tabIndex={0}
+              onClick={() => setShowTopicInsightsSection((prev) => !prev)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setShowTopicInsightsSection((prev) => !prev);
+                }
+              }}
+            >
+              <div className="flex items-center justify-center gap-3 text-xs text-muted-foreground whitespace-nowrap">
+                {insightCategories.map(({ key, label, icon: Icon }) => (
+                  <div key={key} className="inline-flex items-center gap-1 text-foreground" title={label}>
+                    <Icon className="h-3 w-3 text-primary" />
+                    <span className="font-semibold">{insightCounts[key]}</span>
+                    <span className="text-muted-foreground">{label.split(" ").slice(0, 2).join(" ")}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-2 flex justify-center text-muted-foreground">
+                {showTopicInsightsSection ? (
+                  <ChevronUp className="h-4 w-4" />
+                ) : (
+                  <ChevronDown className="h-4 w-4" />
+                )}
+              </div>
+            </div>
             {showTopicInsightsSection && (
               <CardContent>
                 <div className="mb-4 space-y-3">
@@ -2541,7 +2596,7 @@ export default function AuthorDetail() {
                         </Button>
                       </div>
                       {showInsightsLegend && (
-                        <div className="mt-3 grid gap-3 md:grid-cols-2">
+                        <div className="mt-3 grid gap-3 md:grid-cols-[0.9fr_1.2fr]">
                           <div className="space-y-2">
                             <div className="font-semibold text-foreground">Legend</div>
                             <div className="grid gap-1 sm:grid-cols-2">
@@ -2571,16 +2626,37 @@ export default function AuthorDetail() {
                               </span>
                             </div>
                           </div>
-                          <div className="space-y-1 text-foreground">
+                          <div className="space-y-2 text-foreground">
                             <div className="font-semibold">Insights</div>
-                            <ul className="list-disc pl-4 space-y-0.5">
-                              <li>Emerging: only in Period B</li>
-                              <li>Declining: missing in Period B or both drop &gt;20%</li>
-                              <li>Strong surge: publications &gt;= 2x and citations &gt;= 2x</li>
-                              <li>Growing priority: publications &gt;= 1.5x and citations &gt;= 1.2x</li>
-                              <li>Impact-led: citations &gt;= 1.5x with publications flat/declining</li>
-                              <li>Output rising, impact softening: publications &gt;= 1.2x but citations &lt; 0.9x</li>
-                              <li>Stable: otherwise</li>
+                            <ul className="grid gap-2 text-[12px] sm:grid-cols-2">
+                              <li className="flex items-start gap-2">
+                                <Sparkles className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Emerging:</span> only in Period B</span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <TrendingDown className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Declining:</span> missing in Period B or both drop &gt;20%</span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <TrendingUp className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Strong surge:</span> pubs &gt;=2x and cites &gt;=2x</span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <ArrowUpRight className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Growing priority:</span> pubs &gt;=1.5x and cites &gt;=1.2x</span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <Target className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Impact-led:</span> cites &gt;=1.5x with pubs flat/declining</span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <Activity className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Output rising, impact softening:</span> pubs &gt;=1.2x, cites &lt;0.9x</span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <Minus className="h-3 w-3 text-primary" />
+                                <span><span className="font-semibold">Stable:</span> otherwise</span>
+                              </li>
                             </ul>
                           </div>
                         </div>
@@ -2892,34 +2968,77 @@ export default function AuthorDetail() {
         )}
 
         <Card className="border-border/60">
-          <CardHeader className="flex w-full flex-nowrap items-center justify-start gap-2 text-left">
-            <CardTitle className="flex min-w-0 items-center gap-2 mr-auto">
-              <FileText className="h-5 w-5 text-primary" />
-              <span>Publications</span>
-            </CardTitle>
-            <div className="ml-auto shrink-0">
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                className="h-7 whitespace-nowrap text-[11px] text-muted-foreground hover:text-foreground"
-                onClick={() => setShowPublicationsSection((prev) => !prev)}
-                aria-expanded={showPublicationsSection}
-              >
-                {showPublicationsSection ? (
-                  <>
-                    <ChevronUp className="mr-1 h-3 w-3" />
-                    Collapse
-                  </>
-                ) : (
-                  <>
-                    <ChevronDown className="mr-1 h-3 w-3" />
-                    Expand
-                  </>
-                )}
-              </Button>
+          <CardHeader
+            className="space-y-2 cursor-pointer select-none"
+            role="button"
+            tabIndex={0}
+            onClick={() => setShowPublicationsSection((prev) => !prev)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setShowPublicationsSection((prev) => !prev);
+              }
+            }}
+          >
+            <div className="grid w-full grid-cols-[1fr_auto_1fr] items-center gap-2 text-left">
+              <div />
+              <CardTitle className="flex min-w-0 items-center justify-center gap-2">
+                <FileText className="h-5 w-5 text-primary" />
+                <span>Publications</span>
+              </CardTitle>
+              <div />
             </div>
           </CardHeader>
+          <div className="pb-2">
+            <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-muted-foreground">
+              {(["all", "journal", "conference", "other"] as const).map((value) => {
+                const Icon =
+                  value === "all"
+                    ? FileText
+                    : value === "journal"
+                      ? BookOpen
+                      : value === "conference"
+                        ? Users
+                        : Layers;
+                const label =
+                  value === "all"
+                    ? "All"
+                    : value === "journal"
+                      ? "Journals"
+                      : value === "conference"
+                        ? "Conferences"
+                        : "Others";
+                return (
+                  <button
+                    key={value}
+                    type="button"
+                    className={`inline-flex items-center gap-1 text-[11px] ${
+                      venueTypeFilter === value
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                    onClick={() => {
+                      setVenueTypeFilter(value);
+                      setVisibleCount(PAGE_SIZE);
+                    }}
+                    aria-pressed={venueTypeFilter === value}
+                    title={label}
+                  >
+                    <Icon className="h-3.5 w-3.5 text-primary" />
+                    <span className="font-semibold">{venueTypeCounts[value]}</span>
+                    <span className="text-muted-foreground">{label}</span>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="mt-2 flex justify-center text-muted-foreground">
+              {showPublicationsSection ? (
+                <ChevronUp className="h-4 w-4" />
+              ) : (
+                <ChevronDown className="h-4 w-4" />
+              )}
+            </div>
+          </div>
           {showPublicationsSection && (
             <CardContent>
             <>
@@ -2971,38 +3090,6 @@ export default function AuthorDetail() {
                 </div>
               )}
               <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-semibold text-foreground">Venue type</span>
-                  {(["all", "journal", "conference", "other"] as const).map((value) => (
-                    <Button
-                      key={value}
-                      type="button"
-                    variant="outline"
-                    size="sm"
-                    className={`h-7 text-[11px] ${
-                      venueTypeFilter === value
-                        ? "bg-muted text-foreground"
-                        : "text-muted-foreground hover:bg-orange-50 hover:text-orange-700 hover:border-orange-200"
-                    }`}
-                      onClick={() => {
-                        setVenueTypeFilter(value);
-                        setVisibleCount(PAGE_SIZE);
-                      }}
-                      aria-pressed={venueTypeFilter === value}
-                    >
-                      {value === "all"
-                        ? "All"
-                        : value === "journal"
-                          ? "Journals"
-                          : value === "conference"
-                            ? "Conferences"
-                            : "Others"}
-                      <span className="ml-1 text-[10px] text-muted-foreground">
-                        ({venueTypeCounts[value]})
-                      </span>
-                    </Button>
-                  ))}
-                </div>
                 <span>
                   Showing {visibleWorks.length} of {sortedWorks.length} publications
                 </span>
