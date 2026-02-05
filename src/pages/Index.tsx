@@ -19,6 +19,7 @@ import { SiteShell } from "@/components/SiteShell";
 import { worksTable } from "@/data/worksTable.generated";
 import { filterWorks } from "@/lib/blacklist";
 import dashboardConfigJson from "@/data/dashboardConfig.json";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import insightsConfig from "../../data/config/insightsconfig.json";
 import {
   Bar,
@@ -26,7 +27,7 @@ import {
   CartesianGrid,
   Line,
   ResponsiveContainer,
-  Tooltip,
+  Tooltip as RechartsTooltip,
   XAxis,
   YAxis,
 } from "recharts";
@@ -163,6 +164,7 @@ const buildAggregates = (
   from: number,
   to: number,
 ) => {
+  if (from > to) return new Map<string, { pubs: number; cites: number }>();
   const map = new Map<string, { pubs: number; cites: number }>();
   works.forEach((work) => {
     if (typeof work.year !== "number") return;
@@ -383,6 +385,30 @@ const Index = () => {
     { key: "stable", label: "Stable", icon: Minus },
   ] as const;
 
+  const insightCategoryDescriptions: Record<
+    (typeof insightCategories)[number]["key"],
+    (ranges: { aFrom: number; aTo: number; bFrom: number; bTo: number } | null) => string
+  > = {
+    emerging: (ranges) =>
+      ranges ? `Mostly after ${ranges.bFrom}.` : "Mostly after the newer period starts.",
+    declining: (ranges) =>
+      ranges ? `Much less after ${ranges.bFrom}.` : "Much less after the newer period starts.",
+    strongSurge: (ranges) =>
+      ranges ? `Sharp rise after ${ranges.bFrom}.` : "Sharp rise in the newer period.",
+    growingPriority: (ranges) =>
+      ranges ? `Steady rise after ${ranges.bFrom}.` : "Steady rise in the newer period.",
+    impactLed: (ranges) =>
+      ranges
+        ? `Citations outpace publications after ${ranges.bFrom}.`
+        : "Citations outpace publications in the newer period.",
+    outputSoftening: (ranges) =>
+      ranges ? "Publications up, citations lag." : "Publications up, citations lag.",
+    stable: (ranges) =>
+      ranges
+        ? `Little change before vs. after ${ranges.bFrom}.`
+        : "Little change over time.",
+  };
+
   const insightRanges = useMemo(() => {
     if (!allYears.length) return null;
     const min = allYears[0];
@@ -400,16 +426,20 @@ const Index = () => {
       (insightsConfig as { insightsDefaultPeriodB?: { from?: number; to?: number } })
         ?.insightsDefaultPeriodB || {};
 
-    let aFrom = clamp(defaultsA.from) ?? min;
-    let aTo = clamp(defaultsA.to) ?? max;
-    if (aFrom > aTo) [aFrom, aTo] = [aTo, aFrom];
+    const boundary = clamp(defaultsB.from) ?? min;
 
-    let bFrom = clamp(defaultsB.from) ?? min;
-    let bTo = clamp(defaultsB.to) ?? max;
-    if (bFrom > bTo) [bFrom, bTo] = [bTo, bFrom];
+    const rangeFrom = startYear ?? min;
+    const rangeTo = endYear ?? max;
+    const normalizedFrom = Math.min(rangeFrom, rangeTo);
+    const normalizedTo = Math.max(rangeFrom, rangeTo);
+
+    const aFrom = normalizedFrom;
+    const aTo = Math.min(normalizedTo, boundary - 1);
+    const bFrom = Math.max(normalizedFrom, boundary);
+    const bTo = normalizedTo;
 
     return { aFrom, aTo, bFrom, bTo };
-  }, [allYears]);
+  }, [allYears, startYear, endYear]);
 
   const insightCounts = useMemo(() => {
     const counts: Record<(typeof insightCategories)[number]["key"], number> = {
@@ -442,6 +472,19 @@ const Index = () => {
     });
     return counts;
   }, [cleanWorks, insightRanges]);
+
+  const insightTotal = useMemo(
+    () => Object.values(insightCounts).reduce((sum, value) => sum + value, 0),
+    [insightCounts],
+  );
+
+  const formatInsightPercent = (value: number) => {
+    if (!insightTotal) return "0%";
+    const pct = (value / insightTotal) * 100;
+    const rounded = Math.round(pct * 10) / 10;
+    const text = rounded % 1 === 0 ? String(Math.trunc(rounded)) : rounded.toFixed(1);
+    return `${text}%`;
+  };
 
   const statTrends = useMemo(() => {
     return {
@@ -681,14 +724,22 @@ const Index = () => {
                 value={
                   <div className="flex flex-wrap items-center gap-2">
                     {insightCategories.map(({ key, label, icon: Icon }) => (
-                      <span
-                        key={key}
-                        className="inline-flex items-center gap-1 text-muted-foreground"
-                        title={label}
-                      >
-                        <Icon className="h-3.5 w-3.5 text-primary" />
-                        <span className="text-foreground">{insightCounts[key]}</span>
-                      </span>
+                      <TooltipProvider key={key} delayDuration={150}>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <span className="inline-flex items-center gap-1 text-muted-foreground">
+                              <Icon className="h-3.5 w-3.5 text-primary" />
+                              <span className="text-foreground">
+                                {formatInsightPercent(insightCounts[key])}
+                              </span>
+                            </span>
+                          </TooltipTrigger>
+                          <TooltipContent side="bottom" align="start" className="max-w-[240px] text-xs">
+                            <div className="font-semibold mb-1">{label}</div>
+                            <div>{insightCategoryDescriptions[key](insightRanges)}</div>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     ))}
                   </div>
                 }
@@ -854,7 +905,7 @@ const Index = () => {
                         }}
                         domain={[0, "auto"]}
                       />
-                      <Tooltip content={<SimpleTooltip />} />
+                      <RechartsTooltip content={<SimpleTooltip />} />
                       {showTopics ? (
                         <Bar
                           dataKey="topics"
