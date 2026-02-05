@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { ArrowUpRight, LucideIcon } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { ArrowUpRight, Info, LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
 type TrendBarsProps = {
@@ -38,6 +39,11 @@ interface StatCardProps {
     values: number[];
     color?: string;
   };
+  headerRight?: ReactNode;
+  info?: {
+    label?: string;
+    content: ReactNode;
+  };
   onClick?: () => void;
   actionLabel?: string;
   valueClassName?: string;
@@ -48,6 +54,8 @@ export const StatCard = ({
   value,
   icon: Icon,
   trend,
+  headerRight,
+  info,
   onClick,
   actionLabel,
   valueClassName,
@@ -61,12 +69,35 @@ export const StatCard = ({
       role={onClick ? "button" : undefined}
       tabIndex={onClick ? 0 : undefined}
     >
-      <div className="flex items-start justify-between mb-2">
-        <p className="text-sm sm:text-base font-medium text-muted-foreground">
-          {title}
-        </p>
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-2">
+          <p className="text-sm sm:text-base font-medium text-muted-foreground">
+            {title}
+          </p>
+          {info ? (
+            <TooltipProvider delayDuration={150}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <button
+                    type="button"
+                    className="inline-flex h-5 w-5 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground"
+                    aria-label={info.label ?? "Info"}
+                    onClick={(event) => event.stopPropagation()}
+                  >
+                    <Info className="h-3.5 w-3.5" />
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent side="top" align="start" className="max-w-[260px] text-xs">
+                  {info.content}
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          ) : null}
+        </div>
         <div className="rounded-lg flex items-center justify-center">
-          {trend ? (
+          {headerRight ? (
+            headerRight
+          ) : trend ? (
             <TrendBars values={trend.values} color={trend.color} />
           ) : Icon ? (
             <div className="bg-primary/10 rounded-lg p-1.5 sm:p-2">

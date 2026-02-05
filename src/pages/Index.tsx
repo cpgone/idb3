@@ -383,17 +383,8 @@ const Index = () => {
     { key: "stable", label: "Stable", icon: Minus },
   ] as const;
 
-  const insightCounts = useMemo(() => {
-    const counts: Record<(typeof insightCategories)[number]["key"], number> = {
-      emerging: 0,
-      declining: 0,
-      strongSurge: 0,
-      growingPriority: 0,
-      impactLed: 0,
-      outputSoftening: 0,
-      stable: 0,
-    };
-    if (!allYears.length) return counts;
+  const insightRanges = useMemo(() => {
+    if (!allYears.length) return null;
     const min = allYears[0];
     const max = allYears[allYears.length - 1];
 
@@ -417,8 +408,23 @@ const Index = () => {
     let bTo = clamp(defaultsB.to) ?? max;
     if (bFrom > bTo) [bFrom, bTo] = [bTo, bFrom];
 
-    const aggA = buildAggregates(cleanWorks, aFrom, aTo);
-    const aggB = buildAggregates(cleanWorks, bFrom, bTo);
+    return { aFrom, aTo, bFrom, bTo };
+  }, [allYears]);
+
+  const insightCounts = useMemo(() => {
+    const counts: Record<(typeof insightCategories)[number]["key"], number> = {
+      emerging: 0,
+      declining: 0,
+      strongSurge: 0,
+      growingPriority: 0,
+      impactLed: 0,
+      outputSoftening: 0,
+      stable: 0,
+    };
+    if (!insightRanges) return counts;
+
+    const aggA = buildAggregates(cleanWorks, insightRanges.aFrom, insightRanges.aTo);
+    const aggB = buildAggregates(cleanWorks, insightRanges.bFrom, insightRanges.bTo);
     const topics = new Set<string>([...aggA.keys(), ...aggB.keys()]);
 
     topics.forEach((topic) => {
@@ -435,7 +441,7 @@ const Index = () => {
       else if (insight === "Stable focus") counts.stable += 1;
     });
     return counts;
-  }, [allYears, cleanWorks]);
+  }, [cleanWorks, insightRanges]);
 
   const statTrends = useMemo(() => {
     return {
@@ -648,6 +654,30 @@ const Index = () => {
             {dashboardConfig.statCards.insights && (
               <StatCard
                 title="Insights"
+                info={{
+                  label: "How Insights work",
+                  content: insightRanges ? (
+                    <div className="space-y-2">
+                      <div>
+                        Insights compare topic output and citations between two periods. Each topic
+                        is assigned to a category based on how publications and citations change.
+                      </div>
+                      <div className="text-muted-foreground">
+                        Period A: {insightRanges.aFrom}–{insightRanges.aTo}. Period B: {insightRanges.bFrom}–
+                        {insightRanges.bTo}.
+                      </div>
+                    </div>
+                  ) : (
+                    "Insights compare topic output and citations between two periods."
+                  ),
+                }}
+                headerRight={
+                  insightRanges ? (
+                    <span className="text-xs text-foreground whitespace-nowrap">
+                      ≤{insightRanges.aTo} | ≥{insightRanges.bFrom}
+                    </span>
+                  ) : null
+                }
                 value={
                   <div className="flex flex-wrap items-center gap-2">
                     {insightCategories.map(({ key, label, icon: Icon }) => (
