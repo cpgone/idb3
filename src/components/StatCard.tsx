@@ -40,6 +40,7 @@ interface StatCardProps {
   };
   onClick?: () => void;
   actionLabel?: string;
+  valueClassName?: string;
 }
 
 export const StatCard = ({
@@ -49,6 +50,7 @@ export const StatCard = ({
   trend,
   onClick,
   actionLabel,
+  valueClassName,
 }: StatCardProps) => {
   return (
     <Card
@@ -74,9 +76,11 @@ export const StatCard = ({
         </div>
       </div>
       <div className="flex items-start justify-between">
-        <p className="text-3xl sm:text-4xl font-bold text-foreground leading-tight">
+        <div
+          className={`text-3xl sm:text-4xl font-bold text-foreground leading-tight ${valueClassName ?? ""}`}
+        >
           {value}
-        </p>
+        </div>
       </div>
       {actionLabel && (
         <div className="absolute bottom-2 right-3 inline-flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-primary">

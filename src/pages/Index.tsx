@@ -1,6 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { StatCard } from "@/components/StatCard";
-import { TrendingUp, Users, FileText, User, ArrowUpRight, Download } from "lucide-react";
+import {
+  TrendingUp,
+  TrendingDown,
+  Users,
+  FileText,
+  User,
+  ArrowUpRight,
+  Download,
+  Sparkles,
+  Target,
+  Activity,
+  Minus,
+} from "lucide-react";
 import { authors } from "@/data/authors.generated";
 import { useNavigate } from "react-router-dom";
 import { SiteShell } from "@/components/SiteShell";
@@ -361,8 +373,27 @@ const Index = () => {
       }));
   }, [allYears, startYear, endYear, perYearAggregates]);
 
-  const insightsTotal = useMemo(() => {
-    if (!allYears.length) return 0;
+  const insightCategories = [
+    { key: "emerging", label: "Emerging", icon: Sparkles },
+    { key: "declining", label: "Declining", icon: TrendingDown },
+    { key: "strongSurge", label: "Strong surge", icon: TrendingUp },
+    { key: "growingPriority", label: "Growing priority", icon: ArrowUpRight },
+    { key: "impactLed", label: "Impact-led", icon: Target },
+    { key: "outputSoftening", label: "Output rising", icon: Activity },
+    { key: "stable", label: "Stable", icon: Minus },
+  ] as const;
+
+  const insightCounts = useMemo(() => {
+    const counts: Record<(typeof insightCategories)[number]["key"], number> = {
+      emerging: 0,
+      declining: 0,
+      strongSurge: 0,
+      growingPriority: 0,
+      impactLed: 0,
+      outputSoftening: 0,
+      stable: 0,
+    };
+    if (!allYears.length) return counts;
     const min = allYears[0];
     const max = allYears[allYears.length - 1];
 
@@ -390,14 +421,20 @@ const Index = () => {
     const aggB = buildAggregates(cleanWorks, bFrom, bTo);
     const topics = new Set<string>([...aggA.keys(), ...aggB.keys()]);
 
-    let count = 0;
     topics.forEach((topic) => {
       const a = aggA.get(topic) || { pubs: 0, cites: 0 };
       const b = aggB.get(topic) || { pubs: 0, cites: 0 };
       const insight = deriveInsight(a.pubs, b.pubs, a.cites, b.cites);
-      if (insight !== "Stable focus") count += 1;
+      if (insight === "Emerging in period B") counts.emerging += 1;
+      else if (insight === "Absent in period B" || insight === "Declining emphasis")
+        counts.declining += 1;
+      else if (insight === "Strong surge in output and impact") counts.strongSurge += 1;
+      else if (insight === "Growing priority with rising impact") counts.growingPriority += 1;
+      else if (insight === "Impact rising faster than output") counts.impactLed += 1;
+      else if (insight === "Output rising, impact softening") counts.outputSoftening += 1;
+      else if (insight === "Stable focus") counts.stable += 1;
     });
-    return count;
+    return counts;
   }, [allYears, cleanWorks]);
 
   const statTrends = useMemo(() => {
@@ -581,15 +618,6 @@ const Index = () => {
                 onClick={() => navigate("/topics")}
               />
             )}
-            {dashboardConfig.statCards.insights && (
-              <StatCard
-                title="Insights"
-                value={<span title={insightsTotal.toLocaleString()}>{insightsTotal.toLocaleString()}</span>}
-                icon={TrendingUp}
-                actionLabel="view"
-                onClick={() => navigate("/insights")}
-              />
-            )}
             {dashboardConfig.statCards.institutions && (
               <StatCard
                 title="Institutions"
@@ -615,6 +643,28 @@ const Index = () => {
                 trend={{ values: statTrends.citations }}
                 actionLabel="view"
                 onClick={() => navigate("/citations")}
+              />
+            )}
+            {dashboardConfig.statCards.insights && (
+              <StatCard
+                title="Insights"
+                value={
+                  <div className="flex flex-wrap items-center gap-2">
+                    {insightCategories.map(({ key, label, icon: Icon }) => (
+                      <span
+                        key={key}
+                        className="inline-flex items-center gap-1 text-muted-foreground"
+                        title={label}
+                      >
+                        <Icon className="h-3.5 w-3.5 text-primary" />
+                        <span className="text-foreground">{insightCounts[key]}</span>
+                      </span>
+                    ))}
+                  </div>
+                }
+                valueClassName="text-xs sm:text-sm font-semibold"
+                actionLabel="view"
+                onClick={() => navigate("/insights")}
               />
             )}
           </div>
