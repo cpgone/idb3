@@ -8,9 +8,9 @@
       "Abdullah Basaleh"
     ],
     "works_count": 15,
-    "cited_by_count": 337,
+    "cited_by_count": 338,
     "summary_stats": {
-      "2yr_mean_citedness": 1.7142857142857142,
+      "2yr_mean_citedness": 1.8571428571428572,
       "h_index": 7,
       "i10_index": 7
     },
@@ -200,7 +200,7 @@
       {
         "id": "https://openalex.org/T10210",
         "display_name": "Advanced oxidation water treatment",
-        "value": 0.0000224,
+        "value": 0.0000223,
         "subfield": {
           "id": "https://openalex.org/subfields/2312",
           "display_name": "Water Science and Technology"
@@ -217,7 +217,7 @@
       {
         "id": "https://openalex.org/T12078",
         "display_name": "Environmental remediation with nanomaterials",
-        "value": 0.0000172,
+        "value": 0.0000171,
         "subfield": {
           "id": "https://openalex.org/subfields/2204",
           "display_name": "Biomedical Engineering"
@@ -322,7 +322,7 @@
         "year": 2024,
         "works_count": 4,
         "oa_works_count": 2,
-        "cited_by_count": 9
+        "cited_by_count": 10
       },
       {
         "year": 2025,
@@ -341,7 +341,7 @@
     },
     "block_key": "a basaleh",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5065157429",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -894,9 +894,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/7",
+          "score": 0.7400000095367432,
           "display_name": "Affordable and clean energy",
-          "score": 0.7400000095367432
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
@@ -1569,9 +1569,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.8199999928474426,
           "display_name": "Clean water and sanitation",
-          "score": 0.8199999928474426
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
@@ -2055,11 +2055,11 @@
         "value_usd": 3090
       },
       "apc_paid": null,
-      "fwci": 4.14024617,
+      "fwci": 4.8302872,
       "has_fulltext": false,
-      "cited_by_count": 6,
+      "cited_by_count": 7,
       "citation_normalized_percentile": {
-        "value": 0.87213891,
+        "value": 0.89187056,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -2559,7 +2559,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -2570,7 +2570,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -2972,7 +2972,7 @@
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.69412586,
+        "value": 0.69294353,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -3329,25 +3329,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:e806fb3633284bc8b4901363fc28bbb3",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/e806fb3633284bc8b4901363fc28bbb3",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -3390,9 +3393,9 @@
       },
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.7300000190734863,
           "display_name": "Clean water and sanitation",
-          "score": 0.7300000190734863
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [
@@ -4198,7 +4201,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -5341,9 +5344,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.4699999988079071,
           "display_name": "Clean water and sanitation",
-          "score": 0.4699999988079071
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
@@ -5967,9 +5970,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/9",
+          "score": 0.4300000071525574,
           "display_name": "Industry, innovation and infrastructure",
-          "score": 0.4300000071525574
+          "id": "https://metadata.un.org/sdg/9"
         }
       ],
       "awards": [],
@@ -7442,7 +7445,7 @@
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.8887391,
+        "value": 0.88745325,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -7768,25 +7771,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:46bf7c4b11174250842cea8ab1668c0c",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/46bf7c4b11174250842cea8ab1668c0c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -7859,9 +7865,9 @@
       },
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.8600000143051147,
           "display_name": "Clean water and sanitation",
-          "score": 0.8600000143051147
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
@@ -8455,7 +8461,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2025-12-28T23:10:05.387466",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -10231,7 +10237,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.10822601,
+        "value": 0.10803094,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -10488,24 +10494,38 @@
       ],
       "mesh": [
         {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
+          "descriptor_ui": "D002947",
+          "descriptor_name": "Cities",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D058998",
-          "descriptor_name": "Remote Sensing Technology",
+          "descriptor_ui": "D002947",
+          "descriptor_name": "Cities",
           "qualifier_ui": null,
           "qualifier_name": null,
-          "is_major_topic": true
+          "is_major_topic": false
         },
         {
-          "descriptor_ui": "D007091",
-          "descriptor_name": "Image Processing, Computer-Assisted",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
+          "descriptor_ui": "D002947",
+          "descriptor_name": "Cities",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003889",
+          "descriptor_name": "Desert Climate",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003889",
+          "descriptor_name": "Desert Climate",
+          "qualifier_ui": null,
+          "qualifier_name": null,
           "is_major_topic": false
         },
         {
@@ -10516,10 +10536,38 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D002947",
-          "descriptor_name": "Cities",
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D007091",
+          "descriptor_name": "Image Processing, Computer-Assisted",
           "qualifier_ui": null,
           "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D007091",
+          "descriptor_name": "Image Processing, Computer-Assisted",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D007091",
+          "descriptor_name": "Image Processing, Computer-Assisted",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
           "is_major_topic": false
         },
         {
@@ -10530,8 +10578,15 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D063809",
-          "descriptor_name": "Satellite Imagery",
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -10546,51 +10601,9 @@
         {
           "descriptor_ui": "D058998",
           "descriptor_name": "Remote Sensing Technology",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D063809",
-          "descriptor_name": "Satellite Imagery",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002947",
-          "descriptor_name": "Cities",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D007091",
-          "descriptor_name": "Image Processing, Computer-Assisted",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D003889",
-          "descriptor_name": "Desert Climate",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
         },
         {
           "descriptor_ui": "D058998",
@@ -10600,8 +10613,8 @@
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
+          "descriptor_ui": "D058998",
+          "descriptor_name": "Remote Sensing Technology",
           "qualifier_ui": "Q000379",
           "qualifier_name": "methods",
           "is_major_topic": true
@@ -10614,22 +10627,15 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D002947",
-          "descriptor_name": "Cities",
+          "descriptor_ui": "D063809",
+          "descriptor_name": "Satellite Imagery",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D007091",
-          "descriptor_name": "Image Processing, Computer-Assisted",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D003889",
-          "descriptor_name": "Desert Climate",
+          "descriptor_ui": "D063809",
+          "descriptor_name": "Satellite Imagery",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -10704,9 +10710,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "id": "https://metadata.un.org/sdg/11",
+          "score": 0.8500000238418579,
           "display_name": "Sustainable cities and communities",
-          "score": 0.8500000238418579
+          "id": "https://metadata.un.org/sdg/11"
         }
       ],
       "awards": [],
@@ -11179,7 +11185,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {

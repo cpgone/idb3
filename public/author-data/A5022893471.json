@@ -9,11 +9,11 @@
       "Tantardini, Christian"
     ],
     "works_count": 84,
-    "cited_by_count": 890,
+    "cited_by_count": 893,
     "summary_stats": {
-      "2yr_mean_citedness": 2.0294117647058822,
+      "2yr_mean_citedness": 2.0588235294117645,
       "h_index": 15,
-      "i10_index": 24
+      "i10_index": 25
     },
     "ids": {
       "openalex": "https://openalex.org/A5022893471",
@@ -511,7 +511,7 @@
         "year": 2020,
         "works_count": 3,
         "oa_works_count": 1,
-        "cited_by_count": 104
+        "cited_by_count": 105
       },
       {
         "year": 2021,
@@ -523,7 +523,7 @@
         "year": 2022,
         "works_count": 6,
         "oa_works_count": 6,
-        "cited_by_count": 84
+        "cited_by_count": 85
       },
       {
         "year": 2023,
@@ -535,7 +535,7 @@
         "year": 2024,
         "works_count": 13,
         "oa_works_count": 12,
-        "cited_by_count": 58
+        "cited_by_count": 59
       },
       {
         "year": 2025,
@@ -560,7 +560,7 @@
     },
     "block_key": "c tantardini",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5022893471",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2017-10-06"
   },
   "works": [
@@ -737,7 +737,7 @@
       "has_fulltext": true,
       "cited_by_count": 353,
       "citation_normalized_percentile": {
-        "value": 0.99888216,
+        "value": 0.99888219,
         "is_in_top_1_percent": true,
         "is_in_top_10_percent": true
       },
@@ -944,18 +944,21 @@
           "landing_page_url": "https://doaj.org/article/be4bf4705d6b473e847bc58fa19deed2",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -1058,8 +1061,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3142449123.pdf",
@@ -1184,7 +1187,7 @@
           "cited_by_count": 23
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -1357,7 +1360,7 @@
       "has_fulltext": false,
       "cited_by_count": 42,
       "citation_normalized_percentile": {
-        "value": 0.86597468,
+        "value": 0.86598246,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -1540,18 +1543,21 @@
           "landing_page_url": "https://doaj.org/article/68a7e47e0f0541a9a1b65c4b8b6f2ad7",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -1601,8 +1607,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4230203047.pdf",
@@ -1649,7 +1655,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -2415,8 +2421,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 77,
@@ -3156,19 +3162,19 @@
       "countries_distinct_count": 3,
       "institutions_distinct_count": 5,
       "corresponding_author_ids": [
-        "https://openalex.org/A5032037959",
-        "https://openalex.org/A5022893471"
+        "https://openalex.org/A5022893471",
+        "https://openalex.org/A5032037959"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I125989756",
         "https://openalex.org/I102134673",
+        "https://openalex.org/I125989756",
         "https://openalex.org/I4210156028"
       ],
       "apc_list": null,
       "apc_paid": null,
       "fwci": 2.80123361,
       "has_fulltext": false,
-      "cited_by_count": 29,
+      "cited_by_count": 30,
       "citation_normalized_percentile": {
         "value": 0.89609459,
         "is_in_top_1_percent": false,
@@ -3531,8 +3537,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 65,
@@ -3861,7 +3867,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -3884,7 +3890,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -4230,7 +4236,7 @@
       "has_fulltext": true,
       "cited_by_count": 23,
       "citation_normalized_percentile": {
-        "value": 0.8915447,
+        "value": 0.89103998,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -4540,21 +4546,24 @@
           "landing_page_url": "https://doaj.org/article/7a56fdc1b6f84dafbbf837586c72bb70",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -4628,9 +4637,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Peace, Justice and strong institutions",
           "score": 0.6800000071525574,
-          "id": "https://metadata.un.org/sdg/16",
-          "display_name": "Peace, Justice and strong institutions"
+          "id": "https://metadata.un.org/sdg/16"
         }
       ],
       "awards": [
@@ -4680,8 +4689,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4388632688.pdf"
@@ -4768,7 +4777,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -5594,9 +5603,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "score": 0.4699999988079071,
-          "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [
@@ -5660,8 +5669,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 56,
@@ -7094,8 +7103,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 58,
@@ -7840,6 +7849,1284 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
+      "id": "https://openalex.org/W4229369860",
+      "doi": "https://doi.org/10.3390/ma15093347",
+      "title": "GIPAW Pseudopotentials of d Elements for Solid-State NMR",
+      "display_name": "GIPAW Pseudopotentials of d Elements for Solid-State NMR",
+      "publication_year": 2022,
+      "publication_date": "2022-05-06",
+      "ids": {
+        "openalex": "https://openalex.org/W4229369860",
+        "doi": "https://doi.org/10.3390/ma15093347",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/35591680"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.3390/ma15093347",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/ma15093347",
+        "pdf_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
+        "source": {
+          "id": "https://openalex.org/S18714766",
+          "display_name": "Materials",
+          "issn_l": "1996-1944",
+          "issn": [
+            "1996-1944"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Materials",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5022893471",
+            "display_name": "Christian Tantardini",
+            "orcid": "https://orcid.org/0000-0002-2412-9859"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I78037679",
+              "display_name": "UiT The Arctic University of Norway",
+              "ror": "https://ror.org/00wge5k78",
+              "country_code": "NO",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78037679"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210156028",
+              "display_name": "Institute of Solid State Chemistry and Mechanochemistry",
+              "ror": "https://ror.org/057hsm867",
+              "country_code": "RU",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1313323035",
+                "https://openalex.org/I4210145551",
+                "https://openalex.org/I4210156028"
+              ]
+            }
+          ],
+          "countries": [
+            "NO",
+            "RU"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Christian Tantardini",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, UiT The Arctic University of Norway, P.O. Box 6050 Langnes, N-9037 Tromsø, Norway",
+            "Institute of Solid State Chemistry and Mechanochemistry SB RAS, 630128 Novosibirsk, Russia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, UiT The Arctic University of Norway, P.O. Box 6050 Langnes, N-9037 Tromsø, Norway",
+              "institution_ids": [
+                "https://openalex.org/I78037679"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Solid State Chemistry and Mechanochemistry SB RAS, 630128 Novosibirsk, Russia",
+              "institution_ids": [
+                "https://openalex.org/I4210156028"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5032037959",
+            "display_name": "Alexander G. Kvashnin",
+            "orcid": "https://orcid.org/0000-0002-0718-6691"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I125989756",
+              "display_name": "Skolkovo Institute of Science and Technology",
+              "ror": "https://ror.org/03f9nc143",
+              "country_code": "RU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I125989756"
+              ]
+            }
+          ],
+          "countries": [
+            "RU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Alexander G. Kvashnin",
+          "raw_affiliation_strings": [
+            "Skolkovo Institute of Science and Technology, Bolshoy Boulevard 30, bld. 1, 121205 Moscow, Russia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Skolkovo Institute of Science and Technology, Bolshoy Boulevard 30, bld. 1, 121205 Moscow, Russia",
+              "institution_ids": [
+                "https://openalex.org/I125989756"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5006123131",
+            "display_name": "Davide Ceresoli",
+            "orcid": "https://orcid.org/0000-0002-9831-0773"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I189158943",
+              "display_name": "University of Milan",
+              "ror": "https://ror.org/00wjc7c48",
+              "country_code": "IT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I189158943"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Davide Ceresoli",
+          "raw_affiliation_strings": [
+            "CNR-SCITEC, c/o Dipartimento di Chimica, Università degli Studi di Milano, Via Golgi 19, 20133 Milano, Italy"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "CNR-SCITEC, c/o Dipartimento di Chimica, Università degli Studi di Milano, Via Golgi 19, 20133 Milano, Italy",
+              "institution_ids": [
+                "https://openalex.org/I189158943"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 3,
+      "institutions_distinct_count": 3,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5006123131",
+        "https://openalex.org/A5022893471"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I189158943",
+        "https://openalex.org/I4210156028",
+        "https://openalex.org/I78037679"
+      ],
+      "apc_list": {
+        "value": 2300,
+        "currency": "CHF",
+        "value_usd": 2490
+      },
+      "apc_paid": {
+        "value": 2300,
+        "currency": "CHF",
+        "value_usd": 2490
+      },
+      "fwci": 1.75235579,
+      "has_fulltext": false,
+      "cited_by_count": 13,
+      "citation_normalized_percentile": {
+        "value": 0.77640214,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 89,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "15",
+        "issue": "9",
+        "first_page": "3347",
+        "last_page": "3347"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11809",
+        "display_name": "Advanced NMR Techniques and Applications",
+        "score": 1,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1607",
+          "display_name": "Spectroscopy"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/16",
+          "display_name": "Chemistry"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11809",
+          "display_name": "Advanced NMR Techniques and Applications",
+          "score": 1,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1607",
+            "display_name": "Spectroscopy"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/16",
+            "display_name": "Chemistry"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11878",
+          "display_name": "Solid-state spectroscopy and crystallography",
+          "score": 0.9998999834060669,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2505",
+            "display_name": "Materials Chemistry"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/25",
+            "display_name": "Materials Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12762",
+          "display_name": "Crystallography and Radiation Phenomena",
+          "score": 0.9980999827384949,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3104",
+            "display_name": "Condensed Matter Physics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/density-functional-theory",
+          "display_name": "Density functional theory",
+          "score": 0.6888107061386108
+        },
+        {
+          "id": "https://openalex.org/keywords/solid-state-nuclear-magnetic-resonance",
+          "display_name": "Solid-state nuclear magnetic resonance",
+          "score": 0.6393290758132935
+        },
+        {
+          "id": "https://openalex.org/keywords/tetramethylsilane",
+          "display_name": "Tetramethylsilane",
+          "score": 0.5337017178535461
+        },
+        {
+          "id": "https://openalex.org/keywords/chemical-shift",
+          "display_name": "Chemical shift",
+          "score": 0.5101280808448792
+        },
+        {
+          "id": "https://openalex.org/keywords/chemistry",
+          "display_name": "Chemistry",
+          "score": 0.49460479617118835
+        },
+        {
+          "id": "https://openalex.org/keywords/spectral-line",
+          "display_name": "Spectral line",
+          "score": 0.4893466830253601
+        },
+        {
+          "id": "https://openalex.org/keywords/coupling-constant",
+          "display_name": "Coupling constant",
+          "score": 0.4700652062892914
+        },
+        {
+          "id": "https://openalex.org/keywords/resonance",
+          "display_name": "Resonance (particle physics)",
+          "score": 0.4406636655330658
+        },
+        {
+          "id": "https://openalex.org/keywords/nmr-spectra-database",
+          "display_name": "NMR spectra database",
+          "score": 0.4290875494480133
+        },
+        {
+          "id": "https://openalex.org/keywords/nuclear-magnetic-resonance",
+          "display_name": "Nuclear magnetic resonance",
+          "score": 0.3902777135372162
+        },
+        {
+          "id": "https://openalex.org/keywords/computational-chemistry",
+          "display_name": "Computational chemistry",
+          "score": 0.3451438546180725
+        },
+        {
+          "id": "https://openalex.org/keywords/condensed-matter-physics",
+          "display_name": "Condensed matter physics",
+          "score": 0.32304903864860535
+        },
+        {
+          "id": "https://openalex.org/keywords/atomic-physics",
+          "display_name": "Atomic physics",
+          "score": 0.24198219180107117
+        },
+        {
+          "id": "https://openalex.org/keywords/physics",
+          "display_name": "Physics",
+          "score": 0.22802001237869263
+        },
+        {
+          "id": "https://openalex.org/keywords/physical-chemistry",
+          "display_name": "Physical chemistry",
+          "score": 0.18916380405426025
+        },
+        {
+          "id": "https://openalex.org/keywords/quantum-mechanics",
+          "display_name": "Quantum mechanics",
+          "score": 0.17332303524017334
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C152365726",
+          "wikidata": "https://www.wikidata.org/wiki/Q1048589",
+          "display_name": "Density functional theory",
+          "level": 2,
+          "score": 0.6888107061386108
+        },
+        {
+          "id": "https://openalex.org/C153202636",
+          "wikidata": "https://www.wikidata.org/wiki/Q7557802",
+          "display_name": "Solid-state nuclear magnetic resonance",
+          "level": 2,
+          "score": 0.6393290758132935
+        },
+        {
+          "id": "https://openalex.org/C2778200147",
+          "wikidata": "https://www.wikidata.org/wiki/Q415329",
+          "display_name": "Tetramethylsilane",
+          "level": 2,
+          "score": 0.5337017178535461
+        },
+        {
+          "id": "https://openalex.org/C111429119",
+          "wikidata": "https://www.wikidata.org/wiki/Q899127",
+          "display_name": "Chemical shift",
+          "level": 2,
+          "score": 0.5101280808448792
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0.49460479617118835
+        },
+        {
+          "id": "https://openalex.org/C4839761",
+          "wikidata": "https://www.wikidata.org/wiki/Q212111",
+          "display_name": "Spectral line",
+          "level": 2,
+          "score": 0.4893466830253601
+        },
+        {
+          "id": "https://openalex.org/C183276030",
+          "wikidata": "https://www.wikidata.org/wiki/Q1193095",
+          "display_name": "Coupling constant",
+          "level": 2,
+          "score": 0.4700652062892914
+        },
+        {
+          "id": "https://openalex.org/C139210041",
+          "wikidata": "https://www.wikidata.org/wiki/Q2145840",
+          "display_name": "Resonance (particle physics)",
+          "level": 2,
+          "score": 0.4406636655330658
+        },
+        {
+          "id": "https://openalex.org/C67787023",
+          "wikidata": "https://www.wikidata.org/wiki/Q6954755",
+          "display_name": "NMR spectra database",
+          "level": 3,
+          "score": 0.4290875494480133
+        },
+        {
+          "id": "https://openalex.org/C46141821",
+          "wikidata": "https://www.wikidata.org/wiki/Q209402",
+          "display_name": "Nuclear magnetic resonance",
+          "level": 1,
+          "score": 0.3902777135372162
+        },
+        {
+          "id": "https://openalex.org/C147597530",
+          "wikidata": "https://www.wikidata.org/wiki/Q369472",
+          "display_name": "Computational chemistry",
+          "level": 1,
+          "score": 0.3451438546180725
+        },
+        {
+          "id": "https://openalex.org/C26873012",
+          "wikidata": "https://www.wikidata.org/wiki/Q214781",
+          "display_name": "Condensed matter physics",
+          "level": 1,
+          "score": 0.32304903864860535
+        },
+        {
+          "id": "https://openalex.org/C184779094",
+          "wikidata": "https://www.wikidata.org/wiki/Q26383",
+          "display_name": "Atomic physics",
+          "level": 1,
+          "score": 0.24198219180107117
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.22802001237869263
+        },
+        {
+          "id": "https://openalex.org/C147789679",
+          "wikidata": "https://www.wikidata.org/wiki/Q11372",
+          "display_name": "Physical chemistry",
+          "level": 1,
+          "score": 0.18916380405426025
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.17332303524017334
+        }
+      ],
+      "mesh": [],
+      "locations_count": 6,
+      "locations": [
+        {
+          "id": "doi:10.3390/ma15093347",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.3390/ma15093347",
+          "pdf_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
+          "source": {
+            "id": "https://openalex.org/S18714766",
+            "display_name": "Materials",
+            "issn_l": "1996-1944",
+            "issn": [
+              "1996-1944"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310310987",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310310987"
+            ],
+            "host_organization_lineage_names": [
+              "Multidisciplinary Digital Publishing Institute"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Materials",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:35591680",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35591680",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Materials (Basel, Switzerland)",
+          "raw_type": null
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:fcd92459d43745afabc3a901862e7542",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/fcd92459d43745afabc3a901862e7542",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Materials, Vol 15, Iss 9, p 3347 (2022)",
+          "raw_type": "article"
+        },
+        {
+          "id": "pmh:oai:mdpi.com:/1996-1944/15/9/3347/",
+          "is_oa": true,
+          "landing_page_url": "https://dx.doi.org/10.3390/ma15093347",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400947",
+            "display_name": "MDPI (MDPI AG)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I4210097602",
+            "host_organization_name": "Multidisciplinary Digital Publishing Institute (Switzerland)",
+            "host_organization_lineage": [
+              "https://openalex.org/I4210097602"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Materials; Volume 15; Issue 9; Pages: 3347",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:munin.uit.no:10037/27616",
+          "is_oa": true,
+          "landing_page_url": "https://hdl.handle.net/10037/27616",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400066",
+            "display_name": "Munin Open Research Archive (The Arctic University of Norway)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I78037679",
+            "host_organization_name": "UiT The Arctic University of Norway",
+            "host_organization_lineage": [
+              "https://openalex.org/I78037679"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "info:eu-repo/semantics/article"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:9101793",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9101793",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Materials (Basel)",
+          "raw_type": "Text"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.3390/ma15093347",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3390/ma15093347",
+        "pdf_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
+        "source": {
+          "id": "https://openalex.org/S18714766",
+          "display_name": "Materials",
+          "issn_l": "1996-1944",
+          "issn": [
+            "1996-1944"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310310987",
+          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310310987"
+          ],
+          "host_organization_lineage_names": [
+            "Multidisciplinary Digital Publishing Institute"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Materials",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4229369860.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4229369860.grobid-xml"
+      },
+      "referenced_works_count": 47,
+      "referenced_works": [
+        "https://openalex.org/W17198541",
+        "https://openalex.org/W1968426044",
+        "https://openalex.org/W1968545719",
+        "https://openalex.org/W1970127494",
+        "https://openalex.org/W1973848482",
+        "https://openalex.org/W1979544533",
+        "https://openalex.org/W1981619846",
+        "https://openalex.org/W1988982985",
+        "https://openalex.org/W1992753351",
+        "https://openalex.org/W1992836438",
+        "https://openalex.org/W1992985800",
+        "https://openalex.org/W1993837665",
+        "https://openalex.org/W1995143789",
+        "https://openalex.org/W1997639109",
+        "https://openalex.org/W1999954610",
+        "https://openalex.org/W2001847706",
+        "https://openalex.org/W2005136695",
+        "https://openalex.org/W2007873662",
+        "https://openalex.org/W2011327487",
+        "https://openalex.org/W2018928846",
+        "https://openalex.org/W2023390323",
+        "https://openalex.org/W2026195773",
+        "https://openalex.org/W2030348557",
+        "https://openalex.org/W2030582590",
+        "https://openalex.org/W2036458812",
+        "https://openalex.org/W2038210983",
+        "https://openalex.org/W2040603228",
+        "https://openalex.org/W2043691039",
+        "https://openalex.org/W2044562367",
+        "https://openalex.org/W2048184926",
+        "https://openalex.org/W2066597276",
+        "https://openalex.org/W2079105963",
+        "https://openalex.org/W2079677000",
+        "https://openalex.org/W2079823323",
+        "https://openalex.org/W2080148979",
+        "https://openalex.org/W2083664986",
+        "https://openalex.org/W2087585288",
+        "https://openalex.org/W2102807619",
+        "https://openalex.org/W2103111465",
+        "https://openalex.org/W2120145199",
+        "https://openalex.org/W2805461540",
+        "https://openalex.org/W2922259858",
+        "https://openalex.org/W3016932526",
+        "https://openalex.org/W3100511033",
+        "https://openalex.org/W3155612668",
+        "https://openalex.org/W4229766111",
+        "https://openalex.org/W4235384963"
+      ],
+      "related_works": [
+        "https://openalex.org/W4293251582",
+        "https://openalex.org/W2462809298",
+        "https://openalex.org/W2475752952",
+        "https://openalex.org/W3048423974",
+        "https://openalex.org/W3044197008",
+        "https://openalex.org/W2052054428",
+        "https://openalex.org/W2029552166",
+        "https://openalex.org/W2024160064",
+        "https://openalex.org/W1969756153",
+        "https://openalex.org/W2075993589"
+      ],
+      "abstract_inverted_index": {
+        "21": [
+          114
+        ],
+        "Computational": [
+          0
+        ],
+        "methods": [
+          1
+        ],
+        "are": [
+          2
+        ],
+        "increasingly": [
+          3
+        ],
+        "used": [
+          4
+        ],
+        "to": [
+          5,
+          25,
+          53,
+          75,
+          88,
+          141,
+          160,
+          168,
+          170,
+          181,
+          187,
+          192
+        ],
+        "support": [
+          6
+        ],
+        "interpreting,": [
+          7
+        ],
+        "assigning": [
+          8
+        ],
+        "and": [
+          9,
+          32,
+          56,
+          117,
+          129,
+          152
+        ],
+        "predicting": [
+          10
+        ],
+        "the": [
+          11,
+          44,
+          72,
+          81,
+          101,
+          138,
+          143,
+          155,
+          172,
+          179
+        ],
+        "solid-state": [
+          12,
+          35
+        ],
+        "nuclear": [
+          13,
+          49,
+          66,
+          90,
+          148,
+          199
+        ],
+        "resonance": [
+          14,
+          50,
+          67,
+          91,
+          150,
+          201
+        ],
+        "magnetic": [
+          15,
+          51,
+          68,
+          92,
+          149,
+          200
+        ],
+        "spectra": [
+          16,
+          52
+        ],
+        "of": [
+          17,
+          46,
+          113,
+          147
+        ],
+        "materials.": [
+          18
+        ],
+        "Currently,": [
+          19
+        ],
+        "density": [
+          20,
+          40
+        ],
+        "functional": [
+          21,
+          41
+        ],
+        "theory": [
+          22,
+          42
+        ],
+        "is": [
+          23
+        ],
+        "seen": [
+          24
+        ],
+        "achieve": [
+          26
+        ],
+        "a": [
+          27,
+          78,
+          107,
+          189
+        ],
+        "good": [
+          28
+        ],
+        "balance": [
+          29
+        ],
+        "between": [
+          30
+        ],
+        "efficiency": [
+          31
+        ],
+        "accuracy": [
+          33
+        ],
+        "in": [
+          34,
+          48,
+          97,
+          100
+        ],
+        "chemistry.": [
+          36
+        ],
+        "To": [
+          37,
+          70
+        ],
+        "be": [
+          38,
+          136
+        ],
+        "specific,": [
+          39
+        ],
+        "allows": [
+          43
+        ],
+        "assignment": [
+          45
+        ],
+        "signals": [
+          47,
+          63
+        ],
+        "specific": [
+          54
+        ],
+        "sites": [
+          55
+        ],
+        "can": [
+          57,
+          135
+        ],
+        "help": [
+          58
+        ],
+        "identify": [
+          59
+        ],
+        "overlapped": [
+          60
+        ],
+        "or": [
+          61,
+          123,
+          194
+        ],
+        "missing": [
+          62
+        ],
+        "from": [
+          64,
+          184
+        ],
+        "experimental": [
+          65
+        ],
+        "spectra.": [
+          69,
+          202
+        ],
+        "avoid": [
+          71
+        ],
+        "difficulties": [
+          73
+        ],
+        "correlated": [
+          74
+        ],
+        "all-electron": [
+          76
+        ],
+        "calculations,": [
+          77,
+          186
+        ],
+        "gauge": [
+          79,
+          108
+        ],
+        "including": [
+          80,
+          109
+        ],
+        "projected": [
+          82,
+          110
+        ],
+        "augmented": [
+          83,
+          111
+        ],
+        "wave": [
+          84
+        ],
+        "method": [
+          85
+        ],
+        "was": [
+          86
+        ],
+        "introduced": [
+          87
+        ],
+        "calculate": [
+          89,
+          171
+        ],
+        "parameters": [
+          93
+        ],
+        "with": [
+          94,
+          166
+        ],
+        "great": [
+          95
+        ],
+        "success": [
+          96
+        ],
+        "organic": [
+          98
+        ],
+        "crystals": [
+          99
+        ],
+        "last": [
+          102
+        ],
+        "decades.": [
+          103
+        ],
+        "Thus,": [
+          104
+        ],
+        "we": [
+          105
+        ],
+        "developed": [
+          106
+        ],
+        "pseudopotentials": [
+          112
+        ],
+        "d": [
+          115
+        ],
+        "elements": [
+          116
+        ],
+        "tested": [
+          118
+        ],
+        "them": [
+          119
+        ],
+        "on,": [
+          120
+        ],
+        "respectively,": [
+          121
+        ],
+        "oxides": [
+          122
+        ],
+        "nitrides": [
+          124
+        ],
+        "(semiconductors),": [
+          125
+        ],
+        "calculating": [
+          126
+        ],
+        "chemical": [
+          127,
+          173
+        ],
+        "shift": [
+          128
+        ],
+        "quadrupolar": [
+          130
+        ],
+        "coupling": [
+          131
+        ],
+        "constant.": [
+          132
+        ],
+        "This": [
+          133
+        ],
+        "work": [
+          134,
+          177
+        ],
+        "considered": [
+          137
+        ],
+        "first": [
+          139
+        ],
+        "step": [
+          140
+        ],
+        "improving": [
+          142
+        ],
+        "ab": [
+          144
+        ],
+        "initio": [
+          145
+        ],
+        "prediction": [
+          146
+        ],
+        "parameters,": [
+          151
+        ],
+        "leaves": [
+          153
+        ],
+        "open": [
+          154
+        ],
+        "possibility": [
+          156,
+          180
+        ],
+        "for": [
+          157
+        ],
+        "inorganic": [
+          158
+        ],
+        "compounds": [
+          159
+        ],
+        "constitute": [
+          161
+        ],
+        "an": [
+          162
+        ],
+        "alternative": [
+          163
+        ],
+        "standard": [
+          164
+        ],
+        "compound,": [
+          165
+        ],
+        "respect": [
+          167
+        ],
+        "tetramethylsilane,": [
+          169
+        ],
+        "shift.": [
+          174
+        ],
+        "Furthermore,": [
+          175
+        ],
+        "this": [
+          176
+        ],
+        "represents": [
+          178
+        ],
+        "obtain": [
+          182
+        ],
+        "results": [
+          183
+        ],
+        "first-principles": [
+          185
+        ],
+        "train": [
+          188
+        ],
+        "machine-learning": [
+          190
+        ],
+        "model": [
+          191
+        ],
+        "solve": [
+          193
+        ],
+        "refine": [
+          195
+        ],
+        "structures": [
+          196
+        ],
+        "using": [
+          197
+        ],
+        "predicted": [
+          198
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 5
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 1
+        }
+      ],
+      "updated_date": "2026-02-05T00:54:17.221276",
+      "created_date": "2022-05-10T00:00:00"
+    },
+    {
       "id": "https://openalex.org/W4401362622",
       "doi": "https://doi.org/10.1016/j.jocs.2024.102402",
       "title": "Material hardness descriptor derived by symbolic regression",
@@ -8224,11 +9511,11 @@
         "currency": "USD",
         "value_usd": 2810
       },
-      "fwci": 1.52409758,
+      "fwci": 1.69344175,
       "has_fulltext": true,
-      "cited_by_count": 9,
+      "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.81816081,
+        "value": 0.83695037,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -8618,9 +9905,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "id": "https://metadata.un.org/sdg/9"
         }
       ],
       "awards": [
@@ -8657,8 +9944,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4401362622.pdf",
@@ -8720,7 +10007,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -8731,7 +10018,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -8801,16 +10088,6 @@
           },
           "institutions": [
             {
-              "id": "https://openalex.org/I153845743",
-              "display_name": "Moscow Institute of Physics and Technology",
-              "ror": "https://ror.org/00v0z9322",
-              "country_code": "RU",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I153845743"
-              ]
-            },
-            {
               "id": "https://openalex.org/I125989756",
               "display_name": "Skolkovo Institute of Science and Technology",
               "ror": "https://ror.org/03f9nc143",
@@ -8819,12 +10096,22 @@
               "lineage": [
                 "https://openalex.org/I125989756"
               ]
+            },
+            {
+              "id": "https://openalex.org/I153845743",
+              "display_name": "Moscow Institute of Physics and Technology",
+              "ror": "https://ror.org/00v0z9322",
+              "country_code": "RU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I153845743"
+              ]
             }
           ],
           "countries": [
             "RU"
           ],
-          "is_corresponding": true,
+          "is_corresponding": false,
           "raw_author_name": "Alexey S. Kotykhov",
           "raw_affiliation_strings": [
             "Moscow Institute of Physics and Technology, 9 Institutskiy per., Dolgoprudny, Moscow Region, 141701, Russian Federation",
@@ -8938,16 +10225,6 @@
               ]
             },
             {
-              "id": "https://openalex.org/I78037679",
-              "display_name": "UiT The Arctic University of Norway",
-              "ror": "https://ror.org/00wge5k78",
-              "country_code": "NO",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I78037679"
-              ]
-            },
-            {
               "id": "https://openalex.org/I74775410",
               "display_name": "Rice University",
               "ror": "https://ror.org/008zs3103",
@@ -8956,6 +10233,16 @@
               "lineage": [
                 "https://openalex.org/I74775410"
               ]
+            },
+            {
+              "id": "https://openalex.org/I78037679",
+              "display_name": "UiT The Arctic University of Norway",
+              "ror": "https://ror.org/00wge5k78",
+              "country_code": "NO",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78037679"
+              ]
             }
           ],
           "countries": [
@@ -8963,11 +10250,11 @@
             "RU",
             "US"
           ],
-          "is_corresponding": false,
+          "is_corresponding": true,
           "raw_author_name": "Christian Tantardini",
           "raw_affiliation_strings": [
             "Department of Materials Science and NanoEngineering, Rice University, Houston, TX 77005, United States of America",
-            "Hylleraas center, Department of Chemistry, UiT The Arctic University of Norway, PO Box 6050 Langnes, N-9037 Troms, Norway",
+            "Hylleraas center, Department of Chemistry, UiT The Arctic University of Norway, PO Box 6050 Langnes, N-9037 Tromsø, Norway",
             "Institute of Solid State Chemistry and Mechanochemistry SB RAS, ul. Kutateladze 18, 630128, Novosibirsk, Russian Federation"
           ],
           "affiliations": [
@@ -8978,7 +10265,7 @@
               ]
             },
             {
-              "raw_affiliation_string": "Hylleraas center, Department of Chemistry, UiT The Arctic University of Norway, PO Box 6050 Langnes, N-9037 Troms, Norway",
+              "raw_affiliation_string": "Hylleraas center, Department of Chemistry, UiT The Arctic University of Norway, PO Box 6050 Langnes, N-9037 Tromsø, Norway",
               "institution_ids": [
                 "https://openalex.org/I78037679"
               ]
@@ -9072,6 +10359,16 @@
           },
           "institutions": [
             {
+              "id": "https://openalex.org/I125989756",
+              "display_name": "Skolkovo Institute of Science and Technology",
+              "ror": "https://ror.org/03f9nc143",
+              "country_code": "RU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I125989756"
+              ]
+            },
+            {
               "id": "https://openalex.org/I153845743",
               "display_name": "Moscow Institute of Physics and Technology",
               "ror": "https://ror.org/00v0z9322",
@@ -9092,22 +10389,12 @@
                 "https://openalex.org/I4210145551",
                 "https://openalex.org/I4210147035"
               ]
-            },
-            {
-              "id": "https://openalex.org/I125989756",
-              "display_name": "Skolkovo Institute of Science and Technology",
-              "ror": "https://ror.org/03f9nc143",
-              "country_code": "RU",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I125989756"
-              ]
             }
           ],
           "countries": [
             "RU"
           ],
-          "is_corresponding": false,
+          "is_corresponding": true,
           "raw_author_name": "Ivan S. Novikov",
           "raw_affiliation_strings": [
             "Emanuel Institute of Biochemical Physics RAS, 4 Kosygin Street, Moscow, 119334, Russian Federation",
@@ -9140,11 +10427,16 @@
       "countries_distinct_count": 5,
       "institutions_distinct_count": 7,
       "corresponding_author_ids": [
-        "https://openalex.org/A5093253370"
+        "https://openalex.org/A5010914066",
+        "https://openalex.org/A5022893471"
       ],
       "corresponding_institution_ids": [
+        "https://openalex.org/I125989756",
         "https://openalex.org/I153845743",
-        "https://openalex.org/I125989756"
+        "https://openalex.org/I4210147035",
+        "https://openalex.org/I4210156028",
+        "https://openalex.org/I74775410",
+        "https://openalex.org/I78037679"
       ],
       "apc_list": {
         "value": 3190,
@@ -9160,7 +10452,7 @@
       "has_fulltext": true,
       "cited_by_count": 7,
       "citation_normalized_percentile": {
-        "value": 0.75699367,
+        "value": 0.75552243,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -9608,9 +10900,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Peace, Justice and strong institutions",
           "score": 0.6499999761581421,
-          "id": "https://metadata.un.org/sdg/16",
-          "display_name": "Peace, Justice and strong institutions"
+          "id": "https://metadata.un.org/sdg/16"
         }
       ],
       "awards": [],
@@ -9632,8 +10924,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4396913258.pdf",
@@ -9700,7 +10992,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -10063,10 +11355,10 @@
         "https://openalex.org/A5073176584"
       ],
       "corresponding_institution_ids": [
+        "https://openalex.org/I4210130123",
         "https://openalex.org/I4210156028",
-        "https://openalex.org/I78037679",
         "https://openalex.org/I74775410",
-        "https://openalex.org/I4210130123"
+        "https://openalex.org/I78037679"
       ],
       "apc_list": {
         "value": 3670,
@@ -10082,7 +11374,7 @@
       "has_fulltext": false,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.55781883,
+        "value": 0.557165,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -10436,8 +11728,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 106,
@@ -10561,7 +11853,586 @@
         "https://openalex.org/W1997699652",
         "https://openalex.org/W2018231156"
       ],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "In": [
+          0,
+          92,
+          108
+        ],
+        "the": [
+          1,
+          15,
+          34,
+          173,
+          195,
+          202,
+          217,
+          230
+        ],
+        "last": [
+          2
+        ],
+        "decades,": [
+          3
+        ],
+        "material": [
+          4
+        ],
+        "discovery": [
+          5
+        ],
+        "has": [
+          6,
+          26
+        ],
+        "been": [
+          7,
+          66
+        ],
+        "a": [
+          8,
+          113,
+          192
+        ],
+        "very": [
+          9
+        ],
+        "active": [
+          10
+        ],
+        "research": [
+          11
+        ],
+        "field": [
+          12
+        ],
+        "driven": [
+          13
+        ],
+        "by": [
+          14,
+          147,
+          161
+        ],
+        "need": [
+          16
+        ],
+        "to": [
+          17,
+          60,
+          96,
+          185,
+          194
+        ],
+        "find": [
+          18
+        ],
+        "new": [
+          19,
+          53
+        ],
+        "materials": [
+          20,
+          29
+        ],
+        "for": [
+          21,
+          124,
+          130,
+          152,
+          201,
+          228,
+          235
+        ],
+        "many": [
+          22
+        ],
+        "different": [
+          23,
+          132
+        ],
+        "applications.": [
+          24,
+          51
+        ],
+        "This": [
+          25,
+          189
+        ],
+        "also": [
+          27,
+          86,
+          233
+        ],
+        "included": [
+          28
+        ],
+        "with": [
+          30,
+          100,
+          155,
+          158,
+          172
+        ],
+        "heavy": [
+          31,
+          54
+        ],
+        "elements,": [
+          32,
+          129
+        ],
+        "beyond": [
+          33,
+          56
+        ],
+        "stable": [
+          35
+        ],
+        "isotopes": [
+          36
+        ],
+        "of": [
+          37,
+          72,
+          80,
+          88,
+          115,
+          142,
+          150
+        ],
+        "lead,": [
+          38
+        ],
+        "as": [
+          39,
+          61
+        ],
+        "most": [
+          40
+        ],
+        "actinides": [
+          41,
+          126
+        ],
+        "exhibit": [
+          42
+        ],
+        "unique": [
+          43
+        ],
+        "properties": [
+          44
+        ],
+        "that": [
+          45
+        ],
+        "make": [
+          46
+        ],
+        "them": [
+          47
+        ],
+        "useful": [
+          48
+        ],
+        "in": [
+          49,
+          94,
+          198,
+          221
+        ],
+        "various": [
+          50
+        ],
+        "Furthermore,": [
+          52
+        ],
+        "elements": [
+          55,
+          63
+        ],
+        "actinides,": [
+          57
+        ],
+        "collectively": [
+          58
+        ],
+        "referred": [
+          59
+        ],
+        "super-heavy": [
+          62,
+          128
+        ],
+        "(SHEs),": [
+          64
+        ],
+        "have": [
+          65
+        ],
+        "synthesized,": [
+          67
+        ],
+        "filling": [
+          68
+        ],
+        "previously": [
+          69
+        ],
+        "empty": [
+          70
+        ],
+        "space": [
+          71
+        ],
+        "Mendeleev": [
+          73
+        ],
+        "periodic": [
+          74,
+          204
+        ],
+        "table.": [
+          75
+        ],
+        "Their": [
+          76
+        ],
+        "chemical": [
+          77
+        ],
+        "bonding": [
+          78
+        ],
+        "behaviour,": [
+          79
+        ],
+        "academic": [
+          81
+        ],
+        "interest": [
+          82
+        ],
+        "at": [
+          83
+        ],
+        "present,": [
+          84
+        ],
+        "would": [
+          85
+        ],
+        "benefit": [
+          87
+        ],
+        "state-of-the-art": [
+          89
+        ],
+        "modelling": [
+          90
+        ],
+        "approaches.": [
+          91
+        ],
+        "particular,": [
+          93
+        ],
+        "order": [
+          95
+        ],
+        "perform": [
+          97
+        ],
+        "first-principles": [
+          98
+        ],
+        "calculations": [
+          99
+        ],
+        "planewave": [
+          101
+        ],
+        "basis": [
+          102
+        ],
+        "sets,": [
+          103
+        ],
+        "one": [
+          104
+        ],
+        "needs": [
+          105
+        ],
+        "corresponding": [
+          106
+        ],
+        "pseudopotentials.": [
+          107,
+          188
+        ],
+        "this": [
+          109
+        ],
+        "work,": [
+          110
+        ],
+        "we": [
+          111
+        ],
+        "present": [
+          112
+        ],
+        "series": [
+          114
+        ],
+        "scalar-": [
+          116
+        ],
+        "and": [
+          117,
+          127,
+          137,
+          180,
+          208,
+          223
+        ],
+        "fully-relativistic": [
+          118
+        ],
+        "optimised": [
+          119
+        ],
+        "norm-conserving": [
+          120
+        ],
+        "Vanderbilt": [
+          121
+        ],
+        "pseudopotentials": [
+          122,
+          200
+        ],
+        "(ONCVPs)": [
+          123
+        ],
+        "thirty-four": [
+          125
+        ],
+        "three": [
+          131
+        ],
+        "exchange-correlation": [
+          133
+        ],
+        "functionals": [
+          134
+        ],
+        "(PBE,": [
+          135
+        ],
+        "PBEsol": [
+          136
+        ],
+        "LDA).": [
+          138
+        ],
+        "The": [
+          139,
+          211
+        ],
+        "scalar-relativistic": [
+          140
+        ],
+        "version": [
+          141
+        ],
+        "these": [
+          143,
+          187
+        ],
+        "ONCVPs": [
+          144
+        ],
+        "is": [
+          145,
+          191
+        ],
+        "tested": [
+          146
+        ],
+        "comparing": [
+          148
+        ],
+        "equations": [
+          149
+        ],
+        "states": [
+          151
+        ],
+        "crystals,": [
+          153
+        ],
+        "obtained": [
+          154,
+          160
+        ],
+        "ABINIT": [
+          156
+        ],
+        "9.6,": [
+          157
+        ],
+        "those": [
+          159
+        ],
+        "allelectron": [
+          162
+        ],
+        "zeroth-order": [
+          163
+        ],
+        "regular": [
+          164
+        ],
+        "approximation": [
+          165
+        ],
+        "(ZORA)": [
+          166
+        ],
+        "calculations,": [
+          167
+        ],
+        "without": [
+          168
+        ],
+        "spin-orbit": [
+          169
+        ],
+        "coupling,": [
+          170
+        ],
+        "performed": [
+          171
+        ],
+        "Amsterdam": [
+          174
+        ],
+        "Modelling": [
+          175
+        ],
+        "Suite": [
+          176
+        ],
+        "BAND": [
+          177
+        ],
+        "code.": [
+          178
+        ],
+        "Δ-Gauge": [
+          179
+        ],
+        "Δ1-Gauge": [
+          181
+        ],
+        "indicators": [
+          182
+        ],
+        "are": [
+          183,
+          206,
+          214
+        ],
+        "used": [
+          184
+        ],
+        "validate": [
+          186
+        ],
+        "work": [
+          190
+        ],
+        "contribution": [
+          193
+        ],
+        "PseudoDojo": [
+          196,
+          218
+        ],
+        "project,": [
+          197
+        ],
+        "which": [
+          199
+        ],
+        "whole": [
+          203
+        ],
+        "table": [
+          205
+        ],
+        "developed": [
+          207
+        ],
+        "systematically": [
+          209
+        ],
+        "tested.": [
+          210
+        ],
+        "pseudopotential": [
+          212
+        ],
+        "files": [
+          213
+        ],
+        "available": [
+          215
+        ],
+        "on": [
+          216
+        ],
+        "web-interface": [
+          219
+        ],
+        "pseudo-dojo.org": [
+          220
+        ],
+        "psp8": [
+          222
+        ],
+        "UPF2": [
+          224
+        ],
+        "formats,": [
+          225
+        ],
+        "both": [
+          226
+        ],
+        "suitable": [
+          227,
+          234
+        ],
+        "ABINIT,": [
+          229
+        ],
+        "latter": [
+          231
+        ],
+        "being": [
+          232
+        ],
+        "Quantum": [
+          236
+        ],
+        "ESPRESSO.": [
+          237
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2026,
@@ -10576,7 +12447,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -11543,8 +13414,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4390603323.pdf",
@@ -12744,8 +14615,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 64,
@@ -13757,16 +15628,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Sustainable cities and communities",
           "score": 0.5099999904632568,
-          "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities"
+          "id": "https://metadata.un.org/sdg/11"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 64,
@@ -15351,8 +17222,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 67,
@@ -16205,7 +18076,7 @@
       "has_fulltext": true,
       "cited_by_count": 22,
       "citation_normalized_percentile": {
-        "value": 0.91342131,
+        "value": 0.91344916,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -16697,8 +18568,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3021669255.pdf",
@@ -16830,7 +18701,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -17736,8 +19607,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 86,
@@ -19065,9 +20936,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "score": 0.6700000166893005,
-          "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action"
+          "id": "https://metadata.un.org/sdg/13"
         }
       ],
       "awards": [
@@ -19092,8 +20963,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4391347866.pdf"
@@ -19805,7 +21676,7 @@
       "has_fulltext": false,
       "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.88681063,
+        "value": 0.88574273,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -20166,21 +22037,24 @@
           "landing_page_url": "https://doaj.org/article/64843c4f016f43108e153bce2f502d16",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -20233,8 +22107,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4404518844.pdf"
@@ -20317,415 +22191,14 @@
         "https://openalex.org/W2158189069",
         "https://openalex.org/W2023694513"
       ],
-      "abstract_inverted_index": {
-        "30": [
-          141
-        ],
-        "3580": [
-          139
-        ],
-        "Abstract": [
-          0
-        ],
-        "The": [
-          1,
-          134,
-          150
-        ],
-        "melting": [
-          2,
-          65,
-          85,
-          128,
-          136,
-          152
-        ],
-        "temperature": [
-          3,
-          66,
-          129,
-          137
-        ],
-        "is": [
-          4
-        ],
-        "a": [
-          5,
-          24,
-          88,
-          163
-        ],
-        "crucial": [
-          6
-        ],
-        "property": [
-          7
-        ],
-        "of": [
-          8,
-          33,
-          74,
-          93,
-          101,
-          107,
-          114,
-          122,
-          126,
-          138,
-          154,
-          160,
-          168,
-          171
-        ],
-        "materials": [
-          9
-        ],
-        "that": [
-          10
-        ],
-        "determines": [
-          11
-        ],
-        "their": [
-          12
-        ],
-        "potential": [
-          13,
-          28
-        ],
-        "applications": [
-          14
-        ],
-        "in": [
-          15,
-          41,
-          79,
-          95,
-          109
-        ],
-        "different": [
-          16
-        ],
-        "industrial": [
-          17
-        ],
-        "fields.": [
-          18
-        ],
-        "In": [
-          19
-        ],
-        "this": [
-          20
-        ],
-        "study,": [
-          21
-        ],
-        "we": [
-          22
-        ],
-        "used": [
-          23
-        ],
-        "deep": [
-          25
-        ],
-        "neural": [
-          26
-        ],
-        "network": [
-          27
-        ],
-        "to": [
-          29,
-          51,
-          62,
-          83,
-          118,
-          144
-        ],
-        "describe": [
-          30
-        ],
-        "the": [
-          31,
-          59,
-          64,
-          96,
-          110,
-          120,
-          123,
-          127,
-          158
-        ],
-        "structure": [
-          32,
-          69
-        ],
-        "high-entropy": [
-          34,
-          155
-        ],
-        "(TiZrTaHfNb)C": [
-          35,
-          145
-        ],
-        "x": [
-          36
-        ],
-        "N": [
-          37,
-          147
-        ],
-        "1−x": [
-          38
-        ],
-        "carbonitrides": [
-          39
-        ],
-        "(HECN)": [
-          40
-        ],
-        "both": [
-          42
-        ],
-        "solid": [
-          43
-        ],
-        "and": [
-          44,
-          54,
-          67,
-          173
-        ],
-        "liquid": [
-          45,
-          112
-        ],
-        "states.": [
-          46
-        ],
-        "This": [
-          47
-        ],
-        "approach": [
-          48
-        ],
-        "allows": [
-          49,
-          116
-        ],
-        "us": [
-          50,
-          117
-        ],
-        "predict": [
-          52
-        ],
-        "heating": [
-          53
-        ],
-        "cooling": [
-          55
-        ],
-        "temperatures": [
-          56
-        ],
-        "depending": [
-          57
-        ],
-        "on": [
-          58
-        ],
-        "nitrogen": [
-          60,
-          80,
-          94,
-          132,
-          161
-        ],
-        "content": [
-          61,
-          81
-        ],
-        "determine": [
-          63
-        ],
-        "analyze": [
-          68
-        ],
-        "changes": [
-          70
-        ],
-        "from": [
-          71
-        ],
-        "atomistic": [
-          72
-        ],
-        "point": [
-          73
-        ],
-        "view.": [
-          75
-        ],
-        "A": [
-          76,
-          98
-        ],
-        "steady": [
-          77
-        ],
-        "increase": [
-          78
-        ],
-        "leads": [
-          82
-        ],
-        "increasing": [
-          84,
-          131
-        ],
-        "temperature,": [
-          86
-        ],
-        "with": [
-          87,
-          105,
-          130
-        ],
-        "maximum": [
-          89,
-          135
-        ],
-        "approaching": [
-          90
-        ],
-        "for": [
-          91
-        ],
-        "25%": [
-          92
-        ],
-        "HECN.": [
-          97
-        ],
-        "careful": [
-          99
-        ],
-        "analysis": [
-          100
-        ],
-        "pair": [
-          102
-        ],
-        "correlations,": [
-          103
-        ],
-        "together": [
-          104
-        ],
-        "calculations": [
-          106
-        ],
-        "entropy": [
-          108
-        ],
-        "considered": [
-          111
-        ],
-        "phases": [
-          113
-        ],
-        "HECNs": [
-          115
-        ],
-        "explain": [
-          119
-        ],
-        "origin": [
-          121
-        ],
-        "nonlinear": [
-          124
-        ],
-        "enhancement": [
-          125
-        ],
-        "content.": [
-          133
-        ],
-        "±": [
-          140
-        ],
-        "K": [
-          142
-        ],
-        "belongs": [
-          143
-        ],
-        "0.75": [
-          146
-        ],
-        "0.25": [
-          148
-        ],
-        "composition.": [
-          149
-        ],
-        "improved": [
-          151
-        ],
-        "behavior": [
-          153
-        ],
-        "compounds": [
-          156
-        ],
-        "by": [
-          157
-        ],
-        "addition": [
-          159
-        ],
-        "provides": [
-          162
-        ],
-        "promising": [
-          164
-        ],
-        "way": [
-          165
-        ],
-        "towards": [
-          166
-        ],
-        "modification": [
-          167
-        ],
-        "thermal": [
-          169
-        ],
-        "properties": [
-          170
-        ],
-        "functional": [
-          172
-        ],
-        "constructional": [
-          174
-        ],
-        "materials.": [
-          175
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2025,
           "cited_by_count": 10
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -21206,16 +22679,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "score": 0.5799999833106995,
-          "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 44,
@@ -22339,18 +23812,21 @@
           "landing_page_url": "https://doaj.org/article/99f3208e4d344c7492c5625683b5a702",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -22452,16 +23928,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2559147521.pdf",
@@ -22842,7 +24318,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -23640,8 +25116,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 80,
@@ -24663,8 +26139,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 89,
@@ -25575,8 +27051,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 106,
@@ -25721,1277 +27197,6 @@
       ],
       "updated_date": "2025-11-06T03:46:38.306776",
       "created_date": "2025-10-10T00:00:00"
-    },
-    {
-      "id": "https://openalex.org/W4229369860",
-      "doi": "https://doi.org/10.3390/ma15093347",
-      "title": "GIPAW Pseudopotentials of d Elements for Solid-State NMR",
-      "display_name": "GIPAW Pseudopotentials of d Elements for Solid-State NMR",
-      "publication_year": 2022,
-      "publication_date": "2022-05-06",
-      "ids": {
-        "openalex": "https://openalex.org/W4229369860",
-        "doi": "https://doi.org/10.3390/ma15093347",
-        "pmid": "https://pubmed.ncbi.nlm.nih.gov/35591680"
-      },
-      "language": "en",
-      "primary_location": {
-        "id": "doi:10.3390/ma15093347",
-        "is_oa": true,
-        "landing_page_url": "https://doi.org/10.3390/ma15093347",
-        "pdf_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
-        "source": {
-          "id": "https://openalex.org/S18714766",
-          "display_name": "Materials",
-          "issn_l": "1996-1944",
-          "issn": [
-            "1996-1944"
-          ],
-          "is_oa": true,
-          "is_in_doaj": false,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310310987",
-          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310310987"
-          ],
-          "host_organization_lineage_names": [
-            "Multidisciplinary Digital Publishing Institute"
-          ],
-          "type": "journal"
-        },
-        "license": "cc-by",
-        "license_id": "https://openalex.org/licenses/cc-by",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Materials",
-        "raw_type": "journal-article"
-      },
-      "type": "article",
-      "indexed_in": [
-        "crossref",
-        "doaj",
-        "pubmed"
-      ],
-      "open_access": {
-        "is_oa": true,
-        "oa_status": "gold",
-        "oa_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
-        "any_repository_has_fulltext": true
-      },
-      "authorships": [
-        {
-          "author_position": "first",
-          "author": {
-            "id": "https://openalex.org/A5022893471",
-            "display_name": "Christian Tantardini",
-            "orcid": "https://orcid.org/0000-0002-2412-9859"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I78037679",
-              "display_name": "UiT The Arctic University of Norway",
-              "ror": "https://ror.org/00wge5k78",
-              "country_code": "NO",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I78037679"
-              ]
-            },
-            {
-              "id": "https://openalex.org/I4210156028",
-              "display_name": "Institute of Solid State Chemistry and Mechanochemistry",
-              "ror": "https://ror.org/057hsm867",
-              "country_code": "RU",
-              "type": "facility",
-              "lineage": [
-                "https://openalex.org/I1313323035",
-                "https://openalex.org/I4210145551",
-                "https://openalex.org/I4210156028"
-              ]
-            }
-          ],
-          "countries": [
-            "NO",
-            "RU"
-          ],
-          "is_corresponding": true,
-          "raw_author_name": "Christian Tantardini",
-          "raw_affiliation_strings": [
-            "Department of Chemistry, UiT The Arctic University of Norway, P.O. Box 6050 Langnes, N-9037 Tromsø, Norway",
-            "Institute of Solid State Chemistry and Mechanochemistry SB RAS, 630128 Novosibirsk, Russia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Chemistry, UiT The Arctic University of Norway, P.O. Box 6050 Langnes, N-9037 Tromsø, Norway",
-              "institution_ids": [
-                "https://openalex.org/I78037679"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Institute of Solid State Chemistry and Mechanochemistry SB RAS, 630128 Novosibirsk, Russia",
-              "institution_ids": [
-                "https://openalex.org/I4210156028"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5032037959",
-            "display_name": "Alexander G. Kvashnin",
-            "orcid": "https://orcid.org/0000-0002-0718-6691"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I125989756",
-              "display_name": "Skolkovo Institute of Science and Technology",
-              "ror": "https://ror.org/03f9nc143",
-              "country_code": "RU",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I125989756"
-              ]
-            }
-          ],
-          "countries": [
-            "RU"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Alexander G. Kvashnin",
-          "raw_affiliation_strings": [
-            "Skolkovo Institute of Science and Technology, Bolshoy Boulevard 30, bld. 1, 121205 Moscow, Russia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Skolkovo Institute of Science and Technology, Bolshoy Boulevard 30, bld. 1, 121205 Moscow, Russia",
-              "institution_ids": [
-                "https://openalex.org/I125989756"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "last",
-          "author": {
-            "id": "https://openalex.org/A5006123131",
-            "display_name": "Davide Ceresoli",
-            "orcid": "https://orcid.org/0000-0002-9831-0773"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I189158943",
-              "display_name": "University of Milan",
-              "ror": "https://ror.org/00wjc7c48",
-              "country_code": "IT",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I189158943"
-              ]
-            }
-          ],
-          "countries": [
-            "IT"
-          ],
-          "is_corresponding": true,
-          "raw_author_name": "Davide Ceresoli",
-          "raw_affiliation_strings": [
-            "CNR-SCITEC, c/o Dipartimento di Chimica, Università degli Studi di Milano, Via Golgi 19, 20133 Milano, Italy"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "CNR-SCITEC, c/o Dipartimento di Chimica, Università degli Studi di Milano, Via Golgi 19, 20133 Milano, Italy",
-              "institution_ids": [
-                "https://openalex.org/I189158943"
-              ]
-            }
-          ]
-        }
-      ],
-      "institutions": [],
-      "countries_distinct_count": 3,
-      "institutions_distinct_count": 3,
-      "corresponding_author_ids": [
-        "https://openalex.org/A5022893471",
-        "https://openalex.org/A5006123131"
-      ],
-      "corresponding_institution_ids": [
-        "https://openalex.org/I78037679",
-        "https://openalex.org/I4210156028",
-        "https://openalex.org/I189158943"
-      ],
-      "apc_list": {
-        "value": 2300,
-        "currency": "CHF",
-        "value_usd": 2490
-      },
-      "apc_paid": {
-        "value": 2300,
-        "currency": "CHF",
-        "value_usd": 2490
-      },
-      "fwci": 1.75235579,
-      "has_fulltext": false,
-      "cited_by_count": 12,
-      "citation_normalized_percentile": {
-        "value": 0.77649208,
-        "is_in_top_1_percent": false,
-        "is_in_top_10_percent": false
-      },
-      "cited_by_percentile_year": {
-        "min": 89,
-        "max": 98
-      },
-      "biblio": {
-        "volume": "15",
-        "issue": "9",
-        "first_page": "3347",
-        "last_page": "3347"
-      },
-      "is_retracted": false,
-      "is_paratext": false,
-      "is_xpac": false,
-      "primary_topic": {
-        "id": "https://openalex.org/T11809",
-        "display_name": "Advanced NMR Techniques and Applications",
-        "score": 1,
-        "subfield": {
-          "id": "https://openalex.org/subfields/1607",
-          "display_name": "Spectroscopy"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/16",
-          "display_name": "Chemistry"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/3",
-          "display_name": "Physical Sciences"
-        }
-      },
-      "topics": [
-        {
-          "id": "https://openalex.org/T11809",
-          "display_name": "Advanced NMR Techniques and Applications",
-          "score": 1,
-          "subfield": {
-            "id": "https://openalex.org/subfields/1607",
-            "display_name": "Spectroscopy"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/16",
-            "display_name": "Chemistry"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T11878",
-          "display_name": "Solid-state spectroscopy and crystallography",
-          "score": 0.9998999834060669,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2505",
-            "display_name": "Materials Chemistry"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/25",
-            "display_name": "Materials Science"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T12762",
-          "display_name": "Crystallography and Radiation Phenomena",
-          "score": 0.9980999827384949,
-          "subfield": {
-            "id": "https://openalex.org/subfields/3104",
-            "display_name": "Condensed Matter Physics"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/31",
-            "display_name": "Physics and Astronomy"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        }
-      ],
-      "keywords": [
-        {
-          "id": "https://openalex.org/keywords/density-functional-theory",
-          "display_name": "Density functional theory",
-          "score": 0.6888107061386108
-        },
-        {
-          "id": "https://openalex.org/keywords/solid-state-nuclear-magnetic-resonance",
-          "display_name": "Solid-state nuclear magnetic resonance",
-          "score": 0.6393290758132935
-        },
-        {
-          "id": "https://openalex.org/keywords/tetramethylsilane",
-          "display_name": "Tetramethylsilane",
-          "score": 0.5337017178535461
-        },
-        {
-          "id": "https://openalex.org/keywords/chemical-shift",
-          "display_name": "Chemical shift",
-          "score": 0.5101280808448792
-        },
-        {
-          "id": "https://openalex.org/keywords/chemistry",
-          "display_name": "Chemistry",
-          "score": 0.49460479617118835
-        },
-        {
-          "id": "https://openalex.org/keywords/spectral-line",
-          "display_name": "Spectral line",
-          "score": 0.4893466830253601
-        },
-        {
-          "id": "https://openalex.org/keywords/coupling-constant",
-          "display_name": "Coupling constant",
-          "score": 0.4700652062892914
-        },
-        {
-          "id": "https://openalex.org/keywords/resonance",
-          "display_name": "Resonance (particle physics)",
-          "score": 0.4406636655330658
-        },
-        {
-          "id": "https://openalex.org/keywords/nmr-spectra-database",
-          "display_name": "NMR spectra database",
-          "score": 0.4290875494480133
-        },
-        {
-          "id": "https://openalex.org/keywords/nuclear-magnetic-resonance",
-          "display_name": "Nuclear magnetic resonance",
-          "score": 0.3902777135372162
-        },
-        {
-          "id": "https://openalex.org/keywords/computational-chemistry",
-          "display_name": "Computational chemistry",
-          "score": 0.3451438546180725
-        },
-        {
-          "id": "https://openalex.org/keywords/condensed-matter-physics",
-          "display_name": "Condensed matter physics",
-          "score": 0.32304903864860535
-        },
-        {
-          "id": "https://openalex.org/keywords/atomic-physics",
-          "display_name": "Atomic physics",
-          "score": 0.24198219180107117
-        },
-        {
-          "id": "https://openalex.org/keywords/physics",
-          "display_name": "Physics",
-          "score": 0.22802001237869263
-        },
-        {
-          "id": "https://openalex.org/keywords/physical-chemistry",
-          "display_name": "Physical chemistry",
-          "score": 0.18916380405426025
-        },
-        {
-          "id": "https://openalex.org/keywords/quantum-mechanics",
-          "display_name": "Quantum mechanics",
-          "score": 0.17332303524017334
-        }
-      ],
-      "concepts": [
-        {
-          "id": "https://openalex.org/C152365726",
-          "wikidata": "https://www.wikidata.org/wiki/Q1048589",
-          "display_name": "Density functional theory",
-          "level": 2,
-          "score": 0.6888107061386108
-        },
-        {
-          "id": "https://openalex.org/C153202636",
-          "wikidata": "https://www.wikidata.org/wiki/Q7557802",
-          "display_name": "Solid-state nuclear magnetic resonance",
-          "level": 2,
-          "score": 0.6393290758132935
-        },
-        {
-          "id": "https://openalex.org/C2778200147",
-          "wikidata": "https://www.wikidata.org/wiki/Q415329",
-          "display_name": "Tetramethylsilane",
-          "level": 2,
-          "score": 0.5337017178535461
-        },
-        {
-          "id": "https://openalex.org/C111429119",
-          "wikidata": "https://www.wikidata.org/wiki/Q899127",
-          "display_name": "Chemical shift",
-          "level": 2,
-          "score": 0.5101280808448792
-        },
-        {
-          "id": "https://openalex.org/C185592680",
-          "wikidata": "https://www.wikidata.org/wiki/Q2329",
-          "display_name": "Chemistry",
-          "level": 0,
-          "score": 0.49460479617118835
-        },
-        {
-          "id": "https://openalex.org/C4839761",
-          "wikidata": "https://www.wikidata.org/wiki/Q212111",
-          "display_name": "Spectral line",
-          "level": 2,
-          "score": 0.4893466830253601
-        },
-        {
-          "id": "https://openalex.org/C183276030",
-          "wikidata": "https://www.wikidata.org/wiki/Q1193095",
-          "display_name": "Coupling constant",
-          "level": 2,
-          "score": 0.4700652062892914
-        },
-        {
-          "id": "https://openalex.org/C139210041",
-          "wikidata": "https://www.wikidata.org/wiki/Q2145840",
-          "display_name": "Resonance (particle physics)",
-          "level": 2,
-          "score": 0.4406636655330658
-        },
-        {
-          "id": "https://openalex.org/C67787023",
-          "wikidata": "https://www.wikidata.org/wiki/Q6954755",
-          "display_name": "NMR spectra database",
-          "level": 3,
-          "score": 0.4290875494480133
-        },
-        {
-          "id": "https://openalex.org/C46141821",
-          "wikidata": "https://www.wikidata.org/wiki/Q209402",
-          "display_name": "Nuclear magnetic resonance",
-          "level": 1,
-          "score": 0.3902777135372162
-        },
-        {
-          "id": "https://openalex.org/C147597530",
-          "wikidata": "https://www.wikidata.org/wiki/Q369472",
-          "display_name": "Computational chemistry",
-          "level": 1,
-          "score": 0.3451438546180725
-        },
-        {
-          "id": "https://openalex.org/C26873012",
-          "wikidata": "https://www.wikidata.org/wiki/Q214781",
-          "display_name": "Condensed matter physics",
-          "level": 1,
-          "score": 0.32304903864860535
-        },
-        {
-          "id": "https://openalex.org/C184779094",
-          "wikidata": "https://www.wikidata.org/wiki/Q26383",
-          "display_name": "Atomic physics",
-          "level": 1,
-          "score": 0.24198219180107117
-        },
-        {
-          "id": "https://openalex.org/C121332964",
-          "wikidata": "https://www.wikidata.org/wiki/Q413",
-          "display_name": "Physics",
-          "level": 0,
-          "score": 0.22802001237869263
-        },
-        {
-          "id": "https://openalex.org/C147789679",
-          "wikidata": "https://www.wikidata.org/wiki/Q11372",
-          "display_name": "Physical chemistry",
-          "level": 1,
-          "score": 0.18916380405426025
-        },
-        {
-          "id": "https://openalex.org/C62520636",
-          "wikidata": "https://www.wikidata.org/wiki/Q944",
-          "display_name": "Quantum mechanics",
-          "level": 1,
-          "score": 0.17332303524017334
-        }
-      ],
-      "mesh": [],
-      "locations_count": 6,
-      "locations": [
-        {
-          "id": "doi:10.3390/ma15093347",
-          "is_oa": true,
-          "landing_page_url": "https://doi.org/10.3390/ma15093347",
-          "pdf_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
-          "source": {
-            "id": "https://openalex.org/S18714766",
-            "display_name": "Materials",
-            "issn_l": "1996-1944",
-            "issn": [
-              "1996-1944"
-            ],
-            "is_oa": true,
-            "is_in_doaj": false,
-            "is_core": true,
-            "host_organization": "https://openalex.org/P4310310987",
-            "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-            "host_organization_lineage": [
-              "https://openalex.org/P4310310987"
-            ],
-            "host_organization_lineage_names": [
-              "Multidisciplinary Digital Publishing Institute"
-            ],
-            "type": "journal"
-          },
-          "license": "cc-by",
-          "license_id": "https://openalex.org/licenses/cc-by",
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Materials",
-          "raw_type": "journal-article"
-        },
-        {
-          "id": "pmid:35591680",
-          "is_oa": false,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35591680",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4306525036",
-            "display_name": "PubMed",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I1299303238",
-            "host_organization_name": "National Institutes of Health",
-            "host_organization_lineage": [
-              "https://openalex.org/I1299303238"
-            ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": null,
-          "license_id": null,
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Materials (Basel, Switzerland)",
-          "raw_type": null
-        },
-        {
-          "id": "pmh:oai:doaj.org/article:fcd92459d43745afabc3a901862e7542",
-          "is_oa": false,
-          "landing_page_url": "https://doaj.org/article/fcd92459d43745afabc3a901862e7542",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": null,
-            "host_organization_name": null,
-            "host_organization_lineage": [],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": null,
-          "license_id": null,
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "Materials, Vol 15, Iss 9, p 3347 (2022)",
-          "raw_type": "article"
-        },
-        {
-          "id": "pmh:oai:mdpi.com:/1996-1944/15/9/3347/",
-          "is_oa": true,
-          "landing_page_url": "https://dx.doi.org/10.3390/ma15093347",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4306400947",
-            "display_name": "MDPI (MDPI AG)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": true,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I4210097602",
-            "host_organization_name": "Multidisciplinary Digital Publishing Institute (Switzerland)",
-            "host_organization_lineage": [
-              "https://openalex.org/I4210097602"
-            ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": "cc-by",
-          "license_id": "https://openalex.org/licenses/cc-by",
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "Materials; Volume 15; Issue 9; Pages: 3347",
-          "raw_type": "Text"
-        },
-        {
-          "id": "pmh:oai:munin.uit.no:10037/27616",
-          "is_oa": true,
-          "landing_page_url": "https://hdl.handle.net/10037/27616",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4306400066",
-            "display_name": "Munin Open Research Archive (The Arctic University of Norway)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I78037679",
-            "host_organization_name": "UiT The Arctic University of Norway",
-            "host_organization_lineage": [
-              "https://openalex.org/I78037679"
-            ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": "cc-by",
-          "license_id": "https://openalex.org/licenses/cc-by",
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "",
-          "raw_type": "info:eu-repo/semantics/article"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:9101793",
-          "is_oa": true,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9101793",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S2764455111",
-            "display_name": "PubMed Central",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I1299303238",
-            "host_organization_name": "National Institutes of Health",
-            "host_organization_lineage": [
-              "https://openalex.org/I1299303238"
-            ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": "other-oa",
-          "license_id": "https://openalex.org/licenses/other-oa",
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "Materials (Basel)",
-          "raw_type": "Text"
-        }
-      ],
-      "best_oa_location": {
-        "id": "doi:10.3390/ma15093347",
-        "is_oa": true,
-        "landing_page_url": "https://doi.org/10.3390/ma15093347",
-        "pdf_url": "https://www.mdpi.com/1996-1944/15/9/3347/pdf?version=1651843428",
-        "source": {
-          "id": "https://openalex.org/S18714766",
-          "display_name": "Materials",
-          "issn_l": "1996-1944",
-          "issn": [
-            "1996-1944"
-          ],
-          "is_oa": true,
-          "is_in_doaj": false,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310310987",
-          "host_organization_name": "Multidisciplinary Digital Publishing Institute",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310310987"
-          ],
-          "host_organization_lineage_names": [
-            "Multidisciplinary Digital Publishing Institute"
-          ],
-          "type": "journal"
-        },
-        "license": "cc-by",
-        "license_id": "https://openalex.org/licenses/cc-by",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Materials",
-        "raw_type": "journal-article"
-      },
-      "sustainable_development_goals": [],
-      "awards": [],
-      "funders": [],
-      "has_content": {
-        "pdf": true,
-        "grobid_xml": true
-      },
-      "content_urls": {
-        "pdf": "https://content.openalex.org/works/W4229369860.pdf",
-        "grobid_xml": "https://content.openalex.org/works/W4229369860.grobid-xml"
-      },
-      "referenced_works_count": 47,
-      "referenced_works": [
-        "https://openalex.org/W17198541",
-        "https://openalex.org/W1968426044",
-        "https://openalex.org/W1968545719",
-        "https://openalex.org/W1970127494",
-        "https://openalex.org/W1973848482",
-        "https://openalex.org/W1979544533",
-        "https://openalex.org/W1981619846",
-        "https://openalex.org/W1988982985",
-        "https://openalex.org/W1992753351",
-        "https://openalex.org/W1992836438",
-        "https://openalex.org/W1992985800",
-        "https://openalex.org/W1993837665",
-        "https://openalex.org/W1995143789",
-        "https://openalex.org/W1997639109",
-        "https://openalex.org/W1999954610",
-        "https://openalex.org/W2001847706",
-        "https://openalex.org/W2005136695",
-        "https://openalex.org/W2007873662",
-        "https://openalex.org/W2011327487",
-        "https://openalex.org/W2018928846",
-        "https://openalex.org/W2023390323",
-        "https://openalex.org/W2026195773",
-        "https://openalex.org/W2030348557",
-        "https://openalex.org/W2030582590",
-        "https://openalex.org/W2036458812",
-        "https://openalex.org/W2038210983",
-        "https://openalex.org/W2040603228",
-        "https://openalex.org/W2043691039",
-        "https://openalex.org/W2044562367",
-        "https://openalex.org/W2048184926",
-        "https://openalex.org/W2066597276",
-        "https://openalex.org/W2079105963",
-        "https://openalex.org/W2079677000",
-        "https://openalex.org/W2079823323",
-        "https://openalex.org/W2080148979",
-        "https://openalex.org/W2083664986",
-        "https://openalex.org/W2087585288",
-        "https://openalex.org/W2102807619",
-        "https://openalex.org/W2103111465",
-        "https://openalex.org/W2120145199",
-        "https://openalex.org/W2805461540",
-        "https://openalex.org/W2922259858",
-        "https://openalex.org/W3016932526",
-        "https://openalex.org/W3100511033",
-        "https://openalex.org/W3155612668",
-        "https://openalex.org/W4229766111",
-        "https://openalex.org/W4235384963"
-      ],
-      "related_works": [
-        "https://openalex.org/W4293251582",
-        "https://openalex.org/W2462809298",
-        "https://openalex.org/W2475752952",
-        "https://openalex.org/W3048423974",
-        "https://openalex.org/W3044197008",
-        "https://openalex.org/W2052054428",
-        "https://openalex.org/W2029552166",
-        "https://openalex.org/W2024160064",
-        "https://openalex.org/W1969756153",
-        "https://openalex.org/W2075993589"
-      ],
-      "abstract_inverted_index": {
-        "21": [
-          114
-        ],
-        "Computational": [
-          0
-        ],
-        "methods": [
-          1
-        ],
-        "are": [
-          2
-        ],
-        "increasingly": [
-          3
-        ],
-        "used": [
-          4
-        ],
-        "to": [
-          5,
-          25,
-          53,
-          75,
-          88,
-          141,
-          160,
-          168,
-          170,
-          181,
-          187,
-          192
-        ],
-        "support": [
-          6
-        ],
-        "interpreting,": [
-          7
-        ],
-        "assigning": [
-          8
-        ],
-        "and": [
-          9,
-          32,
-          56,
-          117,
-          129,
-          152
-        ],
-        "predicting": [
-          10
-        ],
-        "the": [
-          11,
-          44,
-          72,
-          81,
-          101,
-          138,
-          143,
-          155,
-          172,
-          179
-        ],
-        "solid-state": [
-          12,
-          35
-        ],
-        "nuclear": [
-          13,
-          49,
-          66,
-          90,
-          148,
-          199
-        ],
-        "resonance": [
-          14,
-          50,
-          67,
-          91,
-          150,
-          201
-        ],
-        "magnetic": [
-          15,
-          51,
-          68,
-          92,
-          149,
-          200
-        ],
-        "spectra": [
-          16,
-          52
-        ],
-        "of": [
-          17,
-          46,
-          113,
-          147
-        ],
-        "materials.": [
-          18
-        ],
-        "Currently,": [
-          19
-        ],
-        "density": [
-          20,
-          40
-        ],
-        "functional": [
-          21,
-          41
-        ],
-        "theory": [
-          22,
-          42
-        ],
-        "is": [
-          23
-        ],
-        "seen": [
-          24
-        ],
-        "achieve": [
-          26
-        ],
-        "a": [
-          27,
-          78,
-          107,
-          189
-        ],
-        "good": [
-          28
-        ],
-        "balance": [
-          29
-        ],
-        "between": [
-          30
-        ],
-        "efficiency": [
-          31
-        ],
-        "accuracy": [
-          33
-        ],
-        "in": [
-          34,
-          48,
-          97,
-          100
-        ],
-        "chemistry.": [
-          36
-        ],
-        "To": [
-          37,
-          70
-        ],
-        "be": [
-          38,
-          136
-        ],
-        "specific,": [
-          39
-        ],
-        "allows": [
-          43
-        ],
-        "assignment": [
-          45
-        ],
-        "signals": [
-          47,
-          63
-        ],
-        "specific": [
-          54
-        ],
-        "sites": [
-          55
-        ],
-        "can": [
-          57,
-          135
-        ],
-        "help": [
-          58
-        ],
-        "identify": [
-          59
-        ],
-        "overlapped": [
-          60
-        ],
-        "or": [
-          61,
-          123,
-          194
-        ],
-        "missing": [
-          62
-        ],
-        "from": [
-          64,
-          184
-        ],
-        "experimental": [
-          65
-        ],
-        "spectra.": [
-          69,
-          202
-        ],
-        "avoid": [
-          71
-        ],
-        "difficulties": [
-          73
-        ],
-        "correlated": [
-          74
-        ],
-        "all-electron": [
-          76
-        ],
-        "calculations,": [
-          77,
-          186
-        ],
-        "gauge": [
-          79,
-          108
-        ],
-        "including": [
-          80,
-          109
-        ],
-        "projected": [
-          82,
-          110
-        ],
-        "augmented": [
-          83,
-          111
-        ],
-        "wave": [
-          84
-        ],
-        "method": [
-          85
-        ],
-        "was": [
-          86
-        ],
-        "introduced": [
-          87
-        ],
-        "calculate": [
-          89,
-          171
-        ],
-        "parameters": [
-          93
-        ],
-        "with": [
-          94,
-          166
-        ],
-        "great": [
-          95
-        ],
-        "success": [
-          96
-        ],
-        "organic": [
-          98
-        ],
-        "crystals": [
-          99
-        ],
-        "last": [
-          102
-        ],
-        "decades.": [
-          103
-        ],
-        "Thus,": [
-          104
-        ],
-        "we": [
-          105
-        ],
-        "developed": [
-          106
-        ],
-        "pseudopotentials": [
-          112
-        ],
-        "d": [
-          115
-        ],
-        "elements": [
-          116
-        ],
-        "tested": [
-          118
-        ],
-        "them": [
-          119
-        ],
-        "on,": [
-          120
-        ],
-        "respectively,": [
-          121
-        ],
-        "oxides": [
-          122
-        ],
-        "nitrides": [
-          124
-        ],
-        "(semiconductors),": [
-          125
-        ],
-        "calculating": [
-          126
-        ],
-        "chemical": [
-          127,
-          173
-        ],
-        "shift": [
-          128
-        ],
-        "quadrupolar": [
-          130
-        ],
-        "coupling": [
-          131
-        ],
-        "constant.": [
-          132
-        ],
-        "This": [
-          133
-        ],
-        "work": [
-          134,
-          177
-        ],
-        "considered": [
-          137
-        ],
-        "first": [
-          139
-        ],
-        "step": [
-          140
-        ],
-        "improving": [
-          142
-        ],
-        "ab": [
-          144
-        ],
-        "initio": [
-          145
-        ],
-        "prediction": [
-          146
-        ],
-        "parameters,": [
-          151
-        ],
-        "leaves": [
-          153
-        ],
-        "open": [
-          154
-        ],
-        "possibility": [
-          156,
-          180
-        ],
-        "for": [
-          157
-        ],
-        "inorganic": [
-          158
-        ],
-        "compounds": [
-          159
-        ],
-        "constitute": [
-          161
-        ],
-        "an": [
-          162
-        ],
-        "alternative": [
-          163
-        ],
-        "standard": [
-          164
-        ],
-        "compound,": [
-          165
-        ],
-        "respect": [
-          167
-        ],
-        "tetramethylsilane,": [
-          169
-        ],
-        "shift.": [
-          174
-        ],
-        "Furthermore,": [
-          175
-        ],
-        "this": [
-          176
-        ],
-        "represents": [
-          178
-        ],
-        "obtain": [
-          182
-        ],
-        "results": [
-          183
-        ],
-        "first-principles": [
-          185
-        ],
-        "train": [
-          188
-        ],
-        "machine-learning": [
-          190
-        ],
-        "model": [
-          191
-        ],
-        "solve": [
-          193
-        ],
-        "refine": [
-          195
-        ],
-        "structures": [
-          196
-        ],
-        "using": [
-          197
-        ],
-        "predicted": [
-          198
-        ]
-      },
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 5
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 3
-        },
-        {
-          "year": 2023,
-          "cited_by_count": 3
-        },
-        {
-          "year": 2022,
-          "cited_by_count": 1
-        }
-      ],
-      "updated_date": "2025-11-06T03:46:38.306776",
-      "created_date": "2022-05-10T00:00:00"
     },
     {
       "id": "https://openalex.org/W4387328584",
@@ -27656,9 +27861,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "score": 0.7900000214576721,
-          "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [
@@ -27714,8 +27919,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 64,
@@ -29161,9 +29366,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "score": 0.6000000238418579,
-          "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [
@@ -29193,8 +29398,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 34,
@@ -29843,9 +30048,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "score": 0.4399999976158142,
-          "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land"
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
@@ -29857,8 +30062,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 52,
@@ -30730,8 +30935,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 44,
@@ -31593,9 +31798,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Zero hunger",
           "score": 0.5199999809265137,
-          "id": "https://metadata.un.org/sdg/2",
-          "display_name": "Zero hunger"
+          "id": "https://metadata.un.org/sdg/2"
         }
       ],
       "awards": [],
@@ -31607,8 +31812,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 21,
@@ -32224,8 +32429,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2759768026.pdf",
@@ -32810,8 +33015,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 80,
@@ -33634,9 +33839,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "score": 0.5199999809265137,
-          "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land"
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [
@@ -33663,8 +33868,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4390489100.pdf"
@@ -34898,8 +35103,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 49,
@@ -35490,7 +35695,7 @@
       "has_fulltext": true,
       "cited_by_count": 5,
       "citation_normalized_percentile": {
-        "value": 0.44007992,
+        "value": 0.44011241,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -35726,18 +35931,21 @@
           "landing_page_url": "https://doaj.org/article/77c2c720adc94504a8cf60a1a87bfa10",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -35845,8 +36053,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3165459731.pdf",
@@ -35885,7 +36093,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2021-06-07T00:00:00"
     },
     {
@@ -36324,9 +36532,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "score": 0.6100000143051147,
-          "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
@@ -36338,8 +36546,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 44,
@@ -36936,13 +37144,13 @@
       "countries_distinct_count": 2,
       "institutions_distinct_count": 10,
       "corresponding_author_ids": [
-        "https://openalex.org/A5079961152",
-        "https://openalex.org/A5022893471"
+        "https://openalex.org/A5022893471",
+        "https://openalex.org/A5079961152"
       ],
       "corresponding_institution_ids": [
         "https://openalex.org/I17877952",
-        "https://openalex.org/I78037679",
-        "https://openalex.org/I4210156028"
+        "https://openalex.org/I4210156028",
+        "https://openalex.org/I78037679"
       ],
       "apc_list": {
         "value": 2400,
@@ -36958,7 +37166,7 @@
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.57067624,
+        "value": 0.57060795,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -37220,21 +37428,24 @@
           "landing_page_url": "https://doaj.org/article/ec221c5359014cc9aec8a294207d7bf1",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -37364,16 +37575,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "score": 0.46000000834465027,
-          "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land"
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4312196519.pdf",
@@ -37927,7 +38138,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -38707,16 +38918,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Partnerships for the goals",
           "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/17",
-          "display_name": "Partnerships for the goals"
+          "id": "https://metadata.un.org/sdg/17"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4391835302.pdf"
@@ -39483,14 +39694,14 @@
       "countries_distinct_count": 3,
       "institutions_distinct_count": 4,
       "corresponding_author_ids": [
-        "https://openalex.org/A5037999337",
-        "https://openalex.org/A5022893471"
+        "https://openalex.org/A5022893471",
+        "https://openalex.org/A5037999337"
       ],
       "corresponding_institution_ids": [
         "https://openalex.org/I4210135186",
         "https://openalex.org/I4210156028",
-        "https://openalex.org/I78037679",
-        "https://openalex.org/I74775410"
+        "https://openalex.org/I74775410",
+        "https://openalex.org/I78037679"
       ],
       "apc_list": {
         "value": 1685,
@@ -39506,7 +39717,7 @@
       "has_fulltext": true,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.53906789,
+        "value": 0.53800336,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -39898,21 +40109,24 @@
           "landing_page_url": "https://doaj.org/article/278d62c5c1c64defbd66a29a59662406",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -40031,8 +40245,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4390961488.pdf",
@@ -40407,7 +40621,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -41139,8 +41353,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4400949897.pdf"
@@ -41879,9 +42093,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "score": 0.7599999904632568,
-          "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action"
+          "id": "https://metadata.un.org/sdg/13"
         }
       ],
       "awards": [
@@ -41901,8 +42115,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 41,
@@ -42341,7 +42555,7 @@
       "has_fulltext": true,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.73733615,
+        "value": 0.73622527,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -42606,21 +42820,24 @@
           "landing_page_url": "https://doaj.org/article/995603ca7f494061b434466d58d335ba",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -42703,8 +42920,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 70,
@@ -43066,7 +43283,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-12-27T23:08:20.325037",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -43851,9 +44068,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "score": 0.4399999976158142,
-          "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [
@@ -43880,8 +44097,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 103,
@@ -44906,8 +45123,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 92,
@@ -46226,9 +46443,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "score": 0.7099999785423279,
-          "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [
@@ -46253,8 +46470,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 76,
@@ -47412,8 +47629,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 27,
@@ -52880,8 +53097,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 215,
@@ -54107,8 +54324,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4210973954.pdf",
@@ -54946,16 +55163,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "score": 0.5400000214576721,
-          "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "id": "https://metadata.un.org/sdg/9"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4367060991.pdf"
@@ -56176,8 +56393,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4376126392.pdf",
@@ -57127,16 +57344,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "score": 0.4099999964237213,
-          "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land"
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4378647067.pdf"
@@ -58188,8 +58405,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4386555998.pdf"
@@ -59467,16 +59684,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "score": 0.7400000095367432,
-          "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action"
+          "id": "https://metadata.un.org/sdg/13"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 105,
@@ -60332,8 +60549,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4387210692.pdf"
@@ -61514,8 +61731,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4387210939.pdf"
@@ -62877,8 +63094,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4387356314.pdf"
@@ -63948,8 +64165,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4388514127.pdf"
@@ -64914,9 +65131,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "score": 0.5199999809265137,
-          "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land"
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
@@ -64943,8 +65160,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 54,
@@ -65793,8 +66010,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4396821382.pdf",
@@ -66730,8 +66947,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -67190,8 +67407,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -67530,8 +67747,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -68002,8 +68219,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -68330,8 +68547,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -68658,8 +68875,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -68986,8 +69203,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -69314,8 +69531,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -69626,8 +69843,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -70180,8 +70397,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4405955846.pdf"
@@ -71357,8 +71574,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4407954820.pdf"
@@ -72334,16 +72551,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "score": 0.4300000071525574,
-          "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -72987,16 +73204,16 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "score": 0.6499999761581421,
-          "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy"
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -73934,8 +74151,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 110,
@@ -75034,8 +75251,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 70,
@@ -75321,8 +75538,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -75944,8 +76161,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -76718,8 +76935,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4417469600.pdf"
@@ -77865,8 +78082,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -78951,8 +79168,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W7117277276.pdf"
@@ -80207,8 +80424,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W7122497980.pdf"
@@ -81260,8 +81477,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -82348,8 +82565,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W7124358305.pdf"
@@ -83359,16 +83576,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "score": 0.40414997935295105,
-          "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action"
+          "id": "https://metadata.un.org/sdg/13"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -83836,8 +84053,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -84786,8 +85003,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,

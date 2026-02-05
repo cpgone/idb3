@@ -14,7 +14,7 @@
       "Khan, Hasan Javed"
     ],
     "works_count": 42,
-    "cited_by_count": 323,
+    "cited_by_count": 325,
     "summary_stats": {
       "2yr_mean_citedness": 0.8,
       "h_index": 9,
@@ -261,7 +261,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.0000689,
+        "value": 0.0000688,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -383,7 +383,7 @@
         "year": 2021,
         "works_count": 1,
         "oa_works_count": 1,
-        "cited_by_count": 90
+        "cited_by_count": 91
       },
       {
         "year": 2022,
@@ -395,7 +395,7 @@
         "year": 2023,
         "works_count": 6,
         "oa_works_count": 3,
-        "cited_by_count": 96
+        "cited_by_count": 97
       },
       {
         "year": 2024,
@@ -420,7 +420,7 @@
     },
     "block_key": "h khan",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5046264836",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2021-01-05"
   },
   "works": [
@@ -772,9 +772,9 @@
       "apc_paid": null,
       "fwci": 7.38464016,
       "has_fulltext": false,
-      "cited_by_count": 90,
+      "cited_by_count": 92,
       "citation_normalized_percentile": {
-        "value": 0.98138433,
+        "value": 0.98138705,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -1053,39 +1053,11 @@
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D008903",
-          "descriptor_name": "Minerals",
+          "descriptor_ui": "D000067071",
+          "descriptor_name": "Hydraulic Fracking",
           "qualifier_ui": null,
           "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D059206",
-          "descriptor_name": "Natural Gas",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D061329",
-          "descriptor_name": "Oil and Gas Fields",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D062065",
-          "descriptor_name": "Wastewater",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
+          "is_major_topic": true
         },
         {
           "descriptor_ui": "D000067071",
@@ -1102,39 +1074,11 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D059206",
-          "descriptor_name": "Natural Gas",
+          "descriptor_ui": "D008903",
+          "descriptor_name": "Minerals",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D061329",
-          "descriptor_name": "Oil and Gas Fields",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D062065",
-          "descriptor_name": "Wastewater",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000067071",
-          "descriptor_name": "Hydraulic Fracking",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
         },
         {
           "descriptor_ui": "D008903",
@@ -1144,8 +1088,57 @@
           "is_major_topic": false
         },
         {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
           "descriptor_ui": "D059206",
           "descriptor_name": "Natural Gas",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059206",
+          "descriptor_name": "Natural Gas",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059206",
+          "descriptor_name": "Natural Gas",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D061329",
+          "descriptor_name": "Oil and Gas Fields",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D061329",
+          "descriptor_name": "Oil and Gas Fields",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -1165,8 +1158,15 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
+          "descriptor_ui": "D062065",
+          "descriptor_name": "Wastewater",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062065",
+          "descriptor_name": "Wastewater",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -1385,9 +1385,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.8100000023841858
+          "score": 0.8100000023841858,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [
@@ -2166,7 +2166,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 5
+          "cited_by_count": 7
         },
         {
           "year": 2025,
@@ -2189,7 +2189,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -2554,16 +2554,16 @@
         "value_usd": 2650
       },
       "apc_paid": null,
-      "fwci": 4.95612996,
+      "fwci": 5.04791015,
       "has_fulltext": false,
-      "cited_by_count": 54,
+      "cited_by_count": 55,
       "citation_normalized_percentile": {
-        "value": 0.94255654,
+        "value": 0.94388681,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
       "cited_by_percentile_year": {
-        "min": 98,
+        "min": 99,
         "max": 100
       },
       "biblio": {
@@ -2841,9 +2841,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
@@ -3114,7 +3114,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -3125,7 +3125,7 @@
           "cited_by_count": 27
         }
       ],
-      "updated_date": "2026-01-21T23:30:37.877113",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -3667,9 +3667,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.5600000023841858
+          "score": 0.5600000023841858,
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
@@ -6544,9 +6544,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.7099999785423279
+          "score": 0.7099999785423279,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -7807,9 +7807,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.7400000095367432
+          "score": 0.7400000095367432,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [
@@ -8497,18 +8497,21 @@
           "landing_page_url": "https://doaj.org/article/3a983bf1116f4332940aaa525a024b60",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -9193,7 +9196,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2021-01-05T00:00:00"
     },
     {
@@ -9722,9 +9725,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.5299999713897705
+          "score": 0.5299999713897705,
+          "display_name": "Life below water"
         }
       ],
       "awards": [
@@ -11321,9 +11324,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "score": 0.47999998927116394
+          "score": 0.47999998927116394,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [
@@ -12543,9 +12546,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.550000011920929
+          "score": 0.550000011920929,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -14572,22 +14575,25 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:c75b3b96947348c8a1e3201ee9e366cc",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/c75b3b96947348c8a1e3201ee9e366cc",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": null,
           "license_id": null,
@@ -14731,7 +14737,325 @@
         "https://openalex.org/W2969768078",
         "https://openalex.org/W2793172274"
       ],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "This": [
+          0
+        ],
+        "paper": [
+          1
+        ],
+        "presents": [
+          2
+        ],
+        "an": [
+          3,
+          106
+        ],
+        "alternative": [
+          4
+        ],
+        "method": [
+          5,
+          44
+        ],
+        "of": [
+          6,
+          20,
+          119
+        ],
+        "creating": [
+          7
+        ],
+        "vuggy": [
+          8
+        ],
+        "glass-bead": [
+          9
+        ],
+        "core": [
+          10,
+          56
+        ],
+        "proxies,": [
+          11
+        ],
+        "which": [
+          12,
+          83
+        ],
+        "can": [
+          13,
+          46
+        ],
+        "be": [
+          14
+        ],
+        "used": [
+          15,
+          76,
+          90
+        ],
+        "to": [
+          16,
+          77,
+          127
+        ],
+        "investigate": [
+          17
+        ],
+        "the": [
+          18,
+          95,
+          110,
+          120,
+          128
+        ],
+        "effects": [
+          19
+        ],
+        "pore-scale": [
+          21
+        ],
+        "features": [
+          22
+        ],
+        "on": [
+          23
+        ],
+        "carbonate": [
+          24
+        ],
+        "petrophysical": [
+          25
+        ],
+        "properties.": [
+          26
+        ],
+        "Carbonates": [
+          27
+        ],
+        "are": [
+          28,
+          58,
+          71,
+          117
+        ],
+        "complex": [
+          29
+        ],
+        "rocks": [
+          30
+        ],
+        "having": [
+          31
+        ],
+        "a": [
+          32,
+          67,
+          79,
+          92
+        ],
+        "widespread": [
+          33
+        ],
+        "variation": [
+          34
+        ],
+        "in": [
+          35,
+          66,
+          73,
+          81,
+          86
+        ],
+        "pore": [
+          36
+        ],
+        "type,": [
+          37
+        ],
+        "size,": [
+          38,
+          50
+        ],
+        "distribution,": [
+          39
+        ],
+        "and": [
+          40,
+          51,
+          75,
+          89,
+          125
+        ],
+        "porosity.": [
+          41
+        ],
+        "With": [
+          42
+        ],
+        "this": [
+          43
+        ],
+        "we": [
+          45
+        ],
+        "control": [
+          47
+        ],
+        "vug": [
+          48,
+          100,
+          123
+        ],
+        "shape,": [
+          49
+        ],
+        "position.": [
+          52
+        ],
+        "Homogeneous": [
+          53
+        ],
+        "glass": [
+          54,
+          64,
+          111
+        ],
+        "bead": [
+          55
+        ],
+        "proxies": [
+          57
+        ],
+        "sintered": [
+          59
+        ],
+        "using": [
+          60
+        ],
+        "1.0": [
+          61
+        ],
+        "mm": [
+          62
+        ],
+        "diameter": [
+          63
+        ],
+        "beads": [
+          65
+        ],
+        "muffle": [
+          68
+        ],
+        "furnace.": [
+          69
+        ],
+        "Vugs": [
+          70
+        ],
+        "3D-printed": [
+          72
+        ],
+        "plastic": [
+          74
+        ],
+        "make": [
+          78
+        ],
+        "mold": [
+          80
+        ],
+        "Play-Doh<sup>®</sup>;": [
+          82
+        ],
+        "is": [
+          84
+        ],
+        "cast": [
+          85
+        ],
+        "gypsum": [
+          87,
+          99
+        ],
+        "cement": [
+          88
+        ],
+        "as": [
+          91
+        ],
+        "placeholder": [
+          93
+        ],
+        "during": [
+          94,
+          102
+        ],
+        "sintering": [
+          96
+        ],
+        "process.": [
+          97
+        ],
+        "The": [
+          98
+        ],
+        "dissolves": [
+          101
+        ],
+        "acid": [
+          103,
+          121
+        ],
+        "flood,": [
+          104
+        ],
+        "leaving": [
+          105
+        ],
+        "empty": [
+          107
+        ],
+        "space": [
+          108,
+          124
+        ],
+        "inside": [
+          109
+        ],
+        "matrix.": [
+          112
+        ],
+        "Computed": [
+          113
+        ],
+        "tomography": [
+          114
+        ],
+        "(CT)": [
+          115
+        ],
+        "scans": [
+          116
+        ],
+        "made": [
+          118
+        ],
+        "washed": [
+          122
+        ],
+        "compared": [
+          126
+        ],
+        "3D": [
+          129
+        ],
+        "model.": [
+          130
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2025,
@@ -14750,7 +15074,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -14808,7 +15132,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023WR035307",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -14921,7 +15245,7 @@
       "has_fulltext": false,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.79541694,
+        "value": 0.79449147,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -15352,25 +15676,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:1a21cb786b98452d96b7cdff2bc98570",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/1a21cb786b98452d96b7cdff2bc98570",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -15414,9 +15741,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -16041,7 +16368,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-16T23:16:36.188383",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -16518,9 +16845,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.5699999928474426
+          "score": 0.5699999928474426,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -18483,9 +18810,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Sustainable cities and communities",
           "id": "https://metadata.un.org/sdg/11",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -19454,9 +19781,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.4699999988079071
+          "score": 0.4699999988079071,
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
@@ -23222,9 +23549,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -24648,9 +24975,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "score": 0.4399999976158142
+          "score": 0.4399999976158142,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -25719,9 +26046,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.8299999833106995
+          "score": 0.8299999833106995,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -27705,9 +28032,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -28561,9 +28888,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.5699999928474426
+          "score": 0.5699999928474426,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -29518,9 +29845,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -30949,9 +31276,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.5099999904632568
+          "score": 0.5099999904632568,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -32056,9 +32383,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.5400000214576721
+          "score": 0.5400000214576721,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -33218,9 +33545,9 @@
       },
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.44999998807907104
+          "score": 0.44999998807907104,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -34065,9 +34392,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.8299999833106995
+          "score": 0.8299999833106995,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -36057,9 +36384,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.5699999928474426
+          "score": 0.5699999928474426,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],

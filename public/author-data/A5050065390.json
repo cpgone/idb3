@@ -9,10 +9,10 @@
       "Shabeeb Alajmi",
       "Shabeeb Nasser Alajmei"
     ],
-    "works_count": 33,
-    "cited_by_count": 104,
+    "works_count": 34,
+    "cited_by_count": 105,
     "summary_stats": {
-      "2yr_mean_citedness": 1.7727272727272727,
+      "2yr_mean_citedness": 1.7391304347826086,
       "h_index": 7,
       "i10_index": 3
     },
@@ -33,6 +33,7 @@
           ]
         },
         "years": [
+          2026,
           2025,
           2024,
           2023
@@ -82,23 +83,13 @@
         "lineage": [
           "https://openalex.org/I134085113"
         ]
-      },
-      {
-        "id": "https://openalex.org/I4210118538",
-        "ror": "https://ror.org/02em1tr51",
-        "display_name": "University of Petroleum",
-        "country_code": "ID",
-        "type": "education",
-        "lineage": [
-          "https://openalex.org/I4210118538"
-        ]
       }
     ],
     "topics": [
       {
         "id": "https://openalex.org/T10635",
         "display_name": "Hydraulic Fracturing and Reservoir Analysis",
-        "count": 22,
+        "count": 23,
         "score": 1,
         "subfield": {
           "id": "https://openalex.org/subfields/2210",
@@ -134,7 +125,7 @@
       {
         "id": "https://openalex.org/T10491",
         "display_name": "Enhanced Oil Recovery Techniques",
-        "count": 10,
+        "count": 11,
         "score": 1,
         "subfield": {
           "id": "https://openalex.org/subfields/2212",
@@ -190,7 +181,7 @@
       {
         "id": "https://openalex.org/T10635",
         "display_name": "Hydraulic Fracturing and Reservoir Analysis",
-        "value": 0.0000705,
+        "value": 0.0000737,
         "subfield": {
           "id": "https://openalex.org/subfields/2210",
           "display_name": "Mechanical Engineering"
@@ -207,7 +198,7 @@
       {
         "id": "https://openalex.org/T10491",
         "display_name": "Enhanced Oil Recovery Techniques",
-        "value": 0.0000664,
+        "value": 0.0000731,
         "subfield": {
           "id": "https://openalex.org/subfields/2212",
           "display_name": "Ocean Engineering"
@@ -346,7 +337,13 @@
         "year": 2025,
         "works_count": 16,
         "oa_works_count": 4,
-        "cited_by_count": 14
+        "cited_by_count": 15
+      },
+      {
+        "year": 2026,
+        "works_count": 1,
+        "oa_works_count": 0,
+        "cited_by_count": 0
       }
     ],
     "longest_name": "Shabeeb Nasser Alajmei",
@@ -359,7 +356,7 @@
     },
     "block_key": "s alajmei",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5050065390",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -525,7 +522,7 @@
       "has_fulltext": false,
       "cited_by_count": 14,
       "citation_normalized_percentile": {
-        "value": 0.84777382,
+        "value": 0.84705224,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -836,21 +833,24 @@
           "landing_page_url": "https://doaj.org/article/e946076c983e4a5f94b83e5fbcf3a4f8",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -901,8 +901,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 116,
@@ -1644,7 +1644,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -2164,9 +2164,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.5199999809265137,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5199999809265137
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -2178,8 +2178,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4376956820.pdf",
@@ -2954,7 +2954,7 @@
       "has_fulltext": false,
       "cited_by_count": 7,
       "citation_normalized_percentile": {
-        "value": 0.88520296,
+        "value": 0.88420501,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -3189,25 +3189,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:9f9894fca2a341768b0ed582f586c50b",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/9f9894fca2a341768b0ed582f586c50b",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -3250,16 +3253,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.6299999952316284,
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.6299999952316284
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4395454182.pdf"
@@ -3934,7 +3937,632 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2025-12-19T19:40:27.379048",
+      "updated_date": "2026-02-05T00:54:17.221276",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W4406099889",
+      "doi": "https://doi.org/10.1007/s13369-024-09938-y",
+      "title": "A Review of Proppant Transport and Distribution in Slickwater Fracturing",
+      "display_name": "A Review of Proppant Transport and Distribution in Slickwater Fracturing",
+      "publication_year": 2025,
+      "publication_date": "2025-01-06",
+      "ids": {
+        "openalex": "https://openalex.org/W4406099889",
+        "doi": "https://doi.org/10.1007/s13369-024-09938-y"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/s13369-024-09938-y",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/s13369-024-09938-y",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210185304",
+          "display_name": "Arabian Journal for Science and Engineering",
+          "issn_l": "2191-4281",
+          "issn": [
+            "2191-4281",
+            "2193-567X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Arabian Journal for Science and Engineering",
+        "raw_type": "journal-article"
+      },
+      "type": "review",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5093000033",
+            "display_name": "Ose Budiman",
+            "orcid": "https://orcid.org/0009-0008-3487-2903"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ose Budiman",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050065390",
+            "display_name": "Shabeeb Alajmei",
+            "orcid": "https://orcid.org/0000-0002-5816-4214"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Shabeeb Alajmei",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002974432",
+            "display_name": "Murtada Saleh Aljawad",
+            "orcid": "https://orcid.org/0000-0002-3540-6807"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I167576493",
+              "display_name": "Colorado School of Mines",
+              "ror": "https://ror.org/04raf6v53",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I167576493"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ashtiwi Bahri",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA",
+              "institution_ids": [
+                "https://openalex.org/I167576493"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002974432",
+            "display_name": "Murtada Saleh Aljawad",
+            "orcid": "https://orcid.org/0000-0002-3540-6807"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Murtada Saleh Aljawad",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5040734557",
+            "display_name": "Jennifer Miskimins",
+            "orcid": "https://orcid.org/0000-0001-6880-883X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I167576493",
+              "display_name": "Colorado School of Mines",
+              "ror": "https://ror.org/04raf6v53",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I167576493"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jennifer Miskimins",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA",
+              "institution_ids": [
+                "https://openalex.org/I167576493"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5050065390"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
+      "apc_list": {
+        "value": 2490,
+        "currency": "EUR",
+        "value_usd": 3090
+      },
+      "apc_paid": null,
+      "fwci": 12.94678799,
+      "has_fulltext": false,
+      "cited_by_count": 6,
+      "citation_normalized_percentile": {
+        "value": 0.94566326,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 97,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "50",
+        "issue": "7",
+        "first_page": "5303",
+        "last_page": "5322"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10635",
+        "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+        "score": 0.9998999834060669,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2210",
+          "display_name": "Mechanical Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10635",
+          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+          "score": 0.9998999834060669,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2210",
+            "display_name": "Mechanical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10892",
+          "display_name": "Drilling and Well Engineering",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10271",
+          "display_name": "Seismic Imaging and Inversion Techniques",
+          "score": 0.9980000257492065,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1908",
+            "display_name": "Geophysics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/19",
+            "display_name": "Earth and Planetary Sciences"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/fracturing-fluid",
+          "display_name": "Fracturing fluid",
+          "score": 0.5016200542449951
+        },
+        {
+          "id": "https://openalex.org/keywords/hydraulic-fracturing",
+          "display_name": "Hydraulic fracturing",
+          "score": 0.49156150221824646
+        },
+        {
+          "id": "https://openalex.org/keywords/petroleum-engineering",
+          "display_name": "Petroleum engineering",
+          "score": 0.4446050524711609
+        },
+        {
+          "id": "https://openalex.org/keywords/materials-science",
+          "display_name": "Materials science",
+          "score": 0.39224204421043396
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering",
+          "display_name": "Engineering",
+          "score": 0.3138056993484497
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2994384808",
+          "wikidata": "https://www.wikidata.org/wiki/Q2826784",
+          "display_name": "Fracturing fluid",
+          "level": 2,
+          "score": 0.5016200542449951
+        },
+        {
+          "id": "https://openalex.org/C2779096232",
+          "wikidata": "https://www.wikidata.org/wiki/Q890794",
+          "display_name": "Hydraulic fracturing",
+          "level": 2,
+          "score": 0.49156150221824646
+        },
+        {
+          "id": "https://openalex.org/C78762247",
+          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
+          "display_name": "Petroleum engineering",
+          "level": 1,
+          "score": 0.4446050524711609
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.39224204421043396
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.3138056993484497
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.1007/s13369-024-09938-y",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1007/s13369-024-09938-y",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210185304",
+            "display_name": "Arabian Journal for Science and Engineering",
+            "issn_l": "2191-4281",
+            "issn": [
+              "2191-4281",
+              "2193-567X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319900",
+            "host_organization_name": "Springer Science+Business Media",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319900",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Science+Business Media",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Arabian Journal for Science and Engineering",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [
+        {
+          "score": 0.8299999833106995,
+          "id": "https://metadata.un.org/sdg/6",
+          "display_name": "Clean water and sanitation"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 117,
+      "referenced_works": [
+        "https://openalex.org/W1976934651",
+        "https://openalex.org/W1983991449",
+        "https://openalex.org/W1984343068",
+        "https://openalex.org/W1984351324",
+        "https://openalex.org/W1987782744",
+        "https://openalex.org/W1992380479",
+        "https://openalex.org/W1997669404",
+        "https://openalex.org/W2010743842",
+        "https://openalex.org/W2012603684",
+        "https://openalex.org/W2013706127",
+        "https://openalex.org/W2018030897",
+        "https://openalex.org/W2020736110",
+        "https://openalex.org/W2021116098",
+        "https://openalex.org/W2037298597",
+        "https://openalex.org/W2038985202",
+        "https://openalex.org/W2040280212",
+        "https://openalex.org/W2048009104",
+        "https://openalex.org/W2048930321",
+        "https://openalex.org/W2048983525",
+        "https://openalex.org/W2052600686",
+        "https://openalex.org/W2055539879",
+        "https://openalex.org/W2057779536",
+        "https://openalex.org/W2061600102",
+        "https://openalex.org/W2062730011",
+        "https://openalex.org/W2066239461",
+        "https://openalex.org/W2082921426",
+        "https://openalex.org/W2086837829",
+        "https://openalex.org/W2113427137",
+        "https://openalex.org/W2122891192",
+        "https://openalex.org/W2133924810",
+        "https://openalex.org/W2140904897",
+        "https://openalex.org/W2254014085",
+        "https://openalex.org/W2321637151",
+        "https://openalex.org/W2325521576",
+        "https://openalex.org/W2327490189",
+        "https://openalex.org/W2332199540",
+        "https://openalex.org/W2340194210",
+        "https://openalex.org/W2346421247",
+        "https://openalex.org/W2358273878",
+        "https://openalex.org/W2490445337",
+        "https://openalex.org/W2547418706",
+        "https://openalex.org/W2560225917",
+        "https://openalex.org/W2569223244",
+        "https://openalex.org/W2572450068",
+        "https://openalex.org/W2740890559",
+        "https://openalex.org/W2747437371",
+        "https://openalex.org/W2759413853",
+        "https://openalex.org/W2766911874",
+        "https://openalex.org/W2793504199",
+        "https://openalex.org/W2794702858",
+        "https://openalex.org/W2800365933",
+        "https://openalex.org/W2802366434",
+        "https://openalex.org/W2809788155",
+        "https://openalex.org/W2892330460",
+        "https://openalex.org/W2894966976",
+        "https://openalex.org/W2898046381",
+        "https://openalex.org/W2909973912",
+        "https://openalex.org/W2914360621",
+        "https://openalex.org/W2914383192",
+        "https://openalex.org/W2914703976",
+        "https://openalex.org/W2920812171",
+        "https://openalex.org/W2921524877",
+        "https://openalex.org/W2922956605",
+        "https://openalex.org/W2954032719",
+        "https://openalex.org/W2962925250",
+        "https://openalex.org/W2970762706",
+        "https://openalex.org/W2976845128",
+        "https://openalex.org/W2980038889",
+        "https://openalex.org/W2999651488",
+        "https://openalex.org/W3001676454",
+        "https://openalex.org/W3019696665",
+        "https://openalex.org/W3020768961",
+        "https://openalex.org/W3025253252",
+        "https://openalex.org/W3048274682",
+        "https://openalex.org/W3093869646",
+        "https://openalex.org/W3094801578",
+        "https://openalex.org/W3101170605",
+        "https://openalex.org/W3111990155",
+        "https://openalex.org/W3119551162",
+        "https://openalex.org/W3123076178",
+        "https://openalex.org/W3144994396",
+        "https://openalex.org/W3153174108",
+        "https://openalex.org/W3155967033",
+        "https://openalex.org/W3157667843",
+        "https://openalex.org/W3159895413",
+        "https://openalex.org/W3161775796",
+        "https://openalex.org/W3163832215",
+        "https://openalex.org/W3166584254",
+        "https://openalex.org/W3174509583",
+        "https://openalex.org/W3181392680",
+        "https://openalex.org/W3205497269",
+        "https://openalex.org/W3210195727",
+        "https://openalex.org/W4213215881",
+        "https://openalex.org/W4220791213",
+        "https://openalex.org/W4225935534",
+        "https://openalex.org/W4226192699",
+        "https://openalex.org/W4235725142",
+        "https://openalex.org/W4281478814",
+        "https://openalex.org/W4281623444",
+        "https://openalex.org/W4281626740",
+        "https://openalex.org/W4285162947",
+        "https://openalex.org/W4297349411",
+        "https://openalex.org/W4297916474",
+        "https://openalex.org/W4309045409",
+        "https://openalex.org/W4310050687",
+        "https://openalex.org/W4317790738",
+        "https://openalex.org/W4317790742",
+        "https://openalex.org/W4319311484",
+        "https://openalex.org/W4327862505",
+        "https://openalex.org/W4381618870",
+        "https://openalex.org/W4382930037",
+        "https://openalex.org/W4385806049",
+        "https://openalex.org/W4386495168",
+        "https://openalex.org/W4386524070",
+        "https://openalex.org/W4387934446",
+        "https://openalex.org/W4401361342",
+        "https://openalex.org/W4402668579"
+      ],
+      "related_works": [
+        "https://openalex.org/W2392992416",
+        "https://openalex.org/W2363496583",
+        "https://openalex.org/W2049558864",
+        "https://openalex.org/W4404634003",
+        "https://openalex.org/W2777139641",
+        "https://openalex.org/W2096720932",
+        "https://openalex.org/W2900912765",
+        "https://openalex.org/W2901629677",
+        "https://openalex.org/W2393115895",
+        "https://openalex.org/W4389934377"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 4
+        }
+      ],
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -4675,8 +5303,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 61,
@@ -5221,631 +5849,6 @@
         }
       ],
       "updated_date": "2025-11-06T03:46:38.306776",
-      "created_date": "2025-10-10T00:00:00"
-    },
-    {
-      "id": "https://openalex.org/W4406099889",
-      "doi": "https://doi.org/10.1007/s13369-024-09938-y",
-      "title": "A Review of Proppant Transport and Distribution in Slickwater Fracturing",
-      "display_name": "A Review of Proppant Transport and Distribution in Slickwater Fracturing",
-      "publication_year": 2025,
-      "publication_date": "2025-01-06",
-      "ids": {
-        "openalex": "https://openalex.org/W4406099889",
-        "doi": "https://doi.org/10.1007/s13369-024-09938-y"
-      },
-      "language": "en",
-      "primary_location": {
-        "id": "doi:10.1007/s13369-024-09938-y",
-        "is_oa": false,
-        "landing_page_url": "https://doi.org/10.1007/s13369-024-09938-y",
-        "pdf_url": null,
-        "source": {
-          "id": "https://openalex.org/S4210185304",
-          "display_name": "Arabian Journal for Science and Engineering",
-          "issn_l": "2191-4281",
-          "issn": [
-            "2191-4281",
-            "2193-567X"
-          ],
-          "is_oa": false,
-          "is_in_doaj": false,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310319900",
-          "host_organization_name": "Springer Science+Business Media",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310319900",
-            "https://openalex.org/P4310319965"
-          ],
-          "host_organization_lineage_names": [
-            "Springer Science+Business Media",
-            "Springer Nature"
-          ],
-          "type": "journal"
-        },
-        "license": null,
-        "license_id": null,
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Arabian Journal for Science and Engineering",
-        "raw_type": "journal-article"
-      },
-      "type": "review",
-      "indexed_in": [
-        "crossref"
-      ],
-      "open_access": {
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "any_repository_has_fulltext": false
-      },
-      "authorships": [
-        {
-          "author_position": "first",
-          "author": {
-            "id": "https://openalex.org/A5093000033",
-            "display_name": "Ose Budiman",
-            "orcid": "https://orcid.org/0009-0008-3487-2903"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Ose Budiman",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5050065390",
-            "display_name": "Shabeeb Alajmei",
-            "orcid": "https://orcid.org/0000-0002-5816-4214"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": true,
-          "raw_author_name": "Shabeeb Alajmei",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5002974432",
-            "display_name": "Murtada Saleh Aljawad",
-            "orcid": "https://orcid.org/0000-0002-3540-6807"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I167576493",
-              "display_name": "Colorado School of Mines",
-              "ror": "https://ror.org/04raf6v53",
-              "country_code": "US",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I167576493"
-              ]
-            }
-          ],
-          "countries": [
-            "US"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Ashtiwi Bahri",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA",
-              "institution_ids": [
-                "https://openalex.org/I167576493"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5002974432",
-            "display_name": "Murtada Saleh Aljawad",
-            "orcid": "https://orcid.org/0000-0002-3540-6807"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Murtada Saleh Aljawad",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "last",
-          "author": {
-            "id": "https://openalex.org/A5040734557",
-            "display_name": "Jennifer Miskimins",
-            "orcid": "https://orcid.org/0000-0001-6880-883X"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I167576493",
-              "display_name": "Colorado School of Mines",
-              "ror": "https://ror.org/04raf6v53",
-              "country_code": "US",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I167576493"
-              ]
-            }
-          ],
-          "countries": [
-            "US"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Jennifer Miskimins",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, Colorado School of Mines, Golden, CO, 80401, USA",
-              "institution_ids": [
-                "https://openalex.org/I167576493"
-              ]
-            }
-          ]
-        }
-      ],
-      "institutions": [],
-      "countries_distinct_count": 2,
-      "institutions_distinct_count": 5,
-      "corresponding_author_ids": [
-        "https://openalex.org/A5050065390"
-      ],
-      "corresponding_institution_ids": [
-        "https://openalex.org/I134085113"
-      ],
-      "apc_list": {
-        "value": 2490,
-        "currency": "EUR",
-        "value_usd": 3090
-      },
-      "apc_paid": null,
-      "fwci": 10.78898999,
-      "has_fulltext": false,
-      "cited_by_count": 5,
-      "citation_normalized_percentile": {
-        "value": 0.92859472,
-        "is_in_top_1_percent": false,
-        "is_in_top_10_percent": true
-      },
-      "cited_by_percentile_year": {
-        "min": 97,
-        "max": 100
-      },
-      "biblio": {
-        "volume": "50",
-        "issue": "7",
-        "first_page": "5303",
-        "last_page": "5322"
-      },
-      "is_retracted": false,
-      "is_paratext": false,
-      "is_xpac": false,
-      "primary_topic": {
-        "id": "https://openalex.org/T10635",
-        "display_name": "Hydraulic Fracturing and Reservoir Analysis",
-        "score": 0.9998999834060669,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2210",
-          "display_name": "Mechanical Engineering"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/22",
-          "display_name": "Engineering"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/3",
-          "display_name": "Physical Sciences"
-        }
-      },
-      "topics": [
-        {
-          "id": "https://openalex.org/T10635",
-          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
-          "score": 0.9998999834060669,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2210",
-            "display_name": "Mechanical Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10892",
-          "display_name": "Drilling and Well Engineering",
-          "score": 0.9994999766349792,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10271",
-          "display_name": "Seismic Imaging and Inversion Techniques",
-          "score": 0.9980000257492065,
-          "subfield": {
-            "id": "https://openalex.org/subfields/1908",
-            "display_name": "Geophysics"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/19",
-            "display_name": "Earth and Planetary Sciences"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        }
-      ],
-      "keywords": [
-        {
-          "id": "https://openalex.org/keywords/fracturing-fluid",
-          "display_name": "Fracturing fluid",
-          "score": 0.5016200542449951
-        },
-        {
-          "id": "https://openalex.org/keywords/hydraulic-fracturing",
-          "display_name": "Hydraulic fracturing",
-          "score": 0.49156150221824646
-        },
-        {
-          "id": "https://openalex.org/keywords/petroleum-engineering",
-          "display_name": "Petroleum engineering",
-          "score": 0.4446050524711609
-        },
-        {
-          "id": "https://openalex.org/keywords/materials-science",
-          "display_name": "Materials science",
-          "score": 0.39224204421043396
-        },
-        {
-          "id": "https://openalex.org/keywords/engineering",
-          "display_name": "Engineering",
-          "score": 0.3138056993484497
-        }
-      ],
-      "concepts": [
-        {
-          "id": "https://openalex.org/C2994384808",
-          "wikidata": "https://www.wikidata.org/wiki/Q2826784",
-          "display_name": "Fracturing fluid",
-          "level": 2,
-          "score": 0.5016200542449951
-        },
-        {
-          "id": "https://openalex.org/C2779096232",
-          "wikidata": "https://www.wikidata.org/wiki/Q890794",
-          "display_name": "Hydraulic fracturing",
-          "level": 2,
-          "score": 0.49156150221824646
-        },
-        {
-          "id": "https://openalex.org/C78762247",
-          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
-          "display_name": "Petroleum engineering",
-          "level": 1,
-          "score": 0.4446050524711609
-        },
-        {
-          "id": "https://openalex.org/C192562407",
-          "wikidata": "https://www.wikidata.org/wiki/Q228736",
-          "display_name": "Materials science",
-          "level": 0,
-          "score": 0.39224204421043396
-        },
-        {
-          "id": "https://openalex.org/C127413603",
-          "wikidata": "https://www.wikidata.org/wiki/Q11023",
-          "display_name": "Engineering",
-          "level": 0,
-          "score": 0.3138056993484497
-        }
-      ],
-      "mesh": [],
-      "locations_count": 1,
-      "locations": [
-        {
-          "id": "doi:10.1007/s13369-024-09938-y",
-          "is_oa": false,
-          "landing_page_url": "https://doi.org/10.1007/s13369-024-09938-y",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4210185304",
-            "display_name": "Arabian Journal for Science and Engineering",
-            "issn_l": "2191-4281",
-            "issn": [
-              "2191-4281",
-              "2193-567X"
-            ],
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": true,
-            "host_organization": "https://openalex.org/P4310319900",
-            "host_organization_name": "Springer Science+Business Media",
-            "host_organization_lineage": [
-              "https://openalex.org/P4310319900",
-              "https://openalex.org/P4310319965"
-            ],
-            "host_organization_lineage_names": [
-              "Springer Science+Business Media",
-              "Springer Nature"
-            ],
-            "type": "journal"
-          },
-          "license": null,
-          "license_id": null,
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Arabian Journal for Science and Engineering",
-          "raw_type": "journal-article"
-        }
-      ],
-      "best_oa_location": null,
-      "sustainable_development_goals": [
-        {
-          "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.8299999833106995
-        }
-      ],
-      "awards": [],
-      "funders": [],
-      "has_content": {
-        "grobid_xml": false,
-        "pdf": false
-      },
-      "content_urls": null,
-      "referenced_works_count": 117,
-      "referenced_works": [
-        "https://openalex.org/W1976934651",
-        "https://openalex.org/W1983991449",
-        "https://openalex.org/W1984343068",
-        "https://openalex.org/W1984351324",
-        "https://openalex.org/W1987782744",
-        "https://openalex.org/W1992380479",
-        "https://openalex.org/W1997669404",
-        "https://openalex.org/W2010743842",
-        "https://openalex.org/W2012603684",
-        "https://openalex.org/W2013706127",
-        "https://openalex.org/W2018030897",
-        "https://openalex.org/W2020736110",
-        "https://openalex.org/W2021116098",
-        "https://openalex.org/W2037298597",
-        "https://openalex.org/W2038985202",
-        "https://openalex.org/W2040280212",
-        "https://openalex.org/W2048009104",
-        "https://openalex.org/W2048930321",
-        "https://openalex.org/W2048983525",
-        "https://openalex.org/W2052600686",
-        "https://openalex.org/W2055539879",
-        "https://openalex.org/W2057779536",
-        "https://openalex.org/W2061600102",
-        "https://openalex.org/W2062730011",
-        "https://openalex.org/W2066239461",
-        "https://openalex.org/W2082921426",
-        "https://openalex.org/W2086837829",
-        "https://openalex.org/W2113427137",
-        "https://openalex.org/W2122891192",
-        "https://openalex.org/W2133924810",
-        "https://openalex.org/W2140904897",
-        "https://openalex.org/W2254014085",
-        "https://openalex.org/W2321637151",
-        "https://openalex.org/W2325521576",
-        "https://openalex.org/W2327490189",
-        "https://openalex.org/W2332199540",
-        "https://openalex.org/W2340194210",
-        "https://openalex.org/W2346421247",
-        "https://openalex.org/W2358273878",
-        "https://openalex.org/W2490445337",
-        "https://openalex.org/W2547418706",
-        "https://openalex.org/W2560225917",
-        "https://openalex.org/W2569223244",
-        "https://openalex.org/W2572450068",
-        "https://openalex.org/W2740890559",
-        "https://openalex.org/W2747437371",
-        "https://openalex.org/W2759413853",
-        "https://openalex.org/W2766911874",
-        "https://openalex.org/W2793504199",
-        "https://openalex.org/W2794702858",
-        "https://openalex.org/W2800365933",
-        "https://openalex.org/W2802366434",
-        "https://openalex.org/W2809788155",
-        "https://openalex.org/W2892330460",
-        "https://openalex.org/W2894966976",
-        "https://openalex.org/W2898046381",
-        "https://openalex.org/W2909973912",
-        "https://openalex.org/W2914360621",
-        "https://openalex.org/W2914383192",
-        "https://openalex.org/W2914703976",
-        "https://openalex.org/W2920812171",
-        "https://openalex.org/W2921524877",
-        "https://openalex.org/W2922956605",
-        "https://openalex.org/W2954032719",
-        "https://openalex.org/W2962925250",
-        "https://openalex.org/W2970762706",
-        "https://openalex.org/W2976845128",
-        "https://openalex.org/W2980038889",
-        "https://openalex.org/W2999651488",
-        "https://openalex.org/W3001676454",
-        "https://openalex.org/W3019696665",
-        "https://openalex.org/W3020768961",
-        "https://openalex.org/W3025253252",
-        "https://openalex.org/W3048274682",
-        "https://openalex.org/W3093869646",
-        "https://openalex.org/W3094801578",
-        "https://openalex.org/W3101170605",
-        "https://openalex.org/W3111990155",
-        "https://openalex.org/W3119551162",
-        "https://openalex.org/W3123076178",
-        "https://openalex.org/W3144994396",
-        "https://openalex.org/W3153174108",
-        "https://openalex.org/W3155967033",
-        "https://openalex.org/W3157667843",
-        "https://openalex.org/W3159895413",
-        "https://openalex.org/W3161775796",
-        "https://openalex.org/W3163832215",
-        "https://openalex.org/W3166584254",
-        "https://openalex.org/W3174509583",
-        "https://openalex.org/W3181392680",
-        "https://openalex.org/W3205497269",
-        "https://openalex.org/W3210195727",
-        "https://openalex.org/W4213215881",
-        "https://openalex.org/W4220791213",
-        "https://openalex.org/W4225935534",
-        "https://openalex.org/W4226192699",
-        "https://openalex.org/W4235725142",
-        "https://openalex.org/W4281478814",
-        "https://openalex.org/W4281623444",
-        "https://openalex.org/W4281626740",
-        "https://openalex.org/W4285162947",
-        "https://openalex.org/W4297349411",
-        "https://openalex.org/W4297916474",
-        "https://openalex.org/W4309045409",
-        "https://openalex.org/W4310050687",
-        "https://openalex.org/W4317790738",
-        "https://openalex.org/W4317790742",
-        "https://openalex.org/W4319311484",
-        "https://openalex.org/W4327862505",
-        "https://openalex.org/W4381618870",
-        "https://openalex.org/W4382930037",
-        "https://openalex.org/W4385806049",
-        "https://openalex.org/W4386495168",
-        "https://openalex.org/W4386524070",
-        "https://openalex.org/W4387934446",
-        "https://openalex.org/W4401361342",
-        "https://openalex.org/W4402668579"
-      ],
-      "related_works": [
-        "https://openalex.org/W2392992416",
-        "https://openalex.org/W2363496583",
-        "https://openalex.org/W2049558864",
-        "https://openalex.org/W4404634003",
-        "https://openalex.org/W2777139641",
-        "https://openalex.org/W2096720932",
-        "https://openalex.org/W2900912765",
-        "https://openalex.org/W2901629677",
-        "https://openalex.org/W2393115895",
-        "https://openalex.org/W4389934377"
-      ],
-      "abstract_inverted_index": null,
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2025,
-          "cited_by_count": 4
-        }
-      ],
-      "updated_date": "2026-01-21T23:30:37.877113",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -6441,9 +6444,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.7099999785423279,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.7099999785423279
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -6455,8 +6458,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 54,
@@ -7661,8 +7664,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 19,
@@ -8083,8 +8086,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 25,
@@ -9525,8 +9528,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 53,
@@ -10746,16 +10749,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8700000047683716,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.8700000047683716
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 18,
@@ -11816,16 +11819,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4699999988079071,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.4699999988079071
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 26,
@@ -13097,7 +13100,7 @@
       "has_fulltext": false,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.68613273,
+        "value": 0.68559056,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -13485,25 +13488,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:a16b0f4c95ca41b9933bb7f0ff3383e4",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/a16b0f4c95ca41b9933bb7f0ff3383e4",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -13554,8 +13560,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 19,
@@ -13976,7 +13982,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -14368,7 +14374,7 @@
       "has_fulltext": false,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.94716273,
+        "value": 0.94591567,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -14622,25 +14628,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:b453c0b89d37466a93ef6dc45e63d4a4",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/b453c0b89d37466a93ef6dc45e63d4a4",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -14720,8 +14729,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4408264874.pdf"
@@ -15419,7 +15428,7 @@
           "cited_by_count": 4
         }
       ],
-      "updated_date": "2025-12-28T23:10:05.387466",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -15880,16 +15889,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.5600000023841858,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5600000023841858
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 7,
@@ -17265,7 +17274,7 @@
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.67891758,
+        "value": 0.67761076,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -17536,25 +17545,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:c8dd8ecd915041c69dcc5a939f4c4125",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/c8dd8ecd915041c69dcc5a939f4c4125",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -17597,16 +17609,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.550000011920929,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water",
-          "score": 0.550000011920929
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4404755035.pdf"
@@ -18260,7 +18272,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -18389,7 +18401,7 @@
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.68050356,
+        "value": 0.67997947,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -18778,21 +18790,24 @@
           "landing_page_url": "https://doaj.org/article/3970fec1c22143eba9cb10940bc3bf9e",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -18843,8 +18858,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 36,
@@ -19459,7 +19474,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -19587,7 +19602,7 @@
       "has_fulltext": true,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.52362906,
+        "value": 0.52325731,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -19884,21 +19899,24 @@
           "landing_page_url": "https://doaj.org/article/968ab194bf854eeca4c86feb2685b07a",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -19955,8 +19973,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4389618777.pdf"
@@ -20006,7 +20024,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-12-26T23:08:49.675405",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -20345,7 +20363,7 @@
       "has_fulltext": false,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.81136689,
+        "value": 0.8087159,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -20623,25 +20641,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:b20452f431de4a08beef8aee67863fab",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/b20452f431de4a08beef8aee67863fab",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -20713,9 +20734,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.44999998807907104,
           "id": "https://metadata.un.org/sdg/2",
-          "display_name": "Zero hunger",
-          "score": 0.44999998807907104
+          "display_name": "Zero hunger"
         }
       ],
       "awards": [],
@@ -20727,8 +20748,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4408922684.pdf"
@@ -21435,7 +21456,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-12-21T01:58:51.020947",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -22056,8 +22077,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 23,
@@ -23251,16 +23272,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.5099999904632568,
           "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action",
-          "score": 0.5099999904632568
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2950222284.pdf"
@@ -24237,25 +24258,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:82202895fda7408b84e756e815a33fee",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/82202895fda7408b84e756e815a33fee",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -24331,8 +24355,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4416764361.pdf"
@@ -25245,7 +25269,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-11-28T00:00:00"
     },
     {
@@ -25453,7 +25477,7 @@
       "has_fulltext": false,
       "cited_by_count": 0,
       "citation_normalized_percentile": {
-        "value": 0.13401116,
+        "value": 0.13375475,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -25811,21 +25835,24 @@
           "landing_page_url": "https://doaj.org/article/e0aabfb057d1454fbce90af34b43c4c0",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -25876,8 +25903,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 24,
@@ -26452,7 +26479,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2025-12-25T23:11:45.687758",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -26948,16 +26975,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8399999737739563,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.8399999737739563
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 10,
@@ -27398,8 +27425,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 28,
@@ -27717,8 +27744,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 9,
@@ -28677,8 +28704,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 29,
@@ -29928,8 +29955,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 46,
@@ -30541,8 +30568,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 35,
@@ -30957,8 +30984,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 16,
@@ -31633,8 +31660,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 15,
@@ -32539,8 +32566,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 36,
@@ -33584,8 +33611,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 51,
@@ -34231,8 +34258,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 165,
@@ -34408,6 +34435,1038 @@
       "counts_by_year": [],
       "updated_date": "2026-01-09T23:09:53.351390",
       "created_date": "2025-12-24T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7127114896",
+      "doi": "https://doi.org/10.2118/231054-ms",
+      "title": "Innovative Acidizing Technique in Carbonate Reservoir: An Experimental Study",
+      "display_name": "Innovative Acidizing Technique in Carbonate Reservoir: An Experimental Study",
+      "publication_year": 2026,
+      "publication_date": "2026-02-03",
+      "ids": {
+        "openalex": "https://openalex.org/W7127114896",
+        "doi": "https://doi.org/10.2118/231054-ms"
+      },
+      "language": null,
+      "primary_location": {
+        "id": "doi:10.2118/231054-ms",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.2118/231054-ms",
+        "pdf_url": null,
+        "source": null,
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Kuwait Oil &amp; Gas Show",
+        "raw_type": "proceedings-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5087583185",
+            "display_name": "Muhammad Shehryar",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Muhammad Shehryar",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5050065390",
+            "display_name": "Shabeeb Alajmei",
+            "orcid": "https://orcid.org/0000-0002-5816-4214"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "S. Alajmei",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5121494803",
+            "display_name": "Arshad Raza",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Arshad Raza",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5124777240",
+            "display_name": "Mohamed A. Mahmoud",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mohamed Mahmoud",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, College of Petroleum and Geosciences, King Fahd University of Petroleum and Minerals, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5124800052",
+            "display_name": "Fahad Khan",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Fahad Khan",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 5,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5087583185"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.92653658,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10635",
+        "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+        "score": 0.8870000243186951,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2210",
+          "display_name": "Mechanical Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10635",
+          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+          "score": 0.8870000243186951,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2210",
+            "display_name": "Mechanical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11801",
+          "display_name": "Reservoir Engineering and Simulation Methods",
+          "score": 0.022199999541044235,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10491",
+          "display_name": "Enhanced Oil Recovery Techniques",
+          "score": 0.017000000923871994,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/carbonate",
+          "display_name": "Carbonate",
+          "score": 0.7408000230789185
+        },
+        {
+          "id": "https://openalex.org/keywords/hydrochloric-acid",
+          "display_name": "Hydrochloric acid",
+          "score": 0.5580000281333923
+        },
+        {
+          "id": "https://openalex.org/keywords/permeability",
+          "display_name": "Permeability (electromagnetism)",
+          "score": 0.48399999737739563
+        },
+        {
+          "id": "https://openalex.org/keywords/calcite",
+          "display_name": "Calcite",
+          "score": 0.41029998660087585
+        },
+        {
+          "id": "https://openalex.org/keywords/well-stimulation",
+          "display_name": "Well stimulation",
+          "score": 0.36820000410079956
+        },
+        {
+          "id": "https://openalex.org/keywords/enhanced-oil-recovery",
+          "display_name": "Enhanced oil recovery",
+          "score": 0.3246000111103058
+        },
+        {
+          "id": "https://openalex.org/keywords/carbonate-rock",
+          "display_name": "Carbonate rock",
+          "score": 0.31869998574256897
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2780659211",
+          "wikidata": "https://www.wikidata.org/wiki/Q181699",
+          "display_name": "Carbonate",
+          "level": 2,
+          "score": 0.7408000230789185
+        },
+        {
+          "id": "https://openalex.org/C78762247",
+          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
+          "display_name": "Petroleum engineering",
+          "level": 1,
+          "score": 0.5860000252723694
+        },
+        {
+          "id": "https://openalex.org/C2777436746",
+          "wikidata": "https://www.wikidata.org/wiki/Q2409",
+          "display_name": "Hydrochloric acid",
+          "level": 2,
+          "score": 0.5580000281333923
+        },
+        {
+          "id": "https://openalex.org/C120882062",
+          "wikidata": "https://www.wikidata.org/wiki/Q28352",
+          "display_name": "Permeability (electromagnetism)",
+          "level": 3,
+          "score": 0.48399999737739563
+        },
+        {
+          "id": "https://openalex.org/C39432304",
+          "wikidata": "https://www.wikidata.org/wiki/Q188847",
+          "display_name": "Environmental science",
+          "level": 0,
+          "score": 0.4359000027179718
+        },
+        {
+          "id": "https://openalex.org/C2780191791",
+          "wikidata": "https://www.wikidata.org/wiki/Q171917",
+          "display_name": "Calcite",
+          "level": 2,
+          "score": 0.41029998660087585
+        },
+        {
+          "id": "https://openalex.org/C127313418",
+          "wikidata": "https://www.wikidata.org/wiki/Q1069",
+          "display_name": "Geology",
+          "level": 0,
+          "score": 0.3700999915599823
+        },
+        {
+          "id": "https://openalex.org/C81803558",
+          "wikidata": "https://www.wikidata.org/wiki/Q7981135",
+          "display_name": "Well stimulation",
+          "level": 4,
+          "score": 0.36820000410079956
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.3296999931335449
+        },
+        {
+          "id": "https://openalex.org/C2779681308",
+          "wikidata": "https://www.wikidata.org/wiki/Q1049254",
+          "display_name": "Enhanced oil recovery",
+          "level": 2,
+          "score": 0.3246000111103058
+        },
+        {
+          "id": "https://openalex.org/C19320362",
+          "wikidata": "https://www.wikidata.org/wiki/Q777913",
+          "display_name": "Carbonate rock",
+          "level": 3,
+          "score": 0.31869998574256897
+        },
+        {
+          "id": "https://openalex.org/C9677107",
+          "wikidata": "https://www.wikidata.org/wiki/Q502102",
+          "display_name": "Wellbore",
+          "level": 2,
+          "score": 0.3174999952316284
+        },
+        {
+          "id": "https://openalex.org/C2776364302",
+          "wikidata": "https://www.wikidata.org/wiki/Q1845437",
+          "display_name": "Oil field",
+          "level": 2,
+          "score": 0.3149000108242035
+        },
+        {
+          "id": "https://openalex.org/C113378726",
+          "wikidata": "https://www.wikidata.org/wiki/Q7310797",
+          "display_name": "Relative permeability",
+          "level": 3,
+          "score": 0.31150001287460327
+        },
+        {
+          "id": "https://openalex.org/C185592680",
+          "wikidata": "https://www.wikidata.org/wiki/Q2329",
+          "display_name": "Chemistry",
+          "level": 0,
+          "score": 0.30079999566078186
+        },
+        {
+          "id": "https://openalex.org/C21880701",
+          "wikidata": "https://www.wikidata.org/wiki/Q2144042",
+          "display_name": "Process engineering",
+          "level": 1,
+          "score": 0.29510000348091125
+        },
+        {
+          "id": "https://openalex.org/C175234220",
+          "wikidata": "https://www.wikidata.org/wiki/Q10860587",
+          "display_name": "Steam injection",
+          "level": 2,
+          "score": 0.2874999940395355
+        },
+        {
+          "id": "https://openalex.org/C2777858879",
+          "wikidata": "https://www.wikidata.org/wiki/Q104334",
+          "display_name": "Carbonic acid",
+          "level": 2,
+          "score": 0.2721000015735626
+        },
+        {
+          "id": "https://openalex.org/C2779002002",
+          "wikidata": "https://www.wikidata.org/wiki/Q1073138",
+          "display_name": "Carbonate minerals",
+          "level": 3,
+          "score": 0.266400009393692
+        },
+        {
+          "id": "https://openalex.org/C548081761",
+          "wikidata": "https://www.wikidata.org/wiki/Q180388",
+          "display_name": "Waste management",
+          "level": 1,
+          "score": 0.26499998569488525
+        },
+        {
+          "id": "https://openalex.org/C2778039128",
+          "wikidata": "https://www.wikidata.org/wiki/Q23767",
+          "display_name": "Calcium carbonate",
+          "level": 2,
+          "score": 0.26330000162124634
+        },
+        {
+          "id": "https://openalex.org/C2777560178",
+          "wikidata": "https://www.wikidata.org/wiki/Q587682",
+          "display_name": "Oil well",
+          "level": 2,
+          "score": 0.26080000400543213
+        },
+        {
+          "id": "https://openalex.org/C199289684",
+          "wikidata": "https://www.wikidata.org/wiki/Q83353",
+          "display_name": "Mineralogy",
+          "level": 1,
+          "score": 0.25040000677108765
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.2118/231054-ms",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.2118/231054-ms",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Kuwait Oil &amp; Gas Show",
+          "raw_type": "proceedings-article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 14,
+      "referenced_works": [
+        "https://openalex.org/W2014850348",
+        "https://openalex.org/W2762823760",
+        "https://openalex.org/W2982185641",
+        "https://openalex.org/W3125459972",
+        "https://openalex.org/W3161767302",
+        "https://openalex.org/W4210511599",
+        "https://openalex.org/W4220984120",
+        "https://openalex.org/W4306320609",
+        "https://openalex.org/W4386594713",
+        "https://openalex.org/W4388461607",
+        "https://openalex.org/W4401733937",
+        "https://openalex.org/W4403555127",
+        "https://openalex.org/W4406306462",
+        "https://openalex.org/W4408550078"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Carbonate": [
+          1
+        ],
+        "reservoirs,": [
+          2,
+          56
+        ],
+        "which": [
+          3,
+          63
+        ],
+        "account": [
+          4
+        ],
+        "for": [
+          5,
+          86,
+          186,
+          191
+        ],
+        "a": [
+          6,
+          167,
+          184
+        ],
+        "substantial": [
+          7
+        ],
+        "portion": [
+          8
+        ],
+        "of": [
+          9,
+          31,
+          68,
+          81,
+          96,
+          124,
+          155
+        ],
+        "global": [
+          10
+        ],
+        "hydrocarbon": [
+          11
+        ],
+        "resources,": [
+          12
+        ],
+        "often": [
+          13
+        ],
+        "require": [
+          14
+        ],
+        "acid": [
+          15,
+          33,
+          58,
+          88,
+          102,
+          110,
+          149
+        ],
+        "stimulation": [
+          16,
+          70,
+          175
+        ],
+        "to": [
+          17,
+          35,
+          75,
+          100,
+          172
+        ],
+        "enhance": [
+          18,
+          173
+        ],
+        "permeability": [
+          19,
+          142
+        ],
+        "and": [
+          20,
+          42,
+          60,
+          83,
+          90,
+          107,
+          169
+        ],
+        "improve": [
+          21
+        ],
+        "well": [
+          22
+        ],
+        "productivity.": [
+          23
+        ],
+        "Conventional": [
+          24
+        ],
+        "acidizing": [
+          25,
+          78
+        ],
+        "treatments": [
+          26,
+          46
+        ],
+        "typically": [
+          27
+        ],
+        "involve": [
+          28
+        ],
+        "the": [
+          29,
+          65,
+          69,
+          105,
+          113,
+          117,
+          122,
+          153,
+          156,
+          174,
+          178,
+          188,
+          194
+        ],
+        "use": [
+          30,
+          95
+        ],
+        "hydrochloric": [
+          32
+        ],
+        "(HCl)": [
+          34
+        ],
+        "dissolve": [
+          36
+        ],
+        "carbonate": [
+          37,
+          135,
+          179
+        ],
+        "minerals": [
+          38
+        ],
+        "such": [
+          39
+        ],
+        "as": [
+          40
+        ],
+        "calcite": [
+          41
+        ],
+        "dolomite.": [
+          43
+        ],
+        "However,": [
+          44
+        ],
+        "these": [
+          45
+        ],
+        "frequently": [
+          47
+        ],
+        "encounter": [
+          48
+        ],
+        "challenges": [
+          49
+        ],
+        "including": [
+          50
+        ],
+        "rapid": [
+          51
+        ],
+        "acid-rock": [
+          52,
+          91
+        ],
+        "reactions": [
+          53
+        ],
+        "in": [
+          54,
+          104,
+          177,
+          196
+        ],
+        "high-temperature": [
+          55
+        ],
+        "inefficient": [
+          57
+        ],
+        "utilization,": [
+          59
+        ],
+        "non-uniform": [
+          61
+        ],
+        "penetration,": [
+          62
+        ],
+        "reduce": [
+          64
+        ],
+        "overall": [
+          66
+        ],
+        "effectiveness": [
+          67,
+          123,
+          154
+        ],
+        "process.": [
+          71
+        ],
+        "Our": [
+          72
+        ],
+        "study": [
+          73
+        ],
+        "aims": [
+          74
+        ],
+        "develop": [
+          76
+        ],
+        "an": [
+          77
+        ],
+        "treatment": [
+          79,
+          157,
+          164,
+          176
+        ],
+        "composed": [
+          80
+        ],
+        "HCl": [
+          82
+        ],
+        "thermochemical": [
+          84,
+          160
+        ],
+        "additives": [
+          85,
+          98
+        ],
+        "improved": [
+          87,
+          101
+        ],
+        "placement": [
+          89
+        ],
+        "reaction": [
+          92
+        ],
+        "control.": [
+          93
+        ],
+        "The": [
+          94,
+          138,
+          162,
+          181
+        ],
+        "reactive": [
+          97
+        ],
+        "leads": [
+          99
+        ],
+        "distribution": [
+          103
+        ],
+        "formation": [
+          106
+        ],
+        "reduces": [
+          108
+        ],
+        "early": [
+          109
+        ],
+        "spending": [
+          111
+        ],
+        "near": [
+          112
+        ],
+        "wellbore": [
+          114
+        ],
+        "by": [
+          115
+        ],
+        "reducing": [
+          116
+        ],
+        "local": [
+          118
+        ],
+        "temperature.": [
+          119
+        ],
+        "To": [
+          120
+        ],
+        "assess": [
+          121
+        ],
+        "this": [
+          125
+        ],
+        "new": [
+          126,
+          163
+        ],
+        "approach,": [
+          127
+        ],
+        "laboratory": [
+          128
+        ],
+        "core": [
+          129
+        ],
+        "flood": [
+          130
+        ],
+        "tests": [
+          131,
+          139
+        ],
+        "were": [
+          132
+        ],
+        "done": [
+          133
+        ],
+        "on": [
+          134,
+          193
+        ],
+        "rock": [
+          136
+        ],
+        "samples.": [
+          137
+        ],
+        "showed": [
+          140
+        ],
+        "that": [
+          141
+        ],
+        "improvement": [
+          143
+        ],
+        "was": [
+          144
+        ],
+        "much": [
+          145
+        ],
+        "better": [
+          146
+        ],
+        "than": [
+          147
+        ],
+        "conventional": [
+          148
+        ],
+        "systems,": [
+          150
+        ],
+        "thus": [
+          151
+        ],
+        "proving": [
+          152
+        ],
+        "enhanced": [
+          158
+        ],
+        "with": [
+          159
+        ],
+        "additives.": [
+          161
+        ],
+        "gives": [
+          165
+        ],
+        "us": [
+          166
+        ],
+        "feasible": [
+          168
+        ],
+        "scalable": [
+          170
+        ],
+        "option": [
+          171
+        ],
+        "reservoirs.": [
+          180
+        ],
+        "results": [
+          182
+        ],
+        "provide": [
+          183
+        ],
+        "basis": [
+          185
+        ],
+        "improving": [
+          187
+        ],
+        "technique's": [
+          189
+        ],
+        "design": [
+          190
+        ],
+        "implementing": [
+          192
+        ],
+        "field": [
+          195
+        ],
+        "difficult": [
+          197
+        ],
+        "reservoir": [
+          198
+        ],
+        "conditions.": [
+          199
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-02-05T00:54:17.221276",
+      "created_date": "2026-02-03T00:00:00"
     }
   ]
 }

@@ -1389,8 +1389,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 81,
@@ -2598,8 +2598,8 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8299999833106995,
           "display_name": "Clean water and sanitation",
+          "score": 0.8299999833106995,
           "id": "https://metadata.un.org/sdg/6"
         }
       ],
@@ -2612,8 +2612,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 67,
@@ -3934,8 +3934,8 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.75,
           "display_name": "Affordable and clean energy",
+          "score": 0.75,
           "id": "https://metadata.un.org/sdg/7"
         }
       ],
@@ -3985,8 +3985,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 67,
@@ -5162,9 +5162,9 @@
       },
       "fwci": 1.22005304,
       "has_fulltext": true,
-      "cited_by_count": 31,
+      "cited_by_count": 32,
       "citation_normalized_percentile": {
-        "value": 0.74920334,
+        "value": 0.7492084,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -5519,8 +5519,8 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8700000047683716,
           "display_name": "Affordable and clean energy",
+          "score": 0.8700000047683716,
           "id": "https://metadata.un.org/sdg/7"
         }
       ],
@@ -5548,8 +5548,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2972833210.pdf",
@@ -6132,7 +6132,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 3
+          "cited_by_count": 4
         },
         {
           "year": 2025,
@@ -6159,7 +6159,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -6404,7 +6404,7 @@
       "has_fulltext": false,
       "cited_by_count": 1,
       "citation_normalized_percentile": {
-        "value": 0.71999234,
+        "value": 0.71657847,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -6502,8 +6502,22 @@
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
+          "descriptor_ui": "D000900",
+          "descriptor_name": "Anti-Bacterial Agents",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000900",
+          "descriptor_name": "Anti-Bacterial Agents",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000900",
+          "descriptor_name": "Anti-Bacterial Agents",
           "qualifier_ui": "Q000737",
           "qualifier_name": "chemistry",
           "is_major_topic": true
@@ -6516,6 +6530,83 @@
           "is_major_topic": false
         },
         {
+          "descriptor_ui": "D002384",
+          "descriptor_name": "Catalysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002384",
+          "descriptor_name": "Catalysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002384",
+          "descriptor_name": "Catalysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009573",
+          "descriptor_name": "Nitrites",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009573",
+          "descriptor_name": "Nitrites",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009573",
+          "descriptor_name": "Nitrites",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009573",
+          "descriptor_name": "Nitrites",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
           "descriptor_ui": "D014874",
           "descriptor_name": "Water Pollutants, Chemical",
           "qualifier_ui": "Q000737",
@@ -6523,8 +6614,29 @@
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D009573",
-          "descriptor_name": "Nitrites",
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D028561",
+          "descriptor_name": "Transition Elements",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -6537,120 +6649,8 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D000900",
-          "descriptor_name": "Anti-Bacterial Agents",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D002384",
-          "descriptor_name": "Catalysis",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014874",
-          "descriptor_name": "Water Pollutants, Chemical",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D009573",
-          "descriptor_name": "Nitrites",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
           "descriptor_ui": "D028561",
           "descriptor_name": "Transition Elements",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000900",
-          "descriptor_name": "Anti-Bacterial Agents",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D002384",
-          "descriptor_name": "Catalysis",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014874",
-          "descriptor_name": "Water Pollutants, Chemical",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D009573",
-          "descriptor_name": "Nitrites",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D028561",
-          "descriptor_name": "Transition Elements",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000900",
-          "descriptor_name": "Anti-Bacterial Agents",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D002384",
-          "descriptor_name": "Catalysis",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014874",
-          "descriptor_name": "Water Pollutants, Chemical",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D009573",
-          "descriptor_name": "Nitrites",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -6730,25 +6730,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:5cb0af6e73ff413e956e3df2c5bf962c",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/5cb0af6e73ff413e956e3df2c5bf962c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -6852,8 +6855,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4414258623.pdf"
@@ -7621,7 +7624,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-12-30T23:08:21.542490",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -8335,16 +8338,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.8700000047683716,
           "display_name": "Affordable and clean energy",
+          "score": 0.8700000047683716,
           "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 79,
@@ -9297,8 +9300,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 37,
@@ -10269,8 +10272,8 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4699999988079071,
           "display_name": "Clean water and sanitation",
+          "score": 0.4699999988079071,
           "id": "https://metadata.un.org/sdg/6"
         }
       ],
@@ -10283,8 +10286,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 56,
@@ -11628,8 +11631,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W1868849675.pdf",
@@ -12690,16 +12693,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.6600000262260437,
           "display_name": "Clean water and sanitation",
+          "score": 0.6600000262260437,
           "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 61,
@@ -12951,7 +12954,7 @@
           "author": {
             "id": "https://openalex.org/A5037623081",
             "display_name": "Q. Mahmood",
-            "orcid": "https://orcid.org/0000-0001-7449-5876"
+            "orcid": null
           },
           "institutions": [
             {
@@ -12971,18 +12974,18 @@
           "is_corresponding": false,
           "raw_author_name": "Q. Mahmood",
           "raw_affiliation_strings": [
-            "Department of Physics, College of Science, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia",
-            "Basic and Applied Scientific Research Center, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia"
+            "Basic and Applied Scientific Research Center, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia",
+            "Department of Physics, College of Science, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia"
           ],
           "affiliations": [
             {
-              "raw_affiliation_string": "Department of Physics, College of Science, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia",
+              "raw_affiliation_string": "Basic and Applied Scientific Research Center, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia",
               "institution_ids": [
                 "https://openalex.org/I76571253"
               ]
             },
             {
-              "raw_affiliation_string": "Basic and Applied Scientific Research Center, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia",
+              "raw_affiliation_string": "Department of Physics, College of Science, Imam Abdulrahman Bin Faisal University, P.O. Box 1982, Dammam, 31441, Saudi Arabia",
               "institution_ids": [
                 "https://openalex.org/I76571253"
               ]
@@ -13066,7 +13069,7 @@
           "author": {
             "id": "https://openalex.org/A5027180863",
             "display_name": "Ayman S. Alofi",
-            "orcid": "https://orcid.org/0000-0001-5510-2993"
+            "orcid": null
           },
           "institutions": [
             {
@@ -13106,16 +13109,6 @@
           },
           "institutions": [
             {
-              "id": "https://openalex.org/I5100685",
-              "display_name": "University of Education",
-              "ror": "https://ror.org/052z7nw84",
-              "country_code": "PK",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I5100685"
-              ]
-            },
-            {
               "id": "https://openalex.org/I3130814776",
               "display_name": "University of Okara",
               "ror": "https://ror.org/02fmg6q11",
@@ -13123,6 +13116,16 @@
               "type": "education",
               "lineage": [
                 "https://openalex.org/I3130814776"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I5100685",
+              "display_name": "University of Education",
+              "ror": "https://ror.org/052z7nw84",
+              "country_code": "PK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I5100685"
               ]
             }
           ],
@@ -13277,18 +13280,18 @@
           "is_corresponding": false,
           "raw_author_name": "El Sayed Yousef",
           "raw_affiliation_strings": [
-            "Research Center for Advanced Materials Science (RCAMS), King Khalid University, Abha, 61413, P. O. Box 9004, Saudi Arabia",
-            "Physics Department, Faculty of Science, King Khalid University, P. O. Box 9004, Abha, Saudi Arabia"
+            "Physics Department, Faculty of Science, King Khalid University, P. O. Box 9004, Abha, Saudi Arabia",
+            "Research Center for Advanced Materials Science (RCAMS), King Khalid University, Abha, 61413, P. O. Box 9004, Saudi Arabia"
           ],
           "affiliations": [
             {
-              "raw_affiliation_string": "Research Center for Advanced Materials Science (RCAMS), King Khalid University, Abha, 61413, P. O. Box 9004, Saudi Arabia",
+              "raw_affiliation_string": "Physics Department, Faculty of Science, King Khalid University, P. O. Box 9004, Abha, Saudi Arabia",
               "institution_ids": [
                 "https://openalex.org/I82952536"
               ]
             },
             {
-              "raw_affiliation_string": "Physics Department, Faculty of Science, King Khalid University, P. O. Box 9004, Abha, Saudi Arabia",
+              "raw_affiliation_string": "Research Center for Advanced Materials Science (RCAMS), King Khalid University, Abha, 61413, P. O. Box 9004, Saudi Arabia",
               "institution_ids": [
                 "https://openalex.org/I82952536"
               ]
@@ -13304,9 +13307,9 @@
         "https://openalex.org/A5020347245"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I5100685",
+        "https://openalex.org/I106778892",
         "https://openalex.org/I3130814776",
-        "https://openalex.org/I106778892"
+        "https://openalex.org/I5100685"
       ],
       "apc_list": {
         "value": 2870,
@@ -13318,7 +13321,7 @@
       "has_fulltext": false,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.73804644,
+        "value": 0.73682875,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -13605,8 +13608,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 76,
@@ -13711,7 +13714,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -14235,8 +14238,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 40,
@@ -15728,16 +15731,16 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.6700000166893005,
           "display_name": "Clean water and sanitation",
+          "score": 0.6700000166893005,
           "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2768487777.pdf",
@@ -16355,16 +16358,16 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.7400000095367432,
           "display_name": "Clean water and sanitation",
+          "score": 0.7400000095367432,
           "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W137456331.pdf"
@@ -17340,8 +17343,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -17584,16 +17587,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5799999833106995,
           "display_name": "Zero hunger",
+          "score": 0.5799999833106995,
           "id": "https://metadata.un.org/sdg/2"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -18038,8 +18041,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2950927619.pdf"
@@ -19113,8 +19116,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 61,

@@ -9,7 +9,7 @@
       "Ridha AlAbdrabalnabi"
     ],
     "works_count": 31,
-    "cited_by_count": 253,
+    "cited_by_count": 254,
     "summary_stats": {
       "2yr_mean_citedness": 7.090909090909091,
       "h_index": 9,
@@ -181,7 +181,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.0000918,
+        "value": 0.0000917,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -296,7 +296,7 @@
         "year": 2023,
         "works_count": 8,
         "oa_works_count": 2,
-        "cited_by_count": 47
+        "cited_by_count": 48
       },
       {
         "year": 2024,
@@ -327,7 +327,7 @@
     },
     "block_key": "r al-abdrabalnabi",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5018001631",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -1055,9 +1055,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.75,
-          "display_name": "Clean water and sanitation"
+          "score": 0.75
         }
       ],
       "awards": [
@@ -4892,9 +4892,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.4300000071525574,
-          "display_name": "Climate action"
+          "score": 0.4300000071525574
         }
       ],
       "awards": [],
@@ -5434,13 +5434,13 @@
       ],
       "apc_list": null,
       "apc_paid": null,
-      "fwci": 3.54210845,
+      "fwci": 3.81457833,
       "has_fulltext": false,
-      "cited_by_count": 13,
+      "cited_by_count": 14,
       "citation_normalized_percentile": {
-        "value": 0.89804975,
+        "value": 0.90777637,
         "is_in_top_1_percent": false,
-        "is_in_top_10_percent": false
+        "is_in_top_10_percent": true
       },
       "cited_by_percentile_year": {
         "min": 90,
@@ -6438,7 +6438,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -6449,7 +6449,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -7770,7 +7770,7 @@
           "author": {
             "id": "https://openalex.org/A5005897140",
             "display_name": "Sivabalan Sakthivel",
-            "orcid": "https://orcid.org/0000-0002-0738-2895"
+            "orcid": null
           },
           "institutions": [
             {
@@ -7934,7 +7934,7 @@
       "has_fulltext": false,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.8970535,
+        "value": 0.89678802,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -8360,9 +8360,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6899999976158142,
-          "display_name": "Clean water and sanitation"
+          "score": 0.6899999976158142
         }
       ],
       "awards": [],
@@ -9058,7 +9058,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-20T17:24:06.736184",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -10944,9 +10944,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "score": 0.47999998927116394,
-          "display_name": "Responsible consumption and production"
+          "score": 0.47999998927116394
         }
       ],
       "awards": [
@@ -11581,7 +11581,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01587-x.pdf",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -11824,7 +11824,7 @@
       "has_fulltext": true,
       "cited_by_count": 9,
       "citation_normalized_percentile": {
-        "value": 0.94537835,
+        "value": 0.94529606,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -12119,25 +12119,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:91f1bdf6d5454467ac828ec1fee5210c",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/91f1bdf6d5454467ac828ec1fee5210c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -12181,9 +12184,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.5,
-          "display_name": "Clean water and sanitation"
+          "score": 0.5
         }
       ],
       "awards": [],
@@ -12269,685 +12272,7 @@
         "https://openalex.org/W2586491006",
         "https://openalex.org/W2017105698"
       ],
-      "abstract_inverted_index": {
-        "2": [
-          163
-        ],
-        "3": [
-          136
-        ],
-        "15": [
-          110,
-          119
-        ],
-        "30": [
-          270
-        ],
-        "50": [
-          251
-        ],
-        "1000": [
-          253,
-          272
-        ],
-        "Abstract": [
-          0
-        ],
-        "The": [
-          1,
-          246,
-          283
-        ],
-        "diversion": [
-          2,
-          90,
-          247,
-          298,
-          312
-        ],
-        "efficiency": [
-          3,
-          54,
-          91,
-          248
-        ],
-        "measures": [
-          4
-        ],
-        "the": [
-          5,
-          14,
-          29,
-          46,
-          57,
-          61,
-          73,
-          98,
-          102,
-          161,
-          166,
-          182,
-          189,
-          194,
-          207,
-          217,
-          222,
-          229,
-          238,
-          242,
-          250,
-          262,
-          267,
-          269,
-          281,
-          302,
-          311
-        ],
-        "acid": [
-          6,
-          21,
-          42,
-          49,
-          89,
-          105,
-          113,
-          116,
-          122,
-          145,
-          151,
-          201,
-          231,
-          256,
-          275,
-          290,
-          316
-        ],
-        "capacity": [
-          7,
-          313
-        ],
-        "to": [
-          8,
-          13,
-          45,
-          51,
-          71,
-          87,
-          159,
-          187,
-          205,
-          241,
-          261,
-          309
-        ],
-        "change": [
-          9
-        ],
-        "its": [
-          10
-        ],
-        "flow": [
-          11
-        ],
-        "direction": [
-          12,
-          59,
-          224
-        ],
-        "lower": [
-          15
-        ],
-        "permeability": [
-          16
-        ],
-        "reservoir": [
-          17
-        ],
-        "sections.": [
-          18
-        ],
-        "A": [
-          19
-        ],
-        "good": [
-          20
-        ],
-        "diverter": [
-          22
-        ],
-        "creates": [
-          23
-        ],
-        "a": [
-          24,
-          34,
-          77,
-          85,
-          234,
-          296
-        ],
-        "tortuous": [
-          25
-        ],
-        "(zigzagged)": [
-          26
-        ],
-        "wormhole": [
-          27,
-          58,
-          223,
-          244
-        ],
-        "within": [
-          28
-        ],
-        "acidized": [
-          30,
-          183
-        ],
-        "core": [
-          31
-        ],
-        "sample": [
-          32
-        ],
-        "in": [
-          33,
-          55,
-          97,
-          101,
-          172,
-          225,
-          280,
-          306,
-          318
-        ],
-        "laboratory": [
-          35
-        ],
-        "setup.": [
-          36
-        ],
-        "Here,": [
-          37
-        ],
-        "we": [
-          38,
-          81
-        ],
-        "studied": [
-          39
-        ],
-        "two": [
-          40,
-          141,
-          147,
-          173
-        ],
-        "different": [
-          41,
-          153
-        ],
-        "diverters": [
-          43
-        ],
-        "compared": [
-          44,
-          260
-        ],
-        "conventional": [
-          47
-        ],
-        "hydrochloric": [
-          48
-        ],
-        "(HCl)": [
-          50
-        ],
-        "investigate": [
-          52
-        ],
-        "their": [
-          53
-        ],
-        "changing": [
-          56
-        ],
-        "inside": [
-          60
-        ],
-        "rock": [
-          62,
-          78,
-          167
-        ],
-        "core.": [
-          63
-        ],
-        "Nuclear": [
-          64
-        ],
-        "magnetic": [
-          65
-        ],
-        "resonance": [
-          66
-        ],
-        "(NMR)": [
-          67
-        ],
-        "can": [
-          68,
-          94
-        ],
-        "be": [
-          69,
-          95
-        ],
-        "used": [
-          70
-        ],
-        "measure": [
-          72,
-          88,
-          160
-        ],
-        "3D": [
-          74
-        ],
-        "tortuosity": [
-          75,
-          171,
-          213,
-          218,
-          239
-        ],
-        "of": [
-          76,
-          118,
-          165,
-          181,
-          237,
-          249,
-          314
-        ],
-        "sample;": [
-          79
-        ],
-        "hence,": [
-          80
-        ],
-        "propose": [
-          82
-        ],
-        "it": [
-          83,
-          93
-        ],
-        "as": [
-          84
-        ],
-        "tool": [
-          86
-        ],
-        "because": [
-          92
-        ],
-        "applied": [
-          96
-        ],
-        "field": [
-          99
-        ],
-        "and": [
-          100,
-          114,
-          123,
-          146,
-          169,
-          199
-        ],
-        "laboratory.": [
-          103
-        ],
-        "Two": [
-          104
-        ],
-        "systems": [
-          106
-        ],
-        "were": [
-          107,
-          130
-        ],
-        "utilized:": [
-          108
-        ],
-        "straight": [
-          109,
-          143,
-          263
-        ],
-        "wt.%": [
-          111,
-          120
-        ],
-        "HCl": [
-          112,
-          121,
-          144,
-          150,
-          264
-        ],
-        "gelled": [
-          115,
-          149,
-          230
-        ],
-        "consisting": [
-          117
-        ],
-        "polyacrylamide": [
-          124
-        ],
-        "polymer": [
-          125
-        ],
-        "(PAM).": [
-          126
-        ],
-        "Four": [
-          127
-        ],
-        "coreflooding": [
-          128
-        ],
-        "experiments": [
-          129
-        ],
-        "conducted": [
-          131
-        ],
-        "on": [
-          132,
-          301
-        ],
-        "1.5": [
-          133
-        ],
-        "inch-diameter": [
-          134
-        ],
-        "×": [
-          135
-        ],
-        "inch-length": [
-          137
-        ],
-        "Indiana": [
-          138
-        ],
-        "limestone": [
-          139
-        ],
-        "samples,": [
-          140
-        ],
-        "with": [
-          142,
-          148
-        ],
-        "at": [
-          152
-        ],
-        "PAM": [
-          154
-        ],
-        "concentrations.": [
-          155
-        ],
-        "NMR": [
-          156,
-          211,
-          303
-        ],
-        "was": [
-          157,
-          185,
-          203,
-          219,
-          257
-        ],
-        "utilized": [
-          158
-        ],
-        "T": [
-          162
-        ],
-        "distribution": [
-          164
-        ],
-        "samples": [
-          168,
-          184
-        ],
-        "diffusion": [
-          170,
-          212,
-          304
-        ],
-        "orthogonal": [
-          174,
-          240
-        ],
-        "directions.": [
-          175
-        ],
-        "Also,": [
-          176
-        ],
-        "X-ray": [
-          177
-        ],
-        "computed": [
-          178
-        ],
-        "tomography": [
-          179
-        ],
-        "(CT)": [
-          180
-        ],
-        "taken": [
-          186
-        ],
-        "visualize": [
-          188
-        ],
-        "wormholes.": [
-          190
-        ],
-        "Results": [
-          191
-        ],
-        "showed": [
-          192,
-          215,
-          233
-        ],
-        "that": [
-          193,
-          216
-        ],
-        "polymer-based": [
-          195
-        ],
-        "acid-created": [
-          196
-        ],
-        "zigzagged": [
-          197
-        ],
-        "paths,": [
-          198
-        ],
-        "more": [
-          200,
-          292
-        ],
-        "volume": [
-          202
-        ],
-        "consumed": [
-          204
-        ],
-        "create": [
-          206
-        ],
-        "wormholes": [
-          208
-        ],
-        "using": [
-          209
-        ],
-        "CT.": [
-          210
-        ],
-        "measurements": [
-          214,
-          305
-        ],
-        "reduced": [
-          220
-        ],
-        "along": [
-          221
-        ],
-        "all": [
-          226
-        ],
-        "experiments.": [
-          227
-        ],
-        "Nevertheless,": [
-          228
-        ],
-        "treatments": [
-          232
-        ],
-        "significant": [
-          235
-        ],
-        "reduction": [
-          236
-        ],
-        "main": [
-          243
-        ],
-        "path.": [
-          245
-        ],
-        "lbm/": [
-          252,
-          271
-        ],
-        "gal": [
-          254,
-          273
-        ],
-        "PAM-gelled": [
-          255,
-          274
-        ],
-        "35%": [
-          258
-        ],
-        "higher": [
-          259
-        ],
-        "acid.": [
-          265
-        ],
-        "On": [
-          266
-        ],
-        "contrary,": [
-          268
-        ],
-        "gave": [
-          276
-        ],
-        "only": [
-          277
-        ],
-        "10%": [
-          278
-        ],
-        "improvement": [
-          279
-        ],
-        "diversion.": [
-          282
-        ],
-        "index": [
-          284,
-          299
-        ],
-        "could": [
-          285
-        ],
-        "screen": [
-          286
-        ],
-        "quantitatively": [
-          287
-        ],
-        "which": [
-          288
-        ],
-        "diverting": [
-          289
-        ],
-        "is": [
-          291
-        ],
-        "efficient.": [
-          293
-        ],
-        "We": [
-          294
-        ],
-        "introduced": [
-          295
-        ],
-        "new": [
-          297
-        ],
-        "based": [
-          300
-        ],
-        "this": [
-          307
-        ],
-        "study": [
-          308
-        ],
-        "quantify": [
-          310
-        ],
-        "an": [
-          315
-        ],
-        "system": [
-          317
-        ],
-        "carbonate": [
-          319
-        ],
-        "rock.": [
-          320
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2025,
@@ -12962,7 +12287,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -13171,8 +12496,8 @@
       "countries_distinct_count": 2,
       "institutions_distinct_count": 4,
       "corresponding_author_ids": [
-        "https://openalex.org/A5085377966",
-        "https://openalex.org/A5081101199"
+        "https://openalex.org/A5081101199",
+        "https://openalex.org/A5085377966"
       ],
       "corresponding_institution_ids": [
         "https://openalex.org/I134085113"
@@ -13191,7 +12516,7 @@
       "has_fulltext": false,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.92251455,
+        "value": 0.92248878,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -13558,21 +12883,24 @@
           "landing_page_url": "https://doaj.org/article/8abc584cf77f4da3b7637bdedaa4243a",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -13615,9 +12943,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.5400000214576721,
-          "display_name": "Affordable and clean energy"
+          "score": 0.5400000214576721
         }
       ],
       "awards": [],
@@ -13678,712 +13006,7 @@
         "https://openalex.org/W2005961214",
         "https://openalex.org/W3174651401"
       ],
-      "abstract_inverted_index": {
-        "Underground": [
-          0
-        ],
-        "oil": [
-          1,
-          18,
-          32,
-          54,
-          60,
-          83,
-          109,
-          116,
-          126,
-          162,
-          201,
-          206,
-          232,
-          286,
-          322,
-          331
-        ],
-        "storage": [
-          2
-        ],
-        "is": [
-          3,
-          135,
-          202,
-          207,
-          264,
-          287
-        ],
-        "a": [
-          4,
-          128,
-          136,
-          164,
-          253,
-          257
-        ],
-        "viable": [
-          5
-        ],
-        "technique": [
-          6
-        ],
-        "to": [
-          7,
-          30,
-          57,
-          93,
-          186,
-          238,
-          327
-        ],
-        "increase": [
-          8,
-          243
-        ],
-        "energy": [
-          9
-        ],
-        "security": [
-          10
-        ],
-        "in": [
-          11,
-          33,
-          67,
-          127,
-          151,
-          190,
-          212,
-          244
-        ],
-        "the": [
-          12,
-          23,
-          63,
-          70,
-          73,
-          80,
-          94,
-          104,
-          111,
-          121,
-          147,
-          158,
-          199,
-          213,
-          217,
-          224,
-          227,
-          267,
-          297,
-          319,
-          334,
-          338,
-          340,
-          348
-        ],
-        "context": [
-          13
-        ],
-        "of": [
-          14,
-          52,
-          65,
-          72,
-          82,
-          96,
-          99,
-          107,
-          115,
-          123,
-          138,
-          149,
-          160,
-          219,
-          226,
-          269,
-          284,
-          318
-        ],
-        "global": [
-          15
-        ],
-        "concern": [
-          16
-        ],
-        "for": [
-          17,
-          48,
-          273,
-          309
-        ],
-        "demand": [
-          19
-        ],
-        "and": [
-          20,
-          42,
-          46,
-          79,
-          110,
-          117,
-          154,
-          174,
-          178,
-          194,
-          204,
-          221,
-          248,
-          275,
-          296,
-          305,
-          311,
-          330
-        ],
-        "supply.": [
-          21
-        ],
-        "When": [
-          22
-        ],
-        "economic": [
-          24
-        ],
-        "conditions": [
-          25
-        ],
-        "permit,": [
-          26
-        ],
-        "it": [
-          27
-        ],
-        "makes": [
-          28
-        ],
-        "sense": [
-          29
-        ],
-        "store": [
-          31
-        ],
-        "water-flooded,": [
-          34
-        ],
-        "water-wet": [
-          35,
-          129,
-          237,
-          240
-        ],
-        "sandstone": [
-          36
-        ],
-        "reservoirs": [
-          37,
-          153
-        ],
-        "that": [
-          38,
-          282
-        ],
-        "are": [
-          39,
-          91,
-          184
-        ],
-        "geographically": [
-          40
-        ],
-        "ubiquitous": [
-          41
-        ],
-        "abundant,": [
-          43
-        ],
-        "structurally": [
-          44
-        ],
-        "safe,": [
-          45
-        ],
-        "cost-effective": [
-          47
-        ],
-        "storing": [
-          49
-        ],
-        "large": [
-          50
-        ],
-        "amounts": [
-          51
-        ],
-        "crude": [
-          53,
-          125,
-          191,
-          200,
-          231,
-          321
-        ],
-        "safely.": [
-          55
-        ],
-        "Due": [
-          56
-        ],
-        "long-term": [
-          58
-        ],
-        "restoring": [
-          59
-        ],
-        "contacting": [
-          61
-        ],
-        "with": [
-          62,
-          230,
-          241,
-          266
-        ],
-        "surface": [
-          64,
-          336
-        ],
-        "rocks": [
-          66,
-          75
-        ],
-        "such": [
-          68,
-          152
-        ],
-        "reservoirs,": [
-          69,
-          100
-        ],
-        "property": [
-          71
-        ],
-        "reservoir": [
-          74
-        ],
-        "may": [
-          76,
-          85
-        ],
-        "be": [
-          77,
-          86
-        ],
-        "changed,": [
-          78
-        ],
-        "performance": [
-          81
-        ],
-        "reproduction": [
-          84,
-          122
-        ],
-        "different.": [
-          87
-        ],
-        "These": [
-          88
-        ],
-        "important": [
-          89
-        ],
-        "factors": [
-          90,
-          295
-        ],
-        "related": [
-          92
-        ],
-        "change": [
-          95,
-          148,
-          258,
-          268,
-          329
-        ],
-        "wetting": [
-          97,
-          188
-        ],
-        "behavior": [
-          98,
-          189
-        ],
-        "which": [
-          101
-        ],
-        "directly": [
-          102
-        ],
-        "affects": [
-          103
-        ],
-        "recovery": [
-          105,
-          294,
-          342
-        ],
-        "rate": [
-          106
-        ],
-        "stored": [
-          108,
-          124,
-          161,
-          205,
-          285,
-          320
-        ],
-        "relative": [
-          112,
-          181,
-          270
-        ],
-        "permeability": [
-          113,
-          182,
-          271
-        ],
-        "characteristic": [
-          114,
-          298
-        ],
-        "water": [
-          118,
-          166,
-          210,
-          261,
-          277,
-          291,
-          313,
-          350
-        ],
-        "flow": [
-          119,
-          180,
-          196
-        ],
-        "during": [
-          120,
-          347
-        ],
-        "depleted": [
-          130
-        ],
-        "petroleum": [
-          131
-        ],
-        "reservoir.": [
-          132
-        ],
-        "Unfortunately,": [
-          133
-        ],
-        "there": [
-          134
-        ],
-        "lack": [
-          137
-        ],
-        "study": [
-          139,
-          145
-        ],
-        "on": [
-          140,
-          157,
-          216,
-          337
-        ],
-        "these": [
-          141
-        ],
-        "research": [
-          142
-        ],
-        "areas.": [
-          143
-        ],
-        "This": [
-          144
-        ],
-        "investigates": [
-          146
-        ],
-        "wettability": [
-          150,
-          225,
-          250,
-          328
-        ],
-        "its": [
-          155
-        ],
-        "influence": [
-          156
-        ],
-        "production": [
-          159
-        ],
-        "by": [
-          163,
-          209,
-          289
-        ],
-        "second": [
-          165,
-          276,
-          290,
-          312,
-          349
-        ],
-        "flooding": [
-          167,
-          211
-        ],
-        "process.": [
-          168
-        ],
-        "Several": [
-          169
-        ],
-        "experimental": [
-          170
-        ],
-        "techniques,": [
-          171
-        ],
-        "including": [
-          172
-        ],
-        "NMR": [
-          173,
-          220,
-          247
-        ],
-        "centrifuge": [
-          175,
-          222
-        ],
-        "measurements": [
-          176
-        ],
-        "(USBM),": [
-          177
-        ],
-        "two-phase": [
-          179,
-          195
-        ],
-        "measurement,": [
-          183
-        ],
-        "employed": [
-          185
-        ],
-        "investigate": [
-          187
-        ],
-        "oil/water/rock": [
-          192
-        ],
-        "systems": [
-          193
-        ],
-        "characteristics": [
-          197,
-          272
-        ],
-        "when": [
-          198
-        ],
-        "reinjected": [
-          203
-        ],
-        "reproduced": [
-          208
-        ],
-        "present": [
-          214
-        ],
-        "work.Based": [
-          215
-        ],
-        "results": [
-          218
-        ],
-        "experiments,": [
-          223
-        ],
-        "core": [
-          228
-        ],
-        "aged": [
-          229
-        ],
-        "was": [
-          233
-        ],
-        "altered": [
-          234
-        ],
-        "from": [
-          235
-        ],
-        "strongly": [
-          236
-        ],
-        "weakly": [
-          239,
-          260
-        ],
-        "an": [
-          242
-        ],
-        "aging": [
-          245
-        ],
-        "time.": [
-          246
-        ],
-        "USBM": [
-          249
-        ],
-        "indexes": [
-          251
-        ],
-        "showed": [
-          252
-        ],
-        "good": [
-          254
-        ],
-        "agreement": [
-          255
-        ],
-        "suggesting": [
-          256
-        ],
-        "into": [
-          259
-        ],
-        "wetness.": [
-          262
-        ],
-        "It": [
-          263
-        ],
-        "consistent": [
-          265
-        ],
-        "first": [
-          274
-        ],
-        "flooding.": [
-          278,
-          292,
-          314,
-          351
-        ],
-        "We": [
-          279
-        ],
-        "also": [
-          280
-        ],
-        "reported": [
-          281
-        ],
-        "77.5%": [
-          283
-        ],
-        "recovered": [
-          288,
-          325
-        ],
-        "Oil": [
-          293
-        ],
-        "parameters,": [
-          299
-        ],
-        "Swi,": [
-          300
-        ],
-        "Ko(Swi),": [
-          301
-        ],
-        "Soi,": [
-          302
-        ],
-        "Sor,": [
-          303
-        ],
-        "Sw(max),": [
-          304
-        ],
-        "Kw(Sor)were": [
-          306
-        ],
-        "experimentally": [
-          307
-        ],
-        "determined": [
-          308
-        ],
-        "initial": [
-          310
-        ],
-        "Although": [
-          315
-        ],
-        "not": [
-          316
-        ],
-        "all": [
-          317
-        ],
-        "has": [
-          323,
-          344
-        ],
-        "been": [
-          324,
-          345
-        ],
-        "due": [
-          326
-        ],
-        "film": [
-          332
-        ],
-        "left": [
-          333
-        ],
-        "pore’s": [
-          335
-        ],
-        "rock,": [
-          339
-        ],
-        "desired": [
-          341
-        ],
-        "factor": [
-          343
-        ],
-        "achieved": [
-          346
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2024,
@@ -14398,7 +13021,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -15575,12 +14198,34 @@
             "display_name": "Ali A. Al-Taq",
             "orcid": "https://orcid.org/0009-0002-5460-3862"
           },
-          "institutions": [],
-          "countries": [],
-          "is_corresponding": true,
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
           "raw_author_name": "Ali A. Al-Taq",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -15589,12 +14234,41 @@
             "display_name": "Murtada Saleh Aljawad",
             "orcid": "https://orcid.org/0000-0002-3540-6807"
           },
-          "institutions": [],
-          "countries": [],
-          "is_corresponding": false,
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
           "raw_author_name": "Murtada Saleh Aljawad",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -15603,12 +14277,34 @@
             "display_name": "Olalekan S. Alade",
             "orcid": "https://orcid.org/0000-0002-1657-9737"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Olalekan Saheed Alade",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -15617,12 +14313,34 @@
             "display_name": "Hassan A. Al-Ajwad",
             "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210143841",
+              "display_name": "Saudi Aramco (Saudi Arabia)",
+              "ror": "https://ror.org/03ypap427",
+              "country_code": "SA",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210143841"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Hassan Al-Ajwad",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "R&DC, Saudi Aramco, Dhahran, 31311, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "R&DC, Saudi Aramco, Dhahran, 31311, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I4210143841"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -15631,12 +14349,34 @@
             "display_name": "Mobeen Murtaza",
             "orcid": "https://orcid.org/0000-0003-4279-4665"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Mobeen Murtaza",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -15645,12 +14385,34 @@
             "display_name": "Ridha Al-Abdrabalnabi",
             "orcid": "https://orcid.org/0000-0002-2452-1674"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Ridha Al-Abdrabalnabi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -15659,12 +14421,34 @@
             "display_name": "Abdullah Alrustum",
             "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210143841",
+              "display_name": "Saudi Aramco (Saudi Arabia)",
+              "ror": "https://ror.org/03ypap427",
+              "country_code": "SA",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210143841"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Abdullah Alrustum",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "EXPEC ARC, Saudi Aramco, Dhahran, 31311, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "EXPEC ARC, Saudi Aramco, Dhahran, 31311, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I4210143841"
+              ]
+            }
+          ]
         },
         {
           "author_position": "last",
@@ -15673,28 +14457,59 @@
             "display_name": "Mohamed Mahmoud",
             "orcid": "https://orcid.org/0000-0002-4395-9567"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Mohamed Mahmoud",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         }
       ],
       "institutions": [],
-      "countries_distinct_count": 0,
+      "countries_distinct_count": 1,
       "institutions_distinct_count": 8,
       "corresponding_author_ids": [
-        "https://openalex.org/A5034841448"
+        "https://openalex.org/A5002974432"
       ],
-      "corresponding_institution_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
       "apc_list": null,
       "apc_paid": null,
       "fwci": 1.22495981,
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.66140355,
+        "value": 0.66002088,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -15897,9 +14712,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Industry, innovation and infrastructure",
           "id": "https://metadata.un.org/sdg/9",
-          "score": 0.550000011920929,
-          "display_name": "Industry, innovation and infrastructure"
+          "score": 0.550000011920929
         }
       ],
       "awards": [],
@@ -15969,7 +14784,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -16558,9 +15373,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7099999785423279,
-          "display_name": "Life below water"
+          "score": 0.7099999785423279
         }
       ],
       "awards": [],
@@ -18076,9 +16891,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8299999833106995,
-          "display_name": "Life below water"
+          "score": 0.8299999833106995
         }
       ],
       "awards": [],
@@ -19570,9 +18385,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7099999785423279,
-          "display_name": "Life below water"
+          "score": 0.7099999785423279
         }
       ],
       "awards": [],
@@ -21005,9 +19820,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.4699999988079071,
-          "display_name": "Life below water"
+          "score": 0.4699999988079071
         }
       ],
       "awards": [],
@@ -24302,9 +23117,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.47999998927116394,
-          "display_name": "Affordable and clean energy"
+          "score": 0.47999998927116394
         }
       ],
       "awards": [],
@@ -25780,9 +24595,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.7200000286102295,
-          "display_name": "Clean water and sanitation"
+          "score": 0.7200000286102295
         }
       ],
       "awards": [],
@@ -27197,9 +26012,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6600000262260437,
-          "display_name": "Clean water and sanitation"
+          "score": 0.6600000262260437
         }
       ],
       "awards": [],
@@ -28650,9 +27465,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Responsible consumption and production",
           "id": "https://metadata.un.org/sdg/12",
-          "score": 0.4399999976158142,
-          "display_name": "Responsible consumption and production"
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],
@@ -29827,9 +28642,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.4300000071525574,
-          "display_name": "Life in Land"
+          "score": 0.4300000071525574
         }
       ],
       "awards": [],
@@ -31795,9 +30610,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.800000011920929,
-          "display_name": "Life below water"
+          "score": 0.800000011920929
         }
       ],
       "awards": [],
@@ -32899,9 +31714,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.699999988079071,
-          "display_name": "Clean water and sanitation"
+          "score": 0.699999988079071
         }
       ],
       "awards": [],
@@ -36429,9 +35244,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6815276741981506,
-          "display_name": "Life below water"
+          "score": 0.6815276741981506
         }
       ],
       "awards": [],

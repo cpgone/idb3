@@ -196,7 +196,7 @@
       {
         "id": "https://openalex.org/T10161",
         "display_name": "Rock Mechanics and Modeling",
-        "value": 0.0002511,
+        "value": 0.000251,
         "subfield": {
           "id": "https://openalex.org/subfields/2211",
           "display_name": "Mechanics of Materials"
@@ -213,7 +213,7 @@
       {
         "id": "https://openalex.org/T12865",
         "display_name": "Tailings Management and Properties",
-        "value": 0.000196,
+        "value": 0.0001955,
         "subfield": {
           "id": "https://openalex.org/subfields/2205",
           "display_name": "Civil and Structural Engineering"
@@ -1054,8 +1054,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 48,
@@ -1676,10 +1676,10 @@
         "https://openalex.org/A5112581686"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I184681353",
-        "https://openalex.org/I188935350",
         "https://openalex.org/I139322472",
-        "https://openalex.org/I143719379"
+        "https://openalex.org/I143719379",
+        "https://openalex.org/I184681353",
+        "https://openalex.org/I188935350"
       ],
       "apc_list": {
         "value": 2200,
@@ -1695,7 +1695,7 @@
       "has_fulltext": true,
       "cited_by_count": 43,
       "citation_normalized_percentile": {
-        "value": 0.97658871,
+        "value": 0.97659298,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -2040,25 +2040,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:712281366bab46cdbe652da1dbe7df1c",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/712281366bab46cdbe652da1dbe7df1c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -2131,15 +2134,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.5400000214576721
+          "score": 0.5400000214576721,
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4291162386.pdf",
@@ -2840,7 +2843,7 @@
           "cited_by_count": 4
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2022-08-13T00:00:00"
     },
     {
@@ -3476,8 +3479,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 192,
@@ -4042,7 +4045,7 @@
       "has_fulltext": true,
       "cited_by_count": 24,
       "citation_normalized_percentile": {
-        "value": 0.78317238,
+        "value": 0.78317681,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -4350,18 +4353,21 @@
           "landing_page_url": "https://doaj.org/article/ec80c73047ab457681830c6cf8013c71",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -4449,8 +4455,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2948072089.pdf",
@@ -5027,7 +5033,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -5258,7 +5264,7 @@
       "has_fulltext": false,
       "cited_by_count": 20,
       "citation_normalized_percentile": {
-        "value": 0.94481343,
+        "value": 0.94445451,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -5642,8 +5648,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.4300000071525574
+          "score": 0.4300000071525574,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -5665,8 +5671,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 42,
@@ -5745,7 +5751,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-20T17:24:06.736184",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -6281,8 +6287,8 @@
         "https://openalex.org/A5026120625"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I236232284",
-        "https://openalex.org/I10660446"
+        "https://openalex.org/I10660446",
+        "https://openalex.org/I236232284"
       ],
       "apc_list": {
         "value": 990,
@@ -6298,7 +6304,7 @@
       "has_fulltext": false,
       "cited_by_count": 12,
       "citation_normalized_percentile": {
-        "value": 0.93816169,
+        "value": 0.93754386,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -6574,21 +6580,24 @@
           "landing_page_url": "https://doaj.org/article/3482a97082294ff8abbb7bb758a4e390",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -6632,15 +6641,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action",
-          "score": 0.6200000047683716
+          "score": 0.6200000047683716,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4404231521.pdf"
@@ -6720,7 +6729,7 @@
           "cited_by_count": 9
         }
       ],
-      "updated_date": "2025-12-31T23:11:33.660297",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -7284,15 +7293,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure",
-          "score": 0.4699999988079071
+          "score": 0.4699999988079071,
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4224306451.pdf",
@@ -8298,8 +8307,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 12,
@@ -8774,8 +8783,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 9,
@@ -9541,8 +9550,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2554699073.pdf",
@@ -10304,7 +10313,7 @@
       "has_fulltext": true,
       "cited_by_count": 42,
       "citation_normalized_percentile": {
-        "value": 0.91244001,
+        "value": 0.91243811,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -10700,18 +10709,21 @@
           "landing_page_url": "https://doaj.org/article/2ce8b4dab75d41a1b98e1630fccbe2d5",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -10807,8 +10819,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3121842805.pdf",
@@ -11370,7 +11382,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -11438,16 +11450,6 @@
           },
           "institutions": [
             {
-              "id": "https://openalex.org/I90610274",
-              "display_name": "University of Engineering and Technology Peshawar",
-              "ror": "https://ror.org/00p034093",
-              "country_code": "PK",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I90610274"
-              ]
-            },
-            {
               "id": "https://openalex.org/I188935350",
               "display_name": "Anhui University of Finance and Economics",
               "ror": "https://ror.org/0152zzg30",
@@ -11455,6 +11457,16 @@
               "type": "education",
               "lineage": [
                 "https://openalex.org/I188935350"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I90610274",
+              "display_name": "University of Engineering and Technology Peshawar",
+              "ror": "https://ror.org/00p034093",
+              "country_code": "PK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I90610274"
               ]
             }
           ],
@@ -11492,16 +11504,6 @@
           },
           "institutions": [
             {
-              "id": "https://openalex.org/I90610274",
-              "display_name": "University of Engineering and Technology Peshawar",
-              "ror": "https://ror.org/00p034093",
-              "country_code": "PK",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I90610274"
-              ]
-            },
-            {
               "id": "https://openalex.org/I188935350",
               "display_name": "Anhui University of Finance and Economics",
               "ror": "https://ror.org/0152zzg30",
@@ -11509,6 +11511,16 @@
               "type": "education",
               "lineage": [
                 "https://openalex.org/I188935350"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I90610274",
+              "display_name": "University of Engineering and Technology Peshawar",
+              "ror": "https://ror.org/00p034093",
+              "country_code": "PK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I90610274"
               ]
             }
           ],
@@ -11884,13 +11896,13 @@
       "countries_distinct_count": 4,
       "institutions_distinct_count": 11,
       "corresponding_author_ids": [
-        "https://openalex.org/A5057348114",
-        "https://openalex.org/A5035298124"
+        "https://openalex.org/A5035298124",
+        "https://openalex.org/A5057348114"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I929597975",
         "https://openalex.org/I188935350",
-        "https://openalex.org/I197347611"
+        "https://openalex.org/I197347611",
+        "https://openalex.org/I929597975"
       ],
       "apc_list": {
         "value": 2200,
@@ -11906,7 +11918,7 @@
       "has_fulltext": true,
       "cited_by_count": 21,
       "citation_normalized_percentile": {
-        "value": 0.93973336,
+        "value": 0.93922195,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -12262,8 +12274,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Life in Land"
         }
       ],
       "awards": [
@@ -12283,12 +12295,11 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
-        "pdf": "https://content.openalex.org/works/W4378907821.pdf",
-        "grobid_xml": "https://content.openalex.org/works/W4378907821.grobid-xml"
+        "pdf": "https://content.openalex.org/works/W4378907821.pdf"
       },
       "referenced_works_count": 82,
       "referenced_works": [
@@ -12973,7 +12984,7 @@
           "cited_by_count": 9
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2023-06-01T00:00:00"
     },
     {
@@ -13722,15 +13733,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/1",
-          "display_name": "No poverty",
-          "score": 0.5600000023841858
+          "score": 0.5600000023841858,
+          "display_name": "No poverty"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 20,
@@ -14424,8 +14435,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4367853327.pdf"
@@ -15071,7 +15082,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://www.mdpi.com/2073-4441/16/1/143/pdf?version=1703861729",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -15442,8 +15453,8 @@
         "https://openalex.org/A5045862554"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I4210111575",
-        "https://openalex.org/I25757504"
+        "https://openalex.org/I25757504",
+        "https://openalex.org/I4210111575"
       ],
       "apc_list": {
         "value": 2200,
@@ -15459,7 +15470,7 @@
       "has_fulltext": true,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.73057265,
+        "value": 0.72968448,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -15820,25 +15831,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:e175618a7984459a9fefe70afdf04664",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/e175618a7984459a9fefe70afdf04664",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -15882,8 +15896,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.49000000953674316
+          "score": 0.49000000953674316,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -15905,8 +15919,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4390402953.pdf"
@@ -16763,7 +16777,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2026-01-24T23:23:39.755997",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -17276,8 +17290,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 6,
@@ -18140,8 +18154,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 9,
@@ -18913,9 +18927,9 @@
         "https://openalex.org/A5051772086"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I25757504",
+        "https://openalex.org/I142732210",
         "https://openalex.org/I188935350",
-        "https://openalex.org/I142732210"
+        "https://openalex.org/I25757504"
       ],
       "apc_list": {
         "value": 1800,
@@ -18931,7 +18945,7 @@
       "has_fulltext": false,
       "cited_by_count": 14,
       "citation_normalized_percentile": {
-        "value": 0.82722191,
+        "value": 0.82725344,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -19196,21 +19210,24 @@
           "landing_page_url": "https://doaj.org/article/dca89635c0aa4993b34e3b79dea065bf",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -19313,8 +19330,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4291164723.pdf",
@@ -20124,7 +20141,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -20352,7 +20369,7 @@
       "has_fulltext": false,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.76883608,
+        "value": 0.76883329,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -20624,21 +20641,24 @@
           "landing_page_url": "https://doaj.org/article/12ec12d717224603bab64e8f8ef2347a",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -20712,8 +20732,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4308725695.pdf",
@@ -21199,7 +21219,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2022-11-15T00:00:00"
     },
     {
@@ -21696,8 +21716,8 @@
       "countries_distinct_count": 4,
       "institutions_distinct_count": 11,
       "corresponding_author_ids": [
-        "https://openalex.org/A5051772086",
-        "https://openalex.org/A5035298124"
+        "https://openalex.org/A5035298124",
+        "https://openalex.org/A5051772086"
       ],
       "corresponding_institution_ids": [
         "https://openalex.org/I142732210",
@@ -21717,7 +21737,7 @@
       "has_fulltext": false,
       "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.76333143,
+        "value": 0.76337463,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -22054,21 +22074,24 @@
           "landing_page_url": "https://doaj.org/article/675809a582a6417995518e692fb4adad",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -22142,8 +22165,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4309717468.pdf",
@@ -22834,7 +22857,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2022-11-29T00:00:00"
     },
     {
@@ -23353,15 +23376,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities",
-          "score": 0.5600000023841858
+          "score": 0.5600000023841858,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 24,
@@ -23757,7 +23780,7 @@
       "has_fulltext": false,
       "cited_by_count": 5,
       "citation_normalized_percentile": {
-        "value": 0.95779679,
+        "value": 0.95693653,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -24054,25 +24077,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:ff0bd2103a1e4aa78aa218bf12e51a80",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/ff0bd2103a1e4aa78aa218bf12e51a80",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -24118,15 +24144,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.41999998688697815
+          "score": 0.41999998688697815,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4411009740.pdf",
@@ -24244,7 +24270,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -24896,8 +24922,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 4,
@@ -26391,15 +26417,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure",
-          "score": 0.550000011920929
+          "score": 0.550000011920929,
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 10,
@@ -26838,8 +26864,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 9,
@@ -27307,8 +27333,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 15,
@@ -28149,8 +28175,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 18,
@@ -29597,8 +29623,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 39,
@@ -30578,8 +30604,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 5,
@@ -31123,7 +31149,7 @@
       "has_fulltext": true,
       "cited_by_count": 7,
       "citation_normalized_percentile": {
-        "value": 0.26295357,
+        "value": 0.26293274,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -31436,18 +31462,21 @@
           "landing_page_url": "https://doaj.org/article/44be5d014cb84a06b746f6fe53a13fd5",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -31524,15 +31553,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities",
-          "score": 0.7599999904632568
+          "score": 0.7599999904632568,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2782066084.pdf",
@@ -32056,7 +32085,7 @@
           "cited_by_count": 4
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -32566,8 +32595,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 30,
@@ -33333,7 +33362,7 @@
       "has_fulltext": true,
       "cited_by_count": 5,
       "citation_normalized_percentile": {
-        "value": 0.57181027,
+        "value": 0.5718729,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -33603,18 +33632,21 @@
           "landing_page_url": "https://doaj.org/article/ff932c02af93486d9d924ee7eff3724b",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -33661,15 +33693,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.5299999713897705
+          "score": 0.5299999713897705,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3155543949.pdf",
@@ -34473,7 +34505,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2021-04-26T00:00:00"
     },
     {
@@ -35384,8 +35416,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4313413716.pdf",
@@ -36730,8 +36762,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 4,
@@ -37860,15 +37892,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure",
-          "score": 0.4099999964237213
+          "score": 0.4099999964237213,
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3117311214.pdf",
@@ -38827,8 +38859,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 81,
@@ -39464,8 +39496,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -39678,7 +39710,7 @@
       "has_fulltext": true,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.58065639,
+        "value": 0.58005523,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -40051,12 +40083,11 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
-        "pdf": "https://content.openalex.org/works/W4385820535.pdf",
-        "grobid_xml": "https://content.openalex.org/works/W4385820535.grobid-xml"
+        "pdf": "https://content.openalex.org/works/W4385820535.pdf"
       },
       "referenced_works_count": 45,
       "referenced_works": [
@@ -40600,7 +40631,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-12-05T23:21:25.405358",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -41323,8 +41354,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4393383880.pdf"
@@ -42248,15 +42279,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action",
-          "score": 0.5
+          "score": 0.5,
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 27,
@@ -42763,8 +42794,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3035346982.pdf"
@@ -43621,8 +43652,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 2,
@@ -44198,8 +44229,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 12,
@@ -45196,15 +45227,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.6000000238418579
+          "score": 0.6000000238418579,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 10,
@@ -46324,8 +46355,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -47968,8 +47999,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4390917847.pdf"
@@ -49026,15 +49057,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities",
-          "score": 0.5299999713897705
+          "score": 0.5299999713897705,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 26,
@@ -49567,15 +49598,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water",
-          "score": 0.46000000834465027
+          "score": 0.46000000834465027,
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -50719,8 +50750,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 23,
@@ -51397,8 +51428,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3208663660.pdf",
@@ -52354,8 +52385,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -53340,8 +53371,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3177591575.pdf",
@@ -54141,8 +54172,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -54533,15 +54564,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities",
-          "score": 0.7099999785423279
+          "score": 0.7099999785423279,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -55905,8 +55936,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -56424,8 +56455,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -57568,15 +57599,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities",
-          "score": 0.6299999952316284
+          "score": 0.6299999952316284,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -58962,8 +58993,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -60153,15 +60184,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure",
-          "score": 0.47999998927116394
+          "score": 0.47999998927116394,
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -61321,8 +61352,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 22,
@@ -61814,8 +61845,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4408668241.pdf"
@@ -62241,8 +62272,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4411681231.pdf",
@@ -63285,8 +63316,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -64237,8 +64268,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -65147,8 +65178,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 17,
@@ -65491,8 +65522,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 74,
@@ -65575,7 +65606,7 @@
       "related_works": [],
       "abstract_inverted_index": null,
       "counts_by_year": [],
-      "updated_date": "2026-01-20T17:24:06.736184",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-12-19T00:00:00"
     },
     {
@@ -66046,8 +66077,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W7117566586.pdf"
@@ -66949,15 +66980,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/11",
-          "display_name": "Sustainable cities and communities",
-          "score": 0.7176126837730408
+          "score": 0.7176126837730408,
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -66967,6 +66998,460 @@
       "counts_by_year": [],
       "updated_date": "2026-01-29T23:17:01.242718",
       "created_date": "2026-01-29T00:00:00"
+    },
+    {
+      "id": "https://openalex.org/W7127331976",
+      "doi": "https://doi.org/10.1016/j.rineng.2026.109430",
+      "title": "Role of Constrained Modulus in Predicting Resilient Modulus of RAP-Included Granular Materials via ML and Conventional Methods",
+      "display_name": "Role of Constrained Modulus in Predicting Resilient Modulus of RAP-Included Granular Materials via ML and Conventional Methods",
+      "publication_year": 2026,
+      "publication_date": "2026-02-01",
+      "ids": {
+        "openalex": "https://openalex.org/W7127331976",
+        "doi": "https://doi.org/10.1016/j.rineng.2026.109430"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1016/j.rineng.2026.109430",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.rineng.2026.109430",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210226253",
+          "display_name": "Results in Engineering",
+          "issn_l": "2590-1230",
+          "issn": [
+            "2590-1230"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Results in Engineering",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://doi.org/10.1016/j.rineng.2026.109430",
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5124910674",
+            "display_name": "Muhammad Arshad",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Muhammad Arshad",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5051772086",
+            "display_name": "Muhammad Zaka Emad",
+            "orcid": "https://orcid.org/0000-0001-8537-8026"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Muhammad Zaka Emad",
+          "raw_affiliation_strings": [],
+          "affiliations": []
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 0,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5124910674"
+      ],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 850,
+        "currency": "USD",
+        "value_usd": 850
+      },
+      "apc_paid": {
+        "value": 850,
+        "currency": "USD",
+        "value_usd": 850
+      },
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": {
+        "value": 0.96711557,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": "109430",
+        "last_page": "109430"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10233",
+        "display_name": "Geotechnical Engineering and Soil Mechanics",
+        "score": 0.13339999318122864,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2205",
+          "display_name": "Civil and Structural Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10233",
+          "display_name": "Geotechnical Engineering and Soil Mechanics",
+          "score": 0.13339999318122864,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2205",
+            "display_name": "Civil and Structural Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10514",
+          "display_name": "Numerical methods in engineering",
+          "score": 0.10639999806880951,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2211",
+            "display_name": "Mechanics of Materials"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11558",
+          "display_name": "Composite Material Mechanics",
+          "score": 0.09179999679327011,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2211",
+            "display_name": "Mechanics of Materials"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/granular-material",
+          "display_name": "Granular material",
+          "score": 0.6728000044822693
+        },
+        {
+          "id": "https://openalex.org/keywords/modulus",
+          "display_name": "Modulus",
+          "score": 0.46239998936653137
+        },
+        {
+          "id": "https://openalex.org/keywords/youngs-modulus",
+          "display_name": "Young's modulus",
+          "score": 0.3971000015735626
+        },
+        {
+          "id": "https://openalex.org/keywords/elastic-modulus",
+          "display_name": "Elastic modulus",
+          "score": 0.35569998621940613
+        },
+        {
+          "id": "https://openalex.org/keywords/tangent-modulus",
+          "display_name": "Tangent modulus",
+          "score": 0.30300000309944153
+        },
+        {
+          "id": "https://openalex.org/keywords/stress",
+          "display_name": "Stress (linguistics)",
+          "score": 0.2994000017642975
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C32568104",
+          "wikidata": "https://www.wikidata.org/wiki/Q1155083",
+          "display_name": "Granular material",
+          "level": 2,
+          "score": 0.6728000044822693
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.6689000129699707
+        },
+        {
+          "id": "https://openalex.org/C159985019",
+          "wikidata": "https://www.wikidata.org/wiki/Q181790",
+          "display_name": "Composite material",
+          "level": 1,
+          "score": 0.5917999744415283
+        },
+        {
+          "id": "https://openalex.org/C193867417",
+          "wikidata": "https://www.wikidata.org/wiki/Q6889814",
+          "display_name": "Modulus",
+          "level": 2,
+          "score": 0.46239998936653137
+        },
+        {
+          "id": "https://openalex.org/C196029304",
+          "wikidata": "https://www.wikidata.org/wiki/Q2091584",
+          "display_name": "Young's modulus",
+          "level": 2,
+          "score": 0.3971000015735626
+        },
+        {
+          "id": "https://openalex.org/C43486711",
+          "wikidata": "https://www.wikidata.org/wiki/Q192005",
+          "display_name": "Elastic modulus",
+          "level": 2,
+          "score": 0.35569998621940613
+        },
+        {
+          "id": "https://openalex.org/C191061551",
+          "wikidata": "https://www.wikidata.org/wiki/Q3860041",
+          "display_name": "Tangent modulus",
+          "level": 3,
+          "score": 0.30300000309944153
+        },
+        {
+          "id": "https://openalex.org/C21036866",
+          "wikidata": "https://www.wikidata.org/wiki/Q181767",
+          "display_name": "Stress (linguistics)",
+          "level": 2,
+          "score": 0.2994000017642975
+        },
+        {
+          "id": "https://openalex.org/C31555180",
+          "wikidata": "https://www.wikidata.org/wiki/Q3523867",
+          "display_name": "Material properties",
+          "level": 2,
+          "score": 0.28380000591278076
+        },
+        {
+          "id": "https://openalex.org/C94406020",
+          "wikidata": "https://www.wikidata.org/wiki/Q900371",
+          "display_name": "Bulk modulus",
+          "level": 2,
+          "score": 0.27799999713897705
+        },
+        {
+          "id": "https://openalex.org/C180016635",
+          "wikidata": "https://www.wikidata.org/wiki/Q2712821",
+          "display_name": "Compression (physics)",
+          "level": 2,
+          "score": 0.27639999985694885
+        },
+        {
+          "id": "https://openalex.org/C204366326",
+          "wikidata": "https://www.wikidata.org/wiki/Q3027650",
+          "display_name": "Deformation (meteorology)",
+          "level": 2,
+          "score": 0.2750000059604645
+        },
+        {
+          "id": "https://openalex.org/C136528926",
+          "wikidata": "https://www.wikidata.org/wiki/Q4692252",
+          "display_name": "Aggregate modulus",
+          "level": 5,
+          "score": 0.2669999897480011
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.1016/j.rineng.2026.109430",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1016/j.rineng.2026.109430",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4210226253",
+            "display_name": "Results in Engineering",
+            "issn_l": "2590-1230",
+            "issn": [
+              "2590-1230"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Results in Engineering",
+          "raw_type": "journal-article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1016/j.rineng.2026.109430",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.rineng.2026.109430",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210226253",
+          "display_name": "Results in Engineering",
+          "issn_l": "2590-1230",
+          "issn": [
+            "2590-1230"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Results in Engineering",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "id": "https://metadata.un.org/sdg/13",
+          "score": 0.5663110613822937,
+          "display_name": "Climate action"
+        }
+      ],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 45,
+      "referenced_works": [
+        "https://openalex.org/W1604267053",
+        "https://openalex.org/W1968338636",
+        "https://openalex.org/W1985068142",
+        "https://openalex.org/W1990185102",
+        "https://openalex.org/W2028654367",
+        "https://openalex.org/W2064749276",
+        "https://openalex.org/W2099663213",
+        "https://openalex.org/W2105606862",
+        "https://openalex.org/W2111802300",
+        "https://openalex.org/W2116192517",
+        "https://openalex.org/W2149126070",
+        "https://openalex.org/W2553963719",
+        "https://openalex.org/W2686358158",
+        "https://openalex.org/W2767216166",
+        "https://openalex.org/W2791919733",
+        "https://openalex.org/W2792369524",
+        "https://openalex.org/W2795896679",
+        "https://openalex.org/W2809440764",
+        "https://openalex.org/W2899799253",
+        "https://openalex.org/W2912902753",
+        "https://openalex.org/W2945053413",
+        "https://openalex.org/W2964109803",
+        "https://openalex.org/W2972062427",
+        "https://openalex.org/W2972910669",
+        "https://openalex.org/W2979843168",
+        "https://openalex.org/W3021744119",
+        "https://openalex.org/W3021785726",
+        "https://openalex.org/W3034079162",
+        "https://openalex.org/W3035708455",
+        "https://openalex.org/W3043559075",
+        "https://openalex.org/W3167117671",
+        "https://openalex.org/W4225667703",
+        "https://openalex.org/W4283369826",
+        "https://openalex.org/W4285043212",
+        "https://openalex.org/W4293103672",
+        "https://openalex.org/W4308041698",
+        "https://openalex.org/W4308374965",
+        "https://openalex.org/W4311768396",
+        "https://openalex.org/W4328112662",
+        "https://openalex.org/W4385661882",
+        "https://openalex.org/W4387670115",
+        "https://openalex.org/W4389883512",
+        "https://openalex.org/W4400228496",
+        "https://openalex.org/W4400516337",
+        "https://openalex.org/W4408917963"
+      ],
+      "related_works": [],
+      "abstract_inverted_index": null,
+      "counts_by_year": [],
+      "updated_date": "2026-02-05T00:54:17.221276",
+      "created_date": "2026-02-04T00:00:00"
     }
   ]
 }

@@ -278,7 +278,7 @@
       {
         "id": "https://openalex.org/T10615",
         "display_name": "Granular flow and fluidized beds",
-        "value": 0.0003938,
+        "value": 0.0003937,
         "subfield": {
           "id": "https://openalex.org/subfields/2206",
           "display_name": "Computational Mechanics"
@@ -295,7 +295,7 @@
       {
         "id": "https://openalex.org/T10233",
         "display_name": "Geotechnical Engineering and Soil Mechanics",
-        "value": 0.0002253,
+        "value": 0.0002251,
         "subfield": {
           "id": "https://openalex.org/subfields/2205",
           "display_name": "Civil and Structural Engineering"
@@ -312,7 +312,7 @@
       {
         "id": "https://openalex.org/T10535",
         "display_name": "Landslides and related hazards",
-        "value": 0.0001092,
+        "value": 0.0001091,
         "subfield": {
           "id": "https://openalex.org/subfields/2308",
           "display_name": "Management, Monitoring, Policy and Law"
@@ -329,7 +329,7 @@
       {
         "id": "https://openalex.org/T12261",
         "display_name": "Statistical Mechanics and Entropy",
-        "value": 0.0000695,
+        "value": 0.0000694,
         "subfield": {
           "id": "https://openalex.org/subfields/3109",
           "display_name": "Statistical and Nonlinear Physics"
@@ -1094,8 +1094,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.800000011920929,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -4538,8 +4538,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6100000143051147,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -5613,8 +5613,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.41999998688697815,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [
@@ -6489,8 +6489,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6899999976158142,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -6763,7 +6763,7 @@
       "has_fulltext": true,
       "cited_by_count": 26,
       "citation_normalized_percentile": {
-        "value": 0.92580273,
+        "value": 0.92521232,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -7049,21 +7049,24 @@
           "landing_page_url": "https://doaj.org/article/b122610fcccb46bea07f500bcf1b2e0c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -7520,7 +7523,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-12-25T23:11:45.687758",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -7748,7 +7751,7 @@
       "has_fulltext": true,
       "cited_by_count": 12,
       "citation_normalized_percentile": {
-        "value": 0.8035243,
+        "value": 0.80282,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -8028,25 +8031,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:aafbc66da595460cbe6a6f57386e710c",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/aafbc66da595460cbe6a6f57386e710c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -8119,8 +8125,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4699999988079071,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -8703,7 +8709,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-26T23:06:41.788003",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -11452,8 +11458,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7200000286102295,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -12322,8 +12328,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.47999998927116394,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -13206,8 +13212,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5400000214576721,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -14095,8 +14101,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6200000047683716,
-          "display_name": "Zero hunger",
-          "id": "https://metadata.un.org/sdg/2"
+          "id": "https://metadata.un.org/sdg/2",
+          "display_name": "Zero hunger"
         }
       ],
       "awards": [],
@@ -14946,8 +14952,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7699999809265137,
-          "display_name": "Peace, Justice and strong institutions",
-          "id": "https://metadata.un.org/sdg/16"
+          "id": "https://metadata.un.org/sdg/16",
+          "display_name": "Peace, Justice and strong institutions"
         }
       ],
       "awards": [],
@@ -15889,8 +15895,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7699999809265137,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -17152,8 +17158,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6600000262260437,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -18055,8 +18061,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7599999904632568,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -19173,8 +19179,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.550000011920929,
-          "display_name": "Industry, innovation and infrastructure",
-          "id": "https://metadata.un.org/sdg/9"
+          "id": "https://metadata.un.org/sdg/9",
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
@@ -20965,7 +20971,7 @@
         "is_oa": true,
         "oa_status": "hybrid",
         "oa_url": "https://link.springer.com/content/pdf/10.1007/s10035-010-0241-4.pdf",
-        "any_repository_has_fulltext": true
+        "any_repository_has_fulltext": false
       },
       "authorships": [
         {
@@ -21059,7 +21065,7 @@
       "has_fulltext": true,
       "cited_by_count": 50,
       "citation_normalized_percentile": {
-        "value": 0.98141741,
+        "value": 0.98141689,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -21360,6 +21366,20 @@
           "raw_type": "journal-article"
         },
         {
+          "id": "pmh:oai:ris.utwente.nl:openaire_cris_publications/f3fd2bb4-abc3-4c5a-beb0-cf51b42edccb",
+          "is_oa": false,
+          "landing_page_url": "https://research.utwente.nl/en/publications/f3fd2bb4-abc3-4c5a-beb0-cf51b42edccb",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Luding, S & Alonso-Marroquin, F 2011, 'The critical-state yield stress (termination locus) of adhesive powders from a single numerical experiment', Granular matter, vol. 13, no. 2, pp. 109-119. https://doi.org/10.1007/s10035-010-0241-4",
+          "raw_type": "info:eu-repo/semantics/publishedVersion"
+        },
+        {
           "id": "pmh:oai:ris.utwente.nl:publications/f3fd2bb4-abc3-4c5a-beb0-cf51b42edccb",
           "is_oa": false,
           "landing_page_url": null,
@@ -21372,35 +21392,6 @@
           "is_published": false,
           "raw_source_name": "",
           "raw_type": ""
-        },
-        {
-          "id": "pmh:ut:oai:ris.utwente.nl:publications/f3fd2bb4-abc3-4c5a-beb0-cf51b42edccb",
-          "is_oa": true,
-          "landing_page_url": "https://research.utwente.nl/en/publications/f3fd2bb4-abc3-4c5a-beb0-cf51b42edccb",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4306401843",
-            "display_name": "Data Archiving and Networked Services (DANS)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I1322597698",
-            "host_organization_name": "Royal Netherlands Academy of Arts and Sciences",
-            "host_organization_lineage": [
-              "https://openalex.org/I1322597698"
-            ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": "other-oa",
-          "license_id": "https://openalex.org/licenses/other-oa",
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "Granular matter, 13(2), 109 - 119. Springer",
-          "raw_type": "info:eu-repo/semantics/article"
         }
       ],
       "best_oa_location": {
@@ -21526,7 +21517,431 @@
         "https://openalex.org/W2791967653",
         "https://openalex.org/W2030062515"
       ],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "Dry": [
+          0
+        ],
+        "granular": [
+          1,
+          108
+        ],
+        "materials": [
+          2
+        ],
+        "in": [
+          3,
+          23,
+          144
+        ],
+        "a": [
+          4,
+          70,
+          158,
+          163
+        ],
+        "split-bottom": [
+          5
+        ],
+        "ring": [
+          6
+        ],
+        "shear": [
+          7,
+          12
+        ],
+        "cell": [
+          8
+        ],
+        "geometry": [
+          9
+        ],
+        "show": [
+          10
+        ],
+        "wide": [
+          11
+        ],
+        "bands": [
+          13
+        ],
+        "under": [
+          14
+        ],
+        "slow,": [
+          15
+        ],
+        "quasi-static,": [
+          16
+        ],
+        "large": [
+          17
+        ],
+        "deformation.": [
+          18
+        ],
+        "This": [
+          19
+        ],
+        "system": [
+          20,
+          87
+        ],
+        "is": [
+          21,
+          102,
+          134,
+          170
+        ],
+        "studied": [
+          22
+        ],
+        "the": [
+          24,
+          30,
+          39,
+          41,
+          45,
+          55,
+          63,
+          83,
+          86,
+          92,
+          120,
+          124,
+          128,
+          151
+        ],
+        "presence": [
+          25
+        ],
+        "of": [
+          26,
+          66,
+          85,
+          123,
+          154,
+          167
+        ],
+        "contact": [
+          27,
+          125,
+          132
+        ],
+        "adhesion,": [
+          28
+        ],
+        "using": [
+          29
+        ],
+        "discrete": [
+          31
+        ],
+        "element": [
+          32
+        ],
+        "method": [
+          33,
+          153
+        ],
+        "(DEM).": [
+          34
+        ],
+        "Several": [
+          35
+        ],
+        "continuum": [
+          36
+        ],
+        "fields": [
+          37
+        ],
+        "like": [
+          38
+        ],
+        "density,": [
+          40
+        ],
+        "deformation": [
+          42
+        ],
+        "gradient": [
+          43
+        ],
+        "and": [
+          44,
+          51,
+          77,
+          80,
+          110,
+          136,
+          141,
+          173,
+          177
+        ],
+        "stress": [
+          46,
+          95,
+          161
+        ],
+        "tensor": [
+          47
+        ],
+        "are": [
+          48,
+          52
+        ],
+        "computed": [
+          49
+        ],
+        "locally": [
+          50
+        ],
+        "analyzed": [
+          53
+        ],
+        "with": [
+          54,
+          112
+        ],
+        "goal": [
+          56
+        ],
+        "to": [
+          57,
+          104,
+          119,
+          146,
+          156
+        ],
+        "formulate": [
+          58
+        ],
+        "objective": [
+          59
+        ],
+        "constitutive": [
+          60
+        ],
+        "relations": [
+          61
+        ],
+        "for": [
+          62,
+          106,
+          116,
+          175
+        ],
+        "flow": [
+          64
+        ],
+        "behavior": [
+          65
+        ],
+        "cohesive": [
+          67
+        ],
+        "powders.": [
+          68,
+          149
+        ],
+        "From": [
+          69
+        ],
+        "single": [
+          71,
+          164
+        ],
+        "simulation": [
+          72
+        ],
+        "only,": [
+          73
+        ],
+        "by": [
+          74
+        ],
+        "applying": [
+          75
+        ],
+        "time-": [
+          76
+        ],
+        "(local)": [
+          78
+        ],
+        "space-averaging,": [
+          79
+        ],
+        "focusing": [
+          81
+        ],
+        "on": [
+          82,
+          127
+        ],
+        "regions": [
+          84
+        ],
+        "that": [
+          88
+        ],
+        "experienced": [
+          89
+        ],
+        "considerable": [
+          90
+        ],
+        "deformations,": [
+          91
+        ],
+        "critical-state": [
+          93,
+          159
+        ],
+        "yield": [
+          94,
+          160
+        ],
+        "(termination": [
+          96
+        ],
+        "locus)": [
+          97
+        ],
+        "can": [
+          98
+        ],
+        "be": [
+          99
+        ],
+        "obtained.": [
+          100
+        ],
+        "It": [
+          101
+        ],
+        "close": [
+          103
+        ],
+        "linear,": [
+          105
+        ],
+        "non-cohesive": [
+          107
+        ],
+        "materials,": [
+          109
+        ],
+        "nonlinear": [
+          111,
+          121
+        ],
+        "peculiar": [
+          113
+        ],
+        "pressure": [
+          114
+        ],
+        "dependence,": [
+          115
+        ],
+        "adhesive": [
+          117
+        ],
+        "powders—due": [
+          118
+        ],
+        "dependence": [
+          122
+        ],
+        "adhesion": [
+          126
+        ],
+        "confining": [
+          129
+        ],
+        "forces.": [
+          130
+        ],
+        "The": [
+          131
+        ],
+        "model": [
+          133
+        ],
+        "simplified": [
+          135
+        ],
+        "possibly": [
+          137
+        ],
+        "will": [
+          138
+        ],
+        "need": [
+          139
+        ],
+        "refinements": [
+          140
+        ],
+        "additional": [
+          142
+        ],
+        "effects": [
+          143
+        ],
+        "order": [
+          145
+        ],
+        "resemble": [
+          147
+        ],
+        "realistic": [
+          148
+        ],
+        "However,": [
+          150
+        ],
+        "promising": [
+          152
+        ],
+        "how": [
+          155
+        ],
+        "obtain": [
+          157
+        ],
+        "from": [
+          162
+        ],
+        "numerical": [
+          165
+        ],
+        "test": [
+          166
+        ],
+        "one": [
+          168
+        ],
+        "material": [
+          169
+        ],
+        "generally": [
+          171
+        ],
+        "applicable": [
+          172
+        ],
+        "waits": [
+          174
+        ],
+        "calibration": [
+          176
+        ],
+        "validation.": [
+          178
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2023,
@@ -21573,7 +21988,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -22200,8 +22615,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5400000214576721,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -23281,8 +23696,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8299999833106995,
-          "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -24763,7 +25178,7 @@
       "has_fulltext": true,
       "cited_by_count": 27,
       "citation_normalized_percentile": {
-        "value": 0.92837521,
+        "value": 0.92838005,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -25225,8 +25640,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8799999952316284,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -25356,7 +25771,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-02-02T05:57:53.111627",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -27096,8 +27511,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8100000023841858,
-          "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -29139,8 +29554,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7400000095367432,
-          "display_name": "No poverty",
-          "id": "https://metadata.un.org/sdg/1"
+          "id": "https://metadata.un.org/sdg/1",
+          "display_name": "No poverty"
         }
       ],
       "awards": [
@@ -30129,8 +30544,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6100000143051147,
-          "display_name": "No poverty",
-          "id": "https://metadata.un.org/sdg/1"
+          "id": "https://metadata.un.org/sdg/1",
+          "display_name": "No poverty"
         }
       ],
       "awards": [
@@ -31459,8 +31874,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.800000011920929,
-          "display_name": "Peace, Justice and strong institutions",
-          "id": "https://metadata.un.org/sdg/16"
+          "id": "https://metadata.un.org/sdg/16",
+          "display_name": "Peace, Justice and strong institutions"
         }
       ],
       "awards": [],
@@ -34470,8 +34885,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6299999952316284,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -36248,8 +36663,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.75,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -36987,8 +37402,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7599999904632568,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -38622,8 +39037,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5199999809265137,
-          "display_name": "Climate action",
-          "id": "https://metadata.un.org/sdg/13"
+          "id": "https://metadata.un.org/sdg/13",
+          "display_name": "Climate action"
         }
       ],
       "awards": [],
@@ -40349,8 +40764,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7400000095367432,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -40824,7 +41239,7 @@
       "has_fulltext": true,
       "cited_by_count": 8,
       "citation_normalized_percentile": {
-        "value": 0.69294925,
+        "value": 0.69294269,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -41237,18 +41652,21 @@
           "landing_page_url": "https://doaj.org/article/4da85d9a6707422096f4b72aed8c6fb7",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -41765,7 +42183,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -42196,8 +42614,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6299999952316284,
-          "display_name": "No poverty",
-          "id": "https://metadata.un.org/sdg/1"
+          "id": "https://metadata.un.org/sdg/1",
+          "display_name": "No poverty"
         }
       ],
       "awards": [],
@@ -43404,8 +43822,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8399999737739563,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [
@@ -44132,8 +44550,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6800000071525574,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -44886,8 +45304,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4699999988079071,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -45894,8 +46312,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7400000095367432,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -47372,8 +47790,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8999999761581421,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [
@@ -48446,8 +48864,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4000000059604645,
-          "display_name": "Gender equality",
-          "id": "https://metadata.un.org/sdg/5"
+          "id": "https://metadata.un.org/sdg/5",
+          "display_name": "Gender equality"
         }
       ],
       "awards": [],
@@ -49718,8 +50136,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4699999988079071,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -50722,8 +51140,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5699999928474426,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -51810,8 +52228,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.75,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -52832,8 +53250,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.47999998927116394,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -53941,8 +54359,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5299999713897705,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -56021,8 +56439,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7099999785423279,
-          "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -57103,8 +57521,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7599999904632568,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -58176,8 +58594,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6000000238418579,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -59212,7 +59630,7 @@
       "has_fulltext": true,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.60558295,
+        "value": 0.60558615,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -59523,18 +59941,21 @@
           "landing_page_url": "https://doaj.org/article/6b98e4e6e83a4bf9939676dfd9553418",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -59611,8 +60032,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6800000071525574,
-          "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14"
+          "id": "https://metadata.un.org/sdg/14",
+          "display_name": "Life below water"
         }
       ],
       "awards": [],
@@ -60035,7 +60456,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2017-07-14T00:00:00"
     },
     {
@@ -60659,8 +61080,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.699999988079071,
-          "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6"
+          "id": "https://metadata.un.org/sdg/6",
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -61773,8 +62194,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7900000214576721,
-          "display_name": "Peace, Justice and strong institutions",
-          "id": "https://metadata.un.org/sdg/16"
+          "id": "https://metadata.un.org/sdg/16",
+          "display_name": "Peace, Justice and strong institutions"
         }
       ],
       "awards": [],
@@ -62600,8 +63021,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6600000262260437,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -63475,7 +63896,7 @@
       "has_fulltext": false,
       "cited_by_count": 1,
       "citation_normalized_percentile": {
-        "value": 0.53497923,
+        "value": 0.53457447,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -63858,21 +64279,24 @@
           "landing_page_url": "https://doaj.org/article/05a3110f3dab4793b96df014a4e2a5b4",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -64512,7 +64936,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-12-21T01:58:51.020947",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -64571,7 +64995,7 @@
         "is_oa": true,
         "oa_status": "diamond",
         "oa_url": "http://www.doiserbia.nb.rs/ft.aspx?id=1450-55840803011A",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -64683,7 +65107,7 @@
       "has_fulltext": true,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.8807778,
+        "value": 0.88078007,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -65069,22 +65493,25 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:8fefdc6b08774ce39c1da2f2486802d4",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/8fefdc6b08774ce39c1da2f2486802d4",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": null,
           "license_id": null,
@@ -65190,8 +65617,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.75,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -65612,7 +66039,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -66132,8 +66559,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8999999761581421,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -67034,8 +67461,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.44999998807907104,
-          "display_name": "Responsible consumption and production",
-          "id": "https://metadata.un.org/sdg/12"
+          "id": "https://metadata.un.org/sdg/12",
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
@@ -68128,8 +68555,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4699999988079071,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -69572,8 +69999,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8500000238418579,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -70465,8 +70892,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.8999999761581421,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -71458,18 +71885,21 @@
           "landing_page_url": "https://doaj.org/article/9dcaa2c9378240e5b305b29c8c3033f9",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -71575,8 +72005,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4399999976158142,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -72125,7 +72555,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -74515,8 +74945,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.75,
-          "display_name": "Peace, Justice and strong institutions",
-          "id": "https://metadata.un.org/sdg/16"
+          "id": "https://metadata.un.org/sdg/16",
+          "display_name": "Peace, Justice and strong institutions"
         }
       ],
       "awards": [],
@@ -75205,8 +75635,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5099999904632568,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -75990,8 +76420,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6700000166893005,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -76433,8 +76863,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4399999976158142,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -77350,8 +77780,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7799999713897705,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -81293,8 +81723,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.699999988079071,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -82128,8 +82558,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6000000238418579,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -82952,8 +83382,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4099999964237213,
-          "display_name": "Industry, innovation and infrastructure",
-          "id": "https://metadata.un.org/sdg/9"
+          "id": "https://metadata.un.org/sdg/9",
+          "display_name": "Industry, innovation and infrastructure"
         }
       ],
       "awards": [],
@@ -83591,8 +84021,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.5899999737739563,
-          "display_name": "Zero hunger",
-          "id": "https://metadata.un.org/sdg/2"
+          "id": "https://metadata.un.org/sdg/2",
+          "display_name": "Zero hunger"
         }
       ],
       "awards": [],
@@ -85113,8 +85543,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.699999988079071,
-          "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15"
+          "id": "https://metadata.un.org/sdg/15",
+          "display_name": "Life in Land"
         }
       ],
       "awards": [],
@@ -86544,8 +86974,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6100000143051147,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -88597,8 +89027,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6100000143051147,
-          "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11"
+          "id": "https://metadata.un.org/sdg/11",
+          "display_name": "Sustainable cities and communities"
         }
       ],
       "awards": [],
@@ -89026,7 +89456,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2025-11-06T06:51:31.235846",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -89659,8 +90089,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.7200000286102295,
-          "display_name": "No poverty",
-          "id": "https://metadata.un.org/sdg/1"
+          "id": "https://metadata.un.org/sdg/1",
+          "display_name": "No poverty"
         }
       ],
       "awards": [],
@@ -90414,8 +90844,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6100000143051147,
-          "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7"
+          "id": "https://metadata.un.org/sdg/7",
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
@@ -92027,8 +92457,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.6000000238418579,
-          "display_name": "Decent work and economic growth",
-          "id": "https://metadata.un.org/sdg/8"
+          "id": "https://metadata.un.org/sdg/8",
+          "display_name": "Decent work and economic growth"
         }
       ],
       "awards": [],
@@ -95138,8 +95568,8 @@
       "sustainable_development_goals": [
         {
           "score": 0.4099999964237213,
-          "display_name": "Reduced inequalities",
-          "id": "https://metadata.un.org/sdg/10"
+          "id": "https://metadata.un.org/sdg/10",
+          "display_name": "Reduced inequalities"
         }
       ],
       "awards": [],

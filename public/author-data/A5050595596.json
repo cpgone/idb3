@@ -366,7 +366,7 @@
       {
         "id": "https://openalex.org/T12161",
         "display_name": "Plant Surface Properties and Treatments",
-        "value": 0.0000449,
+        "value": 0.0000448,
         "subfield": {
           "id": "https://openalex.org/subfields/1110",
           "display_name": "Plant Science"
@@ -586,7 +586,7 @@
     },
     "block_key": "n pedentchouk",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5050595596",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2016-06-24"
   },
   "works": [
@@ -1515,7 +1515,7 @@
       "has_fulltext": true,
       "cited_by_count": 746,
       "citation_normalized_percentile": {
-        "value": 0.9986494,
+        "value": 0.99864945,
         "is_in_top_1_percent": true,
         "is_in_top_10_percent": true
       },
@@ -1829,20 +1829,24 @@
           "landing_page_url": "https://digitalcommons.uri.edu/gsofacpubs/1719",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306402191",
-            "display_name": "DigitalCommons @ The University of Rhode Island (The University of Rhode Island)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I17626003",
-            "host_organization_name": "University of Rhode Island",
-            "host_organization_lineage": [
-              "https://openalex.org/I17626003"
+            "id": "https://openalex.org/S2764761010",
+            "display_name": "Journal of Media Literacy Education",
+            "issn_l": "2167-8715",
+            "issn": [
+              "2167-8715"
             ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
+            "is_oa": false,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310316378",
+            "host_organization_name": "National Association for Media Literacy Education",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310316378"
+            ],
+            "host_organization_lineage_names": [
+              "National Association for Media Literacy Education"
+            ],
+            "type": "journal"
           },
           "license": "cc-by",
           "license_id": "https://openalex.org/licenses/cc-by",
@@ -2003,20 +2007,24 @@
           "landing_page_url": "https://orca.cardiff.ac.uk/10755/",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306400871",
-            "display_name": "Spectrum Research Repository (Concordia University)",
-            "issn_l": null,
-            "issn": null,
+            "id": "https://openalex.org/S4210213960",
+            "display_name": "New Trends in Mathematical Science",
+            "issn_l": "2147-5520",
+            "issn": [
+              "2147-5520"
+            ],
             "is_oa": false,
             "is_in_doaj": false,
             "is_core": false,
-            "host_organization": "https://openalex.org/I60158472",
-            "host_organization_name": "Concordia University",
+            "host_organization": "https://openalex.org/P4310318350",
+            "host_organization_name": "BİSKA Bilisim Company",
             "host_organization_lineage": [
-              "https://openalex.org/I60158472"
+              "https://openalex.org/P4310318350"
             ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
+            "host_organization_lineage_names": [
+              "BİSKA Bilisim Company"
+            ],
+            "type": "journal"
           },
           "license": null,
           "license_id": null,
@@ -2032,8 +2040,8 @@
           "landing_page_url": "http://hdl.handle.net/11577/1564703",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306402448",
-            "display_name": "Padua Research Archive (University of Padua)",
+            "id": "https://openalex.org/S4306402547",
+            "display_name": "Padua Research Archive (University of Padova)",
             "issn_l": null,
             "issn": null,
             "is_oa": false,
@@ -2123,8 +2131,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W1983794578.pdf",
@@ -2279,7 +2287,7 @@
           "cited_by_count": 46
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2016-06-24T00:00:00"
     },
     {
@@ -2809,7 +2817,7 @@
       "has_fulltext": false,
       "cited_by_count": 518,
       "citation_normalized_percentile": {
-        "value": 0.99475649,
+        "value": 0.9947567,
         "is_in_top_1_percent": true,
         "is_in_top_10_percent": true
       },
@@ -3005,150 +3013,10 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D001110",
-          "descriptor_name": "Arctic Regions",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D015415",
-          "descriptor_name": "Biomarkers",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002119",
-          "descriptor_name": "Calcium Carbonate",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002119",
-          "descriptor_name": "Calcium Carbonate",
+          "descriptor_ui": "D000473",
+          "descriptor_name": "Alkanes",
           "qualifier_ui": "Q000378",
           "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002244",
-          "descriptor_name": "Carbon",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002247",
-          "descriptor_name": "Carbon Isotopes",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D019015",
-          "descriptor_name": "Geologic Sediments",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D017752",
-          "descriptor_name": "Greenhouse Effect",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D049690",
-          "descriptor_name": "History, Ancient",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006813",
-          "descriptor_name": "Humidity",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006859",
-          "descriptor_name": "Hydrogen",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006859",
-          "descriptor_name": "Hydrogen",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D008386",
-          "descriptor_name": "Marine Biology",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D009792",
-          "descriptor_name": "Oceans and Seas",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D010944",
-          "descriptor_name": "Plants",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D011891",
-          "descriptor_name": "Rain",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012623",
-          "descriptor_name": "Seawater",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012623",
-          "descriptor_name": "Seawater",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012965",
-          "descriptor_name": "Sodium Chloride",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D013696",
-          "descriptor_name": "Temperature",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D013997",
-          "descriptor_name": "Time Factors",
-          "qualifier_ui": null,
-          "qualifier_name": null,
           "is_major_topic": false
         },
         {
@@ -3166,150 +3034,10 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D015415",
-          "descriptor_name": "Biomarkers",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002119",
-          "descriptor_name": "Calcium Carbonate",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002119",
-          "descriptor_name": "Calcium Carbonate",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002244",
-          "descriptor_name": "Carbon",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002247",
-          "descriptor_name": "Carbon Isotopes",
+          "descriptor_ui": "D001110",
+          "descriptor_name": "Arctic Regions",
           "qualifier_ui": null,
           "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D019015",
-          "descriptor_name": "Geologic Sediments",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D017752",
-          "descriptor_name": "Greenhouse Effect",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D049690",
-          "descriptor_name": "History, Ancient",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006813",
-          "descriptor_name": "Humidity",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006859",
-          "descriptor_name": "Hydrogen",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006859",
-          "descriptor_name": "Hydrogen",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D008386",
-          "descriptor_name": "Marine Biology",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D009792",
-          "descriptor_name": "Oceans and Seas",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D010944",
-          "descriptor_name": "Plants",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D011891",
-          "descriptor_name": "Rain",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012623",
-          "descriptor_name": "Seawater",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012623",
-          "descriptor_name": "Seawater",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012965",
-          "descriptor_name": "Sodium Chloride",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D013696",
-          "descriptor_name": "Temperature",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D013997",
-          "descriptor_name": "Time Factors",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000473",
-          "descriptor_name": "Alkanes",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
           "is_major_topic": false
         },
         {
@@ -3320,8 +3048,15 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D015415",
-          "descriptor_name": "Biomarkers",
+          "descriptor_ui": "D002119",
+          "descriptor_name": "Calcium Carbonate",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002119",
+          "descriptor_name": "Calcium Carbonate",
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
           "is_major_topic": false
@@ -3336,6 +3071,34 @@
         {
           "descriptor_ui": "D002119",
           "descriptor_name": "Calcium Carbonate",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002119",
+          "descriptor_name": "Calcium Carbonate",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002119",
+          "descriptor_name": "Calcium Carbonate",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002244",
+          "descriptor_name": "Carbon",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002244",
+          "descriptor_name": "Carbon",
           "qualifier_ui": "Q000378",
           "qualifier_name": "metabolism",
           "is_major_topic": false
@@ -3355,22 +3118,29 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D019015",
-          "descriptor_name": "Geologic Sediments",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
+          "descriptor_ui": "D002247",
+          "descriptor_name": "Carbon Isotopes",
+          "qualifier_ui": null,
+          "qualifier_name": null,
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D017752",
-          "descriptor_name": "Greenhouse Effect",
+          "descriptor_ui": "D002247",
+          "descriptor_name": "Carbon Isotopes",
           "qualifier_ui": null,
           "qualifier_name": null,
-          "is_major_topic": true
+          "is_major_topic": false
         },
         {
-          "descriptor_ui": "D049690",
-          "descriptor_name": "History, Ancient",
+          "descriptor_ui": "D006813",
+          "descriptor_name": "Humidity",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006813",
+          "descriptor_name": "Humidity",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -3392,6 +3162,34 @@
         {
           "descriptor_ui": "D006859",
           "descriptor_name": "Hydrogen",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006859",
+          "descriptor_name": "Hydrogen",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006859",
+          "descriptor_name": "Hydrogen",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006859",
+          "descriptor_name": "Hydrogen",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006859",
+          "descriptor_name": "Hydrogen",
           "qualifier_ui": "Q000737",
           "qualifier_name": "chemistry",
           "is_major_topic": false
@@ -3399,6 +3197,34 @@
         {
           "descriptor_ui": "D008386",
           "descriptor_name": "Marine Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008386",
+          "descriptor_name": "Marine Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008386",
+          "descriptor_name": "Marine Biology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009792",
+          "descriptor_name": "Oceans and Seas",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009792",
+          "descriptor_name": "Oceans and Seas",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -3418,10 +3244,52 @@
           "is_major_topic": false
         },
         {
+          "descriptor_ui": "D010944",
+          "descriptor_name": "Plants",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010944",
+          "descriptor_name": "Plants",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
           "descriptor_ui": "D011891",
           "descriptor_name": "Rain",
           "qualifier_ui": null,
           "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011891",
+          "descriptor_name": "Rain",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D011891",
+          "descriptor_name": "Rain",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012623",
+          "descriptor_name": "Seawater",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012623",
+          "descriptor_name": "Seawater",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
           "is_major_topic": false
         },
         {
@@ -3439,6 +3307,34 @@
           "is_major_topic": false
         },
         {
+          "descriptor_ui": "D012623",
+          "descriptor_name": "Seawater",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012623",
+          "descriptor_name": "Seawater",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012965",
+          "descriptor_name": "Sodium Chloride",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012965",
+          "descriptor_name": "Sodium Chloride",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
           "descriptor_ui": "D012965",
           "descriptor_name": "Sodium Chloride",
           "qualifier_ui": "Q000032",
@@ -3453,8 +3349,120 @@
           "is_major_topic": true
         },
         {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
           "descriptor_ui": "D013997",
           "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013997",
+          "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013997",
+          "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015415",
+          "descriptor_name": "Biomarkers",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015415",
+          "descriptor_name": "Biomarkers",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015415",
+          "descriptor_name": "Biomarkers",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D017752",
+          "descriptor_name": "Greenhouse Effect",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D017752",
+          "descriptor_name": "Greenhouse Effect",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D017752",
+          "descriptor_name": "Greenhouse Effect",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019015",
+          "descriptor_name": "Geologic Sediments",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D019015",
+          "descriptor_name": "Geologic Sediments",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D019015",
+          "descriptor_name": "Geologic Sediments",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D049690",
+          "descriptor_name": "History, Ancient",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D049690",
+          "descriptor_name": "History, Ancient",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D049690",
+          "descriptor_name": "History, Ancient",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -3562,20 +3570,24 @@
           "landing_page_url": "https://digitalcommons.uri.edu/gsofacpubs/1717",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306402191",
-            "display_name": "DigitalCommons @ The University of Rhode Island (The University of Rhode Island)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I17626003",
-            "host_organization_name": "University of Rhode Island",
-            "host_organization_lineage": [
-              "https://openalex.org/I17626003"
+            "id": "https://openalex.org/S2764761010",
+            "display_name": "Journal of Media Literacy Education",
+            "issn_l": "2167-8715",
+            "issn": [
+              "2167-8715"
             ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
+            "is_oa": false,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310316378",
+            "host_organization_name": "National Association for Media Literacy Education",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310316378"
+            ],
+            "host_organization_lineage_names": [
+              "National Association for Media Literacy Education"
+            ],
+            "type": "journal"
           },
           "license": "cc-by",
           "license_id": "https://openalex.org/licenses/cc-by",
@@ -3736,20 +3748,24 @@
           "landing_page_url": "https://orca.cardiff.ac.uk/10753/",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306400871",
-            "display_name": "Spectrum Research Repository (Concordia University)",
-            "issn_l": null,
-            "issn": null,
+            "id": "https://openalex.org/S4210213960",
+            "display_name": "New Trends in Mathematical Science",
+            "issn_l": "2147-5520",
+            "issn": [
+              "2147-5520"
+            ],
             "is_oa": false,
             "is_in_doaj": false,
             "is_core": false,
-            "host_organization": "https://openalex.org/I60158472",
-            "host_organization_name": "Concordia University",
+            "host_organization": "https://openalex.org/P4310318350",
+            "host_organization_name": "BİSKA Bilisim Company",
             "host_organization_lineage": [
-              "https://openalex.org/I60158472"
+              "https://openalex.org/P4310318350"
             ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
+            "host_organization_lineage_names": [
+              "BİSKA Bilisim Company"
+            ],
+            "type": "journal"
           },
           "license": null,
           "license_id": null,
@@ -3864,8 +3880,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2138511808.pdf",
@@ -3973,7 +3989,7 @@
           "cited_by_count": 31
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -4870,7 +4886,7 @@
       "has_fulltext": true,
       "cited_by_count": 199,
       "citation_normalized_percentile": {
-        "value": 0.99626145,
+        "value": 0.99626158,
         "is_in_top_1_percent": true,
         "is_in_top_10_percent": true
       },
@@ -5101,85 +5117,8 @@
         {
           "descriptor_ui": "D001419",
           "descriptor_name": "Bacteria",
-          "qualifier_ui": "Q000235",
-          "qualifier_name": "genetics",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001419",
-          "descriptor_name": "Bacteria",
-          "qualifier_ui": "Q000254",
-          "qualifier_name": "growth & development",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001419",
-          "descriptor_name": "Bacteria",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001426",
-          "descriptor_name": "Bacterial Proteins",
-          "qualifier_ui": "Q000235",
-          "qualifier_name": "genetics",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001673",
-          "descriptor_name": "Biodegradation, Environmental",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D015964",
-          "descriptor_name": "Gene Expression Regulation, Bacterial",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006838",
-          "descriptor_name": "Hydrocarbons",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006838",
-          "descriptor_name": "Hydrocarbons",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D010802",
-          "descriptor_name": "Phylogeny",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D010933",
-          "descriptor_name": "Plankton",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012336",
-          "descriptor_name": "RNA, Ribosomal, 16S",
-          "qualifier_ui": "Q000235",
-          "qualifier_name": "genetics",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014871",
-          "descriptor_name": "Water Microbiology",
-          "qualifier_ui": null,
-          "qualifier_name": null,
+          "qualifier_ui": "Q000145",
+          "qualifier_name": "classification",
           "is_major_topic": false
         },
         {
@@ -5199,85 +5138,8 @@
         {
           "descriptor_ui": "D001419",
           "descriptor_name": "Bacteria",
-          "qualifier_ui": "Q000254",
-          "qualifier_name": "growth & development",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001419",
-          "descriptor_name": "Bacteria",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001426",
-          "descriptor_name": "Bacterial Proteins",
           "qualifier_ui": "Q000235",
           "qualifier_name": "genetics",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001673",
-          "descriptor_name": "Biodegradation, Environmental",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D015964",
-          "descriptor_name": "Gene Expression Regulation, Bacterial",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006838",
-          "descriptor_name": "Hydrocarbons",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D006838",
-          "descriptor_name": "Hydrocarbons",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D010802",
-          "descriptor_name": "Phylogeny",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D010933",
-          "descriptor_name": "Plankton",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012336",
-          "descriptor_name": "RNA, Ribosomal, 16S",
-          "qualifier_ui": "Q000235",
-          "qualifier_name": "genetics",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014871",
-          "descriptor_name": "Water Microbiology",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D001419",
-          "descriptor_name": "Bacteria",
-          "qualifier_ui": "Q000145",
-          "qualifier_name": "classification",
           "is_major_topic": false
         },
         {
@@ -5297,8 +5159,50 @@
         {
           "descriptor_ui": "D001419",
           "descriptor_name": "Bacteria",
+          "qualifier_ui": "Q000254",
+          "qualifier_name": "growth & development",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001419",
+          "descriptor_name": "Bacteria",
+          "qualifier_ui": "Q000254",
+          "qualifier_name": "growth & development",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001419",
+          "descriptor_name": "Bacteria",
           "qualifier_ui": "Q000378",
           "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001419",
+          "descriptor_name": "Bacteria",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001419",
+          "descriptor_name": "Bacteria",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001426",
+          "descriptor_name": "Bacterial Proteins",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001426",
+          "descriptor_name": "Bacterial Proteins",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
           "is_major_topic": false
         },
         {
@@ -5316,10 +5220,38 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D015964",
-          "descriptor_name": "Gene Expression Regulation, Bacterial",
+          "descriptor_ui": "D001673",
+          "descriptor_name": "Biodegradation, Environmental",
           "qualifier_ui": null,
           "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001673",
+          "descriptor_name": "Biodegradation, Environmental",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006838",
+          "descriptor_name": "Hydrocarbons",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006838",
+          "descriptor_name": "Hydrocarbons",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006838",
+          "descriptor_name": "Hydrocarbons",
+          "qualifier_ui": "Q000378",
+          "qualifier_name": "metabolism",
           "is_major_topic": false
         },
         {
@@ -5332,13 +5264,48 @@
         {
           "descriptor_ui": "D006838",
           "descriptor_name": "Hydrocarbons",
-          "qualifier_ui": "Q000378",
-          "qualifier_name": "metabolism",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006838",
+          "descriptor_name": "Hydrocarbons",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
           "is_major_topic": false
         },
         {
           "descriptor_ui": "D010802",
           "descriptor_name": "Phylogeny",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010802",
+          "descriptor_name": "Phylogeny",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010802",
+          "descriptor_name": "Phylogeny",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010933",
+          "descriptor_name": "Plankton",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010933",
+          "descriptor_name": "Plankton",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -5358,8 +5325,57 @@
           "is_major_topic": false
         },
         {
+          "descriptor_ui": "D012336",
+          "descriptor_name": "RNA, Ribosomal, 16S",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012336",
+          "descriptor_name": "RNA, Ribosomal, 16S",
+          "qualifier_ui": "Q000235",
+          "qualifier_name": "genetics",
+          "is_major_topic": false
+        },
+        {
           "descriptor_ui": "D014871",
           "descriptor_name": "Water Microbiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014871",
+          "descriptor_name": "Water Microbiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D014871",
+          "descriptor_name": "Water Microbiology",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015964",
+          "descriptor_name": "Gene Expression Regulation, Bacterial",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015964",
+          "descriptor_name": "Gene Expression Regulation, Bacterial",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015964",
+          "descriptor_name": "Gene Expression Regulation, Bacterial",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -5495,18 +5511,21 @@
           "landing_page_url": "https://doaj.org/article/1358be9725f441cba0670fe626571b62",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -5668,8 +5687,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2937916685.pdf",
@@ -5775,7 +5794,7 @@
           "cited_by_count": 8
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -6369,8 +6388,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 16,
@@ -6807,7 +6826,7 @@
       "has_fulltext": true,
       "cited_by_count": 111,
       "citation_normalized_percentile": {
-        "value": 0.89356421,
+        "value": 0.8935611,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -7133,16 +7152,18 @@
           "landing_page_url": "https://dare.uva.nl/personal/pure/en/publications/effect-of-leaf-litter-degradation-and-seasonality-on-dh-isotope-ratios-of-nalkane-biomarkers(4641b73a-a8ed-468e-9bad-32c7eb0d5393).html",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401571",
-            "display_name": "Wiardi Beckman Foundation (Wiardi Beckman Foundation)",
+            "id": "https://openalex.org/S4306400088",
+            "display_name": "UvA-DARE (University of Amsterdam)",
             "issn_l": null,
             "issn": null,
             "is_oa": false,
             "is_in_doaj": false,
             "is_core": false,
-            "host_organization": null,
-            "host_organization_name": null,
-            "host_organization_lineage": [],
+            "host_organization": "https://openalex.org/I887064364",
+            "host_organization_name": "University of Amsterdam",
+            "host_organization_lineage": [
+              "https://openalex.org/I887064364"
+            ],
             "host_organization_lineage_names": [],
             "type": "repository"
           },
@@ -7244,8 +7265,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W1967612447.pdf",
@@ -7389,7 +7410,7 @@
           "cited_by_count": 4
         }
       ],
-      "updated_date": "2026-02-02T05:57:53.111627",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -8652,8 +8673,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 43,
@@ -9741,8 +9762,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 70,
@@ -11788,8 +11809,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 50,
@@ -13238,8 +13259,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2605201218.pdf"
@@ -13980,8 +14001,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 70,
@@ -14764,8 +14785,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 35,
@@ -16050,8 +16071,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W1762109746.pdf",
@@ -16709,8 +16730,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 30,
@@ -18010,8 +18031,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2554238781.pdf"
@@ -19093,8 +19114,8 @@
         "https://openalex.org/A5002530089"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I59028903",
-        "https://openalex.org/I4210113896"
+        "https://openalex.org/I4210113896",
+        "https://openalex.org/I59028903"
       ],
       "apc_list": {
         "value": 1890,
@@ -19110,7 +19131,7 @@
       "has_fulltext": true,
       "cited_by_count": 16,
       "citation_normalized_percentile": {
-        "value": 0.94676715,
+        "value": 0.94606785,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -19670,8 +19691,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4391126351.pdf"
@@ -20287,7 +20308,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-20T17:24:06.736184",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -21062,8 +21083,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2885961602.pdf",
@@ -22551,8 +22572,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 95,
@@ -23389,8 +23410,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 73,
@@ -24420,8 +24441,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 45,
@@ -25641,8 +25662,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2134720954.pdf",
@@ -27001,8 +27022,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 126,
@@ -28474,7 +28495,7 @@
       "has_fulltext": false,
       "cited_by_count": 38,
       "citation_normalized_percentile": {
-        "value": 0.75767954,
+        "value": 0.75765306,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -28733,20 +28754,21 @@
           "landing_page_url": "http://eprints.gla.ac.uk/76125/",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306400411",
-            "display_name": "Enlighten: Publications (The University of Glasgow)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I7882870",
-            "host_organization_name": "University of Glasgow",
-            "host_organization_lineage": [
-              "https://openalex.org/I7882870"
+            "id": "https://openalex.org/S4210235606",
+            "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+            "issn_l": "2622-8912",
+            "issn": [
+              "2622-8912",
+              "2622-8920"
             ],
+            "is_oa": false,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": null,
           "license_id": null,
@@ -28794,8 +28816,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 35,
@@ -29597,7 +29619,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -30198,8 +30220,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2299543410.pdf"
@@ -30902,8 +30924,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 140,
@@ -32452,8 +32474,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 28,
@@ -33339,8 +33361,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 90,
@@ -33448,7 +33470,582 @@
         "https://openalex.org/W2145249086",
         "https://openalex.org/W2604217432"
       ],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "3": [
+          42
+        ],
+        "2009": [
+          52,
+          69
+        ],
+        "We": [
+          0,
+          240
+        ],
+        "use": [
+          1
+        ],
+        "first": [
+          2
+        ],
+        "field-based": [
+          3
+        ],
+        "observations": [
+          4
+        ],
+        "of": [
+          5,
+          28,
+          36,
+          44,
+          75,
+          90,
+          98,
+          154,
+          171,
+          178,
+          186,
+          195,
+          199,
+          202,
+          209,
+          214,
+          263
+        ],
+        "precipitation": [
+          6,
+          77,
+          86,
+          139,
+          173
+        ],
+        "and": [
+          7,
+          18,
+          53,
+          70,
+          82,
+          114,
+          227,
+          232,
+          245
+        ],
+        "river": [
+          8,
+          155
+        ],
+        "isotopic": [
+          9,
+          152,
+          174
+        ],
+        "chemistry": [
+          10,
+          153,
+          201
+        ],
+        "from": [
+          11,
+          129,
+          183
+        ],
+        "a": [
+          12,
+          47,
+          260
+        ],
+        "three-year": [
+          13
+        ],
+        "study": [
+          14
+        ],
+        "(2009–2011)": [
+          15
+        ],
+        "in": [
+          16,
+          21,
+          51,
+          58,
+          60,
+          68,
+          72,
+          105,
+          140,
+          161,
+          225,
+          266
+        ],
+        "rainforest": [
+          17,
+          31
+        ],
+        "nearby": [
+          19
+        ],
+        "savannah": [
+          20
+        ],
+        "central": [
+          22
+        ],
+        "Guyana": [
+          23
+        ],
+        "at": [
+          24,
+          123
+        ],
+        "the": [
+          25,
+          29,
+          34,
+          63,
+          95,
+          106,
+          125,
+          134,
+          141,
+          184,
+          187,
+          190,
+          196,
+          206,
+          212,
+          215,
+          218,
+          223
+        ],
+        "northern": [
+          26,
+          207
+        ],
+        "rim": [
+          27,
+          208
+        ],
+        "Amazon": [
+          30
+        ],
+        "to": [
+          32,
+          62,
+          112,
+          131,
+          146,
+          211,
+          257
+        ],
+        "establish": [
+          33
+        ],
+        "quality": [
+          35
+        ],
+        "modelled": [
+          37,
+          172
+        ],
+        "or": [
+          38
+        ],
+        "remotely-sensed": [
+          39
+        ],
+        "datasets.": [
+          40
+        ],
+        "Our": [
+          41,
+          148,
+          220
+        ],
+        "years": [
+          43
+        ],
+        "data": [
+          45,
+          92,
+          150,
+          249,
+          254
+        ],
+        "capture": [
+          46,
+          94
+        ],
+        "reduced": [
+          48
+        ],
+        "rainfall": [
+          49,
+          103
+        ],
+        "regime": [
+          50
+        ],
+        "an": [
+          54
+        ],
+        "extended": [
+          55
+        ],
+        "wet": [
+          56,
+          108,
+          191
+        ],
+        "season": [
+          57,
+          109,
+          128,
+          143,
+          192
+        ],
+        "2010,": [
+          59
+        ],
+        "contrast": [
+          61
+        ],
+        "widely": [
+          64
+        ],
+        "documented": [
+          65
+        ],
+        "Amazonian": [
+          66
+        ],
+        "floods": [
+          67
+        ],
+        "droughts": [
+          71
+        ],
+        "2010.": [
+          73
+        ],
+        "Comparisons": [
+          74
+        ],
+        "observed": [
+          76
+        ],
+        "with": [
+          78,
+          167,
+          250
+        ],
+        "satellite": [
+          79
+        ],
+        "derived": [
+          80,
+          182
+        ],
+        "TRMM": [
+          81,
+          118
+        ],
+        "ECMWF": [
+          83
+        ],
+        "ERA-Interim": [
+          84,
+          135
+        ],
+        "reanalysis": [
+          85
+        ],
+        "show": [
+          87,
+          157
+        ],
+        "that": [
+          88,
+          158,
+          242
+        ],
+        "both": [
+          89
+        ],
+        "these": [
+          91
+        ],
+        "sets": [
+          93
+        ],
+        "general": [
+          96
+        ],
+        "pattern": [
+          97
+        ],
+        "seasonality,": [
+          99
+        ],
+        "but": [
+          100,
+          133
+        ],
+        "substantially": [
+          101
+        ],
+        "underestimate": [
+          102
+        ],
+        "amounts": [
+          104
+        ],
+        "primary": [
+          107
+        ],
+        "(by": [
+          110
+        ],
+        "up": [
+          111,
+          145
+        ],
+        "50%": [
+          113
+        ],
+        "72%": [
+          115
+        ],
+        "respectively).": [
+          116
+        ],
+        "The": [
+          117,
+          176
+        ],
+        "dataset": [
+          119
+        ],
+        "is": [
+          120,
+          255
+        ],
+        "generally": [
+          121
+        ],
+        "better": [
+          122
+        ],
+        "characterising": [
+          124
+        ],
+        "main": [
+          126
+        ],
+        "dry": [
+          127,
+          142
+        ],
+        "September": [
+          130
+        ],
+        "December": [
+          132
+        ],
+        "model": [
+          136,
+          238,
+          253
+        ],
+        "can": [
+          137
+        ],
+        "overestimate": [
+          138
+        ],
+        "by": [
+          144
+        ],
+        "175%.": [
+          147
+        ],
+        "new": [
+          149
+        ],
+        "on": [
+          151,
+          205
+        ],
+        "waters": [
+          156
+        ],
+        "δ2H/δ18O": [
+          159
+        ],
+        "values": [
+          160
+        ],
+        "this": [
+          162
+        ],
+        "region": [
+          163
+        ],
+        "are": [
+          164
+        ],
+        "broadly": [
+          165
+        ],
+        "consistent": [
+          166
+        ],
+        "interpolated": [
+          168
+        ],
+        "global": [
+          169
+        ],
+        "datasets": [
+          170
+        ],
+        "signatures.": [
+          175
+        ],
+        "dominance": [
+          177
+        ],
+        "isotopically": [
+          179
+        ],
+        "lighter": [
+          180
+        ],
+        "water": [
+          181,
+          200
+        ],
+        "rains": [
+          185
+        ],
+        "ITCZ": [
+          188,
+          216
+        ],
+        "during": [
+          189
+        ],
+        "provides": [
+          193
+        ],
+        "evidence": [
+          194
+        ],
+        "close": [
+          197
+        ],
+        "coupling": [
+          198
+        ],
+        "headwater": [
+          203
+        ],
+        "rivers": [
+          204
+        ],
+        "Amazonia": [
+          210
+        ],
+        "positioning": [
+          213
+        ],
+        "over": [
+          217
+        ],
+        "region.": [
+          219
+        ],
+        "results": [
+          221
+        ],
+        "highlight": [
+          222
+        ],
+        "challenge": [
+          224
+        ],
+        "understanding": [
+          226,
+          262
+        ],
+        "representing": [
+          228
+        ],
+        "local": [
+          229,
+          246
+        ],
+        "scale": [
+          230,
+          237,
+          247,
+          252
+        ],
+        "hydrological": [
+          231
+        ],
+        "biogeochemical": [
+          233
+        ],
+        "characteristics": [
+          234
+        ],
+        "using": [
+          235
+        ],
+        "regional": [
+          236
+        ],
+        "data.": [
+          239
+        ],
+        "argue": [
+          241
+        ],
+        "combining": [
+          243
+        ],
+        "point": [
+          244
+        ],
+        "field": [
+          248
+        ],
+        "larger": [
+          251
+        ],
+        "necessary": [
+          256
+        ],
+        "progress": [
+          258
+        ],
+        "towards": [
+          259
+        ],
+        "comprehensive": [
+          261
+        ],
+        "climate–hydrology": [
+          264
+        ],
+        "interactions": [
+          265
+        ],
+        "Amazonia.": [
+          267
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2025,
@@ -33479,7 +34076,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -34176,8 +34773,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 35,
@@ -34796,8 +35393,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 81,
@@ -35423,8 +36020,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 24,
@@ -37378,8 +37975,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 128,
@@ -38087,7 +38684,7 @@
       "has_fulltext": false,
       "cited_by_count": 9,
       "citation_normalized_percentile": {
-        "value": 0.8185,
+        "value": 0.81845833,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -38398,6 +38995,27 @@
       ],
       "mesh": [
         {
+          "descriptor_ui": "D000090422",
+          "descriptor_name": "Dissolved Organic Matter",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000090422",
+          "descriptor_name": "Dissolved Organic Matter",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000090422",
+          "descriptor_name": "Dissolved Organic Matter",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
           "descriptor_ui": "D002244",
           "descriptor_name": "Carbon",
           "qualifier_ui": "Q000032",
@@ -38405,15 +39023,29 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D057486",
-          "descriptor_name": "Carbon Cycle",
-          "qualifier_ui": null,
-          "qualifier_name": null,
+          "descriptor_ui": "D002244",
+          "descriptor_name": "Carbon",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D000090422",
-          "descriptor_name": "Dissolved Organic Matter",
+          "descriptor_ui": "D002244",
+          "descriptor_name": "Carbon",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": true
@@ -38433,10 +39065,17 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D002244",
-          "descriptor_name": "Carbon",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
+          "descriptor_ui": "D045483",
+          "descriptor_name": "Rivers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D045483",
+          "descriptor_name": "Rivers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
           "is_major_topic": false
         },
         {
@@ -38447,34 +39086,6 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D000090422",
-          "descriptor_name": "Dissolved Organic Matter",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D045483",
-          "descriptor_name": "Rivers",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002244",
-          "descriptor_name": "Carbon",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
           "descriptor_ui": "D057486",
           "descriptor_name": "Carbon Cycle",
           "qualifier_ui": null,
@@ -38482,22 +39093,8 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D000090422",
-          "descriptor_name": "Dissolved Organic Matter",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D045483",
-          "descriptor_name": "Rivers",
+          "descriptor_ui": "D057486",
+          "descriptor_name": "Carbon Cycle",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -38570,27 +39167,28 @@
         },
         {
           "id": "pmh:oai:eprints.gla.ac.uk:262961",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": null,
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306400411",
-            "display_name": "Enlighten: Publications (The University of Glasgow)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I7882870",
-            "host_organization_name": "University of Glasgow",
-            "host_organization_lineage": [
-              "https://openalex.org/I7882870"
+            "id": "https://openalex.org/S4210235606",
+            "display_name": "ENLIGHTEN (Jurnal Bimbingan dan Konseling Islam)",
+            "issn_l": "2622-8912",
+            "issn": [
+              "2622-8912",
+              "2622-8920"
             ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by-sa",
+          "license_id": "https://openalex.org/licenses/cc-by-sa",
           "version": "acceptedVersion",
           "is_accepted": true,
           "is_published": false,
@@ -38739,8 +39337,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 70,
@@ -38828,626 +39426,7 @@
         "https://openalex.org/W2088917074",
         "https://openalex.org/W2349223561"
       ],
-      "abstract_inverted_index": {
-        "The": [
-          0,
-          81
-        ],
-        "transfer": [
-          1
-        ],
-        "of": [
-          2,
-          25,
-          41,
-          47,
-          69,
-          84,
-          115,
-          123,
-          141,
-          147,
-          165,
-          176,
-          186,
-          196,
-          229
-        ],
-        "dissolved": [
-          3
-        ],
-        "organic": [
-          4,
-          27
-        ],
-        "carbon": [
-          5,
-          17
-        ],
-        "(DOC)": [
-          6
-        ],
-        "from": [
-          7,
-          92,
-          225,
-          250,
-          257,
-          280
-        ],
-        "land": [
-          8,
-          244
-        ],
-        "to": [
-          9,
-          94,
-          96,
-          102,
-          110,
-          137,
-          154,
-          162,
-          215
-        ],
-        "watercourses": [
-          10
-        ],
-        "plays": [
-          11
-        ],
-        "a": [
-          12,
-          222
-        ],
-        "major": [
-          13
-        ],
-        "role": [
-          14
-        ],
-        "in": [
-          15,
-          20,
-          58,
-          90,
-          203,
-          217,
-          236,
-          247,
-          274
-        ],
-        "the": [
-          16,
-          21,
-          37,
-          99,
-          107,
-          112,
-          139,
-          148,
-          156,
-          166,
-          173,
-          177,
-          194,
-          226,
-          268
-        ],
-        "cycle,": [
-          18
-        ],
-        "and": [
-          19,
-          23,
-          28,
-          39,
-          55,
-          66,
-          76,
-          118,
-          131,
-          152,
-          252,
-          264
-        ],
-        "transport": [
-          22
-        ],
-        "fate": [
-          24
-        ],
-        "associated": [
-          26
-        ],
-        "inorganic": [
-          29
-        ],
-        "contaminants.": [
-          30
-        ],
-        "We": [
-          31,
-          105
-        ],
-        "investigated,": [
-          32
-        ],
-        "at": [
-          33
-        ],
-        "global": [
-          34
-        ],
-        "scale,": [
-          35
-        ],
-        "how": [
-          36
-        ],
-        "concentrations": [
-          38
-        ],
-        "properties": [
-          40
-        ],
-        "riverine": [
-          42,
-          113,
-          199,
-          205
-        ],
-        "DOC": [
-          43,
-          70,
-          86,
-          197,
-          206,
-          235,
-          271,
-          278
-        ],
-        "depend": [
-          44
-        ],
-        "upon": [
-          45
-        ],
-        "combinations": [
-          46,
-          228
-        ],
-        "terrestrial": [
-          48,
-          100,
-          108,
-          150,
-          159,
-          179,
-          187
-        ],
-        "source": [
-          49,
-          218,
-          230
-        ],
-        "solutions.": [
-          50
-        ],
-        "For": [
-          51
-        ],
-        "topsoil,": [
-          52
-        ],
-        "subsoil,": [
-          53,
-          253
-        ],
-        "groundwater": [
-          54,
-          265
-        ],
-        "river": [
-          56
-        ],
-        "solutions": [
-          57,
-          266
-        ],
-        "different": [
-          59,
-          227
-        ],
-        "Köppen-Geiger": [
-          60
-        ],
-        "climatic": [
-          61
-        ],
-        "zones,": [
-          62
-        ],
-        "we": [
-          63
-        ],
-        "compiled": [
-          64
-        ],
-        "published": [
-          65
-        ],
-        "new": [
-          67
-        ],
-        "values": [
-          68,
-          181
-        ],
-        "concentration": [
-          71
-        ],
-        "([DOC]),": [
-          72
-        ],
-        "radiocarbon": [
-          73
-        ],
-        "signature": [
-          74
-        ],
-        "(DO<sup>14</sup>C),": [
-          75
-        ],
-        "specific": [
-          77
-        ],
-        "UV": [
-          78
-        ],
-        "absorbance": [
-          79
-        ],
-        "(SUVA).": [
-          80
-        ],
-        "average": [
-          82
-        ],
-        "value": [
-          83
-        ],
-        "each": [
-          85,
-          116,
-          146
-        ],
-        "variable": [
-          87
-        ],
-        "decreased": [
-          88
-        ],
-        "significantly": [
-          89
-        ],
-        "magnitude": [
-          91
-        ],
-        "topsoil": [
-          93,
-          251
-        ],
-        "subsoil": [
-          95,
-          263
-        ],
-        "groundwater,": [
-          97
-        ],
-        "permitting": [
-          98
-        ],
-        "sources": [
-          101
-        ],
-        "be": [
-          103,
-          183
-        ],
-        "distinguished.": [
-          104
-        ],
-        "used": [
-          106
-        ],
-        "data": [
-          109
-        ],
-        "simulate": [
-          111
-        ],
-        "distributions": [
-          114,
-          140
-        ],
-        "variable,": [
-          117
-        ],
-        "also": [
-          119,
-          153
-        ],
-        "relationships": [
-          120
-        ],
-        "between": [
-          121,
-          129
-        ],
-        "pairs": [
-          122
-        ],
-        "variables.": [
-          124
-        ],
-        "To": [
-          125
-        ],
-        "achieve": [
-          126
-        ],
-        "good": [
-          127
-        ],
-        "matches": [
-          128
-        ],
-        "observed": [
-          130,
-          210
-        ],
-        "simulated": [
-          132,
-          204
-        ],
-        "data,": [
-          133,
-          211
-        ],
-        "it": [
-          134
-        ],
-        "was": [
-          135
-        ],
-        "necessary": [
-          136
-        ],
-        "optimise": [
-          138
-        ],
-        "water": [
-          142
-        ],
-        "fractions": [
-          143
-        ],
-        "contributed": [
-          144
-        ],
-        "by": [
-          145
-        ],
-        "three": [
-          149
-        ],
-        "sources,": [
-          151,
-          272
-        ],
-        "reduce": [
-          155
-        ],
-        "mean": [
-          157
-        ],
-        "input": [
-          158
-        ],
-        "[DOC]": [
-          160,
-          180
-        ],
-        "values,": [
-          161,
-          220
-        ],
-        "about": [
-          163,
-          255
-        ],
-        "60%": [
-          164
-        ],
-        "measured": [
-          167
-        ],
-        "ones.": [
-          168
-        ],
-        "One": [
-          169
-        ],
-        "possible": [
-          170
-        ],
-        "explanation": [
-          171
-        ],
-        "for": [
-          172
-        ],
-        "required": [
-          174
-        ],
-        "lowering": [
-          175
-        ],
-        "modelled": [
-          178
-        ],
-        "might": [
-          182
-        ],
-        "unrepresentative": [
-          184
-        ],
-        "sampling": [
-          185
-        ],
-        "DOC,": [
-          188
-        ],
-        "including": [
-          189
-        ],
-        "dilution": [
-          190
-        ],
-        "effects;": [
-          191
-        ],
-        "another": [
-          192
-        ],
-        "is": [
-          193,
-          279
-        ],
-        "loss": [
-          195
-        ],
-        "during": [
-          198
-        ],
-        "transport.": [
-          200
-        ],
-        "High": [
-          201
-        ],
-        "variations": [
-          202,
-          216
-        ],
-        "variables,": [
-          207
-        ],
-        "which": [
-          208
-        ],
-        "match": [
-          209
-        ],
-        "are": [
-          212,
-          267
-        ],
-        "due": [
-          213
-        ],
-        "predominantly": [
-          214
-        ],
-        "solution": [
-          219
-        ],
-        "with": [
-          221,
-          240,
-          254
-        ],
-        "lesser": [
-          223
-        ],
-        "contribution": [
-          224
-        ],
-        "waters.": [
-          231
-        ],
-        "On": [
-          232
-        ],
-        "average,": [
-          233
-        ],
-        "most": [
-          234,
-          277
-        ],
-        "rivers": [
-          237,
-          260,
-          276
-        ],
-        "draining": [
-          238,
-          261
-        ],
-        "catchments": [
-          239
-        ],
-        "forest": [
-          241
-        ],
-        "and/or": [
-          242
-        ],
-        "grass-shrub": [
-          243
-        ],
-        "cover": [
-          245
-        ],
-        "comes": [
-          246
-        ],
-        "similar": [
-          248
-        ],
-        "amounts": [
-          249
-        ],
-        "10%": [
-          256
-        ],
-        "groundwater.": [
-          258
-        ],
-        "In": [
-          259
-        ],
-        "croplands,": [
-          262
-        ],
-        "likely": [
-          269
-        ],
-        "dominant": [
-          270
-        ],
-        "while": [
-          273
-        ],
-        "wetland": [
-          275
-        ],
-        "topsoil.": [
-          281
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2025,
@@ -39462,7 +39441,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -39965,8 +39944,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 136,
@@ -40664,8 +40643,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 96,
@@ -42359,8 +42338,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 51,
@@ -42824,8 +42803,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -43071,9 +43050,9 @@
         "https://openalex.org/A5050595596"
       ],
       "corresponding_institution_ids": [
-        "https://openalex.org/I168635309",
         "https://openalex.org/I1118541",
-        "https://openalex.org/I125989756"
+        "https://openalex.org/I125989756",
+        "https://openalex.org/I168635309"
       ],
       "apc_list": {
         "value": 1500,
@@ -43089,7 +43068,7 @@
       "has_fulltext": true,
       "cited_by_count": 4,
       "citation_normalized_percentile": {
-        "value": 0.50030011,
+        "value": 0.50035366,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -43447,18 +43426,21 @@
           "landing_page_url": "https://doaj.org/article/b5e2105df2f14ce2ba4f266f37648771",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -43541,8 +43523,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3197980548.pdf",
@@ -44029,7 +44011,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -44531,8 +44513,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2218946235.pdf",
@@ -45067,8 +45049,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 133,
@@ -46994,7 +46976,7 @@
       "has_fulltext": false,
       "cited_by_count": 8,
       "citation_normalized_percentile": {
-        "value": 0.65615317,
+        "value": 0.65616683,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -47286,20 +47268,24 @@
           "landing_page_url": "https://digitalcommons.uri.edu/gsofacpubs/1715",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306402191",
-            "display_name": "DigitalCommons @ The University of Rhode Island (The University of Rhode Island)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I17626003",
-            "host_organization_name": "University of Rhode Island",
-            "host_organization_lineage": [
-              "https://openalex.org/I17626003"
+            "id": "https://openalex.org/S2764761010",
+            "display_name": "Journal of Media Literacy Education",
+            "issn_l": "2167-8715",
+            "issn": [
+              "2167-8715"
             ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
+            "is_oa": false,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310316378",
+            "host_organization_name": "National Association for Media Literacy Education",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310316378"
+            ],
+            "host_organization_lineage_names": [
+              "National Association for Media Literacy Education"
+            ],
+            "type": "journal"
           },
           "license": "cc-by",
           "license_id": "https://openalex.org/licenses/cc-by",
@@ -47356,8 +47342,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2890376938.pdf",
@@ -47402,7 +47388,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2018-09-27T00:00:00"
     },
     {
@@ -47815,8 +47801,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -48752,8 +48738,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 12,
@@ -50504,8 +50490,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 1,
@@ -51296,8 +51282,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3028423209.pdf"
@@ -51676,8 +51662,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -52106,8 +52092,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -52695,8 +52681,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 5,
@@ -53881,8 +53867,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -54509,8 +54495,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -55396,8 +55382,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 4,
@@ -56221,8 +56207,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 21,
@@ -57655,8 +57641,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -58044,8 +58030,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -58539,8 +58525,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -58969,8 +58955,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -59380,8 +59366,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 5,
@@ -59977,8 +59963,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -60453,8 +60439,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -60789,8 +60775,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -61172,8 +61158,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -61635,8 +61621,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -62055,8 +62041,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -62515,8 +62501,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -62881,8 +62867,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -63329,8 +63315,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -63739,8 +63725,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -64055,8 +64041,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -64436,8 +64422,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -64734,8 +64720,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -65235,8 +65221,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -66019,8 +66005,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -66504,8 +66490,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -66891,8 +66877,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -67331,8 +67317,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -68465,8 +68451,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -69057,8 +69043,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -70157,8 +70143,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3214190497.pdf",
@@ -70673,8 +70659,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -71324,8 +71310,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -72479,8 +72465,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -73674,8 +73660,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 68,
@@ -74134,8 +74120,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -74730,8 +74716,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -75351,8 +75337,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -75967,8 +75953,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,

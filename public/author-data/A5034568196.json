@@ -1,7 +1,7 @@
 {
   "details": {
     "id": "https://openalex.org/A5034568196",
-    "orcid": "https://orcid.org/0000-0001-6246-7835",
+    "orcid": null,
     "display_name": "Mohammed Benaafi",
     "display_name_alternatives": [
       "Benaafi, Mohammed",
@@ -11,9 +11,9 @@
       "Mohammed Benaafi"
     ],
     "works_count": 72,
-    "cited_by_count": 923,
+    "cited_by_count": 924,
     "summary_stats": {
-      "2yr_mean_citedness": 4.037037037037037,
+      "2yr_mean_citedness": 4.074074074074074,
       "h_index": 19,
       "i10_index": 32
     },
@@ -157,7 +157,7 @@
       {
         "id": "https://openalex.org/T12543",
         "display_name": "Groundwater and Watershed Analysis",
-        "value": 0.0001905,
+        "value": 0.0001904,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -174,7 +174,7 @@
       {
         "id": "https://openalex.org/T10398",
         "display_name": "Groundwater and Isotope Geochemistry",
-        "value": 0.0001509,
+        "value": 0.0001508,
         "subfield": {
           "id": "https://openalex.org/subfields/1906",
           "display_name": "Geochemistry and Petrology"
@@ -191,7 +191,7 @@
       {
         "id": "https://openalex.org/T11490",
         "display_name": "Hydrological Forecasting Using AI",
-        "value": 0.0001403,
+        "value": 0.0001402,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -337,7 +337,7 @@
         "year": 2024,
         "works_count": 15,
         "oa_works_count": 7,
-        "cited_by_count": 96
+        "cited_by_count": 97
       },
       {
         "year": 2025,
@@ -356,7 +356,7 @@
     },
     "block_key": "m rahman",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5034568196",
-    "updated_date": "2026-02-03T19:50:13.913683",
+    "updated_date": "2026-02-04T12:20:26.776081",
     "created_date": "2016-06-24"
   },
   "works": [
@@ -1359,8 +1359,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 68,
@@ -2185,16 +2185,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4000000059604645,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.4000000059604645
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 60,
@@ -2598,7 +2598,7 @@
       "has_fulltext": true,
       "cited_by_count": 55,
       "citation_normalized_percentile": {
-        "value": 0.97425755,
+        "value": 0.97424347,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -2932,21 +2932,24 @@
           "landing_page_url": "https://doaj.org/article/b042e39625cd4f6da752559b0fd5801c",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -3018,9 +3021,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.6100000143051147,
           "display_name": "Climate action",
-          "id": "https://metadata.un.org/sdg/13",
-          "score": 0.6100000143051147
+          "id": "https://metadata.un.org/sdg/13"
         }
       ],
       "awards": [],
@@ -3032,8 +3035,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4308105876.pdf",
@@ -3696,7 +3699,7 @@
           "cited_by_count": 13
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2022-11-08T00:00:00"
     },
     {
@@ -4483,16 +4486,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8700000047683716,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.8700000047683716
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 61,
@@ -5162,8 +5165,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 104,
@@ -5358,7 +5361,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://doi.org/10.1016/j.asej.2022.101894",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -5543,7 +5546,7 @@
       "has_fulltext": false,
       "cited_by_count": 39,
       "citation_normalized_percentile": {
-        "value": 0.92811138,
+        "value": 0.9281252,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -5944,25 +5947,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:2aa63c8d9eb34f1cb5eea119db7e9137",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/2aa63c8d9eb34f1cb5eea119db7e9137",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -6008,8 +6014,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 73,
@@ -6732,7 +6738,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -7417,8 +7423,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 97,
@@ -7934,7 +7940,7 @@
       "has_fulltext": false,
       "cited_by_count": 37,
       "citation_normalized_percentile": {
-        "value": 0.9595617,
+        "value": 0.95956698,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -8238,10 +8244,10 @@
       ],
       "mesh": [
         {
-          "descriptor_ui": "D006801",
-          "descriptor_name": "Humans",
-          "qualifier_ui": null,
-          "qualifier_name": null,
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
           "is_major_topic": false
         },
         {
@@ -8252,18 +8258,32 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D019066",
-          "descriptor_name": "Facies",
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D060587",
-          "descriptor_name": "Groundwater",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
         },
         {
           "descriptor_ui": "D007554",
@@ -8273,8 +8293,29 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D054712",
-          "descriptor_name": "Salinity",
+          "descriptor_ui": "D007554",
+          "descriptor_name": "Isotopes",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007554",
+          "descriptor_name": "Isotopes",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -8294,66 +8335,10 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D014867",
-          "descriptor_name": "Water",
+          "descriptor_ui": "D012623",
+          "descriptor_name": "Seawater",
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D014874",
-          "descriptor_name": "Water Pollutants, Chemical",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D006801",
-          "descriptor_name": "Humans",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D019066",
-          "descriptor_name": "Facies",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D060587",
-          "descriptor_name": "Groundwater",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D007554",
-          "descriptor_name": "Isotopes",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D054712",
-          "descriptor_name": "Salinity",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
-          "qualifier_ui": null,
-          "qualifier_name": null,
           "is_major_topic": false
         },
         {
@@ -8371,64 +8356,8 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D014874",
-          "descriptor_name": "Water Pollutants, Chemical",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D006801",
-          "descriptor_name": "Humans",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D019066",
-          "descriptor_name": "Facies",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D060587",
-          "descriptor_name": "Groundwater",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D007554",
-          "descriptor_name": "Isotopes",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D054712",
-          "descriptor_name": "Salinity",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012623",
-          "descriptor_name": "Seawater",
+          "descriptor_ui": "D014867",
+          "descriptor_name": "Water",
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
           "is_major_topic": false
@@ -8443,6 +8372,83 @@
         {
           "descriptor_ui": "D014874",
           "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D014874",
+          "descriptor_name": "Water Pollutants, Chemical",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019066",
+          "descriptor_name": "Facies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D019066",
+          "descriptor_name": "Facies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D019066",
+          "descriptor_name": "Facies",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D054712",
+          "descriptor_name": "Salinity",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D054712",
+          "descriptor_name": "Salinity",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D054712",
+          "descriptor_name": "Salinity",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D060587",
+          "descriptor_name": "Groundwater",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D060587",
+          "descriptor_name": "Groundwater",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D060587",
+          "descriptor_name": "Groundwater",
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
           "is_major_topic": true
@@ -8519,21 +8525,24 @@
           "landing_page_url": "https://doaj.org/article/054c16c4d7a74dcf9a04469f01f37ed1",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -8635,16 +8644,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.6299999952316284,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6299999952316284
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4304806286.pdf",
@@ -9372,7 +9381,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -9430,7 +9439,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://doi.org/10.1016/j.jag.2023.103330",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -9766,7 +9775,7 @@
       "has_fulltext": false,
       "cited_by_count": 31,
       "citation_normalized_percentile": {
-        "value": 0.96421244,
+        "value": 0.96405316,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -10123,25 +10132,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:8527cd8112d84565b9740916a20ba621",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/8527cd8112d84565b9740916a20ba621",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -10187,8 +10199,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 61,
@@ -10267,545 +10279,7 @@
         "https://openalex.org/W2742641449",
         "https://openalex.org/W2171808568"
       ],
-      "abstract_inverted_index": {
-        "10": [
-          63
-        ],
-        "110": [
-          172
-        ],
-        "Global": [
-          0,
-          51,
-          104
-        ],
-        "Digital": [
-          1,
-          52,
-          105
-        ],
-        "Elevation": [
-          2,
-          53,
-          106
-        ],
-        "Models": [
-          3,
-          54,
-          107
-        ],
-        "(GDEMs)": [
-          4,
-          55,
-          108
-        ],
-        "have": [
-          5,
-          36
-        ],
-        "been": [
-          6,
-          38
-        ],
-        "increasingly": [
-          7
-        ],
-        "used": [
-          8
-        ],
-        "to": [
-          9,
-          44,
-          94,
-          137,
-          162
-        ],
-        "assess": [
-          10
-        ],
-        "the": [
-          11,
-          20,
-          46,
-          74,
-          80,
-          114,
-          140,
-          146,
-          159,
-          176,
-          190,
-          200,
-          214,
-          224
-        ],
-        "risk": [
-          12,
-          24
-        ],
-        "of": [
-          13,
-          22,
-          48,
-          79,
-          143,
-          145,
-          168
-        ],
-        "flooding": [
-          14
-        ],
-        "worldwide.": [
-          15
-        ],
-        "However,": [
-          16,
-          133
-        ],
-        "their": [
-          17
-        ],
-        "effectiveness": [
-          18
-        ],
-        "and": [
-          19,
-          67,
-          77,
-          88,
-          131,
-          151,
-          155,
-          171,
-          182,
-          196
-        ],
-        "performance": [
-          21,
-          47
-        ],
-        "flood": [
-          23,
-          207
-        ],
-        "models": [
-          25
-        ],
-        "in": [
-          26,
-          72,
-          113,
-          189,
-          223
-        ],
-        "areas": [
-          27
-        ],
-        "with": [
-          28
-        ],
-        "complex": [
-          29
-        ],
-        "terrain,": [
-          30
-        ],
-        "such": [
-          31
-        ],
-        "as": [
-          32
-        ],
-        "Jeddah,": [
-          33
-        ],
-        "Saudi": [
-          34
-        ],
-        "Arabia,": [
-          35
-        ],
-        "not": [
-          37
-        ],
-        "comprehensively": [
-          39
-        ],
-        "studied.": [
-          40
-        ],
-        "This": [
-          41
-        ],
-        "study": [
-          42,
-          99
-        ],
-        "aims": [
-          43
-        ],
-        "compare": [
-          45
-        ],
-        "five": [
-          49
-        ],
-        "distinct": [
-          50
-        ],
-        "−": [
-          56
-        ],
-        "30-m": [
-          57,
-          59
-        ],
-        "SRTM,": [
-          58
-        ],
-        "ASTER,": [
-          60
-        ],
-        "90-m": [
-          61
-        ],
-        "MERIT,": [
-          62
-        ],
-        "m": [
-          64,
-          69
-        ],
-        "Sentinel-1": [
-          65
-        ],
-        "DEM,": [
-          66
-        ],
-        "12.5": [
-          68
-        ],
-        "ALOSPALSAR": [
-          70
-        ],
-        "-": [
-          71
-        ],
-        "estimating": [
-          73
-        ],
-        "inundation": [
-          75,
-          208
-        ],
-        "extent": [
-          76
-        ],
-        "depth": [
-          78
-        ],
-        "Jeddah": [
-          81
-        ],
-        "watershed,": [
-          82,
-          178
-        ],
-        "including": [
-          83
-        ],
-        "three": [
-          84
-        ],
-        "dams.": [
-          85
-        ],
-        "Both": [
-          86
-        ],
-        "hydrological": [
-          87
-        ],
-        "hydraulic": [
-          89
-        ],
-        "modeling": [
-          90
-        ],
-        "approaches": [
-          91
-        ],
-        "were": [
-          92
-        ],
-        "utilized": [
-          93
-        ],
-        "achieve": [
-          95
-        ],
-        "this": [
-          96
-        ],
-        "objective.": [
-          97
-        ],
-        "The": [
-          98
-        ],
-        "findings": [
-          100
-        ],
-        "revealed": [
-          101
-        ],
-        "that": [
-          102,
-          217
-        ],
-        "all": [
-          103,
-          134,
-          220
-        ],
-        "produced": [
-          109
-        ],
-        "similar": [
-          110
-        ],
-        "watershed": [
-          111,
-          126,
-          191,
-          201
-        ],
-        "boundaries": [
-          112
-        ],
-        "mountain": [
-          115,
-          225
-        ],
-        "area": [
-          116,
-          142
-        ],
-        "(Wadi": [
-          117
-        ],
-        "Qaws),": [
-          118
-        ],
-        "except": [
-          119,
-          148
-        ],
-        "for": [
-          120,
-          149
-        ],
-        "ALOS-PALSAR,": [
-          121
-        ],
-        "which": [
-          122
-        ],
-        "generated": [
-          123
-        ],
-        "a": [
-          124
-        ],
-        "different": [
-          125
-        ],
-        "boundary": [
-          127
-        ],
-        "from": [
-          128
-        ],
-        "previous": [
-          129
-        ],
-        "reports": [
-          130
-        ],
-        "studies.": [
-          132
-        ],
-        "GDEMs": [
-          135,
-          185,
-          222
-        ],
-        "failed": [
-          136
-        ],
-        "accurately": [
-          138
-        ],
-        "delineate": [
-          139
-        ],
-        "drainage": [
-          141
-        ],
-        "one": [
-          144
-        ],
-        "dams,": [
-          147
-        ],
-        "SRTM": [
-          150,
-          156,
-          218
-        ],
-        "ALOS-PALSAR.": [
-          152
-        ],
-        "Moreover,": [
-          153
-        ],
-        "ASTER": [
-          154
-        ],
-        "products": [
-          157
-        ],
-        "provided": [
-          158
-        ],
-        "closest": [
-          160
-        ],
-        "estimates": [
-          161
-        ],
-        "ground": [
-          163
-        ],
-        "observations,": [
-          164
-        ],
-        "producing": [
-          165
-        ],
-        "peak": [
-          166,
-          197
-        ],
-        "discharges": [
-          167
-        ],
-        "114.1": [
-          169
-        ],
-        "m3/s": [
-          170
-        ],
-        "m3/s,": [
-          173
-        ],
-        "respectively.": [
-          174
-        ],
-        "For": [
-          175
-        ],
-        "entire": [
-          177
-        ],
-        "encompassing": [
-          179
-        ],
-        "mountain,": [
-          180
-        ],
-        "urban,": [
-          181
-        ],
-        "coastal": [
-          183
-        ],
-        "areas,": [
-          184
-        ],
-        "demonstrated": [
-          186
-        ],
-        "significant": [
-          187
-        ],
-        "differences": [
-          188
-        ],
-        "boundary,": [
-          192
-        ],
-        "streams,": [
-          193
-        ],
-        "outlet": [
-          194
-        ],
-        "location,": [
-          195
-        ],
-        "discharge": [
-          198
-        ],
-        "at": [
-          199
-        ],
-        "outlet.": [
-          202
-        ],
-        "In": [
-          203
-        ],
-        "addition,": [
-          204
-        ],
-        "each": [
-          205
-        ],
-        "GDEM's": [
-          206
-        ],
-        "map": [
-          209
-        ],
-        "was": [
-          210
-        ],
-        "significantly": [
-          211
-        ],
-        "distinct.": [
-          212
-        ],
-        "Overall,": [
-          213
-        ],
-        "results": [
-          215
-        ],
-        "suggest": [
-          216
-        ],
-        "outperformed": [
-          219
-        ],
-        "other": [
-          221
-        ],
-        "area.": [
-          226
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2025,
@@ -10820,7 +10294,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -11386,16 +10860,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.41999998688697815,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.41999998688697815
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 57,
@@ -12592,16 +12066,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8600000143051147,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8600000143051147
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 58,
@@ -13470,9 +12944,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.5899999737739563,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.5899999737739563
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [
@@ -13497,8 +12971,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4382136343.pdf"
@@ -14753,7 +14227,7 @@
       "has_fulltext": false,
       "cited_by_count": 22,
       "citation_normalized_percentile": {
-        "value": 0.97517657,
+        "value": 0.97487411,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -15128,21 +14602,24 @@
           "landing_page_url": "https://doaj.org/article/39c9aeec8cda4a889d89c78bd3840489",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -15201,8 +14678,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 77,
@@ -15297,7 +14774,664 @@
         "https://openalex.org/W2355132617",
         "https://openalex.org/W3160053748"
       ],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "Water": [
+          0,
+          102
+        ],
+        "scarcity": [
+          1
+        ],
+        "threatens": [
+          2
+        ],
+        "agriculture": [
+          3
+        ],
+        "and": [
+          4,
+          39,
+          64,
+          80,
+          114,
+          131,
+          156,
+          177,
+          255,
+          272
+        ],
+        "food": [
+          5
+        ],
+        "security": [
+          6
+        ],
+        "in": [
+          7,
+          54,
+          60,
+          74,
+          142,
+          218
+        ],
+        "arid": [
+          8
+        ],
+        "regions": [
+          9
+        ],
+        "like": [
+          10
+        ],
+        "Saudi": [
+          11,
+          62,
+          98,
+          149
+        ],
+        "Arabia.": [
+          12
+        ],
+        "The": [
+          13,
+          134,
+          208
+        ],
+        "nation": [
+          14
+        ],
+        "produces": [
+          15
+        ],
+        "significant": [
+          16
+        ],
+        "quantities": [
+          17
+        ],
+        "of": [
+          18,
+          47,
+          123,
+          140,
+          205,
+          210
+        ],
+        "municipal": [
+          19
+        ],
+        "wastewater,": [
+          20
+        ],
+        "which,": [
+          21
+        ],
+        "with": [
+          22,
+          97,
+          147,
+          189
+        ],
+        "adequate": [
+          23
+        ],
+        "treatment,": [
+          24
+        ],
+        "could": [
+          25,
+          242
+        ],
+        "serve": [
+          26
+        ],
+        "as": [
+          27,
+          165,
+          222
+        ],
+        "an": [
+          28
+        ],
+        "alternative": [
+          29
+        ],
+        "water": [
+          30,
+          78,
+          110,
+          160
+        ],
+        "source": [
+          31
+        ],
+        "for": [
+          32,
+          52,
+          93,
+          153,
+          172
+        ],
+        "irrigation,": [
+          33,
+          94
+        ],
+        "thereby": [
+          34
+        ],
+        "reducing": [
+          35
+        ],
+        "reliance": [
+          36
+        ],
+        "on": [
+          37,
+          67,
+          125,
+          175
+        ],
+        "fossil": [
+          38
+        ],
+        "non-renewable": [
+          40
+        ],
+        "groundwater.": [
+          41,
+          258
+        ],
+        "This": [
+          42
+        ],
+        "study": [
+          43,
+          144,
+          220
+        ],
+        "assessed": [
+          44,
+          128
+        ],
+        "the": [
+          45,
+          90,
+          100,
+          106,
+          115,
+          121,
+          138,
+          143,
+          148,
+          170,
+          192,
+          203,
+          219
+        ],
+        "appropriateness": [
+          46
+        ],
+        "using": [
+          48
+        ],
+        "treated": [
+          49
+        ],
+        "wastewater": [
+          50,
+          265
+        ],
+        "(TWW)": [
+          51
+        ],
+        "irrigation": [
+          53,
+          117,
+          159,
+          188,
+          212,
+          250
+        ],
+        "a": [
+          55
+        ],
+        "dry": [
+          56
+        ],
+        "coastal": [
+          57
+        ],
+        "agricultural": [
+          58,
+          240
+        ],
+        "region": [
+          59
+        ],
+        "Eastern": [
+          61
+        ],
+        "Arabia": [
+          63
+        ],
+        "its": [
+          65
+        ],
+        "impact": [
+          66,
+          122
+        ],
+        "groundwater": [
+          68,
+          126,
+          216,
+          226
+        ],
+        "resources.": [
+          69
+        ],
+        "Field": [
+          70
+        ],
+        "investigations": [
+          71
+        ],
+        "were": [
+          72,
+          198
+        ],
+        "conducted": [
+          73
+        ],
+        "Qatif": [
+          75
+        ],
+        "to": [
+          76,
+          88,
+          202,
+          229,
+          235,
+          277
+        ],
+        "collect": [
+          77
+        ],
+        "samples": [
+          79
+        ],
+        "field": [
+          81
+        ],
+        "measurements.": [
+          82
+        ],
+        "A": [
+          83
+        ],
+        "multi-criteria": [
+          84
+        ],
+        "approach": [
+          85,
+          261
+        ],
+        "was": [
+          86,
+          127
+        ],
+        "applied": [
+          87
+        ],
+        "evaluate": [
+          89
+        ],
+        "TWW's": [
+          91
+        ],
+        "suitability": [
+          92
+        ],
+        "including": [
+          95
+        ],
+        "complying": [
+          96
+        ],
+        "Standards,": [
+          99
+        ],
+        "Irrigation": [
+          101
+        ],
+        "Quality": [
+          103
+        ],
+        "Index": [
+          104
+        ],
+        "(IWQI),": [
+          105
+        ],
+        "National": [
+          107
+        ],
+        "Sanitation": [
+          108
+        ],
+        "Foundation": [
+          109
+        ],
+        "quality": [
+          111,
+          161
+        ],
+        "index": [
+          112
+        ],
+        "(NSFWQI),": [
+          113
+        ],
+        "individual": [
+          116
+        ],
+        "indices.": [
+          118
+        ],
+        "In": [
+          119
+        ],
+        "addition,": [
+          120
+        ],
+        "TWW": [
+          124,
+          141,
+          164,
+          190,
+          211,
+          233
+        ],
+        "through": [
+          129
+        ],
+        "hydrogeological": [
+          130
+        ],
+        "isotope": [
+          132
+        ],
+        "approaches.": [
+          133
+        ],
+        "results": [
+          135
+        ],
+        "indicate": [
+          136
+        ],
+        "that": [
+          137,
+          168,
+          186,
+          262
+        ],
+        "use": [
+          139,
+          171
+        ],
+        "area": [
+          145
+        ],
+        "complied": [
+          146
+        ],
+        "reuse": [
+          150
+        ],
+        "guidelines": [
+          151
+        ],
+        "except": [
+          152
+        ],
+        "nitrate,": [
+          154
+        ],
+        "aluminum,": [
+          155
+        ],
+        "molybdenum.": [
+          157
+        ],
+        "However,": [
+          158
+        ],
+        "indices": [
+          162
+        ],
+        "classify": [
+          163
+        ],
+        "having": [
+          166
+        ],
+        "limitations": [
+          167
+        ],
+        "necessitate": [
+          169
+        ],
+        "salt-tolerant": [
+          173
+        ],
+        "crops": [
+          174
+        ],
+        "permeable": [
+          176
+        ],
+        "well-drained": [
+          178
+        ],
+        "soils.": [
+          179
+        ],
+        "Stable": [
+          180
+        ],
+        "isotopic": [
+          181
+        ],
+        "analysis": [
+          182
+        ],
+        "(δ<sup>2</sup>H,": [
+          183
+        ],
+        "δ<sup>18</sup>O)": [
+          184
+        ],
+        "revealed": [
+          185
+        ],
+        "long-term": [
+          187
+        ],
+        "affected": [
+          191
+        ],
+        "shallow": [
+          193,
+          257
+        ],
+        "aquifer,": [
+          194
+        ],
+        "while": [
+          195
+        ],
+        "deep": [
+          196
+        ],
+        "aquifers": [
+          197
+        ],
+        "minimally": [
+          199
+        ],
+        "impacted": [
+          200
+        ],
+        "due": [
+          201
+        ],
+        "presence": [
+          204
+        ],
+        "aquitard": [
+          206
+        ],
+        "layer.": [
+          207
+        ],
+        "application": [
+          209
+        ],
+        "has": [
+          213
+        ],
+        "successfully": [
+          214
+        ],
+        "maintained": [
+          215
+        ],
+        "sustainability": [
+          217,
+          241
+        ],
+        "area,": [
+          221
+        ],
+        "evidenced": [
+          223
+        ],
+        "by": [
+          224,
+          245
+        ],
+        "increased": [
+          225
+        ],
+        "levels": [
+          227
+        ],
+        "up": [
+          228
+        ],
+        "2.3": [
+          230
+        ],
+        "m.": [
+          231
+        ],
+        "Although": [
+          232
+        ],
+        "contributes": [
+          234
+        ],
+        "crop": [
+          236
+        ],
+        "productivity,": [
+          237
+        ],
+        "long": [
+          238
+        ],
+        "term": [
+          239
+        ],
+        "be": [
+          243,
+          278
+        ],
+        "enhanced": [
+          244
+        ],
+        "improving": [
+          246
+        ],
+        "effluent": [
+          247
+        ],
+        "quality,": [
+          248
+        ],
+        "regulating": [
+          249
+        ],
+        "practices,": [
+          251
+        ],
+        "implementing": [
+          252
+        ],
+        "buffer": [
+          253
+        ],
+        "zones,": [
+          254
+        ],
+        "monitoring": [
+          256,
+          274
+        ],
+        "An": [
+          259
+        ],
+        "integrated": [
+          260
+        ],
+        "combines": [
+          263
+        ],
+        "advanced": [
+          264
+        ],
+        "treatment": [
+          266
+        ],
+        "methods,": [
+          267
+        ],
+        "community": [
+          268
+        ],
+        "involvement,": [
+          269
+        ],
+        "regulatory": [
+          270
+        ],
+        "oversight,": [
+          271
+        ],
+        "targeted": [
+          273
+        ],
+        "is": [
+          275
+        ],
+        "recommended": [
+          276
+        ],
+        "implemented.": [
+          279
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2025,
@@ -15308,7 +15442,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -15969,9 +16103,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.550000011920929,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.550000011920929
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [
@@ -15991,8 +16125,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4386774596.pdf"
@@ -16311,7 +16445,7 @@
       "has_fulltext": true,
       "cited_by_count": 17,
       "citation_normalized_percentile": {
-        "value": 0.95487928,
+        "value": 0.95417686,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -16572,25 +16706,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:6ce7aa8dddf443f4963354d7e3a723f0",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/6ce7aa8dddf443f4963354d7e3a723f0",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -16670,8 +16807,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4399208527.pdf"
@@ -17285,7 +17422,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2025-12-26T23:08:49.675405",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -17352,12 +17489,34 @@
             "display_name": "Abdullah Bafaqeer",
             "orcid": "https://orcid.org/0000-0001-7518-1369"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": true,
           "raw_author_name": "Abdullah Bafaqeer",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Refining & Advanced Chemicals, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Refining & Advanced Chemicals, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -17366,26 +17525,70 @@
             "display_name": "Aniz Chennampilly Ummer",
             "orcid": null
           },
-          "institutions": [],
-          "countries": [],
-          "is_corresponding": false,
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
           "raw_author_name": "Aniz Chennampilly Ummer",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Refining & Advanced Chemicals, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Refining & Advanced Chemicals, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
           "author": {
             "id": "https://openalex.org/A5034568196",
             "display_name": "Mohammed Benaafi",
-            "orcid": "https://orcid.org/0000-0001-6246-7835"
+            "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Mohammed Benaafi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -17394,12 +17597,34 @@
             "display_name": "Jamilu Usman",
             "orcid": "https://orcid.org/0000-0002-3800-423X"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Jamilu Usman",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -17408,12 +17633,34 @@
             "display_name": "Duraisami Dhamodharan",
             "orcid": "https://orcid.org/0000-0002-8031-5648"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Duraisami Dhamodharan",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Refining & Advanced Chemicals, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Refining & Advanced Chemicals, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -17422,12 +17669,34 @@
             "display_name": "Sani I. Abba",
             "orcid": "https://orcid.org/0000-0001-9356-2798"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Sani I. Abba",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "last",
@@ -17436,21 +17705,46 @@
             "display_name": "Hammam Abdurabu Thabit",
             "orcid": "https://orcid.org/0000-0002-6597-8515"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4576418",
+              "display_name": "University of Technology Malaysia",
+              "ror": "https://ror.org/026w31v75",
+              "country_code": "MY",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4576418"
+              ]
+            }
+          ],
+          "countries": [
+            "MY"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Hammam Abdurabu Thabit",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Physics, Faculty of Science, Universiti Teknologi Malaysia, UTM, Johor Bahru 81310, Malaysia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Faculty of Science, Universiti Teknologi Malaysia, UTM, Johor Bahru 81310, Malaysia",
+              "institution_ids": [
+                "https://openalex.org/I4576418"
+              ]
+            }
+          ]
         }
       ],
       "institutions": [],
-      "countries_distinct_count": 0,
+      "countries_distinct_count": 2,
       "institutions_distinct_count": 7,
       "corresponding_author_ids": [
-        "https://openalex.org/A5070394208"
+        "https://openalex.org/A5070394208",
+        "https://openalex.org/A5085351180"
       ],
-      "corresponding_institution_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
       "apc_list": {
         "value": 3410,
         "currency": "USD",
@@ -17461,7 +17755,7 @@
       "has_fulltext": false,
       "cited_by_count": 11,
       "citation_normalized_percentile": {
-        "value": 0.77698252,
+        "value": 0.7753309,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -17803,9 +18097,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8100000023841858,
           "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8100000023841858
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
@@ -17817,8 +18111,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 69,
@@ -17920,7 +18214,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-12-27T23:08:20.325037",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -18271,11 +18565,11 @@
         "value_usd": 3090
       },
       "apc_paid": null,
-      "fwci": 4.14024617,
+      "fwci": 4.8302872,
       "has_fulltext": false,
-      "cited_by_count": 6,
+      "cited_by_count": 7,
       "citation_normalized_percentile": {
-        "value": 0.87213891,
+        "value": 0.89187056,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -18648,8 +18942,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 104,
@@ -18775,7 +19069,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -18786,7 +19080,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -19360,16 +19654,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4699999988079071,
           "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7",
-          "score": 0.4699999988079071
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 98,
@@ -20021,8 +20315,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 43,
@@ -20473,7 +20767,7 @@
       "has_fulltext": false,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.83726621,
+        "value": 0.83493211,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -20790,21 +21084,24 @@
           "landing_page_url": "https://doaj.org/article/13c0cbb648d74be8a68298ead78b6aae",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -20849,8 +21146,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 51,
@@ -20919,580 +21216,14 @@
         "https://openalex.org/W1972503611",
         "https://openalex.org/W1975243029"
       ],
-      "abstract_inverted_index": {
-        "11": [
-          139
-        ],
-        "20": [
-          107
-        ],
-        "79": [
-          115
-        ],
-        "88": [
-          176
-        ],
-        "94": [
-          102
-        ],
-        "120": [
-          179
-        ],
-        "Water": [
-          0
-        ],
-        "purification": [
-          1,
-          18
-        ],
-        "is": [
-          2
-        ],
-        "significantly": [
-          3
-        ],
-        "inhibited": [
-          4
-        ],
-        "by": [
-          5,
-          45,
-          118,
-          210
-        ],
-        "the": [
-          6,
-          29,
-          55,
-          59,
-          91,
-          134,
-          142,
-          145,
-          152,
-          155,
-          160,
-          183,
-          219
-        ],
-        "ineffective": [
-          7
-        ],
-        "removal": [
-          8,
-          21,
-          44,
-          86,
-          105,
-          236
-        ],
-        "of": [
-          9,
-          22,
-          31,
-          58,
-          98,
-          114,
-          123,
-          144,
-          181,
-          221
-        ],
-        "boron": [
-          10,
-          43,
-          85,
-          104,
-          235
-        ],
-        "from": [
-          11
-        ],
-        "aqueous": [
-          12
-        ],
-        "solutions,": [
-          13
-        ],
-        "particularly": [
-          14
-        ],
-        "because": [
-          15
-        ],
-        "traditional": [
-          16
-        ],
-        "membrane-based": [
-          17
-        ],
-        "exhibits": [
-          19
-        ],
-        "poor": [
-          20
-        ],
-        "neutral": [
-          23
-        ],
-        "boric": [
-          24
-        ],
-        "acid.": [
-          25
-        ],
-        "This": [
-          26
-        ],
-        "study": [
-          27
-        ],
-        "investigates": [
-          28
-        ],
-        "efficiency": [
-          30,
-          113,
-          172
-        ],
-        "a": [
-          32,
-          74,
-          94,
-          110,
-          119,
-          129,
-          211
-        ],
-        "Mg-Al": [
-          33,
-          222
-        ],
-        "layered": [
-          34,
-          223
-        ],
-        "double": [
-          35,
-          224
-        ],
-        "hydroxide": [
-          36
-        ],
-        "electrode": [
-          37,
-          184
-        ],
-        "supported": [
-          38
-        ],
-        "on": [
-          39
-        ],
-        "carbon": [
-          40
-        ],
-        "paper": [
-          41
-        ],
-        "for": [
-          42,
-          234
-        ],
-        "capacitive": [
-          46,
-          56
-        ],
-        "deionization": [
-          47,
-          96,
-          164,
-          168
-        ],
-        "(CDI).": [
-          48
-        ],
-        "Cyclic": [
-          49
-        ],
-        "voltammetry": [
-          50
-        ],
-        "was": [
-          51
-        ],
-        "used": [
-          52
-        ],
-        "to": [
-          53,
-          175
-        ],
-        "confirm": [
-          54
-        ],
-        "properties": [
-          57
-        ],
-        "electrode,": [
-          60
-        ],
-        "which": [
-          61
-        ],
-        "displayed": [
-          62
-        ],
-        "quasi-rectangular": [
-          63
-        ],
-        "profiles": [
-          64
-        ],
-        "with": [
-          65,
-          141,
-          203
-        ],
-        "notable": [
-          66,
-          130
-        ],
-        "reversibility": [
-          67
-        ],
-        "and": [
-          68,
-          84,
-          109,
-          133,
-          157,
-          230
-        ],
-        "rate": [
-          69,
-          158
-        ],
-        "capability.": [
-          70
-        ],
-        "Chronoamperometric": [
-          71
-        ],
-        "observations": [
-          72
-        ],
-        "revealed": [
-          73
-        ],
-        "voltage-dependent": [
-          75
-        ],
-        "electrosorption": [
-          76
-        ],
-        "activity;": [
-          77
-        ],
-        "1.2": [
-          78
-        ],
-        "V": [
-          79
-        ],
-        "showed": [
-          80,
-          185
-        ],
-        "optimal": [
-          81,
-          135
-        ],
-        "charge": [
-          82,
-          112
-        ],
-        "storage": [
-          83
-        ],
-        "performance.": [
-          87
-        ],
-        "At": [
-          88
-        ],
-        "this": [
-          89
-        ],
-        "voltage,": [
-          90
-        ],
-        "system": [
-          92,
-          127,
-          171
-        ],
-        "achieved": [
-          93
-        ],
-        "mean": [
-          95,
-          167
-        ],
-        "capacity": [
-          97,
-          156,
-          165
-        ],
-        "2.58": [
-          99
-        ],
-        "mg/g,": [
-          100
-        ],
-        "over": [
-          101
-        ],
-        "%": [
-          103,
-          177
-        ],
-        "within": [
-          106
-        ],
-        "min,": [
-          108
-        ],
-        "peak": [
-          111
-        ],
-        "%,": [
-          116
-        ],
-        "accompanied": [
-          117
-        ],
-        "moderate": [
-          120
-        ],
-        "energy": [
-          121
-        ],
-        "consumption": [
-          122
-        ],
-        "0.82": [
-          124
-        ],
-        "kWh/m3.": [
-          125
-        ],
-        "The": [
-          126,
-          216
-        ],
-        "exhibited": [
-          128
-        ],
-        "pH": [
-          131,
-          138,
-          153,
-          197
-        ],
-        "dependence": [
-          132
-        ],
-        "performance": [
-          136
-        ],
-        "at": [
-          137
-        ],
-        "correlated": [
-          140
-        ],
-        "dominance": [
-          143
-        ],
-        "negatively": [
-          146
-        ],
-        "charged": [
-          147
-        ],
-        "borate": [
-          148
-        ],
-        "ion": [
-          149
-        ],
-        "(B(OH)⁻).": [
-          150
-        ],
-        "Increasing": [
-          151
-        ],
-        "increased": [
-          154
-        ],
-        "in": [
-          159,
-          195,
-          237
-        ],
-        "Ragone": [
-          161
-        ],
-        "plot": [
-          162
-        ],
-        "(mean": [
-          163
-        ],
-        "vs.": [
-          166
-        ],
-        "rate).": [
-          169
-        ],
-        "Although": [
-          170
-        ],
-        "dropped": [
-          173
-        ],
-        "slightly": [
-          174
-        ],
-        "after": [
-          178
-        ],
-        "min": [
-          180
-        ],
-        "operation,": [
-          182
-        ],
-        "remarkable": [
-          186
-        ],
-        "cyclic": [
-          187
-        ],
-        "stability": [
-          188
-        ],
-        "across": [
-          189
-        ],
-        "several": [
-          190
-        ],
-        "charge-discharge": [
-          191
-        ],
-        "cycles.": [
-          192
-        ],
-        "Dynamic": [
-          193
-        ],
-        "variations": [
-          194
-        ],
-        "real-time": [
-          196
-        ],
-        "monitoring": [
-          198
-        ],
-        "during": [
-          199,
-          207,
-          214
-        ],
-        "CDI": [
-          200,
-          226
-        ],
-        "were": [
-          201
-        ],
-        "observed,": [
-          202
-        ],
-        "an": [
-          204
-        ],
-        "initial": [
-          205
-        ],
-        "increase": [
-          206
-        ],
-        "charging,": [
-          208
-        ],
-        "followed": [
-          209
-        ],
-        "slow": [
-          212
-        ],
-        "decline": [
-          213
-        ],
-        "discharging.": [
-          215
-        ],
-        "results": [
-          217
-        ],
-        "demonstrate": [
-          218
-        ],
-        "effectiveness": [
-          220
-        ],
-        "hydroxide-based": [
-          225
-        ],
-        "systems": [
-          227
-        ],
-        "as": [
-          228
-        ],
-        "flexible": [
-          229
-        ],
-        "chemically": [
-          231
-        ],
-        "strong": [
-          232
-        ],
-        "platforms": [
-          233
-        ],
-        "water": [
-          238
-        ],
-        "treatment": [
-          239
-        ],
-        "applications.": [
-          240
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2026,
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2026-01-20T17:24:06.736184",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -21721,7 +21452,7 @@
       "has_fulltext": true,
       "cited_by_count": 39,
       "citation_normalized_percentile": {
-        "value": 0.92681695,
+        "value": 0.92683158,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -22046,21 +21777,24 @@
           "landing_page_url": "https://doaj.org/article/728449f7b9124a2ab4fd9991aa5b31a3",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -22140,8 +21874,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4212839989.pdf",
@@ -22878,7 +22612,7 @@
           "cited_by_count": 7
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2022-02-24T00:00:00"
     },
     {
@@ -23289,9 +23023,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8799999952316284,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8799999952316284
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
@@ -23308,8 +23042,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 39,
@@ -23711,7 +23445,7 @@
       "has_fulltext": true,
       "cited_by_count": 30,
       "citation_normalized_percentile": {
-        "value": 0.9273624,
+        "value": 0.92736461,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -24115,18 +23849,21 @@
           "landing_page_url": "https://doaj.org/article/30673f41316a4cdb90196d93963a8c77",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -24173,9 +23910,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.6200000047683716,
           "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15",
-          "score": 0.6200000047683716
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
@@ -24187,8 +23924,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2939371353.pdf",
@@ -24891,7 +24628,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -25033,7 +24770,7 @@
       "has_fulltext": false,
       "cited_by_count": 20,
       "citation_normalized_percentile": {
-        "value": 0.88705098,
+        "value": 0.88707886,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -25293,18 +25030,21 @@
           "landing_page_url": "https://doaj.org/article/5304fa86d6494f428bb8fd6041098c1a",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -25379,9 +25119,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.7599999904632568,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.7599999904632568
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [
@@ -25401,8 +25141,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3179531231.pdf",
@@ -26081,7 +25821,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2021-07-19T00:00:00"
     },
     {
@@ -26374,7 +26114,7 @@
       "has_fulltext": false,
       "cited_by_count": 19,
       "citation_normalized_percentile": {
-        "value": 0.90648325,
+        "value": 0.90645419,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -26742,21 +26482,24 @@
           "landing_page_url": "https://doaj.org/article/0c50998008ff482f88015c03642ab623",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -26830,8 +26573,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4213328516.pdf",
@@ -27460,7 +27203,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2022-02-24T00:00:00"
     },
     {
@@ -28330,16 +28073,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.5,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.5
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 81,
@@ -28652,7 +28395,7 @@
       "has_fulltext": true,
       "cited_by_count": 16,
       "citation_normalized_percentile": {
-        "value": 0.92150511,
+        "value": 0.92067248,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -29005,25 +28748,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:94684ac7867c44c2853a4450d5f9ed2e",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/94684ac7867c44c2853a4450d5f9ed2e",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -29096,9 +28842,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.8500000238418579,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8500000238418579
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
@@ -29110,8 +28856,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4362580681.pdf"
@@ -29803,7 +29549,7 @@
           "cited_by_count": 4
         }
       ],
-      "updated_date": "2025-12-24T23:09:58.560324",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -30211,16 +29957,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.7599999904632568,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7599999904632568
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 30,
@@ -30881,7 +30627,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://www.tandfonline.com/doi/pdf/10.1080/19475705.2024.2360000?needAccess=true",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -31155,8 +30901,8 @@
       "countries_distinct_count": 3,
       "institutions_distinct_count": 7,
       "corresponding_author_ids": [
-        "https://openalex.org/A5034672880",
-        "https://openalex.org/A5030254447"
+        "https://openalex.org/A5030254447",
+        "https://openalex.org/A5034672880"
       ],
       "corresponding_institution_ids": [
         "https://openalex.org/I134085113"
@@ -31175,7 +30921,7 @@
       "has_fulltext": false,
       "cited_by_count": 13,
       "citation_normalized_percentile": {
-        "value": 0.94344744,
+        "value": 0.94284207,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -31515,25 +31261,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:1ee5fdf727d941e599c8f70a143d49d9",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/1ee5fdf727d941e599c8f70a143d49d9",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -31577,16 +31326,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.8600000143051147,
           "display_name": "Climate action",
-          "id": "https://metadata.un.org/sdg/13",
-          "score": 0.8600000143051147
+          "id": "https://metadata.un.org/sdg/13"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4399584810.pdf"
@@ -32309,7 +32058,7 @@
           "cited_by_count": 4
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -32654,7 +32403,7 @@
       "has_fulltext": false,
       "cited_by_count": 12,
       "citation_normalized_percentile": {
-        "value": 0.89073013,
+        "value": 0.89016189,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -33047,25 +32796,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:bfa6add09ed342fb8f27aca0a5d4836b",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/bfa6add09ed342fb8f27aca0a5d4836b",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -33108,16 +32860,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.7400000095367432,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7400000095367432
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4386365539.pdf"
@@ -33213,7 +32965,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2026-01-13T01:12:25.745995",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -33271,7 +33023,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://doi.org/10.1016/j.jksus.2023.102749",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -33413,7 +33165,7 @@
       "has_fulltext": false,
       "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.86219786,
+        "value": 0.86164384,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -33778,25 +33530,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:a022b63d5f8b4bbeb47b94b9c15775cb",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/a022b63d5f8b4bbeb47b94b9c15775cb",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -33840,16 +33595,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.6200000047683716,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6200000047683716
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 57,
@@ -34449,7 +34204,7 @@
           "cited_by_count": 9
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -34513,7 +34268,7 @@
           "author": {
             "id": "https://openalex.org/A5042208183",
             "display_name": "Galal M. BinMakhashen",
-            "orcid": "https://orcid.org/0000-0002-5111-9760"
+            "orcid": null
           },
           "institutions": [
             {
@@ -34556,7 +34311,7 @@
           "author": {
             "id": "https://openalex.org/A5034568196",
             "display_name": "Mohammed Benaafi",
-            "orcid": "https://orcid.org/0000-0001-6246-7835"
+            "orcid": null
           },
           "institutions": [
             {
@@ -34614,7 +34369,7 @@
       "has_fulltext": false,
       "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.87708861,
+        "value": 0.87627483,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -34925,9 +34680,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.7300000190734863,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7300000190734863
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
@@ -34939,8 +34694,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 76,
@@ -35045,7 +34800,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-01-22T23:29:09.771500",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -35586,16 +35341,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.5,
           "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15",
-          "score": 0.5
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 38,
@@ -36052,7 +35807,7 @@
       "has_fulltext": true,
       "cited_by_count": 14,
       "citation_normalized_percentile": {
-        "value": 0.87569065,
+        "value": 0.87565725,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -36231,8 +35986,8 @@
       ],
       "mesh": [
         {
-          "descriptor_ui": "D001185",
-          "descriptor_name": "Artificial Intelligence",
+          "descriptor_ui": "D000090022",
+          "descriptor_name": "Chemometrics",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -36242,6 +35997,69 @@
           "descriptor_name": "Chemometrics",
           "qualifier_ui": null,
           "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000090022",
+          "descriptor_name": "Chemometrics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D000090022",
+          "descriptor_name": "Chemometrics",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D001185",
+          "descriptor_name": "Artificial Intelligence",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002857",
+          "descriptor_name": "Chromium",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002857",
+          "descriptor_name": "Chromium",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002857",
+          "descriptor_name": "Chromium",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
           "is_major_topic": false
         },
         {
@@ -36259,11 +36077,25 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D019216",
-          "descriptor_name": "Metals, Heavy",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004784",
+          "descriptor_name": "Environmental Monitoring",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
         },
         {
           "descriptor_ui": "D008956",
@@ -36273,15 +36105,43 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D015999",
-          "descriptor_name": "Multivariate Analysis",
+          "descriptor_ui": "D008956",
+          "descriptor_name": "Models, Chemical",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D016571",
-          "descriptor_name": "Neural Networks, Computer",
+          "descriptor_ui": "D008956",
+          "descriptor_name": "Models, Chemical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008956",
+          "descriptor_name": "Models, Chemical",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012529",
+          "descriptor_name": "Saudi Arabia",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -36301,6 +36161,27 @@
           "is_major_topic": true
         },
         {
+          "descriptor_ui": "D012987",
+          "descriptor_name": "Soil",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D012987",
+          "descriptor_name": "Soil",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D012987",
+          "descriptor_name": "Soil",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": true
+        },
+        {
           "descriptor_ui": "D012989",
           "descriptor_name": "Soil Pollutants",
           "qualifier_ui": "Q000032",
@@ -36308,43 +36189,43 @@
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D001185",
-          "descriptor_name": "Artificial Intelligence",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000090022",
-          "descriptor_name": "Chemometrics",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002857",
-          "descriptor_name": "Chromium",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D019216",
-          "descriptor_name": "Metals, Heavy",
+          "descriptor_ui": "D012989",
+          "descriptor_name": "Soil Pollutants",
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D008956",
-          "descriptor_name": "Models, Chemical",
+          "descriptor_ui": "D012989",
+          "descriptor_name": "Soil Pollutants",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D012989",
+          "descriptor_name": "Soil Pollutants",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D015999",
+          "descriptor_name": "Multivariate Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015999",
+          "descriptor_name": "Multivariate Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D015999",
+          "descriptor_name": "Multivariate Analysis",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -36364,71 +36245,8 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012987",
-          "descriptor_name": "Soil",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D012989",
-          "descriptor_name": "Soil Pollutants",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D001185",
-          "descriptor_name": "Artificial Intelligence",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000090022",
-          "descriptor_name": "Chemometrics",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002857",
-          "descriptor_name": "Chromium",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D019216",
-          "descriptor_name": "Metals, Heavy",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D008956",
-          "descriptor_name": "Models, Chemical",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D015999",
-          "descriptor_name": "Multivariate Analysis",
+          "descriptor_ui": "D016571",
+          "descriptor_name": "Neural Networks, Computer",
           "qualifier_ui": null,
           "qualifier_name": null,
           "is_major_topic": false
@@ -36441,52 +36259,10 @@
           "is_major_topic": false
         },
         {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
+          "descriptor_ui": "D016571",
+          "descriptor_name": "Neural Networks, Computer",
           "qualifier_ui": null,
           "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012987",
-          "descriptor_name": "Soil",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D012989",
-          "descriptor_name": "Soil Pollutants",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": true
-        },
-        {
-          "descriptor_ui": "D001185",
-          "descriptor_name": "Artificial Intelligence",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D000090022",
-          "descriptor_name": "Chemometrics",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D002857",
-          "descriptor_name": "Chromium",
-          "qualifier_ui": "Q000032",
-          "qualifier_name": "analysis",
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D004784",
-          "descriptor_name": "Environmental Monitoring",
-          "qualifier_ui": "Q000379",
-          "qualifier_name": "methods",
           "is_major_topic": false
         },
         {
@@ -36497,43 +36273,22 @@
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D008956",
-          "descriptor_name": "Models, Chemical",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D015999",
-          "descriptor_name": "Multivariate Analysis",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D016571",
-          "descriptor_name": "Neural Networks, Computer",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012529",
-          "descriptor_name": "Saudi Arabia",
-          "qualifier_ui": null,
-          "qualifier_name": null,
-          "is_major_topic": false
-        },
-        {
-          "descriptor_ui": "D012987",
-          "descriptor_name": "Soil",
-          "qualifier_ui": "Q000737",
-          "qualifier_name": "chemistry",
+          "descriptor_ui": "D019216",
+          "descriptor_name": "Metals, Heavy",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
           "is_major_topic": true
         },
         {
-          "descriptor_ui": "D012989",
-          "descriptor_name": "Soil Pollutants",
+          "descriptor_ui": "D019216",
+          "descriptor_name": "Metals, Heavy",
+          "qualifier_ui": "Q000032",
+          "qualifier_name": "analysis",
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D019216",
+          "descriptor_name": "Metals, Heavy",
           "qualifier_ui": "Q000032",
           "qualifier_name": "analysis",
           "is_major_topic": true
@@ -36610,21 +36365,24 @@
           "landing_page_url": "https://doaj.org/article/9502a831ff32424dbb4e290b87db9666",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -36726,9 +36484,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.49000000953674316,
           "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15",
-          "score": 0.49000000953674316
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
@@ -36740,8 +36498,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4283746594.pdf",
@@ -37428,7 +37186,7 @@
           "cited_by_count": 6
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -37979,9 +37737,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8700000047683716,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8700000047683716
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [
@@ -38001,8 +37759,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 32,
@@ -38552,9 +38310,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.41999998688697815,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.41999998688697815
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
@@ -38566,8 +38324,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 46,
@@ -39268,9 +39026,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.8899999856948853,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8899999856948853
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [
@@ -39290,8 +39048,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 79,
@@ -39472,14 +39230,43 @@
           "author": {
             "id": "https://openalex.org/A5034568196",
             "display_name": "Mohammed Benaafi",
-            "orcid": "https://orcid.org/0000-0001-6246-7835"
+            "orcid": null
           },
-          "institutions": [],
-          "countries": [],
-          "is_corresponding": true,
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
           "raw_author_name": "Mohammed Benaafi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Geosciences, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals, Dhahran, 31261, Saudi Arabia",
+            "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Geosciences, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -39488,12 +39275,34 @@
             "display_name": "Sani I. Abba",
             "orcid": "https://orcid.org/0000-0001-9356-2798"
           },
-          "institutions": [],
-          "countries": [],
-          "is_corresponding": false,
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
           "raw_author_name": "Sani I. Abba",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -39502,12 +39311,34 @@
             "display_name": "Mojeed O. Oyedeji",
             "orcid": "https://orcid.org/0000-0001-8653-5572"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Mojeed Opeyemi Oyedeji",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "SDAIA-KFUPM Joint Research Center for Artificial Intelligence, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "SDAIA-KFUPM Joint Research Center for Artificial Intelligence, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -39516,12 +39347,34 @@
             "display_name": "Auwalu Saleh Mubarak",
             "orcid": "https://orcid.org/0000-0001-6240-1684"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I69050122",
+              "display_name": "Near East University",
+              "ror": "https://ror.org/02x8svs93",
+              "country_code": "CY",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I69050122"
+              ]
+            }
+          ],
+          "countries": [
+            "CY"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Auwalu Saleh Mubarak",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Operational Research Center in Healthcare, Near East University, Mersin 10, Turkey"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Operational Research Center in Healthcare, Near East University, Mersin 10, Turkey",
+              "institution_ids": [
+                "https://openalex.org/I69050122"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -39530,12 +39383,34 @@
             "display_name": "Jamilu Usman",
             "orcid": "https://orcid.org/0000-0002-3800-423X"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Jamilu Usman",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "last",
@@ -39544,21 +39419,52 @@
             "display_name": "Isam H. Aljundi",
             "orcid": "https://orcid.org/0000-0002-0714-8580"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Isam H. Aljundi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Chemical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membrane and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         }
       ],
       "institutions": [],
-      "countries_distinct_count": 0,
+      "countries_distinct_count": 2,
       "institutions_distinct_count": 6,
       "corresponding_author_ids": [
-        "https://openalex.org/A5034568196"
+        "https://openalex.org/A5062007467"
       ],
-      "corresponding_institution_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
       "apc_list": {
         "value": 3510,
         "currency": "USD",
@@ -39569,7 +39475,7 @@
       "has_fulltext": false,
       "cited_by_count": 5,
       "citation_normalized_percentile": {
-        "value": 0.74250633,
+        "value": 0.74138935,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -39924,16 +39830,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.699999988079071,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.699999988079071
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 95,
@@ -40057,7 +39963,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -40682,8 +40588,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 34,
@@ -41369,16 +41275,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.6700000166893005,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6700000166893005
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 69,
@@ -41537,14 +41443,43 @@
           "author": {
             "id": "https://openalex.org/A5034568196",
             "display_name": "Mohammed Benaafi",
-            "orcid": "https://orcid.org/0000-0001-6246-7835"
+            "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": true,
           "raw_author_name": "Mohammed Benaafi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Geosciences Department, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals (KFUPM), Dhahran, 31261, Saudi Arabia",
+            "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Geosciences Department, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals (KFUPM), Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -41553,12 +41488,41 @@
             "display_name": "Bassam Tawabini",
             "orcid": "https://orcid.org/0000-0002-0096-2723"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Bassam Tawabini",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Geosciences Department, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals (KFUPM), Dhahran, 31261, Saudi Arabia",
+            "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Geosciences Department, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals (KFUPM), Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -41567,12 +41531,34 @@
             "display_name": "Shehzada Muhammad Sajid Jillani",
             "orcid": "https://orcid.org/0000-0002-4442-9154"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Shehzada Muhammad Sajid Jillani",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -41581,12 +41567,34 @@
             "display_name": "Ali Mohammed Babalghaith",
             "orcid": "https://orcid.org/0000-0003-3736-8813"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Ali Mohammed Babalghaith",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Center for Construction and Building Materials, King Fahd University of Petroleum & Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Construction and Building Materials, King Fahd University of Petroleum & Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "last",
@@ -41595,21 +41603,52 @@
             "display_name": "Isam H. Aljundi",
             "orcid": "https://orcid.org/0000-0002-0714-8580"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Isam H. Aljundi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Chemical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Membranes and Water Security, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         }
       ],
       "institutions": [],
-      "countries_distinct_count": 0,
+      "countries_distinct_count": 1,
       "institutions_distinct_count": 5,
       "corresponding_author_ids": [
         "https://openalex.org/A5034568196"
       ],
-      "corresponding_institution_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
       "apc_list": {
         "value": 3880,
         "currency": "USD",
@@ -41620,7 +41659,7 @@
       "has_fulltext": false,
       "cited_by_count": 3,
       "citation_normalized_percentile": {
-        "value": 0.88586322,
+        "value": 0.88454218,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -41967,9 +42006,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4300000071525574,
           "display_name": "Sustainable cities and communities",
-          "id": "https://metadata.un.org/sdg/11",
-          "score": 0.4300000071525574
+          "id": "https://metadata.un.org/sdg/11"
         }
       ],
       "awards": [],
@@ -41981,8 +42020,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 66,
@@ -42073,7 +42112,7 @@
           "cited_by_count": 3
         }
       ],
-      "updated_date": "2025-12-21T23:12:01.093139",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -42651,16 +42690,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.4699999988079071,
           "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15",
-          "score": 0.4699999988079071
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2167330935.pdf",
@@ -43486,7 +43525,7 @@
       "has_fulltext": true,
       "cited_by_count": 6,
       "citation_normalized_percentile": {
-        "value": 0.62349148,
+        "value": 0.62350262,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -43851,18 +43890,21 @@
           "landing_page_url": "https://doaj.org/article/796b4176296a4047a8a5add663801a7f",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
           "license": "cc-by-sa",
           "license_id": "https://openalex.org/licenses/cc-by-sa",
@@ -43937,9 +43979,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.7300000190734863,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7300000190734863
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
@@ -43951,8 +43993,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3009319440.pdf",
@@ -44641,7 +44683,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -45312,16 +45354,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4099999964237213,
           "display_name": "Responsible consumption and production",
-          "id": "https://metadata.un.org/sdg/12",
-          "score": 0.4099999964237213
+          "id": "https://metadata.un.org/sdg/12"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 52,
@@ -45792,9 +45834,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.4699999988079071,
           "display_name": "Zero hunger",
-          "id": "https://metadata.un.org/sdg/2",
-          "score": 0.4699999988079071
+          "id": "https://metadata.un.org/sdg/2"
         }
       ],
       "awards": [
@@ -45819,8 +45861,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 43,
@@ -46973,16 +47015,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.5899999737739563,
           "display_name": "Affordable and clean energy",
-          "id": "https://metadata.un.org/sdg/7",
-          "score": 0.5899999737739563
+          "id": "https://metadata.un.org/sdg/7"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 51,
@@ -47275,7 +47317,7 @@
       "has_fulltext": false,
       "cited_by_count": 2,
       "citation_normalized_percentile": {
-        "value": 0.74912617,
+        "value": 0.74799865,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -47513,21 +47555,24 @@
           "landing_page_url": "https://doaj.org/article/10e3efee047140d2a4dcc5580b6ec5c2",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -47586,8 +47631,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 74,
@@ -48175,7 +48220,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2026-01-19T04:01:09.351973",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -48783,16 +48828,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.41999998688697815,
           "display_name": "Zero hunger",
-          "id": "https://metadata.un.org/sdg/2",
-          "score": 0.41999998688697815
+          "id": "https://metadata.un.org/sdg/2"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -49359,8 +49404,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 58,
@@ -49923,16 +49968,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.6499999761581421,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6499999761581421
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 13,
@@ -51006,16 +51051,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.6700000166893005,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6700000166893005
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -51884,16 +51929,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.8799999952316284,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8799999952316284
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -52741,7 +52786,7 @@
       "has_fulltext": true,
       "cited_by_count": 1,
       "citation_normalized_percentile": {
-        "value": 0.449523,
+        "value": 0.4489223,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": false
       },
@@ -53102,21 +53147,24 @@
           "landing_page_url": "https://doaj.org/article/37638a47bddf41398c241e75bbb1e376",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -53160,9 +53208,9 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.5099999904632568,
           "display_name": "Life in Land",
-          "id": "https://metadata.un.org/sdg/15",
-          "score": 0.5099999904632568
+          "id": "https://metadata.un.org/sdg/15"
         }
       ],
       "awards": [],
@@ -53179,8 +53227,8 @@
         }
       ],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4315434479.pdf"
@@ -53909,7 +53957,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2025-12-24T23:09:58.560324",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -53975,7 +54023,7 @@
           "author": {
             "id": "https://openalex.org/A5036616600",
             "display_name": "Mahfuzur Rahman",
-            "orcid": "https://orcid.org/0000-0001-8402-156X"
+            "orcid": null
           },
           "institutions": [
             {
@@ -53992,7 +54040,7 @@
           "countries": [
             "SA"
           ],
-          "is_corresponding": true,
+          "is_corresponding": false,
           "raw_author_name": "Mahfuzur Rahman",
           "raw_affiliation_strings": [
             "Interdisciplinary Research Center for Aviation and Space Exploration (IRC-ASE), King Fahd University of Petroleum & Minerals",
@@ -54025,7 +54073,7 @@
           "author": {
             "id": "https://openalex.org/A5095780465",
             "display_name": "Zulfiqar Hammad",
-            "orcid": "https://orcid.org/0009-0003-6260-9313"
+            "orcid": null
           },
           "institutions": [
             {
@@ -54053,7 +54101,7 @@
             "KR",
             "SA"
           ],
-          "is_corresponding": false,
+          "is_corresponding": true,
           "raw_author_name": "Mahfuzur Rahman",
           "raw_affiliation_strings": [
             "Interdisciplinary Research Center for Aviation and Space Exploration (IRC-ASE), King Fahd University of Petroleum & Minerals",
@@ -54354,7 +54402,7 @@
             "BD",
             "SA"
           ],
-          "is_corresponding": false,
+          "is_corresponding": true,
           "raw_author_name": "Md Masudur Rahman",
           "raw_affiliation_strings": [
             "Interdisciplinary Research Center for Aviation and Space Exploration (IRC-ASE), King Fahd University of Petroleum & Minerals",
@@ -54387,7 +54435,7 @@
           "author": {
             "id": "https://openalex.org/A5034568196",
             "display_name": "Mohammed Benaafi",
-            "orcid": "https://orcid.org/0000-0001-6246-7835"
+            "orcid": null
           },
           "institutions": [
             {
@@ -54404,7 +54452,7 @@
           "countries": [
             "SA"
           ],
-          "is_corresponding": true,
+          "is_corresponding": false,
           "raw_author_name": "Md Masudur Rahman",
           "raw_affiliation_strings": [
             "Interdisciplinary Research Center for Aviation and Space Exploration (IRC-ASE), King Fahd University of Petroleum & Minerals",
@@ -54564,12 +54612,13 @@
       "institutions_distinct_count": 12,
       "corresponding_author_ids": [
         "https://openalex.org/A5025618130",
-        "https://openalex.org/A5034568196",
-        "https://openalex.org/A5036616600"
+        "https://openalex.org/A5095780465",
+        "https://openalex.org/A5109707707"
       ],
       "corresponding_institution_ids": [
         "https://openalex.org/I120158604",
-        "https://openalex.org/I134085113"
+        "https://openalex.org/I134085113",
+        "https://openalex.org/I4210132231"
       ],
       "apc_list": {
         "value": 3265,
@@ -54642,21 +54691,24 @@
           "landing_page_url": "https://doaj.org/article/c1684e3f4400448cba5fff52451b252f",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": "cc-by-sa",
-          "license_id": "https://openalex.org/licenses/cc-by-sa",
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -54702,8 +54754,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 43,
@@ -55213,7 +55265,7 @@
           "cited_by_count": 1
         }
       ],
-      "updated_date": "2026-02-02T05:57:53.111627",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-11-23T00:00:00"
     },
     {
@@ -55799,16 +55851,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.8700000047683716,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8700000047683716
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": true
+        "grobid_xml": true,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2539001916.pdf",
@@ -57068,8 +57120,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 3,
@@ -58432,8 +58484,8 @@
         }
       ],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 9,
@@ -59500,8 +59552,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -59875,8 +59927,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -60353,16 +60405,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.6700000166893005,
           "display_name": "Clean water and sanitation",
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6700000166893005
+          "id": "https://metadata.un.org/sdg/6"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -60912,16 +60964,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.7400000095367432,
           "display_name": "Zero hunger",
-          "id": "https://metadata.un.org/sdg/2",
-          "score": 0.7400000095367432
+          "id": "https://metadata.un.org/sdg/2"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -61944,16 +61996,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.7699999809265137,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.7699999809265137
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -62385,16 +62437,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.800000011920929,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.800000011920929
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -63503,16 +63555,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.8299999833106995,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8299999833106995
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -64755,8 +64807,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -65861,16 +65913,16 @@
       },
       "sustainable_development_goals": [
         {
+          "score": 0.6299999952316284,
           "display_name": "Life below water",
-          "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6299999952316284
+          "id": "https://metadata.un.org/sdg/14"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": true,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4405443624.pdf"
@@ -66872,8 +66924,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -67789,8 +67841,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -68118,8 +68170,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 27,
@@ -68722,7 +68774,7 @@
         "is_oa": true,
         "oa_status": "gold",
         "oa_url": "https://doi.org/10.3390/hydrology12110282",
-        "any_repository_has_fulltext": false
+        "any_repository_has_fulltext": true
       },
       "authorships": [
         {
@@ -68916,25 +68968,28 @@
         },
         {
           "id": "pmh:oai:doaj.org/article:b3db3dd5acc34b27b25ad321b7811231",
-          "is_oa": false,
+          "is_oa": true,
           "landing_page_url": "https://doaj.org/article/b3db3dd5acc34b27b25ad321b7811231",
           "pdf_url": null,
           "source": {
-            "id": "https://openalex.org/S4306401280",
-            "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
             "is_core": false,
             "host_organization": null,
             "host_organization_name": null,
             "host_organization_lineage": [],
             "host_organization_lineage_names": [],
-            "type": "repository"
+            "type": "journal"
           },
-          "license": null,
-          "license_id": null,
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
           "version": "submittedVersion",
           "is_accepted": false,
           "is_published": false,
@@ -68979,8 +69034,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 58,
@@ -69661,7 +69716,7 @@
         ]
       },
       "counts_by_year": [],
-      "updated_date": "2025-11-06T03:46:38.306776",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-10-30T00:00:00"
     },
     {
@@ -69726,14 +69781,36 @@
           "author": {
             "id": "https://openalex.org/A5036616600",
             "display_name": "Mahfuzur Rahman",
-            "orcid": "https://orcid.org/0000-0001-8402-156X"
+            "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": true,
           "raw_author_name": "Mahfuzur Rahman",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Interdisciplinary Research Centre for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Centre for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -69742,12 +69819,34 @@
             "display_name": "Asif Raihan",
             "orcid": "https://orcid.org/0000-0001-9757-9730"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Asif Raihan",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Applied Research Center for Environment & Marine Studies, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Applied Research Center for Environment & Marine Studies, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -69756,12 +69855,48 @@
             "display_name": "Syed Masiur Rahman",
             "orcid": "https://orcid.org/0000-0003-3624-0519"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Syed Masiur Rahman",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Applied Research Center for Environment & Marine Studies, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+            "Department of Civil & Environmental Engineering, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+            "Interdisciplinary Research Center for Construction & Building Materials, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Applied Research Center for Environment & Marine Studies, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Civil & Environmental Engineering, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Center for Construction & Building Materials, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
@@ -69770,26 +69905,77 @@
             "display_name": "Md Anuwer Hossain",
             "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210132231",
+              "display_name": "International University of Business Agriculture and Technology",
+              "ror": "https://ror.org/02m32cr13",
+              "country_code": "BD",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210132231"
+              ]
+            }
+          ],
+          "countries": [
+            "BD"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Md Anuwer Hossain",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Civil Engineering, International University of Business Agriculture and Technology, Dhaka 1230, Bangladesh"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Civil Engineering, International University of Business Agriculture and Technology, Dhaka 1230, Bangladesh",
+              "institution_ids": [
+                "https://openalex.org/I4210132231"
+              ]
+            }
+          ]
         },
         {
           "author_position": "middle",
           "author": {
             "id": "https://openalex.org/A5034568196",
             "display_name": "Mohammed Benaafi",
-            "orcid": "https://orcid.org/0000-0001-6246-7835"
+            "orcid": null
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Mohammed Benaafi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Geosciences Department, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+            "Interdisciplinary Research Centre for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Geosciences Department, College of Petroleum Engineering & Geosciences, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Centre for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         },
         {
           "author_position": "last",
@@ -69798,21 +69984,52 @@
             "display_name": "Isam H. Aljundi",
             "orcid": "https://orcid.org/0000-0002-0714-8580"
           },
-          "institutions": [],
-          "countries": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
           "is_corresponding": false,
           "raw_author_name": "Isam H. Aljundi",
-          "raw_affiliation_strings": [],
-          "affiliations": []
+          "raw_affiliation_strings": [
+            "Department of Chemical Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+            "Interdisciplinary Research Centre for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, King Fahd University of Petroleum & Minerals, 31261 Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Interdisciplinary Research Centre for Membranes & Water Security, King Fahd University of Petroleum & Minerals, Dhahran 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
         }
       ],
       "institutions": [],
-      "countries_distinct_count": 0,
+      "countries_distinct_count": 2,
       "institutions_distinct_count": 6,
       "corresponding_author_ids": [
         "https://openalex.org/A5036616600"
       ],
-      "corresponding_institution_ids": [],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
       "apc_list": {
         "value": 2600,
         "currency": "USD",
@@ -69880,8 +70097,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 74,
@@ -69964,7 +70181,7 @@
       "related_works": [],
       "abstract_inverted_index": null,
       "counts_by_year": [],
-      "updated_date": "2026-02-01T03:34:12.195049",
+      "updated_date": "2026-02-05T00:54:17.221276",
       "created_date": "2025-12-01T00:00:00"
     },
     {
@@ -70816,16 +71033,16 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "score": 0.7683902978897095,
           "display_name": "Zero hunger",
-          "id": "https://metadata.un.org/sdg/2",
-          "score": 0.7683902978897095
+          "id": "https://metadata.un.org/sdg/2"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "pdf": false,
-        "grobid_xml": false
+        "grobid_xml": false,
+        "pdf": false
       },
       "content_urls": null,
       "referenced_works_count": 79,
