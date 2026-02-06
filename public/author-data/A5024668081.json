@@ -11,7 +11,7 @@
       "Mohamed Rezk"
     ],
     "works_count": 34,
-    "cited_by_count": 820,
+    "cited_by_count": 821,
     "summary_stats": {
       "2yr_mean_citedness": 3.8125,
       "h_index": 12,
@@ -199,7 +199,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.0002637,
+        "value": 0.0002635,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -233,7 +233,7 @@
       {
         "id": "https://openalex.org/T11225",
         "display_name": "Geothermal Energy Systems and Applications",
-        "value": 0.0000911,
+        "value": 0.000091,
         "subfield": {
           "id": "https://openalex.org/subfields/2105",
           "display_name": "Renewable Energy, Sustainability and the Environment"
@@ -343,7 +343,7 @@
         "year": 2021,
         "works_count": 1,
         "oa_works_count": 0,
-        "cited_by_count": 64
+        "cited_by_count": 65
       },
       {
         "year": 2022,
@@ -380,7 +380,7 @@
     },
     "block_key": "m rezk",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5024668081",
-    "updated_date": "2026-02-04T12:20:26.776081",
+    "updated_date": "2026-02-05T12:22:15.111854",
     "created_date": "2018-11-16"
   },
   "works": [
@@ -1035,8 +1035,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W3036071226.pdf",
@@ -1743,8 +1743,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5600000023841858
+          "score": 0.5600000023841858,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
@@ -1756,8 +1756,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 61,
@@ -2030,7 +2030,7 @@
       "has_fulltext": false,
       "cited_by_count": 72,
       "citation_normalized_percentile": {
-        "value": 0.96075984,
+        "value": 0.96075626,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -2512,8 +2512,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2964094050.pdf",
@@ -2580,680 +2580,7 @@
         "https://openalex.org/W4392833927",
         "https://openalex.org/W2593546542"
       ],
-      "abstract_inverted_index": {
-        "This": [
-          0,
-          268
-        ],
-        "paper": [
-          1
-        ],
-        "investigates": [
-          2
-        ],
-        "the": [
-          3,
-          32,
-          59,
-          68,
-          90,
-          108,
-          116,
-          148,
-          169,
-          174,
-          186,
-          196,
-          202,
-          208,
-          232,
-          245,
-          254,
-          258,
-          265,
-          273,
-          307
-        ],
-        "phase": [
-          4
-        ],
-        "behavior": [
-          5
-        ],
-        "and": [
-          6,
-          14,
-          19,
-          57,
-          185,
-          207,
-          276,
-          291,
-          293,
-          324
-        ],
-        "mutual": [
-          7
-        ],
-        "interactions": [
-          8
-        ],
-        "between": [
-          9,
-          183
-        ],
-        "a": [
-          10,
-          38,
-          47,
-          76,
-          99,
-          140,
-          221,
-          225,
-          284,
-          287,
-          294
-        ],
-        "light": [
-          11
-        ],
-        "crude": [
-          12,
-          71,
-          187
-        ],
-        "oil": [
-          13,
-          63,
-          72,
-          78,
-          91,
-          162,
-          170,
-          188,
-          233,
-          296,
-          303
-        ],
-        "CO<sub>2</sub>": [
-          15,
-          66,
-          87,
-          113,
-          166,
-          184,
-          229,
-          289
-        ],
-        "at": [
-          16,
-          35,
-          93,
-          98,
-          124,
-          146,
-          189,
-          217,
-          241
-        ],
-        "high": [
-          17,
-          20
-        ],
-        "pressures": [
-          18,
-          95,
-          191,
-          219,
-          263
-        ],
-        "temperatures": [
-          21
-        ],
-        "(HPHT).": [
-          22
-        ],
-        "To": [
-          23
-        ],
-        "do": [
-          24
-        ],
-        "so,": [
-          25
-        ],
-        "we": [
-          26
-        ],
-        "have": [
-          27,
-          42,
-          283
-        ],
-        "measured": [
-          28,
-          97,
-          194,
-          246
-        ],
-        "PVT": [
-          29,
-          39,
-          52,
-          317
-        ],
-        "properties": [
-          30,
-          53
-        ],
-        "of": [
-          31,
-          54,
-          161,
-          227,
-          257,
-          279,
-          319
-        ],
-        "CO<sub>2</sub>-oil": [
-          33,
-          55,
-          280,
-          320
-        ],
-        "system": [
-          34
-        ],
-        "HPHT": [
-          36
-        ],
-        "using": [
-          37
-        ],
-        "setup.": [
-          40
-        ],
-        "We": [
-          41
-        ],
-        "also": [
-          43,
-          104,
-          193
-        ],
-        "tried": [
-          44
-        ],
-        "to": [
-          45,
-          139,
-          151,
-          178,
-          200,
-          282,
-          315
-        ],
-        "present": [
-          46
-        ],
-        "detailed": [
-          48
-        ],
-        "methodology": [
-          49,
-          308
-        ],
-        "for": [
-          50,
-          301,
-          322
-        ],
-        "measuring": [
-          51
-        ],
-        "systems": [
-          56,
-          281,
-          321
-        ],
-        "highlight": [
-          58
-        ],
-        "difficulties": [
-          60
-        ],
-        "such": [
-          61
-        ],
-        "as": [
-          62,
-          224
-        ],
-        "vaporization": [
-          64
-        ],
-        "by": [
-          65
-        ],
-        "during": [
-          67
-        ],
-        "experiments.": [
-          69
-        ],
-        "A": [
-          70
-        ],
-        "sample,": [
-          73
-        ],
-        "collected": [
-          74
-        ],
-        "from": [
-          75
-        ],
-        "Malaysian": [
-          77
-        ],
-        "field,": [
-          79
-        ],
-        "was": [
-          80
-        ],
-        "used": [
-          81,
-          199
-        ],
-        "here.": [
-          82
-        ],
-        "Our": [
-          83,
-          102
-        ],
-        "experiments": [
-          84,
-          103,
-          318
-        ],
-        "indicated": [
-          85,
-          164
-        ],
-        "that,": [
-          86
-        ],
-        "solubility": [
-          88,
-          114,
-          290
-        ],
-        "in": [
-          89,
-          115,
-          168,
-          231
-        ],
-        "increased": [
-          92
-        ],
-        "higher": [
-          94,
-          125
-        ],
-        "when": [
-          96,
-          262
-        ],
-        "fixed": [
-          100
-        ],
-        "temperature.": [
-          101
-        ],
-        "showed": [
-          105,
-          132
-        ],
-        "that": [
-          106,
-          165,
-          298
-        ],
-        "increasing": [
-          107,
-          134
-        ],
-        "test": [
-          109
-        ],
-        "temperature": [
-          110,
-          277
-        ],
-        "would": [
-          111
-        ],
-        "reduce": [
-          112,
-          173
-        ],
-        "oil,": [
-          117
-        ],
-        "while": [
-          118,
-          195,
-          253
-        ],
-        "its": [
-          119
-        ],
-        "effect": [
-          120
-        ],
-        "is": [
-          121
-        ],
-        "more": [
-          122,
-          228
-        ],
-        "significant": [
-          123
-        ],
-        "pressures.": [
-          126
-        ],
-        "The": [
-          127,
-          159,
-          180,
-          214
-        ],
-        "swelling": [
-          128
-        ],
-        "factor": [
-          129
-        ],
-        "(SF)": [
-          130
-        ],
-        "measurements": [
-          131,
-          160,
-          216
-        ],
-        "an": [
-          133
-        ],
-        "trend": [
-          135,
-          223
-        ],
-        "with": [
-          136,
-          235,
-          251,
-          271
-        ],
-        "pressure": [
-          137,
-          205,
-          243,
-          275
-        ],
-        "up": [
-          138,
-          177
-        ],
-        "certain": [
-          141
-        ],
-        "value": [
-          142
-        ],
-        "so-called": [
-          143
-        ],
-        "extraction": [
-          144,
-          266
-        ],
-        "pressure,": [
-          145,
-          252
-        ],
-        "which,": [
-          147
-        ],
-        "SF": [
-          149
-        ],
-        "started": [
-          150
-        ],
-        "be": [
-          152
-        ],
-        "reduced": [
-          153,
-          250
-        ],
-        "even": [
-          154
-        ],
-        "became": [
-          155,
-          260
-        ],
-        "less": [
-          156,
-          261
-        ],
-        "than": [
-          157
-        ],
-        "one.": [
-          158
-        ],
-        "viscosity": [
-          163,
-          176,
-          297
-        ],
-        "dissolution": [
-          167,
-          230
-        ],
-        "sample": [
-          171
-        ],
-        "could": [
-          172
-        ],
-        "mixture": [
-          175
-        ],
-        "61%.": [
-          179
-        ],
-        "interfacial": [
-          181
-        ],
-        "tensions": [
-          182
-        ],
-        "different": [
-          190,
-          237
-        ],
-        "were": [
-          192,
-          198,
-          248
-        ],
-        "results": [
-          197
-        ],
-        "estimate": [
-          201
-        ],
-        "minimum": [
-          203,
-          285,
-          295
-        ],
-        "miscibility": [
-          204,
-          211
-        ],
-        "(MMP)": [
-          206
-        ],
-        "first": [
-          209
-        ],
-        "contact": [
-          210
-        ],
-        "(FCM)": [
-          212
-        ],
-        "pressure.": [
-          213,
-          267
-        ],
-        "IFT": [
-          215,
-          259
-        ],
-        "various": [
-          218
-        ],
-        "displayed": [
-          220
-        ],
-        "reduction": [
-          222,
-          255
-        ],
-        "result": [
-          226
-        ],
-        "but": [
-          234
-        ],
-        "two": [
-          236
-        ],
-        "slopes.": [
-          238
-        ],
-        "That": [
-          239
-        ],
-        "is,": [
-          240
-        ],
-        "lower": [
-          242
-        ],
-        "values,": [
-          244
-        ],
-        "IFTs": [
-          247
-        ],
-        "sharply": [
-          249
-        ],
-        "rate": [
-          256
-        ],
-        "exceeded": [
-          264
-        ],
-        "study": [
-          269
-        ],
-        "helps": [
-          270
-        ],
-        "determining": [
-          272
-        ],
-        "optimum": [
-          274
-        ],
-        "conditions": [
-          278
-        ],
-        "IFT,": [
-          286
-        ],
-        "maximum": [
-          288
-        ],
-        "SF,": [
-          292
-        ],
-        "are": [
-          299
-        ],
-        "favorable": [
-          300
-        ],
-        "CO<sub>2</sub>-enhanced": [
-          302
-        ],
-        "recovery": [
-          304
-        ],
-        "projects.": [
-          305
-        ],
-        "Additionally,": [
-          306
-        ],
-        "presented": [
-          309
-        ],
-        "here": [
-          310
-        ],
-        "gives": [
-          311
-        ],
-        "guidelines": [
-          312
-        ],
-        "on": [
-          313
-        ],
-        "how": [
-          314
-        ],
-        "design": [
-          316
-        ],
-        "petroleum": [
-          323
-        ],
-        "chemical": [
-          325
-        ],
-        "engineering": [
-          326
-        ],
-        "applications.": [
-          327
-        ]
-      },
+      "abstract_inverted_index": null,
       "counts_by_year": [
         {
           "year": 2026,
@@ -3284,7 +2611,7 @@
           "cited_by_count": 5
         }
       ],
-      "updated_date": "2026-02-05T00:54:17.221276",
+      "updated_date": "2026-02-06T03:54:58.731219",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -3520,14 +2847,14 @@
       "apc_paid": null,
       "fwci": 3.72074608,
       "has_fulltext": false,
-      "cited_by_count": 65,
+      "cited_by_count": 67,
       "citation_normalized_percentile": {
-        "value": 0.93837624,
+        "value": 0.93838017,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
       "cited_by_percentile_year": {
-        "min": 98,
+        "min": 99,
         "max": 100
       },
       "biblio": {
@@ -3981,8 +3308,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 147,
@@ -4611,7 +3938,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 3
         },
         {
           "year": 2025,
@@ -4630,7 +3957,7 @@
           "cited_by_count": 8
         }
       ],
-      "updated_date": "2026-02-05T00:54:17.221276",
+      "updated_date": "2026-02-06T03:54:58.731219",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -5155,8 +4482,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 38,
@@ -5743,8 +5070,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 49,
@@ -6527,8 +5854,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action",
-          "score": 0.4099999964237213
+          "score": 0.4099999964237213,
+          "display_name": "Climate action"
         }
       ],
       "awards": [
@@ -6555,8 +5882,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 48,
@@ -8074,15 +7401,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.4699999988079071
+          "score": 0.4699999988079071,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W2899707954.pdf",
@@ -9187,8 +8514,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 40,
@@ -9800,8 +9127,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 37,
@@ -10540,8 +9867,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4376959656.pdf"
@@ -11096,8 +10423,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 45,
@@ -11573,8 +10900,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 48,
@@ -12245,8 +11572,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5799999833106995
+          "score": 0.5799999833106995,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [
@@ -12266,8 +11593,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 44,
@@ -12818,8 +12145,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 52,
@@ -13521,8 +12848,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 57,
@@ -14720,8 +14047,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action",
-          "score": 0.6299999952316284
+          "score": 0.6299999952316284,
+          "display_name": "Climate action"
         }
       ],
       "awards": [
@@ -14741,8 +14068,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 50,
@@ -15352,8 +14679,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 63,
@@ -16343,7 +15670,7 @@
       "has_fulltext": false,
       "cited_by_count": 10,
       "citation_normalized_percentile": {
-        "value": 0.98415956,
+        "value": 0.98412073,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -16634,8 +15961,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 206,
@@ -16859,14 +16186,423 @@
         "https://openalex.org/W1969385569",
         "https://openalex.org/W1785613966"
       ],
-      "abstract_inverted_index": null,
+      "abstract_inverted_index": {
+        "Saline": [
+          0
+        ],
+        "aquifers": [
+          1
+        ],
+        "represent": [
+          2
+        ],
+        "a": [
+          3,
+          96,
+          162
+        ],
+        "significant": [
+          4,
+          163
+        ],
+        "geological": [
+          5
+        ],
+        "option": [
+          6
+        ],
+        "for": [
+          7,
+          80
+        ],
+        "large-scale": [
+          8
+        ],
+        "CO2": [
+          9,
+          12,
+          31,
+          46,
+          126,
+          133,
+          172
+        ],
+        "storage": [
+          10,
+          68,
+          101,
+          116,
+          143
+        ],
+        "through": [
+          11
+        ],
+        "solubilization": [
+          13,
+          47
+        ],
+        "in": [
+          14,
+          40,
+          48,
+          165,
+          173
+        ],
+        "brine": [
+          15,
+          108
+        ],
+        "and": [
+          16,
+          33,
+          42,
+          55,
+          70,
+          88,
+          110,
+          118,
+          128
+        ],
+        "subsequent": [
+          17
+        ],
+        "geochemical": [
+          18,
+          84
+        ],
+        "interactions": [
+          19
+        ],
+        "that": [
+          20,
+          76,
+          106,
+          136
+        ],
+        "facilitate": [
+          21
+        ],
+        "mineralization.": [
+          22
+        ],
+        "Nevertheless,": [
+          23
+        ],
+        "their": [
+          24
+        ],
+        "heterogeneous": [
+          25
+        ],
+        "nature": [
+          26
+        ],
+        "influences": [
+          27
+        ],
+        "the": [
+          28,
+          61,
+          100,
+          129,
+          142,
+          168
+        ],
+        "kinetics": [
+          29
+        ],
+        "of": [
+          30,
+          63,
+          99,
+          123,
+          131,
+          145,
+          171
+        ],
+        "dissolution": [
+          32
+        ],
+        "long-term": [
+          34,
+          169
+        ],
+        "stability.": [
+          35
+        ],
+        "This": [
+          36
+        ],
+        "review": [
+          37
+        ],
+        "assesses": [
+          38
+        ],
+        "advancements": [
+          39
+        ],
+        "experimental": [
+          41
+        ],
+        "modelling": [
+          43,
+          150,
+          167
+        ],
+        "efforts": [
+          44
+        ],
+        "regarding": [
+          45
+        ],
+        "saline": [
+          49,
+          146,
+          174
+        ],
+        "aquifers,": [
+          50
+        ],
+        "considering": [
+          51
+        ],
+        "natural": [
+          52
+        ],
+        "convection,": [
+          53
+        ],
+        "diffusion,": [
+          54
+        ],
+        "dispersion": [
+          56
+        ],
+        "factors.": [
+          57
+        ],
+        "It": [
+          58
+        ],
+        "also": [
+          59
+        ],
+        "investigates": [
+          60
+        ],
+        "application": [
+          62
+        ],
+        "nanobubble": [
+          64,
+          112
+        ],
+        "technology": [
+          65,
+          113
+        ],
+        "to": [
+          66,
+          94,
+          140,
+          154,
+          160
+        ],
+        "enhance": [
+          67
+        ],
+        "capacity": [
+          69,
+          117
+        ],
+        "stability,": [
+          71
+        ],
+        "along": [
+          72
+        ],
+        "with": [
+          73
+        ],
+        "various": [
+          74
+        ],
+        "technologies": [
+          75
+        ],
+        "could": [
+          77,
+          114
+        ],
+        "be": [
+          78,
+          138
+        ],
+        "utilized": [
+          79
+        ],
+        "its": [
+          81
+        ],
+        "generation.": [
+          82
+        ],
+        "Furthermore,": [
+          83,
+          120
+        ],
+        "implications,": [
+          85
+        ],
+        "mineral": [
+          86
+        ],
+        "trapping,": [
+          87
+        ],
+        "field-scale": [
+          89
+        ],
+        "observations": [
+          90
+        ],
+        "have": [
+          91
+        ],
+        "been": [
+          92
+        ],
+        "reviewed": [
+          93
+        ],
+        "offer": [
+          95
+        ],
+        "comprehensive": [
+          97
+        ],
+        "understanding": [
+          98
+        ],
+        "mechanisms.": [
+          102
+        ],
+        "Our": [
+          103
+        ],
+        "findings": [
+          104
+        ],
+        "indicate": [
+          105
+        ],
+        "optimizing": [
+          107
+        ],
+        "chemistry": [
+          109
+        ],
+        "harnessing": [
+          111
+        ],
+        "augment": [
+          115
+        ],
+        "security.": [
+          119
+        ],
+        "careful": [
+          121
+        ],
+        "selection": [
+          122
+        ],
+        "injection": [
+          124
+        ],
+        "sites,": [
+          125
+        ],
+        "injectivity,": [
+          127
+        ],
+        "security": [
+          130
+        ],
+        "injected": [
+          132
+        ],
+        "are": [
+          134,
+          152
+        ],
+        "factors": [
+          135
+        ],
+        "must": [
+          137
+        ],
+        "addressed": [
+          139
+        ],
+        "unlock": [
+          141
+        ],
+        "potential": [
+          144
+        ],
+        "aquifers.": [
+          147,
+          175
+        ],
+        "Moreover,": [
+          148
+        ],
+        "enhanced": [
+          149
+        ],
+        "approaches": [
+          151
+        ],
+        "required": [
+          153
+        ],
+        "reflect": [
+          155
+        ],
+        "aquifer": [
+          156
+        ],
+        "heterogeneity,": [
+          157
+        ],
+        "which": [
+          158
+        ],
+        "continues": [
+          159
+        ],
+        "pose": [
+          161
+        ],
+        "challenge": [
+          164
+        ],
+        "accurately": [
+          166
+        ],
+        "behaviour": [
+          170
+        ]
+      },
       "counts_by_year": [
         {
           "year": 2025,
           "cited_by_count": 10
         }
       ],
-      "updated_date": "2026-02-05T00:54:17.221276",
+      "updated_date": "2026-02-06T03:54:58.731219",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -17595,8 +17331,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 42,
@@ -18155,8 +17891,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4406815550.pdf"
@@ -18992,15 +18728,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5899999737739563
+          "score": 0.5899999737739563,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": true,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": true
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4293527420.pdf",
@@ -20366,8 +20102,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 71,
@@ -21814,15 +21550,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/7",
-          "display_name": "Affordable and clean energy",
-          "score": 0.8799999952316284
+          "score": 0.8799999952316284,
+          "display_name": "Affordable and clean energy"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4387805432.pdf"
@@ -22767,8 +22503,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 13,
@@ -23924,8 +23660,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 51,
@@ -24360,8 +24096,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 51,
@@ -25663,8 +25399,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -26185,15 +25921,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.5799999833106995
+          "score": 0.5799999833106995,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,
@@ -26853,8 +26589,8 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation",
-          "score": 0.6700000166893005
+          "score": 0.6700000166893005,
+          "display_name": "Clean water and sanitation"
         }
       ],
       "awards": [
@@ -26874,8 +26610,8 @@
         }
       ],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 26,
@@ -27266,8 +27002,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 12,
@@ -28230,8 +27966,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": true
+        "pdf": true,
+        "grobid_xml": false
       },
       "content_urls": {
         "pdf": "https://content.openalex.org/works/W4417497487.pdf"
@@ -28727,8 +28463,8 @@
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 46,
@@ -29183,15 +28919,15 @@
       "sustainable_development_goals": [
         {
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production",
-          "score": 0.42430609464645386
+          "score": 0.42430609464645386,
+          "display_name": "Responsible consumption and production"
         }
       ],
       "awards": [],
       "funders": [],
       "has_content": {
-        "grobid_xml": false,
-        "pdf": false
+        "pdf": false,
+        "grobid_xml": false
       },
       "content_urls": null,
       "referenced_works_count": 0,

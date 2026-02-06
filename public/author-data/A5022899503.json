@@ -14,9 +14,9 @@
       "xihui liu"
     ],
     "works_count": 131,
-    "cited_by_count": 1180,
+    "cited_by_count": 1181,
     "summary_stats": {
-      "2yr_mean_citedness": 1.5862068965517242,
+      "2yr_mean_citedness": 1.6206896551724137,
       "h_index": 17,
       "i10_index": 37
     },
@@ -614,7 +614,7 @@
       {
         "id": "https://openalex.org/T10271",
         "display_name": "Seismic Imaging and Inversion Techniques",
-        "value": 0.000243,
+        "value": 0.0002429,
         "subfield": {
           "id": "https://openalex.org/subfields/1908",
           "display_name": "Geophysics"
@@ -631,7 +631,7 @@
       {
         "id": "https://openalex.org/T11565",
         "display_name": "Thermoelastic and Magnetoelastic Phenomena",
-        "value": 0.0001067,
+        "value": 0.0001066,
         "subfield": {
           "id": "https://openalex.org/subfields/2211",
           "display_name": "Mechanics of Materials"
@@ -665,7 +665,7 @@
       {
         "id": "https://openalex.org/T10938",
         "display_name": "Phase Change Materials Research",
-        "value": 0.0000929,
+        "value": 0.0000928,
         "subfield": {
           "id": "https://openalex.org/subfields/2210",
           "display_name": "Mechanical Engineering"
@@ -682,7 +682,7 @@
       {
         "id": "https://openalex.org/T10637",
         "display_name": "Advanced Clustering Algorithms Research",
-        "value": 0.0000566,
+        "value": 0.0000565,
         "subfield": {
           "id": "https://openalex.org/subfields/1702",
           "display_name": "Artificial Intelligence"
@@ -854,7 +854,7 @@
         "year": 2025,
         "works_count": 16,
         "oa_works_count": 6,
-        "cited_by_count": 20
+        "cited_by_count": 21
       },
       {
         "year": 2026,
@@ -873,7 +873,7 @@
     },
     "block_key": "x liu",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5022899503",
-    "updated_date": "2026-02-04T12:20:26.776081",
+    "updated_date": "2026-02-05T12:22:15.111854",
     "created_date": "2016-06-24"
   },
   "works": [
@@ -1620,9 +1620,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.7300000190734863,
-          "display_name": "Clean water and sanitation"
+          "score": 0.7300000190734863
         }
       ],
       "awards": [],
@@ -2375,9 +2375,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.5099999904632568,
-          "display_name": "Life in Land"
+          "score": 0.5099999904632568
         }
       ],
       "awards": [],
@@ -5752,9 +5752,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8700000047683716,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8700000047683716
         }
       ],
       "awards": [],
@@ -6468,9 +6468,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Sustainable cities and communities",
           "id": "https://metadata.un.org/sdg/11",
-          "score": 0.6200000047683716,
-          "display_name": "Sustainable cities and communities"
+          "score": 0.6200000047683716
         }
       ],
       "awards": [
@@ -8596,1231 +8596,6 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
-      "id": "https://openalex.org/W4206630431",
-      "doi": "https://doi.org/10.1016/j.petsci.2021.12.032",
-      "title": "Statistical prediction of waterflooding performance by K-means clustering and empirical modeling",
-      "display_name": "Statistical prediction of waterflooding performance by K-means clustering and empirical modeling",
-      "publication_year": 2022,
-      "publication_date": "2022-01-17",
-      "ids": {
-        "openalex": "https://openalex.org/W4206630431",
-        "doi": "https://doi.org/10.1016/j.petsci.2021.12.032"
-      },
-      "language": "en",
-      "primary_location": {
-        "id": "doi:10.1016/j.petsci.2021.12.032",
-        "is_oa": true,
-        "landing_page_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
-        "pdf_url": null,
-        "source": {
-          "id": "https://openalex.org/S177501576",
-          "display_name": "Petroleum Science",
-          "issn_l": "1672-5107",
-          "issn": [
-            "1672-5107",
-            "1995-8226"
-          ],
-          "is_oa": true,
-          "is_in_doaj": true,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310320990",
-          "host_organization_name": "Elsevier BV",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310320990"
-          ],
-          "host_organization_lineage_names": [
-            "Elsevier BV"
-          ],
-          "type": "journal"
-        },
-        "license": "cc-by-nc-nd",
-        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Petroleum Science",
-        "raw_type": "journal-article"
-      },
-      "type": "article",
-      "indexed_in": [
-        "crossref",
-        "doaj"
-      ],
-      "open_access": {
-        "is_oa": true,
-        "oa_status": "diamond",
-        "oa_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
-        "any_repository_has_fulltext": true
-      },
-      "authorships": [
-        {
-          "author_position": "first",
-          "author": {
-            "id": "https://openalex.org/A5086290026",
-            "display_name": "Qinzhuo Liao",
-            "orcid": "https://orcid.org/0000-0003-0223-7725"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Qin-Zhuo Liao",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5076861938",
-            "display_name": "Liang Xue",
-            "orcid": "https://orcid.org/0000-0002-4787-9855"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I204553293",
-              "display_name": "China University of Petroleum, Beijing",
-              "ror": "https://ror.org/041qf4r12",
-              "country_code": "CN",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I204553293"
-              ]
-            }
-          ],
-          "countries": [
-            "CN"
-          ],
-          "is_corresponding": true,
-          "raw_author_name": "Liang Xue",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, China University of Petroleum-Beijing, Beijing, 102240, China"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, China University of Petroleum-Beijing, Beijing, 102240, China",
-              "institution_ids": [
-                "https://openalex.org/I204553293"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5111547006",
-            "display_name": "Gang Lei",
-            "orcid": "https://orcid.org/0000-0002-7872-4784"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I3124059619",
-              "display_name": "China University of Geosciences",
-              "ror": "https://ror.org/04gcegc37",
-              "country_code": "CN",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I3124059619"
-              ]
-            }
-          ],
-          "countries": [
-            "CN"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Gang Lei",
-          "raw_affiliation_strings": [
-            "Faculty of Engineering, China University of Geosciences, Wuhan, 430074, Hubei, China"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Faculty of Engineering, China University of Geosciences, Wuhan, 430074, Hubei, China",
-              "institution_ids": [
-                "https://openalex.org/I3124059619"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5022899503",
-            "display_name": "Xu Liu",
-            "orcid": "https://orcid.org/0000-0003-2835-2844"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Xu Liu",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5057212913",
-            "display_name": "Shuyu Sun",
-            "orcid": "https://orcid.org/0000-0002-3078-864X"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I71920554",
-              "display_name": "King Abdullah University of Science and Technology",
-              "ror": "https://ror.org/01q3tbs38",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I71920554"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Shu-Yu Sun",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, King Abdullah University of Science and Technology, Thuwal, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Abdullah University of Science and Technology, Thuwal, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I71920554"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "last",
-          "author": {
-            "id": "https://openalex.org/A5005252413",
-            "display_name": "Shirish Patil",
-            "orcid": "https://orcid.org/0000-0002-0131-4912"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Shirish Patil",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        }
-      ],
-      "institutions": [],
-      "countries_distinct_count": 2,
-      "institutions_distinct_count": 6,
-      "corresponding_author_ids": [
-        "https://openalex.org/A5076861938"
-      ],
-      "corresponding_institution_ids": [
-        "https://openalex.org/I204553293"
-      ],
-      "apc_list": null,
-      "apc_paid": null,
-      "fwci": 2.99748184,
-      "has_fulltext": false,
-      "cited_by_count": 18,
-      "citation_normalized_percentile": {
-        "value": 0.87640001,
-        "is_in_top_1_percent": false,
-        "is_in_top_10_percent": false
-      },
-      "cited_by_percentile_year": {
-        "min": 90,
-        "max": 100
-      },
-      "biblio": {
-        "volume": "19",
-        "issue": "3",
-        "first_page": "1139",
-        "last_page": "1152"
-      },
-      "is_retracted": false,
-      "is_paratext": false,
-      "is_xpac": false,
-      "primary_topic": {
-        "id": "https://openalex.org/T11801",
-        "display_name": "Reservoir Engineering and Simulation Methods",
-        "score": 1,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2212",
-          "display_name": "Ocean Engineering"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/22",
-          "display_name": "Engineering"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/3",
-          "display_name": "Physical Sciences"
-        }
-      },
-      "topics": [
-        {
-          "id": "https://openalex.org/T11801",
-          "display_name": "Reservoir Engineering and Simulation Methods",
-          "score": 1,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10635",
-          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
-          "score": 0.9995999932289124,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2210",
-            "display_name": "Mechanical Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10491",
-          "display_name": "Enhanced Oil Recovery Techniques",
-          "score": 0.9993000030517578,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        }
-      ],
-      "keywords": [
-        {
-          "id": "https://openalex.org/keywords/curse-of-dimensionality",
-          "display_name": "Curse of dimensionality",
-          "score": 0.7200480699539185
-        },
-        {
-          "id": "https://openalex.org/keywords/cluster-analysis",
-          "display_name": "Cluster analysis",
-          "score": 0.6800740957260132
-        },
-        {
-          "id": "https://openalex.org/keywords/monte-carlo-method",
-          "display_name": "Monte Carlo method",
-          "score": 0.622803270816803
-        },
-        {
-          "id": "https://openalex.org/keywords/computer-science",
-          "display_name": "Computer science",
-          "score": 0.5043607950210571
-        },
-        {
-          "id": "https://openalex.org/keywords/mathematical-optimization",
-          "display_name": "Mathematical optimization",
-          "score": 0.33222198486328125
-        },
-        {
-          "id": "https://openalex.org/keywords/data-mining",
-          "display_name": "Data mining",
-          "score": 0.3266235291957855
-        },
-        {
-          "id": "https://openalex.org/keywords/mathematics",
-          "display_name": "Mathematics",
-          "score": 0.29993295669555664
-        },
-        {
-          "id": "https://openalex.org/keywords/statistics",
-          "display_name": "Statistics",
-          "score": 0.2789098024368286
-        },
-        {
-          "id": "https://openalex.org/keywords/machine-learning",
-          "display_name": "Machine learning",
-          "score": 0.1691146194934845
-        }
-      ],
-      "concepts": [
-        {
-          "id": "https://openalex.org/C111030470",
-          "wikidata": "https://www.wikidata.org/wiki/Q1430460",
-          "display_name": "Curse of dimensionality",
-          "level": 2,
-          "score": 0.7200480699539185
-        },
-        {
-          "id": "https://openalex.org/C73555534",
-          "wikidata": "https://www.wikidata.org/wiki/Q622825",
-          "display_name": "Cluster analysis",
-          "level": 2,
-          "score": 0.6800740957260132
-        },
-        {
-          "id": "https://openalex.org/C19499675",
-          "wikidata": "https://www.wikidata.org/wiki/Q232207",
-          "display_name": "Monte Carlo method",
-          "level": 2,
-          "score": 0.622803270816803
-        },
-        {
-          "id": "https://openalex.org/C41008148",
-          "wikidata": "https://www.wikidata.org/wiki/Q21198",
-          "display_name": "Computer science",
-          "level": 0,
-          "score": 0.5043607950210571
-        },
-        {
-          "id": "https://openalex.org/C126255220",
-          "wikidata": "https://www.wikidata.org/wiki/Q141495",
-          "display_name": "Mathematical optimization",
-          "level": 1,
-          "score": 0.33222198486328125
-        },
-        {
-          "id": "https://openalex.org/C124101348",
-          "wikidata": "https://www.wikidata.org/wiki/Q172491",
-          "display_name": "Data mining",
-          "level": 1,
-          "score": 0.3266235291957855
-        },
-        {
-          "id": "https://openalex.org/C33923547",
-          "wikidata": "https://www.wikidata.org/wiki/Q395",
-          "display_name": "Mathematics",
-          "level": 0,
-          "score": 0.29993295669555664
-        },
-        {
-          "id": "https://openalex.org/C105795698",
-          "wikidata": "https://www.wikidata.org/wiki/Q12483",
-          "display_name": "Statistics",
-          "level": 1,
-          "score": 0.2789098024368286
-        },
-        {
-          "id": "https://openalex.org/C119857082",
-          "wikidata": "https://www.wikidata.org/wiki/Q2539",
-          "display_name": "Machine learning",
-          "level": 1,
-          "score": 0.1691146194934845
-        }
-      ],
-      "mesh": [],
-      "locations_count": 2,
-      "locations": [
-        {
-          "id": "doi:10.1016/j.petsci.2021.12.032",
-          "is_oa": true,
-          "landing_page_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S177501576",
-            "display_name": "Petroleum Science",
-            "issn_l": "1672-5107",
-            "issn": [
-              "1672-5107",
-              "1995-8226"
-            ],
-            "is_oa": true,
-            "is_in_doaj": true,
-            "is_core": true,
-            "host_organization": "https://openalex.org/P4310320990",
-            "host_organization_name": "Elsevier BV",
-            "host_organization_lineage": [
-              "https://openalex.org/P4310320990"
-            ],
-            "host_organization_lineage_names": [
-              "Elsevier BV"
-            ],
-            "type": "journal"
-          },
-          "license": "cc-by-nc-nd",
-          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Petroleum Science",
-          "raw_type": "journal-article"
-        },
-        {
-          "id": "pmh:oai:repository.kaust.edu.sa:10754/675573",
-          "is_oa": true,
-          "landing_page_url": "http://hdl.handle.net/10754/675573",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S4306401596",
-            "display_name": "King Abdullah University of Science and Technology Repository (King Abdullah University of Science and Technology)",
-            "issn_l": null,
-            "issn": null,
-            "is_oa": false,
-            "is_in_doaj": false,
-            "is_core": false,
-            "host_organization": "https://openalex.org/I71920554",
-            "host_organization_name": "King Abdullah University of Science and Technology",
-            "host_organization_lineage": [
-              "https://openalex.org/I71920554"
-            ],
-            "host_organization_lineage_names": [],
-            "type": "repository"
-          },
-          "license": "other-oa",
-          "license_id": "https://openalex.org/licenses/other-oa",
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "",
-          "raw_type": "Article"
-        }
-      ],
-      "best_oa_location": {
-        "id": "doi:10.1016/j.petsci.2021.12.032",
-        "is_oa": true,
-        "landing_page_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
-        "pdf_url": null,
-        "source": {
-          "id": "https://openalex.org/S177501576",
-          "display_name": "Petroleum Science",
-          "issn_l": "1672-5107",
-          "issn": [
-            "1672-5107",
-            "1995-8226"
-          ],
-          "is_oa": true,
-          "is_in_doaj": true,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310320990",
-          "host_organization_name": "Elsevier BV",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310320990"
-          ],
-          "host_organization_lineage_names": [
-            "Elsevier BV"
-          ],
-          "type": "journal"
-        },
-        "license": "cc-by-nc-nd",
-        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Petroleum Science",
-        "raw_type": "journal-article"
-      },
-      "sustainable_development_goals": [
-        {
-          "id": "https://metadata.un.org/sdg/6",
-          "score": 0.46000000834465027,
-          "display_name": "Clean water and sanitation"
-        }
-      ],
-      "awards": [
-        {
-          "id": "https://openalex.org/G2857562393",
-          "display_name": null,
-          "funder_award_id": "2462021YXZZ010",
-          "funder_id": "https://openalex.org/F4320326291",
-          "funder_display_name": "Science Foundation of China University of Petroleum, Beijing"
-        },
-        {
-          "id": "https://openalex.org/G5317203067",
-          "display_name": null,
-          "funder_award_id": "2462018QZDX13",
-          "funder_id": "https://openalex.org/F4320326291",
-          "funder_display_name": "Science Foundation of China University of Petroleum, Beijing"
-        },
-        {
-          "id": "https://openalex.org/G5925443850",
-          "display_name": null,
-          "funder_award_id": "2020D-5007-0203",
-          "funder_id": "https://openalex.org/F4320334987",
-          "funder_display_name": "PetroChina Innovation Foundation"
-        },
-        {
-          "id": "https://openalex.org/G6184050679",
-          "display_name": null,
-          "funder_award_id": "3222037",
-          "funder_id": "https://openalex.org/F4320322919",
-          "funder_display_name": "Natural Science Foundation of Beijing Municipality"
-        },
-        {
-          "id": "https://openalex.org/G7154546415",
-          "display_name": null,
-          "funder_award_id": "2462020YXZZ028",
-          "funder_id": "https://openalex.org/F4320326291",
-          "funder_display_name": "Science Foundation of China University of Petroleum, Beijing"
-        }
-      ],
-      "funders": [
-        {
-          "id": "https://openalex.org/F4320321547",
-          "display_name": "China University of Petroleum, Beijing",
-          "ror": "https://ror.org/041qf4r12"
-        },
-        {
-          "id": "https://openalex.org/F4320322469",
-          "display_name": "PetroChina Company Limited",
-          "ror": "https://ror.org/05269d038"
-        },
-        {
-          "id": "https://openalex.org/F4320322919",
-          "display_name": "Natural Science Foundation of Beijing Municipality",
-          "ror": null
-        },
-        {
-          "id": "https://openalex.org/F4320326291",
-          "display_name": "Science Foundation of China University of Petroleum, Beijing",
-          "ror": null
-        },
-        {
-          "id": "https://openalex.org/F4320334987",
-          "display_name": "PetroChina Innovation Foundation",
-          "ror": "https://ror.org/05269d038"
-        }
-      ],
-      "has_content": {
-        "pdf": false,
-        "grobid_xml": false
-      },
-      "content_urls": null,
-      "referenced_works_count": 43,
-      "referenced_works": [
-        "https://openalex.org/W196710731",
-        "https://openalex.org/W656657393",
-        "https://openalex.org/W1537810918",
-        "https://openalex.org/W1574558736",
-        "https://openalex.org/W1592093959",
-        "https://openalex.org/W1604224450",
-        "https://openalex.org/W1880751280",
-        "https://openalex.org/W1970037416",
-        "https://openalex.org/W1983139887",
-        "https://openalex.org/W2001682773",
-        "https://openalex.org/W2038960401",
-        "https://openalex.org/W2041375958",
-        "https://openalex.org/W2042553494",
-        "https://openalex.org/W2047459240",
-        "https://openalex.org/W2075485187",
-        "https://openalex.org/W2114821552",
-        "https://openalex.org/W2143591652",
-        "https://openalex.org/W2145062249",
-        "https://openalex.org/W2152896489",
-        "https://openalex.org/W2158682987",
-        "https://openalex.org/W2171033594",
-        "https://openalex.org/W2473979308",
-        "https://openalex.org/W2548313031",
-        "https://openalex.org/W2600471723",
-        "https://openalex.org/W2789759132",
-        "https://openalex.org/W2889287282",
-        "https://openalex.org/W2918521018",
-        "https://openalex.org/W2938848640",
-        "https://openalex.org/W2997857795",
-        "https://openalex.org/W3003456466",
-        "https://openalex.org/W3022656119",
-        "https://openalex.org/W3048911907",
-        "https://openalex.org/W3090928691",
-        "https://openalex.org/W3129233823",
-        "https://openalex.org/W3140102010",
-        "https://openalex.org/W3205620573",
-        "https://openalex.org/W3214899758",
-        "https://openalex.org/W4312792557",
-        "https://openalex.org/W4388322712",
-        "https://openalex.org/W6665867954",
-        "https://openalex.org/W6675801506",
-        "https://openalex.org/W6784154603",
-        "https://openalex.org/W6790410328"
-      ],
-      "related_works": [
-        "https://openalex.org/W4296209631",
-        "https://openalex.org/W2561617217",
-        "https://openalex.org/W2025378473",
-        "https://openalex.org/W2355801475",
-        "https://openalex.org/W4206659427",
-        "https://openalex.org/W2170062176",
-        "https://openalex.org/W4298130764",
-        "https://openalex.org/W2148135840",
-        "https://openalex.org/W106004901",
-        "https://openalex.org/W2973622563"
-      ],
-      "abstract_inverted_index": {
-        "Statistical": [
-          0
-        ],
-        "prediction": [
-          1
-        ],
-        "is": [
-          2,
-          44,
-          143,
-          153,
-          180,
-          203
-        ],
-        "often": [
-          3
-        ],
-        "required": [
-          4
-        ],
-        "in": [
-          5,
-          81,
-          130,
-          158
-        ],
-        "reservoir": [
-          6
-        ],
-        "simulation": [
-          7,
-          191
-        ],
-        "to": [
-          8,
-          22,
-          28,
-          47,
-          91,
-          111,
-          145,
-          155,
-          182
-        ],
-        "quantify": [
-          9
-        ],
-        "production": [
-          10,
-          165
-        ],
-        "uncertainty": [
-          11,
-          18
-        ],
-        "or": [
-          12
-        ],
-        "assess": [
-          13
-        ],
-        "potential": [
-          14
-        ],
-        "risks.": [
-          15
-        ],
-        "Most": [
-          16
-        ],
-        "existing": [
-          17
-        ],
-        "quantification": [
-          19
-        ],
-        "procedures": [
-          20
-        ],
-        "aim": [
-          21
-        ],
-        "decompose": [
-          23
-        ],
-        "the": [
-          24,
-          36,
-          41,
-          48,
-          99,
-          113,
-          116,
-          120,
-          127,
-          137,
-          159,
-          170,
-          184,
-          188,
-          200
-        ],
-        "input": [
-          25
-        ],
-        "random": [
-          26,
-          30
-        ],
-        "field": [
-          27
-        ],
-        "independent": [
-          29
-        ],
-        "variables,": [
-          31
-        ],
-        "and": [
-          32,
-          56,
-          87,
-          119,
-          148,
-          152,
-          162,
-          199
-        ],
-        "may": [
-          33
-        ],
-        "suffer": [
-          34
-        ],
-        "from": [
-          35
-        ],
-        "curse": [
-          37
-        ],
-        "of": [
-          38,
-          85,
-          164,
-          187,
-          197
-        ],
-        "dimensionality": [
-          39
-        ],
-        "if": [
-          40
-        ],
-        "correlation": [
-          42
-        ],
-        "scale": [
-          43
-        ],
-        "small": [
-          45
-        ],
-        "compared": [
-          46
-        ],
-        "domain": [
-          49
-        ],
-        "size.": [
-          50
-        ],
-        "In": [
-          51
-        ],
-        "this": [
-          52
-        ],
-        "work,": [
-          53
-        ],
-        "we": [
-          54
-        ],
-        "develop": [
-          55
-        ],
-        "test": [
-          57
-        ],
-        "a": [
-          58,
-          82,
-          94,
-          194
-        ],
-        "new": [
-          59
-        ],
-        "approach,": [
-          60
-        ],
-        "K-means": [
-          61,
-          89
-        ],
-        "clustering": [
-          62,
-          90
-        ],
-        "assisted": [
-          63
-        ],
-        "empirical": [
-          64,
-          106,
-          138
-        ],
-        "modeling,": [
-          65
-        ],
-        "for": [
-          66,
-          71
-        ],
-        "efficiently": [
-          67
-        ],
-        "estimating": [
-          68
-        ],
-        "waterflooding": [
-          69
-        ],
-        "performance": [
-          70
-        ],
-        "multiple": [
-          72
-        ],
-        "geological": [
-          73
-        ],
-        "realizations.": [
-          74
-        ],
-        "This": [
-          75
-        ],
-        "method": [
-          76,
-          142
-        ],
-        "performs": [
-          77
-        ],
-        "single-phase": [
-          78,
-          117
-        ],
-        "flow": [
-          79,
-          101
-        ],
-        "simulations": [
-          80,
-          102
-        ],
-        "large": [
-          83,
-          195
-        ],
-        "number": [
-          84,
-          196
-        ],
-        "realizations,": [
-          86,
-          198
-        ],
-        "uses": [
-          88
-        ],
-        "select": [
-          92
-        ],
-        "only": [
-          93
-        ],
-        "few": [
-          95
-        ],
-        "representatives,": [
-          96
-        ],
-        "on": [
-          97
-        ],
-        "which": [
-          98
-        ],
-        "two-phase": [
-          100,
-          121,
-          128
-        ],
-        "are": [
-          103,
-          108
-        ],
-        "implemented.": [
-          104
-        ],
-        "The": [
-          105,
-          141
-        ],
-        "models": [
-          107,
-          139,
-          151
-        ],
-        "then": [
-          109
-        ],
-        "adopted": [
-          110
-        ],
-        "describe": [
-          112
-        ],
-        "relation": [
-          114
-        ],
-        "between": [
-          115
-        ],
-        "solutions": [
-          118,
-          122,
-          129
-        ],
-        "using": [
-          123,
-          136
-        ],
-        "these": [
-          124
-        ],
-        "representatives.": [
-          125
-        ],
-        "Finally,": [
-          126
-        ],
-        "all": [
-          131
-        ],
-        "realizations": [
-          132
-        ],
-        "can": [
-          133
-        ],
-        "be": [
-          134
-        ],
-        "predicted": [
-          135
-        ],
-        "readily.": [
-          140
-        ],
-        "applied": [
-          144
-        ],
-        "both": [
-          146
-        ],
-        "2D": [
-          147
-        ],
-        "3D": [
-          149
-        ],
-        "synthetic": [
-          150
-        ],
-        "shown": [
-          154
-        ],
-        "perform": [
-          156
-        ],
-        "well": [
-          157,
-          168
-        ],
-        "P10,": [
-          160
-        ],
-        "P50": [
-          161
-        ],
-        "P90": [
-          163
-        ],
-        "rates,": [
-          166
-        ],
-        "as": [
-          167,
-          169,
-          173
-        ],
-        "probability": [
-          171
-        ],
-        "distributions": [
-          172
-        ],
-        "illustrated": [
-          174
-        ],
-        "by": [
-          175
-        ],
-        "cumulative": [
-          176
-        ],
-        "density": [
-          177
-        ],
-        "functions.": [
-          178
-        ],
-        "It": [
-          179
-        ],
-        "able": [
-          181
-        ],
-        "capture": [
-          183
-        ],
-        "ensemble": [
-          185
-        ],
-        "statistics": [
-          186
-        ],
-        "Monte": [
-          189
-        ],
-        "Carlo": [
-          190
-        ],
-        "results": [
-          192
-        ],
-        "with": [
-          193
-        ],
-        "computational": [
-          201
-        ],
-        "cost": [
-          202
-        ],
-        "significantly": [
-          204
-        ],
-        "reduced.": [
-          205
-        ]
-      },
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2025,
-          "cited_by_count": 3
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2023,
-          "cited_by_count": 8
-        },
-        {
-          "year": 2022,
-          "cited_by_count": 5
-        }
-      ],
-      "updated_date": "2025-11-06T03:46:38.306776",
-      "created_date": "2025-10-10T00:00:00"
-    },
-    {
       "id": "https://openalex.org/W4379514291",
       "doi": "https://doi.org/10.3389/fmats.2023.1164693",
       "title": "Utilization of waste wind turbine blades in performance improvement of asphalt mixture",
@@ -10410,9 +9185,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.4300000071525574,
-          "display_name": "Affordable and clean energy"
+          "score": 0.4300000071525574
         }
       ],
       "awards": [],
@@ -18758,9 +17533,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.699999988079071,
-          "display_name": "Life below water"
+          "score": 0.699999988079071
         }
       ],
       "awards": [
@@ -20124,9 +18899,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8100000023841858,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8100000023841858
         }
       ],
       "awards": [],
@@ -22346,9 +21121,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.800000011920929,
-          "display_name": "Affordable and clean energy"
+          "score": 0.800000011920929
         }
       ],
       "awards": [],
@@ -23592,6 +22367,756 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
+      "id": "https://openalex.org/W4206630431",
+      "doi": "https://doi.org/10.1016/j.petsci.2021.12.032",
+      "title": "Statistical prediction of waterflooding performance by K-means clustering and empirical modeling",
+      "display_name": "Statistical prediction of waterflooding performance by K-means clustering and empirical modeling",
+      "publication_year": 2022,
+      "publication_date": "2022-01-17",
+      "ids": {
+        "openalex": "https://openalex.org/W4206630431",
+        "doi": "https://doi.org/10.1016/j.petsci.2021.12.032"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1016/j.petsci.2021.12.032",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S177501576",
+          "display_name": "Petroleum Science",
+          "issn_l": "1672-5107",
+          "issn": [
+            "1672-5107",
+            "1995-8226"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Petroleum Science",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "diamond",
+        "oa_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5086290026",
+            "display_name": "Qinzhuo Liao",
+            "orcid": "https://orcid.org/0000-0003-0223-7725"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Qin-Zhuo Liao",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5076861938",
+            "display_name": "Liang Xue",
+            "orcid": "https://orcid.org/0000-0002-4787-9855"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I204553293",
+              "display_name": "China University of Petroleum, Beijing",
+              "ror": "https://ror.org/041qf4r12",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I204553293"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Liang Xue",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, China University of Petroleum-Beijing, Beijing, 102240, China"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, China University of Petroleum-Beijing, Beijing, 102240, China",
+              "institution_ids": [
+                "https://openalex.org/I204553293"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111547006",
+            "display_name": "Gang Lei",
+            "orcid": "https://orcid.org/0000-0002-7872-4784"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3124059619",
+              "display_name": "China University of Geosciences",
+              "ror": "https://ror.org/04gcegc37",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I3124059619"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gang Lei",
+          "raw_affiliation_strings": [
+            "Faculty of Engineering, China University of Geosciences, Wuhan, 430074, Hubei, China"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Faculty of Engineering, China University of Geosciences, Wuhan, 430074, Hubei, China",
+              "institution_ids": [
+                "https://openalex.org/I3124059619"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5022899503",
+            "display_name": "Xu Liu",
+            "orcid": "https://orcid.org/0000-0003-2835-2844"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Xu Liu",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5057212913",
+            "display_name": "Shuyu Sun",
+            "orcid": "https://orcid.org/0000-0002-3078-864X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I71920554",
+              "display_name": "King Abdullah University of Science and Technology",
+              "ror": "https://ror.org/01q3tbs38",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shu-Yu Sun",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, King Abdullah University of Science and Technology, Thuwal, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Abdullah University of Science and Technology, Thuwal, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I71920554"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5005252413",
+            "display_name": "Shirish Patil",
+            "orcid": "https://orcid.org/0000-0002-0131-4912"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shirish Patil",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 6,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5076861938"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I204553293"
+      ],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 2.99748184,
+      "has_fulltext": false,
+      "cited_by_count": 18,
+      "citation_normalized_percentile": {
+        "value": 0.87632908,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": false
+      },
+      "cited_by_percentile_year": {
+        "min": 90,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "19",
+        "issue": "3",
+        "first_page": "1139",
+        "last_page": "1152"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T11801",
+        "display_name": "Reservoir Engineering and Simulation Methods",
+        "score": 1,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T11801",
+          "display_name": "Reservoir Engineering and Simulation Methods",
+          "score": 1,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10635",
+          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+          "score": 0.9995999932289124,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2210",
+            "display_name": "Mechanical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10491",
+          "display_name": "Enhanced Oil Recovery Techniques",
+          "score": 0.9993000030517578,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/curse-of-dimensionality",
+          "display_name": "Curse of dimensionality",
+          "score": 0.7200480699539185
+        },
+        {
+          "id": "https://openalex.org/keywords/cluster-analysis",
+          "display_name": "Cluster analysis",
+          "score": 0.6800740957260132
+        },
+        {
+          "id": "https://openalex.org/keywords/monte-carlo-method",
+          "display_name": "Monte Carlo method",
+          "score": 0.622803270816803
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.5043607950210571
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematical-optimization",
+          "display_name": "Mathematical optimization",
+          "score": 0.33222198486328125
+        },
+        {
+          "id": "https://openalex.org/keywords/data-mining",
+          "display_name": "Data mining",
+          "score": 0.3266235291957855
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematics",
+          "display_name": "Mathematics",
+          "score": 0.29993295669555664
+        },
+        {
+          "id": "https://openalex.org/keywords/statistics",
+          "display_name": "Statistics",
+          "score": 0.2789098024368286
+        },
+        {
+          "id": "https://openalex.org/keywords/machine-learning",
+          "display_name": "Machine learning",
+          "score": 0.1691146194934845
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C111030470",
+          "wikidata": "https://www.wikidata.org/wiki/Q1430460",
+          "display_name": "Curse of dimensionality",
+          "level": 2,
+          "score": 0.7200480699539185
+        },
+        {
+          "id": "https://openalex.org/C73555534",
+          "wikidata": "https://www.wikidata.org/wiki/Q622825",
+          "display_name": "Cluster analysis",
+          "level": 2,
+          "score": 0.6800740957260132
+        },
+        {
+          "id": "https://openalex.org/C19499675",
+          "wikidata": "https://www.wikidata.org/wiki/Q232207",
+          "display_name": "Monte Carlo method",
+          "level": 2,
+          "score": 0.622803270816803
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.5043607950210571
+        },
+        {
+          "id": "https://openalex.org/C126255220",
+          "wikidata": "https://www.wikidata.org/wiki/Q141495",
+          "display_name": "Mathematical optimization",
+          "level": 1,
+          "score": 0.33222198486328125
+        },
+        {
+          "id": "https://openalex.org/C124101348",
+          "wikidata": "https://www.wikidata.org/wiki/Q172491",
+          "display_name": "Data mining",
+          "level": 1,
+          "score": 0.3266235291957855
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.29993295669555664
+        },
+        {
+          "id": "https://openalex.org/C105795698",
+          "wikidata": "https://www.wikidata.org/wiki/Q12483",
+          "display_name": "Statistics",
+          "level": 1,
+          "score": 0.2789098024368286
+        },
+        {
+          "id": "https://openalex.org/C119857082",
+          "wikidata": "https://www.wikidata.org/wiki/Q2539",
+          "display_name": "Machine learning",
+          "level": 1,
+          "score": 0.1691146194934845
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.1016/j.petsci.2021.12.032",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S177501576",
+            "display_name": "Petroleum Science",
+            "issn_l": "1672-5107",
+            "issn": [
+              "1672-5107",
+              "1995-8226"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by-nc-nd",
+          "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Petroleum Science",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:repository.kaust.edu.sa:10754/675573",
+          "is_oa": true,
+          "landing_page_url": "http://hdl.handle.net/10754/675573",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401596",
+            "display_name": "King Abdullah University of Science and Technology Repository (King Abdullah University of Science and Technology)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I71920554",
+            "host_organization_name": "King Abdullah University of Science and Technology",
+            "host_organization_lineage": [
+              "https://openalex.org/I71920554"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "other-oa",
+          "license_id": "https://openalex.org/licenses/other-oa",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1016/j.petsci.2021.12.032",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.petsci.2021.12.032",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S177501576",
+          "display_name": "Petroleum Science",
+          "issn_l": "1672-5107",
+          "issn": [
+            "1672-5107",
+            "1995-8226"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Petroleum Science",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "display_name": "Clean water and sanitation",
+          "id": "https://metadata.un.org/sdg/6",
+          "score": 0.46000000834465027
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G2857562393",
+          "display_name": null,
+          "funder_award_id": "2462021YXZZ010",
+          "funder_id": "https://openalex.org/F4320326291",
+          "funder_display_name": "Science Foundation of China University of Petroleum, Beijing"
+        },
+        {
+          "id": "https://openalex.org/G5317203067",
+          "display_name": null,
+          "funder_award_id": "2462018QZDX13",
+          "funder_id": "https://openalex.org/F4320326291",
+          "funder_display_name": "Science Foundation of China University of Petroleum, Beijing"
+        },
+        {
+          "id": "https://openalex.org/G5925443850",
+          "display_name": null,
+          "funder_award_id": "2020D-5007-0203",
+          "funder_id": "https://openalex.org/F4320334987",
+          "funder_display_name": "PetroChina Innovation Foundation"
+        },
+        {
+          "id": "https://openalex.org/G6184050679",
+          "display_name": null,
+          "funder_award_id": "3222037",
+          "funder_id": "https://openalex.org/F4320322919",
+          "funder_display_name": "Natural Science Foundation of Beijing Municipality"
+        },
+        {
+          "id": "https://openalex.org/G7154546415",
+          "display_name": null,
+          "funder_award_id": "2462020YXZZ028",
+          "funder_id": "https://openalex.org/F4320326291",
+          "funder_display_name": "Science Foundation of China University of Petroleum, Beijing"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320321547",
+          "display_name": "China University of Petroleum, Beijing",
+          "ror": "https://ror.org/041qf4r12"
+        },
+        {
+          "id": "https://openalex.org/F4320322469",
+          "display_name": "PetroChina Company Limited",
+          "ror": "https://ror.org/05269d038"
+        },
+        {
+          "id": "https://openalex.org/F4320322919",
+          "display_name": "Natural Science Foundation of Beijing Municipality",
+          "ror": null
+        },
+        {
+          "id": "https://openalex.org/F4320326291",
+          "display_name": "Science Foundation of China University of Petroleum, Beijing",
+          "ror": null
+        },
+        {
+          "id": "https://openalex.org/F4320334987",
+          "display_name": "PetroChina Innovation Foundation",
+          "ror": "https://ror.org/05269d038"
+        }
+      ],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 43,
+      "referenced_works": [
+        "https://openalex.org/W196710731",
+        "https://openalex.org/W656657393",
+        "https://openalex.org/W1537810918",
+        "https://openalex.org/W1574558736",
+        "https://openalex.org/W1592093959",
+        "https://openalex.org/W1604224450",
+        "https://openalex.org/W1880751280",
+        "https://openalex.org/W1970037416",
+        "https://openalex.org/W1983139887",
+        "https://openalex.org/W2001682773",
+        "https://openalex.org/W2038960401",
+        "https://openalex.org/W2041375958",
+        "https://openalex.org/W2042553494",
+        "https://openalex.org/W2047459240",
+        "https://openalex.org/W2075485187",
+        "https://openalex.org/W2114821552",
+        "https://openalex.org/W2143591652",
+        "https://openalex.org/W2145062249",
+        "https://openalex.org/W2152896489",
+        "https://openalex.org/W2158682987",
+        "https://openalex.org/W2171033594",
+        "https://openalex.org/W2473979308",
+        "https://openalex.org/W2548313031",
+        "https://openalex.org/W2600471723",
+        "https://openalex.org/W2789759132",
+        "https://openalex.org/W2889287282",
+        "https://openalex.org/W2918521018",
+        "https://openalex.org/W2938848640",
+        "https://openalex.org/W2997857795",
+        "https://openalex.org/W3003456466",
+        "https://openalex.org/W3022656119",
+        "https://openalex.org/W3048911907",
+        "https://openalex.org/W3090928691",
+        "https://openalex.org/W3129233823",
+        "https://openalex.org/W3140102010",
+        "https://openalex.org/W3205620573",
+        "https://openalex.org/W3214899758",
+        "https://openalex.org/W4312792557",
+        "https://openalex.org/W4388322712",
+        "https://openalex.org/W6665867954",
+        "https://openalex.org/W6675801506",
+        "https://openalex.org/W6784154603",
+        "https://openalex.org/W6790410328"
+      ],
+      "related_works": [
+        "https://openalex.org/W4296209631",
+        "https://openalex.org/W2561617217",
+        "https://openalex.org/W2025378473",
+        "https://openalex.org/W2355801475",
+        "https://openalex.org/W4206659427",
+        "https://openalex.org/W2170062176",
+        "https://openalex.org/W4298130764",
+        "https://openalex.org/W2148135840",
+        "https://openalex.org/W106004901",
+        "https://openalex.org/W2973622563"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 8
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 5
+        }
+      ],
+      "updated_date": "2026-02-06T03:54:58.731219",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
       "id": "https://openalex.org/W4377942195",
       "doi": "https://doi.org/10.1108/hff-03-2023-0146",
       "title": "Inhomogeneous waves propagation in double-porosity thermoelastic media",
@@ -24186,9 +23711,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8500000238418579,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8500000238418579
         }
       ],
       "awards": [],
@@ -25479,9 +25004,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8399999737739563,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8399999737739563
         }
       ],
       "awards": [
@@ -29345,9 +28870,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8999999761581421,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8999999761581421
         }
       ],
       "awards": [],
@@ -31514,9 +31039,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.550000011920929,
-          "display_name": "Life below water"
+          "score": 0.550000011920929
         }
       ],
       "awards": [],
@@ -32517,9 +32042,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8799999952316284,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8799999952316284
         }
       ],
       "awards": [],
@@ -34971,9 +34496,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.7400000095367432,
-          "display_name": "Affordable and clean energy"
+          "score": 0.7400000095367432
         }
       ],
       "awards": [],
@@ -43526,9 +43051,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.9100000262260437,
-          "display_name": "Affordable and clean energy"
+          "score": 0.9100000262260437
         }
       ],
       "awards": [],
@@ -45907,9 +45432,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Sustainable cities and communities",
           "id": "https://metadata.un.org/sdg/11",
-          "score": 0.5899999737739563,
-          "display_name": "Sustainable cities and communities"
+          "score": 0.5899999737739563
         }
       ],
       "awards": [],
@@ -49269,9 +48794,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8899999856948853,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8899999856948853
         }
       ],
       "awards": [
@@ -50443,9 +49968,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8700000047683716,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8700000047683716
         }
       ],
       "awards": [],
@@ -51585,9 +51110,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.800000011920929,
-          "display_name": "Climate action"
+          "score": 0.800000011920929
         }
       ],
       "awards": [],
@@ -54403,9 +53928,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8600000143051147,
-          "display_name": "Life below water"
+          "score": 0.8600000143051147
         }
       ],
       "awards": [],
@@ -55677,9 +55202,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8500000238418579,
-          "display_name": "Life below water"
+          "score": 0.8500000238418579
         }
       ],
       "awards": [],
@@ -56884,9 +56409,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8999999761581421,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8999999761581421
         }
       ],
       "awards": [
@@ -61446,9 +60971,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.41999998688697815,
-          "display_name": "Clean water and sanitation"
+          "score": 0.41999998688697815
         }
       ],
       "awards": [],
@@ -62472,9 +61997,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.5600000023841858,
-          "display_name": "Clean water and sanitation"
+          "score": 0.5600000023841858
         }
       ],
       "awards": [],
@@ -70089,9 +69614,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.6700000166893005,
-          "display_name": "Climate action"
+          "score": 0.6700000166893005
         }
       ],
       "awards": [],
@@ -73409,9 +72934,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8700000047683716,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8700000047683716
         }
       ],
       "awards": [
@@ -75850,9 +75375,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.7699999809265137,
-          "display_name": "Affordable and clean energy"
+          "score": 0.7699999809265137
         }
       ],
       "awards": [],
@@ -76820,9 +76345,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8600000143051147,
-          "display_name": "Life below water"
+          "score": 0.8600000143051147
         }
       ],
       "awards": [],
@@ -79855,9 +79380,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.7400000095367432,
-          "display_name": "Affordable and clean energy"
+          "score": 0.7400000095367432
         }
       ],
       "awards": [],
@@ -80790,9 +80315,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.75,
-          "display_name": "Climate action"
+          "score": 0.75
         }
       ],
       "awards": [],
@@ -84471,9 +83996,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.6499999761581421,
-          "display_name": "Life in Land"
+          "score": 0.6499999761581421
         }
       ],
       "awards": [],
@@ -87720,9 +87245,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.550000011920929,
-          "display_name": "Clean water and sanitation"
+          "score": 0.550000011920929
         }
       ],
       "awards": [],
@@ -91666,9 +91191,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.8100000023841858,
-          "display_name": "Clean water and sanitation"
+          "score": 0.8100000023841858
         }
       ],
       "awards": [],
@@ -94494,9 +94019,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.8999999761581421,
-          "display_name": "Affordable and clean energy"
+          "score": 0.8999999761581421
         }
       ],
       "awards": [],
@@ -97666,9 +97191,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.6800000071525574,
-          "display_name": "Life below water"
+          "score": 0.6800000071525574
         }
       ],
       "awards": [],
@@ -98629,9 +98154,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.5400000214576721,
-          "display_name": "Life in Land"
+          "score": 0.5400000214576721
         }
       ],
       "awards": [],
@@ -101355,9 +100880,9 @@
       },
       "sustainable_development_goals": [
         {
+          "display_name": "Life in Land",
           "id": "https://metadata.un.org/sdg/15",
-          "score": 0.6899999976158142,
-          "display_name": "Life in Land"
+          "score": 0.6899999976158142
         }
       ],
       "awards": [],
@@ -102148,9 +101673,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.9100000262260437,
-          "display_name": "Affordable and clean energy"
+          "score": 0.9100000262260437
         }
       ],
       "awards": [],
@@ -105924,9 +105449,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.4000000059604645,
-          "display_name": "Life below water"
+          "score": 0.4000000059604645
         }
       ],
       "awards": [],
@@ -109129,9 +108654,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.8399999737739563,
-          "display_name": "Climate action"
+          "score": 0.8399999737739563
         }
       ],
       "awards": [],
@@ -110576,9 +110101,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.5,
-          "display_name": "Climate action"
+          "score": 0.5
         }
       ],
       "awards": [],
@@ -111297,9 +110822,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Sustainable cities and communities",
           "id": "https://metadata.un.org/sdg/11",
-          "score": 0.7599999904632568,
-          "display_name": "Sustainable cities and communities"
+          "score": 0.7599999904632568
         }
       ],
       "awards": [],
@@ -112545,9 +112070,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Affordable and clean energy",
           "id": "https://metadata.un.org/sdg/7",
-          "score": 0.75,
-          "display_name": "Affordable and clean energy"
+          "score": 0.75
         }
       ],
       "awards": [],
@@ -117764,9 +117289,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Clean water and sanitation",
           "id": "https://metadata.un.org/sdg/6",
-          "score": 0.6000000238418579,
-          "display_name": "Clean water and sanitation"
+          "score": 0.6000000238418579
         }
       ],
       "awards": [],
@@ -119838,9 +119363,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Life below water",
           "id": "https://metadata.un.org/sdg/14",
-          "score": 0.8399999737739563,
-          "display_name": "Life below water"
+          "score": 0.8399999737739563
         }
       ],
       "awards": [],
@@ -122875,9 +122400,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
+          "display_name": "Climate action",
           "id": "https://metadata.un.org/sdg/13",
-          "score": 0.7400000095367432,
-          "display_name": "Climate action"
+          "score": 0.7400000095367432
         }
       ],
       "awards": [],

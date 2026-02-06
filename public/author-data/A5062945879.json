@@ -10,7 +10,7 @@
       "Mustafa Al-Ramadan"
     ],
     "works_count": 49,
-    "cited_by_count": 652,
+    "cited_by_count": 653,
     "summary_stats": {
       "2yr_mean_citedness": 3.576923076923077,
       "h_index": 15,
@@ -236,7 +236,7 @@
       {
         "id": "https://openalex.org/T11302",
         "display_name": "CO2 Sequestration and Geologic Interactions",
-        "value": 0.0001147,
+        "value": 0.0001146,
         "subfield": {
           "id": "https://openalex.org/subfields/2305",
           "display_name": "Environmental Engineering"
@@ -374,7 +374,7 @@
         "year": 2019,
         "works_count": 5,
         "oa_works_count": 1,
-        "cited_by_count": 153
+        "cited_by_count": 154
       },
       {
         "year": 2020,
@@ -423,7 +423,7 @@
     },
     "block_key": "m al-ramadan",
     "works_api_url": "https://api.openalex.org/works?filter=author.id:A5062945879",
-    "updated_date": "2026-02-04T12:20:26.776081",
+    "updated_date": "2026-02-05T12:22:15.111854",
     "created_date": "2025-10-10"
   },
   "works": [
@@ -1002,9 +1002,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.8600000143051147,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.8600000143051147
         }
       ],
       "awards": [],
@@ -2363,9 +2363,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "display_name": "Life below water",
+          "score": 0.5
         }
       ],
       "awards": [],
@@ -2805,9 +2805,9 @@
       },
       "fwci": 2.93041276,
       "has_fulltext": true,
-      "cited_by_count": 40,
+      "cited_by_count": 41,
       "citation_normalized_percentile": {
-        "value": 0.90346421,
+        "value": 0.90346327,
         "is_in_top_1_percent": false,
         "is_in_top_10_percent": true
       },
@@ -3752,7 +3752,7 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
+          "cited_by_count": 2
         },
         {
           "year": 2025,
@@ -3771,7 +3771,7 @@
           "cited_by_count": 2
         }
       ],
-      "updated_date": "2026-02-05T00:54:17.221276",
+      "updated_date": "2026-02-06T03:54:58.731219",
       "created_date": "2025-10-10T00:00:00"
     },
     {
@@ -4373,9 +4373,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5799999833106995,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "display_name": "Responsible consumption and production",
+          "score": 0.5799999833106995
         }
       ],
       "awards": [],
@@ -6397,839 +6397,6 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
-      "id": "https://openalex.org/W4312184458",
-      "doi": "https://doi.org/10.1007/s13202-022-01596-w",
-      "title": "Review of underbalanced drilling techniques highlighting the advancement of foamed drilling fluids",
-      "display_name": "Review of underbalanced drilling techniques highlighting the advancement of foamed drilling fluids",
-      "publication_year": 2022,
-      "publication_date": "2022-12-22",
-      "ids": {
-        "openalex": "https://openalex.org/W4312184458",
-        "doi": "https://doi.org/10.1007/s13202-022-01596-w"
-      },
-      "language": "en",
-      "primary_location": {
-        "id": "doi:10.1007/s13202-022-01596-w",
-        "is_oa": true,
-        "landing_page_url": "https://doi.org/10.1007/s13202-022-01596-w",
-        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
-        "source": {
-          "id": "https://openalex.org/S2764546325",
-          "display_name": "Journal of Petroleum Exploration and Production Technology",
-          "issn_l": "2190-0558",
-          "issn": [
-            "2190-0558",
-            "2190-0566"
-          ],
-          "is_oa": true,
-          "is_in_doaj": true,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310319965",
-          "host_organization_name": "Springer Nature",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310319965"
-          ],
-          "host_organization_lineage_names": [
-            "Springer Nature"
-          ],
-          "type": "journal"
-        },
-        "license": "cc-by",
-        "license_id": "https://openalex.org/licenses/cc-by",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Journal of Petroleum Exploration and Production Technology",
-        "raw_type": "journal-article"
-      },
-      "type": "article",
-      "indexed_in": [
-        "crossref",
-        "doaj"
-      ],
-      "open_access": {
-        "is_oa": true,
-        "oa_status": "gold",
-        "oa_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
-        "any_repository_has_fulltext": true
-      },
-      "authorships": [
-        {
-          "author_position": "first",
-          "author": {
-            "id": "https://openalex.org/A5013671806",
-            "display_name": "Jawad Al-Darweesh",
-            "orcid": "https://orcid.org/0009-0001-1016-6982"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": true,
-          "raw_author_name": "Jawad Al-Darweesh",
-          "raw_affiliation_strings": [
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5002974432",
-            "display_name": "Murtada Saleh Aljawad",
-            "orcid": "https://orcid.org/0000-0002-3540-6807"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Murtada Saleh Aljawad",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5062945879",
-            "display_name": "Mustafa Al Ramadan",
-            "orcid": "https://orcid.org/0000-0001-9725-1399"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Mustafa Al-Ramadan",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5046818830",
-            "display_name": "Salaheldin Elkatatny",
-            "orcid": "https://orcid.org/0000-0002-7209-3715"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Salaheldin Elkatatny",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "middle",
-          "author": {
-            "id": "https://openalex.org/A5049649985",
-            "display_name": "Mohamed Mahmoud",
-            "orcid": "https://orcid.org/0000-0002-4395-9567"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Mohamed Mahmoud",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        },
-        {
-          "author_position": "last",
-          "author": {
-            "id": "https://openalex.org/A5005252413",
-            "display_name": "Shirish Patil",
-            "orcid": "https://orcid.org/0000-0002-0131-4912"
-          },
-          "institutions": [
-            {
-              "id": "https://openalex.org/I134085113",
-              "display_name": "King Fahd University of Petroleum and Minerals",
-              "ror": "https://ror.org/03yez3163",
-              "country_code": "SA",
-              "type": "education",
-              "lineage": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ],
-          "countries": [
-            "SA"
-          ],
-          "is_corresponding": false,
-          "raw_author_name": "Shirish Patil",
-          "raw_affiliation_strings": [
-            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
-          ],
-          "affiliations": [
-            {
-              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            },
-            {
-              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
-              "institution_ids": [
-                "https://openalex.org/I134085113"
-              ]
-            }
-          ]
-        }
-      ],
-      "institutions": [],
-      "countries_distinct_count": 1,
-      "institutions_distinct_count": 6,
-      "corresponding_author_ids": [
-        "https://openalex.org/A5013671806"
-      ],
-      "corresponding_institution_ids": [
-        "https://openalex.org/I134085113"
-      ],
-      "apc_list": {
-        "value": 1570,
-        "currency": "EUR",
-        "value_usd": 1930
-      },
-      "apc_paid": {
-        "value": 1570,
-        "currency": "EUR",
-        "value_usd": 1930
-      },
-      "fwci": 4.40806153,
-      "has_fulltext": true,
-      "cited_by_count": 26,
-      "citation_normalized_percentile": {
-        "value": 0.93313838,
-        "is_in_top_1_percent": false,
-        "is_in_top_10_percent": true
-      },
-      "cited_by_percentile_year": {
-        "min": 98,
-        "max": 100
-      },
-      "biblio": {
-        "volume": "13",
-        "issue": "4",
-        "first_page": "929",
-        "last_page": "958"
-      },
-      "is_retracted": false,
-      "is_paratext": false,
-      "is_xpac": false,
-      "primary_topic": {
-        "id": "https://openalex.org/T10892",
-        "display_name": "Drilling and Well Engineering",
-        "score": 1,
-        "subfield": {
-          "id": "https://openalex.org/subfields/2212",
-          "display_name": "Ocean Engineering"
-        },
-        "field": {
-          "id": "https://openalex.org/fields/22",
-          "display_name": "Engineering"
-        },
-        "domain": {
-          "id": "https://openalex.org/domains/3",
-          "display_name": "Physical Sciences"
-        }
-      },
-      "topics": [
-        {
-          "id": "https://openalex.org/T10892",
-          "display_name": "Drilling and Well Engineering",
-          "score": 1,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10635",
-          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
-          "score": 0.9993000030517578,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2210",
-            "display_name": "Mechanical Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        },
-        {
-          "id": "https://openalex.org/T10491",
-          "display_name": "Enhanced Oil Recovery Techniques",
-          "score": 0.9990000128746033,
-          "subfield": {
-            "id": "https://openalex.org/subfields/2212",
-            "display_name": "Ocean Engineering"
-          },
-          "field": {
-            "id": "https://openalex.org/fields/22",
-            "display_name": "Engineering"
-          },
-          "domain": {
-            "id": "https://openalex.org/domains/3",
-            "display_name": "Physical Sciences"
-          }
-        }
-      ],
-      "keywords": [
-        {
-          "id": "https://openalex.org/keywords/underbalanced-drilling",
-          "display_name": "Underbalanced drilling",
-          "score": 0.9405238032341003
-        },
-        {
-          "id": "https://openalex.org/keywords/petroleum-engineering",
-          "display_name": "Petroleum engineering",
-          "score": 0.7631865739822388
-        },
-        {
-          "id": "https://openalex.org/keywords/drilling",
-          "display_name": "Drilling",
-          "score": 0.6466946601867676
-        },
-        {
-          "id": "https://openalex.org/keywords/drilling-fluid",
-          "display_name": "Drilling fluid",
-          "score": 0.6385890245437622
-        },
-        {
-          "id": "https://openalex.org/keywords/hydraulic-fracturing",
-          "display_name": "Hydraulic fracturing",
-          "score": 0.5920994281768799
-        },
-        {
-          "id": "https://openalex.org/keywords/lost-circulation",
-          "display_name": "Lost circulation",
-          "score": 0.46176236867904663
-        },
-        {
-          "id": "https://openalex.org/keywords/geology",
-          "display_name": "Geology",
-          "score": 0.3461650013923645
-        },
-        {
-          "id": "https://openalex.org/keywords/engineering",
-          "display_name": "Engineering",
-          "score": 0.3210420608520508
-        },
-        {
-          "id": "https://openalex.org/keywords/mechanical-engineering",
-          "display_name": "Mechanical engineering",
-          "score": 0.1781841218471527
-        }
-      ],
-      "concepts": [
-        {
-          "id": "https://openalex.org/C141813653",
-          "wikidata": "https://www.wikidata.org/wiki/Q7883440",
-          "display_name": "Underbalanced drilling",
-          "level": 4,
-          "score": 0.9405238032341003
-        },
-        {
-          "id": "https://openalex.org/C78762247",
-          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
-          "display_name": "Petroleum engineering",
-          "level": 1,
-          "score": 0.7631865739822388
-        },
-        {
-          "id": "https://openalex.org/C25197100",
-          "wikidata": "https://www.wikidata.org/wiki/Q890886",
-          "display_name": "Drilling",
-          "level": 2,
-          "score": 0.6466946601867676
-        },
-        {
-          "id": "https://openalex.org/C152068911",
-          "wikidata": "https://www.wikidata.org/wiki/Q890914",
-          "display_name": "Drilling fluid",
-          "level": 3,
-          "score": 0.6385890245437622
-        },
-        {
-          "id": "https://openalex.org/C2779096232",
-          "wikidata": "https://www.wikidata.org/wiki/Q890794",
-          "display_name": "Hydraulic fracturing",
-          "level": 2,
-          "score": 0.5920994281768799
-        },
-        {
-          "id": "https://openalex.org/C2779439521",
-          "wikidata": "https://www.wikidata.org/wiki/Q17146786",
-          "display_name": "Lost circulation",
-          "level": 4,
-          "score": 0.46176236867904663
-        },
-        {
-          "id": "https://openalex.org/C127313418",
-          "wikidata": "https://www.wikidata.org/wiki/Q1069",
-          "display_name": "Geology",
-          "level": 0,
-          "score": 0.3461650013923645
-        },
-        {
-          "id": "https://openalex.org/C127413603",
-          "wikidata": "https://www.wikidata.org/wiki/Q11023",
-          "display_name": "Engineering",
-          "level": 0,
-          "score": 0.3210420608520508
-        },
-        {
-          "id": "https://openalex.org/C78519656",
-          "wikidata": "https://www.wikidata.org/wiki/Q101333",
-          "display_name": "Mechanical engineering",
-          "level": 1,
-          "score": 0.1781841218471527
-        }
-      ],
-      "mesh": [],
-      "locations_count": 2,
-      "locations": [
-        {
-          "id": "doi:10.1007/s13202-022-01596-w",
-          "is_oa": true,
-          "landing_page_url": "https://doi.org/10.1007/s13202-022-01596-w",
-          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
-          "source": {
-            "id": "https://openalex.org/S2764546325",
-            "display_name": "Journal of Petroleum Exploration and Production Technology",
-            "issn_l": "2190-0558",
-            "issn": [
-              "2190-0558",
-              "2190-0566"
-            ],
-            "is_oa": true,
-            "is_in_doaj": true,
-            "is_core": true,
-            "host_organization": "https://openalex.org/P4310319965",
-            "host_organization_name": "Springer Nature",
-            "host_organization_lineage": [
-              "https://openalex.org/P4310319965"
-            ],
-            "host_organization_lineage_names": [
-              "Springer Nature"
-            ],
-            "type": "journal"
-          },
-          "license": "cc-by",
-          "license_id": "https://openalex.org/licenses/cc-by",
-          "version": "publishedVersion",
-          "is_accepted": true,
-          "is_published": true,
-          "raw_source_name": "Journal of Petroleum Exploration and Production Technology",
-          "raw_type": "journal-article"
-        },
-        {
-          "id": "pmh:oai:doaj.org/article:d0b77dc35b7148d4abd0d35991d08b0e",
-          "is_oa": true,
-          "landing_page_url": "https://doaj.org/article/d0b77dc35b7148d4abd0d35991d08b0e",
-          "pdf_url": null,
-          "source": {
-            "id": "https://openalex.org/S112646816",
-            "display_name": "SHILAP Revista de lepidopterología",
-            "issn_l": "0300-5267",
-            "issn": [
-              "0300-5267",
-              "2340-4078"
-            ],
-            "is_oa": true,
-            "is_in_doaj": true,
-            "is_core": false,
-            "host_organization": null,
-            "host_organization_name": null,
-            "host_organization_lineage": [],
-            "host_organization_lineage_names": [],
-            "type": "journal"
-          },
-          "license": "cc-by",
-          "license_id": "https://openalex.org/licenses/cc-by",
-          "version": "submittedVersion",
-          "is_accepted": false,
-          "is_published": false,
-          "raw_source_name": "Journal of Petroleum Exploration and Production Technology, Vol 13, Iss 4, Pp 929-958 (2022)",
-          "raw_type": "article"
-        }
-      ],
-      "best_oa_location": {
-        "id": "doi:10.1007/s13202-022-01596-w",
-        "is_oa": true,
-        "landing_page_url": "https://doi.org/10.1007/s13202-022-01596-w",
-        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
-        "source": {
-          "id": "https://openalex.org/S2764546325",
-          "display_name": "Journal of Petroleum Exploration and Production Technology",
-          "issn_l": "2190-0558",
-          "issn": [
-            "2190-0558",
-            "2190-0566"
-          ],
-          "is_oa": true,
-          "is_in_doaj": true,
-          "is_core": true,
-          "host_organization": "https://openalex.org/P4310319965",
-          "host_organization_name": "Springer Nature",
-          "host_organization_lineage": [
-            "https://openalex.org/P4310319965"
-          ],
-          "host_organization_lineage_names": [
-            "Springer Nature"
-          ],
-          "type": "journal"
-        },
-        "license": "cc-by",
-        "license_id": "https://openalex.org/licenses/cc-by",
-        "version": "publishedVersion",
-        "is_accepted": true,
-        "is_published": true,
-        "raw_source_name": "Journal of Petroleum Exploration and Production Technology",
-        "raw_type": "journal-article"
-      },
-      "sustainable_development_goals": [],
-      "awards": [],
-      "funders": [],
-      "has_content": {
-        "pdf": true,
-        "grobid_xml": true
-      },
-      "content_urls": {
-        "pdf": "https://content.openalex.org/works/W4312184458.pdf",
-        "grobid_xml": "https://content.openalex.org/works/W4312184458.grobid-xml"
-      },
-      "referenced_works_count": 151,
-      "referenced_works": [
-        "https://openalex.org/W222185121",
-        "https://openalex.org/W590525886",
-        "https://openalex.org/W903115585",
-        "https://openalex.org/W1908670584",
-        "https://openalex.org/W1964475965",
-        "https://openalex.org/W1964632359",
-        "https://openalex.org/W1966494434",
-        "https://openalex.org/W1967306881",
-        "https://openalex.org/W1967551607",
-        "https://openalex.org/W1967659169",
-        "https://openalex.org/W1967729993",
-        "https://openalex.org/W1969695074",
-        "https://openalex.org/W1969963392",
-        "https://openalex.org/W1973398056",
-        "https://openalex.org/W1973413454",
-        "https://openalex.org/W1974922219",
-        "https://openalex.org/W1975277025",
-        "https://openalex.org/W1976130003",
-        "https://openalex.org/W1976597076",
-        "https://openalex.org/W1978275813",
-        "https://openalex.org/W1983496123",
-        "https://openalex.org/W1983601998",
-        "https://openalex.org/W1983688517",
-        "https://openalex.org/W1983998355",
-        "https://openalex.org/W1988586948",
-        "https://openalex.org/W1990641964",
-        "https://openalex.org/W1991493061",
-        "https://openalex.org/W1993204995",
-        "https://openalex.org/W1994365154",
-        "https://openalex.org/W1998480987",
-        "https://openalex.org/W1998833413",
-        "https://openalex.org/W1999252234",
-        "https://openalex.org/W1999576258",
-        "https://openalex.org/W2002795408",
-        "https://openalex.org/W2005013561",
-        "https://openalex.org/W2005582122",
-        "https://openalex.org/W2006441480",
-        "https://openalex.org/W2007039853",
-        "https://openalex.org/W2008005271",
-        "https://openalex.org/W2008915050",
-        "https://openalex.org/W2009313790",
-        "https://openalex.org/W2009727710",
-        "https://openalex.org/W2011099752",
-        "https://openalex.org/W2014474391",
-        "https://openalex.org/W2021516115",
-        "https://openalex.org/W2028105967",
-        "https://openalex.org/W2034197608",
-        "https://openalex.org/W2035810403",
-        "https://openalex.org/W2035901938",
-        "https://openalex.org/W2036138104",
-        "https://openalex.org/W2041345802",
-        "https://openalex.org/W2042391277",
-        "https://openalex.org/W2043096575",
-        "https://openalex.org/W2043984519",
-        "https://openalex.org/W2044461197",
-        "https://openalex.org/W2049027862",
-        "https://openalex.org/W2050151757",
-        "https://openalex.org/W2052030816",
-        "https://openalex.org/W2054320770",
-        "https://openalex.org/W2054783175",
-        "https://openalex.org/W2057046656",
-        "https://openalex.org/W2060312056",
-        "https://openalex.org/W2060848461",
-        "https://openalex.org/W2060987020",
-        "https://openalex.org/W2061290826",
-        "https://openalex.org/W2061944432",
-        "https://openalex.org/W2070650269",
-        "https://openalex.org/W2071508069",
-        "https://openalex.org/W2072017715",
-        "https://openalex.org/W2072642630",
-        "https://openalex.org/W2073629282",
-        "https://openalex.org/W2074526409",
-        "https://openalex.org/W2074945292",
-        "https://openalex.org/W2076175891",
-        "https://openalex.org/W2076370177",
-        "https://openalex.org/W2077657538",
-        "https://openalex.org/W2082964201",
-        "https://openalex.org/W2083276563",
-        "https://openalex.org/W2083736442",
-        "https://openalex.org/W2085111518",
-        "https://openalex.org/W2087604195",
-        "https://openalex.org/W2090954855",
-        "https://openalex.org/W2091650203",
-        "https://openalex.org/W2094588999",
-        "https://openalex.org/W2094618462",
-        "https://openalex.org/W2100277821",
-        "https://openalex.org/W2114298308",
-        "https://openalex.org/W2135406757",
-        "https://openalex.org/W2160601265",
-        "https://openalex.org/W2165508313",
-        "https://openalex.org/W2193873185",
-        "https://openalex.org/W2211718399",
-        "https://openalex.org/W2274751490",
-        "https://openalex.org/W2315337499",
-        "https://openalex.org/W2329197983",
-        "https://openalex.org/W2336582360",
-        "https://openalex.org/W2383448293",
-        "https://openalex.org/W2416978327",
-        "https://openalex.org/W2480275681",
-        "https://openalex.org/W2480622921",
-        "https://openalex.org/W2491501683",
-        "https://openalex.org/W2526325212",
-        "https://openalex.org/W2541972526",
-        "https://openalex.org/W2585513751",
-        "https://openalex.org/W2606843412",
-        "https://openalex.org/W2746403518",
-        "https://openalex.org/W2754459625",
-        "https://openalex.org/W2775492902",
-        "https://openalex.org/W2780494970",
-        "https://openalex.org/W2782697536",
-        "https://openalex.org/W2787872396",
-        "https://openalex.org/W2791862524",
-        "https://openalex.org/W2801537917",
-        "https://openalex.org/W2883689805",
-        "https://openalex.org/W2886356181",
-        "https://openalex.org/W2887684291",
-        "https://openalex.org/W2896442476",
-        "https://openalex.org/W2896619613",
-        "https://openalex.org/W2896788935",
-        "https://openalex.org/W2907480221",
-        "https://openalex.org/W2945835414",
-        "https://openalex.org/W2947475442",
-        "https://openalex.org/W2953506880",
-        "https://openalex.org/W2969436971",
-        "https://openalex.org/W2977814999",
-        "https://openalex.org/W2989961106",
-        "https://openalex.org/W2999186669",
-        "https://openalex.org/W2999727377",
-        "https://openalex.org/W3000003074",
-        "https://openalex.org/W3000314706",
-        "https://openalex.org/W3018638162",
-        "https://openalex.org/W3038006756",
-        "https://openalex.org/W3040891920",
-        "https://openalex.org/W3043170912",
-        "https://openalex.org/W3096802561",
-        "https://openalex.org/W3119128573",
-        "https://openalex.org/W3153105019",
-        "https://openalex.org/W3172004638",
-        "https://openalex.org/W3181900015",
-        "https://openalex.org/W3197494787",
-        "https://openalex.org/W4210691301",
-        "https://openalex.org/W4213281390",
-        "https://openalex.org/W4214829912",
-        "https://openalex.org/W4220674738",
-        "https://openalex.org/W4225135594",
-        "https://openalex.org/W4226506544",
-        "https://openalex.org/W4244682767",
-        "https://openalex.org/W4249945392",
-        "https://openalex.org/W4250913164",
-        "https://openalex.org/W4254773224",
-        "https://openalex.org/W4302344771"
-      ],
-      "related_works": [
-        "https://openalex.org/W2014474391",
-        "https://openalex.org/W2371997375",
-        "https://openalex.org/W2388321662",
-        "https://openalex.org/W2389973240",
-        "https://openalex.org/W3173730130",
-        "https://openalex.org/W2010770739",
-        "https://openalex.org/W2375930932",
-        "https://openalex.org/W2353077041",
-        "https://openalex.org/W2374025176",
-        "https://openalex.org/W2067573398"
-      ],
-      "abstract_inverted_index": null,
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2025,
-          "cited_by_count": 10
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 7
-        },
-        {
-          "year": 2023,
-          "cited_by_count": 8
-        }
-      ],
-      "updated_date": "2026-02-05T00:54:17.221276",
-      "created_date": "2025-10-10T00:00:00"
-    },
-    {
       "id": "https://openalex.org/W4200559949",
       "doi": "https://doi.org/10.1021/acsomega.1c05566",
       "title": "Numerical Modeling of Gas Migration through Cement Sheath and Microannulus",
@@ -7905,9 +7072,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.5699999928474426,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "display_name": "Responsible consumption and production",
+          "score": 0.5699999928474426
         }
       ],
       "awards": [],
@@ -9211,9 +8378,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5600000023841858,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.5600000023841858
         }
       ],
       "awards": [],
@@ -9924,9 +9091,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.4699999988079071,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.4699999988079071
         }
       ],
       "awards": [],
@@ -13613,9 +12780,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.6800000071525574,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.6800000071525574
         }
       ],
       "awards": [],
@@ -16212,9 +15379,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.8899999856948853,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "display_name": "Life below water",
+          "score": 0.8899999856948853
         }
       ],
       "awards": [
@@ -17852,9 +17019,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.4699999988079071,
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "display_name": "Industry, innovation and infrastructure",
+          "score": 0.4699999988079071
         }
       ],
       "awards": [],
@@ -22993,14 +22160,14 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.49000000953674316,
           "id": "https://metadata.un.org/sdg/15",
-          "display_name": "Life in Land"
+          "display_name": "Life in Land",
+          "score": 0.49000000953674316
         },
         {
-          "score": 0.4099999964237213,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "display_name": "Responsible consumption and production",
+          "score": 0.4099999964237213
         }
       ],
       "awards": [],
@@ -25150,9 +24317,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.8600000143051147,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.8600000143051147
         }
       ],
       "awards": [],
@@ -25913,6 +25080,1224 @@
       "created_date": "2025-10-10T00:00:00"
     },
     {
+      "id": "https://openalex.org/W4312184458",
+      "doi": "https://doi.org/10.1007/s13202-022-01596-w",
+      "title": "Review of underbalanced drilling techniques highlighting the advancement of foamed drilling fluids",
+      "display_name": "Review of underbalanced drilling techniques highlighting the advancement of foamed drilling fluids",
+      "publication_year": 2022,
+      "publication_date": "2022-12-22",
+      "ids": {
+        "openalex": "https://openalex.org/W4312184458",
+        "doi": "https://doi.org/10.1007/s13202-022-01596-w"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1007/s13202-022-01596-w",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s13202-022-01596-w",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
+        "source": {
+          "id": "https://openalex.org/S2764546325",
+          "display_name": "Journal of Petroleum Exploration and Production Technology",
+          "issn_l": "2190-0558",
+          "issn": [
+            "2190-0558",
+            "2190-0566"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319965",
+          "host_organization_name": "Springer Nature",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Petroleum Exploration and Production Technology",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "doaj"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5013671806",
+            "display_name": "Jawad Al-Darweesh",
+            "orcid": "https://orcid.org/0009-0001-1016-6982"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Jawad Al-Darweesh",
+          "raw_affiliation_strings": [
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002974432",
+            "display_name": "Murtada Saleh Aljawad",
+            "orcid": "https://orcid.org/0000-0002-3540-6807"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Murtada Saleh Aljawad",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5062945879",
+            "display_name": "Mustafa Al Ramadan",
+            "orcid": "https://orcid.org/0000-0001-9725-1399"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mustafa Al-Ramadan",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5046818830",
+            "display_name": "Salaheldin Elkatatny",
+            "orcid": "https://orcid.org/0000-0002-7209-3715"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Salaheldin Elkatatny",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049649985",
+            "display_name": "Mohamed Mahmoud",
+            "orcid": "https://orcid.org/0000-0002-4395-9567"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mohamed Mahmoud",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5005252413",
+            "display_name": "Shirish Patil",
+            "orcid": "https://orcid.org/0000-0002-0131-4912"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I134085113",
+              "display_name": "King Fahd University of Petroleum and Minerals",
+              "ror": "https://ror.org/03yez3163",
+              "country_code": "SA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ],
+          "countries": [
+            "SA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Shirish Patil",
+          "raw_affiliation_strings": [
+            "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+            "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia"
+          ],
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Petroleum Engineering, King Fahd University of Petroleum and Minerals, Dhahran, 31261, Saudi Arabia",
+              "institution_ids": [
+                "https://openalex.org/I134085113"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 6,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5013671806"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I134085113"
+      ],
+      "apc_list": {
+        "value": 1570,
+        "currency": "EUR",
+        "value_usd": 1930
+      },
+      "apc_paid": {
+        "value": 1570,
+        "currency": "EUR",
+        "value_usd": 1930
+      },
+      "fwci": 4.40806153,
+      "has_fulltext": true,
+      "cited_by_count": 26,
+      "citation_normalized_percentile": {
+        "value": 0.93314726,
+        "is_in_top_1_percent": false,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 98,
+        "max": 99
+      },
+      "biblio": {
+        "volume": "13",
+        "issue": "4",
+        "first_page": "929",
+        "last_page": "958"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10892",
+        "display_name": "Drilling and Well Engineering",
+        "score": 1,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2212",
+          "display_name": "Ocean Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10892",
+          "display_name": "Drilling and Well Engineering",
+          "score": 1,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10635",
+          "display_name": "Hydraulic Fracturing and Reservoir Analysis",
+          "score": 0.9993000030517578,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2210",
+            "display_name": "Mechanical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10491",
+          "display_name": "Enhanced Oil Recovery Techniques",
+          "score": 0.9990000128746033,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2212",
+            "display_name": "Ocean Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/underbalanced-drilling",
+          "display_name": "Underbalanced drilling",
+          "score": 0.9405238032341003
+        },
+        {
+          "id": "https://openalex.org/keywords/petroleum-engineering",
+          "display_name": "Petroleum engineering",
+          "score": 0.7631865739822388
+        },
+        {
+          "id": "https://openalex.org/keywords/drilling",
+          "display_name": "Drilling",
+          "score": 0.6466946601867676
+        },
+        {
+          "id": "https://openalex.org/keywords/drilling-fluid",
+          "display_name": "Drilling fluid",
+          "score": 0.6385890245437622
+        },
+        {
+          "id": "https://openalex.org/keywords/hydraulic-fracturing",
+          "display_name": "Hydraulic fracturing",
+          "score": 0.5920994281768799
+        },
+        {
+          "id": "https://openalex.org/keywords/lost-circulation",
+          "display_name": "Lost circulation",
+          "score": 0.46176236867904663
+        },
+        {
+          "id": "https://openalex.org/keywords/geology",
+          "display_name": "Geology",
+          "score": 0.3461650013923645
+        },
+        {
+          "id": "https://openalex.org/keywords/engineering",
+          "display_name": "Engineering",
+          "score": 0.3210420608520508
+        },
+        {
+          "id": "https://openalex.org/keywords/mechanical-engineering",
+          "display_name": "Mechanical engineering",
+          "score": 0.1781841218471527
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C141813653",
+          "wikidata": "https://www.wikidata.org/wiki/Q7883440",
+          "display_name": "Underbalanced drilling",
+          "level": 4,
+          "score": 0.9405238032341003
+        },
+        {
+          "id": "https://openalex.org/C78762247",
+          "wikidata": "https://www.wikidata.org/wiki/Q1273174",
+          "display_name": "Petroleum engineering",
+          "level": 1,
+          "score": 0.7631865739822388
+        },
+        {
+          "id": "https://openalex.org/C25197100",
+          "wikidata": "https://www.wikidata.org/wiki/Q890886",
+          "display_name": "Drilling",
+          "level": 2,
+          "score": 0.6466946601867676
+        },
+        {
+          "id": "https://openalex.org/C152068911",
+          "wikidata": "https://www.wikidata.org/wiki/Q890914",
+          "display_name": "Drilling fluid",
+          "level": 3,
+          "score": 0.6385890245437622
+        },
+        {
+          "id": "https://openalex.org/C2779096232",
+          "wikidata": "https://www.wikidata.org/wiki/Q890794",
+          "display_name": "Hydraulic fracturing",
+          "level": 2,
+          "score": 0.5920994281768799
+        },
+        {
+          "id": "https://openalex.org/C2779439521",
+          "wikidata": "https://www.wikidata.org/wiki/Q17146786",
+          "display_name": "Lost circulation",
+          "level": 4,
+          "score": 0.46176236867904663
+        },
+        {
+          "id": "https://openalex.org/C127313418",
+          "wikidata": "https://www.wikidata.org/wiki/Q1069",
+          "display_name": "Geology",
+          "level": 0,
+          "score": 0.3461650013923645
+        },
+        {
+          "id": "https://openalex.org/C127413603",
+          "wikidata": "https://www.wikidata.org/wiki/Q11023",
+          "display_name": "Engineering",
+          "level": 0,
+          "score": 0.3210420608520508
+        },
+        {
+          "id": "https://openalex.org/C78519656",
+          "wikidata": "https://www.wikidata.org/wiki/Q101333",
+          "display_name": "Mechanical engineering",
+          "level": 1,
+          "score": 0.1781841218471527
+        }
+      ],
+      "mesh": [],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.1007/s13202-022-01596-w",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1007/s13202-022-01596-w",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
+          "source": {
+            "id": "https://openalex.org/S2764546325",
+            "display_name": "Journal of Petroleum Exploration and Production Technology",
+            "issn_l": "2190-0558",
+            "issn": [
+              "2190-0558",
+              "2190-0566"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319965",
+            "host_organization_name": "Springer Nature",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Journal of Petroleum Exploration and Production Technology",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:d0b77dc35b7148d4abd0d35991d08b0e",
+          "is_oa": true,
+          "landing_page_url": "https://doaj.org/article/d0b77dc35b7148d4abd0d35991d08b0e",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S112646816",
+            "display_name": "SHILAP Revista de lepidopterología",
+            "issn_l": "0300-5267",
+            "issn": [
+              "0300-5267",
+              "2340-4078"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_core": false,
+            "host_organization": null,
+            "host_organization_name": null,
+            "host_organization_lineage": [],
+            "host_organization_lineage_names": [],
+            "type": "journal"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Journal of Petroleum Exploration and Production Technology, Vol 13, Iss 4, Pp 929-958 (2022)",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1007/s13202-022-01596-w",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1007/s13202-022-01596-w",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13202-022-01596-w.pdf",
+        "source": {
+          "id": "https://openalex.org/S2764546325",
+          "display_name": "Journal of Petroleum Exploration and Production Technology",
+          "issn_l": "2190-0558",
+          "issn": [
+            "2190-0558",
+            "2190-0566"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319965",
+          "host_organization_name": "Springer Nature",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Petroleum Exploration and Production Technology",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W4312184458.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W4312184458.grobid-xml"
+      },
+      "referenced_works_count": 151,
+      "referenced_works": [
+        "https://openalex.org/W222185121",
+        "https://openalex.org/W590525886",
+        "https://openalex.org/W903115585",
+        "https://openalex.org/W1908670584",
+        "https://openalex.org/W1964475965",
+        "https://openalex.org/W1964632359",
+        "https://openalex.org/W1966494434",
+        "https://openalex.org/W1967306881",
+        "https://openalex.org/W1967551607",
+        "https://openalex.org/W1967659169",
+        "https://openalex.org/W1967729993",
+        "https://openalex.org/W1969695074",
+        "https://openalex.org/W1969963392",
+        "https://openalex.org/W1973398056",
+        "https://openalex.org/W1973413454",
+        "https://openalex.org/W1974922219",
+        "https://openalex.org/W1975277025",
+        "https://openalex.org/W1976130003",
+        "https://openalex.org/W1976597076",
+        "https://openalex.org/W1978275813",
+        "https://openalex.org/W1983496123",
+        "https://openalex.org/W1983601998",
+        "https://openalex.org/W1983688517",
+        "https://openalex.org/W1983998355",
+        "https://openalex.org/W1988586948",
+        "https://openalex.org/W1990641964",
+        "https://openalex.org/W1991493061",
+        "https://openalex.org/W1993204995",
+        "https://openalex.org/W1994365154",
+        "https://openalex.org/W1998480987",
+        "https://openalex.org/W1998833413",
+        "https://openalex.org/W1999252234",
+        "https://openalex.org/W1999576258",
+        "https://openalex.org/W2002795408",
+        "https://openalex.org/W2005013561",
+        "https://openalex.org/W2005582122",
+        "https://openalex.org/W2006441480",
+        "https://openalex.org/W2007039853",
+        "https://openalex.org/W2008005271",
+        "https://openalex.org/W2008915050",
+        "https://openalex.org/W2009313790",
+        "https://openalex.org/W2009727710",
+        "https://openalex.org/W2011099752",
+        "https://openalex.org/W2014474391",
+        "https://openalex.org/W2021516115",
+        "https://openalex.org/W2028105967",
+        "https://openalex.org/W2034197608",
+        "https://openalex.org/W2035810403",
+        "https://openalex.org/W2035901938",
+        "https://openalex.org/W2036138104",
+        "https://openalex.org/W2041345802",
+        "https://openalex.org/W2042391277",
+        "https://openalex.org/W2043096575",
+        "https://openalex.org/W2043984519",
+        "https://openalex.org/W2044461197",
+        "https://openalex.org/W2049027862",
+        "https://openalex.org/W2050151757",
+        "https://openalex.org/W2052030816",
+        "https://openalex.org/W2054320770",
+        "https://openalex.org/W2054783175",
+        "https://openalex.org/W2057046656",
+        "https://openalex.org/W2060312056",
+        "https://openalex.org/W2060848461",
+        "https://openalex.org/W2060987020",
+        "https://openalex.org/W2061290826",
+        "https://openalex.org/W2061944432",
+        "https://openalex.org/W2070650269",
+        "https://openalex.org/W2071508069",
+        "https://openalex.org/W2072017715",
+        "https://openalex.org/W2072642630",
+        "https://openalex.org/W2073629282",
+        "https://openalex.org/W2074526409",
+        "https://openalex.org/W2074945292",
+        "https://openalex.org/W2076175891",
+        "https://openalex.org/W2076370177",
+        "https://openalex.org/W2077657538",
+        "https://openalex.org/W2082964201",
+        "https://openalex.org/W2083276563",
+        "https://openalex.org/W2083736442",
+        "https://openalex.org/W2085111518",
+        "https://openalex.org/W2087604195",
+        "https://openalex.org/W2090954855",
+        "https://openalex.org/W2091650203",
+        "https://openalex.org/W2094588999",
+        "https://openalex.org/W2094618462",
+        "https://openalex.org/W2100277821",
+        "https://openalex.org/W2114298308",
+        "https://openalex.org/W2135406757",
+        "https://openalex.org/W2160601265",
+        "https://openalex.org/W2165508313",
+        "https://openalex.org/W2193873185",
+        "https://openalex.org/W2211718399",
+        "https://openalex.org/W2274751490",
+        "https://openalex.org/W2315337499",
+        "https://openalex.org/W2329197983",
+        "https://openalex.org/W2336582360",
+        "https://openalex.org/W2383448293",
+        "https://openalex.org/W2416978327",
+        "https://openalex.org/W2480275681",
+        "https://openalex.org/W2480622921",
+        "https://openalex.org/W2491501683",
+        "https://openalex.org/W2526325212",
+        "https://openalex.org/W2541972526",
+        "https://openalex.org/W2585513751",
+        "https://openalex.org/W2606843412",
+        "https://openalex.org/W2746403518",
+        "https://openalex.org/W2754459625",
+        "https://openalex.org/W2775492902",
+        "https://openalex.org/W2780494970",
+        "https://openalex.org/W2782697536",
+        "https://openalex.org/W2787872396",
+        "https://openalex.org/W2791862524",
+        "https://openalex.org/W2801537917",
+        "https://openalex.org/W2883689805",
+        "https://openalex.org/W2886356181",
+        "https://openalex.org/W2887684291",
+        "https://openalex.org/W2896442476",
+        "https://openalex.org/W2896619613",
+        "https://openalex.org/W2896788935",
+        "https://openalex.org/W2907480221",
+        "https://openalex.org/W2945835414",
+        "https://openalex.org/W2947475442",
+        "https://openalex.org/W2953506880",
+        "https://openalex.org/W2969436971",
+        "https://openalex.org/W2977814999",
+        "https://openalex.org/W2989961106",
+        "https://openalex.org/W2999186669",
+        "https://openalex.org/W2999727377",
+        "https://openalex.org/W3000003074",
+        "https://openalex.org/W3000314706",
+        "https://openalex.org/W3018638162",
+        "https://openalex.org/W3038006756",
+        "https://openalex.org/W3040891920",
+        "https://openalex.org/W3043170912",
+        "https://openalex.org/W3096802561",
+        "https://openalex.org/W3119128573",
+        "https://openalex.org/W3153105019",
+        "https://openalex.org/W3172004638",
+        "https://openalex.org/W3181900015",
+        "https://openalex.org/W3197494787",
+        "https://openalex.org/W4210691301",
+        "https://openalex.org/W4213281390",
+        "https://openalex.org/W4214829912",
+        "https://openalex.org/W4220674738",
+        "https://openalex.org/W4225135594",
+        "https://openalex.org/W4226506544",
+        "https://openalex.org/W4244682767",
+        "https://openalex.org/W4249945392",
+        "https://openalex.org/W4250913164",
+        "https://openalex.org/W4254773224",
+        "https://openalex.org/W4302344771"
+      ],
+      "related_works": [
+        "https://openalex.org/W2014474391",
+        "https://openalex.org/W2371997375",
+        "https://openalex.org/W2388321662",
+        "https://openalex.org/W2389973240",
+        "https://openalex.org/W3173730130",
+        "https://openalex.org/W2010770739",
+        "https://openalex.org/W2375930932",
+        "https://openalex.org/W2353077041",
+        "https://openalex.org/W2374025176",
+        "https://openalex.org/W2067573398"
+      ],
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Overbalanced": [
+          1
+        ],
+        "drilling": [
+          2,
+          7,
+          41,
+          48,
+          63,
+          134,
+          153
+        ],
+        "is": [
+          3,
+          51,
+          104
+        ],
+        "the": [
+          4,
+          39,
+          121,
+          133
+        ],
+        "most": [
+          5
+        ],
+        "common": [
+          6,
+          26
+        ],
+        "technique;": [
+          8
+        ],
+        "nevertheless,": [
+          9
+        ],
+        "it": [
+          10,
+          103
+        ],
+        "has": [
+          11
+        ],
+        "several": [
+          12
+        ],
+        "disadvantages": [
+          13,
+          126
+        ],
+        "such": [
+          14
+        ],
+        "as": [
+          15
+        ],
+        "formation": [
+          16
+        ],
+        "damage,": [
+          17
+        ],
+        "mud": [
+          18
+        ],
+        "losses,": [
+          19
+        ],
+        "and": [
+          20,
+          31,
+          59,
+          71,
+          81,
+          88,
+          99,
+          114,
+          125,
+          139
+        ],
+        "stuck": [
+          21
+        ],
+        "pipes;": [
+          22
+        ],
+        "challenges": [
+          23
+        ],
+        "that": [
+          24
+        ],
+        "are": [
+          25,
+          65
+        ],
+        "in": [
+          27,
+          54,
+          68,
+          95
+        ],
+        "high": [
+          28
+        ],
+        "permeability": [
+          29
+        ],
+        "zones": [
+          30
+        ],
+        "highly": [
+          32
+        ],
+        "fractured": [
+          33
+        ],
+        "formations.": [
+          34,
+          61
+        ],
+        "To": [
+          35
+        ],
+        "overcome": [
+          36
+        ],
+        "those": [
+          37
+        ],
+        "issues,": [
+          38
+        ],
+        "underbalanced": [
+          40,
+          47
+        ],
+        "method": [
+          42
+        ],
+        "could": [
+          43,
+          72
+        ],
+        "be": [
+          44,
+          73
+        ],
+        "implemented.": [
+          45
+        ],
+        "The": [
+          46
+        ],
+        "(UBD)": [
+          49
+        ],
+        "technique": [
+          50
+        ],
+        "widely": [
+          52
+        ],
+        "utilized": [
+          53
+        ],
+        "hard,": [
+          55
+        ],
+        "under": [
+          56
+        ],
+        "pressure,": [
+          57
+        ],
+        "depleted,": [
+          58
+        ],
+        "fractured/vuggy": [
+          60
+        ],
+        "Low-density": [
+          62
+        ],
+        "fluids": [
+          64,
+          154
+        ],
+        "usually": [
+          66
+        ],
+        "used": [
+          67
+        ],
+        "UBD": [
+          69,
+          107,
+          128,
+          149
+        ],
+        "operations": [
+          70,
+          108,
+          150
+        ],
+        "categorized": [
+          74
+        ],
+        "into": [
+          75
+        ],
+        "a": [
+          76,
+          146
+        ],
+        "gas": [
+          77
+        ],
+        "(i.e.,": [
+          78,
+          86
+        ],
+        "air,": [
+          79
+        ],
+        "nitrogen,": [
+          80
+        ],
+        "natural": [
+          82
+        ],
+        "gas)": [
+          83
+        ],
+        "or": [
+          84
+        ],
+        "two-phase": [
+          85
+        ],
+        "mist": [
+          87
+        ],
+        "foam).": [
+          89
+        ],
+        "Although": [
+          90
+        ],
+        "foamed": [
+          91,
+          152
+        ],
+        "fluid": [
+          92
+        ],
+        "attracted": [
+          93
+        ],
+        "attention": [
+          94
+        ],
+        "enhanced": [
+          96
+        ],
+        "oil": [
+          97
+        ],
+        "recovery": [
+          98
+        ],
+        "hydraulic": [
+          100
+        ],
+        "fracturing": [
+          101
+        ],
+        "operations,": [
+          102
+        ],
+        "ideal": [
+          105
+        ],
+        "for": [
+          106
+        ],
+        "due": [
+          109
+        ],
+        "to": [
+          110
+        ],
+        "its": [
+          111
+        ],
+        "low": [
+          112
+        ],
+        "density": [
+          113
+        ],
+        "efficient": [
+          115
+        ],
+        "transport": [
+          116
+        ],
+        "capacity.": [
+          117
+        ],
+        "This": [
+          118
+        ],
+        "paper": [
+          119,
+          144
+        ],
+        "highlights": [
+          120,
+          145
+        ],
+        "applications,": [
+          122
+        ],
+        "limitations,": [
+          123
+        ],
+        "advantages,": [
+          124
+        ],
+        "of": [
+          127
+        ],
+        "operations.": [
+          129
+        ],
+        "It": [
+          130
+        ],
+        "also": [
+          131
+        ],
+        "discusses": [
+          132
+        ],
+        "foam": [
+          135
+        ],
+        "chemistry,": [
+          136
+        ],
+        "structure,": [
+          137
+        ],
+        "characterization,": [
+          138
+        ],
+        "rheological": [
+          140
+        ],
+        "properties.": [
+          141
+        ],
+        "Finally,": [
+          142
+        ],
+        "this": [
+          143
+        ],
+        "few": [
+          147
+        ],
+        "successful": [
+          148
+        ],
+        "utilizing": [
+          151
+        ],
+        "worldwide.": [
+          155
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 1
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 10
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 7
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 8
+        }
+      ],
+      "updated_date": "2026-02-06T03:54:58.731219",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    {
       "id": "https://openalex.org/W4205750342",
       "doi": "https://doi.org/10.1021/acsomega.1c04416",
       "title": "Prediction of Water Saturation in Tight Gas Sandstone Formation Using Artificial Intelligence",
@@ -26574,9 +26959,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.6899999976158142,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.6899999976158142
         }
       ],
       "awards": [],
@@ -29185,9 +29570,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.5699999928474426,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.5699999928474426
         }
       ],
       "awards": [],
@@ -30392,9 +30777,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.47999998927116394,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "display_name": "Responsible consumption and production",
+          "score": 0.47999998927116394
         }
       ],
       "awards": [
@@ -33100,9 +33485,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.6100000143051147,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.6100000143051147
         }
       ],
       "awards": [],
@@ -34528,9 +34913,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.7099999785423279,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.7099999785423279
         }
       ],
       "awards": [],
@@ -35861,9 +36246,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.5
         }
       ],
       "awards": [],
@@ -37114,9 +37499,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.800000011920929,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.800000011920929
         }
       ],
       "awards": [],
@@ -38294,9 +38679,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4399999976158142,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "display_name": "Responsible consumption and production",
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],
@@ -39716,9 +40101,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.6000000238418579,
           "id": "https://metadata.un.org/sdg/13",
-          "display_name": "Climate action"
+          "display_name": "Climate action",
+          "score": 0.6000000238418579
         }
       ],
       "awards": [],
@@ -41063,9 +41448,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.4099999964237213,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.4099999964237213
         }
       ],
       "awards": [],
@@ -42180,9 +42565,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5400000214576721,
           "id": "https://metadata.un.org/sdg/9",
-          "display_name": "Industry, innovation and infrastructure"
+          "display_name": "Industry, innovation and infrastructure",
+          "score": 0.5400000214576721
         }
       ],
       "awards": [],
@@ -45171,9 +45556,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.7300000190734863,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.7300000190734863
         }
       ],
       "awards": [],
@@ -47023,9 +47408,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.4399999976158142,
           "id": "https://metadata.un.org/sdg/12",
-          "display_name": "Responsible consumption and production"
+          "display_name": "Responsible consumption and production",
+          "score": 0.4399999976158142
         }
       ],
       "awards": [],
@@ -48157,9 +48542,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.5600000023841858,
           "id": "https://metadata.un.org/sdg/14",
-          "display_name": "Life below water"
+          "display_name": "Life below water",
+          "score": 0.5600000023841858
         }
       ],
       "awards": [],
@@ -56347,9 +56732,9 @@
       "best_oa_location": null,
       "sustainable_development_goals": [
         {
-          "score": 0.5899999737739563,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.5899999737739563
         }
       ],
       "awards": [],
@@ -57009,9 +57394,9 @@
       },
       "sustainable_development_goals": [
         {
-          "score": 0.6100000143051147,
           "id": "https://metadata.un.org/sdg/6",
-          "display_name": "Clean water and sanitation"
+          "display_name": "Clean water and sanitation",
+          "score": 0.6100000143051147
         }
       ],
       "awards": [],
